@@ -1,0 +1,615 @@
+<title>TSD Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a dispatch board. Tallies (also quick filters) on top, then one card per client. A card opens the client popup; its follow-up warning opens a second popup. */
+:root {
+  --bg: #eef0ec;
+  --surface: #ffffff;
+  --surface-2: #f6f7f4;
+  --ink: #141b2b;
+  --muted: #5a6273;
+  --line: #d9dcd4;
+  --accent: #23407f;
+  --accent-ink: #ffffff;
+  --tile: #1d2a44;
+  --tile-ink: #f4f6fb;
+  --red: #c2312a;
+  --red-soft: #fbe9e7;
+  --amber: #a86a0c;
+  --amber-soft: #fbf1dc;
+  --green: #2c7a4b;
+  --green-soft: #e4f3e9;
+  --gray-soft: #e9ebe6;
+  --scrim: rgba(14, 18, 24, .45);
+  --shadow: 0 1px 2px rgba(20, 27, 43, .06), 0 4px 14px rgba(20, 27, 43, .05);
+  --shadow-lg: 0 10px 40px rgba(20, 27, 43, .22);
+  --f-display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "IBM Plex Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1218; --surface: #161b23; --surface-2: #1b212b; --ink: #e5e8ee; --muted: #98a1b0; --line: #2a313c;
+    --accent: #8fa8ee; --accent-ink: #0e1218; --tile: #c9d4ee; --tile-ink: #121826;
+    --red: #f06a5f; --red-soft: #3a1d1c; --amber: #e3a945; --amber-soft: #352a15; --green: #5dbb83; --green-soft: #17301f; --gray-soft: #222833;
+    --scrim: rgba(0, 0, 0, .6); --shadow: 0 1px 2px rgba(0, 0, 0, .3); --shadow-lg: 0 10px 40px rgba(0, 0, 0, .55); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1218; --surface: #161b23; --surface-2: #1b212b; --ink: #e5e8ee; --muted: #98a1b0; --line: #2a313c;
+  --accent: #8fa8ee; --accent-ink: #0e1218; --tile: #c9d4ee; --tile-ink: #121826;
+  --red: #f06a5f; --red-soft: #3a1d1c; --amber: #e3a945; --amber-soft: #352a15; --green: #5dbb83; --green-soft: #17301f; --gray-soft: #222833;
+  --scrim: rgba(0, 0, 0, .6); --shadow: 0 1px 2px rgba(0, 0, 0, .3); --shadow-lg: 0 10px 40px rgba(0, 0, 0, .55); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 14px; line-height: 1.45; }
+body.locked { overflow: hidden; }
+.wrap { max-width: 1100px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 72px; display: grid; gap: 18px; }
+h1, h2, h3 { font-family: var(--f-display); margin: 0; text-wrap: balance; letter-spacing: .01em; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.mono { font-family: var(--f-mono); font-size: 12.5px; }
+.muted { color: var(--muted); }
+
+/* Top bar */
+.top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 20px; }
+.eyebrow { font-family: var(--f-display); font-weight: 600; text-transform: uppercase; letter-spacing: .14em; font-size: 13px; color: var(--muted); }
+.top h1 { font-size: 40px; font-weight: 700; line-height: 1; text-transform: uppercase; }
+.today { font-family: var(--f-mono); font-size: 13px; color: var(--muted); }
+.btn { border: 1px solid var(--line); background: var(--surface); border-radius: 6px; padding: 6px 12px; font-weight: 500; }
+.btn:hover { border-color: var(--muted); }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.btn.small { padding: 3px 9px; font-size: 12.5px; }
+.btn.ghost { background: transparent; }
+body.readonly .w { display: none !important; }
+
+/* Tallies = quick filters */
+.tallies { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.tally { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; display: grid; gap: 2px; border-top: 4px solid var(--line); text-align: left; }
+.tally:hover { border-color: var(--muted); }
+.tally[aria-pressed="true"] { outline: 2px solid var(--ink); outline-offset: -2px; }
+.tally .n { font-family: var(--f-display); font-size: 38px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+.tally .l { font-weight: 600; }
+.tally .s { color: var(--muted); font-size: 12.5px; }
+.tally.hot { border-top-color: var(--red); } .tally.hot .n { color: var(--red); }
+.tally.warm { border-top-color: var(--amber); } .tally.warm .n { color: var(--amber); }
+.tally.calm { border-top-color: var(--green); }
+
+/* Bar */
+.bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.bar h2 { font-size: 26px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.filters { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.filters button { border: 1px solid var(--line); background: var(--surface); padding: 4px 11px; border-radius: 999px; font-size: 13px; }
+.filters button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.quicknote { font-size: 13px; color: var(--muted); display: flex; gap: 8px; align-items: center; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 12.5px; color: var(--muted); align-items: center; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+
+/* Cards */
+.cards { display: grid; gap: 10px; }
+.card { width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px;
+  display: grid; grid-template-columns: minmax(0, 1.5fr) auto minmax(0, 1.2fr) 16px; gap: 10px 18px; align-items: center; box-shadow: var(--shadow); border-left: 4px solid var(--line); }
+.card:hover { border-color: var(--muted); }
+.card.sev-red { border-left-color: var(--red); }
+.card.sev-amber { border-left-color: var(--amber); }
+.card.sev-green { border-left-color: var(--green); }
+.cname { display: grid; gap: 3px; min-width: 0; }
+.cname b { font-family: var(--f-display); font-size: 21px; font-weight: 600; letter-spacing: .01em; line-height: 1.1; }
+.sub { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12.5px; color: var(--muted); }
+.tiles { display: grid; grid-template-columns: repeat(4, 54px); gap: 4px; }
+.badges { display: flex; flex-wrap: wrap; gap: 5px; justify-content: flex-end; min-width: 0; }
+.chev { color: var(--muted); font-size: 20px; line-height: 1; }
+.chip { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--gray-soft); color: var(--muted); white-space: nowrap; }
+.chip.red { background: var(--red-soft); color: var(--red); }
+.chip.amber { background: var(--amber-soft); color: var(--amber); }
+.chip.green { background: var(--green-soft); color: var(--green); }
+.chip.blue { background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); }
+
+/* Channel tiles */
+.ch { display: grid; justify-items: center; gap: 3px; }
+.tile { width: 34px; height: 34px; border-radius: 9px; display: grid; place-items: center; position: relative; }
+.tile svg { width: 19px; height: 19px; }
+[data-state="live"] .tile { background: var(--tile); color: var(--tile-ink); }
+[data-state="missing"] .tile { border: 2px solid var(--red); color: var(--red); background: var(--red-soft); }
+[data-state="missing"] .tile svg { filter: blur(1.1px); opacity: .75; }
+[data-state="noaccess"] .tile { border: 2px dashed var(--red); color: var(--red); }
+[data-state="noaccess"] .tile svg { filter: blur(1.1px); opacity: .6; }
+[data-state="confirm"] .tile { border: 2px dashed var(--amber); color: var(--amber); }
+[data-state="paused"] .tile { background: var(--gray-soft); color: var(--muted); opacity: .75; }
+.badge { position: absolute; top: -6px; right: -6px; width: 16px; height: 16px; border-radius: 50%; display: grid; place-items: center; font-size: 10px; font-weight: 700; font-family: var(--f-mono); background: var(--surface); border: 1.5px solid currentColor; }
+.ch.none .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--line); margin-block: 14px; }
+.age { font-family: var(--f-mono); font-size: 11px; font-variant-numeric: tabular-nums; line-height: 1; white-space: nowrap; }
+.age.ok { color: var(--green); } .age.warn { color: var(--amber); } .age.bad { color: var(--red); font-weight: 600; } .age.na { color: var(--muted); }
+.legend .tile { width: 22px; height: 22px; border-radius: 6px; } .legend .tile svg { width: 13px; height: 13px; }
+
+/* Modals */
+.scrim { position: fixed; inset: 0; background: var(--scrim); z-index: 20; display: grid; place-items: center; padding: 24px 16px; }
+.scrim.lvl2 { z-index: 30; background: transparent; }
+.modal { background: var(--bg); color: var(--ink); width: min(820px, 100%); max-height: calc(100vh - 48px); overflow: auto; border-radius: 12px; box-shadow: var(--shadow-lg); border: 1px solid var(--line); display: grid; align-content: start; }
+.lvl2 .modal { width: min(640px, 100%); background: var(--surface); }
+.mhead { position: sticky; top: 0; z-index: 1; background: inherit; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding: 14px 16px 10px; border-bottom: 1px solid var(--line); }
+.mhead h2 { font-size: 28px; font-weight: 700; line-height: 1.05; }
+.mhead h3 { font-size: 22px; font-weight: 700; }
+.close { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; width: 34px; height: 34px; font-size: 18px; line-height: 1; flex: none; }
+.mbody { padding: 14px 16px 18px; display: grid; gap: 14px; }
+.statusnote { margin: 0; padding: 9px 11px; border-radius: 8px; background: var(--amber-soft); }
+.fuwarn { width: 100%; text-align: left; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 11px 13px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); }
+.fuwarn b { font-family: var(--f-display); font-size: 18px; font-weight: 600; letter-spacing: .02em; }
+.fuwarn .wsub { font-size: 12.5px; color: var(--muted); }
+.fuwarn.sev-red { background: var(--red-soft); border-color: var(--red); } .fuwarn.sev-red b { color: var(--red); }
+.fuwarn.sev-amber { background: var(--amber-soft); border-color: var(--amber); } .fuwarn.sev-amber b { color: var(--amber); }
+.fuwarn:hover { filter: brightness(.98); }
+.stalebox { display: grid; gap: 6px; padding: 10px 12px; border-radius: 8px; background: var(--surface); border: 1px solid var(--line); }
+.stalebox .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
+.secttl { font-family: var(--f-display); font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0; }
+.chgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.chcard { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.chcard-h { display: flex; align-items: center; gap: 8px; }
+.chcard-h .tile { width: 28px; height: 28px; border-radius: 7px; } .chcard-h .tile svg { width: 16px; height: 16px; }
+.chcard-h b { font-family: var(--f-display); font-size: 17px; font-weight: 600; flex: 1; }
+.chcard dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 3px 10px; margin: 0; font-size: 13px; }
+.chcard dt { color: var(--muted); }
+.chcard dd { margin: 0; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+.chcard .note { margin: 0; font-size: 13px; }
+.chcard .src { margin: 0; font-size: 12px; color: var(--muted); }
+.acts { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* Follow-up popup */
+.fulist { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.fu { border: 1px solid var(--line); border-left: 4px solid var(--line); border-radius: 8px; padding: 10px 12px; display: grid; gap: 7px; background: var(--surface-2); }
+.fu.sev-red { border-left-color: var(--red); } .fu.sev-amber { border-left-color: var(--amber); }
+.fu h4 { margin: 0; font-size: 15px; font-weight: 600; line-height: 1.35; }
+.fmeta { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font-size: 12.5px; color: var(--muted); }
+.due-red { color: var(--red); font-weight: 600; } .due-amber { color: var(--amber); font-weight: 600; }
+.details { display: grid; gap: 4px; font-size: 13.5px; }
+.details p { margin: 0; }
+.details ul { margin: 0; padding-left: 18px; display: grid; gap: 3px; }
+.details .srcline { color: var(--muted); font-size: 12.5px; overflow-wrap: anywhere; }
+.addfu { display: grid; gap: 8px; padding: 12px; border: 1px dashed var(--line); border-radius: 8px; }
+.addfu .r { display: grid; grid-template-columns: minmax(0, 1fr) 160px; gap: 8px; }
+.addfu input, .addfu textarea { border: 1px solid var(--line); background: var(--surface-2); border-radius: 6px; padding: 7px 9px; width: 100%; min-width: 0; color: var(--ink); }
+.addfu textarea { min-height: 64px; resize: vertical; }
+.donelist { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: 13px; color: var(--muted); }
+.donelist li { display: flex; gap: 8px; justify-content: space-between; align-items: center; }
+details > summary { cursor: pointer; color: var(--muted); font-size: 13px; }
+
+.notice { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 18px; color: var(--muted); }
+footer { color: var(--muted); font-size: 12.5px; display: grid; gap: 4px; }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--bg); padding: 9px 14px; border-radius: 8px; display: flex; gap: 12px; align-items: center; box-shadow: var(--shadow); max-width: calc(100% - 32px); z-index: 50; }
+.toast button { background: none; border: 0; color: inherit; text-decoration: underline; font-weight: 600; padding: 0; }
+
+@media (max-width: 860px) {
+  .tallies { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card { grid-template-columns: minmax(0, 1fr) 16px; }
+  .card .tiles { grid-column: 1 / 2; }
+  .card .badges { grid-column: 1 / 2; justify-content: flex-start; }
+  .card .chev { grid-row: 1; grid-column: 2; }
+}
+@media (max-width: 560px) {
+  .top h1 { font-size: 32px; }
+  .scrim { padding: 0; place-items: stretch; }
+  .modal, .lvl2 .modal { width: 100%; max-height: 100%; height: 100%; border-radius: 0; border: 0; padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .mhead { padding-top: calc(14px + env(safe-area-inset-top, 0px)); }
+  .addfu .r { grid-template-columns: minmax(0, 1fr); }
+}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="eyebrow">TopServ Digital · Paid media</div>
+      <h1>Command Center</h1>
+    </div>
+    <span class="today" id="today"></span>
+  </header>
+
+  <section class="tallies" id="tallies" aria-label="Summary and quick filters">
+    <div class="tally"><span class="n">–</span><span class="l">Overdue</span><span class="s">Follow-ups past their date</span></div>
+    <div class="tally"><span class="n">–</span><span class="l">Due today</span><span class="s">Follow-ups</span></div>
+    <div class="tally"><span class="n">–</span><span class="l">Past 7 days</span><span class="s">Live channels without a check</span></div>
+    <div class="tally"><span class="n">–</span><span class="l">Gaps</span><span class="s">Channels or clients to resolve</span></div>
+  </section>
+
+  <div class="bar">
+    <h2>Clients</h2>
+    <div class="filters" id="filters">
+      <button type="button" data-f="active">Active</button>
+      <button type="button" data-f="onboarding">Onboarding</button>
+      <button type="button" data-f="winddown">Wind-down</button>
+      <button type="button" data-f="all">All</button>
+    </div>
+  </div>
+  <div class="quicknote" id="quicknote" hidden></div>
+  <div class="legend" id="legend"></div>
+  <section class="cards" id="cards" aria-label="Clients"><p class="notice">Loading clients…</p></section>
+
+  <footer id="foot">
+    <span>Spend shows the last 7 days. Channel status is refreshed by Claude from the Google Ads API and the Meta connector during weekly checks.</span>
+  </footer>
+</div>
+<div id="m1"></div>
+<div id="m2"></div>
+<div class="toast" id="toast" hidden><span id="toastMsg"></span><button type="button" id="toastUndo">Undo</button></div>
+
+<script>
+(() => {
+  const CH = [
+    { key: "google", label: "Google Ads" },
+    { key: "lsa", label: "LSA" },
+    { key: "meta", label: "Meta" },
+    { key: "youtube", label: "YouTube" },
+  ];
+  const ICON = {
+    google: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></svg>',
+    lsa: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3l7 3v5c0 4.6-3 8.3-7 10-4-1.7-7-5.4-7-10V6l7-3z"/><path d="M8.6 12.2l2.4 2.4 4.4-4.8"/></svg>',
+    meta: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"><path d="M7 8.5c-2 0-3.5 1.6-3.5 3.5S5 15.5 7 15.5c3 0 7-7 10-7 2 0 3.5 1.6 3.5 3.5S19 15.5 17 15.5c-3 0-7-7-10-7z"/></svg>',
+    youtube: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="3.2"/><path d="M10.4 9.4v5.2l4.5-2.6z" fill="currentColor" stroke="none"/></svg>',
+  };
+  const STATE = {
+    live: { label: "Live", chip: "green" },
+    missing: { label: "Gap", chip: "red" },
+    noaccess: { label: "No access", chip: "red" },
+    confirm: { label: "In scope?", chip: "amber" },
+    paused: { label: "Paused", chip: "" },
+  };
+  const STATUS = {
+    active: { label: "", chip: "" },
+    confirm: { label: "Confirm client", chip: "amber" },
+    onboarding: { label: "Onboarding", chip: "blue" },
+    offboarding: { label: "Offboarding", chip: "" },
+    frozen: { label: "Frozen", chip: "" },
+    offboarded: { label: "Offboarded", chip: "" },
+  };
+  const FILTERS = {
+    active: (c) => c.status === "active" || c.status === "confirm",
+    onboarding: (c) => c.status === "onboarding",
+    winddown: (c) => ["offboarding", "frozen", "offboarded"].includes(c.status),
+    all: () => true,
+  };
+  const QUICK = {
+    overdue: { label: "clients with overdue follow-ups", test: (p) => p.overdue > 0 },
+    today: { label: "clients with follow-ups due today", test: (p) => p.today > 0 },
+    stale: { label: "clients with live channels not checked in 7+ days", test: (p) => p.stale > 0 },
+    gaps: { label: "clients with gaps to resolve", test: (p) => p.gaps > 0 },
+  };
+  const GENERAL = "_general";
+  const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const DOW = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  const S = { clients: new Map(), fus: new Map(), sync: null, loadedC: false, loadedF: false };
+  let filter = "active", quick = null, openClient = null, openFU = null, lastFocus = null;
+  try { filter = localStorage.getItem("cc.filter") || "active"; } catch (e) {}
+  if (!FILTERS[filter]) filter = "active";
+  let db = null;
+
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  function todayStr() { const d = new Date(); return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
+  function toUTC(s) { const [y, m, d] = s.split("-").map(Number); return Date.UTC(y, m - 1, d); }
+  function daysFrom(a, b) { return Math.round((toUTC(b) - toUTC(a)) / 86400000); }
+  function addDays(s, n) { return new Date(toUTC(s) + n * 86400000).toISOString().slice(0, 10); }
+  function fmt(s) { if (!s) return "—"; const [, m, d] = s.split("-").map(Number); return MON[m - 1] + " " + d; }
+  function money(n) { return n == null ? "—" : "$" + Math.round(n).toLocaleString("en-US"); }
+  function chName(k) { return (CH.find((c) => c.key === k) || {}).label || k; }
+  function nameOf(slug) { if (!slug || slug === GENERAL) return "General"; const c = S.clients.get(slug); return c ? c.name : slug; }
+  function ageClass(age) { if (age == null || age >= 7) return "bad"; if (age >= 5) return "warn"; return "ok"; }
+  function plural(n, a, b) { return n + " " + (n === 1 ? a : b); }
+  function dueInfo(due, T) {
+    if (!due) return { text: "No date", cls: "", sev: "" };
+    const d = daysFrom(T, due);
+    if (d < 0) return { text: plural(-d, "day", "days") + " overdue · " + fmt(due), cls: "due-red", sev: "sev-red" };
+    if (d === 0) return { text: "Due today", cls: "due-amber", sev: "sev-amber" };
+    if (d === 1) return { text: "Tomorrow · " + fmt(due), cls: "", sev: "" };
+    return { text: "In " + d + " days · " + fmt(due), cls: "", sev: "" };
+  }
+  const fuKey = (f) => f.client || GENERAL;
+  function sortFU(list) { return list.slice().sort((a, b) => (a.due || "9999").localeCompare(b.due || "9999") || String(a.title).localeCompare(String(b.title))); }
+
+  function derive() {
+    const T = todayStr();
+    const clients = [...S.clients.values()];
+    const open = [...S.fus.values()].filter((f) => f.status !== "done");
+    const per = new Map();
+    const blank = () => ({ overdue: 0, today: 0, open: 0, stale: 0, gaps: 0, next: null, staleList: [], gapList: [] });
+    for (const c of clients) {
+      const p = blank(); per.set(c.id, p);
+      const chs = c.channels || {};
+      for (const { key } of CH) {
+        const ch = chs[key]; if (!ch) continue;
+        if (c.status === "active" && ch.state === "live") {
+          const age = ch.lastChecked ? daysFrom(ch.lastChecked, T) : null;
+          if (age == null || age >= 7) { p.stale++; p.staleList.push({ key, age }); }
+        }
+        if (["active", "confirm"].includes(c.status) && ["missing", "noaccess", "confirm"].includes(ch.state)) { p.gaps++; p.gapList.push(key); }
+      }
+      if (c.status === "confirm") p.gaps++;
+    }
+    per.set(GENERAL, blank());
+    for (const f of open) {
+      const p = per.get(fuKey(f)); if (!p) continue;
+      p.open++;
+      if (f.due && f.due < T) p.overdue++; else if (f.due === T) p.today++;
+      if (f.due && (!p.next || f.due < p.next)) p.next = f.due;
+    }
+    let tot = { overdue: 0, today: 0, stale: 0, gaps: 0 };
+    for (const p of per.values()) { tot.overdue += p.overdue; tot.today += p.today; tot.stale += p.stale; tot.gaps += p.gaps; }
+    return { T, clients, open, per, tot };
+  }
+
+  function tileHTML(key, state) {
+    const badge = state === "confirm" ? '<span class="badge">?</span>' : state === "noaccess" ? '<span class="badge">!</span>' : "";
+    return '<span class="tile">' + ICON[key] + badge + "</span>";
+  }
+  function chCell(c, key, T) {
+    const ch = (c.channels || {})[key];
+    if (!ch) return '<span class="ch none" aria-label="' + chName(key) + ': not in scope"><span class="dot"></span></span>';
+    let age, cls;
+    if (ch.state === "live") { const a = ch.lastChecked ? daysFrom(ch.lastChecked, T) : null; age = a == null ? "never" : a + "d"; cls = c.status === "active" ? ageClass(a) : "na"; }
+    else { age = (STATE[ch.state] || {}).label || ch.state; cls = ch.state === "paused" ? "na" : ch.state === "confirm" ? "warn" : "bad"; }
+    const tip = chName(key) + ": " + ((STATE[ch.state] || {}).label || ch.state) + (ch.spend7 != null ? " · " + money(ch.spend7) + " last 7 days" : "") + " · last check " + (ch.lastChecked ? fmt(ch.lastChecked) : "none on record");
+    return '<span class="ch" data-state="' + esc(ch.state) + '" title="' + esc(tip) + '" aria-label="' + esc(tip) + '">' + tileHTML(key, ch.state) + '<span class="age ' + cls + '">' + esc(age) + "</span></span>";
+  }
+  function fuChip(p) {
+    if (p.overdue) return '<span class="chip red">⚠ ' + plural(p.overdue, "follow-up", "follow-ups") + " overdue</span>";
+    if (p.today) return '<span class="chip amber">⚠ ' + plural(p.today, "follow-up", "follow-ups") + " due today</span>";
+    if (p.open) return '<span class="chip">' + plural(p.open, "follow-up", "follow-ups") + (p.next ? " · next " + fmt(p.next) : "") + "</span>";
+    return "";
+  }
+  function sev(p) { return p.overdue || p.stale ? "sev-red" : p.today || p.gaps ? "sev-amber" : "sev-green"; }
+  function score(p) { return p.overdue * 100 + p.stale * 20 + p.today * 15 + p.gaps * 5 + (p.open ? 1 : 0); }
+
+  function renderTallies(D) {
+    const t = [
+      ["overdue", D.tot.overdue, "Overdue", "Follow-ups past their date", D.tot.overdue ? "hot" : "calm"],
+      ["today", D.tot.today, "Due today", "Follow-ups for " + fmt(D.T), D.tot.today ? "warm" : "calm"],
+      ["stale", D.tot.stale, "Past 7 days", "Live channels without a check", D.tot.stale ? "hot" : "calm"],
+      ["gaps", D.tot.gaps, "Gaps", "Missing channels, lost access, unconfirmed clients", D.tot.gaps ? "warm" : "calm"],
+    ];
+    $("tallies").innerHTML = t.map(([k, n, l, s, cls]) => '<button type="button" class="tally ' + cls + '" data-act="quick" data-q="' + k + '" aria-pressed="' + (quick === k) + '"><span class="n">' + n + '</span><span class="l">' + l + '</span><span class="s">' + esc(s) + "</span></button>").join("");
+  }
+
+  function renderCards(D) {
+    const T = D.T;
+    let list = D.clients.filter(FILTERS[filter]);
+    if (quick) list = D.clients.filter((c) => c.status !== "offboarded" && QUICK[quick].test(D.per.get(c.id)));
+    list.sort((a, b) => score(D.per.get(b.id)) - score(D.per.get(a.id)) || a.name.localeCompare(b.name));
+    const gp = D.per.get(GENERAL);
+    const showGeneral = gp.open > 0 && (!quick || QUICK[quick].test(gp));
+    let html = "";
+    if (showGeneral) {
+      html += '<button type="button" class="card ' + sev(gp) + '" data-act="opengeneral"><span class="cname"><b>General</b><span class="sub">TopServ tasks not tied to one client</span></span><span class="tiles"></span><span class="badges">' + fuChip(gp) + '</span><span class="chev" aria-hidden="true">›</span></button>';
+    }
+    html += list.map((c) => {
+      const p = D.per.get(c.id);
+      const st = STATUS[c.status] || { label: c.status, chip: "" };
+      const sub = [];
+      if (st.label) sub.push('<span class="chip ' + st.chip + '">' + esc(st.label) + "</span>");
+      if (c.market) sub.push("<span>" + esc(c.market) + "</span>");
+      const b = [fuChip(p)];
+      if (p.stale) b.push('<span class="chip red">' + p.stale + " unchecked</span>");
+      if (p.gaps) b.push('<span class="chip amber">' + plural(p.gaps, "gap", "gaps") + "</span>");
+      if (!b.join("")) b.push('<span class="chip green">Clear</span>');
+      return '<button type="button" class="card ' + sev(p) + '" data-act="open" data-slug="' + esc(c.id) + '">' +
+        '<span class="cname"><b>' + esc(c.name) + '</b><span class="sub">' + sub.join("") + "</span></span>" +
+        '<span class="tiles">' + CH.map(({ key }) => chCell(c, key, T)).join("") + "</span>" +
+        '<span class="badges">' + b.join("") + "</span>" +
+        '<span class="chev" aria-hidden="true">›</span></button>';
+    }).join("");
+    $("cards").innerHTML = html || '<p class="notice">' + (S.clients.size ? "No clients in this view." : "No clients yet. Claude adds them to this page's database.") + "</p>";
+    const qn = $("quicknote");
+    if (quick) { qn.hidden = false; qn.innerHTML = "Showing " + QUICK[quick].label + '. <button type="button" class="btn small" data-act="quick" data-q="' + quick + '">Show all</button>'; }
+    else qn.hidden = true;
+  }
+
+  function chCard(c, key, T) {
+    const ch = (c.channels || {})[key]; if (!ch) return "";
+    const st = STATE[ch.state] || { label: ch.state, chip: "" };
+    const a = ch.lastChecked ? daysFrom(ch.lastChecked, T) : null;
+    const checkTxt = ch.lastChecked ? fmt(ch.lastChecked) + " · " + (a === 0 ? "today" : a === 1 ? "yesterday" : a + " days ago") : "None on record";
+    return '<div class="chcard" data-state="' + esc(ch.state) + '"><div class="chcard-h">' + tileHTML(key, ch.state) + "<b>" + chName(key) + '</b><span class="chip ' + st.chip + '">' + st.label + "</span></div>" +
+      "<dl><dt>Last 7 days</dt><dd>" + money(ch.spend7) + "</dd>" +
+      (ch.accounts ? '<dt>Accounts</dt><dd class="mono">' + esc(ch.accounts) + "</dd>" : "") +
+      '<dt>Last check</dt><dd class="' + (ch.state === "live" && c.status === "active" ? "age " + ageClass(a) : "") + '">' + esc(checkTxt) + "</dd></dl>" +
+      (ch.note ? '<p class="note">' + esc(ch.note) + "</p>" : "") +
+      (ch.checkSource ? '<p class="src">Check source: ' + esc(ch.checkSource) + "</p>" : "") +
+      '<div class="acts w"><button type="button" class="btn small" data-act="check" data-slug="' + esc(c.id) + '" data-ch="' + key + '">Mark checked today</button></div></div>';
+  }
+
+  function warnHTML(p, slug) {
+    let cls = "", head, sub;
+    if (p.overdue) { cls = "sev-red"; head = "⚠ " + plural(p.overdue, "follow-up", "follow-ups") + " overdue"; }
+    else if (p.today) { cls = "sev-amber"; head = "⚠ " + plural(p.today, "follow-up", "follow-ups") + " due today"; }
+    else if (p.open) { head = plural(p.open, "open follow-up", "open follow-ups"); }
+    else { head = "No open follow-ups"; }
+    sub = p.open ? (p.open - p.overdue - p.today > 0 ? plural(p.open, "open in total", "open in total") + (p.next ? " · next due " + fmt(p.next) : "") : "Tap to see what's needed") : "Tap to add one";
+    return '<button type="button" class="fuwarn ' + cls + '" data-act="openfu" data-slug="' + esc(slug) + '"><span><b>' + esc(head) + '</b><br><span class="wsub">' + esc(sub) + '</span></span><span class="chev" aria-hidden="true">›</span></button>';
+  }
+
+  function scrim(level, inner, label) {
+    return '<div class="scrim' + (level === 2 ? " lvl2" : "") + '" data-act="scrim" data-level="' + level + '"><div class="modal" role="dialog" aria-modal="true" aria-label="' + esc(label) + '">' + inner + "</div></div>";
+  }
+
+  function renderM1(D) {
+    const host = $("m1");
+    if (!openClient || openClient === GENERAL || !S.clients.has(openClient)) { host.innerHTML = ""; return; }
+    const c = S.clients.get(openClient), p = D.per.get(c.id), T = D.T;
+    const st = STATUS[c.status] || { label: c.status, chip: "" };
+    const sub = [];
+    if (st.label) sub.push('<span class="chip ' + st.chip + '">' + esc(st.label) + "</span>");
+    if (c.market) sub.push("<span>" + esc(c.market) + "</span>");
+    let stale = "";
+    if (p.staleList.length) {
+      stale = '<div class="stalebox"><p class="secttl">Not checked in 7+ days</p>' + p.staleList.map((s) =>
+        '<div class="row"><span><b>' + chName(s.key) + '</b> <span class="age bad">' + (s.age == null ? "no check on record" : s.age + " days") + '</span></span><button type="button" class="btn small w" data-act="check" data-slug="' + esc(c.id) + '" data-ch="' + s.key + '">Mark checked today</button></div>').join("") + "</div>";
+    }
+    const inner = '<div class="mhead"><div><h2 id="m1t">' + esc(c.name) + '</h2><div class="sub">' + sub.join("") + '</div></div><button type="button" class="close" data-act="close" data-level="1" aria-label="Close">×</button></div>' +
+      '<div class="mbody">' + (c.statusNote ? '<p class="statusnote">' + esc(c.statusNote) + "</p>" : "") + warnHTML(p, c.id) + stale +
+      '<p class="secttl">Channels</p><div class="chgrid">' + CH.map(({ key }) => chCard(c, key, T)).join("") + "</div></div>";
+    host.innerHTML = scrim(1, inner, c.name);
+  }
+
+  function detailsHTML(text) {
+    if (!text) return "";
+    const lines = String(text).split("\n"); let out = "", ul = [];
+    const flush = () => { if (ul.length) { out += "<ul>" + ul.map((l) => "<li>" + esc(l) + "</li>").join("") + "</ul>"; ul = []; } };
+    for (const raw of lines) {
+      const l = raw.trim(); if (!l) { flush(); continue; }
+      if (l.startsWith("- ")) ul.push(l.slice(2));
+      else { flush(); out += /^source:/i.test(l) ? '<p class="srcline">' + esc(l) + "</p>" : "<p>" + esc(l) + "</p>"; }
+    }
+    flush(); return '<div class="details">' + out + "</div>";
+  }
+
+  function renderM2(D) {
+    const host = $("m2");
+    if (!openFU) { host.innerHTML = ""; return; }
+    const T = D.T;
+    const mine = (f) => fuKey(f) === openFU;
+    const open = sortFU(D.open.filter(mine));
+    const done = [...S.fus.values()].filter((f) => f.status === "done" && mine(f)).sort((a, b) => String(b.doneAt || "").localeCompare(String(a.doneAt || ""))).slice(0, 8);
+    const items = open.map((f) => {
+      const di = dueInfo(f.due, T);
+      return '<li class="fu ' + di.sev + '"><h4>' + esc(f.title) + '</h4><div class="fmeta"><span class="' + di.cls + '">' + esc(di.text) + "</span>" + (f.createdBy ? "<span>added by " + esc(f.createdBy) + "</span>" : "") + "</div>" +
+        (f.details ? detailsHTML(f.details) : detailsHTML(f.note)) +
+        '<div class="acts w"><button type="button" class="btn small primary" data-act="done" data-id="' + esc(f.id) + '">Done</button>' +
+        '<button type="button" class="btn small ghost" data-act="snooze" data-days="1" data-id="' + esc(f.id) + '">+1 day</button>' +
+        '<button type="button" class="btn small ghost" data-act="snooze" data-days="3" data-id="' + esc(f.id) + '">+3 days</button>' +
+        '<button type="button" class="btn small ghost" data-act="snooze" data-days="7" data-id="' + esc(f.id) + '">+1 week</button></div></li>';
+    }).join("");
+    const doneHTML = done.length ? '<details><summary>Done recently (' + done.length + ')</summary><ul class="donelist">' + done.map((f) => "<li><span>" + esc(f.title) + (f.doneAt ? " · " + fmt(f.doneAt) : "") + '</span><button type="button" class="btn small ghost w" data-act="reopen" data-id="' + esc(f.id) + '">Reopen</button></li>').join("") + "</ul></details>" : "";
+    const form = '<form class="addfu w" id="addfu"><p class="secttl">Add a follow-up</p><div class="r"><input id="fuTitle" maxlength="240" placeholder="What to check" aria-label="What to check" required><input id="fuDue" type="date" aria-label="Due date"></div><textarea id="fuDetails" maxlength="2000" placeholder="What\'s needed (optional). Start lines with - for bullets." aria-label="What\'s needed"></textarea><div class="acts"><button type="submit" class="btn small primary">Save follow-up</button></div></form>';
+    const inner = '<div class="mhead"><div><h3>Follow-ups · ' + esc(nameOf(openFU)) + '</h3><div class="sub">' + (open.length ? plural(open.length, "open item", "open items") : "Nothing open") + '</div></div><button type="button" class="close" data-act="close" data-level="2" aria-label="Close">×</button></div>' +
+      '<div class="mbody">' + (open.length ? '<ul class="fulist">' + items + "</ul>" : '<p class="muted" style="margin:0">No open follow-ups.</p>') + form + doneHTML + "</div>";
+    host.innerHTML = scrim(2, inner, "Follow-ups for " + nameOf(openFU));
+  }
+
+  function renderLegend() {
+    const L = [["live", "Live and spending"], ["missing", "Expected, not running"], ["noaccess", "We lost access"], ["confirm", "Not sure it's in scope"], ["paused", "Paused on purpose"]];
+    $("legend").innerHTML = L.map(([s, t]) => '<span><span class="ch" data-state="' + s + '">' + tileHTML("google", s) + "</span>" + t + "</span>").join("") +
+      '<span><span class="age ok">3d</span>/<span class="age warn">5d</span>/<span class="age bad">7d</span> days since last check</span>';
+    for (const b of $("filters").querySelectorAll("button")) b.setAttribute("aria-pressed", String(!quick && b.dataset.f === filter));
+  }
+
+  let raf = 0;
+  function render() {
+    if (raf) return;
+    raf = requestAnimationFrame(() => {
+      raf = 0;
+      const keep = {}; for (const id of ["fuTitle", "fuDue", "fuDetails"]) { const el = $(id); if (el) keep[id] = el.value; }
+      const focusId = document.activeElement && document.activeElement.id;
+      const scrollTop = [...document.querySelectorAll(".modal")].map((m) => m.scrollTop);
+      const d = new Date(); $("today").textContent = DOW[d.getDay()] + ", " + fmt(todayStr()) + ", " + d.getFullYear();
+      renderLegend();
+      if (!S.loadedC || !S.loadedF) return;
+      const D = derive();
+      renderTallies(D); renderCards(D); renderM1(D); renderM2(D);
+      document.body.classList.toggle("locked", !!(openClient || openFU));
+      for (const [id, v] of Object.entries(keep)) { const el = $(id); if (el) el.value = v; }
+      [...document.querySelectorAll(".modal")].forEach((m, i) => { if (scrollTop[i] != null) m.scrollTop = scrollTop[i]; });
+      if (focusId && $(focusId)) $(focusId).focus();
+      if (S.sync) $("foot").innerHTML = "<span>Channel status and spend as of <b>" + esc(fmt(S.sync.channelsAsOf)) + "</b> (" + esc(S.sync.window || "last 7 days") + "). " + esc(S.sync.source || "") + "</span><span>Claude reads and writes this same list from any session: follow-ups added there show up here, and anything you mark here is visible to Claude.</span>";
+    });
+  }
+  function focusTop() { requestAnimationFrame(() => requestAnimationFrame(() => { const c = document.querySelector("#m2 .close") || document.querySelector("#m1 .close"); if (c) c.focus(); })); }
+  function openClientModal(slug, from) { lastFocus = from || null; openClient = slug; openFU = null; render(); focusTop(); }
+  function closeLevel(level) {
+    if (level === 2 || openFU) { openFU = null; if (openClient === GENERAL || !openClient) { openClient = null; restore(); } else focusTop(); }
+    else { openClient = null; restore(); }
+    render();
+  }
+  function restore() { const f = lastFocus; lastFocus = null; if (f && document.body.contains(f)) requestAnimationFrame(() => f.focus()); }
+
+  // toast + undo
+  let toastTimer = 0, undoFn = null;
+  function toast(msg, undo) {
+    $("toastMsg").textContent = msg; undoFn = undo || null; $("toastUndo").hidden = !undo; $("toast").hidden = false;
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => { $("toast").hidden = true; undoFn = null; }, 7000);
+  }
+  $("toastUndo").addEventListener("click", async () => { const fn = undoFn; undoFn = null; $("toast").hidden = true; if (fn) { try { await fn(); } catch (e) { toast(errText(e)); } } });
+  function errText(e) {
+    const code = e && e.code;
+    if (code === "invalid_argument") return "That change was refused. You may only have view access to this page.";
+    if (code === "quota_exceeded") return "The page's database is full. Ask Claude to archive old follow-ups.";
+    return "Couldn't save. Check your connection and try again.";
+  }
+
+  async function markChecked(slug, key) {
+    const c = S.clients.get(slug); if (!c || !db) return;
+    const prev = (c.channels || {})[key] || {}; const T = todayStr();
+    try {
+      await db.doc("clients/" + slug).update({ channels: { [key]: { lastChecked: T, checkSource: "Marked on the command center" } } });
+      db.collection("checks").add({ client: slug, channel: key, date: T, at: new Date().toISOString(), by: "command center" }).catch(() => {});
+      toast(c.name + " · " + chName(key) + " marked checked", () => db.doc("clients/" + slug).update({ channels: { [key]: { lastChecked: prev.lastChecked || null, checkSource: prev.checkSource || null } } }));
+    } catch (e) { toast(errText(e)); }
+  }
+  async function setDone(id) {
+    const f = S.fus.get(id); if (!f || !db) return;
+    try { await db.doc("followups/" + id).update({ status: "done", doneAt: todayStr() }); toast("Done: " + String(f.title).slice(0, 60), () => db.doc("followups/" + id).update({ status: "open", doneAt: null })); }
+    catch (e) { toast(errText(e)); }
+  }
+  async function reopen(id) {
+    const f = S.fus.get(id); if (!f || !db) return;
+    try { await db.doc("followups/" + id).update({ status: "open", doneAt: null }); toast("Reopened: " + String(f.title).slice(0, 60)); } catch (e) { toast(errText(e)); }
+  }
+  async function snooze(id, days) {
+    const f = S.fus.get(id); if (!f || !db) return;
+    const T = todayStr(); const base = f.due && f.due > T ? f.due : T; const next = addDays(base, days);
+    try { await db.doc("followups/" + id).update({ due: next, snoozes: (f.snoozes || 0) + 1 }); toast("Moved to " + fmt(next), () => db.doc("followups/" + id).update({ due: f.due || null, snoozes: f.snoozes || 0 })); }
+    catch (e) { toast(errText(e)); }
+  }
+  async function addFU(slug, title, due, details) {
+    if (!db || !title.trim()) return false;
+    try {
+      await db.collection("followups").add({ client: slug === GENERAL ? null : slug, title: title.trim(), details: (details || "").trim() || null, note: null, due: due || null, status: "open", createdAt: todayStr(), createdBy: "Edu" });
+      toast("Follow-up saved" + (due ? " for " + fmt(due) : "")); return true;
+    } catch (e) { toast(errText(e)); return false; }
+  }
+
+  document.addEventListener("click", (ev) => {
+    const b = ev.target.closest("[data-act]"); if (!b) return;
+    const act = b.dataset.act;
+    if (act === "scrim") { if (ev.target === b) closeLevel(Number(b.dataset.level)); return; }
+    if (act === "open") openClientModal(b.dataset.slug, b);
+    else if (act === "opengeneral") { lastFocus = b; openClient = GENERAL; openFU = GENERAL; render(); focusTop(); }
+    else if (act === "openfu") { openFU = b.dataset.slug; render(); focusTop(); }
+    else if (act === "close") closeLevel(Number(b.dataset.level));
+    else if (act === "quick") { quick = quick === b.dataset.q ? null : b.dataset.q; render(); }
+    else if (act === "check") markChecked(b.dataset.slug, b.dataset.ch);
+    else if (act === "done") setDone(b.dataset.id);
+    else if (act === "reopen") reopen(b.dataset.id);
+    else if (act === "snooze") snooze(b.dataset.id, Number(b.dataset.days));
+  });
+  document.addEventListener("keydown", (ev) => { if (ev.key === "Escape" && (openFU || openClient)) { ev.preventDefault(); closeLevel(openFU ? 2 : 1); } });
+  $("filters").addEventListener("click", (ev) => {
+    const b = ev.target.closest("button[data-f]"); if (!b) return;
+    filter = b.dataset.f; quick = null; try { localStorage.setItem("cc.filter", filter); } catch (e) {} render();
+  });
+  document.addEventListener("submit", async (ev) => {
+    if (ev.target.id !== "addfu") return;
+    ev.preventDefault();
+    if (await addFU(openFU, $("fuTitle").value, $("fuDue").value, $("fuDetails").value)) { $("fuTitle").value = ""; $("fuDue").value = ""; $("fuDetails").value = ""; }
+  });
+
+  render();
+  setInterval(render, 10 * 60 * 1000);
+
+  (async () => {
+    db = await window.claude?.use?.("db");
+    if (!db) {
+      document.body.classList.add("readonly");
+      $("cards").innerHTML = '<p class="notice">The client list lives in this page\'s database, which this view can\'t reach. Open the page on claude.ai while signed in.</p>';
+      return;
+    }
+    try { const user = await window.claude.use("user"); if (user && (await user.can("data.write")) === false) document.body.classList.add("readonly"); } catch (e) {}
+    const fail = () => { $("cards").innerHTML = '<p class="notice">Lost the connection to the page\'s database. Reload the page to reconnect.</p>'; };
+    let hashDone = false;
+    const tryHash = () => { if (hashDone || !S.loadedC) return; hashDone = true; const h = (location.hash || "").slice(1); if (h && S.clients.has(h)) openClientModal(h, null); };
+    db.collection("clients").onSnapshot((snap) => { S.clients = new Map(snap.docs.map((d) => [d.id, Object.assign({ id: d.id }, d.data())])); S.loadedC = true; render(); tryHash(); }, fail);
+    db.collection("followups").onSnapshot((snap) => { S.fus = new Map(snap.docs.map((d) => [d.id, Object.assign({ id: d.id }, d.data())])); S.loadedF = true; render(); }, fail);
+    db.doc("meta/sync").onSnapshot((snap) => { S.sync = snap.exists ? snap.data() : null; render(); }, () => {});
+  })();
+})();
+</script>

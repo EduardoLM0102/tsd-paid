@@ -1,0 +1,75 @@
+platform,account_id,account_name,client,status,tsd_managed_since,evidence
+Meta,381256660973192,Zen Air - Third Ad account,Zen Air Heating and Cooling,current,,clients/zen-air
+Meta,588638883283311,Watt's Right Electric,Watt's Right Electric,current,,clients/watts-right
+Meta,1434273655098937,GC Home Service,GC Home Service,current,,clients/gc-home-service
+Meta,1846637992293356,On Time Service Pro's,On Time Service Pros,current,2026-03-01,Edu 2026-09-29: run by someone else before March 2026 (first TSD-named campaign ran March 2026)
+Meta,438790276573563,Napps - Topservdigital,Napps Cooling Heating & Plumbing,current,,clients/napps
+Meta,79203382,Mission Accomplished,Mission Accomplished,current,,clients/mission-accomplished
+Meta,1664197513868366,All Heart Heating & Cooling,All Heart Heating & Cooling,offboarded,,Offboarded (Meta campaigns paused 2026-08-20)
+Meta,483679897962388,TopServ - King's Window Services,King's Window Services,current,,clients/kings-window
+Meta,1845825982372184,Spencer Air,Spencer Air,current,,clients/spencer-air
+Meta,2405306059725517,All Seasons Air Conditioning,All Seasons AC,current,,clients/all-seasons-ac
+Meta,705877631084699,Neon Monkey Services,Neon Monkey Services,current,,clients/neon-monkey
+Meta,10086442468052740,Hawkins Siding Ads,Hawkins Siding and Exterior,current,,clients/hawkins-siding
+Meta,2014320269203822,Gillespie's Heating and Cooling,Gillespie's Heating and Cooling,current,,clients/gillespie-heating-cooling; Meta access lost by 2026-10-07 (account no longer visible to the connector). 12-month data was pulled 2026-09-28.
+Meta,710350517676765,Nicks heating & Air LLC,Nick's Heating & Air,current,,Cited as a current account in clients/on-the-way/meta-ads-log.md (2026-09-16)
+Meta,1517373248873821,Cool Hand Electric,Cool Hand Electric,current,,clients/cool-hand-electric
+Meta,1428068256022895,On The Way Pros Ad Account,On The Way AC Plumbing & Electrical,offboarding,,"clients/on-the-way (Meta not pulled: its awareness campaign only ran 2026-09-04 to 09-11); Edu 2026-10-07: no longer counted as current, likely offboarding (client revoked TSD Google Ads access 2026-10-05)"
+Meta,2070047533283360,ICS,Integrate Comfort Systems,current,,"Edu 2026-10-07 confirmed ICS = Integrate Comfort. Connector cannot read it (Ads MCP not enabled for the account); only Alex has its data (agency token, last 90 days). Not in raw/."
+Meta,532145676808452,(unnamed; business 'Wattenbarger Racing'),UNCONFIRMED HVAC advertiser,unconfirmed,,"No record in workspace; runs HVAC ads with TSD naming; delivers in Oklahoma (Alex agency-token pull, region breakdown)"
+Meta,170464733924961,Allen Black,UNCONFIRMED electrical advertiser,unconfirmed,,No record in workspace; one boosted post
+Meta,849885463684603,Rhino FB Ads Account,UNCONFIRMED (Rhino),unconfirmed,,"Not Lily Pad: 100% of delivery in Oklahoma (Alex agency-token pull), Lily Pad is Salina/Hutchinson KS and has its own Meta account 123589321338300 (no delivery). Owned by the Topservdigital business. Connector cannot read it."
+Meta,871958544802411,Your New Door Ad Account,UNCONFIRMED (Your New Door),unconfirmed,,Zero delivery in the last 90 days (Alex agency-token pull). Connector cannot read it.
+Meta,1997521500535964,TopServ Digital Ads,TopServ Digital (internal),internal,,TopServ's own ad account
+Meta,2999650013725143,TopServ Digital,TopServ Digital (internal),internal,,TopServ's own ad account
+Google,1051843378,Proud Pops Plumbing Air & Electric - PPC,Proud Pops,current,,contas.yaml; clients/proud-pops (Edu 2026-09-29: TSD all 12 months)
+Google,7261668241,Proud Pops - LSA San Antonio [1],Proud Pops,current,,contas.yaml
+Google,6621969129,Proud Pops - LSA San Antonio [2],Proud Pops,current,,contas.yaml
+Google,3477779749,[Old Account] The Problem Solvers - LSA Roofing,Proud Pops,current,,contas.yaml (legacy Problem Solvers account)
+Google,9815330464,My Favorite Service Company,Proud Pops,current,,contas.yaml (merged with Proud Pops)
+Google,4127524472,My Favorite Service Company - LSA New Braunfels,Proud Pops,current,,contas.yaml (merged with Proud Pops)
+Google,4905286019,My Favorite Service Company - LSA San Antonio,Proud Pops,current,,contas.yaml (merged with Proud Pops)
+Google,3651667805,Watt's Right - Tulsa,Watt's Right Electric,current,,contas.yaml
+Google,3454686129,On The Way AC Plumbing & Electrical,On The Way AC Plumbing & Electrical,offboarding,2026-09-09,"Edu 2026-09-29: campaigns before the 09-09 TSD build were run by someone else; Edu 2026-10-07: no longer counted as current, likely offboarding (client revoked TSD Google Ads access 2026-10-05)"
+Google,9049508615,Strickland Heating & Air,Strickland Heating & Air,current,,Edu 2026-09-29 confirmed current client (not in workspace yet)
+Google,2198608170,Hawkins Siding and Exterior,Hawkins Siding and Exterior,current,,contas.yaml
+Google,7953905280,Neon Monkey Services,Neon Monkey Services,current,,contas.yaml
+Google,1219885876,Neon Monkey Services - LSA,Neon Monkey Services,current,,contas.yaml
+Google,4193142570,Golden Plumbing,Golden Plumbing,current,,contas.yaml
+Google,4467722415,All Seasons AC,All Seasons AC,current,,contas.yaml
+Google,6769493219,King's Window Services - PPC & LSA,King's Window Services,current,,clients/kings-window
+Google,4360840956,Zen Air Heating and Cooling,Zen Air Heating and Cooling,current,,contas.yaml
+Google,3740502923,Zen Air Heating and Cooling - LSA,Zen Air Heating and Cooling,current,,contas.yaml
+Google,9509605037,Napps Cooling Heating & Plumbing,Napps Cooling Heating & Plumbing,current,,clients/napps
+Google,9239407401,Napps Cooling Heating & Plumbing - LSA,Napps Cooling Heating & Plumbing,current,,clients/napps
+Google,2524618054,Spencer Air Conditioning,Spencer Air,current,,clients/spencer-air
+Google,1854100356,Nicks Heating and Cooling,Nick's Heating & Air,current,,Same client as Meta 710350517676765 (name and New Orleans market match)
+Google,4571881760,Integrate Comfort Systems,Integrate Comfort Systems,current,,Edu 2026-09-29 confirmed current client
+Google,2895702982,Integrate Comfort Systems - LSA Belleville,Integrate Comfort Systems,current,,Edu 2026-09-29 confirmed current client
+Google,2175964343,Integrate Comfort System - LSA Carlstadt,Integrate Comfort Systems,current,,Edu 2026-09-29 confirmed current client
+Google,8323145223,Integrate Comfort System - LSA Englewood Cliff,Integrate Comfort Systems,current,,Edu 2026-09-29 confirmed current client
+Google,1056617442,Live Wire Electric,Live Wire Electric,current,,contas.yaml
+Google,5563867754,(LSA) C&S Air inc.,C&S Air,current,,contas.yaml
+Google,8634274092,Mission Accomplished,Mission Accomplished,current,,contas.yaml
+Google,4904262993,Mission Accomplished - LSA,Mission Accomplished,current,,contas.yaml
+Google,2375064049,GC Home Service,GC Home Service,current,,clients/gc-home-service
+Google,2974002658,(unnamed LSA),GC Home Service,current,,GC's separate LSA account (clients/gc-home-service)
+Google,9865206319,Cool Hand Electric,Cool Hand Electric,current,,contas.yaml
+Google,3797438623,RYNO - Lily Pad Septic,Lily Pad Septic,current,2026-08-20,contas.yaml: takeover from RYNO; TSD campaigns built 2026-08-20
+Google,7410489772,Gillespie's HVAC,Gillespie's Heating and Cooling,current,,contas.yaml
+Google,9005488539,Eaglepoint Roofing & Exterior LLC,Eaglepoint Roofing & Exterior,current,,contas.yaml
+Google,9976029542,All Heart Heating & Cooling [Lancaster HVAC],All Heart Heating & Cooling,offboarded,,Offboarded client (LSA still spending under the MCC)
+Google,8199337860,All Heart Heating Cooling & Plumbing [Lancaster Plumbing],All Heart Heating & Cooling,offboarded,,Offboarded client (LSA still spending under the MCC)
+Google,5064174352,All Heart Heating & Cooling [Kern County HVAC],All Heart Heating & Cooling,offboarded,,Offboarded client (LSA still spending under the MCC)
+Google,7662998005,All Heart Heating [Kern County Plumbing],All Heart Heating & Cooling,offboarded,,Offboarded client (LSA still spending under the MCC)
+Google,9205826499,All Heart Heating & Cooling -PPC,All Heart Heating & Cooling,offboarded,,Offboarded client
+Google,6191956550,Gray Duct Technologies,Gray Duct Technologies,not_current,,Edu 2026-09-29: not a current client
+Google,9215192296,Concrete Adventures - SC MS,Concrete Adventures,not_current,,Edu 2026-09-29: not a current client
+Google,1932181525,DFW _Unsuspended PPC & LSA,unknown,unconfirmed,,No record in workspace; no spend in the last 4 weeks
+Google,5570598688,Potomac LSA & PPC,unknown,unconfirmed,,No record in workspace; no spend in the last 4 weeks
+Google,8655979348,(unnamed LSA; Long Island NY targets),unknown,unconfirmed,,clients/proud-pops/budget-analysis-2025-2026.md: not Proud Pops; client unknown
+Google,8810470846,Supreme AC,unknown,unconfirmed,,No record in workspace; no spend in the last 4 weeks
+Google,9020391433,Modern Comfort & Air,unknown,unconfirmed,,No record in workspace; no spend in the last 4 weeks
+Google,5398754370,AC Cornerstone Building,unknown,unconfirmed,,No record in workspace; no spend in the last 4 weeks
+Google,6093202413,Ultimate Comfort - LSA,unknown,unconfirmed,,No record in workspace; no spend in the last 4 weeks
+Google,8513856629,TopServ Digital Google Ads Account,TopServ Digital (internal),internal,,TopServ's own ad account

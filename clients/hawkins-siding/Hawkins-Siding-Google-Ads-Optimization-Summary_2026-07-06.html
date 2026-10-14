@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: Letter; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #1a2432;
+    width: 8.5in; height: 11in;
+    padding: 0.62in 0.72in 0.5in;
+    position: relative;
+    font-size: 10.6px;
+    line-height: 1.5;
+  }
+  .bar { height: 6px; background: linear-gradient(90deg,#12305a 0%,#1f4f8a 55%,#c9a24b 100%);
+         position: absolute; top: 0; left: 0; right: 0; }
+  header { display: flex; justify-content: space-between; align-items: flex-end;
+           border-bottom: 1.5px solid #e4e8ee; padding-bottom: 13px; margin-bottom: 20px; }
+  .brand { font-size: 17px; font-weight: 800; letter-spacing: .4px; color: #12305a; }
+  .brand span { color: #c9a24b; }
+  .brand .tag { display:block; font-size: 8.2px; font-weight:600; letter-spacing:2.4px;
+                color:#7b8698; margin-top:3px; text-transform: uppercase; }
+  .meta { text-align: right; font-size: 9px; color: #6b7688; line-height: 1.65; }
+  .meta b { color:#1a2432; }
+  h1 { font-size: 19px; color:#12305a; font-weight: 800; letter-spacing:-.2px; margin-bottom: 4px; }
+  .sub { font-size: 10.5px; color:#6b7688; margin-bottom: 16px; }
+  .lead { font-size: 11px; line-height: 1.6; color:#33404f; margin-bottom: 20px;
+          background:#f6f8fb; border-left:3px solid #1f4f8a; padding: 12px 15px; border-radius: 0 5px 5px 0; }
+  h2 { font-size: 9px; letter-spacing: 1.8px; text-transform: uppercase; color:#1f4f8a;
+       font-weight: 800; margin-bottom: 10px; padding-bottom: 5px; border-bottom: 1px solid #eceef2; }
+  .section { margin-bottom: 18px; }
+  ul { list-style: none; }
+  li { padding-left: 20px; position: relative; margin-bottom: 8px; line-height: 1.5; }
+  li::before { content: ""; position: absolute; left: 3px; top: 6px; width: 6px; height: 6px;
+               border-radius: 50%; background: #c9a24b; }
+  li b { color:#12305a; }
+  .cols { display: flex; gap: 24px; }
+  .col { flex: 1; }
+  .chipbox { background:#fbfaf5; border:1px solid #ecdfc0; border-radius: 6px; padding: 12px 14px; margin-top: 4px; }
+  .chipbox .cap { font-size: 8px; letter-spacing:1.4px; text-transform:uppercase; color:#a1832f;
+                  font-weight:700; margin-bottom: 8px; }
+  .chips { display:flex; flex-wrap: wrap; gap: 6px; }
+  .chip { background:#fff; border:1px solid #e2d3a8; color:#5f4e21; font-size:9.3px; font-weight:600;
+          padding: 3px 9px; border-radius: 20px; }
+  .result { display:flex; gap: 12px; }
+  .rcard { flex:1; background:#f6f8fb; border-radius:6px; padding: 11px 13px; }
+  .rcard .t { font-size:9px; letter-spacing:.6px; text-transform:uppercase; color:#1f4f8a; font-weight:800; margin-bottom:4px; }
+  .rcard .d { font-size:9.6px; color:#4a5666; line-height:1.45; }
+  footer { position: absolute; bottom: 0.42in; left: 0.72in; right: 0.72in;
+           border-top: 1px solid #e4e8ee; padding-top: 9px;
+           display:flex; justify-content: space-between; font-size: 8.3px; color:#939cab; }
+  footer b { color:#12305a; }
+</style>
+</head>
+<body>
+  <div class="bar"></div>
+
+  <header>
+    <div class="brand">TopServ<span>·</span>Digital
+      <span class="tag">Brandformance — Paid Media</span>
+    </div>
+    <div class="meta">
+      Prepared for <b>Hawkins Siding &amp; Exterior</b><br>
+      Channel: <b>Google Ads</b><br>
+      Date: <b>July 6, 2026</b>
+    </div>
+  </header>
+
+  <h1>Google Ads — Performance Optimization Summary</h1>
+  <div class="sub">Weekly account management &middot; search targeting &amp; lead-quality refinement</div>
+
+  <div class="lead">
+    As part of our ongoing management of your Google Ads account, our paid team completed a
+    search-quality review this week and sharpened your campaign targeting. The goal, as always:
+    keep every advertising dollar concentrated on homeowners actively searching for
+    <b>siding, windows, doors, and exterior work</b> across your Dallas-metro service area.
+  </div>
+
+  <div class="section">
+    <h2>What we optimized this week</h2>
+    <ul>
+      <li><b>Sharpened search targeting.</b> Refined your active search campaign so your ads
+        concentrate purely on home-exterior intent, tuning out loosely related automotive and
+        auto-glass searches that don't match your services.</li>
+      <li><b>Focused the budget.</b> With tighter targeting in place, more of your spend now
+        reaches high-intent homeowners looking for exterior improvements.</li>
+      <li><b>Protected genuine demand.</b> Legitimate home window-replacement searches — a strong
+        performer for you — remain fully active and untouched.</li>
+    </ul>
+    <div class="chipbox">
+      <div class="cap">Search refinements applied to your live campaign</div>
+      <div class="chips">
+        <span class="chip">car</span><span class="chip">auto</span><span class="chip">automotive</span>
+        <span class="chip">windshield</span><span class="chip">windscreen</span><span class="chip">vehicle</span>
+        <span class="chip">truck</span><span class="chip">car window</span><span class="chip">auto glass</span>
+        <span class="chip">window tint</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>What this means for you</h2>
+    <div class="result">
+      <div class="rcard"><div class="t">Higher lead relevance</div>
+        <div class="d">More inquiries from homeowners who genuinely match your siding, window, and exterior services.</div></div>
+      <div class="rcard"><div class="t">Improved efficiency</div>
+        <div class="d">Budget stays focused on qualified, high-intent exterior searches in your market.</div></div>
+      <div class="rcard"><div class="t">No disruption</div>
+        <div class="d">Real window-replacement demand keeps converting exactly as before.</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>What's next</h2>
+    <ul>
+      <li><b>Account-wide consistency.</b> We're rolling the targeting framework across all of your
+        campaigns as a shared standard, so every current and future campaign stays aligned by default.</li>
+      <li><b>Continuous monitoring.</b> We'll keep reviewing live search activity and tightening
+        match settings on your window and siding ad groups to push lead quality even higher.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <div>Prepared by <b>TopServ Digital — Paid Media Division</b></div>
+    <div>Brandformance &middot; Confidential client summary</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,1212 @@
+[
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199263226493",
+      "name": "HVAC-General-Company"
+    },
+    "metrics": {
+      "clicks": "65",
+      "conversions": 3.0,
+      "cost_micros": 1086.65,
+      "ctr": 0.0593607305936073,
+      "average_cpc": 16717692.307692308,
+      "impressions": "1095",
+      "cost": 1086.65
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199263226493~357622708",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "hvac company"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199263226493~357622708"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199263226493",
+      "name": "HVAC-General-Company"
+    },
+    "metrics": {
+      "clicks": "19",
+      "conversions": 2.0,
+      "cost_micros": 312.909157,
+      "ctr": 0.0695970695970696,
+      "average_cpc": 16468903.0,
+      "impressions": "273",
+      "cost": 312.909157
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199263226493~344060228",
+      "status": "ENABLED",
+      "quality_info": {
+        "quality_score": 2
+      },
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "hvac service"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199263226493~344060228"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199028708869",
+      "name": "Furnace-Heating-Repair"
+    },
+    "metrics": {
+      "clicks": "11",
+      "conversions": 0.0,
+      "cost_micros": 157.02,
+      "ctr": 0.10891089108910891,
+      "average_cpc": 14274545.454545455,
+      "impressions": "101",
+      "cost": 157.02
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199028708869~142140741",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "heating repair"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199028708869~142140741"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/202443542394",
+      "name": "AC-Repair-Install"
+    },
+    "metrics": {
+      "clicks": "9",
+      "conversions": 0.0,
+      "cost_micros": 130.0,
+      "ctr": 0.08653846153846154,
+      "average_cpc": 14444444.444444444,
+      "impressions": "104",
+      "cost": 130.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/202443542394~218173674",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "ac installation"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/202443542394~218173674"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137071057",
+      "name": "Heat-Pump-Services"
+    },
+    "metrics": {
+      "clicks": "7",
+      "conversions": 0.0,
+      "cost_micros": 83.71,
+      "ctr": 0.1044776119402985,
+      "average_cpc": 11958571.42857143,
+      "impressions": "67",
+      "cost": 83.71
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137071057~314711675",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "heat pump replacement"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137071057~314711675"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/202443542394",
+      "name": "AC-Repair-Install"
+    },
+    "metrics": {
+      "clicks": "6",
+      "conversions": 1.0,
+      "cost_micros": 61.32,
+      "ctr": 0.061855670103092786,
+      "average_cpc": 10220000.0,
+      "impressions": "97",
+      "cost": 61.32
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/202443542394~128634778",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "air conditioning repair"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/202443542394~128634778"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/202443542394",
+      "name": "AC-Repair-Install"
+    },
+    "metrics": {
+      "clicks": "8",
+      "conversions": 0.0,
+      "cost_micros": 54.38,
+      "ctr": 0.07476635514018691,
+      "average_cpc": 6797500.0,
+      "impressions": "107",
+      "cost": 54.38
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/202443542394~318812266",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "ac replacement"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/202443542394~318812266"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199263226493",
+      "name": "HVAC-General-Company"
+    },
+    "metrics": {
+      "clicks": "7",
+      "conversions": 0.0,
+      "cost_micros": 53.44,
+      "ctr": 0.07142857142857142,
+      "average_cpc": 7634285.714285715,
+      "impressions": "98",
+      "cost": 53.44
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199263226493~132591460",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "hvac contractor"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199263226493~132591460"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199028708869",
+      "name": "Furnace-Heating-Repair"
+    },
+    "metrics": {
+      "clicks": "3",
+      "conversions": 0.0,
+      "cost_micros": 47.11,
+      "ctr": 0.04,
+      "average_cpc": 15703333.333333334,
+      "impressions": "75",
+      "cost": 47.11
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199028708869~125848594",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "furnace replacement"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199028708869~125848594"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199263226493",
+      "name": "HVAC-General-Company"
+    },
+    "metrics": {
+      "clicks": "2",
+      "conversions": 0.0,
+      "cost_micros": 34.84,
+      "ctr": 0.1,
+      "average_cpc": 17420000.0,
+      "impressions": "20",
+      "cost": 34.84
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199263226493~55807953544",
+      "status": "ENABLED",
+      "quality_info": {
+        "quality_score": 3
+      },
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "hvac repair near me"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199263226493~55807953544"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137071057",
+      "name": "Heat-Pump-Services"
+    },
+    "metrics": {
+      "clicks": "1",
+      "conversions": 0.0,
+      "cost_micros": 11.75,
+      "ctr": 1.0,
+      "average_cpc": 11750000.0,
+      "impressions": "1",
+      "cost": 11.75
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137071057~314713295",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "heat pump installation"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137071057~314713295"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199263226493",
+      "name": "HVAC-General-Company"
+    },
+    "metrics": {
+      "clicks": "2",
+      "conversions": 0.0,
+      "cost_micros": 5.82,
+      "ctr": 0.2222222222222222,
+      "average_cpc": 2910000.0,
+      "impressions": "9",
+      "cost": 5.82
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199263226493~10837840635",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "local hvac company"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199263226493~10837840635"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137071057",
+      "name": "Heat-Pump-Services"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137071057~215238074",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "heat pump repair"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137071057~215238074"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137071057",
+      "name": "Heat-Pump-Services"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137071057~314278570",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "heat pump installation"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137071057~314278570"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137071057",
+      "name": "Heat-Pump-Services"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "ctr": 0.0,
+      "impressions": "3",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137071057~314711465",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "heat pump service"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137071057~314711465"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137071057",
+      "name": "Heat-Pump-Services"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "ctr": 0.0,
+      "impressions": "19",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137071057~4332422790",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "mini split installation"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137071057~4332422790"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137071057",
+      "name": "Heat-Pump-Services"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "ctr": 0.0,
+      "impressions": "1",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137071057~13909238427",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "ductless mini split installation"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137071057~13909238427"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137071057",
+      "name": "Heat-Pump-Services"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137071057~313540364389",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "heat pump not working"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137071057~313540364389"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155673340",
+      "name": "TSD_08.18_Search_Branded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137075177",
+      "name": "Brand-Terms"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137075177~341826988950",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespie air conditioning"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137075177~341826988950"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155673340",
+      "name": "TSD_08.18_Search_Branded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137075177",
+      "name": "Brand-Terms"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "ctr": 0.0,
+      "impressions": "2",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137075177~906331055472",
+      "status": "ENABLED",
+      "quality_info": {
+        "quality_score": 6
+      },
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespie heating and cooling"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137075177~906331055472"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155673340",
+      "name": "TSD_08.18_Search_Branded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137075177",
+      "name": "Brand-Terms"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137075177~981381185418",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespie hvac"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137075177~981381185418"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155673340",
+      "name": "TSD_08.18_Search_Branded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137075177",
+      "name": "Brand-Terms"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137075177~2498412607635",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespies heating and cooling"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137075177~2498412607635"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155673340",
+      "name": "TSD_08.18_Search_Branded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137075177",
+      "name": "Brand-Terms"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137075177~2498412607675",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespie heating & cooling"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137075177~2498412607675"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155673340",
+      "name": "TSD_08.18_Search_Branded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137075177",
+      "name": "Brand-Terms"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137075177~2498412608115",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespie heating and cooling brooksville"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137075177~2498412608115"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155673340",
+      "name": "TSD_08.18_Search_Branded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137075177",
+      "name": "Brand-Terms"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137075177~2498412608155",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespie hvac brooksville ky"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137075177~2498412608155"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155673340",
+      "name": "TSD_08.18_Search_Branded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137075177",
+      "name": "Brand-Terms"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/197137075177~2498412618715",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespie's heating and cooling"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/197137075177~2498412618715"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199028708869",
+      "name": "Furnace-Heating-Repair"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199028708869~12678680",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "furnace repair"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199028708869~12678680"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199028708869",
+      "name": "Furnace-Heating-Repair"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199028708869~115636961",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "furnace repair"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199028708869~115636961"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199028708869",
+      "name": "Furnace-Heating-Repair"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "ctr": 0.0,
+      "impressions": "2",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199028708869~218172834",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "furnace installation"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199028708869~218172834"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199028708869",
+      "name": "Furnace-Heating-Repair"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "ctr": 0.0,
+      "impressions": "6",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199028708869~279579187",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "heater repair"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199028708869~279579187"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199028708869",
+      "name": "Furnace-Heating-Repair"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199028708869~301769526",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "gas furnace repair"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199028708869~301769526"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199028708869",
+      "name": "Furnace-Heating-Repair"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "ctr": 0.0,
+      "impressions": "29",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199028708869~4343738631",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "furnace not working"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199028708869~4343738631"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199263226493",
+      "name": "HVAC-General-Company"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "ctr": 0.0,
+      "impressions": "1",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199263226493~55807954504",
+      "status": "ENABLED",
+      "quality_info": {
+        "quality_score": 3
+      },
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "hvac repair near me"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199263226493~55807954504"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199263226493",
+      "name": "HVAC-General-Company"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199263226493~303123756678",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "hvac technician near me"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199263226493~303123756678"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199263226493",
+      "name": "HVAC-General-Company"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "ctr": 0.0,
+      "impressions": "2",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/199263226493~352629349167",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "hvac company near me"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/199263226493~352629349167"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/202443542394",
+      "name": "AC-Repair-Install"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "ctr": 0.0,
+      "impressions": "2",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/202443542394~28490681",
+      "status": "ENABLED",
+      "quality_info": {
+        "quality_score": 3
+      },
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "ac repair"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/202443542394~28490681"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/202443542394",
+      "name": "AC-Repair-Install"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "ctr": 0.0,
+      "impressions": "7",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/202443542394~63226180",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "air conditioner installation"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/202443542394~63226180"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/202443542394",
+      "name": "AC-Repair-Install"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "ctr": 0.0,
+      "impressions": "4",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/202443542394~128634658",
+      "status": "ENABLED",
+      "quality_info": {
+        "quality_score": 3
+      },
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "air conditioner repair"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/202443542394~128634658"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/202443542394",
+      "name": "AC-Repair-Install"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "ctr": 0.0,
+      "impressions": "27",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/202443542394~218172774",
+      "status": "ENABLED",
+      "quality_info": {
+        "quality_score": 3
+      },
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "ac repair"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/202443542394~218172774"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/202443542394",
+      "name": "AC-Repair-Install"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "0",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/202443542394~356743168",
+      "status": "ENABLED",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "central air repair"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/202443542394~356743168"
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/202443542394",
+      "name": "AC-Repair-Install"
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "ctr": 0.0,
+      "impressions": "1",
+      "cost": 0.0
+    },
+    "ad_group_criterion": {
+      "resource_name": "customers/7410489772/adGroupCriteria/202443542394~3452043924",
+      "status": "ENABLED",
+      "quality_info": {
+        "quality_score": 3
+      },
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "ac tune up"
+      }
+    },
+    "keyword_view": {
+      "resource_name": "customers/7410489772/keywordViews/202443542394~3452043924"
+    }
+  }
+]

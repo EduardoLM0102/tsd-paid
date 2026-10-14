@@ -1,0 +1,626 @@
+[
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~10005011",
+      "keyword": {
+        "match_type": "BROAD",
+        "text": "job"
+      },
+      "criterion_id": "10005011"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~10005021",
+      "keyword": {
+        "match_type": "BROAD",
+        "text": "jobs"
+      },
+      "criterion_id": "10005021"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~10020900",
+      "keyword": {
+        "match_type": "BROAD",
+        "text": "employment"
+      },
+      "criterion_id": "10020900"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~10077941",
+      "keyword": {
+        "match_type": "BROAD",
+        "text": "roofing"
+      },
+      "criterion_id": "10077941"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~10083101",
+      "keyword": {
+        "match_type": "BROAD",
+        "text": "hiring"
+      },
+      "criterion_id": "10083101"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~10128161",
+      "keyword": {
+        "match_type": "BROAD",
+        "text": "plumber"
+      },
+      "criterion_id": "10128161"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~10205881",
+      "keyword": {
+        "match_type": "BROAD",
+        "text": "career"
+      },
+      "criterion_id": "10205881"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~10317631",
+      "keyword": {
+        "match_type": "BROAD",
+        "text": "careers"
+      },
+      "criterion_id": "10317631"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~10363271",
+      "keyword": {
+        "match_type": "BROAD",
+        "text": "plumbing"
+      },
+      "criterion_id": "10363271"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~10446751",
+      "keyword": {
+        "match_type": "BROAD",
+        "text": "electrical"
+      },
+      "criterion_id": "10446751"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~10940361",
+      "keyword": {
+        "match_type": "BROAD",
+        "text": "roofer"
+      },
+      "criterion_id": "10940361"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~10940571",
+      "keyword": {
+        "match_type": "BROAD",
+        "text": "electrician"
+      },
+      "criterion_id": "10940571"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~12471160",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "how to"
+      },
+      "criterion_id": "12471160"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~17273460",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "home depot"
+      },
+      "criterion_id": "17273460"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~22221522",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "cheap"
+      },
+      "criterion_id": "22221522"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~26317663",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "capacitor"
+      },
+      "criterion_id": "26317663"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~33920640",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "diy"
+      },
+      "criterion_id": "33920640"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~34883893",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "quote"
+      },
+      "criterion_id": "34883893"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~38909791",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "wiring diagram"
+      },
+      "criterion_id": "38909791"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~38994920",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "price"
+      },
+      "criterion_id": "38994920"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~40961223",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "cost"
+      },
+      "criterion_id": "40961223"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~43322030",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "salary"
+      },
+      "criterion_id": "43322030"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~44564311",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "manual"
+      },
+      "criterion_id": "44564311"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~59121701",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "hvac certification"
+      },
+      "criterion_id": "59121701"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~104575737",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "lowes"
+      },
+      "criterion_id": "104575737"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~119692522",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "craigslist"
+      },
+      "criterion_id": "119692522"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~141962804",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "hvac school"
+      },
+      "criterion_id": "141962804"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~496273925",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "warranty claim"
+      },
+      "criterion_id": "496273925"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~316197685830",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "used hvac"
+      },
+      "criterion_id": "316197685830"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~325427479124",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "how much"
+      },
+      "criterion_id": "325427479124"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~341826988950",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespie air conditioning"
+      },
+      "criterion_id": "341826988950"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~347817319563",
+      "keyword": {
+        "match_type": "PHRASE",
+        "text": "recall lawsuit"
+      },
+      "criterion_id": "347817319563"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~906331055472",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespie heating and cooling"
+      },
+      "criterion_id": "906331055472"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~981381185418",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespie hvac"
+      },
+      "criterion_id": "981381185418"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~2498412607635",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespies heating and cooling"
+      },
+      "criterion_id": "2498412607635"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~2498412607675",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespie heating & cooling"
+      },
+      "criterion_id": "2498412607675"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~2498412608115",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespie heating and cooling brooksville"
+      },
+      "criterion_id": "2498412608115"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~2498412608155",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespie hvac brooksville ky"
+      },
+      "criterion_id": "2498412608155"
+    },
+    "_level": "campaign"
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "campaign_criterion": {
+      "resource_name": "customers/7410489772/campaignCriteria/24155674204~2498412618715",
+      "keyword": {
+        "match_type": "EXACT",
+        "text": "gillespie's heating and cooling"
+      },
+      "criterion_id": "2498412618715"
+    },
+    "_level": "campaign"
+  }
+]

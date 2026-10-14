@@ -1,0 +1,390 @@
+platform,account_id,client,roster_status,market_dma,counts_as_tsd_delivery,week_start,week_stop,spend_usd,impressions,reach,frequency,meets_3x_floor
+Meta,1845825982372184,Spencer Air,current,"Dallas-Ft. Worth, TX",yes,2026-06-22,2026-06-28,637.07,47920,21306,2.249132,no
+Meta,1845825982372184,Spencer Air,current,"Dallas-Ft. Worth, TX",yes,2026-06-29,2026-07-05,517.3,64345,43416,1.482057,no
+Meta,1845825982372184,Spencer Air,current,"Dallas-Ft. Worth, TX",yes,2026-07-06,2026-07-12,453.22,50807,38200,1.330026,no
+Meta,1845825982372184,Spencer Air,current,"Dallas-Ft. Worth, TX",yes,2026-07-13,2026-07-19,462.82,49104,34777,1.411968,no
+Meta,1845825982372184,Spencer Air,current,"Dallas-Ft. Worth, TX",yes,2026-07-20,2026-07-26,462.11,48482,35440,1.368002,no
+Meta,1845825982372184,Spencer Air,current,"Dallas-Ft. Worth, TX",yes,2026-07-27,2026-08-02,451.19,44810,33816,1.325112,no
+Meta,1845825982372184,Spencer Air,current,"Dallas-Ft. Worth, TX",yes,2026-08-03,2026-08-09,468.01,46066,32936,1.398652,no
+Meta,1845825982372184,Spencer Air,current,"Dallas-Ft. Worth, TX",yes,2026-08-10,2026-08-16,712.71,40147,27157,1.47833,no
+Meta,1845825982372184,Spencer Air,current,"Dallas-Ft. Worth, TX",yes,2026-08-17,2026-08-23,758.64,35293,24422,1.445131,no
+Meta,1845825982372184,Spencer Air,current,"Dallas-Ft. Worth, TX",yes,2026-08-24,2026-08-30,552.54,33000,23715,1.391524,no
+Meta,1845825982372184,Spencer Air,current,"Dallas-Ft. Worth, TX",yes,2026-08-31,2026-09-06,418.24,31409,22300,1.408475,no
+Meta,1845825982372184,Spencer Air,current,"Dallas-Ft. Worth, TX",yes,2026-09-07,2026-09-13,270.53,46140,34354,1.343075,no
+Meta,1845825982372184,Spencer Air,current,"Dallas-Ft. Worth, TX",yes,2026-09-14,2026-09-20,141.47,53485,37997,1.407611,no
+Meta,1845825982372184,Spencer Air,current,"Dallas-Ft. Worth, TX",yes,2026-09-21,2026-09-27,265.92,94350,68941,1.368562,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2025-09-29,2025-10-05,701.98,15966,5057,3.157208,yes
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2025-10-06,2025-10-12,699.8,15058,5115,2.943891,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2025-10-13,2025-10-19,323.59,6671,3067,2.17509,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2025-11-03,2025-11-09,34.99,1996,1414,1.411598,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-04-27,2026-05-03,169.28,24220,15489,1.56369,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-05-04,2026-05-10,181.15,49607,31620,1.568849,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-05-11,2026-05-17,1018.34,109290,58622,1.864317,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-05-18,2026-05-24,754.69,93431,47955,1.948306,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-05-25,2026-05-31,1084.23,93286,43931,2.123466,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-06-01,2026-06-07,1011.49,86912,29461,2.95007,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-06-08,2026-06-14,1011.77,75056,27519,2.727425,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-06-15,2026-06-21,914.37,53993,20287,2.661458,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-06-22,2026-06-28,729.82,40373,16314,2.474746,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-06-29,2026-07-05,737.28,51559,22181,2.324467,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-07-06,2026-07-12,665.55,36398,19012,1.914475,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-07-13,2026-07-19,479.5,21315,11448,1.861897,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-08-03,2026-08-09,501.81,13081,4483,2.917912,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-08-10,2026-08-16,470.26,16978,9139,1.857752,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-08-17,2026-08-23,318.67,15608,8941,1.745666,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-08-24,2026-08-30,157.78,5161,2743,1.881517,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-08-31,2026-09-06,417,14931,6854,2.178436,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-09-07,2026-09-13,162.51,15704,9355,1.678675,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-09-14,2026-09-20,131.24,25955,14659,1.770585,no
+Meta,79203382,Mission Accomplished,current,"Phoenix, AZ",yes,2026-09-21,2026-09-27,209.87,39527,21159,1.868094,no
+Meta,2014320269203822,Gillespie's Heating and Cooling,current,"Cincinnati, OH",yes,2026-07-27,2026-08-02,177.53,6199,2326,2.66509,no
+Meta,2014320269203822,Gillespie's Heating and Cooling,current,"Cincinnati, OH",yes,2026-08-03,2026-08-09,344,10676,3809,2.802835,no
+Meta,2014320269203822,Gillespie's Heating and Cooling,current,"Cincinnati, OH",yes,2026-08-10,2026-08-16,350.29,11524,4408,2.614338,no
+Meta,2014320269203822,Gillespie's Heating and Cooling,current,"Cincinnati, OH",yes,2026-08-17,2026-08-23,345.36,14481,5464,2.650256,no
+Meta,2014320269203822,Gillespie's Heating and Cooling,current,"Cincinnati, OH",yes,2026-08-24,2026-08-30,420.65,31779,13465,2.360119,no
+Meta,2014320269203822,Gillespie's Heating and Cooling,current,"Cincinnati, OH",yes,2026-08-31,2026-09-06,410.66,30044,13750,2.185018,no
+Meta,2014320269203822,Gillespie's Heating and Cooling,current,"Cincinnati, OH",yes,2026-09-07,2026-09-13,180.71,19642,11001,1.785474,no
+Meta,2014320269203822,Gillespie's Heating and Cooling,current,"Cincinnati, OH",yes,2026-09-14,2026-09-20,184.85,39771,21940,1.812717,no
+Meta,2014320269203822,Gillespie's Heating and Cooling,current,"Cincinnati, OH",yes,2026-09-21,2026-09-27,278.61,58645,30561,1.918949,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2025-09-29,2025-10-05,79.16,10291,5959,1.726968,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2025-10-06,2025-10-12,202.36,35023,17186,2.03788,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2025-10-13,2025-10-19,237.74,43094,18521,2.326764,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2025-10-20,2025-10-26,224.12,46192,18968,2.435259,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2025-10-27,2025-11-02,153.99,27762,15490,1.792253,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2025-11-03,2025-11-09,79.88,10684,6096,1.752625,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2025-11-10,2025-11-16,79.37,9493,5803,1.635878,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2025-11-17,2025-11-23,160.52,22209,13064,1.700015,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2025-11-24,2025-11-30,164.21,22314,13063,1.708183,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2025-12-01,2025-12-07,161.87,24727,14392,1.718107,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2025-12-08,2025-12-14,211.9,35254,19573,1.801155,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2025-12-15,2025-12-21,238.54,44334,28912,1.533412,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2025-12-22,2025-12-28,206.45,40234,22875,1.758863,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2025-12-29,2026-01-04,159.54,34578,18118,1.908489,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2026-01-05,2026-01-11,142.78,29425,14975,1.964942,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2026-01-12,2026-01-18,432.58,102189,35303,2.894627,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2026-01-19,2026-01-25,404.74,99091,40161,2.467344,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2026-01-26,2026-02-01,92.53,16772,9658,1.736591,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2026-02-02,2026-02-08,79.2,11764,5531,2.126921,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2026-02-09,2026-02-15,125.16,19998,10374,1.927704,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2026-02-16,2026-02-22,193.24,29523,17089,1.727603,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",no,2026-02-23,2026-03-01,301.21,43714,23609,1.851582,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-03-02,2026-03-08,196.63,26500,13136,2.017357,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-03-09,2026-03-15,250.1,21524,9487,2.268789,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-03-16,2026-03-22,432.38,34787,10446,3.330174,yes
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-03-23,2026-03-29,431.26,34743,11380,3.052988,yes
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-03-30,2026-04-05,535.72,47100,18318,2.571241,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-04-06,2026-04-12,608.16,53973,20687,2.60903,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-04-13,2026-04-19,602.63,51342,19562,2.624578,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-04-20,2026-04-26,539.12,48502,22613,2.144872,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-04-27,2026-05-03,909,56482,25575,2.208485,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-05-04,2026-05-10,296.01,27314,15555,1.755963,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-05-11,2026-05-17,253.08,24053,12796,1.879728,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-05-18,2026-05-24,580.21,41300,23132,1.785406,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-05-25,2026-05-31,975.53,65955,33474,1.970335,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-06-01,2026-06-07,969.6,67876,39525,1.717293,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-06-08,2026-06-14,987.59,71509,36561,1.955882,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-06-15,2026-06-21,1063.95,64806,31403,2.063688,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-06-22,2026-06-28,1268.66,60923,26039,2.339683,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-06-29,2026-07-05,1253.38,64100,28972,2.212481,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-07-06,2026-07-12,1256.33,69366,32930,2.106468,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-07-13,2026-07-19,1250.56,71360,35061,2.03531,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-07-20,2026-07-26,1274.51,69557,32686,2.128036,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-07-27,2026-08-02,1246.48,65169,34425,1.893072,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-08-03,2026-08-09,1259.15,74050,38940,1.901644,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-08-10,2026-08-16,1060.17,54235,28254,1.919551,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-08-17,2026-08-23,871.15,28220,13289,2.123561,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-08-24,2026-08-30,500.76,15344,7864,1.95117,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-08-31,2026-09-06,472.36,15920,8409,1.89321,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-09-07,2026-09-13,351.71,13531,6907,1.959027,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-09-14,2026-09-20,287.4,9671,4612,2.096921,no
+Meta,1846637992293356,On Time Service Pros,current,"Minneapolis-St. Paul, MN",yes,2026-09-21,2026-09-27,270.64,7973,3917,2.035486,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2025-09-29,2025-10-05,138.41,11201,5677,1.973049,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2025-10-06,2025-10-12,140.33,12195,6301,1.935407,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2025-10-13,2025-10-19,139.92,12175,6012,2.025116,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2025-10-20,2025-10-26,22.58,1677,1312,1.278201,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-02-23,2026-03-01,158.93,16820,11108,1.514224,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-03-02,2026-03-08,139.98,47642,23123,2.060373,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-03-09,2026-03-15,139.3,45395,23036,1.970611,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-03-16,2026-03-22,140.32,44692,22491,1.987106,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-03-23,2026-03-29,139.96,43172,21442,2.013432,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-03-30,2026-04-05,140,43881,22693,1.93368,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-04-06,2026-04-12,139.79,45522,24230,1.878745,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-04-13,2026-04-19,139.61,44816,23853,1.878841,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-04-20,2026-04-26,139.46,42637,23550,1.810488,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-04-27,2026-05-03,242.08,41008,22514,1.821444,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-05-04,2026-05-10,467.09,45992,24469,1.879603,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-05-11,2026-05-17,608.73,49259,26707,1.844423,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-05-18,2026-05-24,707.27,53490,27779,1.925555,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-05-25,2026-05-31,760.74,56546,29247,1.933395,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-06-01,2026-06-07,773,60968,33567,1.816308,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-06-08,2026-06-14,907.6,64929,35669,1.82032,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-06-15,2026-06-21,925.93,47319,26998,1.752685,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-06-22,2026-06-28,836.63,24782,12411,1.996777,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-06-29,2026-07-05,856.45,45968,21892,2.099762,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-07-06,2026-07-12,624.94,29092,16907,1.720707,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-07-13,2026-07-19,597.78,25000,14590,1.713502,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-07-20,2026-07-26,690.54,23338,13097,1.781935,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-07-27,2026-08-02,596.24,19157,10259,1.867336,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-08-03,2026-08-09,595.52,20395,10798,1.888776,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-08-10,2026-08-16,583.82,19444,10368,1.875386,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-08-17,2026-08-23,603.94,19065,8749,2.179106,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-08-24,2026-08-30,566.56,12588,6263,2.009899,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-08-31,2026-09-06,571.93,12558,5900,2.128475,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-09-07,2026-09-13,560.79,11722,5461,2.146493,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-09-14,2026-09-20,549.42,9598,4582,2.094718,no
+Meta,438790276573563,Napps Cooling Heating & Plumbing,current,"Tyler-Longview(Lufkin & Nacogdoches), TX",yes,2026-09-21,2026-09-27,589.84,14748,7125,2.069895,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2025-09-29,2025-10-05,1332.8,445699,187764,2.373719,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2025-10-06,2025-10-12,1329.67,458768,196461,2.335161,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2025-10-13,2025-10-19,1330.82,463592,200552,2.31158,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2025-10-20,2025-10-26,200.05,70269,58438,1.202454,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2025-11-17,2025-11-23,39.16,837,759,1.102767,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2025-11-24,2025-11-30,92,2630,2346,1.121057,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2026-02-16,2026-02-22,186.58,163515,143614,1.138573,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2026-02-23,2026-03-01,857.53,687644,503027,1.367012,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2026-03-02,2026-03-08,738.06,431239,248530,1.735159,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2026-03-09,2026-03-15,736.51,410594,222898,1.842071,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2026-03-16,2026-03-22,660.68,289945,104681,2.769796,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2026-03-23,2026-03-29,328.45,135541,57231,2.368314,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2026-03-30,2026-04-05,92.08,38997,23450,1.662985,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2026-06-29,2026-07-05,576.28,20753,9693,2.14103,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2026-07-06,2026-07-12,701.08,23768,8888,2.674167,no
+Meta,1664197513868366,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,2026-07-13,2026-07-19,339.87,11543,5811,1.986405,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2025-09-29,2025-10-05,214.32,78500,65654,1.195662,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2025-10-06,2025-10-12,140.43,59332,51373,1.154926,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2025-10-13,2025-10-19,139.82,59623,50428,1.182339,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2025-10-20,2025-10-26,142.1,54028,48520,1.11352,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2025-10-27,2025-11-02,138.12,52777,46793,1.127882,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2025-11-03,2025-11-09,139.76,56811,50107,1.133794,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2025-11-10,2025-11-16,140.26,53663,46920,1.143713,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2025-11-17,2025-11-23,139.56,52943,43124,1.227692,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2025-11-24,2025-11-30,140.39,48007,42648,1.125657,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2025-12-01,2025-12-07,153,48711,44979,1.082972,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2025-12-08,2025-12-14,125.83,43980,38535,1.1413,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2025-12-15,2025-12-21,138.09,50658,46181,1.096945,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2025-12-22,2025-12-28,142.07,62211,56894,1.093454,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2025-12-29,2026-01-04,140.04,85131,78990,1.077744,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-01-05,2026-01-11,143.81,80542,79811,1.009159,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-01-12,2026-01-18,136.24,77494,63792,1.214792,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-01-19,2026-01-25,140.18,85114,76715,1.109483,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-01-26,2026-02-01,140.13,86718,80410,1.078448,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-02-02,2026-02-08,139.23,77324,72918,1.060424,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-02-09,2026-02-15,141.09,72215,67875,1.063941,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-02-16,2026-02-22,139.06,74720,71785,1.040886,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-02-23,2026-03-01,141.48,72791,67893,1.072143,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-03-02,2026-03-08,137.76,83884,81316,1.031581,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-03-09,2026-03-15,226.38,88927,77438,1.148364,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-03-16,2026-03-22,376.5,97266,81188,1.198034,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-03-23,2026-03-29,375.99,94969,77893,1.219224,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-03-30,2026-04-05,369.42,79068,63874,1.237875,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-04-06,2026-04-12,344.54,90687,72513,1.250631,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-04-13,2026-04-19,61.26,27898,26359,1.058386,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-08-31,2026-09-06,76.64,30524,23132,1.319557,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-09-07,2026-09-13,139.41,56500,40626,1.390735,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-09-14,2026-09-20,140.19,54482,37870,1.438659,no
+Meta,2405306059725517,All Seasons AC,current,"New York, NY",yes,2026-09-21,2026-09-27,140.57,52707,37872,1.391714,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2025-09-29,2025-10-05,558.48,44641,20424,2.185713,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2025-10-06,2025-10-12,560.94,53167,27035,1.966599,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2025-10-13,2025-10-19,558.93,46089,23189,1.987537,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2025-10-20,2025-10-26,600.63,46742,23233,2.01188,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2025-10-27,2025-11-02,1175.98,83446,51173,1.630665,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2025-11-03,2025-11-09,1962.83,128440,90130,1.425053,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2025-11-10,2025-11-16,1812.53,123422,77855,1.58528,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2025-11-17,2025-11-23,1645.99,96926,62306,1.555645,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2025-11-24,2025-11-30,1591.4,77233,52184,1.480013,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2025-12-01,2025-12-07,731.38,37436,29073,1.287655,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2025-12-08,2025-12-14,210.47,16396,9191,1.783919,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2025-12-15,2025-12-21,225.22,33577,22144,1.516302,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2025-12-22,2025-12-28,127.62,20864,9499,2.196442,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2025-12-29,2026-01-04,110.68,24980,13362,1.869481,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-01-05,2026-01-11,104.46,18918,8817,2.145628,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-01-12,2026-01-18,59.19,9510,6147,1.547096,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-01-19,2026-01-25,0.73,347,314,1.105096,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-01-26,2026-02-01,0.78,405,391,1.035806,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-02-02,2026-02-08,1.67,658,643,1.023328,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-02-09,2026-02-15,196.53,36958,19052,1.939849,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-02-16,2026-02-22,639.07,123251,36731,3.355504,yes
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-02-23,2026-03-01,638.37,114162,35100,3.252479,yes
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-03-02,2026-03-08,392.99,57074,27896,2.045956,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-03-09,2026-03-15,363.01,43809,20758,2.110463,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-03-16,2026-03-22,378.6,46467,21082,2.204108,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-03-23,2026-03-29,148.69,19729,12771,1.544828,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-03-30,2026-04-05,0.34,146,140,1.042857,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-04-06,2026-04-12,0.18,83,78,1.064103,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-04-13,2026-04-19,0.05,22,21,1.047619,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-04-20,2026-04-26,90.58,26748,20331,1.315626,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-04-27,2026-05-03,140.02,42242,25710,1.643018,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-05-04,2026-05-10,293.71,48328,29618,1.63171,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-05-11,2026-05-17,497.49,52729,30993,1.70132,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-05-18,2026-05-24,487.46,54590,29602,1.844132,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-05-25,2026-05-31,485.23,58294,31272,1.864096,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-06-01,2026-06-07,209.36,46460,25975,1.788643,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-06-08,2026-06-14,173.56,42999,24218,1.775498,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-06-15,2026-06-21,358.54,29521,19315,1.528398,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-06-22,2026-06-28,679.15,23996,10839,2.213857,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-06-29,2026-07-05,605.84,24085,12297,1.958608,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-07-06,2026-07-12,475.86,17725,9445,1.876654,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-07-13,2026-07-19,684.24,21933,11384,1.926651,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-07-20,2026-07-26,492.85,16466,10161,1.62051,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-07-27,2026-08-02,1333.07,42283,25056,1.68754,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-08-03,2026-08-09,1282.07,33198,23207,1.430517,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-08-10,2026-08-16,1136.54,27923,20566,1.357726,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-08-17,2026-08-23,1064.86,25543,18920,1.350053,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-08-24,2026-08-30,1045.56,25345,20132,1.258941,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-08-31,2026-09-06,1094.9,38230,28218,1.354809,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-09-07,2026-09-13,1131.56,36144,24750,1.460364,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-09-14,2026-09-20,1109.43,34352,23409,1.46747,no
+Meta,588638883283311,Watt's Right Electric,current,"Tulsa, OK",yes,2026-09-21,2026-09-27,1788.86,63040,37463,1.682727,no
+Meta,705877631084699,Neon Monkey Services,current,"Dallas-Ft. Worth, TX",yes,2026-08-10,2026-08-16,352.3,24270,16587,1.463194,no
+Meta,705877631084699,Neon Monkey Services,current,"Dallas-Ft. Worth, TX",yes,2026-08-17,2026-08-23,697.67,26253,15839,1.657491,no
+Meta,705877631084699,Neon Monkey Services,current,"Dallas-Ft. Worth, TX",yes,2026-08-24,2026-08-30,723.49,34016,19418,1.751777,no
+Meta,705877631084699,Neon Monkey Services,current,"Dallas-Ft. Worth, TX",yes,2026-08-31,2026-09-06,689.32,29923,17794,1.681634,no
+Meta,705877631084699,Neon Monkey Services,current,"Dallas-Ft. Worth, TX",yes,2026-09-07,2026-09-13,710.81,32716,19311,1.694164,no
+Meta,705877631084699,Neon Monkey Services,current,"Dallas-Ft. Worth, TX",yes,2026-09-14,2026-09-20,170.54,6898,5464,1.262445,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2025-09-29,2025-10-05,1346.64,252486,126094,2.002363,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2025-10-06,2025-10-12,1661.18,368932,189991,1.941839,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2025-10-13,2025-10-19,1193.2,283708,157322,1.803359,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2025-10-20,2025-10-26,839.27,178996,91486,1.95654,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2025-10-27,2025-11-02,843.04,180659,95132,1.899035,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2025-11-03,2025-11-09,834.47,181121,101408,1.786062,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2025-11-10,2025-11-16,842.23,184643,91242,2.023662,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2025-11-17,2025-11-23,837.35,177465,81987,2.16455,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2025-11-24,2025-11-30,849.11,166557,80384,2.072017,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2025-12-01,2025-12-07,828.24,166833,78661,2.120911,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2025-12-08,2025-12-14,840.35,158018,76960,2.053248,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2025-12-15,2025-12-21,837.59,175182,89610,1.954938,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2025-12-22,2025-12-28,840.42,200940,100706,1.995313,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2025-12-29,2026-01-04,835.25,277841,142199,1.953889,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-01-05,2026-01-11,840.9,258863,138014,1.875629,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-01-12,2026-01-18,843.3,237544,122257,1.942989,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-01-19,2026-01-25,904.9,457193,225231,2.029885,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-01-26,2026-02-01,946.79,397974,172679,2.304704,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-02-02,2026-02-08,1015.62,344469,183700,1.875171,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-02-09,2026-02-15,1017.06,310542,140126,2.216163,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-02-16,2026-02-22,508.57,159249,97669,1.630497,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-02-23,2026-03-01,249.68,8850,4672,1.894264,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-03-02,2026-03-08,204.47,7951,3818,2.082504,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-03-09,2026-03-15,220.6,8249,3793,2.174796,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-03-16,2026-03-22,202.92,6945,3286,2.113512,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-03-23,2026-03-29,210.73,7000,3480,2.011494,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-03-30,2026-04-05,51.61,1974,1209,1.632754,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-04-13,2026-04-19,193.24,18935,9654,1.961363,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-04-20,2026-04-26,598.34,102039,63422,1.60889,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-04-27,2026-05-03,1064.2,204799,97380,2.103091,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-05-04,2026-05-10,1139.17,196159,104516,1.876832,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-05-11,2026-05-17,1318.6,228260,110753,2.060983,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-05-18,2026-05-24,1560.56,246454,115390,2.135835,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-05-25,2026-05-31,1746.71,314665,146966,2.141073,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-06-01,2026-06-07,1761.86,331428,154559,2.144346,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-06-08,2026-06-14,1745.21,309321,143383,2.157306,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-06-15,2026-06-21,1155.25,157785,75544,2.08865,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-06-22,2026-06-28,1045.5,118653,53288,2.226636,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-06-29,2026-07-05,1219.13,139400,65892,2.115583,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-07-06,2026-07-12,839.3,113674,54072,2.102271,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-07-13,2026-07-19,487.51,82745,41454,1.996068,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-07-20,2026-07-26,487.69,85276,41862,2.037074,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-07-27,2026-08-02,147.64,45479,23025,1.975201,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-08-03,2026-08-09,435.65,134004,67871,1.974393,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-08-10,2026-08-16,454.66,139900,69554,2.011387,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-08-17,2026-08-23,459.88,138969,65484,2.122183,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-08-24,2026-08-30,455.01,136811,62989,2.171982,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-08-31,2026-09-06,398.92,120663,61007,1.977855,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-09-14,2026-09-20,1090.64,182682,80747,2.2624,no
+Meta,381256660973192,Zen Air Heating and Cooling,current,"Atlanta, GA",yes,2026-09-21,2026-09-27,1518.88,209487,82280,2.546026,no
+Meta,1517373248873821,Cool Hand Electric,current,"Dallas-Ft. Worth, TX",yes,2026-08-31,2026-09-06,85.75,19759,12169,1.623716,no
+Meta,1517373248873821,Cool Hand Electric,current,"Dallas-Ft. Worth, TX",yes,2026-09-07,2026-09-13,144.51,33636,18658,1.802766,no
+Meta,1517373248873821,Cool Hand Electric,current,"Dallas-Ft. Worth, TX",yes,2026-09-14,2026-09-20,122.96,24746,14105,1.754413,no
+Meta,1517373248873821,Cool Hand Electric,current,"Dallas-Ft. Worth, TX",yes,2026-09-21,2026-09-27,152.45,28104,14593,1.925855,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-02-23,2026-03-01,67.76,19611,13592,1.442834,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-03-02,2026-03-08,138.26,45142,26099,1.729645,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-03-09,2026-03-15,141.22,44438,25699,1.729172,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-03-16,2026-03-22,139.95,42496,23902,1.777927,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-03-23,2026-03-29,139.91,40668,22399,1.815617,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-03-30,2026-04-05,139.89,41279,23935,1.724629,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-04-06,2026-04-12,123.6,36562,21117,1.731401,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-04-13,2026-04-19,143.84,40386,22961,1.758896,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-04-20,2026-04-26,141.26,36825,22552,1.632893,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-04-27,2026-05-03,135.04,38233,22537,1.696455,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-05-04,2026-05-10,470.83,53133,34507,1.539775,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-05-11,2026-05-17,507.73,46563,27424,1.697892,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-05-18,2026-05-24,481.23,50015,29405,1.700901,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-05-25,2026-05-31,489.58,51597,29256,1.763638,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-06-01,2026-06-07,306.17,31649,18478,1.712794,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-06-08,2026-06-14,282.48,28060,15833,1.772248,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-06-15,2026-06-21,277.38,25323,13597,1.862396,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-06-22,2026-06-28,284.14,24302,12528,1.939815,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-06-29,2026-07-05,276.75,30510,17045,1.789968,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-07-06,2026-07-12,278.5,31507,17183,1.833615,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-07-13,2026-07-19,279.85,30657,17743,1.727836,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-07-20,2026-07-26,325.9,32295,18767,1.72084,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-07-27,2026-08-02,387.74,33245,18149,1.831781,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-08-03,2026-08-09,389.12,32276,17854,1.807774,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-08-10,2026-08-16,380.77,32741,18153,1.803614,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-08-17,2026-08-23,385.3,31983,16771,1.907042,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-08-24,2026-08-30,378.98,29828,15328,1.945981,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-08-31,2026-09-06,381.93,30309,15194,1.994801,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-09-07,2026-09-13,392.96,30002,15272,1.96451,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-09-14,2026-09-20,385.69,28316,14622,1.936534,no
+Meta,483679897962388,King's Window Services,current,"Dallas-Ft. Worth, TX",yes,2026-09-21,2026-09-27,379.74,27885,13816,2.018312,no
+Meta,10086442468052740,Hawkins Siding and Exterior,current,"Dallas-Ft. Worth, TX",yes,2025-09-29,2025-10-05,224.78,42981,28871,1.488726,no
+Meta,10086442468052740,Hawkins Siding and Exterior,current,"Dallas-Ft. Worth, TX",yes,2025-10-06,2025-10-12,161.56,25426,17879,1.422115,no
+Meta,10086442468052740,Hawkins Siding and Exterior,current,"Dallas-Ft. Worth, TX",yes,2025-10-13,2025-10-19,68.87,8377,6680,1.254042,no
+Meta,10086442468052740,Hawkins Siding and Exterior,current,"Dallas-Ft. Worth, TX",yes,2025-12-15,2025-12-21,67.58,5990,3356,1.784863,no
+Meta,10086442468052740,Hawkins Siding and Exterior,current,"Dallas-Ft. Worth, TX",yes,2025-12-22,2025-12-28,72.02,5413,3344,1.61872,no
+Meta,10086442468052740,Hawkins Siding and Exterior,current,"Dallas-Ft. Worth, TX",yes,2026-07-27,2026-08-02,553.19,15857,9816,1.615424,no
+Meta,10086442468052740,Hawkins Siding and Exterior,current,"Dallas-Ft. Worth, TX",yes,2026-08-03,2026-08-09,707.21,33160,23459,1.41353,no
+Meta,10086442468052740,Hawkins Siding and Exterior,current,"Dallas-Ft. Worth, TX",yes,2026-08-10,2026-08-16,681.6,54356,30591,1.776862,no
+Meta,10086442468052740,Hawkins Siding and Exterior,current,"Dallas-Ft. Worth, TX",yes,2026-08-17,2026-08-23,370.32,15092,10896,1.385095,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-03-23,2026-03-29,508.54,42497,24059,1.766366,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-03-30,2026-04-05,791.88,90862,26286,3.456669,yes
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-04-06,2026-04-12,803.59,96088,29122,3.299499,yes
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-04-13,2026-04-19,895.59,108815,36936,2.946042,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-04-20,2026-04-26,1192.13,142393,50857,2.79987,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-04-27,2026-05-03,1068.93,132324,57476,2.302248,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-05-04,2026-05-10,1110.39,150483,45386,3.315626,yes
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-05-11,2026-05-17,888.71,105107,37009,2.840039,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-05-18,2026-05-24,1337.93,113847,57019,1.99665,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-05-25,2026-05-31,1833.55,200538,90966,2.204538,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-06-01,2026-06-07,1377.77,139050,67949,2.046388,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-06-08,2026-06-14,1479.52,114513,57304,1.998342,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-06-15,2026-06-21,1465.9,76689,43450,1.764994,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-06-22,2026-06-28,1342.03,36769,15401,2.387442,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-06-29,2026-07-05,1653.4,102964,44783,2.299176,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-07-06,2026-07-12,1619.42,90430,36526,2.475771,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-07-13,2026-07-19,1572.59,55341,24415,2.26668,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-07-20,2026-07-26,1357.7,35321,15213,2.321764,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-07-27,2026-08-02,1012.73,61090,23822,2.564436,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-08-03,2026-08-09,434.94,53178,18855,2.820366,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-08-10,2026-08-16,705.92,47924,18128,2.643645,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-08-17,2026-08-23,820.19,47639,20090,2.371279,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-08-24,2026-08-30,892.99,50961,18311,2.783081,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-08-31,2026-09-06,609.19,46100,16700,2.760479,no
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-09-07,2026-09-13,140.51,27237,7276,3.743403,yes
+Meta,1434273655098937,GC Home Service,current,"Cincinnati, OH",yes,2026-09-14,2026-09-20,33.9,6395,3616,1.768529,no
+Meta,710350517676765,Nick's Heating & Air,current,"New Orleans, LA",yes,2025-09-29,2025-10-05,211.01,64239,6743,9.526769,yes
+Meta,710350517676765,Nick's Heating & Air,current,"New Orleans, LA",yes,2025-10-06,2025-10-12,208.22,56895,7371,7.718763,yes
+Meta,710350517676765,Nick's Heating & Air,current,"New Orleans, LA",yes,2025-10-13,2025-10-19,209.03,71812,9634,7.454017,yes
+Meta,710350517676765,Nick's Heating & Air,current,"New Orleans, LA",yes,2025-10-20,2025-10-26,39.59,14278,4056,3.520217,yes
+Meta,710350517676765,Nick's Heating & Air,current,"New Orleans, LA",yes,2026-08-31,2026-09-06,68.85,14864,8920,1.666368,no
+Meta,710350517676765,Nick's Heating & Air,current,"New Orleans, LA",yes,2026-09-07,2026-09-13,142.34,31521,16628,1.895658,no
+Meta,710350517676765,Nick's Heating & Air,current,"New Orleans, LA",yes,2026-09-14,2026-09-20,139.92,28910,14859,1.945622,no
+Meta,710350517676765,Nick's Heating & Air,current,"New Orleans, LA",yes,2026-09-21,2026-09-27,141.33,28089,14462,1.942262,no
+Meta,170464733924961,UNCONFIRMED electrical advertiser [170464733924961],unconfirmed,unknown,no,2026-07-20,2026-07-26,41.31,1104,892,1.237668,no
+Meta,170464733924961,UNCONFIRMED electrical advertiser [170464733924961],unconfirmed,unknown,no,2026-07-27,2026-08-02,125.54,3254,2206,1.475068,no
+Meta,170464733924961,UNCONFIRMED electrical advertiser [170464733924961],unconfirmed,unknown,no,2026-08-03,2026-08-09,125.17,2519,1446,1.742047,no
+Meta,170464733924961,UNCONFIRMED electrical advertiser [170464733924961],unconfirmed,unknown,no,2026-08-10,2026-08-16,103.83,2722,1860,1.463441,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-04-13,2026-04-19,56.79,3282,2804,1.170471,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-05-11,2026-05-17,133.49,3559,1661,2.142685,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-05-18,2026-05-24,204.81,7029,4051,1.735127,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-05-25,2026-05-31,213.53,9224,5569,1.656312,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-06-01,2026-06-07,205.17,7286,4169,1.747661,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-06-08,2026-06-14,213.53,8325,4877,1.706992,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-06-15,2026-06-21,215.45,5924,3530,1.678187,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-06-22,2026-06-28,207.92,5453,2883,1.891433,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-06-29,2026-07-05,203.38,5387,2799,1.924616,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-07-06,2026-07-12,210.77,5031,2519,1.997221,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-07-13,2026-07-19,207.22,5046,2482,2.033038,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-07-20,2026-07-26,216.6,5419,2687,2.016747,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-07-27,2026-08-02,203.44,5406,2642,2.046177,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-08-03,2026-08-09,208.92,5184,2597,1.996149,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-08-10,2026-08-16,211.95,5487,3089,1.776303,no
+Meta,532145676808452,UNCONFIRMED HVAC advertiser [532145676808452],unconfirmed,unknown,no,2026-08-17,2026-08-23,116.79,3193,1966,1.62411,no

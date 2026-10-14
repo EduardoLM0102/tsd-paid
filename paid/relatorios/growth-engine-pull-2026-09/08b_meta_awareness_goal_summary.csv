@@ -1,0 +1,11 @@
+level,market_dma,optimization_goal,accounts,campaigns,spend_usd_12mo,impressions_12mo,cpm_usd,marketplace_share_of_impressions,marketplace_cpm_usd,cpm_usd_outside_marketplace,cpm_usd_if_marketplace_does_not_count,note
+book,all markets,Ad Recall Lift,7,8,5530.81,1280409,4.32,0.4%,2.75,4.28,4.29,placement split covers 88.9% of impressions
+book,all markets,Reach,8,14,33633.72,12306399,2.73,54.6%,2.68,2.8,6.02,
+market,"Cincinnati, OH",Ad Recall Lift,2,2,2166.49,488961,4.43,0.4%,1.97,4.32,4.33,placement split covers 71.0% of impressions
+market,"Cincinnati, OH",Reach,1,1,1694.5,690396,2.45,92.9%,2.45,2.53,34.71,
+market,"Dallas-Ft. Worth, TX",Ad Recall Lift,1,1,505.67,106245,4.76,0.4%,3.13,4.77,4.78,
+market,"Dallas-Ft. Worth, TX",Reach,3,3,4594.55,1497540,3.07,65.1%,2.87,3.44,8.79,
+market,"Tulsa, OK",Ad Recall Lift,1,1,265.81,51715,5.14,0.0%,,5.14,5.14,
+market,"Tulsa, OK",Reach,1,4,1233.51,379321,3.25,68.7%,3.23,3.3,10.38,
+market,"Tyler-Longview(Lufkin & Nacogdoches), TX",Ad Recall Lift,1,1,404.52,82917,4.88,0.9%,3.07,4.89,4.92,
+market,"Tyler-Longview(Lufkin & Nacogdoches), TX",Reach,1,1,2228.02,664547,3.35,25.4%,3.25,3.39,4.5,

@@ -1,0 +1,471 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Google Ads (PPC) Launch &amp; Buildout Process</title><style>
+@page { size: Letter; margin: 18mm 16mm 16mm 16mm; }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; color: #1c2430; font-size: 10.5pt; line-height: 1.5; margin: 0; }
+.cover { border-bottom: 3px solid #c8a349; padding-bottom: 14px; margin-bottom: 22px; }
+.kicker { font-size: 8.5pt; letter-spacing: .16em; text-transform: uppercase; color: #c8a349; font-weight: 700; }
+h1.title { font-size: 22pt; margin: 6px 0 8px; color: #0f2340; letter-spacing: -.01em; }
+.sub { font-size: 9.5pt; color: #5b6675; }
+h2 { font-size: 12.5pt; color: #0f2340; margin: 24px 0 8px; padding-bottom: 5px; border-bottom: 1px solid #dde2e8; page-break-after: avoid; }
+h3 { font-size: 10.5pt; color: #0f2340; margin: 14px 0 6px; page-break-after: avoid; }
+p { margin: 7px 0; }
+ul, ol { margin: 7px 0 7px 0; padding-left: 18px; }
+li { margin: 3px 0; }
+strong { color: #0f2340; }
+em { color: #5b6675; }
+hr { border: 0; border-top: 1px solid #e6e9ee; margin: 22px 0; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0 14px; font-size: 9pt; page-break-inside: avoid; }
+th { background: #0f2340; color: #fff; text-align: left; padding: 7px 8px; font-weight: 600; }
+td { padding: 6px 8px; border-bottom: 1px solid #e6e9ee; vertical-align: top; }
+tr:nth-child(even) td { background: #f7f8fa; }
+code { background: #f1f3f6; padding: 1px 4px; border-radius: 3px; font-size: 9pt; }
+blockquote { border-left: 3px solid #c8a349; margin: 10px 0; padding: 2px 0 2px 12px; color: #47525f; }
+h2, h3 { break-after: avoid; }
+.note { font-size: 8.5pt; font-style: italic; color: #6b7684; margin: 4px 0 0; }
+</style></head><body>
+<div class="cover">
+  <div class="kicker">TopServ Digital &middot; Paid Ads Division</div>
+  <h1 class="title">Google Ads (PPC) &mdash; New Campaign Launch &amp; Buildout</h1>
+  <div class="sub">Owner: Eduardo Marinho, Head of Paid Ads</div>
+</div>
+<p><strong>Owner:</strong> Paid Ads Division (Eduardo)
+<strong>Built in:</strong> AT
+<strong>Version:</strong> 1.0 — Jul 2026
+<strong>Scope:</strong> Search PPC (Branded + Non-Branded).</p>
+<p class="note">Performance Max is not part of the initial launch (see Stage 7.7).</p>
+
+<hr />
+<h2>Stage map</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Stage</th>
+<th>Owner</th>
+<th>Blocks the next stage?</th>
+<th>Target time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Client Info</td>
+<td>Account Manager</td>
+<td>Yes — hard gate</td>
+<td>3 business days</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Access, Billing &amp; Account Health</td>
+<td>Paid Ads</td>
+<td>Yes</td>
+<td>1 business day</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Conversion Tracking + <strong>End-to-End Lead Flow Test</strong></td>
+<td>Paid Ads + Mo (GHL)</td>
+<td>Yes — <strong>hard gate</strong></td>
+<td>2–3 business days</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Keyword, Offer &amp; Competitor Research</td>
+<td>Paid Ads</td>
+<td>Yes</td>
+<td>1 business day</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Ad Copy &amp; Assets (RSAs, extensions)</td>
+<td>Paid Ads</td>
+<td>No — parallel to 6</td>
+<td>1 business day</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Landing Page / Destination</td>
+<td>Web (Justin) or Mo</td>
+<td>Yes</td>
+<td>4 business days (<strong>when applicable</strong>)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Campaign Buildout in Google Ads</td>
+<td>Paid Ads</td>
+<td>Yes</td>
+<td>1 business day</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Pre-Launch QA</td>
+<td>Paid Ads</td>
+<td>Yes — <strong>hard gate</strong></td>
+<td>1 business day</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Launch</td>
+<td>Paid Ads</td>
+<td>—</td>
+<td>Same day</td>
+</tr>
+<tr>
+<td>10</td>
+<td>3-Day Check (one-time)</td>
+<td>Paid Ads</td>
+<td>—</td>
+<td>Day 3</td>
+</tr>
+<tr>
+<td>11</td>
+<td>7-Day Check (one-time)</td>
+<td>Paid Ads</td>
+<td>—</td>
+<td>Day 7</td>
+</tr>
+</tbody>
+</table>
+<p>Stages 5 and 6 run in parallel once Stage 4 closes. Stage 7 cannot start until both are done.</p>
+<p><strong>Critical path:</strong> 1 → 2 → 3 → 4 → (5 ‖ 6) → 7 → 8 → 9.</p>
+<p><strong>Launch window:</strong> roughly 7–10 business days from a complete intake when the client already has a working destination. A client who needs a new landing page adds the Web lead time on top — Search cannot run without a destination. <em>(Estimates, not measured cycle times — re-baseline after the first builds.)</em></p>
+<hr />
+<h2>The two rules that govern this whole process</h2>
+<p><strong>1. Fix the measurement before you spend the money.</strong> No bidding strategy, no scaling, no budget move until the conversion signal is trustworthy. A campaign optimizing toward a polluted goal will faithfully buy the wrong thing, and it will look like it's working. Stage 3 is a hard gate for exactly this reason.</p>
+<p><strong>2. Never read or report a blended number.</strong> Branded and non-branded get split before any CPL is spoken out loud, internally or to the client. A blended CPL sells the client a number that is structurally unrepeatable — brand converts cheap and always would; it hides whether non-brand is alive or dead.</p>
+<hr />
+<h2>STAGE 1 — Client Info</h2>
+<p><strong>Owner:</strong> Account Manager · <strong>Blocks everything downstream</strong></p>
+<h3>1.0 — Start from AT</h3>
+<p>The AM opens the client record in AT, confirms what's already there is current, and collects whatever is missing from the client.</p>
+<p>The fields below are the full requirement. The stage cannot close with anything still missing.</p>
+<h3>1A. Services &amp; offer</h3>
+<ul>
+<li><strong>Services to advertise, in priority order.</strong> These become the ad groups. Be specific: "AC replacement," "furnace repair," "water heater install" — not "HVAC."</li>
+<li><strong>Services the client does NOT want leads for.</strong> These become negative keywords on day one.</li>
+<li><strong>The offer</strong>, exactly as it can appear in an ad (promo, financing, guarantee, free estimate). If there is no offer, say so.</li>
+<li><strong>Average ticket</strong> per advertised service.</li>
+<li><strong>What the client will NOT say</strong> (claims, pricing, guarantees they won't back).</li>
+<li><strong>Brand terms:</strong> every way people spell or misspell the client's name, plus any DBA. Needed to build the branded campaign and to cross-negative it.</li>
+<li><strong>Top competitors by name.</strong> Used for the negative list, and later for conquesting.</li>
+</ul>
+<h3>1B. Service area</h3>
+<ul>
+<li><strong>Service hubs:</strong> the cities/addresses the crews actually dispatch from, and how far each will realistically drive. Radius targeting is built as <strong>proximity circles around hubs</strong>, not one blob over a metro.</li>
+<li><strong>Areas they refuse to serve.</strong></li>
+</ul>
+<h3>1C. Budget, goal &amp; capacity</h3>
+<ul>
+<li><strong>Monthly Google Ads spend</strong>, with <strong>written client approval</strong>. Hard rule — no budget moves without it.</li>
+<li><strong>Target cost per lead.</strong> If unknown: close rate and value of a job, so we can derive it.</li>
+<li><strong>Primary lead type:</strong> phone calls or form fills. Decides what we optimize for.</li>
+<li><strong>PHONE ANSWERING HOURS — mandatory, no default.</strong> Exact days and hours a human answers, including weekends. This is a <strong>required</strong> field: the build does not close without it. If nobody answers at a given time, clicks bought at that time structurally cannot convert, and the fix is an <strong>ad-schedule restriction</strong> (smart bidding ignores schedule bid modifiers — a restriction is the only lever that works).</li>
+<li><strong>Lead capacity:</strong> how many leads per week can they actually work?</li>
+</ul>
+<h3>1D. Tracking, CRM &amp; destination</h3>
+<ul>
+<li><strong>Google Ads account:</strong> exists? Access grantable to the MCC? If not → fires "Create Google Ads account" process.</li>
+<li><strong>CRM:</strong> ServiceTitan / GHL / other. <strong>Which system is the source of truth for a call, and which for a form.</strong></li>
+<li><strong>Call tracking:</strong> CallRail / ServiceTitan numbers, and who owns them.</li>
+<li><strong>GA4 property</strong> and access.</li>
+<li><strong>Destination:</strong> existing landing page(s) for each service, or "we need to build one."</li>
+<li><strong>Who receives the lead notification</strong> (name, phone, email).</li>
+</ul>
+<p><strong>Closeout:</strong> AM marks complete. Paid Ads reviews within 24h and either accepts or bounces it back with the specific missing fields (bounce goes to the AM, never to the client).</p>
+<hr />
+<h2>STAGE 2 — Access, Billing &amp; Account Health</h2>
+<p><strong>Owner:</strong> Paid Ads (media buyer)</p>
+<ol>
+<li><strong>MCC access</strong> to the Google Ads account, at the right level. Confirm access to GA4 and to the conversion tracking source.</li>
+<li><strong>Billing is alive.</strong> Check <code>customer.status</code>, the billing setup, and the <strong>date of the last impression</strong>. An account can sit "active" in the UI while serving nothing because of a payment hold — and budget increases pushed into a dark account do nothing at all. This check exists because it has already happened to us.</li>
+<li><strong>Account inventory.</strong> List every campaign, including paused ones. Look specifically for:
+   - <strong>Zombie campaigns:</strong> ENABLED with a live budget but not serving only because of an end date or a disapproval. One date edit and they outspend the account. Flag and pause.
+   - Dead campaigns from a previous agency, to be archived (with client/AM awareness).
+   - Existing shared negative lists, and whether they are actually attached to anything.</li>
+<li><strong>90-day history:</strong> what ran, what the CPL was, what the conversion actions were. Screenshot for the record. This is the baseline we will be judged against.</li>
+<li><strong>Billing on paid accounts is the Division Head's.</strong> Payment holds, declined cards, stopped accounts → flag to Eduardo. Do not delegate the check.</li>
+</ol>
+<p><strong>Branch:</strong> no account or no access → fire the "Create Google Ads Account / Request Access" process and hold this one.</p>
+<p><strong>Closeout:</strong> access confirmed, billing verified live, account inventory and 90-day baseline in the client folder.</p>
+<hr />
+<h2>STAGE 3 — Conversion Tracking + End-to-End Lead Flow Test</h2>
+<p><strong>Owner:</strong> Paid Ads · <strong>Dependency:</strong> Mo (GHL) — requested at the <strong>start</strong> of this stage · <strong>HARD GATE</strong></p>
+<p>The deepest doctrine in the division. Smart bidding will optimize toward whatever we tell it a conversion is. If we lie to it, it will efficiently buy garbage, and the report will look fine.</p>
+<p><strong>The lead flow is tested here, not at the end.</strong> We prove the whole path works — click to lead to CRM to the client's phone — <em>before</em> anyone writes an ad or builds a campaign. Testing it at the end means discovering a broken path after a week of work is already sunk into it.</p>
+<h3>3.1 — One source of truth per lead type</h3>
+<ul>
+<li><strong>Calls:</strong> one system owns the connected call (ServiceTitan connected call, or CallRail). One.</li>
+<li><strong>Forms:</strong> one system owns the genuine form lead (GHL / ServiceTitan booked job).</li>
+<li>Everything else gets demoted. Never leave the same phone call flowing through two or three parallel pipes — it double or triple counts, inflates the conversion number, and understates the true CPA.</li>
+</ul>
+<h3>3.2 — Primary vs Secondary</h3>
+<ul>
+<li><strong>Primary = the real lead action only.</strong> These are the actions smart bidding optimizes toward.</li>
+<li><strong>Secondary (reporting only):</strong> Google Business "Local actions" (website visits, directions, map taps), GA4 micro-clicks (<code>phone_link_click</code>, <code>button_click</code>, page views), and any duplicate call pipe. These are not leads.</li>
+<li>An account where micro-clicks are Primary and the CRM call is Secondary is not "working" — it works by luck of which action fires first, and it will break.</li>
+</ul>
+<h3>3.3 — Counting rules</h3>
+<ul>
+<li>Lead actions count <strong>ONE_PER_CLICK</strong>. MANY_PER_CLICK lets repeat callers inflate the signal.</li>
+<li>Correct <strong>category</strong> on each action (a form fill is not a PURCHASE).</li>
+<li>Delete or disable conversion actions that <strong>have never fired</strong>. They are noise pretending to be signal.</li>
+</ul>
+<h3>3.4 — End-to-end lead flow test (the gate)</h3>
+<p>Division hard rule: <strong>the lead flow is verified end to end before any lead-gen campaign goes live.</strong> We do it here.</p>
+<ul>
+<li>&#9744; <strong>Test form:</strong> submit a real lead through the destination that will receive the traffic. It lands in the CRM.</li>
+<li>&#9744; <strong>Test call:</strong> place a real call through the tracking number. It lands in the CRM and is attributable to Google.</li>
+<li>&#9744; Both appear in Google Ads as the <strong>Primary</strong> action — the one smart bidding will optimize toward.</li>
+<li>&#9744; The client's team receives the notification they'll get in production.</li>
+<li>&#9744; Test lead removed / marked as test in the CRM.</li>
+<li>&#9744; Screenshot the test conversions into the AT task. No screenshot, no gate.</li>
+</ul>
+<h3>3.5 — Verify against physical reality</h3>
+<ul>
+<li><strong>Reconcile against the CRM.</strong> Pull the real lead count from ServiceTitan/GHL for a known window and compare it to what Google reports. If Google says 390 and the CRM says 40, we do not have a performance story — we have a tracking failure, and no bidding decision may be made on top of it.</li>
+<li>Sanity-check plausibility: an implausible conversion rate is a broken tag, not a miracle.</li>
+<li><strong>Call conversions carry a reporting lag.</strong> Same-day data is structurally understated. Never read today.</li>
+</ul>
+<h3>3.6 — GHL gate</h3>
+<p>Any GHL component in the lead path → <strong>Mo runs the joint test and marks Verified Live</strong> in the ticket. Nothing is called "live" to the client before that.</p>
+<p><strong>Closeout:</strong> one Primary action per lead type, everything else demoted, ONE_PER_CLICK set, <strong>end-to-end test passed and screenshotted</strong>, CRM reconciliation done, Mo's Verified Live if GHL is in the path. <strong>Stage 4 does not open without this.</strong></p>
+<blockquote>
+<p><strong>If Stage 6 builds a NEW destination</strong>, that page carries its own tracking. Re-test that page's form when it goes live (Stage 6 closeout) — it's a delta test on the new page, not a repeat of this whole stage.</p>
+</blockquote>
+<hr />
+<h2>STAGE 4 — Keyword, Offer &amp; Competitor Research</h2>
+<p><strong>Owner:</strong> Paid Ads · <strong>Output: the Campaign Brief</strong></p>
+<p>Deliverable is a brief in the client folder containing:</p>
+<ol>
+<li><strong>Keyword research</strong> (Keyword Planner): volume, CPC and competition per service, for the actual service area — not national estimates.</li>
+<li><strong>The ad group themes.</strong> One theme per service intent, <strong>8–10 keywords each</strong>. Themes are what the RSAs will be written against. Never one mega ad group blending services — that is what craters ad relevance and produces Quality Score 3 on a core term.</li>
+<li><strong>Match types per keyword: PHRASE and EXACT only.</strong> No broad. Broad is a defect we keep finding in inherited accounts (it is how an auto-glass campaign buys car-window leads for a home-window client, and how a "branded" campaign spends 79% of its budget on $30 generic clicks). Reject near-duplicates: <code>hvac service near me</code> EXACT is already covered by <code>hvac service</code> PHRASE.</li>
+<li><strong>Brand keyword list:</strong> every spelling/misspelling of the client's name, EXACT match. These build the branded campaign and become negatives on the non-branded one.</li>
+<li><strong>The negative keyword list, built before launch.</strong> Standard home-services base list — <code>job / jobs / career / hiring / salary</code>, <code>DIY / how to / diagram / manual</code>, <code>parts / capacitor / filter</code> (unless they sell them), <code>free / cheap</code>, <code>rental / warranty / recall</code>, competitor brand names — plus the client-specific ones from Stage 1A (services they don't want) and any off-service category to blanket-block.
+   - <strong>Negative match type follows purpose:</strong> PHRASE for pattern killers (<code>cost</code>, <code>distributor</code>, brand-of-equipment names), EXACT for specific known zero-conversion spenders, BROAD to blanket-block an entire off-service category (<code>car</code>, <code>auto</code>, <code>windshield</code>).
+   - <strong>Do not over-negative.</strong> A word that appears in both bad and good queries stays. Blocking <code>glass</code> would have killed legitimate <code>glass window replacement</code> jobs that converted.</li>
+<li><strong>Competitor scan:</strong> who is bidding, on what, with what offer.</li>
+<li><strong>Landing page assessment</strong> per service: does a page exist, does it convert, is it fast on mobile, is there a click-to-call above the fold? This decides Stage 6. <strong>We do not scale non-branded search onto a bad post-click experience</strong> — non-branded clicks are expensive and a weak page burns them.</li>
+<li><strong>Campaign structure and budget split</strong> for this client (see Stage 7).</li>
+</ol>
+<p><strong>Closeout:</strong> brief approved by Eduardo. AT fires Stages 5 and 6 in parallel.</p>
+<hr />
+<h2>STAGE 5 — Ad Copy &amp; Assets (parallel)</h2>
+<p><strong>Owner:</strong> Paid Ads · <strong>Input:</strong> the Campaign Brief</p>
+<ul>
+<li><strong>One RSA per themed ad group</strong>, written to that theme. <strong>15 headlines / 4 descriptions.</strong> A single RSA covering every service is how ad relevance dies.</li>
+<li>The offer appears exactly as the client gave it in Stage 1A. Nothing the client said they won't say.</li>
+<li><strong>Extensions:</strong> sitelinks, callouts, structured snippets, call extension. Attach account-level assets where they exist.</li>
+<li>Copy tracks reality: if the client dropped a service line, its assets come out — while keeping the ad above serving minimums.</li>
+<li>Proofread. A typo in the client's own brand name has shipped before.</li>
+</ul>
+<p><strong>Closeout:</strong> RSAs and extensions ready. The copy lives in the AT task, not in Slack.</p>
+<hr />
+<h2>STAGE 6 — Landing Page / Destination (parallel)</h2>
+<p><strong>Owner:</strong> Web (Justin) for a site page · Mo for a GHL funnel · <strong>when applicable</strong></p>
+<p>Unlike Meta, Search has no native form to fall back on. There is always a destination, and its quality is a hard ceiling on non-branded performance.</p>
+<p><strong>Route A — Existing page, verified.</strong> Paid Ads checks it: service + location + <strong>click-to-call above the fold</strong>, fast mobile load, trust signals, form that works, tracking firing. If it fails, it becomes Route B.</p>
+<p><strong>Route B — New page (when applicable).</strong> Paid Ads writes the requirements; Web or Mo builds it.
+- Service-specific, matching the ad group theme and the ad copy. A generic homepage destination is a Quality Score problem and a conversion-rate problem at once.
+- Click-to-call above the fold, mobile load under 3 seconds, form fields kept minimal.
+- Conversion tracking firing on the page and on the thank-you.
+- <strong>Dependency deadline:</strong> live <strong>4 business days before</strong> the buildout date, so Stage 8 tests the real flow.</p>
+<p><strong>Closeout:</strong> destination live, tracking verified, leads reaching the CRM, Mo's Verified Live if GHL is in the path.</p>
+<hr />
+<h2>STAGE 7 — Campaign Buildout in Google Ads</h2>
+<p><strong>Owner:</strong> Paid Ads · Requires Stages 5 and 6 complete</p>
+<h3>7.1 — Campaign split (non-negotiable)</h3>
+<p><strong>Branded and non-branded are always separate campaigns.</strong> Always. Brand converts cheap and always would; left inside the non-branded campaign it inflates the read, hides whether prospecting is alive, and shares a budget with it.</p>
+<ul>
+<li><strong><code>TSD_MM.DD_Search_Branded_Evergreen</code></strong> — the client's brand terms, EXACT.</li>
+<li><strong><code>TSD_MM.DD_Search_NonBranded_&lt;Theme&gt;</code></strong> — the prospecting campaign, themed ad groups.</li>
+<li><strong>Cross-negation, both directions:</strong> brand terms go in as EXACT <strong>negatives</strong> on the non-branded campaign, so brand queries route to the brand campaign. Non-brand generics never live in the branded campaign.</li>
+</ul>
+<p><strong>Naming convention:</strong> <code>TSD_MM.DD_&lt;Type&gt;_&lt;Brand|NonBranded&gt;_&lt;Theme&gt;</code>. <strong>The name must describe reality.</strong> A campaign called "WindowSiding" for a siding-only client, or "Branded" for a campaign that is 79% generics, is a defect — not a cosmetic issue. <em>(The division-wide naming standard is still being finalized; this is the de facto convention in use.)</em></p>
+<h3>7.2 — Ad groups</h3>
+<ul>
+<li><strong>Themed, 8–10 keywords each</strong>, one intent per ad group (AC Repair / Heating &amp; Furnace / AC Installation / HVAC Service / Plumbing).</li>
+<li><strong>One matching RSA per ad group.</strong></li>
+<li><strong>PHRASE + EXACT only. No broad match.</strong></li>
+<li>No near-duplicate keywords across match types.</li>
+</ul>
+<h3>7.3 — Bidding at launch (new campaign, no conversion history)</h3>
+<p><strong>Launch on Maximize Clicks.</strong> With no conversion history, smart bidding has nothing to learn from, and a target set from a guess is worse than no target at all. Max Clicks buys the data we need to bid intelligently later.</p>
+<ul>
+<li>Keep it bounded: set a <strong>max CPC ceiling</strong> so Max Clicks cannot buy junk volume at any price.</li>
+<li><strong>Watch the search terms hard during this phase.</strong> Max Clicks with a thin negative list is how money disappears. The negative list from Stage 4 must be attached <strong>before launch</strong> (see 7.6).</li>
+<li><strong>Migrate to Maximize Conversions once the account has real conversion data</strong> (the conversion signal from Stage 3 must be clean first — that gate never lifts).</li>
+<li><strong>Then, and only then, consider a target CPA — and never set it below the CPL the account actually achieves.</strong> This is the single most expensive mistake in our book: a target the algorithm cannot hit is a target it refuses to bid into. It shows up as impression share lost to <strong>rank</strong> at 70–85% while the budget sits half-spent. The campaign is not budget-limited, it is target-throttled. A target works as a <strong>guardrail above the achieved CPL</strong>, not as a wish.</li>
+<li><strong>Changing the target (not the strategy type) does not reset learning.</strong> Changing the strategy type does.</li>
+</ul>
+<p><strong>Branded campaign:</strong> Maximize Conversions, <strong>no target</strong> — brand converts cheap and does not need a ceiling. Small budget of its own.</p>
+<h3>7.4 — Geo</h3>
+<ul>
+<li><strong>Proximity circles around the service hubs</strong> from Stage 1B, sized per market. Not one radius over a whole metro.</li>
+<li><strong>Presence only.</strong> Target <em>people in or regularly in your targeted locations</em> — never "also people interested in." We are buying homeowners who are physically there, not people daydreaming about the city.</li>
+<li>Exclude the areas the client refuses to serve, as <strong>negative locations</strong>.</li>
+<li>Language, network and geo settings on a new campaign replicate the campaign it splits from, deliberately — not by default.</li>
+</ul>
+<h3>7.5 — Ad schedule</h3>
+<p><strong>No default. It comes from Stage 1C.</strong> Build the schedule to the client's actual phone-answering hours. If nobody answers Saturday, we do not buy Saturday clicks for a call-driven business.</p>
+<ul>
+<li>Use an <strong>ad-schedule restriction</strong>, never a bid modifier: <strong>smart bidding ignores schedule bid modifiers.</strong></li>
+<li>If the client answers 24/7, the campaign runs 24/7. That is a decision, not an omission.</li>
+</ul>
+<h3>7.6 — Negatives at launch</h3>
+<p><strong>A campaign never goes live naked.</strong> The shared negative list from Stage 4 is attached <strong>before</strong> the campaign is enabled. We have inherited a campaign that launched with zero negatives and it ran unprotected for months.</p>
+<ul>
+<li>Apply as a <strong>shared negative list</strong> at account level, plus campaign-level negatives where needed.</li>
+<li>Campaign-level negatives also neutralize re-activation risk: if a paused ad group is ever re-enabled by mistake, its traffic is still blocked.</li>
+</ul>
+<h3>7.7 — Performance Max: not at launch</h3>
+<p><strong>PMax is not part of the initial build.</strong> Search goes up first, and PMax is only considered once there is a clean conversion signal and a stable non-branded read to compare against. PMax without query control, launched on top of a fresh account, buys volume we cannot inspect and cannibalizes brand.</p>
+<p>When it is added later, these are mandatory:
+- <strong>Brand exclusions</strong>, so it doesn't absorb branded traffic Search should own.
+- <strong>Multiple asset groups</strong>, one per service line — never a single "Services" asset group.
+- <strong>Audience signals:</strong> customer list upload + in-market.
+- Full asset set (15 headlines, 5 descriptions, image set, 1+ video), <strong>Ad Strength ≥ Good</strong>.
+- <strong>Maximum 5–10% of budget. PMax-only is forbidden</strong> by the division standard.
+- Watch its channel mix. A PMax that dumps 98% of spend into YouTube at $0.21 CPC is not a lead engine, and must not be called one.</p>
+<h3>7.8 — Automation off</h3>
+<ul>
+<li><strong>Auto-generated assets: OFF.</strong></li>
+<li><strong>Auto-apply recommendations: OFF.</strong>
+Google's automation silently edits live RSAs and applies changes we did not decide. We own the account; the account does not own itself.</li>
+</ul>
+<h3>7.9 — Buildout checklist</h3>
+<ol>
+<li>Build the branded and non-branded campaigns per 7.1, with the correct naming.</li>
+<li>Themed ad groups, 8–10 PHRASE/EXACT keywords each, one RSA each (7.2).</li>
+<li>Cross-negatives: brand terms EXACT-negative on non-branded.</li>
+<li><strong>Attach the shared negative list before enabling anything</strong> (7.6).</li>
+<li>Bidding: Max Clicks with a max-CPC ceiling on non-branded; Max Conversions no-target on branded (7.3).</li>
+<li>Geo: proximity circles, <strong>presence only</strong>, negative locations set (7.4).</li>
+<li>Ad schedule per the client's answering hours (7.5).</li>
+<li>Auto-assets and auto-apply <strong>OFF</strong> (7.8).</li>
+<li>Conversion goal = the Primary action verified in Stage 3. Campaign-level goal override where needed, so the campaign optimizes to the real lead and nothing else.</li>
+<li>Extensions attached; final URLs correct, with UTMs.</li>
+<li>Daily budget = approved monthly ÷ 30.4, split between branded (small) and non-branded. Never above what the client approved in writing.</li>
+<li><strong>Everything built PAUSED.</strong> Nothing serves before Stage 8.</li>
+</ol>
+<p><strong>Closeout:</strong> built, paused, ready for QA. Every change logged with its <strong>reversibility</strong> — the exact revert path, written down before we need it.</p>
+<hr />
+<h2>STAGE 8 — Pre-Launch QA</h2>
+<p><strong>Owner:</strong> Paid Ads · <strong>HARD GATE</strong></p>
+<p>The lead flow was already proven in Stage 3. This stage checks the <strong>build</strong>: that what we assembled matches the method and the intake, and that none of the defects we keep inheriting from other agencies are present in our own work. QA is done by <strong>someone other than the person who built it</strong>.</p>
+<p><strong>Structure</strong>
+- &#9744; Branded and non-branded are separate campaigns. Brand terms are EXACT-negatives on non-branded.
+- &#9744; No broad match keywords anywhere.
+- &#9744; Ad groups are themed, 8–10 keywords, one matching RSA each. No mega ad group.
+- &#9744; Campaign names describe what the campaigns actually do.
+- &#9744; <strong>Shared negative list is attached.</strong> No campaign is going live naked.
+- &#9744; No zombie campaign left ENABLED with a live budget elsewhere in the account.</p>
+<p><strong>Settings</strong>
+- &#9744; Geo = proximity circles around the hubs, <strong>presence only</strong>, negative locations applied.
+- &#9744; Ad schedule matches the client's actual answering hours (Stage 1C).
+- &#9744; Bidding = Max Clicks with a CPC ceiling (non-branded), Max Conversions no-target (branded). <strong>No tCPA set from a guess.</strong>
+- &#9744; Budgets match the written client approval.
+- &#9744; <strong>Auto-generated assets OFF. Auto-apply recommendations OFF.</strong></p>
+<p><strong>Ads &amp; conversions</strong>
+- &#9744; RSAs <strong>APPROVED</strong> (not disapproved on policy) and <strong>Ad Strength ≥ Good</strong>.
+- &#9744; Extensions attached and serving.
+- &#9744; Only the real lead action is <strong>Primary</strong>; local actions and micro-clicks are Secondary; lead actions are <strong>ONE_PER_CLICK</strong>.
+- &#9744; Final URLs land on the right service page, and the page loads fast on mobile.</p>
+<p><strong>Lead flow (carried from Stage 3)</strong>
+- &#9744; Stage 3's end-to-end test is <strong>signed off, with the screenshot</strong> in the AT task.
+- &#9744; <strong>Mo's Verified Live</strong> is on the ticket, if GHL is in the path.
+- &#9744; If Stage 6 built a <strong>new destination</strong>, its own form test passed on that page.</p>
+<p><strong>Closeout:</strong> QA checklist signed in AT. Nothing launches with an open box.</p>
+<hr />
+<h2>STAGE 9 — Launch</h2>
+<p><strong>Owner:</strong> Paid Ads</p>
+<ol>
+<li>Enable. Record the exact launch date/time in the AT task and in the client's Google Ads log.</li>
+<li>Log the <strong>baseline</strong> (the 90-day history from Stage 2) and what we expect to happen. We will be measured against this.</li>
+<li><strong>Set expectations with the AM, in writing, the same day.</strong> Especially when this launch replaces an inherited setup: a cleaned account often looks <em>worse</em> before it looks better, because the old number was inflated by a polluted goal or by brand hiding inside non-brand. That drop is the measurement becoming honest for the first time. <strong>If nobody wrote that down beforehand, the first quiet week gets read as failure and panic-reverted.</strong></li>
+<li>The AM communicates to the client. Paid does not.</li>
+</ol>
+<p><strong>Closeout:</strong> live, logged, AM briefed with the expectation in writing.</p>
+<hr />
+<h2>STAGE 10 — 3-Day Check (one-time)</h2>
+<p><strong>Owner:</strong> Paid Ads · Fires 3 days after launch</p>
+<p>Purpose: is it delivering, and is the signal landing? <strong>Not a performance read.</strong></p>
+<ul>
+<li><strong>Do not read today's data, and do not read intraday.</strong> Impression share is unreliable until the day closes, and call conversions carry a reporting lag that makes the current day structurally understated.</li>
+<li>Is it spending? If not, is it lost to <strong>rank</strong> or lost to <strong>budget</strong>? This is the triage that decides every lever:</li>
+<li><strong>Lost to budget</strong> → there is real demand and money is the constraint. That is the trigger to request a client-approved budget increase.</li>
+<li><strong>Lost to rank</strong> → money is <em>not</em> the lever. The ceiling is relevance, assets, landing page or signal. <strong>Raising the budget will do nothing, and nobody gets to tell the client the budget bump was the fix.</strong></li>
+<li>Are conversions being <strong>recorded</strong> (not "are they good")? Spend with zero recorded conversions = broken tracking = Critical, fix today.</li>
+<li>First search-term sweep. Max Clicks bites early: kill the obvious waste, add negatives.</li>
+<li>Any disapproved ad, any keyword with a Quality Score of 3 (that's a structural signal, not a keyword problem).</li>
+</ul>
+<p><strong>Action rule:</strong> fix delivery, tracking and waste. Do not touch bidding for performance reasons yet.</p>
+<p><strong>Closeout:</strong> logged in the client's Google Ads log. Slack DM the AM within 2h if anything found needs the client to know.</p>
+<hr />
+<h2>STAGE 11 — 7-Day Check (one-time) — closes the launch process</h2>
+<p><strong>Owner:</strong> Paid Ads · Fires 7 days after launch</p>
+<ul>
+<li><strong>Search-term sweep, properly this time.</strong> Compute cost on zero-conversion search terms, <strong>net of the client's own brand</strong>, and negative the genuine waste. Match type follows purpose (PHRASE for patterns, EXACT for known spenders, BROAD to blanket an off-service category).</li>
+<li><strong>Watch-list discipline:</strong> a core service term with 0 conversions and 5 clicks is not a loser, it's an unknown. Give it volume before cutting it. Cutting good intent on thin data is how accounts get slowly strangled.</li>
+<li><strong>Branded vs non-branded, read separately.</strong> Never one blended CPL. The question is always: is non-brand alive?</li>
+<li><strong>Bidding migration:</strong> if the conversion signal is clean and the account now has real conversion data, move non-branded from Max Clicks to <strong>Maximize Conversions</strong>. Add a tCPA only later, calibrated <strong>above</strong> the CPL actually achieved — never below it.</li>
+<li>Quality Score and Ad Strength on the themed ad groups.</li>
+<li>Lead quality check with the AM: are they real leads, and is the client calling them back?</li>
+</ul>
+<p><strong>Timing discipline:</strong>
+- A <strong>bid change</strong> reads in <strong>3–7 days</strong>.
+- A <strong>structural change</strong> (new ad groups, new RSAs, landing pages) takes <strong>2–3 weeks</strong>. A CVR fix reads slower than a bid fix. Do not judge it early, and do not stack changes — separate them by ~48h so each one is attributable.</p>
+<p><strong>Closeout:</strong> the launch process ends here. The recurring <strong>7 / 14 / 30-day optimization processes</strong> take over, plus the standard division SOPs (A1 Weekly Optimization with the weekly search-term review, A4 Friday Pulse).</p>
+<hr />
+<h2>Dependency summary (for the AT build)</h2>
+<table>
+<thead>
+<tr>
+<th>Dependency</th>
+<th>Who</th>
+<th>Needed by</th>
+<th>Lead time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Client info complete, incl. <strong>phone answering hours</strong></td>
+<td>Account Manager</td>
+<td>Stage 2</td>
+<td>Blocks the whole build</td>
+</tr>
+<tr>
+<td>Written budget approval</td>
+<td>Client, via AM ticket</td>
+<td>Stage 7</td>
+<td>Blocks launch</td>
+</tr>
+<tr>
+<td>Clean conversion signal + CRM reconciliation</td>
+<td>Paid Ads</td>
+<td>Stage 4</td>
+<td><strong>Hard gate — blocks everything</strong></td>
+</tr>
+<tr>
+<td>GHL offline import + Verified Live</td>
+<td>Mo</td>
+<td>Stage 3 and Stage 8</td>
+<td>2 days</td>
+</tr>
+<tr>
+<td>Landing page — <strong>when applicable</strong></td>
+<td>Web (Justin) or Mo</td>
+<td>Stage 8</td>
+<td>4 days before buildout</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Escalation:</strong> a missed dependency goes to the AM, who coordinates cross-division work — not to the other division head. A dependency blocking a launch date the client already knows about goes to the COO.</p>
+<hr />
+<h2>Open items this SOP depends on</h2>
+<ul>
+<li><strong>Campaign naming convention</strong> — division-wide standard still being finalized. This SOP uses the de facto <code>TSD_MM.DD_...</code> format.</li>
+<li><strong>CPL benchmarks per trade and tier</strong> — do not exist yet. Until they do, the target CPL comes from the client's own economics (Stage 1C), never from a guess.</li>
+</ul>
+</body></html>

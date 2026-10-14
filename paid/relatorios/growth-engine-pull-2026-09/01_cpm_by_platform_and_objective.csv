@@ -1,0 +1,23 @@
+platform,objective_or_channel,purpose,pricing_note,accounts_current_clients,campaigns_current_clients,spend_usd_current_clients,impressions_current_clients,cpm_usd_current_clients,spend_usd_all_accounts,impressions_all_accounts,cpm_usd_all_accounts
+Google,SEARCH,customer-facing,"click-priced: CPM is an artifact, not a brand price",23,124,526520.27,1212803,434.14,576018.22,1312297,438.94
+Google,LOCAL_SERVICES,customer-facing,"lead-priced (LSA): CPM is an artifact, not a brand price",25,25,430315.93,520892,826.11,828772.1,821000,1009.47
+Google,PERFORMANCE_MAX,customer-facing,"mixed: YouTube/Display networks are impression inventory, Search network is click-priced",17,31,354891.87,20368976,17.42,404864.85,25722163,15.74
+Google,SMART,customer-facing,"click-priced: CPM is an artifact, not a brand price",4,4,26516.53,1133729,23.39,27150.73,1216399,22.32
+Google,VIDEO,customer-facing,impression-priced (CPM/CPV): valid brand CPM,3,4,17729.51,2066891,8.58,19253.35,2110404,9.12
+Google,DISPLAY,customer-facing,impression-priced: valid brand CPM,2,2,1900.72,1111659,1.71,3401.49,2206580,1.54
+Google,DEMAND_GEN,customer-facing,impression-priced: valid brand CPM,1,1,842.13,366950,2.29,3534.44,615694,5.74
+Google,PERFORMANCE_MAX > SEARCH network,customer-facing,PMax delivery on this network only (sub-row of PERFORMANCE_MAX),17,,181605.7,716324,253.52,218905.93,847697,258.24
+Google,PERFORMANCE_MAX > YOUTUBE network,customer-facing,PMax delivery on this network only (sub-row of PERFORMANCE_MAX),17,,72242.63,14288790,5.06,74824.1,15486058,4.83
+Google,PERFORMANCE_MAX > CONTENT network,customer-facing,PMax delivery on this network only (sub-row of PERFORMANCE_MAX),17,,60160.03,4788683,12.56,63433.27,8457377,7.5
+Google,PERFORMANCE_MAX > SEARCH_PARTNERS network,customer-facing,PMax delivery on this network only (sub-row of PERFORMANCE_MAX),17,,25485.55,69067,369.0,26380.21,70995,371.58
+Google,PERFORMANCE_MAX > MAPS network,customer-facing,PMax delivery on this network only (sub-row of PERFORMANCE_MAX),17,,13699.99,467979,29.27,19446.62,742150,26.2
+Google,PERFORMANCE_MAX > DISCOVER network,customer-facing,PMax delivery on this network only (sub-row of PERFORMANCE_MAX),14,,1630.26,35587,45.81,1805.67,115054,15.69
+Google,PERFORMANCE_MAX > GMAIL network,customer-facing,PMax delivery on this network only (sub-row of PERFORMANCE_MAX),6,,67.69,2538,26.67,69.03,2824,24.44
+Google,PERFORMANCE_MAX > MIXED network,customer-facing,PMax delivery on this network only (sub-row of PERFORMANCE_MAX),4,,0.06,8,7.5,0.06,8,7.5
+Meta,Leads / Conversions / Sales,customer-facing,auction optimized for a downstream action: CPM runs higher by design,11,52,123771.88,6148165,20.13,128493.24,6294649,20.41
+Meta,Awareness / Reach,customer-facing,impression-priced reach/recall buying: valid brand CPM,12,22,39164.53,13586808,2.88,46957.76,17182611,2.73
+Meta,Traffic,customer-facing,auction optimized for a downstream action: CPM runs higher by design,4,7,17353.86,1877584,9.24,17806.5,1890465,9.42
+Meta,Engagement,customer-facing,auction optimized for a downstream action: CPM runs higher by design,2,6,822.52,74285,11.07,822.52,74285,11.07
+Meta,Leads / Conversions / Sales,recruiting,auction optimized for a downstream action: CPM runs higher by design,5,6,5023.78,369373,13.6,5023.78,369373,13.6
+Meta,Traffic,recruiting,auction optimized for a downstream action: CPM runs higher by design,2,2,1067.83,292239,3.65,1067.83,292239,3.65
+Meta,Engagement,recruiting,auction optimized for a downstream action: CPM runs higher by design,1,1,139.6,11403,12.24,139.6,11403,12.24

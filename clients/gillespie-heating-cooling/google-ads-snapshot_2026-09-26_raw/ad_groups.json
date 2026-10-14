@@ -1,0 +1,117 @@
+[
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199263226493",
+      "status": "ENABLED",
+      "type_": "SEARCH_STANDARD",
+      "id": "199263226493",
+      "name": "HVAC-General-Company",
+      "cpc_bid_micros": 18.0,
+      "cpc_bid": 18.0
+    },
+    "metrics": {
+      "clicks": "95",
+      "conversions": 5.0,
+      "cost_micros": 1493.659157,
+      "impressions": "1515",
+      "cost": 1493.659157
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/199028708869",
+      "status": "ENABLED",
+      "type_": "SEARCH_STANDARD",
+      "id": "199028708869",
+      "name": "Furnace-Heating-Repair",
+      "cpc_bid_micros": 16.0,
+      "cpc_bid": 16.0
+    },
+    "metrics": {
+      "clicks": "26",
+      "conversions": 1.0,
+      "cost_micros": 372.422504,
+      "impressions": "533",
+      "cost": 372.422504
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/202443542394",
+      "status": "PAUSED",
+      "type_": "SEARCH_STANDARD",
+      "id": "202443542394",
+      "name": "AC-Repair-Install",
+      "cpc_bid_micros": 15.0,
+      "cpc_bid": 15.0
+    },
+    "metrics": {
+      "clicks": "23",
+      "conversions": 1.0,
+      "cost_micros": 245.7,
+      "impressions": "357",
+      "cost": 245.7
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155674204",
+      "name": "TSD_08.18_Search_NonBranded_Evergreen",
+      "id": "24155674204"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137071057",
+      "status": "PAUSED",
+      "type_": "SEARCH_STANDARD",
+      "id": "197137071057",
+      "name": "Heat-Pump-Services",
+      "cpc_bid_micros": 12.0,
+      "cpc_bid": 12.0
+    },
+    "metrics": {
+      "clicks": "8",
+      "conversions": 0.0,
+      "cost_micros": 95.46,
+      "impressions": "114",
+      "cost": 95.46
+    }
+  },
+  {
+    "campaign": {
+      "resource_name": "customers/7410489772/campaigns/24155673340",
+      "name": "TSD_08.18_Search_Branded_Evergreen",
+      "id": "24155673340"
+    },
+    "ad_group": {
+      "resource_name": "customers/7410489772/adGroups/197137075177",
+      "status": "ENABLED",
+      "type_": "SEARCH_STANDARD",
+      "id": "197137075177",
+      "name": "Brand-Terms",
+      "cpc_bid_micros": 8.0,
+      "cpc_bid": 8.0
+    },
+    "metrics": {
+      "clicks": "0",
+      "conversions": 0.0,
+      "cost_micros": 0.0,
+      "impressions": "2",
+      "cost": 0.0
+    }
+  }
+]

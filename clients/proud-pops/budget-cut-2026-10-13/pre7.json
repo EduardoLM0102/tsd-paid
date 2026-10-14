@@ -1,0 +1,290 @@
+{
+ "campaigns": {
+  "20067257249": {
+   "bidding": "MAXIMIZE_CONVERSIONS",
+   "budget_lost": null,
+   "budget_now": 714.29,
+   "clicks": 4,
+   "conv": {
+    "local_services_message_lead": 1.0
+   },
+   "cost": 67.64,
+   "cost_by_network": {
+    "SEARCH": 67.64
+   },
+   "cpc": 16.91,
+   "daily_cost": {
+    "2026-10-08": 67.64
+   },
+   "impressions": 22,
+   "is": null,
+   "name": "LocalServicesCampaign:SystemGenerated:0005faae70a9d449",
+   "rank_lost": null,
+   "taps_by_network": {},
+   "tcpa": null,
+   "type": "LOCAL_SERVICES"
+  },
+  "23848895678": {
+   "bidding": "MAXIMIZE_CONVERSIONS",
+   "budget_lost": 0.0,
+   "budget_now": 300.0,
+   "clicks": 78,
+   "conv": {
+    "TSD - Website Call": 8.0
+   },
+   "cost": 3336.27,
+   "cost_by_network": {
+    "SEARCH": 3336.27
+   },
+   "cpc": 42.77,
+   "daily_cost": {
+    "2026-10-06": 321.8,
+    "2026-10-07": 309.13,
+    "2026-10-08": 749.83,
+    "2026-10-09": 702.06,
+    "2026-10-10": 663.27,
+    "2026-10-11": 312.89,
+    "2026-10-12": 277.28
+   },
+   "impressions": 1817,
+   "is": 0.38283828382838286,
+   "name": "TSD_05.14_Leads_Search_Nonbranded_HVAC",
+   "rank_lost": 0.6171617161716172,
+   "taps_by_network": {
+    "SEARCH": 8.0
+   },
+   "tcpa": 265.0,
+   "type": "SEARCH"
+  },
+  "23853361615": {
+   "bidding": "MAXIMIZE_CONVERSIONS",
+   "budget_lost": 0.1411042944785276,
+   "budget_now": 100.0,
+   "clicks": 67,
+   "conv": {
+    "TSD - Website Call": 9.0,
+    "Website lead": 1.0
+   },
+   "cost": 624.57,
+   "cost_by_network": {
+    "SEARCH": 624.57
+   },
+   "cpc": 9.32,
+   "daily_cost": {
+    "2026-10-06": 63.14,
+    "2026-10-07": 42.0,
+    "2026-10-08": 124.16,
+    "2026-10-09": 110.04,
+    "2026-10-10": 55.38,
+    "2026-10-11": 130.61,
+    "2026-10-12": 99.25
+   },
+   "impressions": 184,
+   "is": 0.8220858895705522,
+   "name": "TSD_05.13_Leads_Search_Branded",
+   "rank_lost": 0.03680981595092025,
+   "taps_by_network": {
+    "SEARCH": 9.0
+   },
+   "tcpa": null,
+   "type": "SEARCH"
+  },
+  "23853484024": {
+   "bidding": "TARGET_SPEND",
+   "budget_lost": 0.43427230046948356,
+   "budget_now": 160.0,
+   "clicks": 44,
+   "conv": {
+    "TSD - Website Call": 3.0,
+    "Website lead": 2.0
+   },
+   "cost": 1104.87,
+   "cost_by_network": {
+    "SEARCH": 1104.87
+   },
+   "cpc": 25.11,
+   "daily_cost": {
+    "2026-10-06": 150.85,
+    "2026-10-07": 194.34,
+    "2026-10-08": 198.23,
+    "2026-10-09": 125.91,
+    "2026-10-10": 139.27,
+    "2026-10-11": 171.03,
+    "2026-10-12": 125.24
+   },
+   "impressions": 729,
+   "is": 0.26799687010954615,
+   "name": "TSD_05.14_Leads_Search_Nonbranded_Plumbing",
+   "rank_lost": 0.2977308294209703,
+   "taps_by_network": {
+    "SEARCH": 3.0
+   },
+   "tcpa": null,
+   "type": "SEARCH"
+  },
+  "23853595615": {
+   "bidding": "MAXIMIZE_CONVERSIONS",
+   "budget_lost": 0.9001,
+   "budget_now": 50.0,
+   "clicks": 1938,
+   "conv": {
+    "TSD - Website Call": 97.3
+   },
+   "cost": 2175.43,
+   "cost_by_network": {
+    "CONTENT": 2168.66,
+    "YOUTUBE": 6.77
+   },
+   "cpc": 1.12,
+   "daily_cost": {
+    "2026-10-06": 303.31,
+    "2026-10-07": 301.04,
+    "2026-10-08": 295.16,
+    "2026-10-09": 294.8,
+    "2026-10-10": 316.74,
+    "2026-10-11": 332.36,
+    "2026-10-12": 332.03
+   },
+   "impressions": 72442,
+   "is": 0.0999,
+   "name": "TSD_05.14_Leads_Pmax_HVAC",
+   "rank_lost": 0.005962732919254659,
+   "taps_by_network": {
+    "CONTENT": 97.3
+   },
+   "tcpa": 27.0,
+   "type": "PERFORMANCE_MAX"
+  },
+  "23866982084": {
+   "bidding": "MAXIMIZE_CONVERSIONS",
+   "budget_lost": 0.2528199144301828,
+   "budget_now": 75.0,
+   "clicks": 2802,
+   "conv": {
+    "TSD - Email Click": 4.0,
+    "TSD - Website Call": 217.7
+   },
+   "cost": 1608.91,
+   "cost_by_network": {
+    "CONTENT": 1201.19,
+    "SEARCH": 193.0,
+    "YOUTUBE": 214.72
+   },
+   "cpc": 0.57,
+   "daily_cost": {
+    "2026-10-06": 97.62,
+    "2026-10-07": 379.7,
+    "2026-10-08": 211.47,
+    "2026-10-09": 262.12,
+    "2026-10-10": 231.4,
+    "2026-10-11": 232.91,
+    "2026-10-12": 193.68
+   },
+   "impressions": 36591,
+   "is": 0.0999,
+   "name": "TSD_05.20_PMax_Electrical",
+   "rank_lost": 0.6495527032283158,
+   "taps_by_network": {
+    "CONTENT": 201.7,
+    "SEARCH": 6.0,
+    "YOUTUBE": 10.0
+   },
+   "tcpa": null,
+   "type": "PERFORMANCE_MAX"
+  },
+  "23866999121": {
+   "bidding": "MAXIMIZE_CONVERSIONS",
+   "budget_lost": 0.4119191919191919,
+   "budget_now": 500.0,
+   "clicks": 140,
+   "conv": {
+    "TSD - Website Call": 15.0,
+    "Website lead": 5.0
+   },
+   "cost": 4002.36,
+   "cost_by_network": {
+    "SEARCH": 4002.36
+   },
+   "cpc": 28.59,
+   "daily_cost": {
+    "2026-10-06": 697.94,
+    "2026-10-07": 639.65,
+    "2026-10-08": 572.52,
+    "2026-10-09": 306.0,
+    "2026-10-10": 569.38,
+    "2026-10-11": 406.75,
+    "2026-10-12": 810.12
+   },
+   "impressions": 2087,
+   "is": 0.33494949494949494,
+   "name": "TSD_05.20_Leads_Search_Nonbranded_Electrical",
+   "rank_lost": 0.25313131313131315,
+   "taps_by_network": {
+    "SEARCH": 15.0
+   },
+   "tcpa": null,
+   "type": "SEARCH"
+  },
+  "24120440530": {
+   "bidding": "TARGET_CPV",
+   "budget_lost": null,
+   "budget_now": 100.0,
+   "clicks": 5,
+   "conv": {},
+   "cost": 711.05,
+   "cost_by_network": {
+    "YOUTUBE": 711.05
+   },
+   "cpc": 142.21,
+   "daily_cost": {
+    "2026-10-06": 101.65,
+    "2026-10-07": 101.7,
+    "2026-10-08": 103.05,
+    "2026-10-09": 101.14,
+    "2026-10-10": 101.66,
+    "2026-10-11": 100.92,
+    "2026-10-12": 100.93
+   },
+   "impressions": 78322,
+   "is": null,
+   "name": "08/2026 - YT - VideoViews (San Antonio)",
+   "rank_lost": null,
+   "taps_by_network": {},
+   "tcpa": null,
+   "type": "VIDEO"
+  },
+  "24120482524": {
+   "bidding": "TARGET_CPV",
+   "budget_lost": null,
+   "budget_now": 100.0,
+   "clicks": 29,
+   "conv": {},
+   "cost": 716.51,
+   "cost_by_network": {
+    "CONTENT": 520.35,
+    "YOUTUBE": 196.15
+   },
+   "cpc": 24.71,
+   "daily_cost": {
+    "2026-10-06": 100.37,
+    "2026-10-07": 100.72,
+    "2026-10-08": 107.69,
+    "2026-10-09": 103.39,
+    "2026-10-10": 101.67,
+    "2026-10-11": 102.93,
+    "2026-10-12": 99.73
+   },
+   "impressions": 48289,
+   "is": null,
+   "name": "08/2026 - YT - Awareness - New Braunfels",
+   "rank_lost": null,
+   "taps_by_network": {},
+   "tcpa": null,
+   "type": "VIDEO"
+  }
+ },
+ "window": [
+  "2026-10-06",
+  "2026-10-12"
+ ]
+}

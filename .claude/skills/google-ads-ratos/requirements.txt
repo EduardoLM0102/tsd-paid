@@ -1,0 +1,7 @@
+# Versões que rodam no Mac do Edu (python3 do sistema, 3.9). Instalar com:
+#   pip3 install --user -r .claude/skills/google-ads-ratos/requirements.txt
+#   python3 -m playwright install chromium
+google-ads==31.1.0
+google-auth-oauthlib==1.3.1
+google-api-python-client==2.198.0
+playwright==1.60.0

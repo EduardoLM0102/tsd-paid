@@ -1,0 +1,100 @@
+# Google Ads Ratos — Cadastro de Contas
+# O Claude le este arquivo para resolver nomes de clientes para customer IDs.
+#
+# Formato:
+# clientes:
+#   - nome: "Nome do Cliente"
+#     customer_id: "1234567890"  # sem hifens
+#     notas: "Opcional — qualquer observacao"
+
+clientes:
+  - nome: "Cool Hand Electric"
+    customer_id: "9865206319"
+    notas: "TopServ. Mansfield & Red Oak TX (Ellis/Johnson/Tarrant/Dallas). HVAC+Electrical, plumbing OUT of scope. GTM GTM-KWZDRBVQ live (account 6370314680). Existing LSA (excluded from TSD scope, Edu's call). 3x Search PAUSED built 2026-08-10: TSD_Search_Electrical 24123995882 ($67/d, 60%), TSD_Search_HVAC 24118511502 ($44/d, 40%), TSD_Search_Branded 24123995948 ($12/d). All Maximize Conversions, geo = 8 cities from live site's Areas We Service page. Log: topserv-workspace/clients/cool-hand-electric/"
+
+  - nome: "All Heart Heating & Cooling"
+    customer_id: "9205826499"
+    notas: "TopServ. Conta -PPC. MCC Topservdigital 4155514468. HVAC+Plumbing, Kern County/Lancaster/Antelope Valley CA. Search non-branded ativa: campaign 23685938569. Log: topserv-workspace/clients/all-heart-heating-cooling/"
+
+  - nome: "Mission Accomplished"
+    customer_id: "8634274092"
+    notas: "TopServ. PPC (LSA separada: 4904262993). MCC Topservdigital 4155514468. HVAC, Mohave County tri-state (Lake Havasu/Bullhead City/Fort Mohave AZ, Laughlin NV, Needles CA). ServiceTitan, call-driven. Live: PMax Evergreen HVAC 22319188947 + Branded Search 23731240233; resto pausado. Log: topserv-workspace/clients/mission-accomplished/"
+
+  - nome: "Hawkins Siding and Exterior"
+    customer_id: "2198608170"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. SIDING/EXTERIOR ONLY (windows & doors DISCONTINUED 2026-07 — do NOT run window/door). Texas (Dallas metro, Lewisville). Live: LSA 21211420266, Search Nonbranded 'TSD_04.29_Leads_Nonbranded_Evergreen' 23805382277 (all broad-match; has window/door BROAD negatives), PMax 'TSD_Pmax_WindowSiding' 21291552209 (window/door assets removed 07-10; name still says Window). Log: topserv-workspace/clients/hawkins-siding/"
+
+  - nome: "Neon Monkey Services"
+    customer_id: "7953905280"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. TREE SERVICE (trimming/removal/stump/plant health/holiday lighting/leaf cleanup), West Fort Worth TX. Owner: Brock. LSA separada: 1219885876. Live PPC: PMax Evergreen 21225221220 (Presence-OR-Interest + radius circles), Search Branded 23739724064 (5 cities incl Grand Prairie), Search Nonbranded Trimming 23825900343 (Fort Worth only). Foco 2026-07: reconcentrar geo em West Fort Worth. Log: topserv-workspace/clients/neon-monkey/"
+
+  - nome: "Neon Monkey Services - LSA"
+    customer_id: "1219885876"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. LSA do Neon Monkey (PPC: 7953905280). Campanha system-generated 19644340204 ~$214/dia. Geo por location targets incl Tarrant County + Johnson County (nivel county) + Grand Prairie + ZIP 75249 — causa dos leads fora de West Fort Worth. Log: topserv-workspace/clients/neon-monkey/"
+
+  - nome: "Golden Plumbing"
+    customer_id: "4193142570"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. PLUMBING. LSA fica NA MESMA CONTA (campanha LOCAL_SERVICES 21051260085, ~$500-750/dia) — nao e customer_id separado. PPC 100% PAUSADO desde 2026-07-17 (pedido do cliente 2026-07-21); LSA segue ATIVA por decisao do Edu. Tags web do site se chamam 'Gardner's Plumbing (web)'. ALERTA: conversoes de site zeradas desde 2026-04-01 e 'ServiceTitan – Booked Job' nunca registrou nada (nao-primary) => ROI nao e mensuravel pela conta. Log: topserv-workspace/clients/golden-plumbing/"
+
+  - nome: "Zen Air Heating and Cooling"
+    customer_id: "4360840956"
+    notas: "TopServ. PPC (LSA separada: 3740502923). MCC Topservdigital 4155514468. HVAC, Gwinnett/North Atlanta GA (Lawrenceville, Johns Creek, Duluth, Lilburn, Doraville). Cliente: Eddie (eddie@callzenair.com). AM/analista: Andrea. Live: PMax 'TSD_03.23_PMAX_HVAC_Calls' 22959264938 (~99% YouTube) + Search 'TSD_05.13_Search_Branded_Evergreen' 23675783172 (79% do spend em broad nao-branded). ClickCease instalado. ALERTA 2026-07-09: zero impressoes desde 2026-06-12. Log: topserv-workspace/clients/zen-air/"
+
+  - nome: "All Seasons AC"
+    customer_id: "4467722415"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. LSA fica numa conta separada: 8655979348 (sob o mesmo MCC, live 2026-10-14). HVAC (residential cooling/heating, Mitsubishi/Daikin ductless mini-splits). 5 campanhas ENABLED (TSD_Search_LeadGen, TSD_04.29_Search_Nonbranded_Evergreen, TSD_07.01_Lead_Search_MiniSplit-General, TSD_07.01_Lead_PMax_Mitsubishi-Ductless, TSD_07.01_Lead_Search_Mitsubishi-Brand) + 18 legadas PAUSED. GA4 property 312966741 ('All Season - GA4', accounts/137389351). GTM GTM-T7BZWVQ live (account 6000633807, container 30715121, Default Workspace = 23). ALERTA 2026-08-04: PMax Mitsubishi-Ductless mostra 89 'conversoes'/$2.59 CPL no Ads, mas GA4 mostra ZERO submit_lead_form/ghl_contact_us dessa campanha — as conversoes sao 100% book_now_link_click/phone_link_click (cliques, nao leads verificados). GA4 tambem tem page_view mal configurado como key event (polui all_conversions em toda a conta). 2026-08-11: causa raiz do book_now_link_click achada (trigger casava qualquer link 'contact-us', incl. nav 'Contact Us') e CORRIGIDA (container v22, ver gtm-log.md) — real conversion tracking (leads verificados) vem do GoHighLevel server-side (ghl_*), nao do GTM. Log: topserv-workspace/clients/all-seasons-ac/ (google-ads-log.md + gtm-log.md)"
+
+  - nome: "C&S Air"
+    customer_id: "5563867754"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. HVAC, Mansfield TX. Conta chama '(LSA) C&S Air, inc. / Derek O'Keefe' mas TEM PPC completo dentro (mesmo padrao Golden Plumbing/Watt's Right) — LOCAL_SERVICES campaign convive com Search/PMax/Smart na mesma conta. Conta antiga 'C&S Air Inc.' (3144198344) esta CLOSED/inacessivel via API — nao usar. Auditoria 2026-08-12: CPA real (so calls verificadas + web form) = $78, 221 leads (216 calls + 5 forms) em $17,230 YTD. 'TSD_03.13_Pmax_Evergreen' e um SMART CAMPAIGN (nao PMax de verdade) — infla conversoes contando Directions+Clicks-to-call (162 de 310.5) e API BLOQUEIA negative keywords nesse tipo de campanha (OPERATION_NOT_PERMITTED_FOR_CONTEXT). Nonbranded Search falhou 2x (Mar $763/0conv, Jul $1,365/1conv) por QS baixo (1-2) em termos core + zero negativas de concorrente — corrigido 2026-08-12 (18 negativas de marca de concorrente aplicadas nas 2 campanhas Search nonbranded; geo bug 'Arlington, Virginia' removido da campanha de marco; PMax limpo (Leads-Performance Max, $50.7 CPA, 100% leads reais) foi reativado, estava pausado sem motivo). Log: topserv-workspace/clients/cs-air/"
+
+  - nome: "Lilypad Septic"
+    customer_id: "3797438623"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. Account name 'RYNO - Lily Pad Septic FKA Salina Septic Services' — TAKEOVER from a prior agency (RYNO), NOT a blank-slate build. Salina & Hutchinson KS, two counter-cyclical lines (septic Oct-Apr, portable restroom rental May-Sep). Plumbing explicitly OUT of scope (site sells no water heaters/repiping/fixtures). Real site phones confirmed 2026-08-20: Salina 785-268-2656, Hutchinson 785-626-8621. 5 legacy RYNO campaigns already in account, all PAUSED, real 2026 YTD spend ~$10,038 (CG-Branded $2,461, CG-Septic $4,975, CG-Plumbing $1,130 — untouched, out of scope, CG-Sewer $1,471, CG-Sewer-and-Drain-Cleaning $0) — left as-is, not deleted. Real conversion actions exist and show YTD volume (Call Extension Calls 147, BC Qualified Calls ~99, BC Calls v2 68, RYNO Lead Forms 2) but NOT verified live/biddable post-transfer — do not trust before an end-to-end lead flow test (TSD hard rule). 2026-08-20 build: TSD_08.20_Search_Branded_Evergreen (24153698844, $10/day) + TSD_08.20_Search_NonBranded_Evergreen (24164203087, $34/day, 3 ad groups: Septic Pumping and Repair/Septic Installation/Portable Restroom Rental), both PAUSED, Manual CPC. Budget is a PLACEHOLDER from the Aug-Sep media plan's $3k/mo scenario — NOT written-approved by Cole. Landing page (Edu's call): https://www.lilypadseptic.com/get-septic-services/ for all ad groups — note its hero is emergency-septic-focused, weak message match for restroom-rental search intent. Log: topserv-workspace/clients/lilypad-septic/google-ads-log.md"
+
+  - nome: "Gillespie's Heating and Cooling"
+    customer_id: "7410489772"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. HVAC, Brooksville KY (Northern KY / Cincinnati OH metro: Newport, Florence, Covington, Alexandria, Erlanger, Maysville, Cynthiana, Fort Mitchell, Flemingsburg + Cincinnati OH). Site gillespieheatingcooling.com (WordPress). Also has a system-generated LSA campaign (23940351598, near-zero volume, out of TSD PPC scope). 2026-08-18 PPC build: TSD_08.18_Search_Branded_Evergreen (24155673340) + TSD_08.18_Search_NonBranded_Evergreen (24155674204), $80/day each, PAUSED, Manual CPC w/ bid ceilings (no conversion action to bid Max Conversions against yet — migrate once tracking below is live). 4 non-branded ad groups (AC Repair/Furnace/Heat Pump/HVAC General) + 1 branded, 43 keywords, 34 negatives, 5 RSAs, 12 extensions. GTM GTM-WJVDZBVF (account 6360204363, container 255120208) same day: full tag/trigger/variable scaffold cloned from Proud Pops (23 tags/14 triggers/19 vars/2 Meta Pixel templates), PUBLISHED live version 3. Real values live: Google Tag AW-18229014139, Conversion ID 18229014139, GA4 G-V636WJ3PSD, Lead conversion label zIcSCNmx1-McEPvcovRD, Phone Call conversion label 8I3bCM-L3-McEPvcovRD (both verified against real enabled conversion actions in the Ads account). Still filler: Meta Pixel ID, Email conversion label, CallRail company/script ID — snippet not installed on site yet, several triggers still reference Proud Pops' button copy not Gillespie's. Primary lead type = form fills (GHL listeners already in the GTM scaffold). BLOCKED ON: installing the GTM snippet on site, creating Meta Pixel + Email conversion action + CallRail (or dropping that tag), real phone-answering hours, written budget approval on file with AM, independent QA. See google-ads-log.md + gtm-log.md. Log: topserv-workspace/clients/gillespie-heating-cooling/"
+
+  - nome: "Watt's Right Electric"
+    customer_id: "3651667805"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. Electrician, Tulsa OK (callwattsright.com). LOCAL_SERVICES campaign LIVES INSIDE THIS SAME ACCOUNT (system-generated, ~86% of account spend/leads) alongside PPC — not a separate LSA account. Live PPC: TSD_07.05_Leads_Search_Nonbranded 23832838033 ($40/d), TSD_07.05_PMAX_Evergreen 23833205176 ($20/d, best CPA), TSD_03.26_Search_Branded_Evergreen 23690645223 ($20/d). Isolated EV-charger campaign TSD_08.03_Search_EVCharger_Tulsa 24094882200 built 2026-08-03, still PAUSED as of 2026-08-12. Sister account 'What's Right - Broken Arrow' (9261944882) = LSA-only, zero spend, dormant. Log: topserv-workspace/clients/watts-right/google-ads-log.md"
+
+  - nome: "Eaglepoint Roofing & Exterior"
+    customer_id: "9005488539"
+    notas: "TopServ. MCC Topservdigital 4155514468. Registered 2026-08-31 — found by listing all customer_client accounts under the MCC, wasn't in this file yet. Roofing/exterior. Account has ONLY a system-generated LOCAL_SERVICES campaign (23233946773) — no Search/PMax built. DORMANT: 9 impressions/0 clicks/$0 spend/0 LSA leads over last 30 days. Log: topserv-workspace/clients/eaglepoint-roofing/google-ads-log.md"
+
+  # === Proud Pops (ex-The Problem Solvers) + My Favorite Service Company ===
+  # Merger San Antonio TX. Log: topserv-workspace/clients/proud-pops/
+  - nome: "Proud Pops Plumbing, Air & Electric - PPC"
+    customer_id: "1051843378"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. E A MESMA CONTA do 'The Problem Solvers' (so renomeada) — historico continuo desde jan/2025. ATENCAO: tem campanha LOCAL_SERVICES DENTRO da conta (LocalServicesCampaign:SystemGenerated:0005faae70a9d449) alem das contas LSA separadas. Conta reconstruida em 2026-05-14 (campanhas TSD_05.xx). ALERTA: todas as tags web de www.txproblemsolvers.com morreram entre 2026-03-16 e 2026-03-27 (rebrand); as acoes 'Proud Pops (web)' existem mas estao HIDDEN => conversoes de site zeradas desde abr/2026. Metas poluidas (Local actions, Store visits, GA 'Shop'). Budget-limited em 17 de 18 meses (23-59% de IS perdida por orcamento)."
+
+  - nome: "Proud Pops - LSA San Antonio [1]"
+    customer_id: "7261668241"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. LSA eletricista (xcat:service_area_business_electrician). Geo: Boerne/Helotes/Seguin TX. PPC: 1051843378."
+
+  - nome: "Proud Pops - LSA San Antonio [2]"
+    customer_id: "6621969129"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. LSA HVAC. Geo: Bandera/Converse/Kerrville TX. Tem tambem 1 campanha SEARCH (TSD_05.14_Leads_Search_Nonbranded). PPC: 1051843378."
+
+  - nome: "My Favorite Service Company"
+    customer_id: "9815330464"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. PPC. Empresa do Jacob, fundida com a Proud Pops. Primeiro spend gerido jul/2025. LSAs separadas: 4127524472 (New Braunfels), 4905286019 (San Antonio) — ambas sem spend desde fev/2026. ALERTA: 'page_view' esta como conversao PRIMARY (2.738 'conversoes' em jan/2026); tags web morreram 2026-03-31."
+
+  - nome: "Live Wire Electric"
+    customer_id: "1056617442"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. Electrician, Lynnwood/Seattle WA (livewireelectricwa.com). Registered 2026-09-03 — found by listing customer_client under the MCC, wasn't in this file yet. LOCAL_SERVICES campaign LIVES INSIDE THIS ACCOUNT (system-generated 20154807116, $500/d budget cap, best channel: $35.90 CPA, 23 leads/30d). Live PPC: TSD_03.16_Search_Branded_Evergreen 23665625884 ($80/d) + TSD_04.28_Search_Nonbranded_Evergreen 23806096501 ($40/d), both Maximize Conversions. 8 legacy campaigns PAUSED (Smart/PMax x3/Display/old Search x2). AUDIT 2026-09-03: reported 'conversions' undercounted real leads (all_conversions) every month since Nonbranded launched — root cause traced to campaign_conversion_goal (category=DEFAULT, origin=WEBSITE) being unset/None on Nonbranded while Branded had it biddable=True, so First Time Phone Call (real calls) counted for Branded but not Nonbranded. FIXED same day: set that goal biddable=TRUE on Nonbranded via update.py conversion-goal, verified. Deliberately left 'Calls from ads' (PHONE_CALL_LEAD/CALL_FROM_ADS, primary_for_goal=False account-wide) uncounted — that's a call-button click not a verified call, same anti-pattern as Proud Pops' fake button-click leads; do not flip without a reason. Branded also losing 89.4% of impression share to Ad Rank on its OWN BRAND NAME despite budget_lost only 0.9% (QS 9-10 on core terms) — likely downstream of the same starved-signal issue on Maximize Conversions/$62 tCPA, same pattern as Watt's Right 2026-08-12; re-check impression share ~1-2 weeks after the conversion-goal fix. Nonbranded negatives: account already had an extensive 131-negative list (incl. many competitor names + tesla/chargepoint terms) before this audit — don't assume gaps without checking first. Added 8 genuinely-missing competitor-name negatives 2026-09-03 (PHRASE, campaign-level on Nonbranded): bob's electric, provident electric, unity electric, all wire electric, harts electric, admiral electric, j & j electric, hello electric. Budget reallocated 2026-09-03 (no AM approval needed per TSD doctrine — reallocation among campaigns at constant total, not a total-account change): Branded $80->$50/d (was underspending its cap, bottleneck is Ad Rank not budget, only 0.9% IS lost to budget), Nonbranded $40->$70/d (was budget-constrained, 27.5% IS lost to budget). Combined stays $120/d. LSA's $500/d cap deliberately untouched (best channel, nowhere near its cap). Re-check impression share + budget-lost % on both in ~1-2 weeks to see if this closes the gap or needs further adjustment. Full log: topserv-workspace/clients/live-wire-electric/google-ads-log.md"
+
+  - nome: "On The Way AC Plumbing & Electrical"
+    customer_id: "3454686129"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. AC/Plumbing/Electrical + Roofing/Insulation/Generators/Energy Audits, Santa Fe TX (Galveston County). Found 2026-09-09 via customer_client under the MCC (a different account, 3525426278, was chased first and turned out to be an unrelated CUSTOMER_NOT_ENABLED red herring — ignore it if it resurfaces). LIVE as of 2026-09-09 end of day: LSA (system-generated, untouched, $285.71/d — managed as its own budget line, deliberately outside the $9k/mo Search+Meta accounting per Edu's call), Performance Max-1 ($30/d, reinstated 09-09 after auto-generated assets were found ON and opted out — still a single asset group covering all 7 services, not yet split by line), TSD_09.09_Search_Branded_Evergreen (24232091690, $20/d, Maximize Conversions no target, 9 EXACT brand terms), TSD_09.09_Search_NonBranded_Evergreen (24226524120, $197/d, Manual CPC w/ per-ad-group CPC ceiling) with 3 ad groups only — AC-Repair (200077915917, $20 ceiling), Plumbing-Emergency (203111572234, $25 ceiling), Electrical (200077923037, $18 ceiling); PHRASE+EXACT keywords, RSAs (all APPROVED), final URLs to real service pages, geo = 16 service-area cities presence-only, ad schedule Mon-Sun 8am-6pm (from posted hours, still NOT confirmed as real phone-answering hours — top open item), 24 base negatives + 9 brand cross-negatives. PPC total $247/d (~$7,509/mo) = the $9k/mo plan minus $1,500/mo Meta. PAUSED (not touched): Leads-Performance Max-2 (30/d, conversion goals fixed 09-09 but no case yet to revive it) and Demand Gen (20/d, zero real conversions in 30d) — plus 4 dead legacy campaigns pre-dating TSD. CONVERSION TRACKING: cleaned up 09-09 — customer_conversion_goal + PMax-2's campaign override both fixed to bid only on real categories (PHONE_CALL_LEAD/SUBMIT_LEAD_FORM x WEBSITE/CALL_FROM_ADS); App-install/Store-visit/Directions pollution removed account-wide. Still unresolved: 3 conversion actions share the PHONE_CALL_LEAD/CALL_FROM_ADS bucket with the clean '[TSD] Click to call' (7754982884), 2 share SUBMIT_LEAD_FORM/WEBSITE with '[TSD] Submit lead form' (7754995862) — API can't isolate which are truly wired vs dead, needs Edu to check against the real tracking implementation. Brand exclusion on PMax-1 also needs adding manually in the UI (BrandListService doesn't exist in this SDK's API version; brand entity confirmed to exist: /g/11l20ct1gp). Phase 2 (Heating, Roofing, Insulation, Generators, Energy-Audit, Water-Heater, Drain-Sewer, Leak-Detection) fully researched + RSA copy written, not built — needs a go-ahead. Full brief: topserv-workspace/clients/on-the-way/google-ads-search-launch-brief.md. Full session-by-session log (6 sessions, 2026-09-09): topserv-workspace/clients/on-the-way/google-ads-log.md"
+
+  # Contas legadas The Problem Solvers (LSA, sem spend desde ~abr/2025):
+  # 8497583415 HVAC SA 2 | 5229329621 HVAC SA 4 | 3490305409 Plumbing SA 2
+  # 5504504691 Plumbing SA 3 | 3477779749 Roofing SA | 5037427931 Roofing SA 2 | 4931459362 Roofing SA 3
+  # 9776908250 "[Old Account] The Problem Solvers (no LSA connected)" = CANCELED, ilegivel via API (CUSTOMER_NOT_ENABLED).
+
+  - nome: "Nick's Heating and Air Conditioning"
+    customer_id: "1854100356"
+    notas: "TopServ. USD. MCC Topservdigital 4155514468. HVAC, Hammond LA (Northshore: Amite City, Covington, Hammond, Mandeville, Madisonville, Ponchatoula). LSA NA MESMA CONTA (23344968885, Mon-Fri 7-16 only). Live: PMax 'TSD_02.20_PMAX_Q1' 23586346547, Search Branded 23675600637, Search Nonbranded AC 23821497590 (leaking: $1,257/1 conv 30d as of 2026-10-08). AT client 'Nick's Heating and Air Conditioning'. Registered 2026-10-08. Log: topserv-workspace/clients/nicks-heating/"

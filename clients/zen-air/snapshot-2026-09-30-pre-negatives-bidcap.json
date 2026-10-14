@@ -1,0 +1,1853 @@
+{
+ "campaigns": [
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "bidding_strategy_type": "TARGET_IMPRESSION_SHARE",
+    "target_impression_share": {
+     "location": "TOP_OF_PAGE",
+     "location_fraction_micros": "900000",
+     "cpc_bid_ceiling_micros": "8000000"
+    },
+    "name": "TSD_05.13_Search_Branded_Evergreen",
+    "id": "23675783172"
+   },
+   "campaign_budget": {
+    "resource_name": "customers/4360840956/campaignBudgets/15451183344",
+    "amount_micros": "50000000"
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "bidding_strategy_type": "MAXIMIZE_CONVERSIONS",
+    "name": "TSD_08.03_Search_NonBranded_Evergreen",
+    "id": "24100030790"
+   },
+   "campaign_budget": {
+    "resource_name": "customers/4360840956/campaignBudgets/15761998031",
+    "amount_micros": "150000000"
+   }
+  }
+ ],
+ "keywords": [
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~296788112051",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "hvac contractors near me"
+    },
+    "criterion_id": "296788112051",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~298692941016",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "zen air"
+    },
+    "criterion_id": "298692941016",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~299795072049",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "zen air"
+    },
+    "criterion_id": "299795072049",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~302102393203",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "furnace repair duluth"
+    },
+    "criterion_id": "302102393203",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~305440965525",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "local hvac repair company"
+    },
+    "criterion_id": "305440965525",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~309440560782",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "ac repair duluth ga"
+    },
+    "criterion_id": "309440560782",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~310679090521",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "commercial hvac duluth"
+    },
+    "criterion_id": "310679090521",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~310990134369",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "commercial air conditioning ga"
+    },
+    "criterion_id": "310990134369",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~330289070777",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "ac repair duluth ga"
+    },
+    "criterion_id": "330289070777",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~348400405674",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "hvac contractors ga"
+    },
+    "criterion_id": "348400405674",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~385015682041",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "furnace repair duluth"
+    },
+    "criterion_id": "385015682041",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~385749122543",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "heating repair duluth ga"
+    },
+    "criterion_id": "385749122543",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~453543712457",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "commercial hvac duluth"
+    },
+    "criterion_id": "453543712457",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~628376058206",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "emergency ac repair ga"
+    },
+    "criterion_id": "628376058206",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~643874264084",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "hvac contractors ga"
+    },
+    "criterion_id": "643874264084",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~667296864672",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "heating repair duluth ga"
+    },
+    "criterion_id": "667296864672",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~777381230100",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "emergency ac repair ga"
+    },
+    "criterion_id": "777381230100",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~790766806936",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "PHRASE",
+     "text": "zen air cooling"
+    },
+    "criterion_id": "790766806936",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~859562546367",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "emergency heating service ga"
+    },
+    "criterion_id": "859562546367",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~928050641734",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "PHRASE",
+     "text": "zen air heating"
+    },
+    "criterion_id": "928050641734",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~929810212306",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "zen air heating and cooling"
+    },
+    "criterion_id": "929810212306",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~930803241971",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "PHRASE",
+     "text": "zen air heating and cooling"
+    },
+    "criterion_id": "930803241971",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~1231717749522",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "zen air heating and cooling"
+    },
+    "criterion_id": "1231717749522",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~1628168307006",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "zen air hvac"
+    },
+    "criterion_id": "1628168307006",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2406992335904",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "zen air hvac"
+    },
+    "criterion_id": "2406992335904",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2423116135356",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "zen air heating"
+    },
+    "criterion_id": "2423116135356",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2472098119133",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "PHRASE",
+     "text": "zen air duluth ga"
+    },
+    "criterion_id": "2472098119133",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2472098119173",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "zen air ac repair"
+    },
+    "criterion_id": "2472098119173",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2472098119333",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "PHRASE",
+     "text": "call zen air"
+    },
+    "criterion_id": "2472098119333",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2472098119373",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "zen air phone number"
+    },
+    "criterion_id": "2472098119373",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2472098119413",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "PHRASE",
+     "text": "zen air heating and air"
+    },
+    "criterion_id": "2472098119413",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2472098119573",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "zen air hvac ga"
+    },
+    "criterion_id": "2472098119573",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2472098618333",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "PHRASE",
+     "text": "callzenair.com"
+    },
+    "criterion_id": "2472098618333",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2473698104290",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "indoor air quality services ga"
+    },
+    "criterion_id": "2473698104290",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2473698104330",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "air flow ventilation pros ga"
+    },
+    "criterion_id": "2473698104330",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2474263451758",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "residential hvac services duluth"
+    },
+    "criterion_id": "2474263451758",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2474263451918",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "air flow and ventilation experts"
+    },
+    "criterion_id": "2474263451918",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2474263451958",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "smart thermostat installation ga"
+    },
+    "criterion_id": "2474263451958",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2474263451998",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "affordable ac repair duluth"
+    },
+    "criterion_id": "2474263451998",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2474263604638",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "smart hvac systems duluth"
+    },
+    "criterion_id": "2474263604638",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2474263604878",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "best hvac company duluth ga"
+    },
+    "criterion_id": "2474263604878",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2474263605078",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "indoor air quality testing duluth"
+    },
+    "criterion_id": "2474263605078",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2474263605318",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "ac repair duluth georgia"
+    },
+    "criterion_id": "2474263605318",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2482964495933",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "PHRASE",
+     "text": "zen air near me"
+    },
+    "criterion_id": "2482964495933",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2482964537893",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "zen air duluth ga"
+    },
+    "criterion_id": "2482964537893",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2482964537933",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "zen air suwanee ga"
+    },
+    "criterion_id": "2482964537933",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2482964538173",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "callzenair"
+    },
+    "criterion_id": "2482964538173",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2482964538213",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "call zen air"
+    },
+    "criterion_id": "2482964538213",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2482964538373",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "PHRASE",
+     "text": "zen air hvac duluth"
+    },
+    "criterion_id": "2482964538373",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2482964538413",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "PHRASE",
+     "text": "zen air ac repair"
+    },
+    "criterion_id": "2482964538413",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2493656191363",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "zen air duluth ga"
+    },
+    "criterion_id": "2493656191363",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2493656191403",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "zen air cooling"
+    },
+    "criterion_id": "2493656191403",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2493656191563",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "air flow ventilation pros ga"
+    },
+    "criterion_id": "2493656191563",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2493656191603",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "smart hvac systems duluth"
+    },
+    "criterion_id": "2493656191603",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2493656191643",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "best hvac company duluth ga"
+    },
+    "criterion_id": "2493656191643",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2493656191803",
+    "status": "PAUSED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "indoor air quality services ga"
+    },
+    "criterion_id": "2493656191803",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2493656191843",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "callzenair.com"
+    },
+    "criterion_id": "2493656191843",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/193305460463",
+    "id": "193305460463"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/193305460463~2493656191883",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "callzenair"
+    },
+    "criterion_id": "2493656191883",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~296788112051",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "hvac contractors near me"
+    },
+    "criterion_id": "296788112051",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~302102393203",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "furnace repair duluth"
+    },
+    "criterion_id": "302102393203",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~305440965525",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "local hvac repair company"
+    },
+    "criterion_id": "305440965525",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~309440560782",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "ac repair duluth ga"
+    },
+    "criterion_id": "309440560782",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~310679090521",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "commercial hvac duluth"
+    },
+    "criterion_id": "310679090521",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~310990134369",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "commercial air conditioning ga"
+    },
+    "criterion_id": "310990134369",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~330289070777",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "ac repair duluth ga"
+    },
+    "criterion_id": "330289070777",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~348400405674",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "hvac contractors ga"
+    },
+    "criterion_id": "348400405674",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~385015682041",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "furnace repair duluth"
+    },
+    "criterion_id": "385015682041",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~385749122543",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "heating repair duluth ga"
+    },
+    "criterion_id": "385749122543",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~453543712457",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "commercial hvac duluth"
+    },
+    "criterion_id": "453543712457",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~628376058206",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "emergency ac repair ga"
+    },
+    "criterion_id": "628376058206",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~643874264084",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "hvac contractors ga"
+    },
+    "criterion_id": "643874264084",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~667296864672",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "heating repair duluth ga"
+    },
+    "criterion_id": "667296864672",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~777381230100",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "emergency ac repair ga"
+    },
+    "criterion_id": "777381230100",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~859562546367",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "emergency heating service ga"
+    },
+    "criterion_id": "859562546367",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~2473698104290",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "indoor air quality services ga"
+    },
+    "criterion_id": "2473698104290",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~2473698104330",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "air flow ventilation pros ga"
+    },
+    "criterion_id": "2473698104330",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~2474263451758",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "residential hvac services duluth"
+    },
+    "criterion_id": "2474263451758",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~2474263451918",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "air flow and ventilation experts"
+    },
+    "criterion_id": "2474263451918",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~2474263451958",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "smart thermostat installation ga"
+    },
+    "criterion_id": "2474263451958",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~2474263451998",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "affordable ac repair duluth"
+    },
+    "criterion_id": "2474263451998",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~2474263604638",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "smart hvac systems duluth"
+    },
+    "criterion_id": "2474263604638",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~2474263604878",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "best hvac company duluth ga"
+    },
+    "criterion_id": "2474263604878",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~2474263605078",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "indoor air quality testing duluth"
+    },
+    "criterion_id": "2474263605078",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~2474263605318",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "ac repair duluth georgia"
+    },
+    "criterion_id": "2474263605318",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~2493656191563",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "air flow ventilation pros ga"
+    },
+    "criterion_id": "2493656191563",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~2493656191603",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "smart hvac systems duluth"
+    },
+    "criterion_id": "2493656191603",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~2493656191643",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "best hvac company duluth ga"
+    },
+    "criterion_id": "2493656191643",
+    "negative": false
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/24100030790",
+    "id": "24100030790"
+   },
+   "ad_group": {
+    "resource_name": "customers/4360840956/adGroups/205687909824",
+    "id": "205687909824"
+   },
+   "ad_group_criterion": {
+    "resource_name": "customers/4360840956/adGroupCriteria/205687909824~2493656191803",
+    "status": "ENABLED",
+    "keyword": {
+     "match_type": "BROAD",
+     "text": "indoor air quality services ga"
+    },
+    "criterion_id": "2493656191803",
+    "negative": false
+   }
+  }
+ ],
+ "campaign_negatives": [
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "campaign_criterion": {
+    "resource_name": "customers/4360840956/campaignCriteria/23675783172~307701421852",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "shumate heating and air"
+    },
+    "criterion_id": "307701421852"
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "campaign_criterion": {
+    "resource_name": "customers/4360840956/campaignCriteria/23675783172~336878628944",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "shumate mechanical"
+    },
+    "criterion_id": "336878628944"
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "campaign_criterion": {
+    "resource_name": "customers/4360840956/campaignCriteria/23675783172~337261693899",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "triad mechanical"
+    },
+    "criterion_id": "337261693899"
+   }
+  },
+  {
+   "campaign": {
+    "resource_name": "customers/4360840956/campaigns/23675783172",
+    "id": "23675783172"
+   },
+   "campaign_criterion": {
+    "resource_name": "customers/4360840956/campaignCriteria/23675783172~351881558767",
+    "keyword": {
+     "match_type": "EXACT",
+     "text": "reliance heating and air"
+    },
+    "criterion_id": "351881558767"
+   }
+  }
+ ]
+}

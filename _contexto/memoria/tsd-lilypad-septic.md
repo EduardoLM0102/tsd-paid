@@ -1,0 +1,33 @@
+---
+name: tsd-lilypad-septic
+description: "TSD client Lilypad Septic (Salina + Hutchinson KS) — LIVE takeover account since 2026-08-20 (CID 3797438623, ex-RYNO), $2,000/mo Cole-approved; 08-30: found 3 GTM tags paused since RYNO, unpaused, then rebuilt conversion tracking on the Proud Pops pattern (GA4 unified with Ads event, redundant number-swap tag retired); no real end-to-end test yet"
+metadata: 
+  node_type: memory
+  type: project
+  originSessionId: 33b6e6a4-2c8d-44a2-994b-ab181b4e6eed
+  modified: 2026-08-30T16:20:25.862Z
+---
+
+Lilypad Septic Company (Salina & Hutchinson, KS; owner Cole Leister, wife Calle co-owns) — status flipped from **prospect** to **live takeover client** on 2026-08-20, superseding the earlier "blank slate" framing. Found under the TSD MCC: CID `3797438623`, "RYNO - Lily Pad Septic FKA Salina Septic Services", a prior-agency (RYNO) account with 5 pre-existing PAUSED Search campaigns and ~$10K 2026 YTD spend, not a ground-up build.
+
+**Why it matters:** `README.md`/`internal-notes.md` in `topserv-workspace/clients/lilypad-septic/` (the Q4/Aug-Sep media-plan docs) still describe the old blank-slate assumption and are stale — flagged in the repo's own log for a rewrite, not yet done as of 2026-08-26. Trust `google-ads-log.md` and `gtm-log.md` in that folder over the README for current state.
+
+**Current build (all in `clients/lilypad-septic/`):**
+- Two live Search campaigns since 2026-08-20: `TSD_08.20_Search_Branded_Evergreen` (24153698844, $5/day) and `TSD_08.20_Search_NonBranded_Evergreen` (24164203087, $41/day, 3 ad groups: Restroom Rental / Septic Pumping+Repair / Septic Install). Both ENABLED, Manual CPC. 5 legacy RYNO campaigns renamed `_Legacy` suffix, left PAUSED including out-of-scope Plumbing.
+- Cole approved **$2,000/mo** verbally via Edu/AM on 2026-08-20 — no LSA (Sewage system is the only fitting LSA category and even that's ZIP-unverified for 67401/67501; restroom rental has no LSA category at all). Split: Google ~$1,400/mo, Meta ~$600/mo (Meta not built yet).
+- **GTM tracking was actually broken and got fixed**: container `GTM-KG7WCQN` had 3 Google Ads conversion tags firing with blank IDs (site never populated the dataLayer vars) — root cause of `RYNO Lead Forms` showing only 2 conversions against $10K spend. Hardcoded real conversion ID (`AW-16840964046`) and labels pulled from the Ads account. Also found the real form is a GHL iframe embed (RYNO's white-label), not a native WP form, so the old `/thank-you/`-pageview trigger could never fire — built a GHL postMessage listener (cloned from Gillespie's/Proud Pops pattern). **Published 2026-08-25**, verified live via the public gtm.js. Still open: `Manual Call Tracking` number-swap piece unset (needs a Salina-vs-Hutchinson decision), GA4's own form tag still on the dead trigger, and **no real end-to-end test call/form has ever been placed** — config-correct is not proof it fires in production.
+- 2026-08-26: found both live campaigns still had Search Partners + Display targeting on (same `create.py` bug as [[tsd-zen-air]] and [[tsd-cool-hand-electric]]) — fixed same session, ~2% of spend affected (6 days old account).
+
+**Open items:** written AM ticket still owed for the $2,000/mo verbal approval; LSA ZIP eligibility check still unrun (moot for now, cheap to do later); hours conflict (24/7 advertised vs Mon-Fri 8-5 on file) unresolved; Meta $600/mo not built; a 3-day/ongoing performance check to confirm real leads are landing somewhere visible, not just clicks.
+
+**2026-08-30 — deep check, fix, then full rebuild, all same session.** The three GTM tags fixed on 08-25 (Manual Call Tracking id 14, Mobile Click To Call id 21, Form Tracking id 24) were all `paused: true` in the live container, and always had been — paused since RYNO's original build (confirmed by pulling container versions 10/11, pre-TSD), never touched by the 08-25 fix which corrected IDs/labels/trigger but never checked the paused flag. The 08-25 "verified live" check only string-matched the `gtm.js` bundle (which ships paused-tag code too) — that was a false positive. First fix: all 3 unpaused, published as container version 13.
+
+Edu then asked not to keep patching RYNO's structure piecemeal — rebuild conversion tracking on a proven TSD pattern instead, scoped to just conversion tracking (not Invoca/Enhanced Conversions/ServiceTitan/schema, which stay untouched and unaudited). Pulled [[tsd-proud-pops-tracking|Proud Pops]]' live container (`GTM-WBFDB6L8`) directly via the API as the reference: one custom event fans out to every destination (Ads + GA4) in parallel, and DNI/number-swap is left entirely to the dedicated call-tracking vendor rather than a second Google-side number-swap tag. Applied that to Lilypad, published as container version 14:
+1. `RSS - GA4 - Form Submissions` repointed from the dead `/thank-you/`-pageview trigger to the same working GHL custom-event trigger the Ads form tag already uses — closes the GA4 gap open since 08-20.
+2. `Manual Call Tracking` (the number-swap tag) re-paused by design — it duplicated Invoca's own DNI (already live on this site) and was never finished; `Mobile Click To Call` already reports every real phone click to Ads without it.
+
+Both verified live via direct API read (not the publish response), Default Workspace synced clean. **Still no real end-to-end test (live call/form submission) has ever been run on this account** — that's the one thing left that actually proves any of this works. Also still open: `formattedPhone`/`unformattedPhone` left unused (not deleted, in case a per-market number decision revives the number-swap tag later), and **TSD still has no GA4 Admin/Data API access for this property** (not in `ga4.py properties`) — can't independently verify GA4 events. Full detail in `gtm-log.md`.
+
+**How to apply:** Don't re-run the old prospect research (LSA category fit, competitive read, benchmark provenance) — it's still valid and lives in `internal-notes.md`. Don't trust "published + string found in gtm.js" as proof a GTM tag fires — check the `paused` flag on the live container version directly via the API, that's the actual test. Don't treat this as a prospect or blank-slate build anymore, and don't trust historical conversion volume as proof current tracking works — that assumption was wrong once already on this account (RYNO's tags looked like they had volume and were actually broken).
+
+**2026-10-05 weekly pass (AT task closed):** $22 CPL, 10 leads (8 [EB] click-to-call taps, 2 call ext). Forms DO fire (RYNO Lead Forms 2 conv 09-21..27). 5 DIY negatives on NB. 'salina septic' = old company name, keep open. Rec: shift $2-3/d NB→Branded (Branded 29% budget-lost at $13 CPL).

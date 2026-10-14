@@ -1,0 +1,28 @@
+source,customer_id,client,roster_status,in_headline_numbers,market_dma,campaign_type,ctv_spend_usd_12mo,ctv_impressions_12mo,ctv_cpm_usd,note
+Google Ads: YouTube served on TV screens,1051843378,Proud Pops,current,yes,"San Antonio, TX",VIDEO,8832.06,802609,11.0,45.9% of all VIDEO spend in the pull
+Google Ads: YouTube served on TV screens,2895702982,Integrate Comfort Systems,current,yes,"New York, NY",VIDEO,1889.78,260866,7.24,9.8% of all VIDEO spend in the pull
+Google Ads: YouTube served on TV screens,2375064049,GC Home Service,current,yes,"Cincinnati, OH",VIDEO,943.57,91301,10.33,4.9% of all VIDEO spend in the pull
+Google Ads: YouTube served on TV screens,3454686129,On The Way AC Plumbing & Electrical,offboarding,no,"Houston, TX",PERFORMANCE_MAX,904.33,197182,4.59,0.2% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,3454686129,On The Way AC Plumbing & Electrical,offboarding,no,"Houston, TX",DEMAND_GEN,42.18,2430,17.36,1.2% of all DEMAND_GEN spend in the pull
+Google Ads: YouTube served on TV screens,1051843378,Proud Pops,current,yes,"San Antonio, TX",PERFORMANCE_MAX,36.78,3439,10.69,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,7953905280,Neon Monkey Services,current,yes,"Dallas-Ft. Worth, TX",PERFORMANCE_MAX,12.68,1100,11.53,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,8634274092,Mission Accomplished,current,yes,"Phoenix, AZ",PERFORMANCE_MAX,9.46,1152,8.21,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,3651667805,Watt's Right Electric,current,yes,"Tulsa, OK",PERFORMANCE_MAX,5.11,783,6.53,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,1854100356,Nick's Heating & Air,current,yes,"New Orleans, LA",PERFORMANCE_MAX,4.74,400,11.85,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,2375064049,GC Home Service,current,yes,"Cincinnati, OH",PERFORMANCE_MAX,4.17,313,13.32,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,1056617442,Live Wire Electric,current,yes,"Seattle-Tacoma, WA",PERFORMANCE_MAX,2.86,269,10.63,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,4360840956,Zen Air Heating and Cooling,current,yes,"Atlanta, GA",PERFORMANCE_MAX,2.83,383,7.39,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,9215192296,Concrete Adventures,not_current,no,"Memphis, TN",DEMAND_GEN,2.28,129,17.67,0.1% of all DEMAND_GEN spend in the pull
+Google Ads: YouTube served on TV screens,4193142570,Golden Plumbing,current,yes,"Louisville, KY",PERFORMANCE_MAX,0.86,82,10.49,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,9215192296,Concrete Adventures,not_current,no,"Memphis, TN",PERFORMANCE_MAX,0.27,27,10.0,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,9509605037,Napps Cooling Heating & Plumbing,current,yes,"Tyler-Longview(Lufkin & Nacogdoches), TX",PERFORMANCE_MAX,0.25,255,0.98,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,9205826499,All Heart Heating & Cooling,offboarded,no,"Los Angeles, CA",DISPLAY,0.24,230,1.04,0.0% of all DISPLAY spend in the pull
+Google Ads: YouTube served on TV screens,4571881760,Integrate Comfort Systems,current,yes,"New York, NY",PERFORMANCE_MAX,0.12,28,4.29,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,4467722415,All Seasons AC,current,yes,"New York, NY",PERFORMANCE_MAX,0.08,19,4.21,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,6769493219,King's Window Services,current,yes,"Dallas-Ft. Worth, TX",PERFORMANCE_MAX,0.05,20,2.5,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,9865206319,Cool Hand Electric,current,yes,"Dallas-Ft. Worth, TX",DEMAND_GEN,0.04,22,1.82,0.0% of all DEMAND_GEN spend in the pull
+Google Ads: YouTube served on TV screens,9205826499,All Heart Heating & Cooling,offboarded,no,"Los Angeles, CA",PERFORMANCE_MAX,0.01,6,1.67,0.0% of all PERFORMANCE_MAX spend in the pull
+Google Ads: YouTube served on TV screens,2198608170,Hawkins Siding and Exterior,current,yes,"Dallas-Ft. Worth, TX",PERFORMANCE_MAX,0.01,2,5.0,0.0% of all PERFORMANCE_MAX spend in the pull
+"Google Ads: total, current clients",,,,yes,,all,11745.45,1163043,10.1,standalone YouTube (VIDEO) on TV screens = 65.8% of current clients' VIDEO spend
+"Meta: delivery by device, current clients",,,,yes,,all,0,0,,"Meta reports no TV device. Devices returned: android_smartphone, android_tablet, desktop, ipad, iphone, ipod, other. 'other' = 56,796 of 22,359,870 impressions (0.3%)."
+"Dedicated OTT/CTV buys (Roku, Hulu, DSPs, etc.)",,NONE in any TSD Meta or Google Ads account,,,,,0,0,,Other vendors outside Meta and Google Ads were not checked.

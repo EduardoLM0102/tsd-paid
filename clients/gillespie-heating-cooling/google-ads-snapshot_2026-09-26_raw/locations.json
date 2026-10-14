@@ -1,0 +1,326 @@
+[
+  {
+    "campaign_id": "23940351598",
+    "campaign_name": "LocalServicesCampaign:SystemGenerated:0006540e96ed9ca4",
+    "campaign_status": "ENABLED",
+    "negative": false,
+    "geo_target_id": "1017704",
+    "location": "Brooksville,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "23940351598",
+    "campaign_name": "LocalServicesCampaign:SystemGenerated:0006540e96ed9ca4",
+    "campaign_status": "ENABLED",
+    "negative": false,
+    "geo_target_id": "9014387",
+    "location": "41001,Kentucky,United States",
+    "target_type": "Postal Code"
+  },
+  {
+    "campaign_id": "23940351598",
+    "campaign_name": "LocalServicesCampaign:SystemGenerated:0006540e96ed9ca4",
+    "campaign_status": "ENABLED",
+    "negative": false,
+    "geo_target_id": "9014388",
+    "location": "41002,Kentucky,United States",
+    "target_type": "Postal Code"
+  },
+  {
+    "campaign_id": "23940351598",
+    "campaign_name": "LocalServicesCampaign:SystemGenerated:0006540e96ed9ca4",
+    "campaign_status": "ENABLED",
+    "negative": false,
+    "geo_target_id": "9014392",
+    "location": "41006,Kentucky,United States",
+    "target_type": "Postal Code"
+  },
+  {
+    "campaign_id": "23940351598",
+    "campaign_name": "LocalServicesCampaign:SystemGenerated:0006540e96ed9ca4",
+    "campaign_status": "ENABLED",
+    "negative": false,
+    "geo_target_id": "9014393",
+    "location": "41007,Kentucky,United States",
+    "target_type": "Postal Code"
+  },
+  {
+    "campaign_id": "23940351598",
+    "campaign_name": "LocalServicesCampaign:SystemGenerated:0006540e96ed9ca4",
+    "campaign_status": "ENABLED",
+    "negative": false,
+    "geo_target_id": "9014400",
+    "location": "41017,Kentucky,United States",
+    "target_type": "Postal Code"
+  },
+  {
+    "campaign_id": "23940351598",
+    "campaign_name": "LocalServicesCampaign:SystemGenerated:0006540e96ed9ca4",
+    "campaign_status": "ENABLED",
+    "negative": false,
+    "geo_target_id": "9014401",
+    "location": "41018,Kentucky,United States",
+    "target_type": "Postal Code"
+  },
+  {
+    "campaign_id": "23940351598",
+    "campaign_name": "LocalServicesCampaign:SystemGenerated:0006540e96ed9ca4",
+    "campaign_status": "ENABLED",
+    "negative": false,
+    "geo_target_id": "9014407",
+    "location": "41040,Kentucky,United States",
+    "target_type": "Postal Code"
+  },
+  {
+    "campaign_id": "23940351598",
+    "campaign_name": "LocalServicesCampaign:SystemGenerated:0006540e96ed9ca4",
+    "campaign_status": "ENABLED",
+    "negative": false,
+    "geo_target_id": "9014409",
+    "location": "41042,Kentucky,United States",
+    "target_type": "Postal Code"
+  },
+  {
+    "campaign_id": "23940351598",
+    "campaign_name": "LocalServicesCampaign:SystemGenerated:0006540e96ed9ca4",
+    "campaign_status": "ENABLED",
+    "negative": false,
+    "geo_target_id": "9014416",
+    "location": "41051,Kentucky,United States",
+    "target_type": "Postal Code"
+  },
+  {
+    "campaign_id": "23940351598",
+    "campaign_name": "LocalServicesCampaign:SystemGenerated:0006540e96ed9ca4",
+    "campaign_status": "ENABLED",
+    "negative": false,
+    "geo_target_id": "9014419",
+    "location": "41056,Kentucky,United States",
+    "target_type": "Postal Code"
+  },
+  {
+    "campaign_id": "23940351598",
+    "campaign_name": "LocalServicesCampaign:SystemGenerated:0006540e96ed9ca4",
+    "campaign_status": "ENABLED",
+    "negative": false,
+    "geo_target_id": "9014426",
+    "location": "41075,Kentucky,United States",
+    "target_type": "Postal Code"
+  },
+  {
+    "campaign_id": "23940351598",
+    "campaign_name": "LocalServicesCampaign:SystemGenerated:0006540e96ed9ca4",
+    "campaign_status": "ENABLED",
+    "negative": false,
+    "geo_target_id": "9014427",
+    "location": "41076,Kentucky,United States",
+    "target_type": "Postal Code"
+  },
+  {
+    "campaign_id": "23940351598",
+    "campaign_name": "LocalServicesCampaign:SystemGenerated:0006540e96ed9ca4",
+    "campaign_status": "ENABLED",
+    "negative": false,
+    "geo_target_id": "9014432",
+    "location": "41091,Kentucky,United States",
+    "target_type": "Postal Code"
+  },
+  {
+    "campaign_id": "24155673340",
+    "campaign_name": "TSD_08.18_Search_Branded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017681",
+    "location": "Alexandria,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155673340",
+    "campaign_name": "TSD_08.18_Search_Branded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017704",
+    "location": "Brooksville,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155673340",
+    "campaign_name": "TSD_08.18_Search_Branded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017733",
+    "location": "Covington,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155673340",
+    "campaign_name": "TSD_08.18_Search_Branded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017738",
+    "location": "Cynthiana,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155673340",
+    "campaign_name": "TSD_08.18_Search_Branded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017751",
+    "location": "Erlanger,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155673340",
+    "campaign_name": "TSD_08.18_Search_Branded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017759",
+    "location": "Flemingsburg,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155673340",
+    "campaign_name": "TSD_08.18_Search_Branded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017760",
+    "location": "Florence,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155673340",
+    "campaign_name": "TSD_08.18_Search_Branded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017768",
+    "location": "Fort Mitchell,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155673340",
+    "campaign_name": "TSD_08.18_Search_Branded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017832",
+    "location": "Maysville,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155673340",
+    "campaign_name": "TSD_08.18_Search_Branded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017851",
+    "location": "Newport,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155673340",
+    "campaign_name": "TSD_08.18_Search_Branded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1023626",
+    "location": "Cincinnati,Ohio,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155674204",
+    "campaign_name": "TSD_08.18_Search_NonBranded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017681",
+    "location": "Alexandria,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155674204",
+    "campaign_name": "TSD_08.18_Search_NonBranded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017704",
+    "location": "Brooksville,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155674204",
+    "campaign_name": "TSD_08.18_Search_NonBranded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017733",
+    "location": "Covington,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155674204",
+    "campaign_name": "TSD_08.18_Search_NonBranded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017738",
+    "location": "Cynthiana,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155674204",
+    "campaign_name": "TSD_08.18_Search_NonBranded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017751",
+    "location": "Erlanger,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155674204",
+    "campaign_name": "TSD_08.18_Search_NonBranded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017759",
+    "location": "Flemingsburg,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155674204",
+    "campaign_name": "TSD_08.18_Search_NonBranded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017760",
+    "location": "Florence,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155674204",
+    "campaign_name": "TSD_08.18_Search_NonBranded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017768",
+    "location": "Fort Mitchell,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155674204",
+    "campaign_name": "TSD_08.18_Search_NonBranded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017832",
+    "location": "Maysville,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155674204",
+    "campaign_name": "TSD_08.18_Search_NonBranded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1017851",
+    "location": "Newport,Kentucky,United States",
+    "target_type": "City"
+  },
+  {
+    "campaign_id": "24155674204",
+    "campaign_name": "TSD_08.18_Search_NonBranded_Evergreen",
+    "campaign_status": "PAUSED",
+    "negative": false,
+    "geo_target_id": "1023626",
+    "location": "Cincinnati,Ohio,United States",
+    "target_type": "City"
+  }
+]

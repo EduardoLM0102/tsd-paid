@@ -1,0 +1,200 @@
+[
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/409372567529",
+      "type_": "CALLOUT",
+      "id": "409372567529",
+      "callout_asset": {
+        "callout_text": "No Hidden Fees"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/409372568783",
+      "type_": "CALLOUT",
+      "id": "409372568783",
+      "callout_asset": {
+        "callout_text": "Family Owned & Operated"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/409474614430",
+      "type_": "SITELINK",
+      "id": "409474614430",
+      "sitelink_asset": {
+        "link_text": "Indoor Air Quality",
+        "description1": "Purifiers & filtration",
+        "description2": "Free estimates"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/409474919764",
+      "type_": "CALLOUT",
+      "id": "409474919764",
+      "callout_asset": {
+        "callout_text": "Financing Available"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/409474971418",
+      "type_": "CALLOUT",
+      "id": "409474971418",
+      "callout_asset": {
+        "callout_text": "Free Estimates"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/409474971421",
+      "type_": "CALLOUT",
+      "id": "409474971421",
+      "callout_asset": {
+        "callout_text": "Upfront Pricing"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/409474971790",
+      "type_": "SITELINK",
+      "id": "409474971790",
+      "sitelink_asset": {
+        "link_text": "Commercial HVAC",
+        "description1": "Rooftop units & more",
+        "description2": "Licensed and insured"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/409474971793",
+      "type_": "SITELINK",
+      "id": "409474971793",
+      "sitelink_asset": {
+        "link_text": "Contact Us",
+        "description1": "Response within 1 hour",
+        "description2": "Request a free quote"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/409474992694",
+      "type_": "SITELINK",
+      "id": "409474992694",
+      "sitelink_asset": {
+        "link_text": "About Us",
+        "description1": "Family owned HVAC company",
+        "description2": "NATE certified techs"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/409549613946",
+      "type_": "CALLOUT",
+      "id": "409549613946",
+      "callout_asset": {
+        "callout_text": "Licensed & Insured"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/409549613949",
+      "type_": "CALLOUT",
+      "id": "409549613949",
+      "callout_asset": {
+        "callout_text": "5.0 Star Rating"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/409549623915",
+      "type_": "CALLOUT",
+      "id": "409549623915",
+      "callout_asset": {
+        "callout_text": "NATE Certified Techs"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/416358096710",
+      "type_": "SITELINK",
+      "id": "416358096710",
+      "sitelink_asset": {
+        "link_text": "Indoor Air Quality"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/416463847936",
+      "type_": "SITELINK",
+      "id": "416463847936",
+      "sitelink_asset": {
+        "link_text": "Commercial HVAC"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/420169975526",
+      "type_": "SITELINK",
+      "id": "420169975526",
+      "sitelink_asset": {
+        "link_text": "Furnace Installation"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/420278500204",
+      "type_": "SITELINK",
+      "id": "420278500204",
+      "sitelink_asset": {
+        "link_text": "Heat Pump Repair"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/420278502481",
+      "type_": "SITELINK",
+      "id": "420278502481",
+      "sitelink_asset": {
+        "link_text": "Furnace Repair"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/420354255144",
+      "type_": "SITELINK",
+      "id": "420354255144",
+      "sitelink_asset": {
+        "link_text": "AC Repair"
+      }
+    }
+  },
+  {
+    "asset": {
+      "resource_name": "customers/7410489772/assets/420354262575",
+      "type_": "SITELINK",
+      "id": "420354262575",
+      "sitelink_asset": {
+        "link_text": "AC Installation"
+      }
+    }
+  }
+]

@@ -1,0 +1,123 @@
+platform,customer_id,client,roster_status,market_dma,counts_as_tsd_delivery,campaign_id,campaign,campaign_type,week_start,week_stop,spend_usd,impressions,unique_users,avg_frequency_per_user,meets_3x_floor
+Google,9205826499,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,22807905335,Video_HVAC_Lancaster,VIDEO,2025-09-29,2025-10-05,484.5,13963,6185,2.2576,no
+Google,9205826499,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,22814295747,Display_Plumbing& HVAC_Lancaster_IA,DISPLAY,2025-09-29,2025-10-05,275.75,216532,84872,2.5513,no
+Google,9205826499,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,22820078342,Display_Plumbing& HVAC_Lancaster_News,DISPLAY,2025-09-29,2025-10-05,206.54,149236,13595,10.9773,yes
+Google,9205826499,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,22807905335,Video_HVAC_Lancaster,VIDEO,2025-10-06,2025-10-12,495.62,13305,6043,2.2017,no
+Google,9205826499,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,22814295747,Display_Plumbing& HVAC_Lancaster_IA,DISPLAY,2025-10-06,2025-10-12,284.68,213408,84875,2.5144,no
+Google,9205826499,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,22820078342,Display_Plumbing& HVAC_Lancaster_News,DISPLAY,2025-10-06,2025-10-12,212.98,144722,12969,11.1591,yes
+Google,9205826499,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,22807905335,Video_HVAC_Lancaster,VIDEO,2025-10-13,2025-10-19,489.3,15258,6653,2.2934,no
+Google,9205826499,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,22814295747,Display_Plumbing& HVAC_Lancaster_IA,DISPLAY,2025-10-13,2025-10-19,279.68,201379,74272,2.7114,no
+Google,9205826499,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,22820078342,Display_Plumbing& HVAC_Lancaster_News,DISPLAY,2025-10-13,2025-10-19,209.02,146846,12255,11.9825,yes
+Google,9205826499,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,22807905335,Video_HVAC_Lancaster,VIDEO,2025-10-20,2025-10-26,54.42,987,489,2.0184,no
+Google,9205826499,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,22814295747,Display_Plumbing& HVAC_Lancaster_IA,DISPLAY,2025-10-20,2025-10-26,17.35,12665,4755,2.6635,no
+Google,9205826499,All Heart Heating & Cooling,offboarded,"Los Angeles, CA",no,22820078342,Display_Plumbing& HVAC_Lancaster_News,DISPLAY,2025-10-20,2025-10-26,14.76,10133,1602,6.3252,yes
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2025-09-29,2025-10-05,34.41,3820,1698,2.2497,no
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2025-10-06,2025-10-12,36.07,4429,1934,2.2901,no
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2025-10-13,2025-10-19,34.38,4220,2001,2.1089,no
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2025-10-20,2025-10-26,34.78,4170,2075,2.0096,no
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2025-10-27,2025-11-02,32.47,2969,1539,1.9292,no
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2025-11-03,2025-11-09,39.84,4279,2165,1.9774,no
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2025-11-10,2025-11-16,35.68,2099,1334,1.5735,no
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2025-11-17,2025-11-23,33.3,2280,1315,1.7338,no
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2025-11-24,2025-11-30,32.64,1567,1020,1.5363,no
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2025-12-01,2025-12-07,35.68,3313,1992,1.6632,no
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2025-12-08,2025-12-14,35.48,2812,1816,1.5485,no
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2025-12-15,2025-12-21,34.76,2384,1482,1.6086,no
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2025-12-22,2025-12-28,33.44,2553,1508,1.693,no
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2025-12-29,2026-01-04,33.76,3954,2266,1.7449,no
+Google,9215192296,Concrete Adventures,not_current,"Memphis, TN",no,22946067964,Concrete Adventures - MS - Video (BCJ),DEMAND_GEN,2026-01-05,2026-01-11,14.81,2106,1392,1.5129,no
+Google,9865206319,Cool Hand Electric,current,"Dallas-Ft. Worth, TX",yes,24184775476,TSD_YouTube,DEMAND_GEN,2026-08-24,2026-08-30,126.86,42412,26728,1.5868,no
+Google,9865206319,Cool Hand Electric,current,"Dallas-Ft. Worth, TX",yes,24184775476,TSD_YouTube,DEMAND_GEN,2026-08-31,2026-09-06,180.87,80100,41463,1.9318,no
+Google,9865206319,Cool Hand Electric,current,"Dallas-Ft. Worth, TX",yes,24184775476,TSD_YouTube,DEMAND_GEN,2026-09-07,2026-09-13,183.21,85168,44080,1.9322,no
+Google,9865206319,Cool Hand Electric,current,"Dallas-Ft. Worth, TX",yes,24184775476,TSD_YouTube,DEMAND_GEN,2026-09-14,2026-09-20,178.84,80958,42741,1.8942,no
+Google,9865206319,Cool Hand Electric,current,"Dallas-Ft. Worth, TX",yes,24184775476,TSD_YouTube,DEMAND_GEN,2026-09-21,2026-09-27,172.35,78312,39097,2.0031,no
+Google,2375064049,GC Home Service,current,"Cincinnati, OH",yes,24116591977,TSD - Awareness (ZIP Codes),VIDEO,2026-08-03,2026-08-09,35.05,6029,2588,2.4699,no
+Google,2375064049,GC Home Service,current,"Cincinnati, OH",yes,24116591977,TSD - Awareness (ZIP Codes),VIDEO,2026-08-10,2026-08-16,234.31,33729,11121,3.2872,yes
+Google,2375064049,GC Home Service,current,"Cincinnati, OH",yes,24116591977,TSD - Awareness (ZIP Codes),VIDEO,2026-08-17,2026-08-23,550.15,70923,20236,3.7912,yes
+Google,2375064049,GC Home Service,current,"Cincinnati, OH",yes,24116591977,TSD - Awareness (ZIP Codes),VIDEO,2026-08-24,2026-08-30,408.38,54310,18098,3.3173,yes
+Google,2375064049,GC Home Service,current,"Cincinnati, OH",yes,24116591977,TSD - Awareness (ZIP Codes),VIDEO,2026-08-31,2026-09-06,391.45,49449,16812,3.3625,yes
+Google,2375064049,GC Home Service,current,"Cincinnati, OH",yes,24116591977,TSD - Awareness (ZIP Codes),VIDEO,2026-09-07,2026-09-13,443.48,61493,20176,3.4483,yes
+Google,2375064049,GC Home Service,current,"Cincinnati, OH",yes,24116591977,TSD - Awareness (ZIP Codes),VIDEO,2026-09-14,2026-09-20,115.9,16162,8598,2.1072,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-02-23,2026-03-01,320.33,25549,18410,1.4743,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-03-02,2026-03-08,569.56,104101,54270,2.0148,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-03-09,2026-03-15,205.53,37029,25073,1.5829,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-03-16,2026-03-22,143.17,27406,17329,1.6597,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-03-23,2026-03-29,137.19,23342,15400,1.5774,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-03-30,2026-04-05,141.23,32209,19219,1.7376,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-04-06,2026-04-12,146.93,27388,17612,1.6161,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-04-13,2026-04-19,144.22,26352,16175,1.6917,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-04-20,2026-04-26,139.68,29403,16274,1.8844,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-04-27,2026-05-03,134.7,27118,15115,1.8724,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-05-04,2026-05-10,145.28,27335,15591,1.811,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-05-11,2026-05-17,140.58,24718,14003,1.8285,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-05-18,2026-05-24,135.05,23909,13819,1.785,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-05-25,2026-05-31,128.35,18516,12976,1.5154,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-06-01,2026-06-07,147.25,21426,16302,1.4771,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-06-08,2026-06-14,145.47,20096,16332,1.4091,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-06-15,2026-06-21,144.13,20431,16970,1.3332,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-06-22,2026-06-28,137.99,17596,14420,1.3457,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-06-29,2026-07-05,136.37,19109,16204,1.318,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-07-06,2026-07-12,142.26,24293,19916,1.3659,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-07-13,2026-07-19,139.79,23759,19233,1.3771,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-07-20,2026-07-26,137.16,22924,18935,1.358,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-07-27,2026-08-02,132.46,19182,16153,1.3306,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-08-03,2026-08-09,142.89,16320,13391,1.3525,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-08-10,2026-08-16,138.0,18018,15250,1.3219,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-08-17,2026-08-23,141.2,15618,12952,1.3292,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-08-24,2026-08-30,128.2,16037,13027,1.3573,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-08-31,2026-09-06,141.76,16635,13238,1.3957,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-09-07,2026-09-13,146.11,16005,12137,1.4427,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-09-14,2026-09-20,144.75,17152,13353,1.395,no
+Google,2895702982,Integrate Comfort Systems,current,"New York, NY",yes,23599485735,Mitsubishi YouTube,VIDEO,2026-09-21,2026-09-27,137.64,13837,10835,1.3708,no
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2025-09-29,2025-10-05,135.26,117420,9260,12.6803,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2025-10-06,2025-10-12,143.2,127073,11058,11.4915,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2025-10-13,2025-10-19,139.05,102714,8168,12.5752,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2025-10-20,2025-10-26,133.45,91068,6458,14.1016,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2025-10-27,2025-11-02,138.11,51410,4013,12.8109,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2025-11-03,2025-11-09,153.27,106179,7701,13.7895,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2025-11-10,2025-11-16,137.85,86088,6662,12.9222,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2025-11-17,2025-11-23,140.37,81236,6240,13.0186,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2025-11-24,2025-11-30,130.91,62233,6126,10.1588,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2025-12-01,2025-12-07,62.4,27515,3312,8.3077,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2025-12-08,2025-12-14,103.54,40755,4574,8.9101,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2025-12-15,2025-12-21,74.92,42705,4415,9.6727,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2025-12-22,2025-12-28,66.08,45250,3882,11.6564,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2025-12-29,2026-01-04,68.37,50129,5252,9.5447,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2026-01-05,2026-01-11,37.79,31152,3348,9.3047,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2026-01-19,2026-01-25,30.56,3603,1187,3.0354,yes
+Google,8634274092,Mission Accomplished,current,"Phoenix, AZ",yes,22904288135,Display_News_AC_Repair_Free_Estimate,DISPLAY,2026-01-26,2026-02-01,44.83,27577,3021,9.1284,yes
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-05-25,2026-05-31,50.6,4366,3924,1.1126,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-06-01,2026-06-07,270.43,18167,10634,1.7084,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-06-08,2026-06-14,147.28,11655,5447,2.1441,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-06-15,2026-06-21,145.16,11601,5657,2.0559,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-06-22,2026-06-28,137.81,8206,4079,2.0203,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-06-29,2026-07-05,133.19,11348,5827,1.9495,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-07-06,2026-07-12,137.3,11602,4927,2.3637,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-07-13,2026-07-19,134.59,12842,6613,1.9459,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-07-20,2026-07-26,137.59,11338,6429,1.7718,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-07-27,2026-08-02,117.07,15602,8546,1.8322,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-08-03,2026-08-09,151.39,16452,9436,1.7485,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-08-10,2026-08-16,147.96,14696,8111,1.8181,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-08-17,2026-08-23,150.32,15748,7978,1.9757,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-08-24,2026-08-30,133.13,17149,7339,2.3424,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-08-31,2026-09-06,139.34,15401,7127,2.1736,no
+Google,3454686129,On The Way AC Plumbing & Electrical,offboarding,"Houston, TX",no,23880220071,Demand Gen - 2026-05-26,DEMAND_GEN,2026-09-07,2026-09-13,57.67,5616,3487,1.6344,no
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120440530,08/2026 - YT - VideoViews (San Antonio),VIDEO,2026-08-03,2026-08-09,309.02,34147,30629,1.4174,no
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120482524,08/2026 - YT - Awareness - New Braunfels,VIDEO,2026-08-03,2026-08-09,307.71,16273,7078,2.783,no
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120440530,08/2026 - YT - VideoViews (San Antonio),VIDEO,2026-08-10,2026-08-16,724.6,111495,62625,2.2965,no
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120482524,08/2026 - YT - Awareness - New Braunfels,VIDEO,2026-08-10,2026-08-16,721.32,36379,13922,3.2113,yes
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120440530,08/2026 - YT - VideoViews (San Antonio),VIDEO,2026-08-17,2026-08-23,707.32,106107,58399,2.3533,no
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120482524,08/2026 - YT - Awareness - New Braunfels,VIDEO,2026-08-17,2026-08-23,695.21,34310,12751,3.3382,yes
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120440530,08/2026 - YT - VideoViews (San Antonio),VIDEO,2026-08-24,2026-08-30,672.26,94311,52197,2.3485,no
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120482524,08/2026 - YT - Awareness - New Braunfels,VIDEO,2026-08-24,2026-08-30,667.44,30063,11696,3.2421,yes
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120440530,08/2026 - YT - VideoViews (San Antonio),VIDEO,2026-08-31,2026-09-06,717.1,92675,51280,2.3237,no
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120482524,08/2026 - YT - Awareness - New Braunfels,VIDEO,2026-08-31,2026-09-06,739.8,35404,14905,2.9739,no
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120440530,08/2026 - YT - VideoViews (San Antonio),VIDEO,2026-09-07,2026-09-13,731.18,97374,51916,2.4305,no
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120482524,08/2026 - YT - Awareness - New Braunfels,VIDEO,2026-09-07,2026-09-13,726.07,54730,20479,3.2678,yes
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120440530,08/2026 - YT - VideoViews (San Antonio),VIDEO,2026-09-14,2026-09-20,716.47,86906,46191,2.4574,no
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120482524,08/2026 - YT - Awareness - New Braunfels,VIDEO,2026-09-14,2026-09-20,682.01,49002,20885,2.8807,no
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120440530,08/2026 - YT - VideoViews (San Antonio),VIDEO,2026-09-21,2026-09-27,688.95,78834,44027,2.3374,no
+Google,1051843378,Proud Pops,current,"San Antonio, TX",yes,24120482524,08/2026 - YT - Awareness - New Braunfels,VIDEO,2026-09-21,2026-09-27,729.1,43973,18858,2.9957,no
+Google,3651667805,Watt's Right Electric,current,"Tulsa, OK",yes,23378567200,Display News [Dec 17],DISPLAY,2025-12-15,2025-12-21,57.68,4700,1830,2.5683,no
+Google,3651667805,Watt's Right Electric,current,"Tulsa, OK",yes,23378567200,Display News [Dec 17],DISPLAY,2025-12-22,2025-12-28,43.27,5367,2463,2.1791,no
+Google,3651667805,Watt's Right Electric,current,"Tulsa, OK",yes,23378567200,Display News [Dec 17],DISPLAY,2025-12-29,2026-01-04,59.79,7485,2981,2.5109,no

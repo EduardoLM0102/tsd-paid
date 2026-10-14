@@ -1,0 +1,8 @@
+series,weeks_counted,median_weekly_frequency,weeks_at_or_above_3x,pct_at_or_above_3x
+"HEADLINE Meta, per client (all campaigns deduped), current clients, TSD-run weeks",331,1.88,13,3.9%
+"HEADLINE Meta, per client, current clients, last 4 weeks",49,1.87,1,2.0%
+"HEADLINE Meta, awareness campaigns (weeks with $20+ spend), current clients, TSD-run weeks",227,1.77,6,2.6%
+"HEADLINE Google, YouTube (Video + Demand Gen), current clients, TSD-run weeks",59,1.83,9,15.3%
+"reference: Meta, per client, every account in the pull, all weeks",389,1.88,13,3.3%
+"reference: Meta, awareness campaigns, every account in the pull, all weeks",259,1.74,6,2.3%
+"reference: Google, YouTube, every account in the pull, all weeks",94,1.88,9,9.6%

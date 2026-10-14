@@ -1,0 +1,429 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>YouTube Ads Launch &amp; Buildout Process</title><style>
+@page { size: Letter; margin: 18mm 16mm 16mm 16mm; }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; color: #1c2430; font-size: 10.5pt; line-height: 1.5; margin: 0; }
+.cover { border-bottom: 3px solid #c8a349; padding-bottom: 14px; margin-bottom: 22px; }
+.kicker { font-size: 8.5pt; letter-spacing: .16em; text-transform: uppercase; color: #c8a349; font-weight: 700; }
+h1.title { font-size: 22pt; margin: 6px 0 8px; color: #0f2340; letter-spacing: -.01em; }
+.sub { font-size: 9.5pt; color: #5b6675; }
+h2 { font-size: 12.5pt; color: #0f2340; margin: 24px 0 8px; padding-bottom: 5px; border-bottom: 1px solid #dde2e8; page-break-after: avoid; }
+h3 { font-size: 10.5pt; color: #0f2340; margin: 14px 0 6px; page-break-after: avoid; }
+p { margin: 7px 0; }
+ul, ol { margin: 7px 0 7px 0; padding-left: 18px; }
+li { margin: 3px 0; }
+strong { color: #0f2340; }
+em { color: #5b6675; }
+hr { border: 0; border-top: 1px solid #e6e9ee; margin: 22px 0; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0 14px; font-size: 9pt; page-break-inside: avoid; }
+th { background: #0f2340; color: #fff; text-align: left; padding: 7px 8px; font-weight: 600; }
+td { padding: 6px 8px; border-bottom: 1px solid #e6e9ee; vertical-align: top; }
+tr:nth-child(even) td { background: #f7f8fa; }
+code { background: #f1f3f6; padding: 1px 4px; border-radius: 3px; font-size: 9pt; }
+blockquote { border-left: 3px solid #c8a349; margin: 10px 0; padding: 2px 0 2px 12px; color: #47525f; }
+h2, h3 { break-after: avoid; }
+.note { font-size: 8.5pt; font-style: italic; color: #6b7684; margin: 4px 0 0; }
+</style></head><body>
+<div class="cover">
+  <div class="kicker">TopServ Digital &middot; Paid Ads Division</div>
+  <h1 class="title">YouTube Ads &mdash; New Campaign Launch &amp; Buildout</h1>
+  <div class="sub">Owner: Eduardo Marinho, Head of Paid Ads</div>
+</div>
+<p><strong>Owner:</strong> Paid Ads Division (Eduardo)
+<strong>Built in:</strong> AT
+<strong>Version:</strong> 1.0 — Jul 2026
+<strong>Scope:</strong> Two campaigns, launched together — a <strong>Conversion</strong> campaign and a <strong>Video Views</strong> campaign built for <strong>Ad Recall Lift</strong>.</p>
+<p class="note">YouTube is an Accelerator / Dominator deliverable. The video itself is produced and uploaded by the Video division (Vince) — Paid Ads does not produce it, and cannot launch without it.</p>
+
+<hr />
+<h2>Stage map</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Stage</th>
+<th>Owner</th>
+<th>Blocks the next stage?</th>
+<th>Target time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Client Info</td>
+<td>Account Manager</td>
+<td>Yes — hard gate</td>
+<td>3 business days</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Access, Billing &amp; Channel Check</td>
+<td>Paid Ads</td>
+<td>Yes</td>
+<td>1 business day</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Conversion Tracking + <strong>End-to-End Lead Flow Test</strong></td>
+<td>Paid Ads + Mo (GHL)</td>
+<td>Yes — <strong>hard gate</strong></td>
+<td>2–3 business days</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Audience, Offer &amp; Video Brief</td>
+<td>Paid Ads</td>
+<td>Yes</td>
+<td>1 business day</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Video production + YouTube upload</strong></td>
+<td>Video (Vince)</td>
+<td>Yes — <strong>the critical path</strong></td>
+<td>Per Video SLA</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Cutdowns &amp; Destination</td>
+<td>Paid Ads · Web/Mo (page, when applicable)</td>
+<td>Yes</td>
+<td>1 business day</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Campaign Buildout</td>
+<td>Paid Ads</td>
+<td>Yes</td>
+<td>1 business day</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Pre-Launch QA</td>
+<td>Paid Ads</td>
+<td>Yes — <strong>hard gate</strong></td>
+<td>1 business day</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Launch</td>
+<td>Paid Ads</td>
+<td>—</td>
+<td>Same day</td>
+</tr>
+<tr>
+<td>10</td>
+<td>3-Day Check (one-time)</td>
+<td>Paid Ads</td>
+<td>—</td>
+<td>Day 3</td>
+</tr>
+<tr>
+<td>11</td>
+<td>7-Day Check (one-time)</td>
+<td>Paid Ads</td>
+<td>—</td>
+<td>Day 7</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Critical path:</strong> 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9.</p>
+<p><strong>The video is the constraint.</strong> Unlike Search and Meta, this process cannot be parallelized around its creative: there is no campaign without a video, and no campaign activation until that video is <strong>live on the client's YouTube channel</strong> (per MasterOps: YouTube upload is owned by the Video team, 48h from Green Light; campaign activation is 48h from the upload). Everything Paid Ads can do without the video — tracking, audiences, destination, account setup — is done <em>while</em> Video is producing, so that the day the upload lands, the build is one day from live.</p>
+<hr />
+<h2>The two rules that govern this process</h2>
+<p><strong>1. Fix the measurement before you spend the money.</strong> Same hard gate as every other channel. YouTube makes this worse, not better: it is the easiest channel in the account to fool yourself with. We have seen an account where YouTube traffic "converted" on a web form at 2.67% for an HVAC company — that was not performance, it was a broken tag, and a real budget was being steered by it.</p>
+<p><strong>2. The two campaigns are read on different scoreboards.</strong> The Conversion campaign is judged on leads and CPL. The Video Views campaign is judged on recall, views and reach. Never average them, never let the awareness campaign's cheap views flatter a blended CPV, and never let anyone read the Video Views campaign as a lead engine because it happened to catch a view-through.</p>
+<hr />
+<h2>STAGE 1 — Client Info</h2>
+<p><strong>Owner:</strong> Account Manager · <strong>Blocks everything downstream</strong></p>
+<h3>1.0 — Start from AT</h3>
+<p>The AM opens the client record in AT, confirms what's already there is current, and collects whatever is missing from the client.</p>
+<p>The fields below are the full requirement. The stage cannot close with anything still missing.</p>
+<h3>1A. Business &amp; offer</h3>
+<ul>
+<li><strong>Services to advertise</strong>, in priority order. Specific: "AC replacement," not "HVAC."</li>
+<li><strong>The offer</strong>, exactly as it can appear in the ad. If there is no offer, say so.</li>
+<li><strong>Average ticket</strong> for the advertised service.</li>
+<li><strong>What the client will NOT say</strong> (claims, pricing, guarantees they won't back).</li>
+<li><strong>Proof assets:</strong> reviews and rating, years in business, licenses, warranty, financing.</li>
+<li><strong>Top competitors by name.</strong></li>
+</ul>
+<h3>1B. Service area</h3>
+<ul>
+<li><strong>Service hubs</strong> and how far the crews actually drive. Geo is built as proximity around the hubs, not a blob over a metro.</li>
+<li><strong>Areas they refuse to serve.</strong></li>
+</ul>
+<h3>1C. Budget, goal &amp; capacity</h3>
+<ul>
+<li><strong>Monthly YouTube spend</strong>, with <strong>written client approval</strong>. Hard rule — no budget moves without it.</li>
+<li><strong>Target cost per lead</strong> for the Conversion campaign, or the client's close rate and job value so we can derive it.</li>
+<li><strong>Primary lead type:</strong> calls or form fills.</li>
+<li><strong>Phone answering hours.</strong> If nobody answers, clicks bought then cannot convert.</li>
+<li><strong>Lead capacity</strong> per week.</li>
+</ul>
+<h3>1D. Video, channel &amp; brand</h3>
+<ul>
+<li><strong>The client's YouTube channel:</strong> does it exist, and do we have access? The ad video has to live somewhere.</li>
+<li><strong>The person on camera.</strong> YouTube in home services works when the owner or the crew is on screen. Who is available, and are they willing?</li>
+<li><strong>Shoot footage / existing video</strong> the client already has.</li>
+<li><strong>Brand:</strong> logo, colors, brand guide.</li>
+</ul>
+<h3>1E. Tracking, CRM &amp; destination</h3>
+<ul>
+<li><strong>Google Ads account</strong> access (MCC), <strong>GA4</strong> access.</li>
+<li><strong>CRM:</strong> ServiceTitan / GHL / other. Which system owns a call, which owns a form.</li>
+<li><strong>Call tracking:</strong> CallRail / ServiceTitan numbers.</li>
+<li><strong>Destination:</strong> existing landing page, or one we need to build.</li>
+<li><strong>Who receives the lead notification.</strong></li>
+</ul>
+<p><strong>Closeout:</strong> AM marks complete. Paid Ads reviews within 24h and either accepts or bounces it back with the specific missing fields (bounce goes to the AM, never to the client).</p>
+<hr />
+<h2>STAGE 2 — Access, Billing &amp; Channel Check</h2>
+<p><strong>Owner:</strong> Paid Ads</p>
+<ol>
+<li><strong>MCC access</strong> to the Google Ads account. <strong>GA4</strong> access. Access to the conversion source.</li>
+<li><strong>The YouTube channel is linked to the Google Ads account.</strong> Without the link, we cannot run the video as an ad, cannot build view-based audiences, and cannot read earned actions. This link is the single most common reason a YouTube launch stalls on day one.</li>
+<li><strong>Billing is alive.</strong> <code>customer.status</code>, billing setup, and the date of the last impression. An account can look active in the UI and be serving nothing.</li>
+<li><strong>Account inventory:</strong> existing campaigns, zombie campaigns (ENABLED with a live budget, not serving only because of an end date), existing exclusion lists.</li>
+<li><strong>Billing on paid accounts is the Division Head's.</strong> Payment holds, declined cards, stopped accounts → flag to Eduardo.</li>
+</ol>
+<p><strong>Closeout:</strong> access confirmed, channel linked, billing verified live, baseline in the client folder.</p>
+<hr />
+<h2>STAGE 3 — Conversion Tracking + End-to-End Lead Flow Test</h2>
+<p><strong>Owner:</strong> Paid Ads · <strong>Dependency:</strong> Mo (GHL), requested at the <strong>start</strong> of this stage · <strong>HARD GATE</strong></p>
+<p>Runs while Video is producing. It is never the thing we do last.</p>
+<h3>3.1 — One source of truth per lead type</h3>
+<ul>
+<li><strong>Calls:</strong> one system owns the connected call (ServiceTitan / CallRail). One.</li>
+<li><strong>Forms:</strong> one system owns the genuine form lead (GHL / ServiceTitan).</li>
+<li>Everything else is demoted. The same call flowing through two or three pipes double-counts and understates the true CPA.</li>
+</ul>
+<h3>3.2 — Primary vs Secondary, and the YouTube-specific trap</h3>
+<ul>
+<li><strong>Primary = the real lead action, click-through only.</strong> That is what smart bidding optimizes toward.</li>
+<li><strong>View-through conversions are NOT a lead.</strong> They are <strong>Secondary — awareness reporting only</strong>, and they never feed bidding. A view-through says someone saw a video and later showed up; it does not say the video bought the lead. Counting it as a conversion is how a video campaign gets credit for demand that Search already captured.</li>
+<li>Also Secondary: Google Business "Local actions," GA4 micro-clicks, and every duplicate call pipe.</li>
+<li>Lead actions count <strong>ONE_PER_CLICK</strong>. Correct category on each action.</li>
+<li>Delete conversion actions that have <strong>never fired</strong>.</li>
+</ul>
+<h3>3.3 — End-to-end lead flow test (the gate)</h3>
+<ul>
+<li>&#9744; <strong>Test form</strong> submitted through the real destination. It lands in the CRM.</li>
+<li>&#9744; <strong>Test call</strong> through the tracking number. It lands in the CRM, attributable to Google.</li>
+<li>&#9744; Both appear in Google Ads as the <strong>Primary</strong> action.</li>
+<li>&#9744; The client's team receives the notification they'll get in production.</li>
+<li>&#9744; Test lead removed / marked as test in the CRM.</li>
+<li>&#9744; Screenshot into the AT task. No screenshot, no gate.</li>
+</ul>
+<h3>3.4 — Reconcile against the CRM</h3>
+<p>Pull the real lead count from the CRM for a known window and compare it to what Google reports. <strong>An implausible conversion rate on video traffic is a broken tag, not a miracle.</strong> If the numbers don't reconcile, we do not have a performance story and no bidding decision may be built on top of it.</p>
+<h3>3.5 — GHL gate</h3>
+<p>Any GHL component in the path → <strong>Mo runs the joint test and marks Verified Live</strong>. Nothing is called "live" to the client before that.</p>
+<p><strong>Closeout:</strong> one Primary per lead type, view-through demoted to Secondary, ONE_PER_CLICK set, end-to-end test passed and screenshotted, CRM reconciliation done, Mo's Verified Live if GHL is in the path.</p>
+<hr />
+<h2>STAGE 4 — Audience, Offer &amp; Video Brief</h2>
+<p><strong>Owner:</strong> Paid Ads · <strong>Output: the Campaign Brief + the Video Brief for Vince</strong></p>
+<p>The brief has to be written <em>early</em>, because it is what unblocks Stage 5, which is the critical path.</p>
+<ol>
+<li><strong>Who we're talking to</strong>, and what state they're in when the ad interrupts them. On YouTube, nobody came looking for us. The video earns the next three seconds or it doesn't.</li>
+<li><strong>The angle and the offer</strong> for the Conversion campaign.</li>
+<li><strong>The audience build</strong> (see 7.2): the in-market and custom segments we'll target, and the intent keywords the custom segments are built from.</li>
+<li><strong>Video brief for Vince — two distinct videos, not one video used twice:</strong>
+   - <strong>Conversion video:</strong> hook in the first 3 seconds, the problem, the proof, the offer, a clear CTA. Built to make someone act now.
+   - <strong>Recall video:</strong> built to be <em>remembered</em>, not clicked. The brand, the face, the trucks, the market position. No hard offer, no discount chase. A conversion ad running on a recall objective is a wasted impression.
+   - Formats: <strong>16:9 master with cutdowns to 4:5 and 9:16</strong> (division standard).</li>
+<li><strong>Destination decision:</strong> existing landing page, or one we need built.</li>
+<li><strong>Budget split</strong> between the Conversion campaign and the Video Views campaign.</li>
+</ol>
+<p><strong>Closeout:</strong> brief approved by Eduardo, video brief handed to Video (Vince) — this is what starts Stage 5's clock.</p>
+<hr />
+<h2>STAGE 5 — Video Production + YouTube Upload</h2>
+<p><strong>Owner:</strong> Video division (Vince) · <strong>THE CRITICAL PATH</strong></p>
+<p>Paid Ads does not produce the video and cannot substitute for it. What we own here is making sure the dependency is visible and dated.</p>
+<ul>
+<li>Video produces and edits both videos from the Stage 4 brief.</li>
+<li><strong>The video must be uploaded to the client's YouTube channel</strong> — per MasterOps, YouTube upload is owned by the Video team (48h from Green Light). <strong>Campaign activation is 48h from that upload.</strong></li>
+<li>Paid Ads needs the <strong>YouTube URL</strong> for each video. Not a file, not a Drive link. The ad runs from the hosted video.</li>
+<li>Video visibility must allow it to serve as an ad (public or unlisted, per the channel's setup).</li>
+</ul>
+<p><strong>If Video slips, the launch date slips.</strong> That is not a Paid Ads failure and it is not absorbed silently — the AM is told the same day, because the client's launch date moves with it.</p>
+<p><strong>Closeout:</strong> both videos live on the client's channel, URLs delivered into the AT task.</p>
+<hr />
+<h2>STAGE 6 — Cutdowns &amp; Destination</h2>
+<p><strong>Owner:</strong> Paid Ads · Web (Justin) or Mo for a page, <strong>when applicable</strong></p>
+<ul>
+<li><strong>Cutdowns:</strong> Paid Ads cuts the master to the platform aspect ratios needed (4:5, 9:16 for Shorts/in-feed). This is our job, per the division playbook — not Video's.</li>
+<li><strong>Destination — Route A:</strong> existing landing page, verified. Service-specific, click-to-call above the fold, fast on mobile, form works, tracking fires.</li>
+<li><strong>Destination — Route B (when applicable):</strong> new page. Paid writes the requirements, Web or Mo builds it. Tracking on the page and the thank-you. If a new page is built, its form gets its own test when it goes live (a delta test on the new page, not a repeat of Stage 3).</li>
+</ul>
+<p><strong>Closeout:</strong> cutdowns ready, destination live and verified.</p>
+<hr />
+<h2>STAGE 7 — Campaign Buildout</h2>
+<p><strong>Owner:</strong> Paid Ads</p>
+<h3>7.1 — Two campaigns, launched together</h3>
+<p><strong>Campaign 1 — Conversion</strong>
+- <strong>Video Action / Demand Gen</strong>, optimizing for the Primary conversion action verified in Stage 3.
+- <strong>Maximize Conversions, no target CPA at launch.</strong> With no conversion history on this channel, a target is a guess, and a target the algorithm cannot hit is a target it refuses to bid into — it self-throttles, and we pay for the education anyway. Let it find the real CPL first.
+- Add a tCPA later, once the account has real data, and <strong>never below the CPL actually achieved</strong>. A target is a guardrail above reality, not a wish.
+- <strong>View-through conversions do not feed this campaign's bidding</strong> (Stage 3.2). Click-through only.</p>
+<p><strong>Campaign 2 — Video Views (Ad Recall Lift)</strong>
+- <strong>Video Views campaign</strong>, running the recall video from Stage 5.
+- <strong>Ad Recall Lift is measured with a Brand Lift study when the budget clears Google's minimum.</strong> Below that threshold, we read CPV, view rate, reach and frequency in the service area — and we say so plainly, rather than inventing a recall number we didn't measure.
+- <strong>Frequency management matters here.</strong> Recall needs repetition; annoyance needs none. Cap it.
+- <strong>This campaign has no CPL and is not judged on one.</strong> Its job is to make the brand familiar, so that the Conversion campaign and Search convert into a warmer market. Brandformance: the ad does not create the authority, it amplifies it.</p>
+<h3>7.2 — Targeting</h3>
+<ul>
+<li><strong>Geo:</strong> proximity around the service hubs from Stage 1B. <strong>Presence only</strong> — people who live there, not people "interested in" the area.</li>
+<li><strong>Audiences: in-market and custom segments.</strong> In-market segments matching the service (e.g. HVAC services, home improvement), plus <strong>custom segments built from the intent keywords</strong> in the Stage 4 brief — the terms these people actually search before they buy.</li>
+<li>Exclude the areas the client refuses to serve.</li>
+<li>Standard content exclusions for brand safety. We are putting a home-services brand in front of homeowners, not chasing the cheapest inventory on the platform.</li>
+</ul>
+<p class="note">Remarketing, customer match, keyword and placement targeting are not part of the default build. They are layers we add deliberately, with a reason, not because the interface offers them.</p>
+
+<h3>7.3 — Budget</h3>
+<ul>
+<li>Split between the two campaigns per the Stage 4 brief. Total = the client-approved monthly figure ÷ 30.4.</li>
+<li>Never above what the client approved <strong>in writing</strong>.</li>
+</ul>
+<h3>7.4 — Automation off</h3>
+<ul>
+<li><strong>Auto-generated assets: OFF. Auto-apply recommendations: OFF.</strong> Google's automation silently edits live ads. We own the account.</li>
+</ul>
+<h3>7.5 — Buildout checklist</h3>
+<ol>
+<li>Conversion campaign built: Video Action / Demand Gen, <strong>Maximize Conversions with no target</strong>, Primary action from Stage 3.</li>
+<li>Video Views campaign built with the recall video. Frequency capped.</li>
+<li>YouTube URLs from Stage 5 attached; cutdowns loaded for the placements that need them.</li>
+<li>Geo = proximity around hubs, <strong>presence only</strong>; refused areas excluded.</li>
+<li>Audiences: in-market + custom segments from the intent keywords.</li>
+<li><strong>View-through conversions are Secondary</strong>, not a bidding signal.</li>
+<li>Final URLs correct, with UTMs. Companion CTA / end screen points to the destination.</li>
+<li>Content exclusions applied.</li>
+<li>Auto-assets and auto-apply <strong>OFF</strong>.</li>
+<li>Budgets match the written client approval.</li>
+<li><strong>Everything built PAUSED.</strong> Nothing serves before Stage 8.</li>
+</ol>
+<p><strong>Closeout:</strong> both campaigns built and paused. Every change logged with its revert path.</p>
+<hr />
+<h2>STAGE 8 — Pre-Launch QA</h2>
+<p><strong>Owner:</strong> Paid Ads · <strong>HARD GATE</strong></p>
+<p>The lead flow was proven in Stage 3. This stage checks the build. QA is done by <strong>someone other than the person who built it</strong>.</p>
+<p><strong>Structure &amp; settings</strong>
+- &#9744; Two campaigns, separate: Conversion and Video Views. Not one campaign doing both jobs.
+- &#9744; Conversion campaign = Maximize Conversions, <strong>no target CPA</strong>. No tCPA set from a guess.
+- &#9744; Video Views campaign is not optimizing for conversions, and nobody has attached a CPL goal to it.
+- &#9744; Geo = proximity around the hubs, <strong>presence only</strong>. Refused areas excluded.
+- &#9744; Audiences = in-market + custom segments from the intent keywords.
+- &#9744; Frequency cap set on the Video Views campaign.
+- &#9744; Content exclusions applied.
+- &#9744; Budgets match the written client approval.
+- &#9744; <strong>Auto-generated assets OFF. Auto-apply recommendations OFF.</strong></p>
+<p><strong>Creative &amp; conversions</strong>
+- &#9744; The right video is on the right campaign. <strong>The conversion video is not running on the recall campaign, and the recall video is not running on the conversion campaign.</strong>
+- &#9744; Videos are <strong>live on the client's YouTube channel</strong> and playable, at the correct visibility.
+- &#9744; Ads are approved, not stuck in policy review.
+- &#9744; Only the real lead action is <strong>Primary</strong>. <strong>View-through is Secondary.</strong> Lead actions are ONE_PER_CLICK.
+- &#9744; Final URLs land on the right page and load fast on mobile.</p>
+<p><strong>Lead flow (carried from Stage 3)</strong>
+- &#9744; Stage 3's end-to-end test is signed off, with the screenshot in the AT task.
+- &#9744; <strong>Mo's Verified Live</strong> on the ticket, if GHL is in the path.
+- &#9744; If Stage 6 built a new destination, its own form test passed on that page.</p>
+<p><strong>Closeout:</strong> QA checklist signed in AT. Nothing launches with an open box.</p>
+<hr />
+<h2>STAGE 9 — Launch</h2>
+<p><strong>Owner:</strong> Paid Ads</p>
+<ol>
+<li>Enable both campaigns. Record the launch date/time in the AT task and in the client's Google Ads log.</li>
+<li>Log the baseline and what we expect: the Conversion campaign will be read on leads and CPL; the Video Views campaign will not.</li>
+<li><strong>Brief the AM in writing, the same day.</strong> Specifically: YouTube conversion volume ramps slower than Search, because we are interrupting demand instead of catching it. If that expectation is not written down before launch, week one gets read as failure.</li>
+<li>The AM communicates to the client. Paid does not.</li>
+</ol>
+<p><strong>Closeout:</strong> live, logged, AM briefed with the expectation in writing.</p>
+<hr />
+<h2>STAGE 10 — 3-Day Check (one-time)</h2>
+<p><strong>Owner:</strong> Paid Ads · Fires 3 days after launch</p>
+<p>Delivery and signal only. <strong>Not a performance read.</strong></p>
+<ul>
+<li>Is it spending? Are the videos actually serving, or is an ad stuck in review?</li>
+<li>Are conversions being <strong>recorded</strong>? Spend with zero recorded conversions = broken tracking = Critical, fix today.</li>
+<li><strong>Sanity-check the conversion mix.</strong> If YouTube is suddenly producing form fills at a rate that would embarrass a Search campaign, that is a tag problem, not a win. Check it before anyone celebrates it.</li>
+<li>CPV, view rate and CTR sane vs. the account's history?</li>
+<li>Frequency on the Video Views campaign not already running hot?</li>
+<li><strong>Do not read today's data, and do not read intraday.</strong> Call conversions carry a reporting lag; the current day is structurally understated.</li>
+</ul>
+<p><strong>Action rule:</strong> fix delivery and tracking. Do not touch bidding for performance reasons yet.</p>
+<p><strong>Closeout:</strong> logged in the client's Google Ads log. Slack DM the AM within 2h if anything found needs the client to know.</p>
+<hr />
+<h2>STAGE 11 — 7-Day Check (one-time) — closes the launch process</h2>
+<p><strong>Owner:</strong> Paid Ads · Fires 7 days after launch</p>
+<p><strong>Conversion campaign</strong>
+- CPL vs. the target from Stage 1C — <strong>click-through conversions only</strong>. View-through does not enter this number.
+- CPV, view rate, CTR, and where the drop-off happens in the video. A video losing everyone at second 5 is a creative problem, and no bid change fixes a bad hook.
+- Which audience segments are actually producing, and which are only producing views.
+- <strong>Bidding:</strong> if the conversion signal is clean and there is real data, consider a tCPA — calibrated <strong>above</strong> the CPL actually achieved, never below.</p>
+<p><strong>Video Views campaign</strong>
+- Views, view rate, CPV, reach and frequency in the service area.
+- <strong>Brand Lift study:</strong> if the spend cleared Google's minimum, read the Ad Recall Lift. If it didn't, say that plainly. We do not report a recall number we did not measure.
+- <strong>Do not judge this campaign on CPL.</strong> It doesn't have one, by design.</p>
+<p><strong>Timing discipline</strong>
+- A <strong>bid change</strong> reads in 3–7 days. A <strong>creative change</strong> (new hook, new video) takes longer, and video creative is expensive to iterate — which is exactly why the brief in Stage 4 has to be right.
+- One change at a time, separated so each is attributable.</p>
+<p><strong>Closeout:</strong> the launch process ends here. The recurring <strong>7 / 14 / 30-day optimization processes</strong> take over, plus the division SOPs (A1 Weekly Optimization — YouTube checklist reads CPV, CTR and conversions; A4 Friday Pulse).</p>
+<hr />
+<h2>Dependency summary (for the AT build)</h2>
+<table>
+<thead>
+<tr>
+<th>Dependency</th>
+<th>Who</th>
+<th>Needed by</th>
+<th>Lead time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Client info complete</td>
+<td>Account Manager</td>
+<td>Stage 2</td>
+<td>Blocks the whole build</td>
+</tr>
+<tr>
+<td>YouTube channel linked to Google Ads</td>
+<td>Paid Ads (client access via AM)</td>
+<td>Stage 7</td>
+<td>Blocks the build</td>
+</tr>
+<tr>
+<td>Clean conversion signal + end-to-end lead test</td>
+<td>Paid Ads + Mo</td>
+<td>Stage 4</td>
+<td><strong>Hard gate</strong></td>
+</tr>
+<tr>
+<td><strong>Conversion video + recall video, live on the channel</strong></td>
+<td><strong>Video (Vince)</strong></td>
+<td><strong>Stage 6</strong></td>
+<td><strong>The critical path</strong> — 48h upload SLA from Green Light; activation 48h from upload</td>
+</tr>
+<tr>
+<td>Written budget approval</td>
+<td>Client, via AM ticket</td>
+<td>Stage 7</td>
+<td>Blocks launch</td>
+</tr>
+<tr>
+<td>Landing page — <strong>when applicable</strong></td>
+<td>Web (Justin) or Mo</td>
+<td>Stage 8</td>
+<td>Before QA</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Escalation:</strong> a missed dependency goes to the AM, who coordinates cross-division work — not to the other division head. A video slip that moves a launch date the client already knows about goes to the COO.</p>
+<hr />
+<h2>Open items this SOP depends on</h2>
+<ul>
+<li><strong>Campaign naming convention</strong> — division-wide standard still being finalized. Use the de facto <code>TSD_MM.DD_...</code> format.</li>
+<li><strong>CPV and CPL benchmarks per trade and tier</strong> — do not exist yet. Until they do, the target comes from the client's own economics, never from a guess.</li>
+</ul>
+</body></html>

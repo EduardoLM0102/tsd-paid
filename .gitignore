@@ -1,0 +1,24 @@
+# Segredos
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.key
+credentials*.json
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporários
+*.tmp
+~$*
+.claude/settings.local.json
+
+# Pessoal de cada um (não sobe pro repo)
+_pessoal/
+
+# Python
+__pycache__/
+*.pyc

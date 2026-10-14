@@ -1,0 +1,78 @@
+{
+ "_doc": "Per-client config for paid/funnels/funnel_build.py. Optional keys: dataFrom, callrailFrom, adsOnlySite (count every website call as ad-driven), websiteLabel, taps/forms/button/uploads (exact conversion action names, overriding the automatic picks), notes (extra lines).",
+ "clients": {
+  "watts-right": {
+   "cid": "3651667805",
+   "callrailAccount": "ACC9962d60e59d841f7894cfe360631282d",
+   "callrailCompany": "COMb0cd5849467c433da495968ba97409be",
+   "callrailName": "Watt's Right Electric"
+  },
+  "spencer-air": {
+   "cid": "2524618054",
+   "callrailAccount": "ACCebe4147ee2974cea9c361e12ea2bae2a",
+   "callrailCompany": "COM45633b0681244a84b56712ad2857728a",
+   "callrailName": "Spencer Air Conditioning and Heating"
+  },
+  "napps": {
+   "cid": "9509605037",
+   "callrailAccount": "ACCebe4147ee2974cea9c361e12ea2bae2a",
+   "callrailCompany": "COM4cd8da6854164edba5bd2d3ffc44179f",
+   "callrailName": "Napps Cooling-Heating-Plumbing"
+  },
+  "integrate-comfort": {
+   "cid": "4571881760",
+   "callrailAccount": "ACCebe4147ee2974cea9c361e12ea2bae2a",
+   "callrailCompany": "COM742d39e3ff5d406db1000a4df1c02980",
+   "callrailName": "Integrate Comfort Systems"
+  },
+  "cs-air": {
+   "cid": "5563867754",
+   "callrailAccount": "ACCebe4147ee2974cea9c361e12ea2bae2a",
+   "callrailCompany": "COMe9716e78c74144c99c6a366d698a4038",
+   "callrailName": "C&S Air"
+  },
+  "all-seasons-ac": {
+   "cid": "4467722415",
+   "callrailAccount": "ACCebe4147ee2974cea9c361e12ea2bae2a",
+   "callrailCompany": "COM63c9d59c0dfe493cbfcf088ab3d84213",
+   "callrailName": "All Seasons Air"
+  },
+  "neon-monkey": {
+   "cid": "7953905280",
+   "callrailAccount": "ACC319477a90edd4883a0082089daef6c18",
+   "callrailCompany": "COM601166a5f5eb4bc397c08b4f4a1bd597",
+   "callrailName": "Neon Monkey Tree",
+   "notes": [
+    "As of 10-10 the site loads no tags at all (no GTM, GA4 or CallRail script) since about Aug 30, so taps and website calls can't be recorded until Web Dev installs GTM-WM9CDGPT (action plan Ticket A). The new [TSD] Click to call tag is ready in GTM."
+   ]
+  },
+  "lilypad-septic": {
+   "cid": "3797438623",
+   "callrailAccount": "ACC019e17de4a1d7045a696ce3e47094f44",
+   "callrailCompany": "COM019e17de4e7377e59b8cbf0a98f3af50",
+   "callrailName": "Lilypad Septic"
+  },
+  "kings-window": {
+   "cid": "6769493219",
+   "callrailAccount": "ACC01992f8fdca77c529b585d7e075f9e2e",
+   "callrailCompany": "COM01992f8fdd77703f986e1078e4673dfd",
+   "callrailName": "Kings Window Services"
+  },
+  "hawkins-siding": {
+   "cid": "2198608170",
+   "callrailAccount": "ACC0a02cfdf70244a4286d1ecede59382d4",
+   "callrailCompany": "COMde1d190ab93e49cc8b6bbe2b540c3ad1",
+   "callrailName": "Hawkins Siding and Exteriors"
+  },
+  "cool-hand-electric": {
+   "cid": "9865206319",
+   "callrailAccount": "ACC019e095affd97f04849c939538f341f1",
+   "callrailCompany": "COM019e095b00b772089f5a2f01ffb837bc",
+   "callrailName": "Coolhand Electrics",
+   "dataFrom": "2026-08-10",
+   "callrailFrom": "2026-10-10",
+   "adsOnlySite": true,
+   "websiteLabel": "go. pages"
+  }
+ }
+}

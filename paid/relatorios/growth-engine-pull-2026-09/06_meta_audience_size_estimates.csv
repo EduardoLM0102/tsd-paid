@@ -1,0 +1,4 @@
+zone,zip,census_adults_18plus,meta_estimated_audience_low,meta_estimated_audience_high,ratio_meta_to_census,notes
+"Duluth, GA",30096,54888,,,,"Manual lookup in Ads Manager (audience definition, location = ZIP, 18+). Not available through the connector."
+(client ZIP 1),,,,,,"Suggested: Zen Air zone ZIP near 30096, e.g. 30097 (Duluth/Johns Creek) or 30043 (Lawrenceville)"
+(client ZIP 2),,,,,,Pick a ZIP from a client Edu knows well

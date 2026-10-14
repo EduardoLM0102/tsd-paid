@@ -1,0 +1,13 @@
+campaign_type,youtube_format,accounts_current_clients,spend_usd_current_clients,impressions_current_clients,cpm_usd_current_clients,spend_usd_all_accounts,impressions_all_accounts,cpm_usd_all_accounts
+DEMAND_GEN,In-feed,1,792.14,356021,2.22,1734.06,450596,3.85
+DEMAND_GEN,In-stream (skippable),1,48.45,10289,4.71,1036.85,86898,11.93
+DEMAND_GEN,Shorts,1,1.54,640,2.41,241.28,14188,17.01
+DEMAND_GEN,Not attributed by Google,0,0.0,0,,521.99,63897,8.17
+PERFORMANCE_MAX,YouTube network (format not reported by Google for PMax),17,72242.63,14288790,5.06,74824.1,15486058,4.83
+VIDEO,In-stream (skippable),2,15495.87,1764225,8.78,16991.24,1806181,9.41
+VIDEO,Shorts,2,2233.64,302666,7.38,2234.33,302772,7.38
+VIDEO,In-feed,0,0.0,0,,27.77,1451,19.14
+VIDEO + DEMAND_GEN combined,In-stream (skippable),3,15544.32,1774514,8.76,18028.09,1893079,9.52
+VIDEO + DEMAND_GEN combined,Shorts,3,2235.18,303306,7.37,2475.61,316960,7.81
+VIDEO + DEMAND_GEN combined,In-feed,1,792.14,356021,2.22,1761.83,452047,3.9
+VIDEO + DEMAND_GEN combined,Not attributed by Google,0,0.0,0,,521.99,63897,8.17

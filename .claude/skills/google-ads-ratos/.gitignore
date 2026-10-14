@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+!.env.*.example
+google-ads.yaml
+__pycache__/
+*.pyc
+.DS_Store
+*.egg-info/
+dist/
+build/
+.venv/
+
+# Contas fora do escopo TSD (só na máquina de quem usa)
+contas.local.yaml

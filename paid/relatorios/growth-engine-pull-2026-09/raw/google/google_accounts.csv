@@ -1,0 +1,129 @@
+customer_id,name,status,is_manager,level,currency,time_zone
+2974002658,,ENABLED,False,1,USD,Africa/Nairobi
+8655979348,,ENABLED,False,1,USD,America/New_York
+7024049980,(LSA) Bucksworth Home Services (Weed & Pest),ENABLED,False,1,USD,America/Phoenix
+4072088295,(LSA) Bucksworth Services LLC (HVAC),ENABLED,False,1,USD,America/Phoenix
+3851890447,(LSA) Bucksworth Services LLC (Pest Control),ENABLED,False,1,USD,America/Phoenix
+5563867754,"(LSA) C&S Air, inc. / Derek O'Keefe",ENABLED,False,1,USD,America/Chicago
+5398754370,AC Cornerstone Building,ENABLED,False,1,USD,America/Chicago
+9205826499,All Heart Heating & Cooling -PPC,ENABLED,False,1,USD,America/Los_Angeles
+5064174352,"All Heart Heating & Cooling [Kern County, HVAC]",ENABLED,False,1,USD,America/Los_Angeles
+9976029542,All Heart Heating & Cooling [Lancaster HVAC],ENABLED,False,1,USD,America/Los_Angeles
+7662998005,All Heart Heating [Kern County Plumbing],ENABLED,False,1,USD,America/Los_Angeles
+8199337860,"All Heart Heating, Cooling & Plumbing [Lancaster Plumbing]",ENABLED,False,1,USD,America/Los_Angeles
+4467722415,All Seasons AC,ENABLED,False,1,USD,America/New_York
+4296119107,Chisholm  - LSA HVAC & Plumbing Liberty,ENABLED,False,1,USD,America/New_York
+9215192296,"Concrete Adventures - SC, MS",ENABLED,False,1,USD,America/New_York
+9865206319,Cool Hand Electric,ENABLED,False,1,USD,America/Chicago
+1932181525,DFW _Unsuspended PPC & LSA,ENABLED,False,1,USD,America/Chicago
+9784984945,DS Heating and Air,ENABLED,False,1,USD,America/Los_Angeles
+9005488539,"Eaglepoint Roofing & Exterior, LLC",ENABLED,False,1,USD,America/Denver
+2375064049,GC Home Service,ENABLED,False,1,USD,Africa/Kampala
+4223625599,GMC Air Conditioning Services,ENABLED,True,1,USD,America/Chicago
+7410489772,Gillespie's HVAC,ENABLED,False,1,USD,America/New_York
+4193142570,Golden Plumbing,ENABLED,False,1,USD,America/New_York
+6191956550,Gray Duct Technologies,ENABLED,False,1,USD,America/Chicago
+2198608170,Hawkins Siding and Exterior,ENABLED,False,1,USD,America/Chicago
+2175964343,Integrate Comfort System - LSA Carlstadt,ENABLED,False,1,USD,America/New_York
+8323145223,Integrate Comfort System - LSA Englewood Cliff,ENABLED,False,1,USD,America/New_York
+4571881760,Integrate Comfort Systems,ENABLED,False,1,USD,America/New_York
+2895702982,Integrate Comfort Systems - LSA Belleville,ENABLED,False,1,USD,America/New_York
+6769493219,King’s Window Services - PPC & LSA,ENABLED,False,1,USD,America/Chicago
+1056617442,Live Wire Electric,ENABLED,False,1,USD,America/Los_Angeles
+8634274092,Mission Accomplished,ENABLED,False,1,USD,America/New_York
+4904262993,Mission Accomplished - LSA,ENABLED,False,1,USD,America/Phoenix
+9020391433,Modern Comfort & Air,ENABLED,False,1,USD,America/Los_Angeles
+9815330464,My Favorite Service Company,ENABLED,False,1,USD,America/Chicago
+4127524472,My Favorite Service Company - LSA - New Braunfels,ENABLED,False,1,USD,America/Chicago
+4905286019,My Favorite Service Company - LSA San Antonio,ENABLED,False,1,USD,America/Chicago
+9509605037,"Napps Cooling, Heating & Plumbing",ENABLED,False,1,USD,America/Chicago
+9239407401,"Napps Cooling, Heating & Plumbing - LSA",ENABLED,False,1,USD,America/Chicago
+7953905280,Neon Monkey Services,ENABLED,False,1,USD,America/Denver
+1219885876,Neon Monkey Services - LSA,ENABLED,False,1,USD,America/Chicago
+1854100356,Nicks Heating and Cooling,ENABLED,False,1,USD,America/Chicago
+3454686129,On The Way AC Plumbing & Electrical,ENABLED,False,1,USD,America/Chicago
+5570598688,Potomac LSA & PPC,ENABLED,False,1,USD,America/New_York
+7261668241,"Proud Pops Plumbing, Air & Electric - LSA San Antonio [1]",ENABLED,False,1,USD,America/Chicago
+6621969129,"Proud Pops Plumbing, Air & Electric - LSA San Antonio [2]",ENABLED,False,1,USD,America/Chicago
+1051843378,"Proud Pops Plumbing, Air & Electric - PPC",ENABLED,False,1,USD,America/Chicago
+3797438623,RYNO - Lily Pad Septic FKA Salina Septic Services,ENABLED,False,1,USD,America/Chicago
+2524618054,Spencer Air Conditioning,ENABLED,False,1,USD,America/Chicago
+6857171115,Steadfast Roofing - PPC & LSA,ENABLED,False,1,USD,America/Chicago
+9049508615,Strickland Heating & Air,ENABLED,False,1,USD,America/Chicago
+8810470846,Supreme AC,ENABLED,False,1,USD,America/New_York
+8513856629,TopServ Digital Google Ads Account,ENABLED,False,1,USD,America/Chicago
+4155514468,Topservdigital,ENABLED,True,0,USD,America/Denver
+6093202413,Ultimate Comfort - LSA,ENABLED,False,1,USD,America/Los_Angeles
+3651667805,Watt's Right - Tulsa,ENABLED,False,1,USD,America/Chicago
+9261944882,What's Right  - Broken Arrow,ENABLED,False,1,USD,America/Chicago
+4360840956,Zen Air Heating and Cooling,ENABLED,False,1,USD,America/New_York
+3740502923,Zen Air Heating and Cooling - LSA,ENABLED,False,1,USD,America/New_York
+3131694856,Zoom Zoom Air Conditioning,ENABLED,False,1,USD,America/New_York
+8497583415,[Old Account] The Problem Solvers - LSA HVAC San Antonio 2,ENABLED,False,1,USD,America/Chicago
+5229329621,[Old Account] The Problem Solvers - LSA HVAC San Antonio 4,ENABLED,False,1,USD,America/Chicago
+3490305409,[Old Account] The Problem Solvers - LSA Plumbing San Antonio 2,ENABLED,False,1,USD,America/Chicago
+5504504691,[Old Account] The Problem Solvers - LSA Plumbing San Antonio 3,ENABLED,False,1,USD,America/Chicago
+3477779749,[Old Account] The Problem Solvers - LSA Roofing San Antonio,ENABLED,False,1,USD,America/Chicago
+5037427931,[Old Account] The Problem Solvers - LSA Roofing San Antonio 2,ENABLED,False,1,USD,America/Chicago
+4931459362,[Old Account] The Problem Solvers - LSA Roofing San Antonio 3,ENABLED,False,1,USD,America/Chicago
+3662872619,Air Benders (OLD),CANCELED,False,1,USD,America/New_York
+7459923315,Air Now,CANCELED,False,1,USD,America/New_York
+4571700294,AirAnytime,CANCELED,False,1,USD,America/Denver
+2933444284,All About Care,CANCELED,False,1,USD,America/New_York
+2775934900,All Weather Temp,CANCELED,False,1,USD,America/New_York
+8520049015,Armor Heating,CANCELED,False,1,USD,America/Chicago
+2138663229,CSMS,CANCELED,False,1,USD,America/Chicago
+1058747113,"Covenant Air Conditioning & Heating, Inc",CANCELED,False,1,USD,America/Chicago
+5041887286,Crawlspace Xperts,CANCELED,False,1,USD,America/New_York
+1593109445,"D&D Heating &Cooling, INC.",CANCELED,False,1,USD,America/New_York
+1698206856,Deactivated All Hearts,CANCELED,False,1,USD,America/Los_Angeles
+1853534274,Deactivated All Hearts,CANCELED,False,1,USD,America/Los_Angeles
+1944656301,Deactivated All Hearts,CANCELED,False,1,USD,America/Los_Angeles
+3067430819,Deactivated All Hearts,CANCELED,False,1,USD,America/Los_Angeles
+3390065899,Deactivated All Hearts,CANCELED,False,1,USD,America/Los_Angeles
+3418383113,Deactivated All Hearts,CANCELED,False,1,USD,America/Los_Angeles
+4261732239,Deactivated All Hearts,CANCELED,False,1,USD,America/Los_Angeles
+6841156843,Deactivated All Hearts,CANCELED,False,1,USD,America/Los_Angeles
+7382294237,Deactivated All Hearts,CANCELED,False,1,USD,America/Los_Angeles
+6916586313,Discount Mechanical,CANCELED,False,1,USD,America/Anchorage
+4323401664,Echo Air Conditioning,CANCELED,False,1,USD,America/New_York
+2110107819,Excellent Air,CANCELED,False,1,USD,America/New_York
+6021800397,GMC Air Conditioning Services,CANCELED,False,1,USD,America/Chicago
+4962284947,Go Heating and Air,CANCELED,False,1,USD,America/Phoenix
+4725596693,Good Guys Heating & Cooling,CANCELED,False,1,USD,America/Los_Angeles
+1961470378,Goode Plumbing,CANCELED,False,1,USD,America/New_York
+2374081399,Goode Plumbing Active,CANCELED,False,1,USD,America/Denver
+3917558276,Infinite Mechanical,CANCELED,False,1,USD,America/New_York
+6659346811,Jordan Air,CANCELED,False,1,USD,America/Phoenix
+8634775752,Maddox AC,CANCELED,False,1,USD,America/Denver
+1108285647,Mountainside Air,CANCELED,False,1,USD,America/Chicago
+7804973541,Mountainside Air Conditioning and Heating,CANCELED,False,1,USD,America/Los_Angeles
+7782858441,"Napps Cooling, Heating, & Plumbing",CANCELED,False,1,USD,America/Chicago
+6073307752,Personal Plumbing Ad Account,CANCELED,False,1,USD,America/Los_Angeles
+1260757988,Potomac Custom Remodeling,CANCELED,False,1,USD,America/New_York
+3058453695,Pro Temp Air DFW,CANCELED,False,1,USD,America/New_York
+9251446221,Quality Heating & Cooling,CANCELED,False,1,USD,America/Chicago
+7348980894,Rock Hard Refrigeration,CANCELED,False,1,USD,America/Chicago
+4336840109,Ryan Heating & Air,CANCELED,False,1,USD,America/Chicago
+4334575992,Sanders Plumbing,CANCELED,False,1,USD,America/Chicago
+8545433321,Stellar Plumbing,CANCELED,False,1,USD,America/Chicago
+3119625147,Stellar Plumbing PPC,CANCELED,False,1,USD,America/Chicago
+4964765546,TemperaturePro Arlington-Mansfield,CANCELED,False,1,USD,America/Denver
+6887701849,Tiger Plumbing & Heating,CANCELED,False,1,USD,America/Chicago
+3994757437,Today Home Services,CANCELED,False,1,USD,America/Chicago
+6725030766,Trust 1 Services,CANCELED,False,1,USD,America/New_York
+9776908250,[Old Account] The Problem Solvers (no LSA connected),CANCELED,False,1,USD,America/Chicago
+2046256100,Air of the Ozarks,CLOSED,False,1,USD,America/Chicago
+7825331537,Alexander Air,CLOSED,False,1,USD,America/New_York
+3144198344,C&S Air Inc.,CLOSED,False,1,USD,America/Chicago
+8040162605,Control Techs NW LLC,CLOSED,False,1,USD,America/Los_Angeles
+5689716694,"Gulf Coast Business Furniture & Supply Co. INC,",CLOSED,False,1,USD,America/Chicago
+1688881513,Lam-Air Heating & Air Conditioning,CLOSED,False,1,USD,America/Los_Angeles
+9725352682,Lincoln Heating and Air,CLOSED,False,1,USD,America/Los_Angeles
+6078792019,Maverick Electrical Services,CLOSED,False,1,USD,America/Los_Angeles
+7555455939,Potomac LSA,CLOSED,False,1,USD,America/New_York
+7081613962,Quality Heating & Cooling,CLOSED,False,1,USD,America/Chicago
+9857321460,Test Account,CLOSED,False,1,USD,America/Denver
+1877534688,Texas Made,CLOSED,False,1,USD,America/Chicago
+7929595052,Triple Play Home Services,CLOSED,False,1,USD,America/Chicago
+6838206458,Wilkins Services,CLOSED,False,1,USD,America/Denver

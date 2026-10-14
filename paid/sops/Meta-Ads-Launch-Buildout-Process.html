@@ -1,0 +1,462 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Meta Ads Launch &amp; Buildout Process</title><style>
+@page { size: Letter; margin: 18mm 16mm 16mm 16mm; }
+* { box-sizing: border-box; }
+body { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; color: #1c2430; font-size: 10.5pt; line-height: 1.5; margin: 0; }
+.cover { border-bottom: 3px solid #c8a349; padding-bottom: 14px; margin-bottom: 22px; }
+.kicker { font-size: 8.5pt; letter-spacing: .16em; text-transform: uppercase; color: #c8a349; font-weight: 700; }
+h1.title { font-size: 22pt; margin: 6px 0 8px; color: #0f2340; letter-spacing: -.01em; }
+.sub { font-size: 9.5pt; color: #5b6675; }
+h2 { font-size: 12.5pt; color: #0f2340; margin: 24px 0 8px; padding-bottom: 5px; border-bottom: 1px solid #dde2e8; page-break-after: avoid; }
+h3 { font-size: 10.5pt; color: #0f2340; margin: 14px 0 6px; page-break-after: avoid; }
+p { margin: 7px 0; }
+ul, ol { margin: 7px 0 7px 0; padding-left: 18px; }
+li { margin: 3px 0; }
+strong { color: #0f2340; }
+em { color: #5b6675; }
+hr { border: 0; border-top: 1px solid #e6e9ee; margin: 22px 0; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0 14px; font-size: 9pt; page-break-inside: avoid; }
+th { background: #0f2340; color: #fff; text-align: left; padding: 7px 8px; font-weight: 600; }
+td { padding: 6px 8px; border-bottom: 1px solid #e6e9ee; vertical-align: top; }
+tr:nth-child(even) td { background: #f7f8fa; }
+code { background: #f1f3f6; padding: 1px 4px; border-radius: 3px; font-size: 9pt; }
+blockquote { border-left: 3px solid #c8a349; margin: 10px 0; padding: 2px 0 2px 12px; color: #47525f; }
+h2, h3 { break-after: avoid; }
+.note { font-size: 8.5pt; font-style: italic; color: #6b7684; margin: 4px 0 0; }
+</style></head><body>
+<div class="cover">
+  <div class="kicker">TopServ Digital &middot; Paid Ads Division</div>
+  <h1 class="title">Meta Ads &mdash; New Campaign Launch &amp; Buildout</h1>
+  <div class="sub">Owner: Eduardo Marinho, Head of Paid Ads</div>
+</div>
+<p><strong>Owner:</strong> Paid Ads Division (Eduardo)
+<strong>Built in:</strong> AT
+<strong>Version:</strong> 1.2 — Jul 2026</p>
+<hr />
+<h2>Stage map</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Stage</th>
+<th>Owner</th>
+<th>Blocks the next stage?</th>
+<th>Target time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Client Info</td>
+<td>Account Manager</td>
+<td>Yes — hard gate</td>
+<td>3 business days</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Access &amp; Assets Check</td>
+<td>Paid Ads</td>
+<td>Yes</td>
+<td>1 business day</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Tracking &amp; Lead Flow Setup</td>
+<td>Paid Ads + Mo (GHL)</td>
+<td>Yes</td>
+<td>2 business days</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Market, Offer &amp; Audience Research</td>
+<td>Paid Ads</td>
+<td>Yes</td>
+<td>2 business days</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Creative Production (conversion + awareness)</td>
+<td>Design (Héctor) · Video (Vince)</td>
+<td>No — runs parallel to 6</td>
+<td>2 business days</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Destination — Native Form or Landing Page</td>
+<td>Paid Ads (native form) · Web/Mo (page, <strong>when applicable</strong>)</td>
+<td>Yes</td>
+<td>1 day (native) / 4 days (page)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Campaign Buildout in Meta</td>
+<td>Paid Ads</td>
+<td>Yes</td>
+<td>1 business day</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Pre-Launch QA + Lead Flow Test</td>
+<td>Paid Ads + Mo</td>
+<td>Yes — hard gate</td>
+<td>1 business day</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Launch</td>
+<td>Paid Ads</td>
+<td>—</td>
+<td>Same day</td>
+</tr>
+<tr>
+<td>10</td>
+<td>3-Day Check (one-time)</td>
+<td>Paid Ads</td>
+<td>—</td>
+<td>Day 3</td>
+</tr>
+<tr>
+<td>11</td>
+<td>7-Day Check (one-time)</td>
+<td>Paid Ads</td>
+<td>—</td>
+<td>Day 7</td>
+</tr>
+</tbody>
+</table>
+<p>Stages 5 and 6 run in parallel once Stage 4 closes. Stage 7 cannot start until both are done.</p>
+<p><strong>Critical path:</strong> 1 → 2 → 3 → 4 → (5 ‖ 6) → 7 → 8 → 9.</p>
+<p><strong>Launch window:</strong> the destination decides it. A native Meta lead form build (our default in most accounts) has no Web dependency and lands in roughly 6–8 business days from a complete intake. A build that needs a new landing page adds the Web/GHL lead time on top. <em>(These durations are Paid Ads estimates, not measured cycle times — they should be re-baselined once we have real data from the first builds.)</em></p>
+<hr />
+<h2>STAGE 1 — Client Info</h2>
+<p><strong>Owner:</strong> Account Manager · <strong>Blocks everything downstream</strong></p>
+<h3>1.0 — Start from AT</h3>
+<p>The AM opens the client record in AT, confirms what's already there is current, and collects whatever is missing from the client.</p>
+<p>The fields below are the full requirement. The stage cannot close with anything still missing — with every field filled, the ads team builds the campaign end to end without going back to the client or the AM.</p>
+<h3>1A. Business &amp; offer</h3>
+<ul>
+<li><strong>Services to advertise on Meta</strong> (be specific: "AC replacement" not "HVAC")</li>
+<li><strong>The offer.</strong> Exact promo, discount, financing, or guarantee we can put in the ad. If there is no offer, write "no offer — advertise service only." Vague is not acceptable ("great service" is not an offer).</li>
+<li><strong>Offer expiration / seasonality</strong>, if any.</li>
+<li><strong>Average ticket</strong> for the advertised service.</li>
+<li><strong>What the client will NOT say</strong> in an ad (compliance, brand, price claims they won't back).</li>
+<li><strong>Top 3 competitors</strong> and what the client believes makes them different.</li>
+<li><strong>Proof assets:</strong> review count and rating, years in business, licenses, awards, warranty terms, financing partner.</li>
+</ul>
+<h3>1B. Targeting</h3>
+<ul>
+<li><strong>Service area:</strong> ZIP codes or cities the client will actually drive to. Not "the whole metro."</li>
+<li><strong>Any area they refuse to serve.</strong></li>
+<li><strong>Customer profile:</strong> homeowners only? Age of homes? Commercial included? <em>(Context for the offer and the creative. It does not become an audience filter — see the targeting doctrine in 7.2: geo only, Advantage+ everywhere.)</em></li>
+</ul>
+<h3>1C. Budget &amp; goal</h3>
+<ul>
+<li><strong>Monthly Meta ad spend</strong> (written client approval — this is the hard rule; no budget moves without it).</li>
+<li><strong>Target cost per lead</strong>, or, if unknown, the client's close rate and what a lead is worth.</li>
+<li><strong>Primary goal:</strong> phone calls or form leads. Pick one as primary.</li>
+<li><strong>Lead capacity:</strong> how many leads per week can they actually handle and call back? Do they answer the phone on weekends?</li>
+</ul>
+<h3>1D. Assets &amp; access</h3>
+<ul>
+<li><strong>Meta Business Manager + Ad Account access confirmed</strong> (yes/no). If no → fires "Create Meta Ads Account" process.</li>
+<li><strong>Facebook Page and Instagram account</strong> connected to the ad account.</li>
+<li><strong>Meta Pixel / Conversions API</strong> — exists? installed where?</li>
+<li><strong>Photos and video from the client:</strong> real job photos, trucks, crew, before/after, owner on camera. Ask for the raw folder — this is what makes Meta work in home services.</li>
+<li><strong>Logo, brand colors, brand guide.</strong></li>
+<li><strong>Destination:</strong> native Meta lead form (our default), an existing landing page URL, or a page we need to build. Paid Ads makes this call in Stage 4 — the AM only needs to say whether a page already exists.</li>
+<li><strong>CRM:</strong> GHL sub-account confirmed? Who receives the lead notification (name, phone, email)?</li>
+</ul>
+<p><strong>Closeout:</strong> AM marks complete. AT fires Stage 2 to the Paid Ads division. Paid Ads reviews the form within 24h and either accepts it or bounces it back with the specific missing fields (bounce goes to the AM, not the client).</p>
+<hr />
+<h2>STAGE 2 — Access &amp; Assets Check</h2>
+<p><strong>Owner:</strong> Paid Ads (media buyer)</p>
+<ol>
+<li>Log into Meta Business Manager. Confirm we have <strong>Admin</strong> on the Ad Account, the Facebook Page, the Instagram account and the Pixel/Dataset. Partner access, not personal access.</li>
+<li>Confirm the ad account has a <strong>valid payment method</strong> and no spend limit or policy restriction blocking us. <em>(Billing on paid accounts is the Division Head's — flag to Eduardo, do not ask another team to check it.)</em></li>
+<li>Confirm the ad account is not <strong>restricted or in review</strong>. If it is, that's a Critical ticket, escalate same day.</li>
+<li>Download the client's photo/video folder into the client's asset drive.</li>
+<li>Check the account history: what ran before, what worked, what the previous CPL was. Screenshot the last 90 days for the record.</li>
+</ol>
+<p><strong>Branch:</strong> any missing access or missing account → fire the "Create Meta Ads Account / Request Access" process and put this task on hold. Do not skip forward.</p>
+<p><strong>Closeout:</strong> checklist all green, 90-day history screenshotted into the client folder.</p>
+<hr />
+<h2>STAGE 3 — Tracking &amp; Lead Flow Setup</h2>
+<p><strong>Owner:</strong> Paid Ads · <strong>Dependency:</strong> Mo (GHL) — must be requested at the start of this stage, not at the end</p>
+<p>This stage exists because a launched campaign with broken tracking is worse than no campaign.</p>
+<ol>
+<li><strong>Pixel / Conversions API</strong> installed on the site and firing. Verify with Meta Events Manager (Test Events), not by assumption.</li>
+<li><strong>Standard events defined:</strong> <code>Lead</code> for form submits, <code>Contact</code> for calls. One event per real conversion. No duplicate events, no page-view-as-conversion.</li>
+<li><strong>Call tracking:</strong> CallRail (or ServiceTitan) number provisioned for Meta and passed back into the CRM. Calls from Meta must be identifiable as Meta.</li>
+<li><strong>Lead routing:</strong> form submits land in GHL, notify the right person, and trigger the client's follow-up automation.</li>
+<li><strong>Conversion goal in the ad account</strong> points to the correct event. Not "any lead event in the account."</li>
+</ol>
+<p><strong>GHL gate:</strong> if any part of the lead flow touches GHL, Mo runs the joint test and marks <strong>Verified Live</strong> in the ticket. Nothing gets called "live" to the client before that.</p>
+<p><strong>Closeout:</strong> a screenshot of a test event firing in Events Manager + Mo's Verified Live on the ticket. This is a hard gate — Stage 4 does not open without it.</p>
+<hr />
+<h2>STAGE 4 — Market, Offer &amp; Audience Research</h2>
+<p><strong>Owner:</strong> Paid Ads · <strong>Output: the Campaign Brief</strong> — this is what Design works from, and what the ad copy is written against in Stage 7</p>
+<p>Deliverable is a one-page brief in the client folder, containing:</p>
+<ol>
+<li><strong>Does this account already have proven winners?</strong> Check for isolated post IDs from previous campaigns that still perform. This single answer decides the whole build:
+   - <strong>No proven winners</strong> → the account launches <strong>100% testing</strong> (see Stage 7).
+   - <strong>Proven winners exist</strong> → the winners keep running in their isolated ad sets and testing runs alongside them, on a smaller share of budget.</li>
+<li><strong>Who we're talking to</strong> and what state they're in when they see the ad (emergency need vs. planning a replacement vs. no idea they need us yet).</li>
+<li><strong>The angles we're testing.</strong> Each angle is a distinct offer or promise — price/financing, speed of service, trust/local proof, pain, seasonal urgency. <strong>One angle = one DCT ad set.</strong> The angles compete against each other as parallel ad sets inside the CBO. This is what we're actually testing: which offer/angle the market wants. We are not testing layouts.</li>
+<li><strong>The hypothesis, one per angle.</strong> Written as: <em>"We believe [audience] responds to [angle] because [reason]. We'll know we're right if [metric] beats [threshold]."</em></li>
+<li><strong>Competitor scan:</strong> pull the client's top competitors in the Meta Ad Library. What are they running, how long has it been running (long-running = it works), what are they promising.</li>
+<li><strong>Proof to put in the creative:</strong> the specific reviews, numbers, photos we'll use.</li>
+<li><strong>Budget split</strong> for this client (see the Stage 7 standard).</li>
+<li><strong>Conversion creative spec for Héctor:</strong> <strong>3 creatives per angle</strong>, all in the same format. The 3 are <em>iterations of that one angle</em> — different executions of the same promise, not three different promises. Total = 3 × number of angles. Specify which photos to use for each.</li>
+<li><strong>Awareness creative spec (separate brief):</strong> video and statics built specifically for <strong>branding and brand recall</strong>, never recycled conversion ads. Video comes from Vince, statics from Héctor.</li>
+<li><strong>Destination route</strong> (native form / existing page / new page) — this is what branches Stage 6.</li>
+</ol>
+<p><strong>Closeout:</strong> brief approved by Eduardo. AT fires Stages 5 and 6 in parallel.</p>
+<hr />
+<h2>STAGE 5 — Creative Production (parallel)</h2>
+<p><strong>Owner:</strong> Design (Héctor) · Video for awareness: Vince · <strong>Input:</strong> the Campaign Brief from Stage 4</p>
+<p>Two distinct creative sets come out of this stage. They are not interchangeable.</p>
+<h3>5A — Conversion creative (for the DCT ad sets)</h3>
+<ul>
+<li><strong>3 creatives per angle, all in the same format.</strong> The 3 are iterations of the same angle — different executions of one promise, not three different promises. The angle is what we're testing; the iterations exist so the algorithm can find the best expression of it.</li>
+<li>Format is fixed across the test. Mixing formats turns format into an uncontrolled variable and contaminates the read.</li>
+<li>Real photos of the client's crew, trucks and jobs beat stock. Always.</li>
+<li>Text on image stays short and readable on a phone.</li>
+</ul>
+<h3>5B — Awareness creative (for the Ad Recall Lift campaign)</h3>
+<ul>
+<li><strong>Purpose-built for branding and brand recall.</strong> Video (Vince) plus statics (Héctor), designed to be remembered, not to be clicked.</li>
+<li><strong>Never a recycled conversion ad.</strong> A discount ad running on a recall objective is a wasted impression.</li>
+<li>Carries the brand: name, face, trucks, market position. No hard offer.</li>
+<li>Formats per the division standard: 16:9 master with cutdowns to 4:5 and 9:16.</li>
+</ul>
+<p>Both sets: creative naming follows the TSD convention so we can read performance without opening the ad. Delivered to the client's asset folder + AT task.</p>
+<p><strong>Target:</strong> 2 business days from the brief. Delivery must land with at least <strong>1 business day of headroom</strong> before the buildout date, so Paid can review and request one round of fixes.</p>
+<p><strong>Closeout:</strong> files delivered in the required formats, named correctly, in the client's asset folder and on the AT task.</p>
+<hr />
+<h2>STAGE 6 — Destination: Native Lead Form or Landing Page (parallel)</h2>
+<p><strong>Owner:</strong> depends on the route below · Paid Ads picks the route in Stage 4</p>
+<p>Three routes. AT branches the task accordingly.</p>
+<h3>Route A — Native Meta lead form (the default)</h3>
+<p>Most of our builds run on Meta's native form. No Web dependency, no page to wait on, and the lead flow is shorter.</p>
+<ul>
+<li><strong>Owner:</strong> Paid Ads. Built inside Meta as part of the campaign.</li>
+<li>Form fields: name, phone, ZIP, service needed. Nothing else — every extra field costs leads.</li>
+<li>Use the <strong>higher-intent</strong> form type, not the fastest one. Add a review/confirm step so we don't buy misdials.</li>
+<li>One qualifying question max, and only if it actually changes how the client works the lead.</li>
+<li>Custom thank-you screen with a click-to-call button — a lead that calls immediately closes at a different rate than one we call back.</li>
+<li><strong>Leads must flow into the CRM automatically.</strong> Native form leads that sit inside Meta are lost leads. The GHL (or CallRail/ServiceTitan) integration is set up here and tested in Stage 8. If GHL is in the path, Mo runs the joint test and marks <strong>Verified Live</strong>.</li>
+</ul>
+<h3>Route B — Existing landing page</h3>
+<p>Stage 1D says a page already exists and it converts. Paid Ads verifies it: mobile speed, click-to-call, form fields, and tracking firing. If it fails any of those, it becomes Route C.</p>
+<h3>Route C — New landing page (<strong>when applicable</strong>)</h3>
+<p>Only when the offer genuinely needs a page (high-ticket, financing, long proof, or the client wants the traffic on their site).</p>
+<ul>
+<li><strong>Owner:</strong> Web (Justin) for a site page, Mo for a GHL funnel.</li>
+<li>Paid Ads writes the requirements: offer, headline, proof, form fields, thank-you behavior, tracking to install.</li>
+<li>Same form-field rule as Route A. Mobile load under 3 seconds. Click-to-call in the header.</li>
+<li>Pixel + Conversions API firing on the page and on the thank-you.</li>
+<li><strong>Dependency deadline:</strong> page live <strong>4 business days before</strong> the buildout date, so Stage 8 tests the real flow and not a mockup.</li>
+</ul>
+<p><strong>Closeout (any route):</strong> the destination exists, tracking is verified, leads reach the CRM, and Mo's Verified Live is on the ticket if GHL is in the path.</p>
+<hr />
+<h2>STAGE 7 — Campaign Buildout in Meta</h2>
+<p><strong>Owner:</strong> Paid Ads · Requires Stages 5 and 6 complete · <strong>Ad copy is written in this stage</strong></p>
+<h3>7.1 — The TSD Meta method</h3>
+<p><strong>Budget is always CBO.</strong> Campaign-level budget, never ad-set budgets. The algorithm decides where the money goes, and that decision is itself the test signal (see 7.5).</p>
+<p><strong>One angle = one DCT ad set.</strong> This is the core of the method. Each Dynamic Creative ad set carries <strong>a single angle</strong>, expressed in:</p>
+<ul>
+<li><strong>3 creatives</strong> — same format, three <em>iterations of that one angle</em></li>
+<li><strong>2 headlines</strong> — for that angle</li>
+<li><strong>2 primary texts</strong> — for that angle</li>
+</ul>
+<p>Inside the ad set, Meta finds the best expression of the angle. Across ad sets, the CBO decides <strong>which angle deserves the money</strong>. That's the question we're actually paying to answer: <strong>which offer/promise the market responds to.</strong> We are not optimizing layouts — aiming that small tells us nothing worth scaling.</p>
+<p>Angles run <strong>alongside each other</strong> as parallel DCT ad sets in the same CBO campaign, and compete for the budget.</p>
+<p><strong>The account starts in one of two states</strong>, per Stage 4:</p>
+<p><strong>State A — No proven winners in the account (a fresh account, or nothing from past campaigns is worth keeping).</strong>
+The account runs <strong>100% testing</strong>. There is nothing to scale yet, so we don't pretend there is.</p>
+<ul>
+<li>One CBO conversion campaign, optimizing for the conversion event verified in Stage 3.</li>
+<li>One DCT ad set per angle, running in parallel.</li>
+<li>Targeting and placements: per 7.2 — geo only, Advantage+ everywhere.</li>
+</ul>
+<p><strong>State B — The account already has isolated winners.</strong>
+The proven post IDs keep running in their own isolated ad sets inside the CBO. New DCT ad sets (one per new angle) run alongside them on a smaller share of budget, feeding the next generation of winners.</p>
+<h3>7.2 — Targeting doctrine: Advantage+ everywhere, geo only</h3>
+<p><strong>Advantage+ on everything. No exceptions.</strong> Audience, placements, campaign-level automation. The platform's machine learning finds the buyer far better than a manual guess does, and every manual restriction we add is a constraint on a system that is better at this than we are. Leveraging Meta's AI is not a preference here, it's the doctrine.</p>
+<p><strong>Never use interest targeting, behaviors, or any detailed targeting.</strong> Not as a "starting point," not "just to narrow it a bit." An interest layer tells the algorithm to look in a box we drew from a hunch, and it will obey — that's exactly the problem.</p>
+<p>What we are allowed to define:</p>
+<ul>
+<li><strong>Geo</strong> — the service area from Stage 1B. <strong>People living in this location</strong>, never "recently in."</li>
+<li><strong>Age — as a suggestion only</strong> (Advantage+ audience suggestion), and only when the client's customer profile genuinely calls for it. Advantage+ treats it as a signal and is free to go outside it when the data says so. That's intended.</li>
+</ul>
+<p>That's the whole targeting spec. If a campaign is underperforming, the fix is the offer, the angle or the creative — never a tighter audience.</p>
+<h3>7.3 — Ad copy (written in this stage)</h3>
+<p>Copy is not a separate hand-off. Written by the media buyer here, against the Campaign Brief, while building the ads. The method dictates the quantity:</p>
+<ul>
+<li><strong>Exactly 2 primary texts and 2 headlines per angle</strong> — i.e. per DCT ad set. Three angles means three sets of 2+2. Not one, not five: the Dynamic Creative matrix is built on this.</li>
+<li>Both must argue <strong>the same angle</strong> as that ad set's creatives. Copy from another angle inside the ad set destroys the read — the ad set must win or lose on one promise.</li>
+<li>Within the angle, the two must be genuinely different takes, not the same sentence reworded. Two versions of the same line waste a test slot.</li>
+<li>Written for the awareness state in the brief, not generic.</li>
+<li>The offer appears exactly as the client gave it in Stage 1A. No invented claims, no invented pricing.</li>
+<li>Nothing the client said they will not say (Stage 1A).</li>
+<li>CTA matches the primary goal (call vs. form).</li>
+<li>The copy lives in the AT task, not in Slack.</li>
+</ul>
+<h3>7.4 — Isolating winners (post ID isolation)</h3>
+<p>This is how a test becomes a scaling asset, and it happens <strong>after</strong> the test has collected enough data to be meaningful (first read at Stage 11).</p>
+<ul>
+<li>Pull the <strong>post IDs</strong> of the winning combinations out of the Dynamic Creative ad set.</li>
+<li>Launch each winner as its own ad, using the same post ID, so it keeps its accumulated social proof (likes, comments, shares). <strong>Never rebuild a winner as a new ad — that throws away the engagement and restarts the learning.</strong></li>
+<li>The isolated winners keep running in the CBO. New testing continues in parallel, on a smaller budget share, and every new winner gets isolated the same way.</li>
+</ul>
+<h3>7.5 — Kill rules (how the algorithm votes)</h3>
+<p>In a CBO, <strong>spend is the vote</strong> — at both levels. Meta has already decided what deserves to be shown, and we read that decision instead of arguing with it.</p>
+<p><strong>Level 1 — the angle (the ad set).</strong> The CBO distributes budget across the DCT ad sets. The angle that doesn't attract spend lost to the others. That is the answer to the question we asked.</p>
+<p><strong>Level 2 — the combination (inside the surviving ad set).</strong> Within an angle that is taking budget, the winning creative/headline/copy combinations are the ones the algorithm feeds.</p>
+<p>At either level, it <strong>dies</strong> when:
+- <strong>It didn't spend.</strong> The algorithm found it irrelevant next to the others. No spend, no case.
+- <strong>It spent very little.</strong> Same verdict, weaker version.
+- <strong>It spent but produced only 1–2 leads</strong> — or, in an account that already has isolated post IDs running, produced few leads relative to the account's total lead volume.</p>
+<p>It <strong>survives and gets isolated</strong> when it took real spend and produced lead volume that stands up next to the rest of the account.</p>
+<p><strong>Read window:</strong> the first read happens at Stage 11 (day 7). Do not kill or isolate before the data can carry the decision — an early kill is just noise with a confident tone.</p>
+<h3>7.6 — Awareness campaign (always on, in parallel)</h3>
+<p>Every account runs an <strong>Awareness campaign alongside the conversion CBO</strong>. This is not optional and it is not a leftover budget line — it's the Brandformance layer: the ads don't create the authority, they amplify it, and the conversion campaign converts cheaper into a market that already recognizes the brand.</p>
+<ul>
+<li><strong>Objective: Awareness, optimized for Ad Recall Lift.</strong> Not reach, not impressions, not traffic. We are buying the memory, so we optimize for the metric that measures it (Estimated Ad Recall Lift).</li>
+<li><strong>Budget:</strong> 5–10% of total, per the division standard. Accelerator and Dominator can carry a heavier BED overlay per the Brandformance rules.</li>
+<li><strong>Creative is purpose-built for branding and brand recall</strong> — video plus statics designed for it. This is a <strong>separate creative brief for Héctor and Vince</strong>, not the conversion creatives recycled. A direct-response ad optimized for recall is a wasted impression.</li>
+<li>Brand assets carry the things a recall ad must land: the name, the face, the trucks, the market position. No hard offer, no discount chase.</li>
+<li>Retargeting (site visitors, video viewers, engagers, customer list) also lives here, running proof and trust.</li>
+<li><strong>Do not judge this campaign by CPL.</strong> It has none, by design. It's read on recall lift, frequency and reach in the service area — and indirectly, on what happens to the conversion campaign's CPL over time.</li>
+</ul>
+<p><strong>Naming convention:</strong> every campaign, ad set and ad follows the TSD standard so an AM or the client can read the account without a translator. <em>(Note: the division-wide naming convention is still being finalized — this SOP will point to it once locked.)</em></p>
+<h3>7.7 — Buildout checklist</h3>
+<ol>
+<li>Build the <strong>conversion CBO</strong>. Campaign-level budget, never ad-set budgets.</li>
+<li><strong>One DCT ad set per angle</strong>, each loaded with 3 creatives (same format, iterations of that angle), 2 headlines and 2 primary texts <strong>of that angle</strong>. No cross-contamination between ad sets.</li>
+<li>If the account has proven post IDs, rebuild their isolated ad sets in the CBO <strong>with the original post IDs</strong>.</li>
+<li>Build the <strong>Awareness campaign</strong> in parallel: objective Awareness, optimized for <strong>Ad Recall Lift</strong>, with the branding creative (7.6).</li>
+<li>Geo set to the exact ZIPs/cities from Stage 1B. <strong>People living in this location</strong>, not "recently in."</li>
+<li>Exclude the areas the client refuses to serve.</li>
+<li>Conversion event = the one verified in Stage 3.</li>
+<li>Every ad has the correct destination and UTMs.</li>
+<li>Schedule: if the client doesn't answer the phone on weekends (Stage 1C), restrict the schedule accordingly.</li>
+<li>Budget split: 90–95% conversion, 5–10% awareness. Total = the approved monthly figure ÷ 30.4. Nothing above what the client approved in writing.</li>
+<li>Leave everything <strong>paused</strong>. Nothing goes live before Stage 8.</li>
+</ol>
+<p><strong>Closeout:</strong> both campaigns built and paused, ready for QA.</p>
+<hr />
+<h2>STAGE 8 — Pre-Launch QA + End-to-End Lead Flow Test</h2>
+<p><strong>Owner:</strong> Paid Ads · <strong>Dependency:</strong> Mo, if GHL is in the flow · <strong>Hard gate — nothing launches without it</strong></p>
+<p>This is a TSD hard rule: <strong>the lead flow is verified end to end before any lead-gen campaign goes live.</strong></p>
+<p><strong>QA checklist (a second set of eyes, not the person who built it):</strong>
+- &#9744; Ad preview renders correctly on mobile, feed, reels and stories.
+- &#9744; Every link works and carries UTMs.
+- &#9744; Geo, budget, schedule and conversion event match the intake form.
+- &#9744; <strong>No interest or detailed targeting anywhere.</strong> Geo only, Advantage+ on. Age present only as a suggestion, if at all.
+- &#9744; Budget sits at the <strong>campaign</strong> level (CBO). No ad-set budgets.
+- &#9744; Each DCT ad set carries <strong>one angle only</strong> — its creatives, headlines and primary texts all argue the same promise.
+- &#9744; Offer in the ad matches the offer from the intake. Word for word.
+- &#9744; Naming convention is correct.
+- &#9744; No ad is stuck in policy review.</p>
+<p><strong>Live lead test:</strong>
+- &#9744; Submit a real test lead through the actual ad destination — the native form itself if that's the route, not a page we didn't build.
+- &#9744; Lead lands in GHL / CRM. <strong>Native form leads must arrive in the CRM automatically</strong> — a lead sitting inside Meta is a lost lead, and this is the single most common way a native-form launch quietly fails.
+- &#9744; The client's team gets the notification they'll get in production.
+- &#9744; The conversion event fires in Events Manager and shows up in the ad account.
+- &#9744; Test call placed through the tracking number, shows as a Meta call.
+- &#9744; Test lead deleted / marked as test in the CRM.
+- &#9744; <strong>Mo marks Verified Live</strong> if GHL is involved.</p>
+<p><strong>Closeout:</strong> QA checklist signed in AT with the screenshot of the test conversion. No screenshot, no launch.</p>
+<hr />
+<h2>STAGE 9 — Launch</h2>
+<p><strong>Owner:</strong> Paid Ads</p>
+<ol>
+<li>Unpause. Record the exact launch date/time in the AT task and in the client's Meta log.</li>
+<li>Log the hypotheses from Stage 4 in the client's Meta log, so the 3-day and 7-day checks are measured against something we wrote down before we knew the answer.</li>
+<li><strong>Notify the AM in Slack</strong> the same day: live, budget, what we're testing, when the first read happens, what they can tell the client. The AM communicates to the client — Paid does not.</li>
+</ol>
+<p><strong>Closeout:</strong> live, logged, AM notified.</p>
+<hr />
+<h2>STAGE 10 — 3-Day Check (one-time, attached to this build)</h2>
+<p><strong>Owner:</strong> Paid Ads · Fires 3 days after launch</p>
+<p>Purpose: confirm delivery is healthy. <strong>Do not judge creative winners yet — there isn't enough data.</strong></p>
+<ul>
+<li>Is it spending the daily budget? If not: budget too low, audience too narrow, or ads in review.</li>
+<li>Is it out of the learning phase, or on track to exit?</li>
+<li>Are conversions being <em>recorded</em> (not "are they good")? If we have spend and zero recorded events, tracking is broken — that's a Critical, fix it today.</li>
+<li>Frequency, CPM and CTR sane vs. the account's history?</li>
+<li>Any ad rejected or ad set with zero delivery?</li>
+</ul>
+<p><strong>Action rule:</strong> fix delivery and tracking problems. Do not touch creative or budget for performance reasons yet — resetting learning at day 3 destroys the test.</p>
+<p><strong>Closeout:</strong> log the read in the client's Meta log. Slack DM the AM within 2h if anything found needs the client to know.</p>
+<hr />
+<h2>STAGE 11 — 7-Day Check (one-time, attached to this build)</h2>
+<p><strong>Owner:</strong> Paid Ads · Fires 7 days after launch · <strong>This closes the launch process</strong></p>
+<p>Purpose: the first real read on the Dynamic Creative test, using the kill rules in 7.4.</p>
+<ul>
+<li>CPL vs. the target from Stage 1C.</li>
+<li><strong>Read the spend distribution first — at the ad set level.</strong> The CBO already voted on which <em>angle</em> deserves the money. That's the primary answer: which offer/promise the market wants.</li>
+<li>Then read <strong>inside</strong> the surviving angles: which creative / headline / primary text combinations the algorithm fed.</li>
+<li><strong>Kill</strong> at both levels, per 7.5: didn't spend, barely spent, or spent while returning only 1–2 leads (or few leads relative to the account's total volume, when isolated post IDs are already running).</li>
+<li><strong>Isolate</strong> the winners: pull their post IDs into their own ad sets inside the CBO, reusing the original post ID so the accumulated social proof comes with them (7.4).</li>
+<li>One change at a time, so we know what caused what.</li>
+<li><strong>Write the next hypothesis</strong> and open the Design task for the next round — new angles to test as new DCT ad sets, or new iterations of the angle that won.</li>
+<li><strong>Awareness campaign:</strong> do not read it on CPL. Check Estimated Ad Recall Lift, reach and frequency in the service area.</li>
+<li>Lead quality check with the AM: are the leads real, and is the client calling them back?</li>
+</ul>
+<p><strong>If the data can't carry the decision yet, do not force it.</strong> Extend the test rather than isolate a winner that isn't one. A premature isolation is how an account ends up scaling noise.</p>
+<p><strong>Closeout:</strong> the launch process ends here. The recurring <strong>7 / 14 / 30-day optimization processes</strong> take over from this point, plus the standard division SOPs (A1 Weekly Optimization, A4 Friday Pulse).</p>
+<hr />
+<h2>Dependency summary (for the AT build)</h2>
+<table>
+<thead>
+<tr>
+<th>Dependency</th>
+<th>Who</th>
+<th>Needed by</th>
+<th>Lead time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Client info complete (AT + any gaps collected)</td>
+<td>Account Manager</td>
+<td>Stage 2</td>
+<td>Blocks the whole build</td>
+</tr>
+<tr>
+<td>Written budget approval</td>
+<td>Client, via AM ticket</td>
+<td>Stage 7</td>
+<td>Blocks launch</td>
+</tr>
+<tr>
+<td>GHL lead flow + Verified Live</td>
+<td>Mo</td>
+<td>Stage 3 and Stage 8</td>
+<td>2 days</td>
+</tr>
+<tr>
+<td>Conversion creatives (3 per angle)</td>
+<td>Design (Héctor)</td>
+<td>Stage 7</td>
+<td>2 days from the brief, 1 day of headroom before buildout</td>
+</tr>
+<tr>
+<td>Awareness creatives (branding video + statics)</td>
+<td>Vince (video) · Héctor (statics)</td>
+<td>Stage 7</td>
+<td>Same window — separate brief, not recycled conversion ads</td>
+</tr>
+<tr>
+<td>Landing page — <strong>only when applicable</strong> (Route C)</td>
+<td>Web (Justin) or Mo</td>
+<td>Stage 8</td>
+<td>4 days before buildout</td>
+</tr>
+</tbody>
+</table>
+<p>Most builds run on the native Meta lead form and carry <strong>no Web dependency at all</strong>. Only Route C in Stage 6 pulls Web into the critical path.</p>
+<p><strong>Escalation:</strong> any dependency that misses its deadline goes to the AM (not to the other division head) per MasterOps — the AM coordinates cross-division work. A dependency blocking a launch date the client already knows about is escalated to the COO.</p>
+</body></html>

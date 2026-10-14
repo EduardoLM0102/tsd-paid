@@ -1,0 +1,44 @@
+level,account_id,client,market_dma,campaign,weeks_counted,spend_usd,median_weekly_frequency,max_weekly_frequency,weeks_at_or_above_3x,pct_weeks_at_or_above_3x,median_weekly_reach_or_unique_users,avg_weekly_frequency_last_4_weeks,pre_tsd_weeks_excluded
+Google: DEMAND_GEN campaign,9865206319,Cool Hand Electric,"Dallas-Ft. Worth, TX",TSD_YouTube,5,842.13,1.93,2.0,0,0.0%,41463,1.94,0
+Google: DISPLAY campaign,8634274092,Mission Accomplished,"Phoenix, AZ",Display_News_AC_Repair_Free_Estimate,17,1739.96,11.49,14.1,17,100.0%,5252,,0
+Google: DISPLAY campaign,3651667805,Watt's Right Electric,"Tulsa, OK",Display News [Dec 17],3,160.74,2.51,2.57,0,0.0%,2463,,0
+Google: VIDEO campaign,1051843378,Proud Pops,"San Antonio, TX",08/2026 - YT - Awareness - New Braunfels,8,5268.66,3.1,3.34,4,50.0%,14413,3.03,0
+Google: VIDEO campaign,1051843378,Proud Pops,"San Antonio, TX",08/2026 - YT - VideoViews (San Antonio),8,5266.9,2.34,2.46,0,0.0%,51598,2.39,0
+Google: VIDEO campaign,2895702982,Integrate Comfort Systems,"New York, NY",Mitsubishi YouTube,31,5015.23,1.44,2.01,0,0.0%,16153,1.4,0
+Google: VIDEO campaign,2375064049,GC Home Service,"Cincinnati, OH",TSD - Awareness (ZIP Codes),7,2178.72,3.32,3.79,5,71.4%,16812,2.97,0
+Meta: all campaigns (per client),381256660973192,Zen Air Heating and Cooling,"Atlanta, GA",,50,41969.04,2.03,2.55,0,0.0%,82133,2.26,0
+Meta: all campaigns (per client),588638883283311,Watt's Right Electric,"Tulsa, OK",,52,31458.48,1.64,3.36,2,3.8%,21613,1.49,0
+Meta: all campaigns (per client),1434273655098937,GC Home Service,"Cincinnati, OH",,26,26949.94,2.43,3.74,4,15.4%,27704,2.76,0
+Meta: all campaigns (per client),1846637992293356,On Time Service Pros,"Minneapolis-St. Paul, MN",,30,22254.23,2.05,3.33,2,6.7%,21650,2.0,22
+Meta: all campaigns (per client),438790276573563,Napps Cooling Heating & Plumbing,"Tyler-Longview(Lufkin & Nacogdoches), TX",,35,15935.43,1.93,2.18,0,0.0%,16907,2.11,0
+Meta: all campaigns (per client),79203382,Mission Accomplished,"Phoenix, AZ",,24,12886.97,1.93,3.16,1,4.2%,15074,1.87,0
+Meta: all campaigns (per client),483679897962388,King's Window Services,"Dallas-Ft. Worth, TX",,31,9033.5,1.77,2.02,0,0.0%,18153,1.98,0
+Meta: all campaigns (per client),1845825982372184,Spencer Air,"Dallas-Ft. Worth, TX",,14,6571.77,1.4,2.25,0,0.0%,34085,1.38,0
+Meta: all campaigns (per client),2405306059725517,All Seasons AC,"New York, NY",,33,5543.67,1.13,1.44,0,0.0%,56894,1.39,0
+Meta: all campaigns (per client),705877631084699,Neon Monkey Services,"Dallas-Ft. Worth, TX",,6,3344.13,1.67,1.75,0,0.0%,17190,1.55,0
+Meta: all campaigns (per client),10086442468052740,Hawkins Siding and Exterior,"Dallas-Ft. Worth, TX",,9,2907.13,1.49,1.78,0,0.0%,10896,,0
+Meta: all campaigns (per client),2014320269203822,Gillespie's Heating and Cooling,"Cincinnati, OH",,9,2692.66,2.36,2.8,0,0.0%,11001,1.93,0
+Meta: all campaigns (per client),710350517676765,Nick's Heating & Air,"New Orleans, LA",,8,1160.29,2.73,9.53,4,50.0%,9277,1.86,0
+Meta: all campaigns (per client),1517373248873821,Cool Hand Electric,"Dallas-Ft. Worth, TX",,4,505.67,1.78,1.93,0,0.0%,14349,1.78,0
+Meta: awareness campaign,381256660973192,Zen Air Heating and Cooling,"Atlanta, GA",TOFU - Brand Awareness_Reach_OA_FQ4_7 (Updated 19th Jan 2026),30,10978.61,1.95,2.28,0,0.0%,66677,2.12,0
+Meta: awareness campaign,381256660973192,Zen Air Heating and Cooling,"Atlanta, GA",TOFU - Reach_Lookalike_FQ4_7 (Updated 19th Jan 2026),21,8389.87,1.87,2.06,0,0.0%,83741,,0
+Meta: awareness campaign,2405306059725517,All Seasons AC,"New York, NY",Brand Awareness - TOFU -,29,3988.6,1.09,1.23,0,0.0%,56894,,0
+Meta: awareness campaign,483679897962388,King's Window Services,"Dallas-Ft. Worth, TX",TSD_02.26_TOF_AWARENESS_CBO_Creatives,31,3070.97,1.77,2.07,0,0.0%,12442,2.01,0
+Meta: awareness campaign,438790276573563,Napps Cooling Heating & Plumbing,"Tyler-Longview(Lufkin & Nacogdoches), TX",TSD_02.24_TOF_AWARENESS_CBO_Creatives,17,2228.02,1.88,2.06,0,0.0%,21433,,0
+Meta: awareness campaign,1434273655098937,GC Home Service,"Cincinnati, OH",TSD_2026-01_TOF_AWARENESS_CBO_Evergreen,13,1694.5,1.82,2.29,0,0.0%,17671,,0
+Meta: awareness campaign,1434273655098937,GC Home Service,"Cincinnati, OH",TSD_2026-01_TOF_AWARENESS_CBO_Evergreen - Ad Recall Lift,11,1497.96,3.01,3.88,6,54.5%,9719,3.07,0
+Meta: awareness campaign,1845825982372184,Spencer Air,"Dallas-Ft. Worth, TX",Spencer Air | Awareness | ABO | Videos | 30Jun2026,13,1430.83,1.36,1.41,0,0.0%,31741,1.37,0
+Meta: awareness campaign,79203382,Mission Accomplished,"Phoenix, AZ",TSD_04.27_BOF_Awareness_CBO_Evergreen,15,1249.19,1.45,1.78,0,0.0%,8502,,0
+Meta: awareness campaign,588638883283311,Watt's Right Electric,"Tulsa, OK",TSD_2026-01_TOF_AWARENESS_CBO_Evergreen,20,1206.81,1.23,1.88,0,0.0%,4554,,0
+Meta: awareness campaign,2014320269203822,Gillespie's Heating and Cooling,"Cincinnati, OH",TSD_2026-08_TOF_AWARENESS_CBO_Evergreen - Ad Recall Lift,5,668.54,1.81,1.92,0,0.0%,8539,1.79,0
+Meta: awareness campaign,1517373248873821,Cool Hand Electric,"Dallas-Ft. Worth, TX",TSD_2026-09_TOF_AWARENESS_CBO_Evergreen - Ad Recall Lift,4,505.67,1.78,1.93,0,0.0%,14349,1.78,0
+Meta: awareness campaign,2405306059725517,All Seasons AC,"New York, NY",TSD_09.02_Awareness_Brand_TOFU,4,496.81,1.39,1.44,0,0.0%,37871,1.39,0
+Meta: awareness campaign,710350517676765,Nick's Heating & Air,"New Orleans, LA",TSD_2026-09_TOF_AWARENESS_CBO_Evergreen - Ad Recall Lift,4,492.45,1.92,1.95,0,0.0%,14660,1.86,0
+Meta: awareness campaign,79203382,Mission Accomplished,"Phoenix, AZ",TSD_2026-09_TOF_AWARENESS_CBO_Evergreen - Ad Recall Lift,4,446.69,1.71,1.87,0,0.0%,11554,1.71,0
+Meta: awareness campaign,438790276573563,Napps Cooling Heating & Plumbing,"Tyler-Longview(Lufkin & Nacogdoches), TX",TSD_02.24_TOF_AWARENESS_CBO_Creatives - Ad Recall Lift,10,404.52,2.09,2.5,0,0.0%,3357,1.95,0
+Meta: awareness campaign,588638883283311,Watt's Right Electric,"Tulsa, OK",TSD_2026-08_TOF_AWARENESS_CBO_Brand Video - Ad Recall Lift,4,265.81,1.74,1.75,0,0.0%,7611,1.69,0
+Meta: awareness campaign,10086442468052740,Hawkins Siding and Exterior,"Dallas-Ft. Worth, TX",TOFU_Veteran Giveaway,2,92.75,1.36,1.48,0,0.0%,14561,,0
+Meta: awareness campaign,2405306059725517,All Seasons AC,"New York, NY",TOFU - New vs Old AC Efficiency,1,29.25,1.2,1.2,0,0.0%,9712,,0
+Meta: awareness campaign,588638883283311,Watt's Right Electric,"Tulsa, OK",TOFU - Brand Campaign [Dec 16th 2025],2,23.69,1.08,1.13,0,0.0%,6187,,0
+Meta: awareness campaign,588638883283311,Watt's Right Electric,"Tulsa, OK",Q1 TOFU Awareness Campaign 2026 [IGNORE],3,2.97,1.04,1.11,0,0.0%,391,,0
+Meta: awareness campaign,588638883283311,Watt's Right Electric,"Tulsa, OK",Test - TOFU - Brand Campaign [Dec 16th 2025],1,0.04,1.05,1.05,0,0.0%,22,,0

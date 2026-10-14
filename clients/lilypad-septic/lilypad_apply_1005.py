@@ -1,0 +1,45 @@
+# ALREADY APPLIED LIVE 2026-10-05. Kept for the record. Do NOT re-run with --apply (it would try to repeat the change).
+# Run from google-ads-ratos/scripts: ./tsd.sh <abs path to this file>   (validate-only without --apply)
+"""Lilypad Septic (3797438623), 2026-10-05 weekly optimization. Approved by Edu in chat ("go to Lilypad").
+Campaign-level PHRASE negatives on TSD_08.20_Search_NonBranded_Evergreen (24164203087): DIY septic-treatment
+products and "how often" info searches. 'salina septic' kept open (old company name, FKA Salina Septic Services).
+Then reads back totals for 09-28..10-04 for the KPI entry.
+"""
+import sys
+sys.path.insert(0, ".")
+from lib import init_client
+
+CID, CAMP = "3797438623", "24164203087"
+PHRASE = ["how often", "brown sugar", "yeast", "roebic", "rid x"]
+APPLY = "--apply" in sys.argv
+
+client = init_client()
+ga = client.get_service("GoogleAdsService")
+ops = []
+for t in PHRASE:
+    op = client.get_type("CampaignCriterionOperation")
+    c = op.create
+    c.campaign = ga.campaign_path(CID, CAMP)
+    c.negative = True
+    c.keyword.text = t
+    c.keyword.match_type = client.enums.KeywordMatchTypeEnum.PHRASE
+    ops.append(op)
+client.get_service("CampaignCriterionService").mutate_campaign_criteria(
+    request={"customer_id": CID, "operations": ops, "validate_only": not APPLY})
+print(f"negatives: {len(ops)} ok{'' if APPLY else ' (validate_only)'}")
+
+want = set(PHRASE)
+got = {r.campaign_criterion.keyword.text for r in ga.search(customer_id=CID, query=f"""SELECT campaign_criterion.keyword.text
+        FROM campaign_criterion WHERE campaign.id = {CAMP} AND campaign_criterion.negative = TRUE AND campaign_criterion.type = 'KEYWORD'""")}
+print(f"--- read-back: {len(want & got)}/{len(want)} present; missing: {sorted(want - got)}")
+
+print("--- PPC totals 09-28..10-04")
+for r in ga.search(customer_id=CID, query="""SELECT campaign.name, metrics.cost_micros, metrics.clicks, metrics.conversions
+        FROM campaign WHERE segments.date BETWEEN '2026-09-28' AND '2026-10-04' AND metrics.impressions > 0"""):
+    print(f"   {r.campaign.name}: ${r.metrics.cost_micros/1e6:.2f} clk={r.metrics.clicks} conv={r.metrics.conversions:.1f}")
+for r in ga.search(customer_id=CID, query="""SELECT segments.conversion_action_name, metrics.conversions FROM customer
+        WHERE segments.date BETWEEN '2026-09-28' AND '2026-10-04' AND metrics.conversions > 0"""):
+    print(f"   action {r.segments.conversion_action_name}: {r.metrics.conversions:.1f}")
+for r in ga.search(customer_id=CID, query="""SELECT metrics.search_impression_share, metrics.search_rank_lost_impression_share,
+        metrics.search_budget_lost_impression_share FROM customer WHERE segments.date BETWEEN '2026-09-28' AND '2026-10-04'"""):
+    print(f"   account search IS={r.metrics.search_impression_share:.4f} rank_lost={r.metrics.search_rank_lost_impression_share:.4f} budget_lost={r.metrics.search_budget_lost_impression_share:.4f}")

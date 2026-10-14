@@ -1,0 +1,21 @@
+==============================================================================
+GOOGLE ADS API — change_event EXPORT
+Account : 374-050-2923  (Zen Air — Local Services / LSA)
+MCC     : 415-551-4468  (TopServ Digital)
+Query   : FROM change_event, 2026-07-02 .. 2026-07-31
+Pulled  : 2026-07-31
+Note    : change_event retention is 30 days; window cannot start earlier.
+==============================================================================
+
+  Timestamp    : 2026-07-03 13:33:47.955208
+  User         : eddie@callzenair.com
+  Client type  : GOOGLE_ADS_WEB_CLIENT
+  Resource     : CAMPAIGN
+  Campaign     : customers/3740502923/campaigns/20752144554
+  Operation    : UPDATE
+  Field        : status
+  Change       : ENABLED  ->  PAUSED
+
+==============================================================================
+TOTAL EVENTS RETURNED: 1
+==============================================================================
