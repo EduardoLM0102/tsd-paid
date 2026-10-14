@@ -6,7 +6,7 @@ Log every executed step in `google-ads-log.md` and Agency Titan.
 **Claude: re-read this file at the start of any Proud Pops session, and tick boxes + fill "Result" the moment a
 step is done and verified. Never tick on a mutation's own success message. Tick on a read-back.**
 
-Last updated: 2026-10-13 · **10-13: budgets cut to land October at the approved $50k (D-10); YouTube San Antonio pause = Edu in UI.** Status: see ▶ RESUME HERE. Older status: GTM v43 live. **10-08 evening: H4a/b/c, H5a, G1a/b/c, G2a, G2c applied; G2b switchover waiting on ad approvals.** E1 passed. **B1, B2, B2b, B3, B5, B7 APPLIED 10-08. B4 applied then REVERTED, waiting on Edu's number check.** Under review: B7 ads + B4 call asset → rechecks B7a/B7b + B4 next-day check, then `b4-cleanup`. B6 + D1 done. Next [C]: E2 on Oct 9.
+Last updated: 2026-10-14 · **10-14 status check: all 6 B7 ads, all 14 G2 RSAs, the AG4 RSA, the Pop-In sitelink and the unlinked 225-5767 call asset are APPROVED; G2b + H7a cutovers validated but NOT run; Block F not started; YouTube SA still ENABLED (fu-046).** **10-13: budgets cut to land October at the approved $50k (D-10); YouTube San Antonio pause = Edu in UI.** Status: see ▶ RESUME HERE. Older status: GTM v43 live. **10-08 evening: H4a/b/c, H5a, G1a/b/c, G2a, G2c applied; G2b switchover waiting on ad approvals.** E1 passed. **B1, B2, B2b, B3, B5, B7 APPLIED 10-08. B4 applied then REVERTED, waiting on Edu's number check.** Under review: B7 ads + B4 call asset → rechecks B7a/B7b + B4 next-day check, then `b4-cleanup`. B6 + D1 done. Next [C]: E2 on Oct 9.
 
 ---
 
@@ -299,7 +299,7 @@ validates, Edu approves the live run.
         Script: `./tsd.sh ~/Documents/GitHub/topserv-workspace/clients/proud-pops/block_b_changes_2026-10-07.py b3 --apply`. **Validate-only passed 10-07 (3 ops).**
         **APPLIED 2026-10-08. Read-back:** `beyer` PHRASE + `bryco` PHRASE in CSMS_Competitors (sharedCriteria ~116352309,
         ~525859783); CSMS_Competitors attached to Plumbing 23853484024 (campaignSharedSets/23853484024~11334178042, ENABLED).
-- [ ] **B4 [C→E]** New call extension: **↩ REVERTED 2026-10-08 (Edu). Waiting: Edu confirms which number is correct.**
+- [ ] **B4 [C→E]** New call extension: **↩ REVERTED 2026-10-08 (Edu). Waiting: Edu confirms which number is correct.** **Command Center fu-052 (due 10-16). 10-14: the unlinked 225-5767 asset 428601259336 is APPROVED, so only the number check blocks it.**
       Where the number came from:
       1. 2026-09-03 live fetch of proudpops.com: 210-225-5767 ("210-CALL-POP" vanity) in the header, CTA and meta description.
       2. The old GTM `02 | G.Ads - Phone Call` tag had phoneConversionNumber 210-225-5767 (Jul 23 diagnosis).
@@ -349,13 +349,13 @@ validates, Edu approves the live run.
       **APPLIED 2026-10-08 (Edu approved). Read-back:** all 6 ads show the new final URLs. All 6 are
       `PENDING / AD_GROUP_AD_UNDER_REVIEW` (review_status REVIEW_IN_PROGRESS). These are the ONLY enabled ads in Electrical
       and Plumbing Search, so both campaigns may not serve until approved.
-  - [ ] **B7a [C]** Recheck approval a few hours after 2026-10-08 apply, and again next morning. Expect APPROVED.
+  - [x] **B7a [C]** **10-14: all 6 APPROVED / ELIGIBLE.** Recheck approval a few hours after 2026-10-08 apply, and again next morning. Expect APPROVED.
         *10-08 first recheck (shortly after apply): all 6 still PENDING / under review. Next check: later today.*
         *10-08 11:38 CT recheck: still under review. The edits landed 11:32:56 CT (change_event, account tz America/Chicago).*
         *10-08 11:48 CT: still REVIEW_IN_PROGRESS on all 6. Plumbing primary_status = PENDING (MOST_ADS_UNDER_REVIEW +
         BUDGET_CONSTRAINED). Script: `./tsd.sh proud_pops_b7_delivery_check.py`. If still under review tomorrow morning → escalate.*
         If any is DISAPPROVED or still under review after ~1 business day → flag to Edu immediately (campaign not serving).
-  - [ ] **B7b [C]** Check Electrical 23866999121 + Plumbing 23853484024 impressions for 10-08/10-09 vs their normal daily
+  - [x] **B7b [C]** **10-14: delivery normal on both** (Electrical 245 impr 10-13; Plumbing 165). Check Electrical 23866999121 + Plumbing 23853484024 impressions for 10-08/10-09 vs their normal daily
         level, to confirm delivery resumed after review.
         *10-08 11:38 CT, hourly impressions:*
         - *Electrical: normal before the edit (07–11h CT: 16/36/24/23/12 vs 11/40/36/4 yesterday).*
@@ -426,10 +426,10 @@ validates, Edu approves the live run.
       fire: 2 `generate_lead` on /schedule (Oct 7 20:00, Oct 8 06:00 CT). 1 PMax Electrical google/cpc session still
       landed on /careers Oct 7 (expected until B1). Google Ads `Website lead` per click day still filling in (Oct 8:
       1.0 so far, Plumbing).
-- [ ] **E2 [C]** Day 2: same, plus Google Ads `Website lead` daily all_conversions per campaign vs the prior 14-day
+- [x] **E2 [C]** **10-14: PASS.** Ads `Website lead` by click date Oct 8–14 = 2,1,1,1,2,2,2 (~1.6/day vs 5.07 base); PMax Electrical 0 every day. Day 2: same, plus Google Ads `Website lead` daily all_conversions per campaign vs the prior 14-day
       average. Baseline (Sep 23–Oct 6) = **5.00/day** (PMax Elec 3.21). Expect ≈ **1.2/day**, PMax Electrical ≈ 0.1.
       Script: `./tsd.sh proud_pops_verify_careers_fix.py` covers E1–E3 in one run.
-- [ ] **E3 [C]** Day 3: same. If `/careers` leads still appear → find which page/route they fire from and extend
+- [ ] **E3 [C]** **10-14: GA4-only leak, Ads clean.** 10-12 07h CT: one PMax Electrical mobile session landed on /careers and fired 2 GA4 `generate_lead` (no `job_application`); Ads counted 0 Website lead for PMax Elec. Source of that generate_lead not found yet (not [80]/[73] path, since the Ads Lead tag didn't fire). PMax Elec still lands ~1 session/day on /careers (was 8 on 10-07). Day 3: same. If `/careers` leads still appear → find which page/route they fire from and extend
       the exclusion before anything in Block F.
 - [ ] **E4 [C]** Confirm the AM heads-up to the client has been sent (AM plan, item 1). **Block F waits on this.**
 
@@ -458,7 +458,7 @@ validates, Edu approves the live run.
         **G1a/b/c DONE 2026-10-08** (`g1_geo_2026-10-08.py`; geo constants copied from the LSA campaigns' own criteria). Read-back:
         Branded 47 location targets, Search HVAC 20, Search Plumbing 20. PRESENCE on HVAC, Plumbing, Branded, PMax Electrical.
         Budgets unchanged.
-  - [ ] **G1d [C]** ~Oct 15: clicks / cost by city for Branded, HVAC and Plumbing since 10-08; make sure the new cities aren't
+  - [x] **G1d [C]** **10-14 (Oct 9–14):** Search HVAC $2,819, 54% outside San Antonio at ~$70–85/click vs SA ~$40 (Selma $476/6 clk, Fair Oaks $214/3, Live Oak $213/3, Hill Country Village $170/2); HVAC weekday spend hit 2× cap ($750 on 10-08 and 10-13, $702 10-09, $663 10-10) vs ~$310/d before 10-08; 0 customer forms since 10-08. Branded 69% SA, fine. Plumbing 71% SA. ~Oct 15: clicks / cost by city for Branded, HVAC and Plumbing since 10-08; make sure the new cities aren't
         eating budget at bad CPCs.
 - [x] **G2 [C→E]** Ad Rank: pull Quality Score components per keyword on the 3 non-branded Search campaigns →
       draft RSA rewrites for the ad groups with Below Average expected CTR → Edu approves → apply.
@@ -467,7 +467,7 @@ validates, Edu approves the live run.
       unverified claims ("5-Star" but it's 4.8; "Same-Day" on Electrical / Plumbing; "Upfront"; "Trusted"; "Affordable"; "We
       Answer Every Call").
   - [x] **G2a [C→E]** Create the 5 new RSAs (after Edu OKs the copy): `... g2_rsa_drafts_2026-10-08.py build --apply`. **DONE 2026-10-08:** new ads Elec AG1 827482059110, AG2 827482059113, AG3 827482059116, HVAC AG3 827482059119, HVAC AG1 827482059242 (all REVIEW_IN_PROGRESS, next to the old ads).
-  - [ ] **G2b [C]** Once each is approved, pause the old ad in that ad group. **Set up 2026-10-08:** `./tsd.sh ~/Documents/GitHub/topserv-workspace/clients/proud-pops/g2b_cutover_2026-10-08.py --apply` covers all 14 new ads (G2a + G2c) and only pauses old ads whose replacement is APPROVED. Safe to re-run. **Run at each check until all 14 are done.**
+  - [ ] **G2b [C]** **10-14: all 14 new RSAs APPROVED; dry run validates pausing 14 old ads. NOT run yet (awaiting Edu).** Once each is approved, pause the old ad in that ad group. **Set up 2026-10-08:** `./tsd.sh ~/Documents/GitHub/topserv-workspace/clients/proud-pops/g2b_cutover_2026-10-08.py --apply` covers all 14 new ads (G2a + G2c) and only pauses old ads whose replacement is APPROVED. Safe to re-run. **Run at each check until all 14 are done.**
   - [x] **G2c [C→E]** Second batch: Plumbing AG1 / AG2 / AG3, HVAC AG2, Branded (same unverified claims).
         **DONE 2026-10-08** (Edu wrote "H2c execute"; H2c was already done, so read as G2c). `g2c_rsa_drafts_2026-10-08.py`:
         9 site-verified RSAs, validated, then created:
@@ -489,7 +489,7 @@ validates, Edu approves the live run.
       (that goes through the AM, not here).
 - [x] **G5 [C→E]** Later, separate GTM version: fix `[111] 05 | Meta - Lead` from PageView to Lead. Preview, publish.
       **DONE 10-08 in GTM v43** (with D-1).
-  - [ ] **G5a [C]** Oct 9: Meta pixel 597145242772352 stats (Meta MCP `ads_get_dataset_stats`, event_name Lead) → expect "Lead"
+  - [x] **G5a [C]** **10-14: Lead now arrives** (26 events 10-08 12:26 CT → 10-14 09:30 PT; 0 in Oct 1–8). Hour by hour it runs ~2× GA4 generate_lead, so likely double-firing; only matters if Meta ads run (P-11). Oct 9: Meta pixel 597145242772352 stats (Meta MCP `ads_get_dataset_stats`, event_name Lead) → expect "Lead"
         events after 10-08 12:26 CT that roughly match GA4 `generate_lead` (customer forms only).
 - [ ] **G6 [C→E]** Later: merge the two GHL listeners (keep `[123]`, remap `dlv` variables to `ghl_data.*`,
       remove `[99]`). Retest enhanced conversions in Preview.
@@ -510,7 +510,7 @@ Search Partners + Display are OFF on all 4 Search campaigns (correct).
       **APPLIED 2026-10-08 (Edu OK)** (`h1_electrical_url_expansion_off_2026-10-08.py`, validate then apply). Read-back:
       FINAL_URL_EXPANSION_TEXT_ASSET_AUTOMATION = **OPTED_OUT**. Unchanged on purpose: AI Max (still ON, so broader search-term
       matching remains) and TEXT_ASSET_AUTOMATION (OPTED_IN). Client told via P-13.
-  - [ ] **H1a [C]** ~Oct 13: re-run the expanded-landing-page split for Electrical (Oct 9 onward). Expect clicks only on
+  - [x] **H1a [C]** **10-14 (Oct 9–14): clean.** /services/electrical $1,498, /pricing $936, /contact $163, /service-areas $110, /services/electrical/repair $62 (all ad or sitelink URLs). ~Oct 13: re-run the expanded-landing-page split for Electrical (Oct 9 onward). Expect clicks only on
         /services/electrical (+ sitelink URLs like /pricing). Anything else → check for other URL sources.
 - [x] **H2 [C]** Search term sweep on Search Electrical (largest spender, ~$18.5k / 30d, ~$1,010 per customer form): last 30
       days → negatives proposal (off-service, competitor, junk). AI Max likely broadens matching.
@@ -616,7 +616,7 @@ Search Partners + Display are OFF on all 4 Search campaigns (correct).
       first, financing, leaks / drains / water heaters, SA + New Braunfels). July's "same-day", "5-star", "upfront" and
       "trusted" were dropped (not on the site / empty adjective).
       No downtime: the AG1 originals stay ENABLED until the new RSA is approved.
-  - [ ] **H7a [C]** **Cutover** once RSA 827480907116 is APPROVED:
+  - [ ] **H7a [C]** **10-14: RSA 827480907116 APPROVED; validate-only OK to pause the 3 AG1 keywords. NOT run yet (awaiting Edu).** **Cutover** once RSA 827480907116 is APPROVED:
         `./tsd.sh ~/Documents/GitHub/topserv-workspace/clients/proud-pops/h7_plumbing_general_adgroup_2026-10-08.py cutover --apply`
         Pauses the 3 generic keywords in AG1_Plumbing_LeakDetection; refuses if the RSA isn't approved. Check with B7a tomorrow.
   - [ ] **H7b [C]** ~2 weeks after cutover: QS + expected CTR on the 3 keywords in AG4 (they were QS 4–6, expected CTR below

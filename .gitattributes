@@ -1,0 +1,2 @@
+# Shell scripts precisam de LF (no Windows o git converte pra CRLF e o bash quebra)
+*.sh text eol=lf

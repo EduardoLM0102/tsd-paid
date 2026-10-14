@@ -10,6 +10,11 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export GADS_ENV_PATH="$(dirname "$SCRIPT_DIR")/.env.topserv"
 export PYTHONUNBUFFERED=1
+export PYTHONUTF8=1   # Windows: UTF-8 em arquivos e no terminal (acentos/emoji)
+
+# Mac: python3. Windows: python (o "python3" de lá costuma ser o atalho da Microsoft Store)
+PY=python3
+"$PY" -c "import sys" >/dev/null 2>&1 || PY=python
 
 if [[ ! -f "$GADS_ENV_PATH" ]]; then
   echo "ERRO: perfil nao encontrado em $GADS_ENV_PATH" >&2
@@ -20,9 +25,9 @@ cd "$SCRIPT_DIR"
 
 # *_setup.py (oauth) e interativo (browser): nao filtrar stdout.
 if [[ "${1:-}" == *_setup.py ]]; then
-  exec python3 "$@"
+  exec "$PY" "$@"
 fi
 
-python3 "$@" 2>&1 \
+"$PY" "$@" 2>&1 \
   | grep -v "Warning\|warnings.warn\|site-packages\|eol_message\|file_cache\|oauth2client" \
   || true

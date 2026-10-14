@@ -158,3 +158,11 @@ G-C7QTE9ZZXQ, Consent Mode v2 defaults DENIED (GA4 undercounts non-consenting vi
 SPA route changes already send a GA4 page_view with the correct dl/dr. Homepage-only banner "Received our First Repair Is on Pops
 letter? / View your offer" links to `/first-repair` (only homepage link to it); no GTM trigger matches `/first-repair` yet, so no
 dedicated click event exists. Measure via /first-repair page_view with referrer = homepage, or add linkClick trigger + GA4 event tag.
+
+**2026-10-14 status check (log entry 10-14 in clients/proud-pops/google-ads-log.md):** every 10-08 ad, the 14 G2 RSAs, AG4 RSA and the
+unlinked 225-5767 call asset are APPROVED; G2b + H7a cutovers validated, not run. Careers fix holds in Ads (PMax Elec 0 forms); one
+GA4-only /careers `generate_lead` leak 10-12. **Block F still not started:** 97% of counted conversions are phone taps (321 in Oct 8–14,
+1,312 in 30d, ~83–90% Display/YouTube; GA4 sees ~⅓ of them; 0 calls). Real customer forms ≈ 11/wk, ~$1,090 each; only Search
+Electrical is under ~$500. Search HVAC ran 2× cap on weekdays after the 10-08 geo widening, 0 forms; Plumbing on Max Clicks: CPC
+halved, 0 conv in 6 days. Branded `Website lead` still not biddable. Meta Lead now arrives (~2× GA4, likely double fire).
+Call extension follow-up = Command Center fu-052.

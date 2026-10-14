@@ -2,7 +2,7 @@
 
 Workspace da divisão de **Paid Ads** da **TopServ Digital**. Só TopServ.
 
-Usado pelo time de paid (Edu e Gui), cada um no próprio Mac, sincronizado por este repositório.
+Usado pelo time de paid (Edu no Mac, Gui no Windows), cada um no próprio computador, sincronizado por este repositório.
 
 ## Primeira vez aqui?
 Siga o [`ONBOARDING.md`](ONBOARDING.md).

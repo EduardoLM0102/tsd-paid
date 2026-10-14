@@ -3,9 +3,9 @@
 ## O que é esse workspace
 Workspace da divisão de **Paid Ads** da **TopServ Digital (TSD)**, agência americana de marketing para *home service contractors*. Mora aqui tudo de paid na TSD: logs por cliente, auditoria de tracking, framework de KPI, relatórios, briefs, SOPs e as skills/scripts de Google Ads, GTM, GA4 e CallRail. **Só TopServ:** nada de outras empresas ou clientes de fora entra aqui.
 
-**Quem usa (cada um no próprio Mac, sincronizado pelo GitHub):**
-- **Edu (Eduardo)** — Head of Paid Ads. Dono da divisão (playbook, time, sistemas, integridade de atribuição em todo o book). Reporta ao **Ryan (COO)**.
-- **Gui** — time de Paid Ads (entrou em out/2026).
+**Quem usa (cada um no próprio computador, sincronizado pelo GitHub `EduardoLM0102/tsd-paid`):**
+- **Edu (Eduardo, Mac)** — Head of Paid Ads. Dono da divisão (playbook, time, sistemas, integridade de atribuição em todo o book). Reporta ao **Ryan (COO)**.
+- **Gui (Windows)** — time de Paid Ads (entrou em out/2026).
 
 Se não estiver claro quem está na sessão, olhar `git config user.name` ou perguntar. Nos arquivos de memória e logs, "Edu" é o Eduardo; regra registrada como "Edu quer/disse" vale pro time todo.
 
@@ -44,9 +44,9 @@ Para detalhe profundo de processo, consultar os playbooks em `_contexto/fontes/`
 - Em conflito de merge, nunca descartar o trabalho do outro nem usar `--force`.
 
 ## Ferramentas
-- **Google Ads / GTM / GA4:** skill `google-ads-ratos`, sempre via `scripts/tsd.sh` (Ads) e `scripts/gtm.sh` (GTM/GA4), perfil `.env.topserv`, MCC `4155514468`. Nunca o `.env` default. Receitas e armadilhas: `_contexto/memoria/topserv-google-ads-location.md`.
+- **Google Ads / GTM / GA4:** skill `google-ads-ratos`, sempre via `scripts/tsd.sh` (Ads) e `scripts/gtm.sh` (GTM/GA4), perfil `.env.topserv`, MCC `4155514468`. Nunca o `.env` default. No Windows o Python é `python` (não `python3`): os wrappers escolhem sozinhos, e onde logs/memória dizem `python3 ...`, no Windows é `python ...`. Receitas e armadilhas: `_contexto/memoria/topserv-google-ads-location.md`.
 - **CallRail:** `scripts/callrail.py` (lê `.env.callrail` na raiz; só GET).
-- **Meta, Agency Titan, Slack, ClickUp, Google Drive:** conectores do claude.ai, cada pessoa logada com a própria conta.
+- **Meta, Agency Titan, Slack, Google Drive:** conectores do claude.ai, cada pessoa logada com a própria conta. (Tickets da TSD vivem no Agency Titan, não no ClickUp.)
 
 ## Command Center (https://claude.ai/artifact/1gah5xuCXDADf4kYVYp95q)
 Painel de Paid com todos os clientes, canais, relógio de 7 dias e follow-ups (artefato do Edu, compartilhado com o time). Ler e escrever pela tool `ArtifactData` (collections `clients`, `followups`, `checks`, doc `meta/sync`).

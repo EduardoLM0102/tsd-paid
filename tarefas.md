@@ -145,6 +145,14 @@ Conta 1854100356 nunca tinha sido checada (sem pasta, sem task 7-day no AT, 0 mu
 - [ ] Aprovação por escrito do corte de budget do Google ($80/$80 → $3,62/$32,57), autorizado
       verbalmente pelo Edu em 08-18.
 
+## Zen Air — 2 landing pages (plano de 10-14, ver `clients/zen-air/landing-pages/2026-10-14-lp-plan.md`)
+- [ ] Confirmar com o Eddie se o "$49 Furnace Tune-up and Safety Check" ainda está valendo (banner do site se chama "Spring Version").
+- [ ] Confirmar que os $1.500 off do AT expiraram e atualizar `current_specials`.
+- [ ] Definir o telefone das páginas (call asset ainda indefinido desde 09-08; sem CallRail achado; AT diz ServiceTitan).
+- [ ] Puxar nota + número de reviews do GBP certo (Duluth ou Alpharetta).
+- [ ] Mandar o pedido das 2 páginas (Heating e AC Repair, Replacement & Tune-Ups) pro WebDev depois dos itens acima.
+- [ ] AT: preencher o catálogo de serviços (só Commercial AC marcado) e resolver Lennox vs Carrier.
+
 ## Zen Air Meta — geo corrigido em 10-12 (ver `clients/zen-air/meta-ads-log.md`, entrada 2026-10-12)
 - [ ] **Postar a resposta na task do AT** (rascunho no chat de 10-12): Marietta/Monroe fora, 131 ZIPs da lista de Target Cities no ar nas 2 ad sets.
 - [ ] **Recheck ~10-19:** CPL/volume da lead CBO depois da expansão (learning resetou) + perguntar ao AM se os endereços dos leads agora caem dentro da área. Se aparecer lead do sul de Atlanta / South Fulton, cortar Fulton pra North Fulton.

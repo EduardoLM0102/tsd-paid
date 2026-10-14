@@ -79,6 +79,8 @@ Meta ($6,474) runs a TOF/MOF/BOF funnel. Check whether its ads use instant forms
 
 There's only one non-brand ad group, mixing HVAC contractor and AC repair keywords. Split it to get 2 pages.
 
+**2026-10-14 update (Edu):** start with 2 broad pages, not single-service ones. Heating: "Heating Repair, Replacement & Tune-Ups in Duluth, GA". Cooling: "AC Repair, Replacement & Tune-Ups in Duluth, GA". Subheads, open items and brand rules in `clients/zen-air/landing-pages/2026-10-14-lp-plan.md`.
+
 ## 4. Neon Monkey (Fort Worth). Tree service
 
 | Page | Ad group(s) | 30d | Goes to today |

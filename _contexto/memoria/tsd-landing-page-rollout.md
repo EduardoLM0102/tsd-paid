@@ -125,3 +125,5 @@ These are kept as files, NOT published as artifacts, because they carry real-cli
 - **10-09 sitelinks:** Google requires every sitelink in a campaign to go to a different page AND not to the ad's own page. That caps how many go. sitelinks a campaign can use (4 go. pages total).
   - Branded + YouTube got 3 new go. sitelinks (assets 428923086331/079863/086340). The AC-Repair ad-group sitelinks were unlinked.
   - Electrical (8) + HVAC (7) sitelinks are still on the main site, pending Edu's choice. The real fix is more go. service pages (panel, generator, EV, $37 inspection, etc).
+
+**Zen Air (10-14):** Edu chose 2 BROAD pages to start (heating + cooling, each covering repair, replacement and tune-ups), an exception to the 1-service rule. H1s, subheads and open items in `clients/zen-air/landing-pages/2026-10-14-lp-plan.md`. Brand rules come from AT (Wizard of Ads: Zen Ben/Cricket, approved lines, no clichés; `web_design_guidelines` has the page spec). Not requested from WebDev yet.

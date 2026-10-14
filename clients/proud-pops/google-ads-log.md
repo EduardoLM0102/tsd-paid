@@ -2,6 +2,41 @@
 
 ---
 
+## 2026-10-14 — Status check after the 10-08 fixes + 10-13 budget cut (read-only)
+
+Scripts: `proud_pops_b7_delivery_check.py`, `proud_pops_verify_careers_fix.py`, `g2b_cutover_2026-10-08.py` (dry run),
+`h7_plumbing_general_adgroup_2026-10-08.py cutover` (validate-only), plus scratchpad pulls. Nothing written to the account.
+
+- **Approvals:** 6 B7 ads, 14 G2 RSAs, AG4 RSA 827480907116, "Book a Free Pop-In" sitelink 428522074259, and the unlinked
+  (210) 225-5767 call asset 428601259336 are all APPROVED. Old 210-794-7570 call assets still DISAPPROVED (all campaigns show
+  CALL_EXTENSION_DISAPPROVED). **G2b and H7a cutovers validated, not run.**
+- **Changes since 10-09:** only Edu's 10-13 budget cut + 1 ASSET create by separated.tito@proudpops.com (10-13 14:47, P-8).
+- **Forms (Ads `Website lead`, click date) Oct 8–14:** 11 = Electrical 7, Branded 2, Plumbing 1, PMax HVAC 1, Search HVAC 0,
+  PMax Elec 0. Electrical ~$480/form ($3,355). GTM fix holding in Ads; one GA4-only /careers leak on 10-12 (E3 note).
+- **Block F not started:** Oct 9–14 counted conversions = TSD - Website Call 257.8 vs Website lead 7.0 (97% taps).
+- **Search HVAC:** $3,630 Oct 8–14, 0 forms; weekday spend 2× cap since the 10-08 geo widening; 54% of spend outside SA at
+  ~2× SA's CPC; competitor terms leaking (elmer, gillette, sigma, holt, north east air, "one hour heating and air") + "pops ac".
+- **Search Plumbing (Max Clicks $45 since 10-08):** CPC $38 → $12–25, clicks ~2×, but **0 forms and 0 taps Oct 9–14** ($724,
+  47 clicks). Visible terms drift to competitors (patriot, bearded plumber, infinity, air and drain works) and "saws water leak".
+- **Pacing:** PPC acct Oct 1–13 ≈ $26.2k. YouTube SA still ENABLED (fu-046). At current caps Oct ≈ $51.3k; with SA paused
+  from 10-15 ≈ $49.6k, before any Max Conversions overdelivery.
+- **Meta pixel:** Lead events arriving since GTM v43 (26), ~2× GA4 leads.
+- **Conversion breakdown, Oct 8–14 vs Sep 30–Oct 6** (`scratchpad pp_conv_breakdown_1014.py`): spend $13,396 vs $13,021.
+  Google-counted conversions 330 vs 339; phone-tap share 97% vs 86%. `Website lead` 11 vs 48, but GA4 put 36 of 38 pre-week
+  google/cpc leads on /careers, so real customer forms ≈ 5 → 11 (Search Electrical ~3 → 7). Post-week per campaign: Search HVAC
+  $3,631 / 0 forms; Search Electrical $3,486 / 7 (~$498); PMax HVAC $1,921 / 1; PMax Elec $1,271 / 0; Plumbing $922 / 1; Branded
+  $751 / 2 (**Branded `Website lead` still not biddable: counted 0, all 2**). Search + PMax ≈ $1,090 per customer form. LSA: 1 lead
+  (in-account HVAC message 10-08, consumer declined); 6621969129 $0. GA4 google/cpc: 8 customer `generate_lead` on /schedule, 6
+  `job_application` (Search HVAC 3, Search Elec 2, PMax Elec 1).
+- **Phone taps reported by Google (`TSD - Website Call`, all_conversions):** Oct 8–14 **321** (Search 31, Display 283, YouTube 7);
+  Oct 1–14 **605**; Sep 15–Oct 14 **1,312** (Display + YouTube 1,086 = 83%). 30d by campaign: PMax Elec 776, PMax HVAC 365, Search
+  Elec 91, Search HVAC 32, Branded 26, Plumbing 23. Call-extension `phone_calls` = 0 in all windows. GA4 `phone_click` from
+  google/cpc: 92 / 197 / 433 (~⅓ of Google's count; widest gap on PMax).
+- **Follow-up created:** Command Center **fu-052** (due 10-16), get the call extension approved; the 225-5767 asset is already
+  approved, only the number check (P-5) blocks it.
+
+---
+
 ## 2026-10-13 — Budget cut back to the approved $50k/month (Edu OK). APPLIED
 
 **Full change record + before baseline + review plan: `budget-cut-2026-10-13.md`** (applied 17:17:25 CT by

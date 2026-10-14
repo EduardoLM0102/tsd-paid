@@ -28,6 +28,8 @@ Local Services Ads tem dados que NÃO aparecem em `campaigns`/`insights.py` (que
 - Subcomando ad-hoc: `read.py local-services-leads --customer-id X --days 30`.
 - Relatório global (todas as contas TSD com LSA de uma vez): `tsd.sh lsa_report.py` — registro de 15 contas (mesma-conta + dedicadas) hardcoded no topo do script (`LSA_ACCOUNTS`), atualizar lá quando cliente novo ligar LSA. Ver SKILL.md seção "LSA — relatorio global".
 - GAQL usa `local_services_lead.creation_date_time` (datetime, não `segments.date`) pra filtro de período.
+- Duração de cada ligação LSA: `local_services_lead_conversation.phone_call_details.call_duration_millis` (+ `.lead`, `.event_date_time`), mostra callbacks no mesmo lead. `contact_details.consumer_name` é UNRECOGNIZED_FIELD. `change_event` exige as DUAS datas (BETWEEN), senão CHANGE_DATE_RANGE_INFINITE (2026-10-14, Zen Air).
+- **Link de lead LSA:** a API NÃO devolve URL da página do lead (só `call_recording_url` por ligação). Formato real do painel (achado no Slack): `ads.google.com/localservices/inbox?cid=<customer id>&bid=<business id>&pid=9999999999` (+ `mcid=9199434992`, `euid` é por usuário, dispensável). O `bid` NÃO sai da API; só copiando a URL do painel. Formato da URL de um lead específico ainda não confirmado: quando alguém colar uma, registrar aqui (2026-10-14).
 
 ## Armadilhas que já custaram tempo (não repetir)
 - O OAuth client **tem que ser tipo "Desktop app"**. Um client "Web application" devolve `Error 400: redirect_uri_mismatch`, porque `setup.py:find_free_port()` sorteia uma porta livre entre 8080–8090 e o redirect não é fixo. Desktop app aceita loopback em qualquer porta sem registrar nada.

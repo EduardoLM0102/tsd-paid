@@ -67,3 +67,33 @@ and name. Paused legacy campaigns not touched.
 - AT: check the web UI for profile edit history, or ask AT support to pull it and report the /v1/activity internal
   error.
 - Reply to the task (draft given in chat) still to be posted.
+
+## 2026-10-14 — Lead geo + quality audit of ad `09/22/26 | Ad 02 - Images 07, 11, 13` (read-only)
+
+Source: Edu's lead export (173 leads, 09-22 09:21 .. 10-14 09:34, times in the file are UTC-5). Ad spend same window
+$3,434.66 / 173 leads = $19.85 CPL (Meta, ad 120247339585920711). The form only collects name/phone/email/**city**
+(Facebook prefills the profile city), so geography is self-reported, no ZIP.
+
+| Bucket (by city field) | All 173 | Before fix (146) | After fix 10-12 ~09:49 ET (27) |
+|---|---|---|---|
+| Core area (site 14 cities + LSA extras Grayson/Loganville) | 28 (16%) | 24 | 4 |
+| AT counties, not a site city (Atlanta 29, N. Atlanta, Gainesville, Fairburn, Union City, College Park) | 36 (21%) | 27 | 9 |
+| Marietta / Monroe | 47 (27%) | 47 | 0 |
+| Other Georgia, outside area | 43 (25%) | 34 | 9 |
+| Out of state / country | 13 (8%) | 9 | 4 |
+| Junk / unclear | 6 | 5 | 1 |
+
+- Cost per core-area lead ≈ $123 ($3,435 / 28); including the Atlanta/Fulton/Hall maybes ≈ $54.
+- Fix worked on Marietta/Monroe (0 since). But after it, 13 of 27 are still clearly outside: New Orleans, Tallahassee,
+  N. Charleston, Chicago, Augusta, Athens, Guyton, Bremen, Riverdale, Locust Grove, Covington, Lithonia, Acworth, plus
+  South Fulton (Fairburn, Union City, College Park). Likely cause (inference): whole Fulton incl. airport ZIP 30320 /
+  downtown + location type home+recent = travelers and commuters. This is the fu-042 trigger to cut Fulton to North Fulton.
+- Contact data mostly clean: no duplicate phones/emails, 172/173 US numbers. Obvious junk ~5%: 770-777-7777, 773-556-5555,
+  a Brazil number, gibberish city, phone typed into name. 4 trade/business emails (a plumbing co., "Acsspecialist" in
+  Duluth, a cleaning co., a media co.).
+- Real quality (booked vs not) needs GHL outcomes from the AM/Eddie; not visible here.
+- **Edu's framing (same day): "workable" = core cities + Gainesville/Fairburn/Union City/College Park (Atlanta kept
+  separate).** Workable 34/173 (20%). Before fix 25/146 (17%, ~1.3/day, ~$120 each); after fix 9/27 (33%, ~4.4/day,
+  roughly $40-45 each, spend split by day so approximate). Last full week before the fix was the worst: 6/50 (12%).
+  But leads from outside the area excluding Marietta/Monroe rose from 29% to 48% of leads, and 3 of the 9 post-fix
+  workable leads are South Fulton. 27 leads / 2 days in learning, so directional only.

@@ -703,3 +703,25 @@ preço e concorrentes novos.
 AT task c98a00c9 closed, KPI record 081ab079.
 
 Pull: `paid/weekly-7day/weekly_pull.py` (window 10-06..10-12 vs 09-29..10-05), summary/KPI via `weekly_summary.py` / `weekly_kpi.py`. Full note is in the AT KPI entry's Lead Quality Notes.
+
+## 2026-10-14 — LSA review (account 3740502923): wins for the CS call, reach diagnosis, the $12 tCPL (read-only, nothing changed)
+
+Full detail, tables and recipes: `clients/zen-air/2026-10-14-lsa-review.md`.
+
+**Results since the 09-10 restart (to 10-14):** 13 phone leads, 6 BOOKED (1 is an existing customer, maintenance), 4 declined (3 were calls under 30s), 3 not yet marked by Zen. $169.01 spend, Google charged only 2 of 13 ($106.61 on a declined 25s call, $62.40 on a booked lead). About $28 per booked job, $13.00 blended per lead, $84.50 per charged lead. Best week 10-05..10-11: 4 calls, 3 booked. No caller PII in the repo.
+
+**Reach:** budget is not the limit ($642.86/day cap, spending ~$5/day). Limits are the service area (15 cities, city limits only, missing Flowery Branch, Hoschton, Peachtree Corners and all county/unincorporated area), schedule (Sunday off, weekdays to 8 PM, Sat to 5 PM), and season. Impressions down YoY since ~May 2026, but fall lead count is on par with 2025.
+
+**$12 tCPL:** API `category_bids` on HVAC has `target_cpa_bid_micros` = $12 (plus a dormant $350 manual max). Dashboard: "Set a target cost per lead (optional)" box is UNTICKED, but ticking it shows "$12 (current)". Forecast 3 leads/week at both $24 and $80 (none shown for $12). Whether Google applies the $12 is UNCONFIRMED. When it was set is unknowable: API change_event keeps 30 days (no changes since 09-15), UI change history only shows account/user events (not even the 07-03 pause), our 09-30 pull didn't read this field. Field exists since Sep 2024, so set then or later. Charged leads above $12 prove nothing (tCPL is an average). Blended $13 is close to $12 but slow months always land $12-18. Next: Google LSA support to confirm and clear, then a 4-week before/after read vs the same weeks of 2025.
+
+**Access:** SearchLight Digital MCC 6263403407 still has an ACTIVE manager link (since 2024-11-21), and localservicesteam@gmail.com is an ADMIN (since 2024-01-29, owner unknown). Nothing removed.
+
+**New script:** `./tsd.sh zenair_lsa_bids.py` (prints strategy, target per lead, manual max). Command Center: LSA channel updated, follow-up fu-051.
+
+### Open
+
+- [ ] Google LSA support: confirm/clear the $12 tCPL, then 4-week before/after read.
+- [ ] LSA service area → 131 service-area ZIPs (heads-up to Andrea; AM ticket if total spend changes).
+- [ ] Via Andrea → Eddie: Sunday/evening hours, owner of localservicesteam@gmail.com, mark 3 unmarked leads, which lead was the "won" + value.
+- [ ] Ryan: SearchLight Digital link, vendor or leftover?
+- [ ] Check LSA messaging is on; check if lead 339121110 ($106.61, declined) can still be disputed.
