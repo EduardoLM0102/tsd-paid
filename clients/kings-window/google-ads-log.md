@@ -143,3 +143,11 @@ Star Glass), but "binswanger glass fort worth" converted once, so none were bloc
 **Changed:** nothing, no changes needed. AT task 2627ca2d closed, KPI record edf2fc90.
 
 Pull: `paid/weekly-7day/weekly_pull.py` (window 10-06..10-12 vs 09-29..10-05), summary/KPI via `weekly_summary.py` / `weekly_kpi.py`. Full note is in the AT KPI entry's Lead Quality Notes.
+
+## 2026-10-19 — Weekly 7-day pass (Google + LSA + Meta) + 14-day review (Agency Titan tasks, Gui): read-only, all staged
+
+**PPC 10-12..10-18:** $371.79, 17 conv, $21.87 CPL (prev $435.97 / 24 / $18.17). NB $353.62 / 17 (8 taps, 6 GA4 phone_call, 2 forms, 1 calls from ads; ~9 non-tap at ~$39). IS 20%: budget-lost 37%→12%, rank-lost 68%. Branded $18.17, 100% IS. Staged neg: 'kings windows and doors'.
+**LSA (inside 6769493219):** $622.07, 7 leads (5 calls, 2 msg), $88.87, 98.4% top.
+**Meta 483679897962388:** $294.65, 6 leads, $49.11. Lead campaign is ABO ($30+$15 ad sets). **Awareness `TSD_02.26_TOF_AWARENESS_CBO_Creatives` = REACH + frequency CAP 3/7d** (off doctrine) → rebuild as ARL no cap, staged.
+**14-day (10-05..10-18):** $807.76 / 41 conv. Rank is the limit (53% rank-lost); 'glass company near me' QS 3 carries 29/41 conv → improve ad/LP relevance; low-QS glass/shower keywords; remove Branded kw 'king's window repair houston'; outside-target clicks only 7% (Fort Worth, Grapevine). No audiences.
+AT tasks 1a6a8163 / 5f8a5a77 / 567d82cd / cb7050b0 left open for Gui's review.

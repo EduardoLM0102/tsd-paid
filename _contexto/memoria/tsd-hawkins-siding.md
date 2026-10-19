@@ -30,3 +30,5 @@ metadata:
 
 **10-13 weekly pass:** 10-05 shift held (PMax full $18, $22.50 CPL) but 92% of PMax spend = YouTube. **Brand leak:** Branded 23233882685 got 1 impression in 30d (Max Conv + $25 tCPA, no history → doesn't bid); Nonbranded broad buys 'hawkins siding' ($148.50/30d, up to $57/click). Staged (fu-044): PMax $18→$23 / NB $75→$70, 'hawkins' phrase negative on NB + Branded to Manual CPC ~$5 together.
 **10-14 APPLIED (Edu's go), `hawkins_apply_1014.py`:** PMax $18→$23/d, NB $75→$70/d; Branded → Manual CPC, ad group bid $5 (was $0.01); NB phrase negatives hawkins / charities / in stock. ⚑ Recheck ~10-21 (fu-050): Branded IS on brand terms, PMax CPL at $23.
+**10-14 Meta weekly (Gui):** still dark, all 9 campaigns PAUSED, $0 Oct 7-13. Edu's AT note since 10-05: "Client asked to pause awareness, videos weren't approved." KPI 10-14 $0 / Unclear.
+**10-17 weekly (Gui, staged only):** PPC $643.73 / 12 / $53.64; NB CPL fell to $49.91 but PMax jumped to $72.30 (92% YouTube) at $23/d → rollback candidate at 10-21. Edu did a 26-negative + broad→phrase pass on 10-16. LSA $350.61 / 3 leads (down from 8).

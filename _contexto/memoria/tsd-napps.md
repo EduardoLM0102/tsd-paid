@@ -27,3 +27,5 @@ Napps Cooling, Heating & Plumbing, Longview TX. Google PPC `9509605037`, LSA `92
 **How to apply:** before writing Napps copy, check the current HVAC/plumbing split and describe it as equal. Leave `ad_group` fields out of `call_view` queries on accounts that run PMax. Related: [[topserv-client-report-format]], [[tsd-client-message-style]].
 
 **2026-10-05 weekly pass (AT task closed):** $181 CPL, 6 leads; HVAC/plumbing spend still even ($326/$350). Paused 'new air conditioner' (QS1), negatives store/scratch and dent. Open recs for Edu: Branded avg CPC $51.65 (broad brand kws, uncapped Max Conv) → Target IS with $8-10 cap (fulfils the 6-mo review's 'cost controls'); AC Summer $2,017/1 conv in 30d, still summer AC in Oct → rebuild for heating at $50/d; plumbing competitors (Benjamin Franklin etc.) block-or-keep.
+
+**2026-10-19 (Gui weekly + 14-day, staged only):** PPC $816 / 1 conv, NB $1,345 / 0 in 2 weeks, Branded $58 CPC. **All plumbing ad groups land on the homepage (AC on /schedule-now/) though the site has dedicated plumbing/drain/AC/heating pages** → main 14-day rec. Meta awareness targets only ZIP 75605. LSA $145 / 4 msg leads.

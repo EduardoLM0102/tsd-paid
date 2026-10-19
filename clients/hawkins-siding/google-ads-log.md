@@ -333,3 +333,11 @@ Nothing — review only, no live mutations.
 - **Full negative-list sync:** the `04.29` campaign still only has these 10 negatives vs ~400 on PMax/paused campaigns. Recommend copying the full standard list — ideally as a **shared negative list** so a newly launched campaign can't go live naked again.
 - **Ambiguous "glass" queries** (`glass company`, `glass repair near me`, `glass fixing near me`) remain unblocked. Monitor; if car-glass calls persist, add phrase negatives (`glass repair`, `auto glass repair`).
 - Consider tightening the Window Replacement ad group off pure broad match (phrase/exact on the home-window intents).
+
+## 2026-10-17 — Weekly 7-day pass, Google Search + LSA + Meta (Agency Titan tasks, Gui): read-only, KPI entries logged
+
+**PPC 10-10..10-16 (LSA excluded):** $643.73, 12 conv, $53.64 CPL (prev $676.81 / 16 / $42.30). NB $499.13, 10 conv (7 forms, 3 calls from ads), $49.91 CPL (prev $92.40), 4 call_view calls (3 60s+). PMax $144.60, 2 conv, $72.30 (prev $12.24 / 10 conv), 92% YouTube. Branded (Manual CPC $5 since 10-14): $0, 0 clicks.
+**Edu 10-16 (already in the account):** 26 phrase negatives on NB (competitors/manufacturers, jobs/hiring/careers/salary, for sale, painting, free charity), broad home siding / siding repair / home exterior contractors near me paused + re-added as phrase, AI Max / asset automation settings on 3 campaigns.
+**Staged, not applied:** NB phrase negatives 'skirting', 'natural stone'. At ~10-21 (fu-050): if PMax CPL stays ~$70 at $23/d, roll back to $18.
+**LSA (inside 2198608170):** $350.61, 3 leads (2 calls, 1 message), $116.87 (prev $657.41 / 8 / $82.18), 98.7% top impr. Pacing Underspending (lead volume dropped, not a cap).
+**Meta:** still $0 (paused). AT tasks 8cccb66e (Google), 885b66af (LSA), 3ba2f48a (Meta) left open for Gui's review.

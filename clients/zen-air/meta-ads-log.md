@@ -2,6 +2,16 @@
 
 Account `381256660973192` ("Zen Air - Third Ad account ( Active Account)").
 
+## 2026-10-16 — Weekly 7-day Meta pass (AT task fc797a2f, Gui): read-only, KPI logged, changes staged
+
+**10-09..10-15:** $1,535.43, 98 leads, $15.67 CPL, $6.85 CPM, 0.51% CTR, reach 116,470, freq 1.93 (10-13 entry: $1,582.55 / 56 / $20.05).
+- Lead CBO `09/17/26 - CBO | Leads` ($150/d): $1,081.77, 70 leads, $15.45 CPL, 1.26% CTR, one ad (09/22/26 | Ad 02).
+- Awareness `TOFU - Brand Awareness_Reach_OA_FQ4_7` / ad set `Open Audience` 120227295614750711 ($65/d): $453.66, reach 77,376, **freq 1.85/wk**, $3.18 CPM. **Off doctrine:** optimization_goal = REACH and `frequency_control_specs` = CAP 4 impressions / 7 days.
+
+Lead Quality = **Mixed** (10-14 geo audit: 13/27 post-fix leads still outside the core area).
+
+**Staged, not applied:** (1) rebuild awareness as a new ARL campaign with no frequency cap, same 131 ZIPs, then pause the old one (same as All Seasons 10-09); (2) at the ~10-19 recheck, if out-of-area leads continue, cut Fulton to North Fulton ZIPs.
+
 ## 2026-10-12 — Service-area targeting fixed on both live ad sets (AT task: "FB ads getting worse as far as location")
 
 **Trigger.** Client said Facebook leads are getting worse in terms of where they come from; AT task asked to make

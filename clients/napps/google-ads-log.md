@@ -457,3 +457,11 @@ Entrada anterior (09-28): CPL $137, 6 leads. IS da conta 32,4% (52,4% perdido po
 AT task 93b7ccd8 closed, KPI record e92de0ce.
 
 Pull: `paid/weekly-7day/weekly_pull.py` (window 10-06..10-12 vs 09-29..10-05), summary/KPI via `weekly_summary.py` / `weekly_kpi.py`. Full note is in the AT KPI entry's Lead Quality Notes.
+
+## 2026-10-19 — Weekly 7-day pass (Google + LSA + Meta) + 14-day review (Agency Titan tasks, Gui): read-only, all staged
+
+**PPC 10-12..10-18:** $816.13, 1 conv (Branded call). Branded $292.54 / 5 clicks ($58.51 CPC; 'napps longview tx' broad $76/click), overspent 10-14 and 10-16. Plumbing $277.22 / 0 ('plumber available now' phrase $251, matched Benjamin Franklin). AC Summer $246.37 / 0. NB = $1,345 / 0 conv in 2 weeks. HVAC/plumbing split still even. KPI Health Poor.
+**LSA 9239407401:** $144.55, 4 message leads, $36.14, 90.5% top / 14.9% abs top.
+**Meta 438790276573563:** awareness only $34.62, ARL no cap, ad set = ZIP 75605 only (reach 3,355) → propose expanding geo at same budget.
+**14-day (10-05..10-18):** biggest finding = **all plumbing ad groups land on the homepage**, AC on /schedule-now/, while the site has /plumbing/emergency/, /plumbing/leak-detection/, /plumbing/slab-leaks/, /sewer-drain/clogged-drains/, /air-conditioning/repair/, /heating/ (checked 10-19) → point each ad group to its page (likely cause of QS 1–3). Plus the 3-week-old staged items: Branded → Target IS + $8–10 cap; AC Summer → heating; pause 'plumber available now' + 'hvac maintenance' until LPs fixed.
+AT tasks eeab3f31 / c2ba367c / 5511cbb3 / 8e9a8687 left open for Gui's review.

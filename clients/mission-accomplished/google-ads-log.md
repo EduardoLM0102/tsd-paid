@@ -222,3 +222,10 @@ Over ~7 months: Completed Jobs **13** (~2/mo), JVP both **23**, Booked Job both 
 | PAGE_VIEW · GET_DIRECTIONS · CONTACT · ENGAGEMENT (GOOGLE_HOSTED) | no |
 
 **VOLUME RISK — read before relaunch.** Biddable events now run roughly **6–9/month** (Booked Job ~3.3/mo, JVP ~3.3/mo, Completed Jobs ~2.7/mo, forms ~0). That is far under the ~30-in-30 Smart Bidding threshold. The signal is finally *honest*, but it is thin. At relaunch: expect a real learning period, start on Maximize Conversions without a tCPA (or tROAS against JVP value, which carries $ and fires earliest), and do not judge the account on the first weeks. This is also part of why ~80% of budget going to LSA is the right short-term call.
+
+## 2026-10-19 — Weekly 7-day pass + 14-day (Agency Titan tasks, Gui): read-only
+
+PPC 8634274092: still 100% paused, $0 (Edu touched AI Max/asset settings on the paused campaigns 10-16, no status change). 14-day = N/A.
+**LSA 4904262993:** $0, 0 leads 10-12..10-18 despite 189 impr / 97% top (prev week 5 leads, $340.52) → flagged for AM heads-up, recheck next week.
+**Meta 79203382:** awareness only, $206.49, reach 22,800, freq 1.78 (under 3x), ARL no cap = to standard. Lead gen still paused (GHL→Hatch gate).
+AT tasks 2fede09e / d3bdc8d9 / b2ec4bf7 / eb99461d left open for Gui's review.

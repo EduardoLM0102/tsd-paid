@@ -255,3 +255,15 @@ against 30d terms: 0 clicks / $0 blocked, nothing that converted, no active keyw
 AT task bb4e1666 closed, KPI record ba54b963.
 
 Pull: `paid/weekly-7day/weekly_pull.py` (window 10-06..10-12 vs 09-29..10-05), summary/KPI via `weekly_summary.py` / `weekly_kpi.py`. Full note is in the AT KPI entry's Lead Quality Notes.
+
+## 2026-10-17 — Weekly 7-day pass + 14-day review (Agency Titan tasks, Gui): read-only, everything staged
+
+**Weekly 10-10..10-16:** $180.88, 5 conv, $36.40 CPL (prev $228.60 / 9 / $25.33). Branded $28.56, 1 RYNO lead form, 94% IS, over $5/d on 3 days. NB $152.32, 4 conv (2 call ext calls, 2 [EB] taps), 64% IS (36% rank-lost). 2 call_view calls (1 60s+). No negatives.
+**14-day review 10-03..10-16** ($409.48, 94 clk, 14 conv, avg CPC $4.36), full text in AT task 31593502 Recommended Actions / Keyword Change Details:
+1. Geo: both campaigns = Hutchinson + South Hutchinson + Salina city limits, PRESENCE_OR_INTEREST. ~$209/$396 from outside those cities; nearby towns gave 5/14 conv; ~$90 to far places (Wichita, Topeka, KC, Murrieta CA, Shell Knob MO...). Proposal: Presence only + real service area (confirm /service-areas/ + AM).
+2. All ad groups land on /get-septic-services/, incl. restrooms; site has /portable-restrooms/. Switch after confirming the GHL form listener fires there.
+3. 1 RSA per ad group, all AVERAGE strength: add a 2nd RSA per NB ad group.
+4. No audiences: add in-market in Observation.
+5. 16 auto recs: reject Search Partners x2, Display expansion, PMax opt-in, tCPA/MaxConv opt-in.
+Keywords: pause 'septic tank installation cost' (QS2, $19.68/0 conv); raise septic repair / septic emergency service / septic pumping near me / new septic tank installation to first-page bid.
+**LSA task:** N/A, no LSA. **Meta task:** $0 (not built). AT tasks c281a412, 31593502, 13ee333f, 4ac64c8d left open for Gui's review.

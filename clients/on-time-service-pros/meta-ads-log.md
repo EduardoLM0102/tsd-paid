@@ -8,6 +8,12 @@
 
 ---
 
+## 2026-10-14 — Weekly 7-day Meta task: no access (Gui)
+
+Ad account `1846637992293356` is not in the Meta accounts list and a direct query returns "not found or no access" (client revoked access, same as the 10-07 task). AT task `a5e52cfa`: KPI - Meta 10-14 = $0 / 0 leads / Unclear, Lead Quality Notes = "N/A - Access revoked by the client". Stage left open for Gui's review. YouTube/TikTok tasks for this client skipped on Gui's call.
+
+---
+
 ## 2026-09-29 — Account found in the Growth Engine pull (read-only, NO changes)
 
 **Found** (Growth Engine pull, 2025-09-29 → 2026-09-27, `paid/relatorios/growth-engine-pull-2026-09/`):

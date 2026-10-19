@@ -68,3 +68,5 @@ were stale to-dos or tracking config, not performance. Budget moves at a constan
 ([[tsd-budget-approval-scope]]).
 
 **10-05 weekly 7-day pass (AT task closed):** 14 Nonbranded negatives (6 competitors PHRASE, EV product/utility: tesla/tesla wall connector/level 2 ev charger EXACT, electrify america/pso/for sale/free electrician PHRASE). Left 'quality electric' open (converted once), decide at 10-09 recheck. Week CPL $72 vs $40 prior (EV Charger's last $401 + careers block). Log entry 10-05.
+
+**2026-10-19 (Gui weekly + 14-day, staged only):** PPC $1,530 / 28 / $54.65; LSA $2,527 / 44 / $57; Meta $1,952 / 31 / $62.97 (retargeting MOF/BOF 2.6–3.3x TOF CPL). New non-TSD boosted post (engagement) live in Meta. Proposed tCPA ~$90 / CPC cap on NB (uncapped Max Conv bidding up).

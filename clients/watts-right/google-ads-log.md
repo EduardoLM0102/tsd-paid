@@ -1075,3 +1075,11 @@ LSA same window: $4,058, 71 leads, $57.
 - Nonbranded campaign negatives (PHRASE): quality electric, fox electric, let there be light, forehand electric,
   b&b electric, miller electric, reeves electric, bennett electric, pride electric, shanks electric, a plus electric.
 - PMax: hold at $95, recheck with the RSA compare ~10-20.
+
+## 2026-10-19 — Weekly 7-day pass (Google + LSA + Meta) + 14-day review (Agency Titan tasks, Gui): read-only, all staged
+
+**PPC 10-12..10-18:** $1,530.34, 28 conv, $54.65 CPL (prev $1,753.01 / 16 / $109.56). NB $783.96 / 8 ($98); PMax $656.20 / 17 ($38.60, ~half taps); Branded $90.18 / 3, IS 34%, 64% budget-lost + Mon–Fri schedule (fu-034). 14 call_view calls (7 60s+). Junk terms: vision electric tulsa $51.66, free2move charger $40.46, tesla tulsa reviews, mercedes benz supercharger → staged negatives. RSA A/B: new EV ad $93 / 0 conv → pause candidate at 10-20. Client (askwattson@) added 4 assets 10-13.
+**LSA:** $2,526.73, 44 leads (40 calls, 4 msg), $57.43, 96.7% top; client marks ~all leads BOOKED.
+**Meta 588638883283311:** $1,952.09, 31 leads, $62.97. TOF $42.98 vs MOF $112.93 / BOF $143.45; FourMode $64.85 (2 LAL1% ad sets $140 / 0 leads); new boosted post (engagement, $10/d) 'When the Client Needs Power Before Sooners' not TSD-built. Staged: MOF/BOF→TOF at same total, pause the 2 LAL ad sets.
+**14-day (10-05..10-18):** $3,283.34 / 44 conv. Uncapped Max Conv bids up (Emergency $23.81 CPC) → propose tCPA ~$90 or CPC cap on NB; low-QS EV/panel kws (QS 1–3); audiences none.
+AT tasks f7e8b9e2 / 06bbc593 / bf34d3ec / 68eaa154 left open for Gui's review.

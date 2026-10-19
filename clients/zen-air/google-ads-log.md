@@ -725,3 +725,16 @@ Full detail, tables and recipes: `clients/zen-air/2026-10-14-lsa-review.md`.
 - [ ] Via Andrea → Eddie: Sunday/evening hours, owner of localservicesteam@gmail.com, mark 3 unmarked leads, which lead was the "won" + value.
 - [ ] Ryan: SearchLight Digital link, vendor or leftover?
 - [ ] Check LSA messaging is on; check if lead 339121110 ($106.61, declined) can still be disputed.
+
+## 2026-10-16 — Weekly 7-day pass, Google Search + LSA (Agency Titan tasks, Gui): read-only, KPI entries logged
+
+**PPC (10-09..10-15, LSA excluded):** $71.27, 13 clicks, 1 primary conv (a [TSD] Click to call tap, not a recorded call), $5.48 CPC. Only Branded live: 89% IS (11% rank-lost), QS 7-10, terms all brand variants, no negatives. Still 0 call_view calls since 09-28. KPI Health = Poor (no real leads while Nonbranded is paused). Window overlaps the 10-13 pass on 10-09..10-12 (that pass ran late).
+
+**LSA 3740502923:** $62.40, 1 phone lead counted by Google (charged 10-10, also in the 10-13 entry), lead report shows 3 phone leads created 10-09..10-15 (1 BOOKED, 2 unmarked). 51 impr, 100% top / 97.5% abs top. Budget field $642.86/d vs ~$9/d = Underspending (not the limiter). Change event: Edu, 10-14, campaign criterion (service type) via web UI.
+
+**Changed:** nothing. Still owed: Nonbranded phrase/exact rebuild (heating first) + AM ticket for the 10-08 pause.
+AT tasks 539f28ea (Google), fd47eaff (LSA), left open for Gui's review. Pull: `weekly_pull.py` 10-09..10-15 vs 10-02..10-08.
+
+## 2026-10-19 — 14-day review (Agency Titan task cd7bdcd7, Gui): read-only
+
+10-05..10-18: $655.19 / 65 clk / 4 conv. NB paused since 10-08 ($531 / 0 on 10-05..07). Branded healthy (QS 7–10, CTR 21.9%, 89% IS). Recommended: NB phrase/exact rebuild (heating first) pointed at the 2 planned LPs; clean up the 2 ENDED trial campaigns in the UI (API can't pause them). Left open for Gui's review.

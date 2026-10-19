@@ -19,3 +19,5 @@ Client FB report (09-29): `clients/mission-accomplished/Mission Accomplished - F
 **Why:** the Slack-only context (Hatch, the Zapier call on 09-11) was never logged anywhere, and Angela herself asked on 09-29 what had been running and when.
 
 **How to apply:** don't relaunch lead gen or call it live until a joint test lead passes form → GHL → Hatch email with the phone showing (GHL gate in the workspace CLAUDE.md). When it does relaunch, lead with the $125/mo offer. Full detail is in the client's `meta-ads-log.md`. Related: [[tsd-client-report-plain-design]], [[topserv-client-report-format]].
+
+**2026-10-19 (Gui):** LSA account = **4904262993** (separate). LSA had 0 leads / $0 on 10-12..10-18 with 189 impr (prev week 5 leads) → AM heads-up suggested. Meta awareness $206/wk, freq 1.78 (under 3x). PPC still fully paused.

@@ -68,3 +68,5 @@ A full client log now exists for this account for the first time: `clients/kings
 - Add logo/square logo assets to the PMax asset group whenever Eduardo has a file (non-blocking, only matters if/when PMax comes back)
 - Once `phone_call` conversions accumulate cleanly, there's no live tCPA to retune anymore since PMax is paused — re-evaluate if/when it's relaunched
 - Nonbranded is now Maximize Conversions with no tCPA cap and a fresh $52/day budget — worth checking pacing/efficiency after it's had a week to adjust to the new budget level
+
+**2026-10-19 (Gui weekly + 14-day, staged only):** PPC $371.79 / 17 / $21.87, rank-lost 68% now the limit (not budget). **Meta awareness `TSD_02.26_TOF_AWARENESS_CBO_Creatives` = REACH + frequency CAP 3/7d → off the no-cap ARL doctrine ([[tsd-meta-ads-methodology]]), rebuild staged.** Meta lead campaign is ABO, not CBO. LSA inside 6769493219 ($622 / 7 leads).

@@ -7,6 +7,12 @@ in C&S's GTM container (`GTM-P2MR2T2`) is the placeholder `123456789` (09-07 tra
 
 ---
 
+## 2026-10-14 — Weekly 7-day Meta task: still nothing to review (Gui)
+
+Still no C&S ad account in the Meta accounts list. AT task `83bcbd20`: KPI - Meta 10-14 = $0 / 0 leads / Unclear, Lead Quality Notes + Blocker Details filled (same build-or-switch-off wording). Stage left open for Gui's review.
+
+---
+
 ## 2026-10-06 — Weekly 7-day Meta task: nothing to review
 
 Checked the full list of Meta ad accounts TSD can access: no C&S account. Agency Titan's "KPIs - Meta" for C&S only has a
