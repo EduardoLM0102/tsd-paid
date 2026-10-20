@@ -9,6 +9,14 @@
 
 ---
 
+## 2026-10-19 — Weekly 7-day pass, Google + LSA (Agency Titan tasks 5d7481ca / 74e89c01, Gui): read-only, staged
+
+**PPC 10-12..10-18:** $827.25, 16 conv, $51.70 CPL (prev $1,353.80 / 31 / $43.67). Spend fell with the temporary $2,500 budget (Client Request bff1955c): ~$210/d to 10-14, then $118 / $58 / $15 / $7 (10-18). **Edu 10-15:** Branded Evergreen, PMax Mitsubishi-Ductless, Search Mitsubishi-Brand PAUSED; live = LeadGen $14 + Nonbranded $8 + MiniSplit $24 ($46/d). **10-16:** ~146 negatives (LeadGen 44 / NB 53 / MiniSplit 49), 12 kw pauses, geo target type changed on Search campaigns, AI Max/asset settings. Conv: 8 call ext LEAD + 8 taps; call_view 8 (4 60s+). IS <10% (63–81% budget-lost). KPI Health Mixed.
+With Branded paused, brand searches land in LeadGen/MiniSplit broad at $10–17/click; 'petro home services' still buys in MiniSplit ($75, only exact 'petro' excluded). Staged: 'petro' phrase neg on 3 campaigns; decide Branded inside the $2,500; fu-049 UI auto-apply still open.
+**LSA 8655979348:** $289.31, 4 leads (2 calls, 2 msg), $72.33; all spend 10-12..10-15, Oct cap hit 10-15 → dark to 11-01 (Overspending). Both message leads still NEW (no reply) → AM flag.
+
+---
+
 ## 2026-10-14 — LSA account found + weekly LSA task done (AT 363a93f3, closed)
 
 **LSA account:** `8655979348` (865-597-9348), under MCC Topservdigital `4155514468`, separate from PPC. Edu: it was missing verification documents before, now live. One campaign `LocalServicesCampaign:SystemGenerated` (23394236866), ENABLED / SERVING, $35.71/d (= the $250/wk agreed 09-14), schedule 7 days 8am-5pm. Insurance PASSED (exp 2027-06-26), background check PASSED. No change_event in the last 30 days. Read-only, nothing changed.

@@ -8,6 +8,12 @@ ACTIVE, USD). Readable through the Meta Ads MCP.
 
 ---
 
+## 2026-10-19 — Weekly 7-day Meta pass (AT task 39ad03fd, Gui): campaign PAUSED since 10-15
+
+`TSD_10.09_Awareness_Brand_TOFU_ARL` 120250742056430607 PAUSED 10-15 (~09:31 ET, same day as the Google cuts). $54.98 on 10-13..10-15, reach 9,937, freq 1.32, $0 since 10-16. KPI - Meta 10-19 $54.98 / Unclear. fu-030 frequency check is moot while paused. Keep off unless the client approves a Meta budget (client asked Meta OFF 04-15).
+
+---
+
 ## 2026-10-12 — AT check: was Meta budget ever approved? No. Angela's "within budget" was the Google Branded task
 
 **Read-only.** Edu remembered a task where he asked for Meta budget and Angela approved it herself as "within budget".
