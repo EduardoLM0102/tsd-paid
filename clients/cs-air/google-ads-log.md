@@ -570,3 +570,12 @@ events (reporting only). Facebook ads run by someone else, no access.
 AT tasks closed: Google 6673eb2c (KPI 61bd5fea), LSA 2b937ad8 (KPI ee4ca0c8).
 
 Pull: `paid/weekly-7day/weekly_pull.py` (window 10-06..10-12 vs 09-29..10-05), summary/KPI via `weekly_summary.py` / `weekly_kpi.py`. Full note is in the AT KPI entry's Lead Quality Notes.
+
+## 2026-10-20 — Weekly 7-day + 14-day pass (Agency Titan tasks, Gui): read-only, KPI entries logged, changes staged
+
+**Numbers (PPC only, 10-13..10-19 vs 10-06..10-12):** $1,099.43, 20 conv, $54.97 CPL (prior $1,146.26 / 34). 19 of 20 = [TSD] Click to call taps; call_view shows 1 real call (Branded, 60s+), 0 forms. PMax 24336822932 $796.65 / 304 clk / 17 taps, **100% Display (content network) again**, budget-limited at $110/d. Branded $164.82 / 20 clk / 3 conv, 80% IS, $8.24 CPC. Nonbranded $137.96 / 16 clk / 0 conv, 21% IS (75% rank-lost). KPI Health = Mixed.
+**Search terms:** NB paying for DIY questions ('what to do if your ac is not cooling', 'why is ac not cooling properly'), coil cleaning research, competitors (airtron, frontdoor). Branded 'CS Air' phrase still matches china southern / southern airline ($0 this week).
+**14-day (10-06..10-19):** QS 1-2 on 5 core repair kws; maintenance kws $7.90-9.60 CPC at QS 3; Branded RSAs both AVERAGE; no audiences anywhere; same 10 service-area geos, Presence only, nothing leaking; NB is cooling-only going into heating season. PMax 14d $1,249.62 / 35 taps / 0 real calls.
+**Staged, not applied:** pause 'ac tune up cost', 'best ac repair near me', 'hvac repair near me'; NB phrase negatives what to do / why is / whats included / airtron / frontdoor / car; Branded phrase negatives airlines / airline / southern / china; Branded RSA refresh; observation audiences; dismiss opt-in recs; PMax Display question → fu-032 (10-23).
+**LSA:** $0, 39 impr, 4 clk, top impr 100%; lead report 2 phone leads (1 booked, 1 active), both uncharged. Budget $23.26/d, Underspending (reach-limited).
+AT tasks completed 10-20: Google ce4a9827 (KPI 726c2e79), 14-day ecc58c10 (toggles must be set in UI), LSA bab8023c (KPI bb0987bb), Meta 79c812a8 (KPI a1ee2c75, still no ad account).

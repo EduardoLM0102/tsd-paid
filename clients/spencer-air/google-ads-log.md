@@ -159,3 +159,12 @@ of branded clicks. Options for Edu: max CPC cap (portfolio Max Conv with bid lim
 AT tasks closed: Google 6111eb8b (KPI 2307dd48), LSA a27a3265 (KPI ee323d22), Meta 2938e9db (KPI 75e0da94).
 
 Pull: `paid/weekly-7day/weekly_pull.py` (window 10-06..10-12 vs 09-29..10-05), summary/KPI via `weekly_summary.py` / `weekly_kpi.py`. Full note is in the AT KPI entry's Lead Quality Notes.
+
+## 2026-10-20 — Weekly 7-day + 14-day pass (Agency Titan tasks, Gui): read-only, KPI entries logged, changes staged
+
+**Google (PPC only, 10-13..10-19):** Branded $172.18 (prior $359.79), 11 clk, 8 conv, $15.65 CPC, 94% IS (prior 57%). The 8 conv are inflated: call_view = 3 calls (2 over 60s) counted under 5 actions (Phone Call 2, Calls from ads 2, Repeat 2, First Time 1, Click to call 1). Real new-customer leads ≈ 1. 10-19 = $99.93 on 5 clicks (2x budget). 'spencer hvac service llc' may be another company (1 clk). KPI Health = Mixed.
+**14-day (10-06..10-19):** avg CPC $24.18; 'spencer air conditioning' [exact] $45.09/clk at QS 10 (bidding, not quality); 1 RSA only; 18 brand variants Rarely served; no audiences; geo fine.
+**Staged, not applied:** Target IS 90% top + $8 max CPC (fu-040); one primary call action (keep CallRail First Time, others secondary); 2nd RSA; observation audiences; dismiss broad/PMax/Display/partners recs.
+**LSA:** $354.10, 4 charged leads (3 calls, 1 message), $88.53 CPL; lead report 7 total (1 booked, 1 message still NEW / unanswered, 1 declined). $50.59/d of $164.29 = Underspending, top impr 90.5% (demand drop, not rank).
+**Meta:** see meta-ads-log.md 10-20.
+AT tasks completed 10-20: Google d7740224 (KPI bcdc6869), 14-day e5a65586 (toggles must be set in UI), LSA 0cfc0119 (KPI c95f35ea), Meta ef13cf06 (KPI 01ec60ce).

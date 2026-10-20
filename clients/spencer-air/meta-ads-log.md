@@ -48,3 +48,7 @@ recommendation is mixing image ads in with the videos (+5).
 ## 2026-10-13 — Weekly 7-day Meta (AT task 2938e9db closed, KPI 75e0da94)
 
 Only the awareness campaign spent (`Spencer Air | Awareness | ABO | Videos | 30Jun2026`, 120253326490610155): $277.85, reach 100,543, impressions 130,592, frequency 1.30, CPM $2.13, CTR 0.19%, 0 leads. Same as 10-06. Lead campaign not spending. No fatigue (freq 1.30). Setup issue unchanged (Reach not ARL, freq cap 2/7d, ABO, 16 cities × 25 mi + recent). **Staged, not applied:** rebuild as CBO + Ad Recall Lift, no cap, living-in geo (All Seasons 10-09 pattern). KPI Health = Mixed. Meta trend/benchmark tools returned no data.
+
+## 2026-10-20 — Weekly 7-day Meta (AT task ef13cf06 completed, KPI 01ec60ce, Gui)
+
+Only the awareness campaign spent (120253326490610155): $282.36, impressions 126,818, reach 91,323, frequency 1.39, CPM $2.23, CTR 0.17%, 0 leads. Video 10 / 05 / 06 = 86% of spend; Video 06 again cheapest CPM ($1.44) and best CTR (0.36%). Second account 1900919440286623 = $0. Setup issue unchanged (Reach not ARL, freq cap 2/7d, ABO, 16 cities × 25 mi + recent). **Staged, not applied:** CBO + Ad Recall Lift, no cap, living-in geo. KPI Health = Mixed.
