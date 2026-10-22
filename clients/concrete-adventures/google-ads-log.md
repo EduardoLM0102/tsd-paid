@@ -35,3 +35,12 @@ Script `repoint_go_pages_1022.py` (validate, then --apply, campaigns still PAUSE
 - Sitelinks: the 5 www ones unlinked from both campaigns; 6 go. sitelinks added (Garage Floor Coatings, Pool Deck Resurfacing, Concrete Overlays, Concrete Staining, Customer Reviews on go./?src=1-4,6; Request an Estimate on /decorative-concrete/?src=5).
 - Call asset (662) 498-5409 on both campaigns. Johnny (Slack DM 2026-10-21): Ads number in the client's OWN CallRail account (not TSD's agency account), source 'Google Ads Assets', forwards to 662-291-7755. Call reporting = account default call action.
 Still before enabling: ads approved; set the old BCJ conversion actions to secondary (account default call action is probably 'Calls From Ads (BCJ)' at 10s, TSD standard is 60s).
+
+## 2026-10-22 (later 2) — conversion cleanup (packet fix 4)
+
+Edu: "Make it not count the BCJ stuff. Let's keep the Click to call we created as secondary", then chose "Google native, 60s" for call-asset calls.
+- `conv_cleanup_1022.py`: SECONDARY now: Calls From Website SC/MS/GA (BCJ), Lead Form Submission (BCJ), Chat Lead (BCJ), [TSD] Click to call.
+- `ad_calls_60s_1022.py`: 'Calls From Ads (BCJ)' 6959959574 renamed **[TSD] Calls from ads (60s)**, 10s → 60s, primary. It is the account's call reporting action, so it counts call-asset calls (Google forwarding number).
+- Primary now (lead categories): [TSD} Submit lead form + [TSD] Calls from ads (60s). (Also primary but irrelevant to Search: 'Lead form - Submit' Google-hosted, 2 YouTube actions.)
+- Found: NO CallRail swap script on the go. pages or in GTM-53FXJRN4, and 498-5409 is hardcoded. CallRail can only upload calls with a gclid, so Edu's CallRail integration (60s+) covers website calls only after the swap script is added (Google Ads source tracker). Call-asset calls never have a gclid → covered by the Google native action above, no double count.
+Ads, sitelinks and call asset still in review at 10-22 evening.
