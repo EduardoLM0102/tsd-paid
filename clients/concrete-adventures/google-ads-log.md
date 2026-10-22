@@ -44,3 +44,10 @@ Edu: "Make it not count the BCJ stuff. Let's keep the Click to call we created a
 - Primary now (lead categories): [TSD} Submit lead form + [TSD] Calls from ads (60s). (Also primary but irrelevant to Search: 'Lead form - Submit' Google-hosted, 2 YouTube actions.)
 - Found: NO CallRail swap script on the go. pages or in GTM-53FXJRN4, and 498-5409 is hardcoded. CallRail can only upload calls with a gclid, so Edu's CallRail integration (60s+) covers website calls only after the swap script is added (Google Ads source tracker). Call-asset calls never have a gclid → covered by the Google native action above, no double count.
 Ads, sitelinks and call asset still in review at 10-22 evening.
+
+## 2026-10-22 (later 3) — Search LIVE
+
+Edu: skip the CallRail session pool for now (fixed 498-5409 already records every call for lead-quality review; Max Clicks doesn't bid on conversions; add the pool when Meta/YouTube start sending traffic to the go. pages), then "ok so can we just push live now?".
+- `enable_search_1022.py`: both TSD_10.22 campaigns ENABLED (Branded $5/d, Nonbranded $10/d). Status LEARNING. Ads/sitelinks/call asset were still in review, they serve once approved.
+- Counting: [TSD} Submit lead form + [TSD] Calls from ads (60s). Website calls from ad clicks are NOT counted in Google Ads until a CallRail pool + integration exist; judge them in CallRail (all calls to 498-5409 show as source 'Google Ads Assets', mixed sources).
+- First check ~10-27: approvals, spend vs $15/d, CPC vs caps, search terms (new negatives), impression share on Branded.
