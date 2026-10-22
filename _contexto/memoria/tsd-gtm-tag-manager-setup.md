@@ -41,3 +41,5 @@ in Playwright → `versions.publish` → delete the env. Tests the exact artifac
 `oncePerLoad`, so test each lead event on a fresh page load. A headless browser sent no Meta pixel hits even after Accept All,
 but Meta MCP `ads_get_dataset_stats` showed the pixel live, so verify Meta via dataset stats, not headless.
 
+
+- **`gtm.py list` defaults to workspace 1** (2026-10-22, Concrete Adventures): containers whose live workspace has another id (e.g. GTM-53FXJRN4 = workspace 3) show up EMPTY. Run `gtm.py workspaces` first and pass `--workspace <id>` before calling a container empty.

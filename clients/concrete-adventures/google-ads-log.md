@@ -12,7 +12,7 @@ Plan and rules: Ryan's Paid Media Packet (`~/Documents/ConcreteAdventures_Paid_M
 - ~860 enabled keywords across the old Search campaigns (MS 327). AI Max not on. Shared negatives "Universal (BCJ)" 251.
 - 16 conversion actions, many primary: BCJ website calls (10s), Calls From Ads (10s), Lead Form Submission, Chat Lead upload, GHL Import (SPM), plus `[TSD] Click to call` and `[TSD} Submit lead form`. Last 30d: 3 conversions.
 - Account-level assets from the old agency: sitelinks incl. "Get Your Free Quote", callouts incl. "5-Year Warranty" (unverified) and "Head-Resistant" (typo). No account-level call asset. Old call assets: (662) 715-4215 MS, (803) 408-5505 SC, (762) 320-5013 GA.
-- GTM: site loads only **GTM-KV5TR7CK** (old agency). TSD's container GTM-53FXJRN4 (account 6382574349) is empty and not on the site, so the [TSD] conversion actions can't fire.
+- GTM: the live concrete-adventures.com HTML loads only **GTM-KV5TR7CK** (old agency, contains GA4 G-DDSJGR9XVM only). TSD's container GTM-53FXJRN4 (account 6382574349, workspace 3) has the full tag set, published, Ads tags to AW-16809872504 (matches the [TSD] actions). CORRECTION same day: I first read it as empty (wrong workspace); Edu confirms it's installed and working. Still to confirm which site/domain carries it.
 - Site (concrete-adventures.com) is multi-state, (803) SC number is the main CTA on every page, form/chat in old agency's GHL.
 
 **Build** (Edu: "if its creating the campaigns, go for it and leave paused"). Script: `build_search_oxford_1022.py` (validate, then --apply, one atomic mutate).
@@ -24,5 +24,5 @@ Plan and rules: Ryan's Paid Media Packet (`~/Documents/ConcreteAdventures_Paid_M
 - 4 RSAs, no offers/discounts/"free"/warranty claims; copy only uses claims from the site (family owned, nearly 10 years, limited projects each month, slip-resistant + UV-stable pool deck coatings).
 - AI Max / auto-apply guardrail (paid/guardrails/ai_max_auto_apply_off_1016.py) now includes both CA accounts: 0 to change.
 
-**Before enabling** (Command Center fu-081): CallRail number → call asset; tracking (GTM access or TSD container on the site, BCJ actions → secondary); GHL form ownership; ads approved.
+**Before enabling** (Command Center fu-081): CallRail number → call asset; confirm the ads' final URLs are on the site that runs GTM-53FXJRN4, BCJ actions → secondary; GHL form ownership; ads approved.
 Search budget $15/day (~$450/mo) comes out of YouTube's remainder; Meta 3x floor (~$1,860) untouched, total stays $3k.
