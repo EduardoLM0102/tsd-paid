@@ -26,3 +26,12 @@ Plan and rules: Ryan's Paid Media Packet (`~/Documents/ConcreteAdventures_Paid_M
 
 **Before enabling** (Command Center fu-081): CallRail number → call asset; confirm the ads' final URLs are on the site that runs GTM-53FXJRN4, BCJ actions → secondary; GHL form ownership; ads approved.
 Search budget $15/day (~$450/mo) comes out of YouTube's remainder; Meta 3x floor (~$1,860) untouched, total stays $3k.
+
+## 2026-10-22 (later) — ads repointed to the go. pages + call asset
+
+Edu: tracking runs on TSD GTM-53FXJRN4, which is on **go.concrete-adventures.com** (root + /decorative-concrete/), not on www. Both go. pages checked: GTM-53FXJRN4, phone (662) 498-5409, form on link.leadnurturemachine.com.
+Script `repoint_go_pages_1022.py` (validate, then --apply, campaigns still PAUSED):
+- Branded RSA → https://go.concrete-adventures.com/ ; the 3 Nonbranded RSAs → https://go.concrete-adventures.com/decorative-concrete/ (form on page). Ads back in review.
+- Sitelinks: the 5 www ones unlinked from both campaigns; 6 go. sitelinks added (Garage Floor Coatings, Pool Deck Resurfacing, Concrete Overlays, Concrete Staining, Customer Reviews on go./?src=1-4,6; Request an Estimate on /decorative-concrete/?src=5).
+- Call asset (662) 498-5409 on both campaigns. Johnny (Slack DM 2026-10-21): Ads number in the client's OWN CallRail account (not TSD's agency account), source 'Google Ads Assets', forwards to 662-291-7755. Call reporting = account default call action.
+Still before enabling: ads approved; set the old BCJ conversion actions to secondary (account default call action is probably 'Calls From Ads (BCJ)' at 10s, TSD standard is 60s).
