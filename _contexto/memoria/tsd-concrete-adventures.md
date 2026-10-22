@@ -1,0 +1,23 @@
+---
+name: tsd-concrete-adventures
+description: Concrete Adventures (Oxford MS, decorative concrete coatings) — new TSD client from 2026-09-21, Edu owns paid; brand-first demand creation, not lead gen; accounts, packet rules, 10-22 audit state
+metadata:
+  type: project
+---
+
+New client announced by Ryan 2026-09-18 (#topserv-team), onboarding channel #onboarding-concrete-adventures. Owner Justin Ford, partner Ryan Wharton, Logan Moore is on camera (Justin never appears). Shoot 2026-10-28/29, first 5 video cuts go live in Meta 2026-11-12.
+
+**Source of truth:** Ryan's Paid Media Packet, local copy `~/Documents/ConcreteAdventures_Paid_Media_Packet (2).docx` (read with `textutil -convert txt -stdout`). Re-read it before any build.
+
+**Plan (packet):** Oxford MS only, $3,000/mo paid by client card. Meta video to 3x/week across Oxford first (~$1,860), YouTube gets the rest, small Google Search capture (branded + high-intent unbranded), LSA where eligible. Oct 22 to Nov 11 brand runs on statics (3-4 angles: transformation, Ole Miss logo garage, what it costs, crew equity). NOT allowed: lead forms on brand creative, discounts/offers, broad match + AI expansion, keyword expansion for volume, anything outside Oxford, even budget splits, OTT. Budget cut → shrink the map, never the frequency. Budget changes, Tupelo/Lexington, client asks for offers → raise to Ryan. Success metrics = branded search volume, direct traffic, qualified leads, CPQL, actual frequency; never CTR/clicks.
+
+**Week-one fixes before any new spend:** 1 AI broad off, 2 negatives (aggregate, millings, asphalt, supply, wholesale, DIY, jobs, hiring, salary), 3 cut inherited keywords to intent, 4 conversion tracking real, 5 client card, 6 call tracking. "Do not launch brand until tracking is clean."
+
+**Accounts:** Google 9215192296 "Concrete Adventures - SC, MS" = inherited from previous agency (BCJ = bookcleaningjobs; their GHL also runs the site form/chat). LSA 2898153501 (separate, billing PENDING, background check + insurance NO_SUBMISSION).
+
+**2026-10-22 read-only audit of 9215192296:** billing = client's own payments account (fix 5 done). All 8 BCJ campaigns paused; last spend 2026-10-01 ($482 MS Search 0 conv + $141 PMax 3 conv from 09-22 to 10-01). ~860 enabled keywords across Search campaigns (MS 327), only a few broad; AI Max not on. Shared negatives exist ("Universal (BCJ)" 251). 16 conversion actions, many primary and overlapping (BCJ website calls at 10s, Chat Lead upload, GHL import SPM) plus `[TSD] Click to call` and `[TSD} Submit lead form` already created; tracking NOT verified clean. Call assets still old numbers (662) 715-4215 MS, (803) 408-5505 SC, (762) 320-5013 GA. CallRail check hit API 429, not confirmed. Audit script: google-ads-ratos/scripts/concrete_audit_1022.py.
+
+**2026-10-22 build:** TSD_10.22_Search_Branded_Oxford 24379794681 ($5/d, Max Clicks $4) + TSD_10.22_Search_Nonbranded_Oxford 24379794684 ($10/d, $10 cap) created PAUSED, Oxford 1020795 + ZIP 38655 presence-only, neg list 12280924077, campaign assets override old account-level ones, no call asset yet. Old 'MS' campaigns targeted DeSoto County, not Oxford. TSD GTM container GTM-53FXJRN4 (acct 6382574349) is EMPTY and NOT on the site; site runs old agency's GTM-KV5TR7CK. Launch blockers in Command Center fu-081; log clients/concrete-adventures/google-ads-log.md.
+
+**Why:** demand creation account; running it like HVAC lead gen repeats the last agency's failure (keywords 58→85, conv rate -27%).
+**How to apply:** build only inside Oxford, exact/phrase, AI Max + auto-apply off; clean tracking before turning on spend.

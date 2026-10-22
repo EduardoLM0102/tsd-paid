@@ -7,7 +7,7 @@ metadata:
 
 Confirmed by Edu on 2026-09-29 (during the Growth Engine pull, see [[tsd-growth-engine-brandformance]]):
 - **Current clients not yet in the workspace:** Strickland Heating & Air (Google 9049508615, DFW, mostly Search + PMax) and Integrate Comfort Systems (Google 4571881760 + LSA 2895702982 / 2175964343 / 8323145223, New York DMA). The 09-11 "diligence only" note only covered the Belleville LSA account; the main account has TSD-named campaigns since 2026-03-22, and "ICS" = Integrate Comfort Systems (so Meta account "ICS" 2070047533283360, connector-disabled, is likely theirs). Open: whether TSD runs "Mitsubishi YouTube" in 2895702982 (only visible editor chriswisics@gmail.com).
-- **Not current clients:** Gray Duct Technologies (Google LSA 6191956550, Minneapolis) and Concrete Adventures (Google 9215192296, Memphis/MS).
+- **Not current clients:** Gray Duct Technologies (Google LSA 6191956550, Minneapolis). **Concrete Adventures IS a current client** (onboarded from 2026-09-21, Oxford MS, Edu owns paid): the 09-29 'not current' entry was wrong, see [[tsd-concrete-adventures]].
 - **Takeovers inside the last 12 months (weeks before these dates were run by someone else):** On The Way, Google, before the 2026-09-09 TSD build; On Time Service Pros, Meta, before March 2026 (its ad account is owned by "TMD Management Group"). Proud Pops was TSD for the full 12 months.
 - Still unknown: Meta 532145676808452 (business "Wattenbarger Racing", HVAC ads, TSD naming) and 170464733924961 ("Allen Black"); Google 8655979348 (unnamed LSA, Long Island NY), DFW _Unsuspended, Potomac, Supreme AC, Modern Comfort, AC Cornerstone, Ultimate Comfort LSA.
 - All Heart is offboarded, but its 4 Google LSA accounts (9976029542, 8199337860, 5064174352, 7662998005) were still spending under the TSD MCC as of 2026-09-27.
@@ -32,3 +32,5 @@ Only 13 clients have the AT 7-day Google + LSA tasks (All Seasons, C&S, Gillespi
 - Keep Strickland "just in case" and keep Live Wire in client lists, despite the On Purpose Media and Trade Vulcan edits.
 - My Favorite Service Company = Proud Pops. Disregard it as a separate client.
 - The active-clients source Edu points to is the "Client Accounts - Audit (Master doc)" sheet ([[tsd-client-accounts-audit-sheet]]). Cross-check book-wide lists against it.
+
+**2026-10-16 (Edu):** All Heart, Strickland, DFW _Unsuspended (1932181525), Gray Duct, Bucksworth HVAC (4072088295) and Bucksworth Weed (7024049980) are OFFBOARDED: leave them out of account-wide changes and audits. (Strickland was listed current on 09-29; now offboarded.)
