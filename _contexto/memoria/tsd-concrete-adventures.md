@@ -21,7 +21,7 @@ New client announced by Ryan 2026-09-18 (#topserv-team), onboarding channel #onb
 
 **2026-10-22 conversions:** old BCJ website-call/form/chat actions + [TSD] Click to call = SECONDARY; primary = [TSD} Submit lead form + [TSD] Calls from ads (60s) (ex 'Calls From Ads (BCJ)' 6959959574, the account call reporting action). No CallRail swap script on go. pages yet, so Edu's CallRail integration (60s+, client's own CallRail) only uploads website calls once the swap is added; call-asset calls have no gclid and stay on the Google native action.
 
-**2026-10-22 SEARCH LIVE:** both TSD_10.22 campaigns enabled (Branded $5/d, NB $10/d). CallRail session pool + Google Ads integration SKIPPED for now (Edu): 498-5409 is a fixed number so CallRail can't attach gclids, website calls from ads aren't counted in Google Ads; add the pool when Meta/YouTube send traffic to the go. pages. First check fu-082 ~10-27. Meta static brand campaign (packet: funded first, ~$1,860/mo, Oct 22-Nov 11 statics) NOT built yet.
+**2026-10-22 SEARCH LIVE:** both TSD_10.22 campaigns enabled (Branded $5/d, NB $10/d). CallRail session pool + Google Ads integration SKIPPED for now (Edu): 498-5409 is a fixed number so CallRail can't attach gclids, website calls from ads aren't counted in Google Ads; add the pool when Meta/YouTube send traffic to the go. pages. First check fu-083 ~10-27. Meta static brand campaign (packet: funded first, ~$1,860/mo, Oct 22-Nov 11 statics) NOT built yet.
 
 **Why:** demand creation account; running it like HVAC lead gen repeats the last agency's failure (keywords 58→85, conv rate -27%).
 **How to apply:** build only inside Oxford, exact/phrase, AI Max + auto-apply off; clean tracking before turning on spend.
