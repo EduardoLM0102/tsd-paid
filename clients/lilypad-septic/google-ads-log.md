@@ -267,3 +267,15 @@ Pull: `paid/weekly-7day/weekly_pull.py` (window 10-06..10-12 vs 09-29..10-05), s
 5. 16 auto recs: reject Search Partners x2, Display expansion, PMax opt-in, tCPA/MaxConv opt-in.
 Keywords: pause 'septic tank installation cost' (QS2, $19.68/0 conv); raise septic repair / septic emergency service / septic pumping near me / new septic tank installation to first-page bid.
 **LSA task:** N/A, no LSA. **Meta task:** $0 (not built). AT tasks c281a412, 31593502, 13ee333f, 4ac64c8d left open for Gui's review.
+
+## 2026-10-23 — First 90-day review (Agency Titan task f5e2b689, Gui): read-only, everything staged
+
+90 days 07-25..10-22, Search only: $1,967.64 / 461 clk / 51 conv (Branded $274.54 / 13.5, NonBranded $1,693.09 / 37.5). Both campaigns **Manual CPC**
+(Branded $8/d, NB $38/d since Edu's 10-20 change), so bid adjustments apply. Full text in the AT task fields.
+- **Stalled conversions: YES.** BC Calls v2 / BC Qualified Calls / BC Qualified Forms (UPLOAD_CLICKS) + BC Qualified Ext Calls (UPLOAD_CALLS) = ENABLED,
+  primary, 0 in 90 days (pre-TSD Invoca/RYNO imports). Proposal: Secondary/remove after AM confirms Invoca is gone. 33 of 51 counted conv = [EB] taps.
+- **Schedule:** none (24/7). 18:00–06:00 = $477 / 1 conv (24% of spend); Sunday $236 / 0; 09–18 = $1,200 / 44. Proposal: −50% nights + Sunday (confirm hours w/ AM).
+- **Demographics:** income lower 50% $339 / 5 ($68) vs top 10% $31 → −20% proposed; age/gender fine, no exclusions.
+- **Audiences:** none on live campaigns → add in-market + remarketing in Observation.
+- **Location:** same as 10-17 (city limits, Presence or interest, 55% of spend outside; nearby towns convert; Wichita/Topeka/KC $0 conv).
+Toggles (Stalled found = Yes, others = No) failed via API: set in the UI. 90-day item 5 (create task) left unticked.

@@ -2,6 +2,22 @@
 
 ---
 
+## 2026-10-23 — Weekly 7-day (Google, LSA, Meta) + 14-day review (Agency Titan tasks, Gui): read-only, everything staged
+
+**Google 10-16..10-22 (PPC, LSA excluded):** $872.43 / 76 clk / 18 conv / $48.47 CPL (prior $12,106.21). Only Branded live since the
+10-14 $25k cut (Nonbranded, both PMax, both YouTube paused by Edu 10-14/10-16; $53.84 YouTube on 10-16 before the pause). Branded
+$818.60 / 75 / 18 / $45.48, CPC $10.91 (prior $8.95), IS 72% (25% budget-lost), Max Conv $100/d ran ~1.5x on 10-16/19/22. **All 18 conv
+= TSD - Website Call taps; 0 call_view calls (call asset still disapproved, fu-052), 0 Website lead forms.** Terms all brand variants.
+**LSA (3 surfaces):** in-account $69.16 / 1 msg; 6621969129 $176.78 / 1 call + 1 msg; 7261668241 $59.59 / 1 call = $305.53 / 4 / $76.38,
++2 uncharged phone leads; top impr 90.4%; budget fields $714.29/d each = Underspending. **Meta:** no ad account shared with TSD ($0, blocker).
+**14-day 10-09..10-22:** $12,978.64 total (Branded $1,498.78 / 151 / 28). Staged: Branded → Target IS abs-top with ~$8 CPC cap; pause 2 POOR
+RSAs (Brand_OldName 808846497511, Brand_HVAC 808844736361); observation audiences; dismiss partners/display expansion/broad/tCPA recs;
+fix Nonbranded landing/offer (HVAC $3,182 / 1 form, Plumbing $791 / 0) and the call asset before the Nov 1 restore (fu-053).
+AT: Google `5fcb9612` (KPI `247995a9`), LSA `6ee7bffa` (KPI `16e5089d`), Meta `43e88713` (KPI `d4ef0536`), 14-day `ec9d122a`, all completed.
+14-day toggles must be set in the UI.
+
+---
+
 ## 2026-10-14 — Status check after the 10-08 fixes + 10-13 budget cut (read-only)
 
 Scripts: `proud_pops_b7_delivery_check.py`, `proud_pops_verify_careers_fix.py`, `g2b_cutover_2026-10-08.py` (dry run),

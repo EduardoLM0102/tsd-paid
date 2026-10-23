@@ -738,3 +738,12 @@ AT tasks 539f28ea (Google), fd47eaff (LSA), left open for Gui's review. Pull: `w
 ## 2026-10-19 — 14-day review (Agency Titan task cd7bdcd7, Gui): read-only
 
 10-05..10-18: $655.19 / 65 clk / 4 conv. NB paused since 10-08 ($531 / 0 on 10-05..07). Branded healthy (QS 7–10, CTR 21.9%, 89% IS). Recommended: NB phrase/exact rebuild (heating first) pointed at the 2 planned LPs; clean up the 2 ENDED trial campaigns in the UI (API can't pause them). Left open for Gui's review.
+
+## 2026-10-23 — Weekly 7-day pass, Google Search + LSA (Agency Titan tasks, Gui): read-only, KPI entries logged
+
+**PPC (10-16..10-22, LSA excluded):** $54.49, 9 clicks, 3 conv ($18.16 CPL, $6.05 CPC), 93% IS. Only Branded live (Target IS, $8 cap).
+**2 Calls from ads (call_view: 2 calls, both 60s+) = first recorded ad calls since 09-28**, + 1 [TSD] Click to call tap. Terms all brand.
+Changes: Edu set AI Max/asset automation off on legacy campaigns 10-16 (API); eddie@callzenair.com created an asset 10-19 (check). KPI Health = Mixed.
+**LSA 3740502923:** $0, 52 impr, 100% top / 89% abs top; lead report 5 phone leads (1 BOOKED, 4 DECLINED), none charged. Underspending (reach-limited).
+**Changed:** nothing. Still owed: Nonbranded phrase/exact rebuild (heating first) + AM ticket for the 10-08 pause.
+AT tasks `54ce2840` (Google, KPI `7e79b7c1`), `7f983d3f` (LSA, KPI `1cd8910d`), completed.

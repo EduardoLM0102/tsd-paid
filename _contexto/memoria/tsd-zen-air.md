@@ -166,3 +166,5 @@ Only **28/173 (16%) in the core service area** by self-reported city; +36 Atlant
 
 ## 2026-10-16 — weekly pass (Gui, AT tasks 539f28ea / fd47eaff / fc797a2f, left open for review)
 PPC Branded-only $71.27, 1 tap conv, 89% IS, Health Poor. LSA $62.40 / 1 counted lead (3 in lead report, 1 booked), 100% top. Meta $1,535 / 98 leads / $15.67 CPL, rated Mixed (geo). **Found: awareness ad set `Open Audience` 120227295614750711 optimizes for REACH with a frequency CAP 4/7d, freq 1.85/wk** = off the no-cap ARL doctrine ([[tsd-meta-ads-methodology]]). Rebuild as new ARL campaign staged, not applied.
+
+**2026-10-23 weekly pass (Gui, AT 54ce2840 / 7f983d3f / ff291b11, completed):** PPC Branded-only $54.49 / 3 conv incl. **2 real ad calls (60s+), first since 09-28**; LSA $0, 5 uncharged phone leads (1 booked, 4 declined); Meta $1,500.82 / 137 / $10.95, lead ad set CPL $11.68 → $14.03 after Edu's 10-20 home-only change (CPM up, expected), recheck ~10-27; awareness ARL rebuild still staged.

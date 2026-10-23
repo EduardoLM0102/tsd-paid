@@ -2,6 +2,15 @@
 
 Account `381256660973192` ("Zen Air - Third Ad account ( Active Account)").
 
+## 2026-10-23 — Weekly 7-day Meta pass (AT task ff291b11, Gui): read-only, KPI logged, changes staged
+
+**10-16..10-22:** $1,500.82, 137 leads, $10.95 CPL, $6.45 CPM, 0.50% CTR, reach 108,339, freq 2.15 (10-16 entry: $1,535.43 / 98 / $15.67).
+- Lead ad set `09/22/26 - Service Area ZIPs (New Creatives)`: $1,047.16, 83 leads, $12.62 CPL, $11.79 CPM. Around Edu's 10-20 change (home only +
+  30320 excluded): 10-16..19 $584 / 50 ($11.68) → 10-20..22 $463 / 33 ($14.03), CPM ~$10.7 → $13.2 (narrower audience). Lead location recheck ~10-27.
+- Awareness `Open Audience` ($65/d): $453.66, reach 66,468, freq 2.16/wk, $3.16 CPM; also reports 54 "leads" (likely pixel Lead events, not forms).
+Lead Quality = **Mixed**. **Staged, not applied:** (1) ARL rebuild of awareness, no cap (still REACH + cap 4/7d); (2) at ~10-27 decide Fulton → North Fulton.
+KPI - Meta `db74ef1f`.
+
 ## 2026-10-16 — Weekly 7-day Meta pass (AT task fc797a2f, Gui): read-only, KPI logged, changes staged
 
 **10-09..10-15:** $1,535.43, 98 leads, $15.67 CPL, $6.85 CPM, 0.51% CTR, reach 116,470, freq 1.93 (10-13 entry: $1,582.55 / 56 / $20.05).

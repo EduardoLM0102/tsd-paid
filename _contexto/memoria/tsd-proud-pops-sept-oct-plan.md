@@ -47,3 +47,5 @@ $295→$50, PMax Elec $230→$75, Search HVAC $375→$300, Search Elec $600→$5
 YouTube San Antonio in the UI (fu-046), so October lands at about $50k. Recheck fu-047 on 10-20. **Nov 1 steady state for $50k/mo
 ≈ $1,600/d caps.** **How to apply:** an approval for a monthly total needs a matching steady-state daily rate. Any catch-up rate
 must come with a written date to roll it back. Check sum(caps) × 30.4 against the approved month at every monthly rollover.
+
+**2026-10-23 weekly pass (Gui, read-only):** Branded-only week $818.60 / 18 conv, all phone taps, 0 recorded calls (call asset still disapproved, fu-052); brand CPC $8.95 → $10.91 under Max Conv, Target IS + ~$8 cap staged; LSA 3 surfaces $305.53 / 4 leads; no Meta account shared with TSD.
