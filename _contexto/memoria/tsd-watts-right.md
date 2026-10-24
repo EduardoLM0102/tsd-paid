@@ -54,6 +54,7 @@ FourMode" (cold, 09-22, website leads via landing page). Last 30d: TOF $3,179/63
 TSD MOF/BOF renames REVERTED 10-06 by "Clay Manus token" (Manus Dash), who also launched a 05-RT-TOF3s website-leads
 retargeting ad set in FourMode (kept out of the client PDF, Edu to decide scope); Meta flipped Advantage+ audience ON
 10-10 on all ad sets incl. MOF (step 2 no longer pure retargeting going forward). Details in meta-ads-log.md 10-12.
+**10-22:** client report #3 = Oct 9–21, FB retargeting (17 leads / $69.33) + NEW Google page (29 verified leads / $102, LSA out) + the 10-20 changes. Google page also has a CallRail table (49 Google Ads calls = Call Extension PPC tracker + Website pool w/ gclid; Google counts 60s+, one per click, so only 19). Meta CPL +32% vs Oct 2–8. Next report starts Oct 22. Details meta-ads-log + google-ads-log 10-22.
 TOF + FourMode keep their original non-TSD names. Whoever runs them, nobody had discussed it with Edu before 10-01.
 Pixel audiences ("Page Views", "Page View_Without Leads", pixel 567402072026960) are ~20 people and
 unused, so website retargeting isn't viable as-is. Old "BOFU_Remarketing_Zips" ($5.3k, paused) was

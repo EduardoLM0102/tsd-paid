@@ -19,3 +19,5 @@ Carey & Walsh Inc., HVAC, Briarcliff Manor NY, est. 1944 (careyandwalsh.com, 914
 **Why:** heating-first market (Keyword Planner: heating searches peak Oct, high through Feb); boiler/furnace repair terms show no bid data in Westchester.
 
 **How to apply:** before building accounts, check open questions in internal-notes.md (budget, existing LSA profile, which phone number, Putnam/Rockland, commercial scope, stale federal tax-credit copy on their site). The unnamed LSA account 8655979348 is a Long Island HVAC business, NOT Carey & Walsh.
+
+**Correction 2026-10-18:** live v5 of GTM-M5DW5ZN is NOT just GA4 + GHL listener. It runs the full set (GA4 G-6J3K34P4W5 page_view/phone_click/email_click/generate_lead, Meta, CallRail, Ads config + Lead), but the `{{Google Tag}}` variable is the placeholder `AW-CCC`, so the Google Ads tags send nowhere. Ryan Heating GTM-KKLGGT6 has the same AW-CCC placeholder (GA4 G-EM7YF7CHZ7).

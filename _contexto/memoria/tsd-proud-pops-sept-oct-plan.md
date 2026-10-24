@@ -49,3 +49,11 @@ YouTube San Antonio in the UI (fu-046), so October lands at about $50k. Recheck 
 must come with a written date to roll it back. Check sum(caps) × 30.4 against the approved month at every monthly rollover.
 
 **2026-10-23 weekly pass (Gui, read-only):** Branded-only week $818.60 / 18 conv, all phone taps, 0 recorded calls (call asset still disapproved, fu-052); brand CPC $8.95 → $10.91 under Max Conv, Target IS + ~$8 cap staged; LSA 3 surfaces $305.53 / 4 leads; no Meta account shared with TSD.
+
+**2026-10-14 22:48 CT — CLIENT CUT TO $25k/MONTH (supersedes the $50k above).** October was already $28,105 (3 accts) by Oct 14,
+so Oct can't hit $25k; Edu chose **Branded only for Oct 15-31 → Oct ≈ $30k**. Paused Search Elec/HVAC/Plumbing + both PMax
+(`branded_only_25k_2026-10-14.py`); both YouTube need the UI (fu-046). **Nov 1 restore staged:** `nov_restore_25k_2026-11-01.py`
+= Search Elec $340, HVAC $210, Plumbing $130, Branded $120 = $800/d (×30.4 = $24.3k + LSA ~$0.6k), PMax + YouTube stay off.
+Command Center fu-053 (Nov 1 restore) + fu-054 (Nov 4 pacing). **How to apply:** before quoting a month-end landing for a budget
+cut, pull month-to-date first; a cut announced mid-month can already be underwater. Nov 1 = Sunday: needs a UI automated rule or
+a Monday run.

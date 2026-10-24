@@ -17,6 +17,7 @@ Se não estiver claro quem está na sessão, olhar `git config user.name` ou per
 - `clients/<slug>/` — tudo de cada cliente (`google-ads-log.md`, planos, relatórios, scripts pontuais)
 - `paid/` — trabalho da divisão: `sops/`, `relatorios/`, `funnels/`, `command-center/`, `own-ads/`, `auditoria-tracking/`, `kpi-framework/`
 - `.claude/skills/google-ads-ratos/` — skill de Google Ads/GTM/GA4 (scripts em `scripts/`, contas em `contas.yaml`)
+- `.claude/skills/call-wins/` — transcrição local de ligações (CallRail + LSA) e call wins log por cliente
 - `.claude/commands/syncar.md` — `/syncar` (commit + pull + push)
 - `tarefas.md` — lista de tarefas corrente
 - `ONBOARDING.md` — setup de uma pessoa nova (credenciais, conectores, dependências)
@@ -45,7 +46,7 @@ Para detalhe profundo de processo, consultar os playbooks em `_contexto/fontes/`
 
 ## Ferramentas
 - **Google Ads / GTM / GA4:** skill `google-ads-ratos`, sempre via `scripts/tsd.sh` (Ads) e `scripts/gtm.sh` (GTM/GA4), perfil `.env.topserv`, MCC `4155514468`. Nunca o `.env` default. No Windows o Python é `python` (não `python3`): os wrappers escolhem sozinhos, e onde logs/memória dizem `python3 ...`, no Windows é `python ...`. Receitas e armadilhas: `_contexto/memoria/topserv-google-ads-location.md`.
-- **CallRail:** `scripts/callrail.py` (lê `.env.callrail` na raiz; só GET).
+- **CallRail:** `scripts/callrail.py` (lê `.env.callrail` na raiz; só GET). Transcrever/analisar ligações (CallRail + LSA) → skill `call-wins` (`.claude/skills/call-wins/`).
 - **Meta, Agency Titan, Slack, Google Drive:** conectores do claude.ai, cada pessoa logada com a própria conta. (Tickets da TSD vivem no Agency Titan, não no ClickUp.)
 
 ## Command Center (https://claude.ai/artifact/1gah5xuCXDADf4kYVYp95q)

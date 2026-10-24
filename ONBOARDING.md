@@ -14,7 +14,7 @@ Sem isso os passos seguintes travam:
 - [ ] Acesso ao **MCC do Google Ads** `4155514468` com o seu e-mail da TSD.
 - [ ] Usuário nos **containers do GTM** e nas **propriedades do GA4** dos clientes que você vai tocar.
 - [ ] Acesso às **contas de anúncio no Meta Business Manager**.
-- [ ] Usuário na **CallRail** (conta da agência `792265907`).
+- [ ] O conteúdo do arquivo **`.env.callrail`** pelo **Bitwarden** (item "CallRail API (.env.callrail)"). É a chave da CallRail do Edu, que enxerga a conta da agência e as contas próprias dos clientes. Usuário seu na CallRail é opcional, só pra abrir a interface.
 - [ ] Usuário no **Agency Titan**.
 - [ ] Os 3 valores da agência pelo **Bitwarden**: `GOOGLE_ADS_DEVELOPER_TOKEN`, `GOOGLE_ADS_CLIENT_ID`, `GOOGLE_ADS_CLIENT_SECRET`.
 - [ ] Acesso de edição ao **Command Center** (artefato no claude.ai).
@@ -110,21 +110,40 @@ Ainda em `scripts/`:
 ./gtm.sh ga4_setup.py test     # lista as contas GA4
 ```
 
-## 8. CallRail
+## 8. CallRail + transcrição de ligações (call wins)
 
-1. Na CallRail: seu perfil → **API Keys** → crie uma chave **sua**.
-2. Na raiz do workspace:
+Usa a **mesma chave da CallRail do Edu**. Ela enxerga a conta da agência (`792265907`) e também as contas próprias dos clientes (Watt's Right, Cool Hand, King's, Hawkins, Lilypad, Neon Monkey, Potomac). Com uma chave sua, você só veria as contas em que foi convidado.
+
+1. Na raiz do workspace:
    ```bash
    cd ~/Documents/GitHub/topserv-workspace
    cp .env.callrail.example .env.callrail
    code .env.callrail
    ```
-   Cole a chave em `CALLRAIL_API_KEY` e salve.
-3. Teste:
+   Abra o item **"CallRail API (.env.callrail)"** no Bitwarden, copie o conteúdo inteiro por cima do que está no arquivo e salve. **Você mesmo cola no arquivo, não mande no chat do Claude.** O arquivo é gitignored, nunca sobe.
+2. Teste a chave:
    ```bash
    cd .claude/skills/google-ads-ratos/scripts
    ./tsd.sh callrail.py /companies.json per_page=5
    ```
+   Tem que listar empresas da CallRail.
+3. Instale o transcritor (roda local, não precisa de chave nenhuma):
+   ```bash
+   cd ~/Documents/GitHub/topserv-workspace
+   python -m pip install -r .claude/skills/call-wins/requirements.txt
+   ```
+   **Mac:** `pip3 install --user -r ...`
+4. Teste o fluxo completo (puxa 2 dias de ligações da King's, transcreve, apaga no fim):
+   ```bash
+   python .claude/skills/call-wins/scripts/pull_calls.py kings-window 2026-10-21 2026-10-22
+   python .claude/skills/call-wins/scripts/transcribe.py _pessoal/call-wins/kings-window
+   rm -rf _pessoal/call-wins/kings-window
+   ```
+   A primeira transcrição baixa o modelo (~500 MB, uma vez só). Deu certo se apareceu `DONE`.
+
+Pronto. No dia a dia é só pedir pro Claude: *"monta o call wins log da Hawkins de 10-16 a 10-22"*. Ele usa a skill `call-wins` (`.claude/skills/call-wins/SKILL.md`), que puxa as ligações, transcreve no seu computador e escreve o log em `clients/<cliente>/`. O LSA que não passa pela CallRail ele puxa direto do Google Ads, com o acesso do passo 6.
+
+**Regras:** áudio e transcrição ficam em `_pessoal/call-wins/` (têm dados pessoais de clientes, nunca sobem). A chave é só pra leitura: nada de criar, editar ou apagar coisa na CallRail pela API.
 
 ## 9. Regra do auto mode (opcional, recomendado)
 
@@ -173,3 +192,6 @@ No auto mode do Claude Code, esta regra deixa o Claude **pausar/ativar** campanh
 | `PERMISSION_DENIED` ou conta não aparece | Rodou sem o `tsd.sh` ou ainda não tem acesso ao MCC | Sempre `./tsd.sh ...`; conferir o acesso ao MCC |
 | `ERRO: perfil nao encontrado` | Falta o `.env.topserv` | Passo 6 |
 | GTM publish dá 403 | Token sem escopo de publicação | Rodar `./gtm.sh gtm_setup.py oauth` de novo |
+| CallRail dá `401` | `.env.callrail` vazio ou colado errado | Passo 8.1: colar de novo o conteúdo do Bitwarden, sem espaço antes/depois da chave |
+| CallRail dá `429` | Limite de requisições da conta | O script espera e tenta de novo sozinho. Se continuar por mais de 1h numa conta só, avisar o Edu |
+| `faster-whisper missing` ou erro de DLL / `ctranslate2` ao transcrever | Transcritor não instalado, ou falta o Visual C++ do Windows | Passo 8.3; se for DLL, instalar o "Microsoft Visual C++ Redistributable" (x64) e reabrir o VS Code |

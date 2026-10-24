@@ -27,3 +27,9 @@ Related: [[tsd-cs-air]], [[tsd-proud-pops-tracking]], [[tsd-integrate-comfort]].
 **10-10 map of active CallRail companies → clients** lives in `topserv-workspace/paid/funnels/clients.json` (account + company ids for 11 clients).
 
 **Rate limit (10-10):** after a 122-company tracker sweep + repeated funnel --all runs, the TopServ Digital Clients account (ICS, Spencer, C&S, All Seasons, Napps) returned HTTP 429 for 1h+ while client-owned accounts (Watt's Right, Cool Hand) kept working. Looks like a per-account cap. Avoid full sweeps; cache tracker lists; refresh one client at a time.
+
+**10-22 all-clients number list** (Ryan asked, for Agency Titan profiles): `paid/callrail-numbers/` (pull_trackers.py → trackers_raw.json → build_sheet.py → xlsx). Live Wire's account no longer appears in /v3/a.json. OnTime Service Pros (ACC019ce325bf31714684e10256ccd739c0) returned 429 for 80+ min straight while other accounts worked fine, so it's probably blocked or cancelled, not a normal rate limit (On Time ended 10-16 per audit sheet).
+
+**10-23 gotcha:** `callrail.py` urlencodes params, so commas in `fields=` become %2C and CallRail answers HTTP 400 (looks like a new block right after a 429). Use `paid/weekly-7day/callrail_calls_pull.py` (builds the URL by hand, pages through, writes JSON). For recordings + transcription use the `call-wins` skill (packaged 10-23; `pip install -r .claude/skills/call-wins/requirements.txt`, model small.en cached in ~/.cache/huggingface).
+
+**10-23: Gui uses Edu's key** (shared via Bitwarden item "CallRail API (.env.callrail)", ONBOARDING step 8), so CallRail API activity from either of them shows as Edu.

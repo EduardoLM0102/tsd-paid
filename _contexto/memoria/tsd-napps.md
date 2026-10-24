@@ -1,6 +1,6 @@
 ---
 name: tsd-napps
-description: "Napps Cooling, Heating & Plumbing (Longview TX): Google 9509605037, LSA 9239407401, Meta 438790276573563; 6-mo review 09-25; client wants HVAC/plumbing EQUAL since 09-08"
+description: "Napps Cooling, Heating & Plumbing (Longview TX): Google 9509605037, LSA 9239407401, Meta 438790276573563; 6-mo review 09-25; split = 65% HVAC / 35% plumbing from 2026-11-01 (was 50/50 since 09-08)"
 metadata:
   node_type: memory
   type: project
@@ -24,8 +24,14 @@ Napps Cooling, Heating & Plumbing, Longview TX. Google PPC `9509605037`, LSA `92
 
 **Why:** the investigation's PMax caveat and the report wording both turned out to be wrong, and this client remembers exact request dates.
 
-**How to apply:** before writing Napps copy, check the current HVAC/plumbing split and describe it as equal. Leave `ad_group` fields out of `call_view` queries on accounts that run PMax. Related: [[topserv-client-report-format]], [[tsd-client-message-style]].
+**How to apply:** before writing Napps copy, check the current HVAC/plumbing split: 50/50 through 10-31, then 65% HVAC / 35% plumbing from 11-01. Leave `ad_group` fields out of `call_view` queries on accounts that run PMax. Related: [[topserv-client-report-format]], [[tsd-client-message-style]].
 
 **2026-10-05 weekly pass (AT task closed):** $181 CPL, 6 leads; HVAC/plumbing spend still even ($326/$350). Paused 'new air conditioner' (QS1), negatives store/scratch and dent. Open recs for Edu: Branded avg CPC $51.65 (broad brand kws, uncapped Max Conv) → Target IS with $8-10 cap (fulfils the 6-mo review's 'cost controls'); AC Summer $2,017/1 conv in 30d, still summer AC in Oct → rebuild for heating at $50/d; plumbing competitors (Benjamin Franklin etc.) block-or-keep.
 
 **2026-10-19 (Gui weekly + 14-day, staged only):** PPC $816 / 1 conv, NB $1,345 / 0 in 2 weeks, Branded $58 CPC. **All plumbing ad groups land on the homepage (AC on /schedule-now/) though the site has dedicated plumbing/drain/AC/heating pages** → main 14-day rec. Meta awareness targets only ZIP 75605. LSA $145 / 4 msg leads.
+
+**2026-10-22 NB diagnosis (log has detail):** both non-branded campaigns PAUSED 10-22 ~08:55 by someone outside TSD API (who = open question, don't re-enable until known). Expensive conv drivers: ~$846 of ~$2,960 30d NB spend on competitor names (near-phrase from 'plumber available now', which alone = 77% of Plumbing spend), QS 1–3 with landing page BELOW AVERAGE, Max Conv uncapped with ~no conv signal. PPC CPA Oct 1–20 ≈ $903 (3 CallRail wins, all existing customers). Recs pending Edu: competitor negatives, 'plumber available now' → exact, Max Clicks ~$15 cap, review 46–56s calls, LP experience.
+
+**2026-10-22 night:** the pauses were Edu's (web UI): too expensive, he'll request new landing pages and relaunch NB Heating + Plumbing only on them, with the diagnosis fixes (fu-084).
+
+**2026-10-23 client request (via Edu):** starting 2026-11-01, budget split 65% HVAC / 35% Plumbing, keep until the client says otherwise. Replaces the 9/8 equal split. Follow-up fu-092; fu-084 relaunch uses this ratio.
