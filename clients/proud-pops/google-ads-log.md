@@ -2,6 +2,70 @@
 
 ---
 
+## 2026-10-31 — AT optimization tasks (Gui, via Claude)
+
+Read-only, nothing applied. Extra pull: scratchpad `pp_x1031.py` (call assets, Branded daily, changes, geo, LSA leads, Oct MTD).
+
+**7-Day Google (https://app.agencytitan.com/tasks/instance/d0e2f908-d839-4a82-9f65-39f82bde1132), completed.** Week 10-24..10-30, Branded
+only (last week of the $25k cut): $687.25 / 52 clk / 7 conv / $98.21 CPL / $13.22 CPC / 13.46% CVR (prior $740.20 / 67 / 15 / $49.35 /
+$11.05). All 7 = TSD - Website Call taps; 0 calls, 0 phone impressions; 1 Website lead form 10-24 not counted (not biddable on Branded).
+Terms all brand ('problem solvers' variants $44.28 / 0 conv). IS 84.5% (bl 8.6%, rl 6.9%; prior 66.7%); daily $15.63-$173.78 on $100.
+**Call asset UNCHANGED since 10-27:** only (210) 794-7570 (360709032917, DISAPPROVED) linked on Branded + 6 paused lead campaigns; account-
+level 210-794-7570 (185848871539) DISAPPROVED; approved (210) 225-5767 (428601259336) REMOVED everywhere. Branded LIMITED /
+CALL_EXTENSION_DISAPPROVED. No change_event since 10-16. Oct 1-30 all 3 accts $30,643.64 (lands ~$30.7k). Staged: link 225-5767 + unlink
+794-7570 before 11-01 (fu-052), Website lead biddable on Branded, pause POOR RSAs 808846497511 / 808844736361, Branded Target IS abs-top
+~$8-10 cap, Block F before the restored spend learns on taps. Nov 1 $800/d restore = Edu's (fu-053). KPI Google row `28c94e63`.
+
+**LSA, 7-Day (https://app.agencytitan.com/tasks/instance/9f22518a-eb1a-4ab0-bf99-086dc3a6e103), completed.** 3 sources: in-account $173.30,
+electrician 7261668241 $71.48, HVAC 6621969129 $0 (197 impr) = $244.78 / 4 calls, 0 msgs / 3 charged / $81.59 per charged lead (prior
+$372.14 / 6 / 5 charged / $74.43). Top impr 89.3% (prior 90.7%), impr 608 vs 608. API budget fields $714.29/d x3 (~1.6% used) =
+Underspending, budget not the limit. All 10 leads since 10-17 still ACTIVE/NEW. KPI LSA row `02d92a7c`.
+
+**YouTube, 7-Day (https://app.agencytitan.com/tasks/instance/6401c616-e565-4bbc-a5d8-632926bc87cc), completed.** Both YouTube campaigns
+(24120440530 SA, 24120482524 New Braunfels) still PAUSED since 10-16: $0 / 0 impr both weeks, no ads/placements/conv rows. Stays off in
+the Nov 1 plan (fu-053). All 7 checklist items ticked (nothing to pause/escalate).
+
+**Meta, 7-Day:** N/A, see meta-ads-log.md (KPI Meta row `78d95732`).
+
+---
+
+## 2026-10-27 — AT optimization tasks (Gui, via Claude)
+
+Read-only, nothing applied. Extra pull: scratchpad `pp30_split_1027.py` (period split + call assets) and `pp_lsa_daily_1027.py`.
+
+**30-Day Google (https://app.agencytitan.com/tasks/instance/1fd032c6-7075-4f7f-b381-77bf5eaf7e2e), completed.** 30d 09-27..10-26 PPC
+$35,950.68 / 12,939 clk / 857 conv (prior $60,388.95). **Period 1 (09-27..10-14, full account):** $34,447.14 / 835 conv, 768 (92%) taps;
+Elec Search $10,629 / 18 forms, HVAC Search $6,813 / 3, PMax HVAC $5,365 (99% Display) / 3, PMax Elec $3,816 (84% Display+YT) / 38,
+Plumbing $2,775 / 5, Branded $1,474 / 4 (not biddable), YouTube $3,575 / 0. 59 of 71 forms fired before the 10-07 careers fix (/careers
+145 clk / 50 conv); 10-08..10-14 = 12 forms. **Period 2 (10-15..10-26, Branded only):** $1,503.52 = Branded $1,252.53 / 118 clk / 22 conv
+(all taps) + YouTube $250.99 on 10-15/16; Branded CPC $10.61, IS 74.0% (budget-lost 23.1%), $51-$155/d on $100 budget. 0 calls.
+Findings: 794-7570 call asset still DISAPPROVED and the only one linked; 225-5767 (approved) unlinked (fu-052). RSA performance labels
+all NOT_APPLICABLE (ranked by CTR instead). 3 old Electrical RSAs (809490671193, 809490621054, 809528123698) carry plumbing descriptions;
+old + new RSAs both live (G2b not run). Nonbranded QS avg 4.6, expected CTR below average on 53/55. Out-of-target PPC $2,279.34 (HVAC
+$2,092, PMax Elec $187), all period 1; Canyon Lake $1,981 / 7 conv in-target. HVAC Search sends every ad group to /proud-pops-hvac-services.
+Speed score not available via API. Staged: link 225-5767, G2b cutover, pause 2 POOR Branded RSAs + Services snippet, rewrite low-CTR
+headlines (problem + same-day + upfront price), HVAC ad groups to their own service pages, all before the Nov 1 restore (fu-053).
+Checklist: 8 of 9 ticked (visitor recordings: no access). No KPI row (no 30-day Google keys). Toggles for Gui in the UI.
+
+**LSA, 30-Day (https://app.agencytitan.com/tasks/instance/dc08ea58-52a8-4b24-897c-52c94df1ae60), completed.** 3 sources combined
+(in-account $203.41, 7261668241 $210.45, 6621969129 $321.95) = $735.81 / 13 leads (7 calls, 6 msgs) / 11 charged / $66.89 per charged
+lead, 0 credits, 0 disputes (prior 30 $1,280.80 / 29 / 18 charged). Period 1 $284.59 / 5; period 2 $451.22 / 8 (LSA not in the cut).
+1 BOOKED, 2 DECLINED + 1 CONSUMER_DECLINED (all charged, undisputed), 9 ACTIVE -> booking 7.7% (floor). Impr 1,685 vs 3,327 (-49%),
+top 91.2%, budget fields $714.29/d x3 (~1% used). All 5 HVAC-acct leads tagged clean_ducts_vents; 10-23 in-account charge maps to
+Orlando FL. Staged: dispute review of 3 declined, client to answer msgs + update statuses (AM), job types check, D2 profile review.
+KPI LSA row `16e5089d` (10-23) updated with 30-day keys (true CPL $66.89, credits 0, booking 7.69%, disputes 0/0).
+
+**Meta, 30-Day (https://app.agencytitan.com/tasks/instance/a993237c-01c8-4575-807b-ca1be71c0c4b), completed as N/A.** No Proud Pops
+ad account shared with TSD (all pages checked 10-27). KPI Meta row `d4ef0536` (10-23) updated: reach 0, frequency 0. See meta-ads-log.md.
+
+---
+
+## 2026-10-26 — AT optimization tasks (Gui, via Claude)
+
+**7-Day YouTube (https://app.agencytitan.com/tasks/instance/8ad3367a-3fa9-433d-aa77-fbaf957df09f), read-only, completed.** Both YouTube campaigns PAUSED (08/2026 - YT - VideoViews (San Antonio) 24120440530, 08/2026 - YT - Awareness - New Braunfels 24120482524; budgets $100/d each, paused 10-16 after the 10-14 $25k cut, fu-046). 10-19..10-25: $0, 0 impr. Prior week 10-12..10-16 (5 days): $423.80 + $432.13 = $855.93, views 29,780 + 22,189, view rate 68.4% / 81.5%, watched to 100% 67.4% / 80.9%, 10 clicks, 0 conversions. Placements/ads: no rows this week (nothing served). Tracking: 0 conversions in the prior week too (awareness / video views only, no conversion goal expected). Pacing: $0 vs $0 plan (Branded only to 10-31). Nothing to pause or escalate. YouTube stays off in the Nov 1 restore plan (fu-053). All 7 checklist items ticked (placements / pause / escalate reviewed, not applicable). No notes field on this task.
+
+---
+
 ## 2026-10-23 — Weekly 7-day (Google, LSA, Meta) + 14-day review (Agency Titan tasks, Gui): read-only, everything staged
 
 **Google 10-16..10-22 (PPC, LSA excluded):** $872.43 / 76 clk / 18 conv / $48.47 CPL (prior $12,106.21). Only Branded live since the

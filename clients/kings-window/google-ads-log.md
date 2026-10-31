@@ -151,3 +151,16 @@ Pull: `paid/weekly-7day/weekly_pull.py` (window 10-06..10-12 vs 09-29..10-05), s
 **Meta 483679897962388:** $294.65, 6 leads, $49.11. Lead campaign is ABO ($30+$15 ad sets). **Awareness `TSD_02.26_TOF_AWARENESS_CBO_Creatives` = REACH + frequency CAP 3/7d** (off doctrine) → rebuild as ARL no cap, staged.
 **14-day (10-05..10-18):** $807.76 / 41 conv. Rank is the limit (53% rank-lost); 'glass company near me' QS 3 carries 29/41 conv → improve ad/LP relevance; low-QS glass/shower keywords; remove Branded kw 'king's window repair houston'; outside-target clicks only 7% (Fort Worth, Grapevine). No audiences.
 AT tasks 1a6a8163 / 5f8a5a77 / 567d82cd / cb7050b0 left open for Gui's review.
+
+## 2026-10-26 — AT optimization tasks (Gui, via Claude)
+
+Read-only, nothing changed in Google Ads / LSA. All staged.
+
+**7-day PPC 10-19..10-25:** $354.57, 46 clicks, 12 conv, $29.55 CPL (prior $371.79 / 17 / $21.87). 12 conv = 6 [TSD] Click to call taps, 5 GA4 phone_call, 1 form; call asset 2 calls (44s, 29s), 0 counted. ~6 real leads at ~$56 on NB. NB IS 19.7%, budget-lost 54% (was 12%), rank-lost 26%. Branded $19.44, 91.7% IS. Competitor terms $51.81 / 4 conv (kept open). No account changes since 10-16. KPI Health = Mixed.
+**30-day:** $1,574.66 / 72 conv / $21.87 (prior 30 $1,657.58 / 71). RSA performance labels not returned (all NOT_APPLICABLE); by asset stats best headlines 'Same Day Glass Service', 'Affordable Glass Repair'. Shower LP 1 conv / 20 clicks, shower RSA AVERAGE. 'glass company near me' QS 3 = $1,031.68 / 51 conv. 100% PPC spend in targeted locations.
+**90-day:** $4,837.06 / 161 conv / $30.04. Stalled primaries: ghl_request_estimate last 09-23, phone_link_click last 08-13, 0 for 90d on Phone Call, ghl_contact_us, ghl_schedule_service, Clicks to call, Local actions, Store visits. Branded double counts GA4 phone_call + First Time/Repeat. 12am-6am $456.45 / 7 conv ($65 CPL), Sunday $74.87 CPL. No audiences attached.
+**LSA:** 7d $332.14, 5 charged leads (4 calls, 1 msg), $66.43, top 99.5%, budget $428.57/d → Underspending (demand/schedule-limited, Mon-Fri 8-5). 30d $1,608.91, 23 leads (20 charged), $80.45 per charged lead, 0 credits/disputes, 4 BOOKED / 4 DECLINED / 15 ACTIVE (17.4% floor).
+
+**Staged, not applied:** NB budget raise needs client written OK via AM; taps → secondary (Edu decision); '$99' phrase neg on NB, hold 'kings windows and doors' until client confirms; own ad group for 'glass company near me'; NB ad schedule off 12am-6am; structured snippet + image on Branded, swap weak headlines, rewrite shower descriptions + improve shower LP; tracking task (Gui) for stalled primaries + Branded double count; observation audiences; LSA: dispute 10-07 16:26 + 10-08 14:30 out-of-area charged calls, office to mark lead status, Saturday hours if staffed.
+
+Tasks (all completed): [7-Day Google](https://app.agencytitan.com/tasks/instance/b70c9a91-9ddc-4af8-afbe-a160b0d3e6e9) (KPI d7cbc6aa), [30-Day Google](https://app.agencytitan.com/tasks/instance/b9146e5f-b176-4eb4-ac4d-110d1eaa0648), [90-Day Google](https://app.agencytitan.com/tasks/instance/2d635aa8-0565-43ac-a3be-f44ab51dead2), [7-Day LSA](https://app.agencytitan.com/tasks/instance/72a99537-bbaa-4bac-bae0-0217b747a803) + [30-Day LSA](https://app.agencytitan.com/tasks/instance/c71b6d60-cabd-4bb9-b7a3-6e38991040fa) (KPI LSA 49dbdedf). Meta: see meta-ads-log.md.

@@ -5,6 +5,15 @@ Google Ads, LSA and GTM history lives in `google-ads-log.md` in this folder.
 
 ---
 
+## 2026-10-26 — AT optimization tasks (Gui, via Claude): 7-day + 30-day Meta. Read-only, all staged
+
+**7d 10-19..10-25:** $2,022.63 / 39 leads / $51.86 (prior $1,952.09 / 31 / $62.97). CPM $32.90, CTR 5.85%, freq 1.58. TOF $844.50 / 18 / $46.92 (Broad-10 $40.31 best); MOF $468.28 / 15 / $31.22; BOF $141.17 / 4 / $35.29 (retargeting cheaper than TOF this week, was 2.6-3.3x on 10-19); **FourMode $459.34 / 2 / $229.67, 6 of 7 ad sets 0 leads**; ARL $69.54, reach 6,985, freq 1.84/wk; client boosted post $39.80.
+**30d 09-26..10-25:** lead campaigns $7,640.67 / 151 / $50.60; account incl. ARL + 9 boosted posts ($378.37) $8,321.76 → $55.11. Control = TOF Broad-10 panel video ($39.95, CTR 9.99%). Best angles: panel safety, EV-needs-panel (FourMode EVC ad $25.78). Losers: FPE label, insurance, permit, inspection. Hook/retention: TOF 43.3% / 52.4%, MOF 34.4% / 44.0%, BOF 27.1% / 16.9%, ARL 8.0% / 12.9%; combined 29.6% / 45.28%. ARL lift 3.2% (530 / 16,573), freq 3.49 per 30d (~0.8x/week vs 3x doctrine).
+**Staged:** pause 6 zero-lead FourMode ad sets (confirm ownership, Clay Manus build); ARL needs budget or tighter audience for 3x/week; new 15s ARL cut opening with the panel hook; EV-panel DCT test ad set in TOF; Advantage+ on MOF/BOF still Edu's call; MOF/BOF/FourMode are ABO (doctrine CBO).
+KPI - Meta row 2026-10-26 = 79ccefe2 (weekly + 30-day keys). Tasks completed: https://app.agencytitan.com/tasks/instance/08863bf8-3b12-4a09-a2fa-4801a78cc935 (7-day), https://app.agencytitan.com/tasks/instance/1727e344-64f7-4641-bb39-9580ff04bcc1 (30-day).
+
+---
+
 ## 2026-10-12 — Client retargeting report, Oct 2 to Oct 8 (MOF + BOF)
 
 **Scope:** read-only live pull via Meta MCP + activity log. No account changes.

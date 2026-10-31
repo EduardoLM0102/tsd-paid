@@ -81,6 +81,42 @@ Conta 1854100356 nunca tinha sido checada (sem pasta, sem task 7-day no AT, 0 mu
 - [x] **(10-14 aplicado; recheck ~10-21, fu-050) Hawkins:** aprovar PMax $18→$23 / NB $75→$70 + correção da marca (negativa 'hawkins' na NB + Branded em Manual CPC ~$5). fu-044.
 - [ ] **Resto (fu-045):** Lilypad $3/d NB→Branded; Napps (Branded com teto, AC Summer → aquecimento, negativas); C&S negativas 'airlines'/'car'; Spencer Meta rebuild ARL/CBO.
 
+## Tasks AT — rodada de 2026-10-26 (Gui; 48 de 48 completas: 7/14/30/90-Day Google, 7/30-Day Meta, 7/30-Day LSA, 7-Day YouTube; detalhe e recs staged no log de cada cliente, entrada 10-26)
+Command Center NÃO atualizado: a conta do Gui não acessa o banco do artefato do Edu ("no such artifact or no access"). Follow-ups ficam aqui até o Edu lançar lá ou dar acesso.
+- [ ] **King's Meta, confirmar entrega (10-27):** a campanha de lead ficou escura de 10-17 a 10-26 por um **bug da Meta** na criação do anúncio DCT (`GlassReplace_Ads1,2,3_Dynamic_callform_FO`, 120254214546330721): "Unknown Error When Creating Ad", issue code 2465018, travado em "Update Required" sem erro de setup. Gui reenviou em 10-26 17:43 → "Pending Process", mas às 17:51 voltou pra WITH_ISSUES com o mesmo erro (checado 10-27: 0 impressões). **Reenviar não resolve:** criar um anúncio NOVO no ad set DCT (e apagar o quebrado) ou religar o ad set antigo do GlassReplace ($26 CPL) como ponte.
+- [ ] **URGENTE Zen Air (10-27):** o Branded tem lead form asset 342506189374 ENABLED com nome/URL da **Nick's** (nicksac.com). Remover (go do Edu/Gui) e checar se a Nick's tem o inverso. Forms do site (Submit lead form - web + ghl_contact_us) zerados desde 09-15: teste de form nas 2 LPs novas.
+- [ ] **Zen Air Meta:** ~$6,5k / 30d gasto vs $2k/mês aprovado (AT 3f291790, só awareness); não achei aprovação da campanha de lead. Confirmar com o AM.
+- [ ] **Hawkins (até o recheck de 10-29, fu-080):** copy de janela/porta ainda no ar (descrição do Branded, sitelinks Window Replacement / Doors / Doors & More, headline do PMax "Window Replacement"). Typo "Sliding". NB com 0 lead verificado desde o reset.
+- [ ] **Napps:** nenhuma conversão de form desde 08-25 (GHL Form Fill nunca registrou) mesmo com o teste do Edu de 10-21. Mensagens de LSA de 10-14 (uma de vazamento de gás) só receberam o auto-reply. Duplicata de lead de septic de 10-14 cobrada 2x → disputar.
+- [ ] **Watt's Right (decisão do Edu):** PMax foi pra YouTube/Display comprando taps (10-21..10-25: só $47,75 de $437,50 no Search; 50 de 53 conv = taps; 5 leads reais). Taps → secondary? NB travado pelo tCPA de $80 (~$62/d de $105, IS perdido por rank 41%→61%), staged tCPA ~$95-100. KPI 10-26 gravado SEM taps (22 leads / $65,24), diferente das linhas anteriores: decidir o padrão.
+- [ ] **Mission Accomplished LSA:** 6 leads Declined cobrados sem disputa (09-28, 10-01, 10-09, 10-20 x2, 10-21). Disputar via AM, começando pelos mais antigos (a janela de disputa é curta). Meta: Kingman (raio de 40 km) fora da lista de área? Location type inclui "recent".
+- [ ] **King's LSA (até ~11-05):** disputar as chamadas fora da área de 10-07 (Golden Valley MN) e 10-08 (Fort Myers FL).
+- [ ] **All Seasons:** 2 mensagens de LSA (10-12, 10-14) ainda NEW sem resposta → AM. LSA bateu o teto de outubro em 10-19 (não estava escuro desde 10-15). Volta 11-01.
+- [ ] **Spencer (fu-073 em 10-27):** Target IS com teto de $8 sufocou o Branded (10-20..10-25: $10,64 / 3 cliques / 0 calls). Uploads First Time/Repeat do CallRail parados desde 10-14; a chamada de 10-19 foi pra ação "Phone Call" (fu-031).
+- [ ] **C&S:** Edu ligou o Search de heating 24383234148 em 10-26 08:08 ($30/d, teto $12) → fu-090 pode fechar; primeira leitura 11-02.
+- [ ] **Tasks de tracking a criar (Gui):** Watt's Right (Form Submission [Landing Page] + Directions sem nada em 90d), King's (ghl_request_estimate parado desde 09-23, chamadas contadas 2x no Branded), Zen Air, Napps, Spencer, C&S, Lilypad (nunca teve teste ponta a ponta).
+- [ ] **Toggles pra marcar na UI (a API não grava):** principais: 30-Day Google "Landing Page Issues Found" (King's, Napps, Zen, Watt's, Lilypad, All Seasons), 90-Day "Stalled Conversions Found" (King's, Napps, Zen, Watt's, Spencer, C&S), 30-Day Meta "Awareness Reviewed" + "Hook-Rate & Retention Checked".
+
+## Tasks AT — rodada de 2026-10-27 (Gui; 19 de 19 completas: All Seasons 4, C&S 6, Spencer 6, Proud Pops 3; detalhe e recs staged no log de cada cliente, entrada 10-27)
+- [ ] **C&S (até ~10-29):** decidir disputa do lead LSA DECLINED cobrado de 09-29 (lead 342890473); AM fazer responder a mensagem LSA de 10-21. Total diário caiu ~$238 → ~$133 depois das pausas de 10-23 e o AM não sabe (fu-088). Heating Search: primeira leitura 11-02.
+- [ ] **Spencer:** uploads CallRail parados desde 10-14 (First Time/Repeat); refazer checagem 10-28 (CallRail 429 hoje) + criar task de tracking. Teto $8 do Branded derrubou o gasto 85% e 0 calls na semana: staged subir pra ~$12. LSA: disputar 4 DECLINED cobrados, responder 2 mensagens (10-19, 10-25). Queda de 65% do LSA em 30d = menos leads (fim do pico de AC), não budget nem rank.
+- [ ] **Proud Pops (antes do restore de 11-01, fu-053):** linkar o call asset aprovado (210) 225-5767 (o 794-7570 reprovado é o único linkado → 0 calls; Edu confirma o número, fu-052), cutover G2b, HVAC ad groups pra páginas próprias. LSA: 3 DECLINED cobrados sem disputa (10-03, 10-05, 10-08). Meta: nenhuma conta da Proud Pops compartilhada com a TSD (AM).
+- [ ] **All Seasons:** 4 nomes de concorrente passaram pelas negativas de 10-22 (universe home services, flynn aire, sweezy's, argo plumbing; staged); [TSD] Lead Form com 0 desde 10-08 (testar form); mensagem LSA de 10-14 ainda sem resposta; LSA volta 11-01 (checar 11-02). CallRail fu-089 em 10-29.
+- [ ] **C&S e Proud Pops sem conta Meta** acessível pela TSD: as tasks de Meta foram fechadas como N/A. Confirmar com AM se Meta está no escopo.
+- [ ] **Toggles pra marcar na UI:**
+  - All Seasons 14-Day: High-CPC Keywords Reviewed + Keyword Warnings Reviewed = Yes.
+  - C&S 30-Day Google: Landing Page Issues Found + Blockers to Escalate = Yes.
+  - Spencer 30-Day Google: Blockers = Yes. Spencer 7-Day Google: Blockers = Yes. Spencer 30-Day Meta: Awareness Reviewed, Hook-Rate & Retention Checked, Winning Post IDs Found, Older Ads Paused = Yes.
+  - Proud Pops 30-Day Google: Landing Page Issues Found + Blockers = Yes.
+
+## Tasks AT — rodada de 2026-10-31 (Gui; 8 de 8 completas: Zen Air 7-Day Google/LSA/Meta, Proud Pops 7-Day Google/LSA/Meta/YouTube, Hawkins 90-Day Google; detalhe e recs staged no log de cada cliente, entrada 10-31)
+- [ ] **Proud Pops (URGENTE, antes do restore de 11-01):** call asset sem mudança desde 10-27: só o 794-7570 REPROVADO está linkado (Branded LIMITED / CALL_EXTENSION_DISAPPROVED); o aprovado (210) 225-5767 está REMOVED. Linkar antes do restore senão as campanhas voltam sem número (fu-052/053, Edu). Branded 7d $687 / 7 conv, todas taps, 0 calls. Meta: ainda nenhuma conta compartilhada (N/A de novo, AM). YouTube pausado desde 10-16.
+- [ ] **Zen Air:** NB PAUSADO em 10-29 15:26 pela UI com o login compartilhado access@topservdigital.com, sem log de quem/por quê (Gui?). NB 1ª semana nas LPs novas: $569 / 0 conv, termos de pesquisa/DIY, QS 1, $81 em Hall County (confirmar área). Lead form do Nick's não está mais no Branded (resolvido). Meta $1.456/7d, 107 leads $13,61, frequência 2,58 subindo (1 anúncio só desde 09-22); awareness ainda REACH com cap. Ver geo dos leads no export (11-03).
+- [ ] **Hawkins:** Edu mexeu em 10-28 (Branded PAUSADO, 13 negs NB, 2 kws pausadas, tracking params) e 10-30 (ad group Vinyl pausado + 13 negs de concorrente). NB 10-23..10-30: $455 / 0 conv. Branded pausado + 'hawkins' negativado no NB = busca de marca sem anúncio pago: Edu confirmar. 11 ações primárias com 0 em 90d + upload CallRail 'First Time Phone Call' parado desde 10-11 + form web só em All conv → criar task de tracking. Recheck 11-04.
+- [ ] **Toggles pra marcar na UI:**
+  - Proud Pops 7-Day Google: Policy Issues Found + Blockers to Escalate = Yes. Proud Pops 7-Day Meta: Blockers to Escalate = Yes.
+  - Hawkins 90-Day: Stalled Conversions Found = Yes (Schedule/Demographics/Audiences/Locations ficam No).
+
 ## Milestones
 - [ ] **Auditoria de tracking/atribuição** em todo o book (semanas 1–2) → `paid/auditoria-tracking/`
 - [ ] **KPI framework** da divisão + metas + timeline pra aprovação do Ryan (semanas 2–4, primeiro milestone) → `paid/kpi-framework/`

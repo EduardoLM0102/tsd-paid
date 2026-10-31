@@ -465,3 +465,20 @@ Pull: `paid/weekly-7day/weekly_pull.py` (window 10-06..10-12 vs 09-29..10-05), s
 **Meta 438790276573563:** awareness only $34.62, ARL no cap, ad set = ZIP 75605 only (reach 3,355) → propose expanding geo at same budget.
 **14-day (10-05..10-18):** biggest finding = **all plumbing ad groups land on the homepage**, AC on /schedule-now/, while the site has /plumbing/emergency/, /plumbing/leak-detection/, /plumbing/slab-leaks/, /sewer-drain/clogged-drains/, /air-conditioning/repair/, /heating/ (checked 10-19) → point each ad group to its page (likely cause of QS 1–3). Plus the 3-week-old staged items: Branded → Target IS + $8–10 cap; AC Summer → heating; pause 'plumber available now' + 'hvac maintenance' until LPs fixed.
 AT tasks eeab3f31 / c2ba367c / 5511cbb3 / 8e9a8687 left open for Gui's review.
+
+## 2026-10-26 — AT optimization tasks (Gui, via Claude)
+
+Read-only on all accounts; everything below is staged. 7 AT tasks completed, notes in the task fields + KPI rows (Google 9622f9d5, Meta 2d469ad9, LSA 0b628d2f).
+
+**7-day Google (10-19..10-25):** $510.05 / 19 clicks / 1 conv (CPL $510.05, CPC $26.84; prior $816.13 / 1). Branded $35.40 / 5 clicks / 1 conv, CPC $7.08 (prior $58.51) after the 10-20 Target IS 95% abs top + $10 cap, IS 95.2%, still Learning. NB $474.65 / 0 conv on 10-19..10-21, then paused by Edu 10-22. The 1 conv = 213s Branded call 10-23; 2 NB Plumbing calls 7s/3s. Competitor terms $162 (holt plumbing, wood air conditioning). KPI lead quality Mixed.
+**30-day Google (09-26..10-25):** $3,627.92 / 12.98 conv / CPL $279.45 (prior 30d $4,734.45 / 24.01 / $197.22). RSA asset labels all NOT_APPLICABLE (no best/worst). NB LP experience BELOW AVERAGE on most keywords, QS 1-3; /schedule-now/ $1,179 / 0 conv, homepage $843 / 1. NB Heating has no campaign-level sitelinks. NB geo: Tyler $604 + Henderson County towns $543 = 44% of NB spend, 0 conv.
+**90-day Google (07-28..10-25):** $11,726.75 / 56.98 conv / CPL $205.79. TSD - Lead form 0 since 08-25, GHL Form Fill 0 in 90d (stalled, tracking test staged for Gui); Click to call last 10-05. Tyler + Henderson County $3,223 / 1 conv in 90d. No ad schedule; 00-05h $365 / 0 conv, Sun $964 / 2. Age 18-34 $592 / 0. No audiences attached.
+**LSA 9239407401:** 7d $461.65, 7 charged (6 calls, 1 msg), $65.95 CPL, 43% of 7 x $154.29 = Underspending, top 92.89%. 30d $1,132.67, 34 leads / 18 charged, $62.93, 0 disputes, 17 booked (50%); 19 of 34 leads under bathroom remodeling (mostly existing customers). 10-14 10:26 duplicate septic message charged, not disputed.
+- LSA staged: dispute the 10-14 10:26 duplicate; ask AM if bathroom remodeling category should stay on.
+
+**Staged, not applied:**
+- NB stays paused until Edu's new LPs (fu-084). On relaunch: 65/35 HVAC/plumbing from 11-01 (fu-092), competitor phrase negatives (holt, wood air conditioning, benjamin franklin, a c pros, the mink), 'plumber available now' to exact/pause, Max Clicks with CPC cap, decide Tyler/Henderson County with the AM, heating sitelinks on the Heating campaign, Heating Maintenance RSA (POOR) fix, NB schedule ~6am-9pm, observation audiences.
+- Tracking task for forms (test submit with gclid -> TSD - Lead form; GHL upload).
+- Branded: no change; recheck 10-27.
+
+Tasks: [7d Google](https://app.agencytitan.com/tasks/instance/ddc33400-a23c-47b3-871b-05d7abcc4981) · [30d Google](https://app.agencytitan.com/tasks/instance/dc942476-b624-43d9-adba-9698042aa974) · [90d Google](https://app.agencytitan.com/tasks/instance/c5d38c0c-80ff-4076-8f19-a5a0534c41cd) · [7d LSA](https://app.agencytitan.com/tasks/instance/d3ecdf40-d9cf-4f45-ada1-83212681972b) · [30d LSA](https://app.agencytitan.com/tasks/instance/0180df26-e2cb-4542-a328-5e70a37156aa). Meta in meta-ads-log.md.

@@ -53,3 +53,7 @@ All Seasons AC — HVAC (residential cooling/heating, Mitsubishi/Daikin ductless
 **2026-10-23 CallRail post-fix (10-16..10-22):** 5 ad calls: 2 booked (incl. NEW commercial RTU replacement, Woodbury), 2 wrong company (Long Island Green Team, Cool Solutions, both now negatives), 1 no contact. Next read fu-089 ~10-29.
 
 **2026-10-23 APPLIED:** Nonbranded 23813282398 PAUSED, LeadGen $14 → $22 (total still $46). fu-056 closed (wrong-company calls = our ads on competitor searches, not a mis-listing). Edu talks to Angela about the budget tier.
+
+**2026-10-26 (Gui AT 30-day run):** CORRECTION: LSA was not dark from 10-15; it spent $181.94 on 10-19 and hit the October cap, $0 since 10-20, back 11-01. 2 LSA message leads (10-12, 10-14) still NEW/unanswered → AM. Google 30d 58% of conv = taps; MiniSplit still buys competitor terms (253 negs vs 8,755 on LeadGen), staged copy-over.
+
+**2026-10-27 (Gui AT run, 7d/14d Google, LSA, Meta):** 7d $290 / 6 conv (3 real 60s+ calls, 3 taps), competitor names still 34.5% of spend (universe home services, flynn aire, sweezy's, argo plumbing slipped past 10-22 negs, staged); [TSD] Lead Form 0 since 10-08; LSA $0 (Oct cap), 10-14 message still unanswered.

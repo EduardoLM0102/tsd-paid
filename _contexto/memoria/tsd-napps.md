@@ -35,3 +35,5 @@ Napps Cooling, Heating & Plumbing, Longview TX. Google PPC `9509605037`, LSA `92
 **2026-10-22 night:** the pauses were Edu's (web UI): too expensive, he'll request new landing pages and relaunch NB Heating + Plumbing only on them, with the diagnosis fixes (fu-084).
 
 **2026-10-23 client request (via Edu):** starting 2026-11-01, budget split 65% HVAC / 35% Plumbing, keep until the client says otherwise. Replaces the 9/8 equal split. Follow-up fu-092; fu-084 relaunch uses this ratio.
+
+**2026-10-26 (Gui AT run):** form conversions 0 since 08-25 (GHL Form Fill never recorded) despite Edu's 10-21 test. LSA 10-14 messages (one gas leak) only got the auto-reply; duplicate septic message lead charged 2x, dispute. Tyler/Henderson County took 44% of NB spend 30d with 0 conv (ask AM if served).

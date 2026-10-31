@@ -21,3 +21,5 @@ Client FB report (09-29): `clients/mission-accomplished/Mission Accomplished - F
 **How to apply:** don't relaunch lead gen or call it live until a joint test lead passes form → GHL → Hatch email with the phone showing (GHL gate in the workspace CLAUDE.md). When it does relaunch, lead with the $125/mo offer. Full detail is in the client's `meta-ads-log.md`. Related: [[tsd-client-report-plain-design]], [[topserv-client-report-format]].
 
 **2026-10-19 (Gui):** LSA account = **4904262993** (separate). LSA had 0 leads / $0 on 10-12..10-18 with 189 impr (prev week 5 leads) → AM heads-up suggested. Meta awareness $206/wk, freq 1.78 (under 3x). PPC still fully paused.
+
+**2026-10-26 (Gui AT run):** LSA 4904262993 30d $988 / 15 leads / 6 booked; 6 charged DECLINED leads never disputed (09-28, 10-01, 10-09, 10-20 x2, 10-21), dispute via AM oldest first. Meta awareness: Advantage+ audience OFF, location type includes 'recent', Kingman 40 km radius maybe out of area, freq <3x/wk. PPC still off; client (Brian) uploaded 5 images to the Ads library 10-22.

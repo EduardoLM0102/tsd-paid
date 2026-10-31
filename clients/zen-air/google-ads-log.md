@@ -747,3 +747,40 @@ Changes: Edu set AI Max/asset automation off on legacy campaigns 10-16 (API); ed
 **LSA 3740502923:** $0, 52 impr, 100% top / 89% abs top; lead report 5 phone leads (1 BOOKED, 4 DECLINED), none charged. Underspending (reach-limited).
 **Changed:** nothing. Still owed: Nonbranded phrase/exact rebuild (heating first) + AM ticket for the 10-08 pause.
 AT tasks `54ce2840` (Google, KPI `7e79b7c1`), `7f983d3f` (LSA, KPI `1cd8910d`), completed.
+
+## 2026-10-26 — AT optimization tasks (Gui, via Claude): 30-day + 90-day Google Search, 30-day LSA. Read-only, changes staged
+
+**PPC 30d (09-26..10-25, LSA excluded):** $2,377.66, 177 clicks, 10 conv ($237.77), $13.43 CPC (prev 30: $4,366.21 / 19 conv). Branded $274.72 / 5 conv (2 real ad calls 10-16, 3 taps). Nonbranded old broad ad group $1,784.59 (09-26..10-07); relaunch since 10-23: $318.35, 27 clicks, $11.79 CPC, 1 tap, IS 23% (41% budget-lost). 3 days only, not judged.
+**90d:** $12,332.06 (Aug junk conversions inflate 90d counts). Bidding = Automated (Target IS $8 / Max Clicks $18).
+
+**Findings:**
+- URGENT: **Branded has an ENABLED lead form asset 342506189374 built for Nick's Heating & Cooling** (business name "Nick's Heating & Cooling", nicksac.com URL + privacy policy). 257 impr / 2 clicks / 0 submits in 30d. Staged: remove.
+- **'Submit lead form - web' last fired 2026-09-15** (0 in 40 days, incl. 27 clicks on the new LPs); ghl_contact_us also stopped 09-15; ghl_rating_form/city_page/schedule_services/request_estimate, GA4 phone_link_click, book_now_link_click, Lead form - Submit = 0 in 90d. 7 of 10 counted conv in 30d are taps. Staged: tracking test task (Gui to create), dead actions → secondary.
+- Call number mismatch: ads use account call asset 678-606-8817, new LPs show 678-853-7440 (Branded's campaign call asset with that number is PAUSED). Open since 09-08.
+- Nonbranded has no own sitelinks; inherits 9 account sitelinks to old city pages (/hvac-repair-in-suwanee-ga/ $175.62, /about-us/contact-us/ $150.16 in 30d).
+- Geo: 5 x 7-mile circles, PRESENCE, 100% Georgia in 30d. DeKalb cities (Chamblee, Doraville, Tucker, Brookhaven) $261 / 30d, $1,249 / 90d, outside the service area.
+- Low QS on new kws (furnace installation 1, ac service 1, several at 3, LP experience below); RSA labels all NOT_APPLICABLE.
+- 60s+ ad calls in 90d (22) all between 6:00-17:59; 30d spend 20:00-05:59 $310, 0 conv. No audiences attached.
+- Open Google recs: Search Partners x2, Display expansion, Max Conv, lead form asset, RSA. Staged: dismiss.
+
+**Staged, not applied:** remove the Nick's lead form asset; form test on both new LPs; one call number on ads + pages; Nonbranded sitelinks to the new LPs; exclude the 4 DeKalb cities on Nonbranded; headlines for installation/service terms + swap weak Branded assets; verify RSA claims (NATE, 24/7, BBB A+, since 2016) on the site; NB schedule 6:00-20:00 after ~11-09; observation audiences; dismiss recs.
+
+**LSA 3740502923, 30d:** $62.40, 12 phone leads, 0 message, 1 charged (10-07 booked), 0 disputes/credits. Booked 6/12 (50%); 10-19 and 10-22 are DECLINED in LSA but sounded booked on the 10-23 transcripts. 249 impr, 100% top / 92.5% abs top. Budget field $642.86/d, reach-limited. Staged: add Flowery Branch / Hoschton / Peachtree Corners, Sunday/evening hours (ask Eddie), LSA support on the $12 target (fu-051), Zen to fix statuses; access audit still open.
+
+AT tasks completed: 30-day Google https://app.agencytitan.com/tasks/instance/f3678bdc-12fd-4e41-97e1-7b3d7b1b5183, 90-day Google https://app.agencytitan.com/tasks/instance/fffa5fc8-ab9a-4971-aca0-78f2867481d8, 30-day LSA https://app.agencytitan.com/tasks/instance/cae894d1-2bfe-404b-bd35-0ae96d40574c. KPI - LSA `1cd8910d` (10-23 row) updated with 30-day keys.
+
+## 2026-10-31 — AT optimization tasks (Gui, via Claude)
+
+7-day Google Search + 7-day LSA. Read-only, nothing changed in the accounts.
+
+**PPC (10-24..10-30 vs 10-17..10-23, LSA excluded):** $607.47, 53 clicks, **0 conversions** (all_conversions 0 too, 0 call_view calls), $11.46 CPC (prior $148.46 / 2 conv). KPI Health = Poor.
+- **NB first full week on the new LPs:** $568.74, 47 clicks, $12.10 CPC, 0 conv / 0 taps / 0 ad calls. Since relaunch 10-23..10-29: $673.45, 55 clicks, 1 tap. IS 21% (58% rank-lost, 21% budget-lost). Heating LP 21 clicks, AC LP 14; 12 clicks came through the inherited account sitelinks.
+- ⚠ **NB PAUSED 10-29 15:26 via the UI by the shared login access@topservdigital.com.** Nothing in the logs says who did it or why. Confirm before anyone relaunches it.
+- Visible NB terms ($96 of $568) are research/DIY/product terms (gas fireplace repair, mini split cost, wall mounted AC, txv valve, best hvac units, brand/price furnace terms). The spend comes mostly from the keywords heating service ($118.76) and new ac unit ($77.87); QS 1 on ac service and furnace installation.
+- Geo: DeKalb (Doraville/Dunwoody/Chamblee) $51.42; Hall Co (Oakwood/Gainesville/Flowery Branch) $81.09, check it against the service area. Spend from 20:00 to 05:59 was $150.01 (26% of NB).
+- Branded: $38.73, 6 clicks, 95% IS, healthy. **The Nick's lead form asset is gone from Branded** (Edu removed a campaign asset via API on 10-26; on 10-31 no LEAD_FORM asset is linked).
+- The 0 on forms can't be trusted while web form tracking stays dead since 09-15. Gui is investigating (since 10-26).
+**Staged, not applied:** keep NB paused until LP form + call tracking is verified (Edu decides the relaunch); NB negatives (fireplace, mini split, wall mounted, window unit, txv, btu, mobile home, furnace brands, "what makes", "best hvac"; cost/price = Edu decision); tighten or pause heating service / new ac unit; schedule 6:00-20:00 + DeKalb exclusion; NB sitelinks to the new LPs; one call number; AM heads-up on the 10-29 pause; clean up the ENDED trial campaigns in the UI.
+- **LSA 3740502923:** $62.40, 1 phone lead (10-28, charged, ACTIVE), 0 messages, $62.40 CPL (prior $0 / 4 uncharged leads: 1 booked, 3 declined). 74 impr, 100% top / 96.6% abs top. Underspending (the API budget of $642.86/d isn't the limiter, reach is). Oct 1-30: $124.80, 13 leads, 2 charged.
+
+AT tasks completed: Google https://app.agencytitan.com/tasks/instance/ad08262c-5da0-426a-ac74-2f52472b706c (KPI `f16cc8c4`), LSA https://app.agencytitan.com/tasks/instance/913c1bce-b039-4bd8-9183-9ceefab6a9b5 (KPI `f22b6c10`).

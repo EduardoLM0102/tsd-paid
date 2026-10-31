@@ -63,3 +63,7 @@ Smart Campaign TSD_03.13_Pmax_Evergreen went ~100% Display ($585/wk, 2,689 click
 **2026-10-23 APPLIED:** PMax 24336822932 + Cooling NB 23828098448 PAUSED (Edu). Live: Branded ($80 budget, spends ~$27/d, rank-limited) + LSA ($23, spends ~$9/d, impression-limited). Freed ~$135/d has no home yet: heating Search build / LSA settings / tell AM (fu-088).
 
 **2026-10-23 heating build:** TSD_10.23_Search_Nonbranded_Heating 24383234148 built PAUSED ($30/d, Max Clicks $12 cap, 2 ad groups → heating repair/replacement pages, 73 curated negs + Competitos May). Gotcha: the Cooling NB negative list (708) contains furnace/heat/replacement/burner, never copy it to a heating campaign. Enable after approval on Edu go (fu-090).
+
+**2026-10-26:** Edu ENABLED heating Search 24383234148 at 08:08 ($30/d, $12 CPC cap, ads approved), fu-090 can close; first read 11-02. Gui 90-day: 72% of 90d conv were taps; Branded RSA 800192030388 converts 3.9% vs 15.1%.
+
+**2026-10-27 (Gui AT run, 6 tasks):** 7d PPC $617.95 / 7 conv (6 taps, 1 real Branded call); 30d 72 of 74 conv = taps, 0 forms tracked. Live total ~$133/d after 10-23 pauses, Branded spends ~$29 of $80 → freed budget unhomed (fu-088). LSA 30d $283 / 10 leads, impr -61%, only 41% of budget used. Heating Search live 1 day, first read 11-02. No C&S Meta ad account in TSD's Meta access (Meta tasks N/A).

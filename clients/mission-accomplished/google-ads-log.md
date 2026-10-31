@@ -229,3 +229,9 @@ PPC 8634274092: still 100% paused, $0 (Edu touched AI Max/asset settings on the 
 **LSA 4904262993:** $0, 0 leads 10-12..10-18 despite 189 impr / 97% top (prev week 5 leads, $340.52) → flagged for AM heads-up, recheck next week.
 **Meta 79203382:** awareness only, $206.49, reach 22,800, freq 1.78 (under 3x), ARL no cap = to standard. Lead gen still paused (GHL→Hatch gate).
 AT tasks 2fede09e / d3bdc8d9 / b2ec4bf7 / eb99461d left open for Gui's review.
+
+## 2026-10-26 — AT optimization tasks (Gui, via Claude)
+
+**PPC 8634274092:** still 100% off. $0 / 0 impr 10-19..10-25, 09-26..10-25 and 07-28..10-25 (prior 90d 04-29..07-27 = $10,522.88). All 82 non-removed campaigns PAUSED. Changes: 10-16 Edu AI Max/asset automation off; **10-22 the client (brianchristenson2022@gmail.com) uploaded 5 image assets** to the library, not linked to any campaign/ad group/asset group. 7/30/90-day tasks = N/A. KPI - Google Search row 1db64b1e (Unclear, N/A note). Tasks: https://app.agencytitan.com/tasks/instance/0be2f526-3e07-4e7b-a062-d11c75cdda8e · https://app.agencytitan.com/tasks/instance/551f0e49-e8c5-4cb8-a623-584af88902d5 · https://app.agencytitan.com/tasks/instance/bf508b77-017e-4890-9903-a010471fd179
+- **LSA 4904262993:** 7d $252.77, 4 charged leads (3 calls, 1 msg), CPL $63.19, top 98.61% (prior week $0 / 0 leads). 30d $988.11, 15 leads (13 calls / 2 msg, 14 charged), CPL $70.58, 6 Booked (40%), 8 Declined (7 charged, only 1 disputed, PENDING), 0 credited. Budget $1,142.86/day in API (≈$8k/wk), spend ≈3% of cap = not budget-limited. Staged: AM/client review the 6 charged Declined leads w/o dispute (09-28, 10-01, 10-09, 10-20 x2, 10-21) for dispute, oldest first. KPI - LSA row 9f098177 (weekly + 30d keys). Tasks: https://app.agencytitan.com/tasks/instance/a6968352-3920-4010-9413-f98bcdd2f213 · https://app.agencytitan.com/tasks/instance/40bc253b-a471-4608-8bb1-323f7746256b
+- Read-only, no account changes. All 5 stages completed.

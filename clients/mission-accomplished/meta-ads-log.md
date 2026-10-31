@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-10-26 — AT optimization tasks (Gui, via Claude)
+
+**Scope:** read-only (Meta MCP), no account changes. 7-Day + 30-Day Meta tasks completed.
+
+- **7d 10-19..10-25:** awareness only, ARL campaign ($30/d) $210.96 (prior $206.49), reach 21,602, freq 1.85 (prior 1.78), CPM $5.29, CTR 0.29%, 960 est. recallers ($0.22). 0 leads.
+- **30d 09-26..10-25:** $901.06, 175,542 impr, reach 60,883, freq 2.88, recallers 2,610 = 4.29% of reach, hook 18.42%, retention 11.20%. Control = Video 01 How Often to Service Your AC (39% of spend, 2.40% ThruPlay/impr); testimonials weakest (Kelly 1.39%).
+- **Off doctrine (found 10-26):** weekly freq under 3x; Advantage+ audience OFF (age 30-65 + 40 km radii); location type home + **recent**; **Kingman** targeted but not in our service-area list. No freq cap (correct).
+- **Staged, not applied:** home-only location; confirm/remove Kingman with AM; Advantage+ audience on; heating/fall creative refresh (all 6 videos AC/summer, live since 09-03); pause Video 06 Kelly when refresh goes in; lead gen relaunch only after GHL to Hatch joint test, lead with New System $125/mo.
+- KPI - Meta row 0a07bc40 (weekly + 30d keys). Tasks: https://app.agencytitan.com/tasks/instance/6def4a53-2f3c-4211-8c0c-3695ad9cd092 · https://app.agencytitan.com/tasks/instance/bebf170d-13fe-4ca8-bca7-2f2396c960ca
+
+---
+
 ## 2026-09-29 — Client Facebook report built (lead gen pre-pause + awareness)
 
 **Scope:** Ad account `79203382`. Read-only, live pull via Meta MCP. No account changes. Ticket from Angela (AM): "Client has requested a performance report for Facebook leads."

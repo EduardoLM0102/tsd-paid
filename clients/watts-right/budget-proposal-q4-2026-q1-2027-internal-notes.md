@@ -38,10 +38,10 @@ from 09-30 on** (after the 09-29 careers-form block). LSA = charged leads, Meta 
 | Channel (09-23..10-22) | Spend | Verified call leads | Forms (09-30+) | Leads | CPL |
 |---|---|---|---|---|---|
 | LSA | $12,737 | | | 219 | $58 |
-| Search: Branded | $548 | ~16 (11 reviewed + ~5 est.) | 5 | ~21 | ~$26 |
-| Search: Nonbranded | $3,154 | ~9 (7 reviewed + ~2 est.) | 7 | ~16 | ~$197 |
+| Search: Branded | $548 | 12 (all reviewed; 10-24 final, est. was ~16) | 5 | 17 | $32 |
+| Search: Nonbranded | $3,154 | 11 (all reviewed; 10-24 final, est. was ~9) | 7 | 18 | $175 |
 | Search: EV Charger (paused 09-29) | $549 | 0 (1 call = job seeker) | 0 | 0 | |
-| **Google Search row** | **$4,251** | | | **37** | **$115** |
+| **Google Search row** | **$4,251** | | | **35** (v2 PDF said 37 on the estimate) | **$121** |
 | PMax | $2,585 | 7 (all 42 recordings reviewed: 5 new + 2 existing-customer service) | 6 | 13 | $199 |
 | Meta | $7,836 | | | 152 | $52 |
 | **Total** | **$27,409** | | | **421** | **$65** |
@@ -50,6 +50,10 @@ from 09-30 on** (after the 09-29 careers-form block). LSA = charged leads, Meta 
 - "Reviewed" = transcript classified (Edu's call-wins log 10-01..10-19 matched by time + duration, plus Claude's transcripts). The ~7 "est."
   Search call leads apply each campaign's reviewed lead rate (NB ~30%, Branded ~79%) to the 17 calls still being transcribed on 10-24.
   Swap in the real count when `_pessoal/call-wins/watts-right-search/` finishes, rebuild if the row moves more than a lead or two.
+  **10-24 final:** transcription done (23 of 27 recordings; 4 failed/empty, left uncounted). New NB leads: mobile home hookup, travel
+  trailer heater, EV charger quote, portable building power (all booked or quoted); new Branded: existing customer generator (booked).
+  Junk: 2 job seekers, county/utility caller, scam callback, IVR/silence. Doesn't touch the client PDF (v2.1 uses raw counts).
+  Verified NB ($175) now reads a bit better than PMax ($199) per lead, and NB has 4 more booked/quoted jobs in the 10-20..10-22 tail.
 - **NB and PMax cost about the same per verified lead (~$200).** NB wins on booked new jobs (~3-6 booked new in 30d vs PMax 1 that stuck,
   ~$525 vs $1,300-2,600 per booked job), and its booked jobs are high-ticket (EV chargers, panels, generator estimate). Branded is by far the
   cheapest (~$26) but capped by brand search volume. That's why the PMax increment went to Search, Branded first.

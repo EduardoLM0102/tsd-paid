@@ -1083,3 +1083,25 @@ LSA same window: $4,058, 71 leads, $57.
 **Meta 588638883283311:** $1,952.09, 31 leads, $62.97. TOF $42.98 vs MOF $112.93 / BOF $143.45; FourMode $64.85 (2 LAL1% ad sets $140 / 0 leads); new boosted post (engagement, $10/d) 'When the Client Needs Power Before Sooners' not TSD-built. Staged: MOF/BOF→TOF at same total, pause the 2 LAL ad sets.
 **14-day (10-05..10-18):** $3,283.34 / 44 conv. Uncapped Max Conv bids up (Emergency $23.81 CPC) → propose tCPA ~$90 or CPC cap on NB; low-QS EV/panel kws (QS 1–3); audiences none.
 AT tasks f7e8b9e2 / 06bbc593 / bf34d3ec / 68eaa154 left open for Gui's review.
+
+## 2026-10-26 — AT optimization tasks (Gui, via Claude): 7-day + 30-day + 90-day Google, 7-day + 30-day LSA. Read-only, all staged
+
+**7-day 10-19..10-25 = the fu-072 recheck of Edu's 10-20 changes.** PPC $1,435.20, 75 counted conv, but 53 are `[TSD] Click to call` taps (PMax 48, NB 5). Real (calls from ads + CallRail Phone Call + forms) = 22 / $65.24 (prior 17 / $90.00). call_view 9 ad calls, 6 of 60s+. KPI row uses the real count (taps excluded, Gui's v2.1 basis); the 10-19 row's 28 included 11 taps.
+- Branded $209.76 / 5 real ($41.95); IS 34% → 71%, budget-lost 64% → 21%. The $35 + all-hours change worked.
+- NB $617.93 / 12 real ($51.49, prior $130.66), CPC $18.67 → $13.15 under tCPA $80. But spend fell to ~$62/d 10-21..10-25 ($25.50 on 10-25) vs $105, rank-lost 41% → 61%: tCPA now holds it back.
+- **PMax drifted off Search:** Search spend $537.74 (10-12..10-18) → $149.36; 10-21..10-25 Search $47.75 of $437.50, rest YouTube ($317.11 / 1,005 clicks) + Display ($139.69). 50 of 53 conv on Display/YouTube = taps. Only 5 real ($121.50). No TSD PMax change; Max Conv is chasing taps since the tap action started counting 10-09.
+- Terms: genesis 1 3 electric $72.56 (the 'genesis electric' negative doesn't block it), aj electric broken arrow $21.02, tesla tulsa $26.28, small EV product terms.
+- Staged: tap action → secondary for PMax (Edu); NB tCPA $80 → ~$95-100; NB PHRASE negs genesis 1 3 / aj electric / tesla tulsa / xeal / j1772 / chargepoint / nissan leaf / charge an electric car; PMax hold, recheck 11-02.
+
+**30-day 09-26..10-25:** PPC $6,845.05, 152 counted (65 taps) → 87 real / $78.68; call_view 67 calls, 43 of 60s+. No RSA performance labels at all (151 NOT_APPLICABLE), ranked by CTR: Branded 'Tulsa's Trusted Electrician' 25%, NB 'EV Charger – Upfront Price' 9% best; emergency headlines 0.6-1.8% worst. All ads approved. Branded has no structured snippet. 'emergency electrician' QS 6 / expected CTR below avg ($1,487.52 30d). Ads still land on /careers/ ($142.90 / 25 clicks, PMax URL expansion). Out-of-target geo ~$174 (2.5%), no exclusion. Staged: Branded snippet, emergency headline rewrite, panel headlines with keyword, 'Watt's Right Electric Tulsa' headline, pause QS 1-2 EV kws, PMax /careers/ URL exclusion.
+
+**90-day 07-28..10-25:** bidding Automated. Stalled primary: 'Form Submission [Landing Page]' and 'Local actions - Directions' 0 in 90d; GA4 phone_link_click/book_now/mailto 0 in 90d → needs a tracking task (Gui to create). Hours: 18-23 weakest; NB nights $97/lead vs $74 avg. Age/gender flat, no exclusions. No audience segments attached → staged observation segments. Muskogee County NB $109/lead to watch. Also reviewed: high-CPC kws (emergency electrician $14.89 CPC 90d vs $4.62 avg kw CPC), 11 rarely-served + 3 low-quality kws, Google recs (27 keyword, budget, partners/display opt-in on paused EV + Branded, PMax ad strength): reject partner/display/budget recs, nothing applied.
+
+**LSA:** 7d $3,290.69 / 59 charged (47 calls, 12 msg) / $55.77 (prior $2,526.73 / 44 / $57.43), top 97.98%, 27% of the $12k/wk cap (not budget-limited). 30d $12,699.24 / 221 charged / $57.46, 1 credited + 2 pending disputes, true CPL $57.72, 96% marked BOOKED by client (not a real booking rate). Staged: UI check of service area + panel/EV/generator job types.
+
+KPI rows 2026-10-26: Google 0b6d160a, LSA c8e0aaf5 (weekly + 30-day keys). Tasks completed:
+https://app.agencytitan.com/tasks/instance/2a762791-c77c-4dca-8a2b-7eeb95a51fc7 (7-day),
+https://app.agencytitan.com/tasks/instance/7e7edc8e-24b7-4537-aa5b-b3775edd9df3 (30-day),
+https://app.agencytitan.com/tasks/instance/733b27cf-a929-49b9-82f1-c185a6b94c5a (90-day),
+https://app.agencytitan.com/tasks/instance/ff05747d-de7a-4f08-9df3-b2ba18eec066 (LSA 7-day),
+https://app.agencytitan.com/tasks/instance/950b22a0-4b66-4db1-8ba3-5f7421fb3bde (LSA 30-day).

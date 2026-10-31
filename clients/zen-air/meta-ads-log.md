@@ -2,6 +2,26 @@
 
 Account `381256660973192` ("Zen Air - Third Ad account ( Active Account)").
 
+## 2026-10-31 — AT optimization tasks (Gui, via Claude)
+
+7-day Meta, AT task https://app.agencytitan.com/tasks/instance/1254d96f-d583-478b-a1a4-867f84ea34c3 (completed). Read-only, nothing changed.
+
+**10-24..10-30 vs 10-17..10-23:** $1,456.37, 107 leads, $13.61 CPL, CPM $6.85, CTR 0.59%, reach 87,429, freq 2.43 (prior $1,493.10 / 134 / $11.14).
+- Lead ad set `09/22/26 - Service Area ZIPs (New Creatives)`: $1,030.84, 78 form leads, $13.22 CPL (prior $12.66), CTR 1.37%, CPM $12.21. **Reach 32,786 (down 19%), freq 2.58/wk (prior 2.18).** One ad (Ad 02) has been running since 09-22, so this is early fatigue. CPL is still steady.
+- Awareness `Open Audience` ($65/d): $425.53, reach 54,355, 2.36/wk, CPM $3.32, hook 17.59% (prior 18.05%), ThruPlay/3s 10.73%. It is still REACH + cap 4/7d (off doctrine).
+- A legacy boosted post campaign ("From IT professional to HVAC visionary", $7/d) shows ACTIVE with $0 spend.
+- Lead Quality = **Mixed**. The API can't show where the leads came from after the 10-20 change, so that needs the lead export. Meta spend vs the $2k/mo approved: Gui is investigating (since 10-26).
+**Staged, not applied:** read the post-10-20 lead geo from the export, then decide on Fulton → North Fulton; a new heating-season DCT angle (confirm the $49 tune-up offer first); ARL awareness rebuild with no cap; turn off the dormant boosted post.
+KPI - Meta `7a14a3b8`.
+
+## 2026-10-26 — 30-day Meta pass (AT task 3e1110ee, Gui, via Claude): read-only, changes staged
+
+**30d 09-26..10-25:** $6,467.56 total. Lead ad set `09/22/26 - Service Area ZIPs`: $4,506.43, 271 leads, $16.63 CPL, CTR 1.22%, CPM $12.46, freq 3.47 (prev 30 from 09-17: $1,315.41 / 57 / $23.08; last 7d $1,041.86 / 81 / $12.86). Awareness `Open Audience`: $1,961.13, reach 183,266, freq 3.23 (30d), 2.27/wk, hook 15.73% (prev 11.31%), retention 11.44% (prev 12.33%).
+- Winner = `09/22/26 | Ad 02 - Images 07, 11, 13`, post 103339128021546_1584653713459670 (60d $5,114 / 304 / $16.82); Ad 01 (Duluth, paused) $29.49. Awareness video post 103339128021546_1377083960883314 is from 2025-07-11. API doesn't expose the creative copy (asset feed).
+- Lead Quality = **Mixed** (geo). Budget: ~$6.5k/30d vs $2k/mo approved (AT 3f291790), lead CBO approval not found in AT: AM to confirm.
+**Staged, not applied:** ARL awareness rebuild, no cap, new brand creative; Fulton → North Fulton if the 10-27 read is still bad; ZIP question on the form; one heating-season DCT angle (confirm $49 tune-up offer first).
+KPI - Meta `db74ef1f` (10-23 row) updated with 30-day keys. https://app.agencytitan.com/tasks/instance/3e1110ee-92ac-4f61-a1d9-666a150f27b2
+
 ## 2026-10-23 — Weekly 7-day Meta pass (AT task ff291b11, Gui): read-only, KPI logged, changes staged
 
 **10-16..10-22:** $1,500.82, 137 leads, $10.95 CPL, $6.45 CPM, 0.50% CTR, reach 108,339, freq 2.15 (10-16 entry: $1,535.43 / 98 / $15.67).

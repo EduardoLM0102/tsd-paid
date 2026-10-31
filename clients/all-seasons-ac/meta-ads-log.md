@@ -8,6 +8,18 @@ ACTIVE, USD). Readable through the Meta Ads MCP.
 
 ---
 
+## 2026-10-27 — AT optimization tasks (Gui, via Claude)
+
+**7-Day Meta (https://app.agencytitan.com/tasks/instance/31968d54-e3e5-402e-88c4-479a1376b6a2), completed as N/A.** 10-20..10-26: all 15 campaigns PAUSED, $0 (read-only query). Client asked Meta OFF 04-15 + $2,500 cap has Meta at $0; ARL 120250742056430607 paused since 10-15. KPI - Meta `e5d62a47` ($0 / 0 / Unclear). Checklist ticked (reviewed, nothing applicable). Staged: keep off; relaunch ARL as built only with an approved Meta budget.
+
+---
+
+## 2026-10-26 — AT optimization tasks (Gui, via Claude)
+
+**30-Day Meta (https://app.agencytitan.com/tasks/instance/2b94c896-48e8-46ca-857e-1be0c6cf85b6), completed as N/A.** Meta OFF (client 04-15 + $2,500 cap 10-15); both awareness campaigns PAUSED, $0 since 10-16. 30d: ARL 120250742056430607 $120.03, reach 16,977, freq 1.70, CPM $4.17, 580 recallers (3.42%); old Reach campaign $277.99, reach 58,847. Hook 6.6% / retention 9.9% (ARL); 17.3% / 6.5% (Reach). Lead quality Unclear. KPI - Meta dad92859 (10-19 row) updated with 30-day keys. Staged only: relaunch ARL as built + 1-2 new videos if a Meta budget is ever approved. Toggles (UI): Awareness Reviewed = Yes, Hook-Rate & Retention Checked = Yes, Core Results Declined = No, Blockers to Escalate = Yes (no Meta budget).
+
+---
+
 ## 2026-10-19 — Weekly 7-day Meta pass (AT task 39ad03fd, Gui): campaign PAUSED since 10-15
 
 `TSD_10.09_Awareness_Brand_TOFU_ARL` 120250742056430607 PAUSED 10-15 (~09:31 ET, same day as the Google cuts). $54.98 on 10-13..10-15, reach 9,937, freq 1.32, $0 since 10-16. KPI - Meta 10-19 $54.98 / Unclear. fu-030 frequency check is moot while paused. Keep off unless the client approves a Meta budget (client asked Meta OFF 04-15).

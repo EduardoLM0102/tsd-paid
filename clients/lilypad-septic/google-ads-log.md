@@ -279,3 +279,12 @@ Keywords: pause 'septic tank installation cost' (QS2, $19.68/0 conv); raise sept
 - **Audiences:** none on live campaigns → add in-market + remarketing in Observation.
 - **Location:** same as 10-17 (city limits, Presence or interest, 55% of spend outside; nearby towns convert; Wichita/Topeka/KC $0 conv).
 Toggles (Stalled found = Yes, others = No) failed via API: set in the UI. 90-day item 5 (create task) left unticked.
+
+## 2026-10-26 — AT optimization tasks (Gui, via Claude)
+
+Read-only, everything staged. All 6 AT tasks completed.
+- **7-day (10-19..10-25):** $209.15, 47 clk, 8 conv, $26.15 CPL (prev $232.44 / 6 / $38.93). Branded $28.33 / 2 conv ($14.16), Nonbranded $180.82 / 6 conv ($30.14), Search IS 69.5% (NB 30% rank-lost). Conv mix improved: 4 Call Extension Calls + 2 RYNO forms + 2 [EB] taps; 5 call_view calls, 3 >=60s. Waste: 'how to install a septic tank' $14. KPI record 2c5e7434, Health Good. Task https://app.agencytitan.com/tasks/instance/a235b151-c677-4222-aed6-802c36600737
+- **30-day (09-26..10-25):** $916.71, 32 conv, $28.65 CPL (prev 30 $884.17 / 20 / $44.22). Findings: account sitelinks 'Contact Us' + 'Specials' point to an old RYNO LP (service.lilypadseptic.com/lp/.../septic-tank-cleaning/, 25 clk / $88.80 / 0.5 conv); no manual call asset (calls come from Google's automatic call asset); RSAs have only 8 headlines / 3 descriptions, all AVERAGE; no RSA performance labels yet; 4 BC upload actions still stalled; 57% of geo spend from outside the 3 target cities. Task https://app.agencytitan.com/tasks/instance/a6dbcb3e-f2d5-4f3d-8dc2-2fc546dad4e8
+- **Staged, not applied:** NB phrase neg 'how to install'; pause 'septic tank installation cost' (QS2, $53 / 0 conv 30d); 'lilly pad septic' as Branded kw; repoint the 2 RYNO sitelinks; add a manual call asset (AM to confirm number); fill RSA slots + 'Septic Tank Cleaning' headlines; restroom / installation ad groups to their own pages after a form test; Presence-only geo + service area (AM).
+- **LSA:** N/A, no LSA campaign (not in the $2k/mo plan). 7-day + 30-day tasks closed as N/A, no KPI - LSA row. Tasks https://app.agencytitan.com/tasks/instance/bd8dbe18-40ba-4f33-9577-ec3cac2ba6fd , https://app.agencytitan.com/tasks/instance/d5fb61f2-81d3-480b-bbae-39bec0a11644
+- **Meta:** see meta-ads-log.md.
