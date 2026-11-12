@@ -280,6 +280,11 @@ Keywords: pause 'septic tank installation cost' (QS2, $19.68/0 conv); raise sept
 - **Location:** same as 10-17 (city limits, Presence or interest, 55% of spend outside; nearby towns convert; Wichita/Topeka/KC $0 conv).
 Toggles (Stalled found = Yes, others = No) failed via API: set in the UI. 90-day item 5 (create task) left unticked.
 
+## 2026-10-20 — APPLIED the 10-13 staged budget move (Edu: "the staged changes, they are ALL approved")
+
+`paid/weekly-7day/staged_1013_apply_2026-10-20.py` (validate first, then live, read-back confirmed): Branded 24153698844 **$5 → $8/d**, Nonbranded 24164203087
+**$41 → $38/d**. Total $46/d unchanged. Not done: the optional 'lilly pad septic' Branded keyword.
+
 ## 2026-10-26 — AT optimization tasks (Gui, via Claude)
 
 Read-only, everything staged. All 6 AT tasks completed.
@@ -288,3 +293,27 @@ Read-only, everything staged. All 6 AT tasks completed.
 - **Staged, not applied:** NB phrase neg 'how to install'; pause 'septic tank installation cost' (QS2, $53 / 0 conv 30d); 'lilly pad septic' as Branded kw; repoint the 2 RYNO sitelinks; add a manual call asset (AM to confirm number); fill RSA slots + 'Septic Tank Cleaning' headlines; restroom / installation ad groups to their own pages after a form test; Presence-only geo + service area (AM).
 - **LSA:** N/A, no LSA campaign (not in the $2k/mo plan). 7-day + 30-day tasks closed as N/A, no KPI - LSA row. Tasks https://app.agencytitan.com/tasks/instance/bd8dbe18-40ba-4f33-9577-ec3cac2ba6fd , https://app.agencytitan.com/tasks/instance/d5fb61f2-81d3-480b-bbae-39bec0a11644
 - **Meta:** see meta-ads-log.md.
+
+## 2026-11-06 — Full account audit + fixes APPLIED (Edu: "Work on the fixes please")
+
+Audit (read-only, 30d 10-07..11-05): $911 / 211 clk / 31 conv (17 [EB] taps, 8 call ext calls, 6 GHL forms; forms last fired 11-05, tracking OK).
+AT weekly passes 10-26 + 11-03 were done by Gui in Agency Titan (KPI entries exist), just not logged here.
+
+**Applied** (`lilypad_fixes_1106.py`, validate first, then live, read-back confirmed):
+1. Account sitelink **Contact Us** (asset 266230208448) → `https://www.lilypadseptic.com/contact/`. It pointed at RYNO's LP
+   `service.lilypadseptic.com/lp/lily-pad-septic/septic-tank-cleaning/` ($113 / 31 clk in 30d = 12% of spend), which runs RYNO's
+   GTM-KQJ9K783 (GA4 G-JGJRN475K2 + Invoca, NO Google Ads conversion tag; form posts to RYNO /api/mailer → info@lilypadseptic.com).
+2. Account sitelink **Specials** (asset 266230208451) UNLINKED. Not repointed to the site's `/specials/`: every offer there expired 2026-10-31.
+   (Both assets are still linked inside paused RYNO _Legacy campaigns, harmless.)
+3. Portable Restroom Rental RSA 821544945486 final URL `/get-septic-services/` → `/portable-restrooms/` ('porta potty rental' was $195 / 41 clk / 1 conv in 30d). Same GHL form; GTM listener runs on All Pages. Ad back in review after the edit.
+4. Bids to first-page estimate (0 impr in 30d): septic repair $6→$9, septic emergency service $6→$8, new septic tank installation $7→$8.
+5. Branded Brand Terms + 'lilly pad septic' PHRASE and 'salina septic' EXACT ($2.50). NonBranded negatives: 'lilly pad' BROAD, 'salina septic' EXACT
+   (both were converting through NB at NB CPCs: $39.66/4 conv and $17.58/2.5 conv in 30d), 'how to install' PHRASE ($14/0).
+6. PAUSED 'septic tank installation cost' (QS 2, $46.58 / 0 conv in 30d).
+No budget change (Branded $8 / NB $38).
+
+**Not done, still open:** RSAs only 8 headlines / 3 descriptions (Pumping+Repair = POOR, needs new copy); business logo asset disapproved;
+ad-group sitelinks on Restroom are sewer/drain/inspection and 'Septic Tank Inspection' is linked twice (assets 435091278333 + 435091283169);
+nights/Sunday bid cut + Presence-only geo + 4 stalled BC conv actions to Secondary (AM confirmation); /specials/ page offers expired 10-31 (tell AM);
+real end-to-end test call + form. Recheck ~11-13.
+

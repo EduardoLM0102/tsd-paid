@@ -108,3 +108,75 @@ Compared with Oct 1–15: wrong-company calls went from 10 of 20 (50%) to 2 of 5
 | ⚠️ IVR-only | 1 | Call hit the auto-attendant only, no live conversation (10-01 — same customer called back minutes later and connected) |
 
 **Flag for Edu:** This batch is weak, and the problem isn't call quality so much as who's even reaching this number. Of 20 ads-attributed, recorded calls, only 2 produced an actual booked job, and one of those (Kempen, 10-08) was an existing customer confirming a job already on the books rather than new revenue from the click — so realistically there's one clean new booking (Tschetter, 10-01) out of 20 calls. 15 of 20 calls (75%) weren't leads at all, and the wrong-number pattern isn't random noise: two different callers on two different days (Levittown 10-02, Syosset 10-09) asked by name for "Colette Air," and two different callers on two different days (New York 10-07, New York 10-14) asked for a company Whisper transcribed as "PFO Brian" / "T.F.O. Brian" — almost certainly the same business both times. That's a repeat pattern across unrelated callers, which smells like the Google Ads call-extension number is listed somewhere (a directory, a stale/reused number, a GBP or aggregator mismatch) under those other businesses' names or next to them — worth a manual check before spending more on the extension. On the positive side: the 2 real opportunities in this batch (Souffrant's mini-split board, Lee's refrigerant/heat-pump issue) were both handled patiently and professionally by office staff even under price-shopping pushback, and both are worth a follow-up call to see if either closed. There were no hangups, no rude handling, and no missed/unanswered calls in the batch — the one IVR-only call (10-01) was simply the same customer calling back minutes later and getting through live.
+
+---
+
+## 2026-10-23 → 2026-11-03 (fu-089 read, 15 Google Ads calls)
+
+Scope: CallRail calls with source "All Season Call Extension (Google Ads)" (14) or "Paid Search (Google Ads)" (1), 10-23 → 11-03, after the 10-22
+cleanup. Transcribed locally with faster-whisper (small.en); names and streets may be garbled.
+
+### 2026-10-23
+- **11:35 · 27s · Call Extension · Brentwood** — Asked "Is this Flynn Air?" (competitor). ❌ Wrong company (searched a competitor name).
+### 2026-10-26
+- **08:50 · 106s · Call Extension · Garden City** — Existing customer asking for the time window of today's filter change. ✅ Existing customer, not new pipeline.
+### 2026-10-27
+- **14:41 · 61s · Call Extension · Syosset** — Existing customer with an appointment this afternoon asking for an ETA. ✅ Existing customer, not new pipeline.
+### 2026-10-28
+- **11:11 · 82s · Call Extension · Lindenhurst** — Tenant in Amityville with no heat looking for their landlord's contractor. ❌ Wrong company.
+- **13:50–13:51 · 20s + 99s · Call Extension · Floral Park** — Past quote (June 2025) never done; now ready to install and wants an updated quote. Office asked the comfort advisor to revise it and email it. ⏳ Open, real install opportunity (past lead, not brand-new).
+### 2026-10-29
+- **09:04 · 347s · Paid Search (gclid) · Mineola** — Current customer adding an extension (rooms + bathroom), wants All Seasons for the HVAC portion and a visit in the next days. ⏳ Open, real new job from an existing customer (call cut off while checking availability).
+### 2026-10-30
+- **08:59 · 32s · Call Extension · Brentwood** — Looking for "the plumbing shop". ❌ Wrong number.
+- **10:32 · 2s · Call Extension · Garden City** — No recording. ⚠️ No contact.
+- **16:07 · 10s · Call Extension · Livingston Manor** — Silent. ⚠️ No contact.
+- **16:21 · 29s · Call Extension · Garden City** — Wanted the price of home heating oil. ❌ Wrong company (fuel oil).
+### 2026-11-02
+- **08:00 · 30s · Call Extension · Floral Park** — "Is this WCESP?" (competitor). ❌ Wrong company.
+- **15:28 · 254s · Call Extension · New York** — Existing customer rescheduling tomorrow's heating maintenance to Friday the 13th. ❌ Not new business (reschedule).
+### 2026-11-03
+- **12:22 · 96s · Call Extension · Queens** — Wants to BUY a Mitsubishi split unit for a 12x16 room; declined an install estimate. ❌ Not a lead (product shopper).
+- **13:47 · 55s · Call Extension · Central Islip** — Looking for "Rudy" from another company doing piping at their house. ❌ Wrong company.
+
+### Tally 10-23 → 11-03
+| Outcome | Count | Detail |
+|---|---|---|
+| ⏳ Real sales opportunity | 2 | Floral Park updated install quote (past lead); Mineola extension HVAC job (existing customer) |
+| ✅ Existing-customer service | 3 | 2 ETA calls, 1 maintenance reschedule (not new pipeline) |
+| ❌ Wrong company / not a lead | 7 | Flynn Air, WCESP, landlord's contractor, plumbing shop, heating oil, another company's tech, Mitsubishi buyer |
+| ⚠️ No contact | 2 | 2s no recording, 10s silent |
+| (not recorded) | 1 | 15th call in CallRail had no recording |
+
+**Flag for Edu:** 0 brand-new customers in 12 days. Real opportunities = 2, both from people who already knew All Seasons. Wrong-company calls are
+still 7 of 13 connected (54%), and 2 of them came from competitor-name searches (Flynn Air, WCESP) that the 11-04 negatives now block. Google's
+"60s+ calls" overstate it: of the 5 it counted, only 1 (Floral Park re-quote) was a real opportunity; 2 were ETA calls, 1 wrong company, 1 product shopper.
+
+
+---
+
+## 2026-11-04 → 2026-11-10 (fu-128 read, 12 Google Ads calls: call extension + Paid Search pool with gclid; 10 recordings; added 2026-11-11)
+
+Transcribed locally with faster-whisper (small.en); names and towns may carry transcription errors.
+
+- **11-04 10:32 · 64s · Call Extension · Westbury** — Wants to change the name on a gas account. Beth: "Are you looking for National Grid?" ❌ Wrong company.
+- **11-04 10:39 · 70s · Call Extension · Brentwood** — Downloading the Mitsubishi Comfort app for his heat pump, thought this was Mitsubishi support. ❌ Wrong company (search term 'mitsubishi comfort app support', $34.71, counted by Google as a conversion).
+- **11-04 15:02 · 6s · Call Extension · same caller** — No recording. ⚠️ No contact.
+- **11-05 10:17 · 10s · Call Extension · Syosset** — No recording. ⚠️ No contact.
+- **11-05 11:12 · 176s · Paid Search (gclid) · New York (Valerie)** — Thinking about a mini split, asks what the smallest unit is. Janina checks for the installation coordinator (on the phone), then tries to "start a file"; the caller pushes back ("I'm asking a question… none of your business") and asks for a callback. ⏳ Real new lead, handling rough; confirm the callback happened.
+- **11-05 12:19 · 29s · Call Extension · Brentwood** — Wrong number ("Porac"). ❌
+- **11-06 09:16 · 32s · Call Extension · White Plains** — Wrong number (asking for "Jocelyn"). ❌
+- **11-06 09:34 · 1s · Paid Search (gclid)** — No recording. ⚠️ No contact.
+- **11-10 08:07 + 08:12 · 80s + 131s · Call Extension · Huntington (Shelley R, repeat)** — Existing customer, furnace won't shut off after All Seasons' seasonal inspection; breaker reset doesn't help; Amanda takes it. ✅ Existing customer service call, not new pipeline.
+- **11-10 10:08 · 66s · Paid Search (gclid) · Smithtown (repeat)** — Existing customer rescheduling today's appointment. ❌ Not a lead.
+- **11-10 13:30 · 119s · Paid Search (gclid) · Garden City (repeat)** — Existing customer asking the tech's ETA for a tune-up. ❌ Not a lead.
+
+### Tally 11-04 → 11-10 (12 calls)
+| Outcome | Count | Detail |
+|---|---|---|
+| ⏳ Real new lead | 1 | mini split inquiry (11-05), callback owed |
+| ✅ Existing customer | 1 person (2 calls) | furnace won't shut off |
+| ❌ Not a lead | 6 | 2 wrong company (National Grid, Mitsubishi support), 2 wrong number, 2 existing-customer admin calls |
+| ⚠️ No contact | 3 | 6s, 10s, 1s |
+
+**Flag for Edu:** $296 of PPC for one new conversation, and that one was handled poorly (the "start a file" script annoyed the caller). Google's 5 counted conversions were 1 real lead + 1 wrong-company call + 3 existing customers, so the Conversions column overstates ~5x here. Three existing customers reached the office through paid brand clicks ($3–18 each): a cheap Branded campaign would carry those for a fraction. Wrong-company calls are down to 2 of 10 recorded (was 7 of 15).

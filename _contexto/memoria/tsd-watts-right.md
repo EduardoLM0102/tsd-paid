@@ -8,6 +8,46 @@ metadata:
   modified: 2026-10-01T14:23:13.198Z
 ---
 
+⚑ 11-10 fu-117/119 read (11-04..11-09): blended PPC+LSA $73 = on Push plan; Branded $22 CPL but budget-lost 57%; NB $117 Google → ~$140 after transcribing (3 of 9 callers not leads, 2 job seekers; 2 of 3 new booked = whole-home generator); PMax 4 ad calls transcribed = 0 new customers → 11-10 09:13-09:14 APPLIED (Edu): PMax 23833205176 PAUSED, Branded $50→$145 (got PMax's full $95, Target IS $8 ceiling), NB kept tCPA $110/$320 + 6 competitor negs, PPC total $465/d unchanged, AM note owed, next read fu-145 11-17; ⚠ Google 'Calls from ads' overstates, always transcribe (CallRail 'Call Extension PPC' recordings match call_view by timestamp, WR CallRail = own acct 537241053);
+> **11-04 LSA → PAY-PER-LEAD PMAX MIGRATION (Google, not us):** 12:45 CT Google created `Pay-per-lead-PMax-Watt's Right Electric`
+> (24425981973, PERFORMANCE_MAX, Max Conv, LEARNING, budget $1,714.29/d = same as old LSA, 1 asset group `xcat:service_area_business_electrician`
+> → homepage); 12:46 old `LocalServicesCampaign:SystemGenerated` 17732780541 set PAUSED (no user in change_event). Old LSA still billed $546 + 9 leads
+> on 11-04 before the switch. Gotchas: our LSA tooling keys on channel LOCAL_SERVICES / local_services_lead (lsa_report.py, google_channels.py),
+> and PMax rechecks must now split 24425981973 from TSD PMax 23833205176. LSA history doesn't migrate to the new campaign: keep old-campaign pulls.
+
+> **11-04 APPLIED Option 3 "Push" (+$7k/mo Search, client pick via Angela Slack 11-04, Edu's go):** Branded $35→$50, NB $105→$320 (Search $370/d ≈ $11.25k/mo),
+> NB tCPA $95→$110, 3 new NB ad groups (Electrician (General) → /locations/tulsa-ok/, Whole-Home Generator, Whole-Home Surge Protector) + 17 job-seeker negs.
+> LSA + PMax unchanged. RSAs in review at apply. Check approval/pacing 11-06, read 11-10 w/ fu-117. Detail: google-ads-log 2026-11-04.
+
+> **11-04 Budget proposal GOOGLE-ONLY (Angela, client meeting 11-04):** TSD does NOT manage Watt's Right Meta (Edu 11-04), so Meta is out of every
+> TSD proposal/report scope from now on. PDF `Watts-Right-Budget-Proposal_Q4-2026-Q1-2027_Google-only.pdf`, math in the internal-notes file (11-04 section).
+> All Meta $ into Search isn't feasible: NB rank-limited (rank-lost 55-60%), Branded tops out ~+$500/mo, generic "electrician" pot ≈4,700 searches/mo in
+> Tulsa DMA (untargeted, $25-30+ CPC, under LSA). Search ceiling ~$11k/mo. Options +$2.6k/+$5.5k/+$7k, rec Opt 2 ($25.4k/mo, ~360 leads, ~$70).
+
+> **10-28 Angela follow-up ("how $15.5k excl. LSA on a $7k budget?"):** 30d 09-28..10-27 = PPC $7,181 (on the $235/d total, unchanged since 09-22;
+> 10-20 was a reallocation only) + Meta $8,374. Meta live ad set budgets ~$273/d that actually deliver (TOF $145, MOF $67, FourMode $66, BOF $20;
+> 3 TOF test/RT ad sets $45/d ACTIVE but $0 spend) + TSD Awareness CBO ~$10/d + boosted posts ~$9/d. Last Meta budget changes = 10-05/10-06,
+> all raises, by "Clay Manus token" (Manus Dash app). Identity of Clay not confirmed in repo.
+> Full answer (meta-ads-log 10-28): TSD manages MOF + BOF + awareness (Edu, corrected 10-28), NOT TOF/FourMode/boosts. Lead-campaign daily
+> budget $70 (07-28 am) → $223 (Clay 07-28) → $150 (Manuel/TSD pauses 08-01/12) → $227 (Clay 09-22) → $318 (Clay 10-05/06; $273 spends).
+> No TSD raise since July. Stevie Fernandez boosts posts since 09-21. Final Slack reply for Angela drafted 10-28.
+>
+> **10-27 Angela budget question:** AT Client Request 7b72529c-add0-447f-8d89-4f54b660d723 (Execution done by Gui 10-24, now at Angela's
+> Communicate stage). The ATTACHED PDF is Gui's FINAL, not the local .md draft: total $27,409 / 464 leads, Search $4,251, PMax flat at
+> $2,890 in all options (local copy saved as *_AT-attached.pdf). Angela's "$7k budget excl. LSA" = Google PPC only, ON RECORD (found 10-28): AT ticket #793 'Demographics & Ad Spend Increase',
+> client Luke: "As for the PPC Budget, lets double it from $3,496 to $7,000" ($3,496 = our 09-09 PPC-only PDF, LSA+Meta excluded) + AT task
+> 0f5120ba-7d7b-4864-b424-72c3d12b1cee (09-21, 'Budget increase to $7,000/month', executed 09-22 as $235/d). NO approved Meta figure anywhere.
+> Don't confuse: 09-30 '$3,500 never approved' DM thread = On The Way; 09-23 '$7,200 Meta+PPC' = Napps. Non-LSA $14,672 = Google PPC $6,836 + Meta $7,836. Meta is a separate pot (TOF/FourMode non-TSD names, Manus Dash).
+
+> **10-27 fu-072 RECHECK of 10-20 changes (read-only)** → log 10-27. Real PPC CPL ~$100 → $66 (21 leads/7d). Branded worked
+> (IS 37→80%). NB real CPL ~$129 → $48 but spends $75 of $105 (tCPA $80, rank-lost 71%), Emergency halved. PMax drifted to
+> YouTube on 10-21 by itself (YouTube $409 vs Search $102/7d), 56/60 counted conv = Click-to-call taps, 4 real leads ($160).
+> 10-27 later: NB tCPA $95 + 7 negs APPLIED (Edu's go), recheck fu-097 11-03. CallRail: PMax YouTube/Display ($538/wk) →
+> 4 site-visit calls, 2 real (~$269/real call) vs PMax Search ~$51/real call. PMax gad_campaignid 23833223188 = Search side, 23833219135 =
+> YouTube/Display side (wbraid, no gclid, so not uploaded). 10-27 APPLIED: PMax → custom goal 'TSD | Calls + Forms (no taps)'
+> 6459658990 (Calls from ads + Phone Call + 2 forms). NOTE: here `[TSD] Click to call` = CLICK_TO_CALL (ad call-button taps,
+> same bucket as Calls from ads), NOT a site tel: tag like Zen Air's; 55 YouTube/Display taps → 0 ad calls. Recheck fu-098 11-03.
+>
 > **10-09 RECHECK DONE (read-only)** → log entry 10-09 in `clients/watts-right/google-ads-log.md`. Findings:
 > Nonbranded fully spends $120 but Max Conv doubled CPC ($9.46→$19.38), budget-lost IS still 27%; Branded now
 > budget-capped by the $8 ceiling (IS 86%→55%) AND has a Mon–Fri 06–22 ad schedule, so nights/weekends brand
@@ -81,3 +121,16 @@ were stale to-dos or tracking config, not performance. Budget moves at a constan
 **2026-10-24 v2.1 FINAL (Gui validated):** client table back on RAW leads (464 / $27,409 / $59; Search 57 / $75 incl. paused EV, PMax 36 / $72), verified finding used only to explain PMax staying flat (good volume, many calls not service requests, lots of room to improve). Options on raw basis: ~460 / ~500 / ~530 (rec, +70) / ~570, CPL $60-64. Verified table stays internal. Client-facing rule from Gui: show raw platform leads in client baselines, keep disqualification analysis as the reason for allocation, not as the headline number.
 
 **2026-10-26 (Gui AT run, fu-072 recheck):** Branded IS 34%→71%; NB real CPL $130.66→$51.49 but NB underspends under the $80 tCPA (~$62/d of $105), staged tCPA ~$95-100. ⚠ PMax drifted to YouTube/Display tap-buying (10-21..10-25 Search $47.75 of $437.50, 50 of 53 conv = taps, 5 real leads): Edu to decide taps → secondary. KPI row 10-26 excludes taps (22 real / $65.24). Meta 7d 39 leads $51.86; FourMode (Clay Manus) $459 / 2 leads.
+
+**2026-11-03 (fu-097, Claude):** Nonbranded on tCPA $95 (10-28..11-02): $96/day of $105 (was $75), rank-lost 71 → 66%, Emergency back (2 real leads),
+real CPL $71.93 / 8 vs $44 / 12 on $80 → hold $95 (step back to ~$85-90 if > $80). 10 PHRASE negatives (competitors + EV research, ~16% of spend)
+staged for Edu, next read fu-117 on 11-10. ⚠ PMax: custom goal 6459658990 is attached and excludes the tap action, yet PMax still counts
+`[TSD] Click to call` as conversions (18 → 40/day, 0 real Google leads, Display $129 → $429, Search ~$0) → fu-098. Detail: clients/watts-right/google-ads-log.md 2026-11-03.
+
+**2026-11-03 (later):** 5 competitor PHRASE negatives APPLIED on Nonbranded (evans/ap/half moon/ecs/blue sky electric, Edu's go). 5 EV research negatives still pending (fu-117).
+
+**2026-11-03 fu-098:** the 10-27 custom goal did NOT remove taps from PMax bidding (custom goal including `Calls from ads` pulls in `[TSD] Click to call`, same PHONE_CALL_LEAD/CALL_FROM_ADS bucket). PMax 10-28..11-02: $617, Search $0.76, Display $429, 176 taps counted, 0 real Google conv, 0 ad calls, 0 CallRail 60s+ calls (11 short ones, several out-of-area). Proposed: pause PMax, Branded $35 → $45. Detail in clients/watts-right/google-ads-log.md 2026-11-03.
+
+**2026-11-03 (later), Edu's call:** `[TSD] Click to call` set to SECONDARY account-wide (read-back primary False + include_in_conversions_metric False); PMax NOT paused, gets 1-2 weeks: verify taps gone from Conversions 11-05 (fu-118), first read 11-10, kill-or-keep 11-17 (fu-119; keep ≲ $100 real CPL + Search back, kill if 0-1 real leads at 11-10 or > ~$150 at 11-17). Branded $45 not applied.
+
+**2026-11-12:** fu-068 (10-18 weekend ad calls hit a full voicemail on 918-508-0195) REMOVED by Edu as stale.

@@ -155,3 +155,31 @@ exclusions, and a call conversion that doesn't reward 60s wrong-number calls) an
 > Grow +$5.5k/mo (~530 leads/mo, our recommendation), Push +$9k/mo (~570 leads/mo). LSA and Performance Max stay at today's budgets (LSA isn't
 > budget-limited; Performance Max has a lot of room to improve call quality first); the extra goes to Google Search and Facebook/Instagram.
 > Cost per lead goes from ~$60 to ~$61-64, which the client said is OK. Once Allen picks an option, we need it in writing on this ticket before we change budgets.
+
+## 2026-11-04: GOOGLE-ONLY revision (Angela: "updated without Meta", client meeting same day)
+
+TSD does not manage Watt's Right Meta (Edu, 11-04), so it comes out of the proposal. Based on Gui's FINAL (the AT-attached PDF Angela re-sent
+11-04, Search combined, PMax flat), not the old local draft. Files: `budget-proposal-q4-2026-q1-2027-google-only.md` → `build_budget_proposal_google_only.py`
+→ `Watts-Right-Budget-Proposal_Q4-2026-Q1-2027_Google-only.pdf`. Edu's ask: can ALL the Meta money go to Search? Answer: no, only part of it.
+
+**Search headroom (wr_search_headroom_1104.py, read-only, 30d 10-05..11-03):**
+- Branded $26/d, IS 57.5%, budget-lost 37%, rank-lost 5%, ~1,190 eligible impr/mo → full coverage ≈ $1,300/mo, so only ~+$500/mo.
+- Nonbranded $107/d (tCPA $95), IS 29.5%, budget-lost 15.5%, **rank-lost 55%** (7d: 60%), ~18.2k eligible impr/mo, CPC $14. More money = higher bids, not more
+  auctions. 11-03 evidence: +$21/d took real CPL $44 → $72.
+- Keyword Planner, Tulsa DMA 200671: electrician near me 1,900, electrician 1,600, electrician tulsa 720, electrical contractor 260, electrical repair 140,
+  residential electrician 90 (≈4,700/mo generic, NOT targeted today; top-of-page low $10-32, high $120). Generators/surge: whole house generator 320,
+  whole house surge protector 170. Generic terms sit under LSA (same searcher), so expect overlap with the 219 LSA leads.
+- Rough ceiling for Search: ~$10.5-11.5k/mo total (Branded ~$1.3k + NB existing ~$5.5k + generic/generator groups ~$3-4k). Current Search $4,260 + Meta
+  $7,850 = $12,110 → past the ceiling. Gui's Opt 3 + its Meta increase (= $13,220 Search) also past it, so Opt 3 capped at +$7,000.
+
+| | Current | Opt 1 +$2,600 | Opt 2 +$5,500 | Opt 3 +$7,000 |
+|---|---|---|---|---|
+| Search/mo | $4,260 | $6,860 (~$226/d) | $9,760 (~$321/d) | $11,260 (~$370/d) |
+| What | | Branded ~$45-50/d, NB ~$170/d + tCPA ~$110 | + generic "electrician" ad group + generators/surge | more of both |
+| Extra leads (assumed) | | +30 (Brand +12 @~$40, NB +18 @~$115) | +50 (generic marginal ~$150-160) | +60 (last $1.5k ≈ $150/lead) |
+| Total / leads / CPL | ~$19,900 / 310 / $64 | ~$22,500 / 340 / $66 | ~$25,400 / 360 / $70 | ~$26,900 / 370 / $73 |
+
+Baseline = Gui's 30d minus Meta: $19,573 / 312 / $63. LSA + PMax unchanged. PMax is on probation (fu-119 kill-or-keep 11-17), kept out of the client doc.
+If PMax is killed, its ~$2,890 can move into Search at constant total without new approval (tsd-budget-approval-scope), but Search is near its ceiling at Opt 2.
+Before executing Opt 2/3: build + verify a general "electrician" landing page/ad group (the old `electrician near me` exact was paused early for copy mismatch,
+see log top), generator + surge pages exist on site.

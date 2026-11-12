@@ -59,3 +59,13 @@ No ads-attributed calls Oct 16–20. CallRail logged no calls at all for Cool Ha
 | ❌ Not a lead | 2 | 1 wrong number, 1 disclaimer-only disconnect |
 
 **Pattern worth flagging to Edu:** 3 of the 6 open items are calls that hit the "Lucille" AI-assistant greeting and then went quiet with no live handoff — worth checking whether Lucille is costing real leads when callers want a human immediately, especially the 10-13 Arlington number that tried 3 times in 24 minutes and never got through to a person.
+
+---
+
+## 2026-10-20 → 2026-11-05 (added 2026-11-06)
+
+Only 1 CallRail call in the period: since the 2026-10-20 call-asset swap the ad call button rings the client's ServiceTitan PPC number (469-270-1146), so ad calls are no longer recorded by us.
+
+- **2026-10-20 09:01 · 10s · Google Ads · Duncan** — Disclaimer only, no speech. ❌ No contact.
+
+Google Ads call_view (no recordings, length + status only), Oct 19 → Nov 5: 15 Search ad calls, 14 RECEIVED, 1 MISSED (10-26 15:03 Electrical). 11 lasted 60s+, 5 ran ~4–5 min. By campaign: Electrical 8, Branded 5 (11-02 07:31 + 07:39 = same 951 caller), HVAC 2. Outcomes unknown without the ServiceTitan export.

@@ -30,3 +30,5 @@ mistakes cost a rebuild on [[tsd-gc-home-service]] (2026-08-21) and are worth av
    **How to apply:** before characterizing a campaign as changed/paused/stopped from an activity
    log entry, pull the entity itself (or its children) fresh and confirm status at the level
    you're about to describe — ad set-level and campaign-level status are independent facts.
+
+**2026-11-11, actor identity settled (Edu):** in Meta activity logs, **"Jonathan Bannister" (usually app "Power Editor") = Edu** working in Ads Manager. Edu: "If it shows Jonathan I was the one who paused then." Confirmed on Neon Monkey: the 09-15 16:04 CT pause of the Tree Wellness Check form landed one minute after Edu told Angela "let me do that right now." So older notes that say "built/paused by Jonathan Bannister" (GC Yeti 08-20, On The Way 09-04, Zen Air lead CBO 09-17) read as Edu's changes. Don't confuse it with JB the person (Jonathan, client-facing) in Slack/AT. Other Meta actor seen: "Manuel Lizarralde" (app "Manuel claude") = API builds from the Paid seat's Claude setup; not Gui. Gui has never shown up as a Meta actor so far.

@@ -59,3 +59,50 @@ Tasks: 7-Day https://app.agencytitan.com/tasks/instance/cdd9505b-e9c7-4ef9-b508-
 **Week 10-20..10-26:** $383.72, 88,987 impr, reach 58,554, freq 1.52, CPM $4.31 (prior $2.23), CTR 0.08%, 0 leads. The CBO/ARL rebuild 120255538868320155 delivered for the first time: $329.31, reach 41,126, freq 1.67, CPM $4.81, 1,110 estimated ad recallers ($0.30, 2.7% of reach). Old ABO Reach 120253326490610155 spent $54.41 then PAUSED. Video 09 = 59% of ARL spend ($0.30/recaller); Video 10 ($0.09) and Video 04 ($0.15) cheaper per recaller. No fatigue.
 **30d 09-27..10-26:** $1,308.49, 497,198 impr, reach 267,691, freq 1.86, CPM $2.63, CTR 0.15%. Hook 10.63% (ABO 11.44%, ARL 5.59%), retention 9.26% (ABO 8.87%, ARL 14.21%). Best on the old set: Video 06 (CTR 0.38%, CPM $1.52), Video 10 (most ThruPlays 1,645).
 Setup now OK on CBO, ARL, no cap, Advantage+, home only. Still off: 16 cities × 25 mi radius, 1.67/week vs 3x target at $40/d, ad set not DCT (9 separate ads). **Staged, not applied:** tighten geo to the service cities (smaller radius or ZIPs) after learning (~11-03); 2 brand-recall statics; consider one DCT ad set per angle; lead gen stays on hold until CRM outcomes. Health Unclear (awareness only). Toggles (UI, 30-Day): Awareness Reviewed = Yes, Hook-Rate & Retention Checked = Yes, Winning Post IDs Found = Yes, Core Results Declined = No, Last 60 Days Reviewed = No, New Test Deployed = No, New Awareness Ads Launched = No, Older Ads Paused = Yes (old ABO paused), Refreshed With New DC Test = No, Underperformers Found = No.
+
+## 2026-10-28 — fu-075 first-week check of the CBO / ARL awareness campaign (read-only, NO changes)
+
+Campaign 120255538868320155, first full 7 days 10-21 → 10-27 (Meta MCP).
+| Spend | Impressions | Reach | Frequency (7d) | CPM | CTR | Est. ad recallers | Cost / recaller |
+|---|---|---|---|---|---|---|---|
+| $365.93 | 76,125 | 43,202 | **1.76** | **$4.81** | 0.09% | 1,300 | $0.28 |
+
+- **Pacing OK:** launch-week front-loading ($50–69/d 10-21 → 10-24), then $37–43/d from 10-25 on the $40 budget. Old ABO campaign spent
+  $15.11 on 10-21 (the day after the pause), $0 since. No duplicates.
+- **Frequency 1.76/week, not the ≥3 target.** The cap is gone, but $40/d can't reach 3x on this audience (16 cities, 25-mile radius each =
+  most of DFW). At $4.81 CPM, 3x/week on ~43k people ≈ 130k impressions ≈ $90/day. The other lever is a smaller audience: tighten the
+  radius to the real service area so $40/d reaches ~25k people 3x.
+- **CPM $4.81 vs old $2.13–2.34:** expected. ARL buys people likely to remember the ad (pricier than cheapest reach), and living-in
+  targeting removes cheap travelers.
+- **All 9 videos ACTIVE and delivering.** CBO put 56% on Video 09 ($207) and 18% on Video 06 ($67); the rest $5–36 each. Video 05 CTR 0%.
+**Why CPM doubled (Edu asked, checked 10-28):** settings diff old ad set 120253326490730155 vs new 120255538874060155: optimization
+REACH → AD_RECALL_LIFT, frequency cap 2/7d → none, location type home+recent → home only. Same 16 cities × 25 mi, ages 22–64, exclusions,
+Advantage+ audience, all placements. Placement mix (old 10-06→10-19 vs new 10-21→10-27): old spent **72% on Facebook Marketplace**
+($404 at $2.62) + 23% IG Stories ($131 at $1.42); new spends **62% on IG Reels** ($227 at $4.91) + 29% IG Stories ($105 at $5.01),
+Marketplace $0.05. Same placement also costs more under ARL (IG Stories $1.42 → $5.01, IG feed $1.91 → $4.63, FB feed $2.49 → $3.84).
+So the goal change drives it twice: it left cheap, low-attention Marketplace inventory for Reels/Stories, and it bids for people more likely
+to remember the ad. Removing the cap would normally LOWER CPM, so it isn't the cause.
+**Proposed (Edu to decide):** tighten the geo (the open 10-20 question: 25-mile radius → ~10 miles, or the core cities only) to reach 3x/week
+at $40/day. Or keep the geo and fund ~$90/day from the unspent Google budget (needs the AM/client, ties to fu-100).
+
+---
+
+## 2026-10-20 — Awareness switched to the 10-13 CBO/ARL rebuild; old ABO campaign PAUSED (Edu: "make them go live and make sure that we wont have duplicate campaigns")
+
+No new build: a rebuild already existed, PAUSED since 10-13: `Spencer Air | Awareness | CBO | ARL | Videos | 13Oct2026`
+(120255538868320155), CBO $40/d, ad set `Spencer Air | TX | Advantage+ Audience | 22-64 | ARL` (120255538874060155):
+optimization **AD_RECALL_LIFT**, **no frequency cap**, location type **home only** (people living in), Audience Network off,
+same 9 creative IDs as the old ads (post social proof carries over).
+**Done (live, read-back):** new campaign + ad set + all 9 ads ACTIVE (ads IN_PROCESS = review; Video 08 needed 2 retries after a
+Meta internal error). Old `Spencer Air | Awareness | ABO | Videos | 30Jun2026` (120253326490610155) **PAUSED** (its ads show
+CAMPAIGN_PAUSED). So only one awareness campaign runs; total stays $40/d.
+**Left as built:** geo is still the 16 service cities at 25-mile radius (covers most of DFW); the old exclusion list wasn't
+carried over (far-away Texas cities, irrelevant at this radius). Tightening the radius = Edu's call.
+**Account hygiene, not touched:** 5 very old campaigns still show ACTIVE with $0 spend (Valentine Giveaway 2022, Christmas
+Giveaway-2021, Thanksgiving Giveaway 2021, Velentines Promo, Job Ad - AC/Heating Service Techs); they don't deliver.
+⚑ First-week check 10-27 (fu-075): frequency heading to ≥3/wk, reach, CPM vs old $2.13–2.34.
+
+## 2026-11-02 — Pixel correction for Alex's CAPI test
+
+Alex (DM 10-29) asked for a Test events code on pixel 3027702340698908. Edu: that ID was his mistake, the right pixel is **1258997717469696** (same as live GTM-KT5RPTP v11 vars 11 + 39 and Alex's CAPI). Edu generated Test events code **TEST84597** on 1258 and a new CAPI token; both sent to Alex in DM 11-02 ~09:36 BRT (token not stored in the repo). Nothing changed in GTM.
+

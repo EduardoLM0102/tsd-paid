@@ -9,6 +9,101 @@
 
 ---
 
+## 2026-11-11 (later) — APPLIED: support/thermostat negatives + brand home (Edu: "Apply 1, build 2"), 10:35–10:37 BRT
+
+1. `asac_negs_1111.py` **APPLIED**: 25 PHRASE negatives across LeadGen + MiniSplit (support, sensi, copeland, honeywell, ecobee, nest thermostat, braeburn, cooper hunter, vs, electric bill, comfort app, warranty, + phone number where missing). On MiniSplit 'support' alone covers 22 tech-support terms ($55/30d).
+2. `asac_brand_home_1111.py` **APPLIED** (total Google budget still $46/d):
+   - LeadGen: **17 live brand keywords PAUSED** (they sat in the residential hvac / heating repair / air conditioning repair ad groups: all seasons air conditioning, all seasons hvac, all seasons ac, all season air, all seasons heating and cooling [reviews], all seasons mechanical services, all seasons air duct cleaning…). This is why brand clicks cost $11–18 inside Max Conversions.
+   - LeadGen + MiniSplit: PHRASE negatives **'all seasons', 'all season'** (also blocks the competitor 'all season climate pros').
+   - **Branded 24202454875 (TSD_08.31_Search_Branded_Evergreen) re-enabled**: Max Conversions → **Target Impression Share TOP_OF_PAGE 90%, $5.00 CPC ceiling**, budget $13 → **$5/day**. 12 brand keywords (broad + phrase), approved RSA → seasonsair.com, 0 campaign negatives, 5 locations. When it last ran: Sept $410 / 254 clk / $1.61 CPC / 22 conv.
+   - LeadGen budget **$22 → $17**. Live now: LeadGen $17 + MiniSplit $24 + Branded $5 = $46.
+   - Not touched: the legacy "All Seasons AC Branded" 9609583334 (paused, partners on, keywords paused).
+**Rollback:** re-enable the 17 keywords (listed in the script's validate output), remove the 2 negatives per campaign, Branded → PAUSED, LeadGen $22.
+⚑ fu-153 (11-18): Branded CPC ~$3–5 and IS; 'all seasons' terms gone from LeadGen/MiniSplit; existing-customer calls now land on Branded; LeadGen at $17.
+
+---
+
+## 2026-11-11 — fu-128 read: first week after the 11-04 leak fixes (read-only; 1 script STAGED for Edu)
+
+`asac_read_1111.py` (this folder) + CallRail 11-04..11-10 (38 calls, 12 Google Ads, 10 recordings transcribed, `call-wins-log.md`). POST 11-04..11-10 (7d) vs PRE 10-23..11-03 (12d).
+
+| | POST | PRE | Note |
+|---|---|---|---|
+| LeadGen ($22) | $134 ($19/d), 10 clk, CPC **$13.41**, 1 conv | $245 ($20/d), 28 clk, CPC $8.76 | budget-lost 71%, IS 10% |
+| MiniSplit ($24) | $162 ($23/d), 14 clk, CPC $11.58, 4 conv | $261 ($22/d), 20 clk, CPC $13.04 | rank-lost 45% → **63%** |
+| PPC total | **$296 = $42/d (cap $46 holds)** | $506 = $42/d | |
+
+**Google says 5 conversions; the recordings say 1 real new lead.** The 12 ad calls: **1 real new opportunity** (11-05 11:12, 176s, mini split inquiry: the receptionist tries to "create a file", caller gets annoyed and asks for a callback), **3 existing customers** (11-10 Shelley R ×2 furnace won't shut off after their inspection; 11-10 Brian reschedule; 11-10 Garden City tune-up ETA), **4 wrong company / wrong number** (National Grid gas account, Mitsubishi Comfort app support, "Porac", "Jocelyn"), 3 no contact. Real new-lead CPL = **$296 / 1 ≈ $296** (was ~$253). Wrong-company share of recorded calls 40% (was 54% → 47%). The 'mitsubishi comfort app support' click ($34.71) was the Mitsubishi app caller, counted as a conversion.
+
+**Where the money went (visible terms $173):** support/thermostat/research ≈ $100 (mitsubishi comfort app support $34.71, lennox farmingdale $34.68, sensi copeland support $20.29, hart home comfort $16.95, honeywell home thermostat $5.65, cooper hunter mini split reviews $4.47, mini split vs central air electric bill $3.78); **brand searches $41 (24%)** carrying 3 of the 5 conversions, all existing customers calling through a brand ad at $3–18 a click.
+
+**Gui touched the account 11-10 19:39:** 22 PHRASE negatives (6 on LeadGen: hart home, kool point, dole fuel, app support, residential insulation, flynnaire; 16 on MiniSplit incl. lennox, universe home services, flynn aire, mac heating, dix hills, quality air care, innovation air conditioning, hardy plumbing, pc richards, all service heating). Not in the repo (his 10-26/27/31 sync has no All Seasons entry). 8 of them duplicate the COMPETITORS shared list attached to MiniSplit on 11-04. ⚠ Two people changing this account in the same week; agree an owner (CLAUDE.md rule).
+
+**11-04 changes held:** Click to call + GA4 mailto/phone/book_now still Secondary; 'insulation' neg in place; COMPETITORS list on MiniSplit.
+
+**LSA 8655979348 (11-01..11-10):** $683 on 1,550 impr, 12 leads / 9 charged (~$76 per charged lead), 2 BOOKED, 2 DECLINED (not charged), **8 ACTIVE unmarked**. Front-loading the month again ($250/wk budget ≈ $1,083/mo).
+
+**STAGED (validate-only), Edu's go:** `asac_negs_1111.py`: PHRASE negatives on both campaigns for what Gui's list left out: support, sensi, copeland, honeywell, ecobee, nest thermostat, braeburn, cooper hunter, vs, electric bill, comfort app, customer service, phone number, warranty. Left out after the conflict check: 'thermostat' (live keyword 'thermostat air conditioner') and 'reviews' (brand keywords 'all seasons … reviews'). Note: LeadGen still has 754 ENABLED keywords, but 671 of them sit in PAUSED ad groups; the 83 serving ones match the 10-22 cleanup. Nobody re-enabled anything.
+
+**Brand-home proposal (open since 11-04):** brand searches cost $11–18 a click inside Max Conversions campaigns and bring existing customers. A Branded campaign on Target IS (top of page 90%, **$5 cap**, ~$5/day moved from LeadGen $22 → $17, total $46 unchanged) + 'all seasons' PHRASE negatives on LeadGen/MiniSplit would cut that to ~$3–5 a click. Say go and it gets built (campaign + 1 ad group + brand keywords + RSA, validate-only first).
+
+⚑ Next read fu-153 (11-18): wrong-company share, real new leads, brand clicks after the Branded home (if built), LeadGen CPC, LSA marks.
+
+---
+
+## 2026-11-04 (later) — APPLIED leak fixes + calls transcribed: real CPL (Edu: "Fix the leaks with your suggestions, listen to those calls")
+
+`asac_leak_fixes_1104.py` (validate-only, then `--apply`, read-back OK; total budget unchanged $46/d):
+1. Shared list **COMPETITORS 8126127802 attached to MiniSplit** (0 clashes with its keywords) + 11 PHRASE names added to it: universe home services, wcesp,
+   kool point, flynn aire, flynnaire, sweezy's, argo plumbing, mac heating, dix hills air conditioning, quality air care, dole fuel. PHRASE 'insulation' on MiniSplit.
+2. 'mini split heat pump' **BROAD paused, PHRASE added** (an EXACT version was already live).
+3. **Secondary:** 'Click to call' 7719769169 (ad call-button taps) + GA4 mailto 7213245094, phone_link_click 7213245097, book_now 7214412880.
+   Bidding now = call extension LEAD (60s) + Calls from Ads New (30s) + Phone Call upload + forms.
+**Calls 10-23 → 11-03 (15 Google Ads calls, transcribed locally, detail in call-wins-log.md):** 2 real sales opportunities (Floral Park install re-quote,
+Mineola extension job, both people who already knew All Seasons), 3 existing-customer service calls, 7 wrong company / not a lead, 2 no contact.
+**Real CPL:** $506.22 PPC / 2 real opportunities = **~$253 per real lead**; 0 brand-new customers. Google's own count (6 'real') was 3x too high.
+⚑ Next read fu-128 (11-11): wrong-company share after the competitor fixes, new-customer calls, cost per real lead.
+
+---
+
+## 2026-11-04 — fu-089 first full read after the 10-22 cleanup (read-only, nothing changed)
+
+Script `asac_recheck_1104.py` (this folder). POST 10-23 → 11-03 (12d) vs PRE 10-11 → 10-21 (11d). Only change since: Edu's 10-23 NB pause + $8 → LeadGen.
+| | POST | PRE |
+|---|---|---|
+| LeadGen ($22) | $245 ($20/d), 28 clk, 527 impr, CPC **$8.76** | $321 ($29/d), 18 clk, 256 impr, CPC $17.82 |
+| MiniSplit ($24) | $261 ($22/d), 20 clk, CPC $13.04 | $230 ($21/d), 18 clk |
+| Account PPC | **$506 = $42/d (cap $46 holds)** | $1,082 (more campaigns live) |
+- **Cleanup worked on LeadGen:** impressions doubled, CPC halved; still budget-lost 67%.
+- **Real leads:** 5 ad calls 60s+ in call_view (106s, 60s, 98s, 81s, 95s) + 1 CallRail 'Phone Call' = 6, ≈ **$84 per real lead**. Conversions column
+  also counts 2 `Click to call` taps (CLICK_TO_CALL 7719769169, primary, biddable). GA4 phone_link/mailto/book_now (CONTACT) also primary.
+  Callers 516/631 (Long Island) + 1 917. Not transcribed.
+- **Brand searches ride on non-brand campaigns:** ~$103 of LeadGen ($245) and ~$44 of MiniSplit are 'all seasons …' searches (Branded campaign paused
+  under the $46 cap), and they carry most conversions (all seasons air conditioning 2 conv, all seasons hvac 2, all seasons 1, all seasons air 1).
+- **Competitors still leak ~$130 (26%):** universe home services $33.13, wcesp $25.97, kool point $20.67, flynn aire $17.78 + flynnaire $6.97,
+  residential insulation $10.64, sweezy's fuel $8.08, argo plumbing $7.27, mac heating $6.44, dix hills air conditioning $6.02, quality air care $5.48,
+  dole fuel $4.10. **MiniSplit has no shared lists** (LeadGen has 21 incl. COMPETITORS 8126127802, 1,037 terms; MiniSplit only 253 campaign negs).
+- **MiniSplit BROAD:** 'mini split heat pump' $99.21 / 10 clk / 0 conv; 'ductless air conditioner' $74.58 / 3 conv and 'ductless heating and cooling'
+  $61.06 / 1 conv still work.
+**Proposed (Edu's go, total stays $46/d):** (1) attach COMPETITORS 8126127802 to MiniSplit + add the 11 new names to it; (2) 'mini split heat pump'
+BROAD → PHRASE; (3) taps + GA4 CONTACT actions → Secondary; (4) decide a brand home inside $46 (e.g. Branded Target IS $6 cap ~$5/d from LeadGen).
+
+---
+
+## 2026-10-28 — Budget breakdown v3 for the client (Angela's Slack ask 11:34: "All Season wants a breakdown on what budget is going to each campaign"), read-only
+
+**Deliverable:** `All-Seasons-AC-Ad-Budget-Breakdown_2026-10-28.pdf` (+ .html), 1 page, same plain Times format as the 10-12 version Donna got.
+Budgets as of 10-28, spending Oct 1–27 split at the 10-15 cap (Oct 1–15 / Oct 16–27). Not sent: Edu reviews, then Angela.
+- **Live budgets:** LeadGen ("Heating and Cooling Service") $22/d, MiniSplit ("Ductless Mini-Splits (co-op)") $24/d = Google $46/d ($1,398/mo);
+  LSA $250/wk ($1,083/mo, CID 8655979348, now visible to us); Meta paused. Total ≈ $2,481/mo vs the $2,500 cap.
+- **Paused, $ in Oct:** Nonbranded ("AC Installation and Repair") $984.94 (paused 10-23, $8 → LeadGen), Branded $197.82, PMax Mitsubishi
+  $194.75, Mitsubishi Brand $127.55 (all 3 paused 10-15); Meta awareness $295.29 (both campaigns, $0 since 10-15).
+- **October spend:** Google $3,171.05 (Oct 1–15 $2,674.61 / Oct 16–27 $496.44), LSA $1,104.42 ($922.48 / $181.94), Meta $295.29.
+  Total $4,570.76, of which $3,892.38 before the cap. Since 10-16 ≈ $57/day, under the ~$82/day the cap allows (LSA dark until 11-01).
+- Google can spend up to 2x its daily budget on a given day (10-19 $81, 10-28 $82 on $46), never more than ~30.4x per month.
+
+---
+
 ## 2026-10-27 — AT optimization tasks (Gui, via Claude)
 
 **7-Day Google (https://app.agencytitan.com/tasks/instance/98826ded-f97e-4951-8f58-b120c095de83), read-only, completed.** 10-20..10-26 PPC: $290.17 / 33 clk / 6 conv / $48.36 CPL / $8.79 CPC (prev $690.71 / 77 / 12 / $57.56). LeadGen $119.10 / 3 conv, MiniSplit $141.34 / 3, NB $29.73 / 0 (paused 10-23). Conv = 3 call ext LEAD (60s+) + 3 taps; call_view 5 calls, 3 of 60s+ ($96.72 per real call). IS <10% (budget 52-69% lost, rank 25-38%). On Pace (90% of $322). KPI - Google Search `ea5ff94d` (Mixed). Competitor terms $100.11 (34.5%); 4 got past the 10-22 negatives: universe home services $33.13 + flynn aire $17.78 (MiniSplit, negs only cover 'universe heating/hvac/plumbing' and 'flynn air'), sweezy's fuel $8.08 + argo plumbing $7.27 (LeadGen). Brand searches in non-brand campaigns $46.73 / 1 conv.
@@ -34,6 +129,89 @@ Toggles to set in UI (30-Day Google): Extensions & Assets Updated = No, Geo Excl
 **PPC 10-12..10-18:** $827.25, 16 conv, $51.70 CPL (prev $1,353.80 / 31 / $43.67). Spend fell with the temporary $2,500 budget (Client Request bff1955c): ~$210/d to 10-14, then $118 / $58 / $15 / $7 (10-18). **Edu 10-15:** Branded Evergreen, PMax Mitsubishi-Ductless, Search Mitsubishi-Brand PAUSED; live = LeadGen $14 + Nonbranded $8 + MiniSplit $24 ($46/d). **10-16:** ~146 negatives (LeadGen 44 / NB 53 / MiniSplit 49), 12 kw pauses, geo target type changed on Search campaigns, AI Max/asset settings. Conv: 8 call ext LEAD + 8 taps; call_view 8 (4 60s+). IS <10% (63–81% budget-lost). KPI Health Mixed.
 With Branded paused, brand searches land in LeadGen/MiniSplit broad at $10–17/click; 'petro home services' still buys in MiniSplit ($75, only exact 'petro' excluded). Staged: 'petro' phrase neg on 3 campaigns; decide Branded inside the $2,500; fu-049 UI auto-apply still open.
 **LSA 8655979348:** $289.31, 4 leads (2 calls, 2 msg), $72.33; all spend 10-12..10-15, Oct cap hit 10-15 → dark to 11-01 (Overspending). Both message leads still NEW (no reply) → AM flag.
+
+## 2026-10-23 (later) — APPLIED: Nonbranded's $8 moved to LeadGen (Edu: "n2 ok")
+
+Nonbranded 23813282398 PAUSED (AC-only keywords to the homepage, 0 conv since the fix). LeadGen 11803942938 budget $14 → **$22/d** (own budget, not shared), for its heating ad groups (90d: 'heating and air repair near me' 23 conv, 'heating repair near me' 19), which were budget-limited at ~10% IS. MiniSplit unchanged $24. **Total $46/d, same as the client cap.** Read-back OK.
+Also (Edu "ok on n1"): fu-056 closed. The wrong-company callers said they googled the other company and called the number on our ad; our ads were showing on competitor searches, now blocked by the 10-22 negatives. Not a mis-listed number.
+Budget tier (client cap vs the 3 proposal tiers): Edu talks to Angela.
+
+## 2026-10-23 — CallRail read on the 10-16 fix (fu-060 / fu-085)
+
+Ad calls (All Season Call Extension 631-212-8021), transcribed locally, detail in `call-wins-log.md`:
+- **10-16..10-22: 5 calls.** 2 booked (existing customer no-heat 10-19; NEW commercial RTU replacement site visit in Woodbury 10-22, 580s), 2 wrong company (Long Island Green Team 10-20, Cool Solutions 10-21), 1 no contact (6s).
+- **Oct 1–15: 20 calls**, 10 wrong company, 2 booked.
+- Wrong-company share 50% → 40%, bookings 10% → 40% of calls. Small sample. Both wrong-company names are now negatives (10-22). Next read after the 10-22 cleanup has a full week (~10-29).
+
+## 2026-10-22 (night) — APPLIED: LeadGen keyword cleanup + the 9 skipped negatives (Edu: "you have my ok for 1 and 2")
+
+`asac_leadgen_cleanup_1022.py` (+ 90d snapshot `leadgen_keywords_90d_2026-10-22.json`), validated then applied, read-back 898/898.
+- **LeadGen:** 979 enabled keywords, 880 with 0 impressions 07-24..10-21, only 35 with a click. PAUSED 896: every 0-impression keyword except own-brand ('all season'), plus 24 impression-only competitor/junk names (galletair, intercounty mechanical, ade freeport, hampton air, cousins air, s w anderson, nyc free air conditioner, ac repair fl, air compressor terms...). Every keyword with a click in 90d stays. **LeadGen now has 83 live keywords.**
+- **Nonbranded:** PAUSED '4 seasons heating and air', 'one hour heating and air conditioning' ($0, competitors). 77 live.
+- **Negatives added:** LeadGen american cool air, apple air, arista, twin air, manual, troubleshooting, remote; Nonbranded 4 seasons, one hour heating.
+Pauses only, reversible from the snapshot. Next: CallRail wrong-company share first thing 10-23 (fu-085).
+
+## 2026-10-22 (later) — APPLIED: 511 competitor / non-lead negatives (Edu: "apply the negatives")
+
+`asac_competitor_negs_1022.py`, validated then applied, read-back OK. 187 PHRASE negatives (the paid hits pretro / cool solutions / airborne / senville / mr mechanical / alure, ~170 other Long Island companies from the 10-17..10-21 terms, plus 'tech support', 'technical support', 'manual', 'troubleshooting', 'distributor', 'remote', 'stores') on LeadGen (146 new, 41 already there), Nonbranded (187) and MiniSplit-General (187). Town names (deer park, dix hills, riverhead, manorville) and generic phrases (around the clock, comfort air, service experts) left out on purpose. 30-day replay: would have blocked $161.32 and 2 conversions ('ferguson farmingdale' = supply house, 'york tech support residential' = manufacturer support, neither a lead).
+
+**Skipped where they'd block a live keyword** (all these keywords had $0 in 30d, and all are competitor or manual terms): LeadGen 'american cool air', 'apple air ac', 'arista hvac nyc', 'twin air holtsville', 'lg air conditioner manual', 'della air conditioner heater manual', 'york gas furnace troubleshooting', 'remote ac unit'; Nonbranded '4 seasons heating and air', 'one hour heating and air conditioning'. Proposed: pause those 10 and add the 9 skipped negatives there.
+
+**Also found:** LeadGen has ~1,000 enabled keywords, most with no spend in 30d, many junk ('buy furnace filters', 'hunter air purifier', 'buy hvac', 'air filter buy', 'buy new air conditioner'). Proposed cleanup, not applied. MiniSplit BROAD keywords stay broad for now: 30d 'mini split heat pump' $386 / 4 conv, 'ductless air conditioner' $250 / 6 conv; recheck after the negatives settle.
+
+## 2026-10-22 — Pre-read for the 10-16 fix recheck (fu-060), read-only, 10-17..10-21 vs 10-11..10-15
+
+Pulled one day early (Edu asked). Same-length 5-day windows. CallRail API returned 429 on the agency account, so the wrong-company call share is still owed.
+
+**PPC:** $203.95, 28 clk, 3 conv, $67.98 CPL (prior 5 days $820.41, 15 conv, $54.69). The drop in spend is mostly the client cap: only 3 campaigns are live (MiniSplit $24, LeadGen $14, Nonbranded $8 = $46/d), and Branded, PMax Mitsubishi and Mitsubishi-Brand were paused. Actual spend ~$41/d. Conversions use the 60s rule now, so they are not comparable with the prior 1s numbers.
+- MiniSplit-General: $96.70, 1 conv. LeadGen: $58.43, 2 conv (1 call 60s+, 1 tap). Nonbranded: $48.82, 14 clk, 0 conv.
+- call_view: 4 calls, 2 of them 60s+.
+- All 3 campaigns are BUDGET_CONSTRAINED (IS ~10–13%). LeadGen still HAS_ADS_DISAPPROVED (old heating ads).
+
+**Competitor leak: smaller but still there.** About $77 of $204 (~38%) went to other companies, vs 62% on Oct 1–15. All came from BROAD keywords:
+- 'pretro' (Petro misspelled) $34.82 and 'cool solutions bethpage' $19.94, both on MiniSplit BROAD 'mini split heat pump' ($58 of its spend, 0 conv)
+- 'airborne heating and air conditioning' $10.27 and 'senville mini split' $5.98 on MiniSplit BROAD 'ductless air conditioner'
+- 'mr mechanical heating & cooling' $3.45 and 'alure home improvement' $2.40 on Nonbranded BROAD
+- Plus dozens of zero-cost competitor impressions (domino fuel, swezey's fuel, sullivan heating, gillette, smith brothers, burner king...)
+- Own brand: 'all seasons air conditioning reviews' on Nonbranded ($5.29).
+
+**Proposed (not applied):** add the new names as phrase negatives (pretro, petro, cool solutions, airborne, senville, mr mechanical, alure, domino, swezey/sweezy, sullivan, gillette, smith brothers, burner king, keston, weber and grahn); switch MiniSplit BROAD 'mini split heat pump' and 'ductless air conditioner' to phrase. Still open: whether Click to call taps keep counting (UI only).
+
+## 2026-10-21 — APPLIED: Italy + UK excluded on every campaign (Edu's go)
+
+**Why:** 10-19 Angela (Slack DM): the client questioned the invoice's Italy and UK lines. Edu explained they're Google regulatory fees ($0.03 each, $0.06 for the month, not ad spend) and promised to exclude both countries.
+**Changed** (`asac_exclude_italy_uk_1021.py`, validated, applied, read back): NEGATIVE location Italy (2380) + United Kingdom (2826) on all 20 non-removed Search/PMax campaigns (3 live: TSD_Search_LeadGen, TSD_04.29_Search_Nonbranded_Evergreen, TSD_07.01_Lead_Search_MiniSplit-General; 17 paused, so a re-enable keeps them). 40 criteria. LSA (8655979348) is separate and has no location exclusions.
+Also checked 10-21: Donna's budget breakdown (AT 7a4c9a19) was delivered 10-12 (Angela emailed it to Donna & Dawn); Command Center fu-041 closed.
+
+---
+
+## 2026-10-15/16 — Client cap $2,500/mo across all platforms + proposed budget doc
+
+**Ask (AM, via Edu):** client approved only $2,500/mo across Meta/PPC/LSA, cut "today" (shared with JB), then send a proposed budget. Report due to client by Mon 10-19.
+
+**Cut applied by Edu 10-15 (verified via change_event + live read 10-16):** LeadGen $70→$14/d, Nonbranded Evergreen $55→$8/d, MiniSplit-General $24/d unchanged; PMax Mitsubishi-Ductless, Mitsubishi-Brand, Branded Evergreen PAUSED. Meta: both awareness campaigns PAUSED (ARL paused 10-15). LSA 8655979348 unchanged $35.71/d. Run rate: Google $46/d ($1,398/mo) + LSA $1,086 = ~$2,484/mo. October still lands well above $2,500: Oct 1–15 was Google $2,677 + LSA $922 + Meta $295 = $3,894.
+
+**Proposal (Claude Doc, client-facing):** https://claude.ai/code/artifact/b6d54b2c-0ca5-476e-ac9c-57e50b717904. v1 recommended $3,500 (LSA $2k + Google $1.5k); Edu: "WAY too low", wants Max / Half-way / MVP. **v2 (10-16):** Minimum $4,630 (LSA $2,000, Google service $1,500, co-op $730, Branded $400) · Halfway $7,400 (midpoint: $2,250 / $3,500 / $1,250 / $400) · Maximum $10,150 ($2,500 / $5,500 / $1,750 / $400); Meta $0 all; client net after co-op $4,143 / $6,567 / $8,983. LSA capped at $2,500 (Jul $300→18 leads vs Oct pace $1,850→28, ~$155 per marginal lead; Max leads bidding, HVAC only category). Google service max $5,500 = judgment from Oct 1–15 budget-lost IS (LeadGen 44%, Nonbranded 84%) minus competitor share; KeywordPlanIdeaService forecast (v24) was useless (0 clicks, spends any cap). Co-op max = ~$3,950 left in the $8,503 direct-spend plan over Nov–Dec. Max ramps Google in 2 steps. **Client deliverable = plain PDF** (now `Budget Proposal - All Seasons.pdf`; source `All-Seasons-AC-Proposed-Ad-Budget_2026-10-16.html`, Playwright, 3 pages, Times plain recipe); credit line "Prepared by Gui, Senior Media Buyer · Approved by Eduardo, Head of Paid Ads" (Edu wants Gui to send it). Keyword chart replaced by a 6-row search table in the PDF.
+**v3 (Edu, 10-16):** no outcome numbers in the client report (booked/open/not-a-job, "real opportunities", $100 vs $670 all removed; Edu: we had problems just fixed today). Shows leads + CPL only: LSA 14 leads (12 calls, 2 msgs) $66; Google 21 (20 calls, 1 form) $127; 10-16 fix framed as "tightened", wrong-company-calls paragraph removed. Doc + PDF both updated. Final PDF was renamed on disk to `Budget Proposal - All Seasons.pdf` (checked 10-22: leads + CPL version, no booked counts). Nov 13 Google-results promise = Command Center fu-082.
+Basis (Oct 1–15): LSA $922 / 14 leads, 2 booked + 7 open = ~$102 per real opp, ran out of its monthly limit ~10-15; PPC $2,677 / 20 CallRail calls + 1 form, 2 booked (1 existing cust) + 2 open = ~$669 per real opp. LSA by month: Jun $359/8 leads, Jul $300/18, Aug $292/14, Sep $750/14, Oct 1–16 $922/14 (cost per lead rose with budget + season). Keyword Planner (Nassau+Suffolk, 16 terms deduped): heating searches Oct 3,920 → Nov 7,230, above AC Nov–Mar. Co-op guidelines: Homans 1/3 + METUS 1/3 + contractor 1/3; preapprovals by 11-15, claims by 2027-01-04.
+
+---
+
+## 2026-10-16 — APPLIED: call-conversion threshold + competitor negatives + junk keywords paused + presence-only geo (Edu: "Go ahead and apply all fixes")
+
+**Why:** call-transcript review of Oct 1–15 PPC calls: 2 booked of 20, and 16 of 20 were callers looking for other companies (Colette/Gallett Air, T.F. O'Brien, Burt's, oil companies, plumbers), parts shoppers or out-of-area. Search-term pull (Oct 1–15) matched them: **62% of visible search-term spend ($836 of $1,339) went to competitor names** (Petro $165, Gallett Air $153, T.F. O'Brien $90, Meenan Oil $73, Burt's, Kolb, Slomin's…), and those terms got 14 of the 24 conversions, because `call extension LEAD` counted any call ≥**1 second**. Two competitor keywords (T.F. O'Brien) were live in TSD_Search_LeadGen; 24% of spend ($654) was "area of interest" (Nonbranded + Branded on presence-or-interest). The 10-11 auto-added keywords were NOT the cause ($29 total).
+
+**Changed (script `all_seasons_apply_1016.py`, validated first, read-back confirmed):**
+1. `call extension LEAD` (AD_CALL `497046840`, the account-level call conversion and the one most call assets report to) minimum call duration **1s → 60s**.
+2. **12 keywords PAUSED:** `tf o brien`, `t f o brien & co inc` (PHRASE, LeadGen/heating repair); portable/retail: `portable ac`, `chilwell portable ac` (BROAD, Nonbranded), `haier air conditioner portable`, `costco portable air conditioner`, `arctic wind portable air conditioner`, `arctos portable ac where to buy`, `used air conditioner for sale near me` (EXACT, LeadGen), `buy furnace air filters` (PHRASE, 2 ad groups); job-title `heating and air conditioning mechanics and installers` (BROAD, Nonbranded).
+3. **146 PHRASE negatives** across TSD_Search_LeadGen (44), TSD_04.29_Search_Nonbranded_Evergreen (53), TSD_07.01_Lead_Search_MiniSplit-General (49): competitor names (petro, gallett/gallettair/galette, o brien/obrien, meenan, slomin(s), kolb, aircomfort, traeger, haviland, kelly air, burke energy, burts, moses mechanical, superior air conditioning, sal manzo, country wide heating, appolo, five star mechanical, richards heating, rigney, perillo, universal plumbing, accurate mechanical, american hvac, great neck electric, sunny hvac), oil delivery (heating oil, oil delivery, oil company/companies), retail/parts (portable, for sale, parts, hvac supply, supplies, customer service, buy freon, 407c, freon 22, r22, air filters, filterbuy, lowes, home depot, costco, walmart), jobs (jobs, hiring, careers, mechanics and installers). Only added where missing. 30d replay: blocks only competitor/retail terms. Kept `freon for house` (EXACT) live on purpose: can be a real recharge job, so only purchase-intent freon searches are blocked.
+4. **Geo PRESENCE_OR_INTEREST → PRESENCE** on TSD_04.29_Search_Nonbranded_Evergreen (enabled) + TSD_08.31_Search_Branded_Evergreen and TSD_03.23_Search_NonBranded_Evergreen (both paused).
+
+**NOT done:** `Click to call` (CLICK_TO_CALL, 36 taps in-window) → secondary. It shares the PHONE_CALL_LEAD/CALL_FROM_ADS goal with the call conversion, so it can't be split via the API, and Edu's 10-09 rule on C&S is that taps keep counting. Open for Edu.
+
+**Expect:** fewer counted conversions from this week (short calls stop counting; competitor terms blocked), so bidding re-learns. Compare with `all_conversions` across the change.
+
+**Open:** ⚑ recheck ~2026-10-23: search terms on the 3 campaigns (new competitor names to add), CallRail PPC calls (wrong-company share should drop sharply), spend and cost per lead. PMax Mitsubishi-Ductless is paused (not touched).
 
 ---
 

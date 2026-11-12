@@ -1,6 +1,6 @@
 # Napps — Call Wins Log
 
-Day-by-day log of CallRail-recorded calls attributed to paid ads (Google Ads source), last 15 days (2026-10-01 → 2026-10-15). Transcribed locally (`faster-whisper small.en`); see [[tsd-call-wins-log-process]] for the pipeline. Raw audio/transcripts kept out of this repo (session scratchpad only).
+Day-by-day log of CallRail-recorded calls attributed to paid ads (Google Ads source), 2026-10-01 → 2026-10-15, plus single entries added later (10-17, 10-19, 10-23). Transcribed locally (`faster-whisper small.en`); see [[tsd-call-wins-log-process]] for the pipeline. Raw audio/transcripts kept out of this repo (session scratchpad only).
 
 **Outcome legend:** ✅ Booked · ⏳ Open/follow-up needed · ❌ No contact / not a lead
 
@@ -48,6 +48,12 @@ Day-by-day log of CallRail-recorded calls attributed to paid ads (Google Ads sou
 ## 2026-10-19
 
 - **15:00 · 265s · LSA (from Google, not in CallRail)** — Restaurant manager: drains backing up at the front and back of the building no matter what they try. Booked for tomorrow around 10:30am. Google status: Active (charged). ✅ Booked (commercial drain call).
+
+---
+
+## 2026-10-23
+
+- **15:56 · 214s · Google Ads (Branded) · Atlanta caller ID** — Existing customer (CallRail marks first-time, but it's an open job) checking on a repair waiting on a replacement blower motor for a ~5-year-old unit. Office has no update yet; customer says if no motor is found by Monday he'll buy an ECM motor from a supply house and have Napps install it. ⏳ Open (existing job, not a new lead).
 
 ---
 

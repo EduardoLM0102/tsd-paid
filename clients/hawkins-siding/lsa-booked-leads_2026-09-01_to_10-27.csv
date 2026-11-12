@@ -1,0 +1,40 @@
+created (account time),lead_id,type,charged,service,call seconds
+2026-09-03 15:43,337713943,Message,charged,Siding installation,
+2026-09-04 15:53,337541435,Call,charged,Siding repair,136
+2026-09-04 18:47,338005363,Call,charged,,200
+2026-09-04 19:41,338010055,Call,charged,Siding installation,264
+2026-09-05 09:35,337631021,Call,charged,Siding repair,43+247
+2026-09-10 13:11,339179389,Call,charged,Siding repair,294
+2026-09-10 15:15,339223441,Message,charged,Siding remodeling,
+2026-09-12 10:58,339605671,Call,charged,Siding repair,218
+2026-09-12 19:33,339249353,Call,charged,,207
+2026-09-14 13:41,339967519,Call,charged,,200+11
+2026-09-14 15:12,339887529,Call,charged,,166
+2026-09-15 15:13,339833387,Call,charged,Siding remodeling,176
+2026-09-15 16:59,340300780,Call,charged,Siding repair,209
+2026-09-16 14:29,340078091,Call,charged,Siding remodeling,299
+2026-09-17 10:59,340675786,Call,charged,,228
+2026-09-18 09:04,340756002,Call,free,,38+338
+2026-09-19 16:28,341041533,Call,charged,,426
+2026-09-23 10:31,341850115,Call,charged,,210
+2026-09-25 10:30,341880218,Call,charged,,1+336
+2026-09-25 12:26,342308602,Message,charged,Siding repair,
+2026-09-25 16:31,342308772,Call,charged,Siding repair,200
+2026-09-26 08:48,342365223,Message,charged,Siding repair,
+2026-09-26 14:38,342428568,Call,charged,Siding repair,222
+2026-09-28 10:03,342671839,Call,charged,Siding remodeling,150
+2026-09-28 11:43,342326015,Call,charged,Siding remodeling,219
+2026-09-28 13:29,342691317,Call,charged,,161
+2026-09-28 18:29,342780132,Message,charged,Siding remodeling,
+2026-09-29 15:44,343028677,Call,charged,Siding installation,153
+2026-09-30 15:05,343154934,Message,charged,Siding repair,
+2026-10-03 06:31,343374488,Message,charged,Siding installation,
+2026-10-03 12:51,343814044,Message,charged,Siding repair,
+2026-10-04 13:31,343552499,Message,charged,Siding repair,
+2026-10-05 15:48,343833857,Call,charged,,214
+2026-10-06 10:35,344322391,Message,charged,Siding installation,
+2026-10-06 18:53,344130920,Message,charged,Siding repair,
+2026-10-08 14:07,344641616,Call,charged,,426
+2026-10-09 08:19,345056295,Call,charged,,80+449
+2026-10-10 09:58,345321885,Call,charged,Siding remodeling,3+45+340
+2026-10-14 14:10,346150536,Call,charged,,252

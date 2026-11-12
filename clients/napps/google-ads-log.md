@@ -466,6 +466,82 @@ Pull: `paid/weekly-7day/weekly_pull.py` (window 10-06..10-12 vs 09-29..10-05), s
 **14-day (10-05..10-18):** biggest finding = **all plumbing ad groups land on the homepage**, AC on /schedule-now/, while the site has /plumbing/emergency/, /plumbing/leak-detection/, /plumbing/slab-leaks/, /sewer-drain/clogged-drains/, /air-conditioning/repair/, /heating/ (checked 10-19) → point each ad group to its page (likely cause of QS 1–3). Plus the 3-week-old staged items: Branded → Target IS + $8–10 cap; AC Summer → heating; pause 'plumber available now' + 'hvac maintenance' until LPs fixed.
 AT tasks eeab3f31 / c2ba367c / 5511cbb3 / 8e9a8687 left open for Gui's review.
 
+## 2026-10-20 — APPLIED the 10-05/10-13 staged changes (Edu: "the staged changes, they are ALL approved")
+
+Script `paid/weekly-7day/staged_1013_apply_2026-10-20.py` (validate first, then live, read-back confirmed). Budgets unchanged (Branded $60, Plumbing $50, HVAC $50).
+1. **Branded 23685615826:** Maximize Conversions → **Target Impression Share, 95% absolute top, $10 CPC cap** (was $34 avg CPC).
+2. **Plumbing 23819717682:** PHRASE negatives **the mink** ('the mink tyler tx' $36.30) and **detector** (leak-detector tool
+   searches $60.97). 0 conv blocked, no keyword conflicts. Tyler IS in the service area (nappsac.com lists Tyler + Lindale), so
+   no geo change.
+3. **AC Summer 24049055193 → heating**, renamed **TSD_07.21_Search_Nonbranded_HVAC_Heating**, $50/d unchanged:
+   - NEW ad groups + 1 RSA each (claims only from nappsac.com, checked 10-20: 24/7 emergency heating, TACLA 72668C, family owned
+     since 1957, Bryant factory authorized, upfront flat-rate pricing, financing on replacements):
+     Furnace Repair → /heating/furnaces/ (9 kw: furnace repair P+E, heater repair, heating repair, heat pump repair, furnace/heater
+     not working, emergency heating repair, furnace repair near me) · ad 828663394462;
+     Furnace Replacement → /heating/furnaces/replacement/ (6 kw) · ad 828741722618;
+     Heating Maintenance → /heating/maintenance/ (6 kw) · ad 828615169809. All 3 ads in review.
+   - PAUSED ad groups AC Tune-Up, AC Replacement, AC Installation; PAUSED 'ac repair' PHRASE ($914 / 1 conv in 30d).
+     **AC Repair ad group stays live** (its other keywords + ad), so the campaign keeps serving while heating ads are reviewed.
+**Note:** the live AC ads still say "Free Estimates Available"; the site doesn't mention free estimates. Worth fixing later.
+⚑ Check heating ad approval 10-21/22, recheck results 10-27 (fu-074).
+
+## 2026-10-20 (later) — Tracking check for the new heating ad groups (read-only)
+
+**Works:** call asset 903-289-7073 APPROVED on TSD_07.21_Search_Nonbranded_HVAC_Heating (Calls from ads, 60s, 27 in 60d).
+Headless test on /heating/furnaces/?gclid=TSDtest1020b: gtag loads G-Q9KC7NXEWY + AW-16542555435 (conversion linker, gclid
+captured in ccm/collect), and a tel: tap fires 'Click to call' (label ZnW2CJr7qtscEKu6jdA9) via the Google tag's own
+link-click rule. Fake gclid, so no real conversion recorded.
+**Broken: form fills are not counted in Google Ads, site-wide.** The heating pages (and /schedule-now/) embed the GoHighLevel
+form 'Schedule Service - Activate' (iframe link.leadnurturemachine.com/widget/form/Y0T8AuvseKBX6itJAZju, lazy-loaded). Nothing on
+the page fires a conversion on submit. 'TSD - Lead form' (WEBPAGE, AW-16542555435/Qxp-CK2BqtscEKu6jdA9) fired once in 60d
+(08-25, /contact/); 'GHL Form Fill' (upload) 0.
+**GA4 (383876275, linked to this Ads account):** last 60d ghl_schedule_service 7 + ghl_contact_us 1 + ghl_career_form 1 (all
+pagePath/source '(not set)', so not attributable), 'lead' 5 (has page + source; 2 of 5 = /careers/). Key events include
+ghl_contact_us and ghl_career_form (and page_view) but not ghl_schedule_service; no GA4 import exists in Ads.
+**No GTM container on nappsac.com** and no Napps account in TSD's GTM. Podium chat not tracked in Ads.
+**Plan (Edu, 10-21, first thing):** create/install a GTM container, add a GHL form listener → 'TSD - Lead form' conversion,
+excluding careers; test on /heating/furnaces/. Command Center fu-076.
+
+---
+
+## 2026-10-21 — Correction: form tracking was already in GTM (Edu tested, working)
+
+Edu: the form-fill tracking was already implemented in GTM, and he tested it today; it fires. **The 10-20 entry's "No GTM container on nappsac.com" was wrong:** /heating/furnaces/ loads **GTM-KH7RS4V** (seen in the page source 10-21). The container isn't in TSD's GTM account (same access gap as the 08-03 entry), which is why the 10-20 check found no Napps account. fu-076 closed, nothing to build.
+Still worth watching: 'TSD - Lead form' recorded 1 conversion in 60d while GA4 saw 7 schedule-form submits. That may just be few ad-click visitors submitting, but confirm the next real form lead from an ad shows up in Ads (with fu-074, 10-22).
+
+## 2026-10-22 — Heating ads approved + conversion check (fu-074), read-only
+
+**Heating ads:** all 3 (828663394462 Furnace Repair, 828741722618 Furnace Replacement, 828615169809 Heating Maintenance) APPROVED / REVIEWED, ELIGIBLE. First clicks 10-21: Furnace Repair 1 click $20.12, Heating Maintenance 1 click $37.42, 0 conv. Furnace Replacement no impressions yet. Heating and Plumbing campaigns show LIMITED (reason UNKNOWN in the API); Branded LEARNING (new Target IS strategy).
+**No counted conversions since 10-12.** Google `call_view` has 5 ad calls after 10-12: 10-14 52s (Heating), 10-15 55s, 10-17 46s, 10-19 7s, 10-21 3s (Plumbing). `Calls from ads` counts 60s+ only, so none counted. CallRail ('Google Ads' source) shows the same 10-14/15/17 calls at 47–56s, all answered, first-time. So tracking works; the calls are just short. `TSD - Lead form`: 0 in the last 30 days.
+**Watch:** whether 46–56s ad calls are real bookings (listen in CallRail before changing the 60s rule). Recheck 10-27 (fu-074).
+
+## 2026-10-22 (later) — Non-branded diagnosis, read-only (30d 09-22..10-21)
+
+**⚠ Both non-branded campaigns PAUSED this morning, not by TSD API:** HVAC_Heating 24049055193 at 08:55:48, Plumbing 23819717682 at 08:55:52 (change_status; change_event not showing it yet, so who is unknown). Also Branded keyword edits at 08:02 and a Branded ad added 10-21 19:53. Budgets unchanged ($60/$50/$50). Both spent normally on 10-21. Confirm who paused before doing anything.
+
+**Why non-branded conversions are expensive:**
+- Plumbing $1,453 / 55 clk / 3 conv ($484). 'plumber available now' PHRASE = $1,115 (77%), matching competitor names via near-phrase: Benjamin Franklin (~$170), Ledbetter ($120, 1 conv), Holt ($91), Eschberger, Jason's, Roy, Fountain. Matches the CallRail wrong-number calls (Benjamin Franklin, "Lead Better" = Ledbetter).
+- Heating/AC $1,509 / 52 clk / 1 conv. 'ac repair' $740 (paused 10-20), 'hvac maintenance' $441 / 0 conv. Competitor terms ~$335 (Chaffin Smith, A C Pros, Wood AC, Veterans Pride, Jack's, Servpro), plus duct cleaning, Athens/Mt Pleasant.
+- Competitor terms ≈ $846 of ~$2,960 visible NB spend.
+- QS 1–3 on most keywords; landing page experience BELOW AVERAGE almost everywhere, expected CTR below. CPC $26–37.
+- Max Conversions, no tCPA, no CPC cap, ~1 conv/month and form fills 0 + ad calls under 60s not counted → bidding has no signal.
+- IS 27–28%: lost to rank 39–46%, budget 27–33%.
+No changes made.
+**Open question:** who paused NB this morning (Edu, teammate, client)? Don't re-enable until known.
+**Recommended once the pause is explained (not applied, needs Edu's OK):**
+- Competitor brand names as negatives in both NB campaigns (closes the 10-05 block-or-keep question: block; wrong-number calls prove the cost).
+- 'plumber available now' PHRASE → EXACT or pause, so Plumbing spreads across real service keywords.
+- Both NB → Maximize Clicks with ~$15 CPC cap until there's conversion signal.
+- Listen to the 46–56s ad calls in CallRail; if real leads, lower the Calls-from-ads threshold.
+- Investigate landing page experience (BELOW AVERAGE): speed + relevance.
+**PPC CPA context (Oct 1–20):** $2,709.55 spend / 3 CallRail PPC wins = ~$903; all 3 wins were existing customers, likely Branded ($650), so NB ~$2,060 for 0 wins (unverified per call).
+
+## 2026-10-22 (night) — Who paused the two non-branded campaigns (fu-079)
+
+Change history (change_event 10-21..10-22) answers it: both pauses came from **eduardo@topservdigital.com in the Google Ads web UI** (GOOGLE_ADS_WEB_CLIENT), Heating 24049055193 at 08:55:48 and Plumbing 23819717682 at 08:55:52. Not an outside user. No other changes in that window (the 08:02 branded keyword edit mentioned earlier does not show up in change_event). Only Branded 23685615826 is live (LEARNING). Edu to confirm it was him (or a browser session on his login) and why, before re-enabling.
+
+**Edu (10-22 night):** "I paused those campaigns because they're too expensive and I'll request a couple new landing pages to use in those campaigns." Nonbranded Heating + Plumbing stay paused until the new pages exist; relaunch on the new pages with the 10-22 diagnosis fixes (competitor negatives, 'plumber available now' to exact or paused, Max Clicks ~$15 cap). fu-079 closed.
+
 ## 2026-10-26 — AT optimization tasks (Gui, via Claude)
 
 Read-only on all accounts; everything below is staged. 7 AT tasks completed, notes in the task fields + KPI rows (Google 9622f9d5, Meta 2d469ad9, LSA 0b628d2f).
@@ -482,3 +558,270 @@ Read-only on all accounts; everything below is staged. 7 AT tasks completed, not
 - Branded: no change; recheck 10-27.
 
 Tasks: [7d Google](https://app.agencytitan.com/tasks/instance/ddc33400-a23c-47b3-871b-05d7abcc4981) · [30d Google](https://app.agencytitan.com/tasks/instance/dc942476-b624-43d9-adba-9698042aa974) · [90d Google](https://app.agencytitan.com/tasks/instance/c5d38c0c-80ff-4076-8f19-a5a0534c41cd) · [7d LSA](https://app.agencytitan.com/tasks/instance/d3ecdf40-d9cf-4f45-ada1-83212681972b) · [30d LSA](https://app.agencytitan.com/tasks/instance/0180df26-e2cb-4542-a328-5e70a37156aa). Meta in meta-ads-log.md.
+
+## 2026-10-27 — fu-074 recheck (read-only, nothing changed)
+
+Script `napps_recheck_1027.py`. Only Branded is live since 10-22 (NB Heating + Plumbing paused by Edu, still paused; no changes since).
+So the heating search-term / CPL part of fu-074 moves to the relaunch (fu-084), and the 50/50 spend check is moot.
+
+**Branded on Target IS (95% abs-top, $10 cap, since 10-20), POST 10-20 → 10-26 vs PRE 10-06 → 10-19:**
+
+| | Spend | $/day | Clicks | CPC | Conv | IS / abs-top |
+|---|---:|---:|---:|---:|---:|---|
+| PRE (Max Conv) | $445.41 | $32 | 12 | $37.12 | 3 | 93 / 93 |
+| POST (Target IS) | $11.37 | $2 | 4 | **$2.84** | 2 (1 ad call, 1 click-to-call) | 94 / 56 |
+
+- CPC fell ~93% with brand IS held at 94%. Abs-top 56% (cap $10 loses the very top on a few auctions); brand volume is tiny (1–18 impr/day),
+  so not worth raising the cap. Still LEARNING. Budget $60/d mostly unused, by design.
+- Search terms all brand (napps ac, napps ac longview tx, napps cooling heating & plumbing). 'mink plumbing tyler tx' 1 impr, 0 clicks.
+- The one real call (10-23 15:56, 214s, CallRail "first-time") was an **existing customer** chasing a pending repair (waiting on a blower
+  motor). Not a new lead. Same pattern as Oct 1–20 (all 3 PPC wins were existing customers). See call-wins-log 10-23.
+
+**Short ad calls question (from 10-22) closed:** the 46–56s ad calls on 10-14 / 10-15 / 10-17 were 2 wrong numbers (another Athens HVAC co,
+Benjamin Franklin) + 1 Saturday answering-service "are you open". The 60s Calls-from-ads rule loses nothing; keep it.
+
+**Account is effectively dark:** PPC spent **$289 in 7 days, $278 of it on 10-20/21 before the NB pause**; since 10-22 it's ~$2/day vs
+$160/day budgeted. No new-customer lead from Google PPC since at least 10-01. Relaunch depends on the new landing pages (fu-084, 10-29),
+and the client's 65/35 split starts 11-01 (fu-092). If NB is still paused on 11-01, the AM should know the split has nothing to apply to yet.
+
+## 2026-10-27 (later) — Non-branded RELAUNCHED on the 2 new landing pages (Edu's go, fu-084)
+
+Edu: "We have these two landing pages... implement them in the campaigns we paused and turn them on again", then "Move forward with your
+additions and then go ahead and publish the campaigns". Script `napps_relaunch_1027.py` (validate-only, then `--apply`, read-back confirmed).
+
+**Pages checked before launch (10-27):** https://nappsac.com/furnace-heating-repair-in-longview/ and
+https://nappsac.com/emergency-plumber-in-longview/ both HTTP 200, noindex (fine for ads), load GTM-KH7RS4V + gtag AW-16542555435 +
+G-Q9KC7NXEWY, tel: = 903-758-6482 (main line; taps counted by the gtag link-click rule). New GHL forms 41itmOgyyvmnwOP5aBfa (heating) and
+9mZSVwSVyFxgDqp4cR0V (plumbing), both on link.leadnurturemachine.com. The GTM listener (public gtm.js) catches any GHL form from that origin
+with an email ('set-sticky-contacts' → `ghl_form_submit` → 'TSD - Lead form' Qxp-CK2BqtscEKu6jdA9), so the new forms should count.
+**Not tested with a real submit** (would create a fake GHL lead): one test + Mo's Verified Live before telling the client the pages are live.
+
+**Applied (NB total $100/d unchanged, now 65/35 per the client's 10-23 request; Branded untouched):**
+| | Heating 24049055193 | Plumbing 23819717682 |
+|---|---|---|
+| Budget | $50 → **$65** | $50 → **$35** |
+| Bidding | Max Conv → **Max Clicks, $15 CPC cap** | same |
+| Live ad group | **Furnace Repair** only (ad 828663394462 → new heating page) | **Emergency Plumber** only (ad 807944988879 → new plumbing page) |
+| Paused ad groups | AC Repair, Heating Maintenance, Furnace Replacement (page is repair-only, no AC page) | Drain and Sewer, Leak Detection (page is emergency-only) |
+| Keywords | — | 'plumber available now' PHRASE PAUSED (77% of spend, matched competitors); EXACT stays |
+| New PHRASE negatives | chaffin smith, a c pros, wood air conditioning, alford pace, veterans pride, servpro, jack's ac, walker heating | benjamin franklin, ledbetter, holt plumbing, eschberger, jason's plumbing, roy the plumber, fountain plumbing |
+
+**Eagle Point Roofing cleanup (Edu: old TSD client, exclude not just pause):** the account had 5 Eagle Point sitelink assets. 2 were live-linked
+('Our Locations' 346848030215, 'About Us' 346848030218, both → eaglepointroofingtx.com) on Plumbing AND on the old paused
+TSD_06.05_Leads_Search_Nonbranded_HVAC 23819634471. All 4 links REMOVED; 0 at ad group / account level. The other 3 (Fence Repair, Fence
+Installation, Roof Repair) were already unlinked. Assets can't be deleted via the API, so the 5 sit orphaned and serve nowhere.
+
+**After launch:** both campaigns ENABLED (Heating LEARNING, Plumbing LIMITED), both ads back in review after the URL change.
+**Expect** underspend at first (one ad group each, $15 cap vs $26–39 CPCs before) and fewer clicks; that's the trade for cutting waste.
+**Next:** ad approval 10-28; first-week read 11-03 (fu-099); actual HVAC/plumbing spend split vs 65/35 (fu-092).
+
+## 2026-11-03 — fu-099 + fu-092: first week of the relaunched Nonbranded (read-only, nothing changed)
+
+**Window:** 10-28 → 11-02 (6 days). Script `napps_recheck_1103.py` + CallRail pull (company COM4cd8…, 5 calls 10-28 → 11-03).
+No account changes since Edu's 10-27 relaunch batch.
+
+| | Budget | Spent (per day) | Clicks | CPC | IS / rank-lost | Leads |
+|---|---:|---:|---:|---:|---|---:|
+| NB Heating | $65 | $62.46 ($10) | 5 | $12.49 | 30 / 70 | 0 |
+| NB Plumbing | $35 | $14.39 ($2) | 1 | $14.39 | 33 / 67 | 0 |
+| Branded | $60 | $26.54 ($4) | 3 | $8.85 | 95 / 5 | 0 new |
+
+- **Ads approved** (828663394462 heating, 807944988879 plumbing), both on the new pages.
+- **Underspend: NB spent $77 of $600 (13%).** Rank-lost ~70% on both. The $15 cap sits under the market (CPCs were $26–39 before) and
+  quality scores are low: core keywords QS 1–5, landing page experience still BELOW AVERAGE on every rated keyword (Google's rating lags a new page,
+  so this can still move). Search volume is there: heating got 260 impressions, mostly real furnace-repair intent ("furnace not turning on",
+  "furnace running but no heat", "furnace not igniting"), but we win few auctions.
+- **65/35 split (fu-092):** budgets are set 65/35, actual spend 81/19. Meaningless while neither campaign spends its budget.
+- **Clicks:** "how much for hvac service call" $14.81, "heater repair" x2, "heating repair" x3, "plumber near me" $14.39. All 6 clicks came from
+  Tyler (2), Daingerfield (2), Frankston (1), Gun Barrel City (1): none from Longview. Tyler is in the service area (site lists it); the other three are fringe.
+- Competitor impressions, no clicks: chris cooling tyler tx, coy dodd air conditioning tyler texas, c woods ac, e d miller service company.
+- **Leads: 0 from Nonbranded** (no forms, no ad calls). Branded's 3 ad calls (10-29 513s, 10-30 65s, 11-02 289s) are one repeat caller from
+  Fort Collins CO (970), CallRail "repeat" = existing contact, not a new lead; Google didn't count them either.
+- Forms on the new pages are still untested with a real submit, and Mo's Verified Live is still owed before telling the client the pages are live.
+- Account total ~$17/day vs $160/day budgeted.
+
+**Proposed (needs Edu's go; budgets unchanged, so no client approval):**
+1. Max CPC cap $15 → $25 on both NB campaigns (still under the old $26–39 CPCs), recheck in a week.
+2. One test submit on each new page (heating + plumbing) to confirm 'TSD - Lead form' fires, then Mo's Verified Live.
+3. Tell the AM: the 65/35 split is set, but Google is barely spending (~$17/day of $160) while the new pages earn quality score.
+
+## 2026-11-03 (later) — APPLIED cap $15 → $25; ⚠ new-page forms can't be counted (GTM listener needs an email)
+
+Edu: "Yes, work on the three topics you brought up."
+
+**1. Applied:** `napps_cap_1103.py`, validate-only first, then `--apply`. Max Clicks CPC cap $15 → **$25** on NB Heating 24049055193 and
+NB Plumbing 23819717682. Read-back: both $25, budgets $65 / $35 unchanged, both ENABLED.
+
+**2. Test submit: NOT done, because the tracking can't work yet.** Checked before submitting (headless, no submit):
+- The new GHL forms (41itmOgyyvmnwOP5aBfa heating, 9mZSVwSVyFxgDqp4cR0V plumbing) ask only **full name, phone, ZIP**. No email field.
+  Both have Cloudflare Turnstile (a headless submit would likely be blocked anyway).
+- The live GTM-KH7RS4V listener (public gtm.js, read 11-03) only pushes `ghl_form_submit` when the GHL payload has an email:
+  `a&&a.email&&(window.dataLayer.push({event:"ghl_form_submit",...}))`. So a form fill on either new page never reaches 'TSD - Lead form'
+  (Qxp-CK2BqtscEKu6jdA9). The 10-27 entry assumed "with an email" was fine; it isn't for these forms.
+- **Fix (UI only):** GTM-KH7RS4V is not reachable with TSD's GTM API token (no Napps account among the 82 it sees). In the Custom HTML listener
+  tag change `a&&a.email&&(` to `a&&(a.email||a.phone)&&(`, publish, then one test submit per page in GTM Preview (GPC + ad blocker off)
+  and confirm 'TSD - Lead form' fires. Then Mo's Verified Live (lead lands in GHL).
+- Side check: raw HTML of both pages still loads GTM-KH7RS4V + AW-16542555435 + G-Q9KC7NXEWY. Headless Chromium gets a page without them
+  (bot variant), so headless tag tests on nappsac.com aren't reliable; use a real browser.
+
+**3. AM note:** drafted for Edu (spend barely moving, cap raised, form tracking fix this week). No AM name on file in the workspace.
+
+## 2026-11-04 — Quick check after the $25 cap (read-only)
+
+- Cap change landed 11-03 10:41 (account time). NB 11-03: Heating $52.60 / 4 clicks, Plumbing $22.61 / 1 click = **$75.21**, vs ~$13/day in week 1.
+  The plumbing click ($22.61, "plumbers near me") cleared the old $15 cap. Rank-lost Heating 78% (11-02) → 60%. 11-04 has no spend yet (early hours).
+- Clicked terms: plumbers near me, heat pump compressor replacement cost (price research), hvac near me. 0 leads; Branded ad call 11-03 58s (under the 60s rule).
+- **GTM-KH7RS4V still v20, listener still requires an email** (gtm.js size changed only from Google's library). New-page form leads still can't count (fu-121).
+
+## 2026-11-04 — Cowork first-visitor test (Edu): new-page form leads do NOT count in Google Ads (confirmed)
+
+Edu tested 11-04 ("tracking is working fine"), likely in a browser with an older GHL sticky contact. Cowork re-ran it as a first-time visitor
+(nappsac.com + link.leadnurturemachine.com storage empty), Tag Assistant on GTM-KH7RS4V, page 1 only (furnace-heating-repair-in-longview):
+- Submit 11-04 09:19:17 BRT (12:19:17 UTC), GHL contact **bHJnE5kJ0IQxAqQK4U5r** "TSD TEST - please ignore", source "Heating Landing Page" (delete in GHL).
+- set-sticky-contacts payload: full_name, first/last, phone +19035550100, postal_code, source, location_id. **No email key.**
+- '00 | cHTML - GHL Form Listener' was loaded, but **no ghl_form_submit**, **'TSD - Lead form' (Qxp-CK2BqtscEKu6jdA9) did not fire**, no conversion request.
+- Inline thank-you, no redirect, no captcha.
+- Side flag: Cowork typing (903) 555-0100 into the phone field left 35550100 (leading "90" dropped); only +19035550100 entered correctly. May be an automation
+  artifact; check by hand on mobile, since 903 is Longview's area code.
+- Page 2 (emergency plumber) skipped: same listener, same field set, same result expected; test both after the fix.
+
+**Fix still owed (Edu, GTM UI):** listener `a&&a.email&&(` → `a&&(a.email||a.phone)&&(`, publish, re-test first-visitor on both pages (fu-121).
+
+## 2026-11-04 (later) — Listener fix PASSES in GTM Preview (not yet published)
+
+Edu edited '00 | cHTML - GHL Form Listener' in GTM-KH7RS4V: `if (!contactData || !contactData.email) return;` →
+`if (!contactData || !(contactData.email || contactData.phone)) return;`. Cowork re-test on the heating page in Preview (09:25:22 BRT, same contact
+bHJnE5kJ0IQxAqQK4U5r, payload still no email): ghl_form_submit fired (#33), '03 | G.Ads - Lead Form' (label Qxp-CK2BqtscEKu6jdA9) sent to
+googleadservices, plus '03 | G.Ads - User-Provided Data' and '03 | GA4 - Lead Form'. Plumbing page not tested (same listener).
+- **Live is still v20 until Edu publishes.**
+- Test hit had no gclid, so Google Ads won't attribute it; GA4 may show 1 test lead.
+- ⚠ Cowork: the site's WP Rocket delays GTM until the first scroll/click on the page. Clicks inside the GHL iframe don't count as page interactions,
+  so a visitor who lands, clicks straight into the form and submits may never load GTM: lead lost AND gclid not stored. Fix = web dev excludes
+  GTM (googletagmanager.com / GTM-KH7RS4V inline snippet) from WP Rocket "Delay JavaScript execution". Not tested yet.
+- 11-04: AT Internal Request **fa6ddeb9-7a1b-4600-a87e-8393e3356134** "Napps: Google Ads update on the new landing pages" created as a DRAFT (Intake, not submitted)
+  for Edu to review: Intake + Review & Close = Edu, Execution = Angela (Napps' assigned AM in AT). FYI only (pages live since 10-27, 65/35, week-1 spend, cap raise, phone-only form fix).
+
+---
+
+## 2026-11-06 — LSA → Pay-per-lead PMax migration: exposure check (read-only, NOT migrated yet)
+
+Napps LSA `9239407401` is still classic LSA (Max Conversions). It's multi-trade (leads 08-08..11-06: plumber 80 / HVAC 40 / bath remodel 24),
+but NO per-trade target is set (target_cpa_bid_micros = 0 on all three; manual bids $50/$22/$23 are leftovers ignored under Max Conv).
+So the "one campaign-level target" change shouldn't move anything here when it switches.
+
+**Context:**
+Google (not TSD) is moving LSA into a new campaign type, "Pay-per-lead PMax". It creates a PERFORMANCE_MAX campaign
+(`Pay-per-lead-PMax-<business>`, Max Conversions, same daily budget as the old LSA, one asset group `xcat:service_area_business_<trade>`)
+and pauses the old `LocalServicesCampaign:SystemGenerated`. Still billed per valid lead, still Search + Maps only, badge carries over.
+What changes: no manual bidding, one campaign-level target instead of one per trade, weekly budget becomes a daily average, old LSA
+dashboard reports don't migrate (lead history does). Sweep of all 57 enabled MCC accounts on 11-06: 7 switched on 11-03/11-04
+(Watt's Right, Amazing Morrow, Golden, Gray Duct, King's Window, Nick's, Spencer). Full write-up: `_contexto/memoria/tsd-lsa-ppl-pmax-migration.md`.
+
+Data notes: `local_services_lead` still returns leads after the switch (lsa_report.py lead data OK). Spend/metrics now sit on the
+PMax campaign, so anything filtering on channel LOCAL_SERVICES (google_channels.py) misses them. **$0 spend ≠ dark**: only charged
+leads cost money, clicks are free. Judge delivery by impressions + leads per day.
+
+## 2026-11-10 — fu-120: week 2 of the relaunched Nonbranded after the $15 → $25 cap (read-only, nothing changed)
+
+**Window:** 11-03 → 11-09 (7 days; the cap went live 11-03 10:41, so ~all of it at $25). Scripts `napps_recheck_1110.py` (+ `b`/`c`/`d` follow-ups)
+and CallRail company COM4cd8 (30 calls 10-28 → 11-10). Leads judged on calls + CallRail only (Edu: form tracking treated as broken until fu-121 closes).
+No account changes since 11-03 10:41 (change_event).
+
+| | Budget/day | Week 2 spent (per day) | % of budget | Clicks | CPC | IS | Rank-lost | Week 1 (6d) |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| NB Heating | $65 | $410.85 ($59) | 90% | 20 | $20.54 | 37 | 63 | $62 / 5 clk / IS 30 / rank-lost 70 |
+| NB Plumbing | $35 | $221.97 ($32) | 91% | 10 | $22.20 | 40 | 51 (+10 budget-lost) | $14 / 1 clk / IS 33 / rank-lost 67 |
+| Branded | $60 | $38.95 ($6) | — | 7 | $5.56 | 85 | 15 | $27 / 3 clk |
+
+- **Spend fixed:** NB $633 vs $77 in week 1. Split **65/35 exactly** (fu-092 OK now that both spend). Daily is lumpy (Heating $0 on 11-06, $139 on 11-04).
+- **Rank-lost still high:** 63% / 51%, abs-top 18% / 16%. Better than week 1 (~70%), not solved. Raising the cap again won't fix it cheaply: QS is the lever.
+- **Landing page experience: still BELOW AVERAGE on every rated keyword** (emergency plumber QS 5, plumber near me QS 1, emergency plumber near me QS 2,
+  furnace repair / heater repair / heat pump repair QS 3, furnace repair near me QS 2). Ad relevance is ABOVE AVERAGE on the core terms, eCTR mostly below.
+  Only 'plumbing repair near me' shows LP AVERAGE (0 impressions). Two weeks in, Google's rating of the new pages hasn't moved.
+- **Leads (calls + CallRail): 0 verified from Nonbranded.** Cumulative since the 10-27 relaunch: $710, 36 clicks, 0.
+  - call_view week 2: only Branded (11-03 58s from the Fort Collins repeat caller, 11-05 missed). No NB ad call.
+  - CallRail "Google Ads" number 903-289-7073: 4 calls in 14 days, all the same Fort Collins repeat caller (Gilbert, Sabina). 0 new.
+  - Google counted **1 'Click to call' conversion on NB Plumbing** (11-04, 2 pm, mobile, "plumbers near me" via 'plumber available now' EXACT).
+    That action is type CLICK_TO_CALL = a TAP on the call button, not a call. No matching call_view row and nothing on 289-7073 that day → **tap, no call. Not a lead.**
+    It is primary + biddable in the PHONE_CALL_LEAD/CALL_FROM_ADS goal, so Max Clicks ignores it but the account's conversion column overstates NB.
+  - The other 26 CallRail calls are all GBP (903-522-5601), not ads.
+- ⚠ **Measurement blind spot (new):** both new pages show the main line **903-758-6482** (tel: links + text, raw HTML) = CallRail's destination number,
+  not a tracking number. CallRail's website-session tracker "Paid Search (Google Ads)" is **DISABLED** and GTM v21 loads no CallRail script, so a visitor
+  who lands on the new page and taps the phone number calls the shop directly: **no CallRail record, no Google Ads conversion.** "Calls + CallRail" only
+  sees the ad's call button (asset 343446389771 = 903-289-7073). So 0 measured NB calls ≠ 0 calls. The old "Homepage Calls" session tracker is disabled too.
+- **fu-121 status:** live GTM-KH7RS4V is **v21** and its listener reads `email||a.phone` → the fix is published (matches fu-121 note 11-04).
+  0 'TSD - Lead form' conversions on NB in week 2. Not proof of 0 forms: no first-visitor LIVE test on record yet, WP Rocket still delays GTM, Mo's Verified Live still owed.
+- **Search terms (visible ≈ $162 of $633; Google hides the rest):**
+  - Plumbing: **"streety plumbing marshall texas/tx" (competitor) $69.86 / 3 clicks via 'emergency plumber' PHRASE** = 31% of visible plumbing spend.
+    'plumbers near me' $69.51 / 3 clicks (1 = the tap). 'plumber available now' EXACT $80 / 4 clicks, matching "plumbers near me".
+  - Heating: **water-heater queries on the furnace page** ("gas hot water heater not working" $24.97, "water heater pilot light not lighting" $24.12) via 'heater not working' PHRASE.
+    'hvac near me' $28.97 via 'heating repair' PHRASE; "heat pump compressor replacement cost" $14.73 (price research). Competitor impressions with no clicks (2 amigos, c&r, chris cooling, adams air).
+- **Geo (clicks, location of presence):** Heating: Tyler 6 ($106), Gilmer 3, Big Sandy 3, Marshall 3, Kilgore 2, Longview 2, Seven Points 1.
+  Plumbing: Longview 4 ($93), Athens 2, Marshall 1, Tyler 1, Hallsville 1, Gun Barrel City 1. **Longview now 6 of 30 clicks** (0 of 6 in week 1).
+  Far southwest fringe (Athens, Gun Barrel City, Seven Points) = $83 / 4 clicks.
+- Side note: GBP calls are busy (26 in 14 days, 1 tagged "Schedule booked" 11-09). Not an ads result.
+
+**Read:** the cap raise did its job on delivery (13% → 90% of budget, exact 65/35), but $633 bought 30 clicks and 0 measurable leads, and the landing page is still
+rated BELOW AVERAGE. 30 clicks is too few to call it a fail, and calls from the page itself can't be seen. Fix the measurement before judging week 3.
+
+**Proposed (needs Edu's go; budgets unchanged, so no client approval):**
+1. Put a CallRail tracking number on the 2 new pages (enable a website-session/DNI tracker for Google Ads visitors, or at least a static source number
+   on these 2 pages), so page calls count. CallRail UI only (API is GET-only for us).
+2. Negatives: 'streety' PHRASE on Plumbing; 'water heater' PHRASE on Heating (furnace page doesn't sell it; plumbing page is emergency-only).
+3. 'Click to call' (7707737498, taps) → secondary, same fix as Integrate Comfort 11-04, so taps stop showing as conversions.
+4. Geo: confirm whether Athens / Gun Barrel City / Seven Points are in Napps' service area; if not, exclude them.
+5. Hold the $25 cap and budgets for week 3. LP experience is the QS lever: page speed (WP Rocket) + message match, ask web dev.
+Next read: fu-144 (11-17).
+
+## 2026-11-10 (later) — APPLIED recs 2-5 (Edu: "Apply 2-5"); rec 1 (CallRail on the pages) → Cowork recon first
+
+`napps_apply_1110.py`, validate-only first, then `--apply`, read-back confirmed:
+2. PHRASE negatives: **'streety'** on NB Plumbing (blocks the 2 "streety plumbing marshall" terms, $69.86, 0 conv in 30d) and **'water heater'** on NB Heating
+   (blocks 24 terms in 30d, $49.09, 0 conv). No keyword conflicts.
+3. **'Click to call' 7707737498 (CLICK_TO_CALL taps) → Secondary**, account-wide (primary False, include_in_conversions False). 90d taps: Branded 15, NB 8.
+   No enabled campaign bids on conversions (Branded Target IS, NB Max Clicks), so this only cleans reporting. Use all_conversions across this date.
+4. **Geo: the "fringe towns" were a county target.** Both NB campaigns targeted **Henderson County TX** (9059512), which holds Athens, Gun Barrel City, Seven Points,
+   Chandler and Eustace; none are on nappsac.com/service-area/. Henderson the town (Rusk County), which IS on the service-area page, wasn't targeted on NB
+   (Branded has it). Swapped on both NB: county **removed**, **Henderson city 1026468 added**. Still 11 locations each, PRESENCE only.
+5. Cap $25 and budgets $65 / $35 held (asserted by the script, not written). Landing-page experience fix = web dev via AM, not sent.
+
+**Rec 1, CallRail on the new pages (fu-146), API facts gathered:** company script `//cdn.calltrk.com/companies/336278805/1286f50050a4f3ac8e79/12/swap.js`,
+dni_active false; "Paid Search (Google Ads)" session tracker disabled since 2023-05-15, 0 numbers; **CallRail Google Ads integration for Napps = 'pending' with
+no customer selected** (so even gclid calls can't upload to 9509605037). Active trackers: GBP 522-5601, LSA 289-6340, Google Ads call asset 289-7073, Organic Social 320-4458.
+Cowork recon prompt (read-only: plan/cost, old tracker, 903 availability, integration, GTM CallRail tags, live page swap test, WP Rocket delay):
+`clients/napps/cowork-callrail-recon-1110.md`. Decision after recon (Edu): session pool (gclid → uploads) vs one source tracker.
+
+## 2026-11-10 (later 2) — Cowork CallRail recon results (read-only, nothing created; fu-146)
+
+- **Plan:** Call Tracking Intelligence Advanced $185/mo, 20 numbers included, account at **172 numbers** → extra local number **$2.50/mo**. 2,500 min included,
+  2,275 used (near the cap), $0.05/extra min. Toll-free +$5/mo.
+- **Old "Paid Search (Google Ads)" session tracker:** can't be re-enabled (greyed out, "Unavailable"). A new one is needed.
+- **903 numbers:** available (wizard offered 903-708-8425 for a single Google Paid tracker; NOT bought, wizard left unconfirmed). Pool not checked.
+- **CallRail → Google Ads integration:** Pending, no account selected. **Requires an active website (session) pool first.** 9509605037 "Napps Cooling, Heating & Plumbing"
+  is in the dropdown. Finish = pool → select account → call conversion settings → Activate. So a single source tracker would show page calls but could never upload them.
+- **GTM-KH7RS4V:** not visible to eduardo@topservdigital.com (only G-Q9KC7NXEWY and AW-16542555435 show). The 11-04 listener edit was made under another login; retry as that one.
+- **Live pages:** 903-758-6482 everywhere (8 tel: links per page), no calltrk/callrail request, no CallRail script in the source. First-visitor state not proven, but the script is absent from the HTML.
+- **Site:** WordPress + Elementor 4.3.6 + WP Rocket 3.24, delay-JS markup on both pages; no WP admin access; web contact not identifiable from the site.
+
+**Rec (Edu decides):** new session tracker, Google paid visitors only, smallest pool CallRail allows (~4 numbers ≈ $10/mo on TSD's CallRail bill), swap target 903-758-6482;
+swap.js via a GTM-KH7RS4V Custom HTML tag (no WP access); then finish the Google Ads integration on 9509605037 (count first-time calls 60s+). Caveat: WP Rocket delays
+GTM until the first interaction, so a visitor who taps the number before scrolling dials the unswapped main line. Ask the web dev (via Angela) to exclude GTM from the delay.
+
+## 2026-11-10 (later 3) — Decision: reuse 903-289-7073 on the new pages (no new CallRail numbers); AT task for the web dev
+
+Edu: no extra CallRail charge. The web dev swaps 903-758-6482 → **903-289-7073** (existing "Google Ads" CallRail number) on both new pages, text + all tel: links,
+only on those 2 pages. Visibility only (no Google Ads upload without a session pool; fine while NB is on Max Clicks). Page calls = CallRail "Google Ads" calls
+minus Google call_view (call-button) calls. Also asked: exclude googletagmanager.com from WP Rocket "Delay JavaScript execution".
+AT Internal Request created via the AT web UI (connector was signed out), left in **Intake, not submitted**; Edu assigns the web dev himself (not Angela):
+https://app.agencytitan.com/tasks/instance/33c671b4-ea17-450c-8c13-9c254e531475
+- 2026-11-10: Edu **submitted** the AT task 33c671b4 and assigned it to the web dev. Next: when it's done, check both pages show 903-289-7073 (text + tel: links), then count page calls in the fu-144 read.
+
+## 2026-11-11 — Landing-page number swap VERIFIED LIVE (AT 33c671b4, Sha)
+
+Checked both pages by curl 11-11 ~13:00 BRT:
+- /furnace-heating-repair-in-longview/ and /emergency-plumber-in-longview/: **903-289-7073** appears 7x in visible text and in all **8 tel: links** per page; **0** tel:9037586482 left.
+- The only remaining "(903) 758-6482" is the site-wide JSON-LD schema `telephone` (HVACBusiness/Plumber NAP). Correct, leave it: schema carries the main line, not a tracking number.
+- GTM-KH7RS4V snippet now loads as a plain `<script>` (0 `rocketlazyloadscript` tags on the page; WP Rocket still delays 19 other scripts via data-rocket-src). So the GTM delay ask is done too.
+- Sha's execution note: "The phone number has been updated, and GTM has been excluded from JS delay." Review notes written; AT close pending Edu (classifier blocked the write).
+- Next: confirm in CallRail that 903-289-7073 is reporting calls from these pages (fu-144 read 11-17), and that CallRail's Google Ads integration can now attribute them.
+

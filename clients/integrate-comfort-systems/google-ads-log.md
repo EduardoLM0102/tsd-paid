@@ -4,6 +4,217 @@
 accessible under the Topservdigital MCC (4155514468) via the `tsd.sh` profile. Account name in
 Ads: "Integrate Comfort Systems - LSA Belleville". USD, `America/New_York`.
 
+## 2026-11-12 (later 2) — Tracking test on the new heating page: PASS
+
+Edu submitted one test lead ~09:40 BRT (name "TSD TEST - please ignore", eduardo@topservdigital.com, 555-010-1112, 1 TSD Test Street, Belleville); Cowork read Tag Assistant (GTM-N4QW8BF live, GPC + ad blocker off).
+- Page load: Google Ads config, GA4 config + page_view, CallRail, GHL listener, Conversion Linker, Google forwarding number (AW-461860660), Meta + TikTok page views all fired. Phone stays (866) 658-2987 (no CallRail swap, by design).
+- gclid: with ?gclid=TSDTEST1112 typed directly, location.search, `_gcl_aw` cookie and the form iframe src all carry it (the first "missing gclid" was Tag Assistant's connect box stripping the query).
+- Phone tap: Google Ads | Phone Call Click + GA4 Phone Click (+ Meta/TikTok contact) fired.
+- Form: email required. **form_submitted (#19) → Google Ads | Event | Lead, Google Ads | User-provided Data, GA4 | Event | Lead (generate_lead), Meta | Event | Lead all FIRED (Succeeded).** Form then redirects to a "Thank you - Integrate Comfort Systems" page (tags on it not checked).
+- Not confirmed: the Ads hit payload (Tag Assistant "Hits Sent" empty), mobile view (Edu checks on phone).
+- ⚠ Second Google Ads tag on the site: **AW-1064128677** (besides 461860660). Old open question; check where it loads and whether it double-counts.
+- To do: delete the test contact from ICS's GHL (Edu/Mo).
+
+---
+
+## 2026-11-12 (later) — APPLIED: NB relaunch on the heating page (Edu: "Go")
+
+`ics_nb_relaunch_1112.py --apply`, all 7 steps APPLIED. Read-back: campaign 24047025253 **ENABLED**, cap $20, budget $25/d; goal = CAMPAIGN custom 6459689709; 16 enabled keywords (12 exact + 4 phrase); new RSA **831383124121** ENABLED → icshvac.com/furnace-heating-repair-northern-nj/ (REVIEW_IN_PROGRESS); old RSA 817245367827 PAUSED; 20 negs added.
+**Rollback:** campaign → PAUSED.
+**Open:** Edu test lead on the page (GTM Preview, GPC + ad blocker off) → Ads 'Lead' (tag 93) fires → GHL; new RSA approval; first read 11-19 (fu-159). Holiday offer copy if approved (fu-131).
+
+---
+
+## 2026-11-12 — NB relaunch on the new heating page STAGED + validated (fu-151), waiting on Edu's go
+
+**Page live** (Sha built it, AT 82ecaff6 still in Execution): icshvac.com/furnace-heating-repair-northern-nj/ (www 301s to non-www). curl vs brief PASSES: H1 exact, noindex, (866) 658-2987 x23, main line 866-749-6331 only in the site-wide schema (invisible), GHL form 9yoyys68IRpTtwyjDdjr + gclid/utm iframe script, GTM-N4QW8BF, "15,000+", brand line as briefed. Not checked: visual/mobile.
+**GTM (live container, read-only):** tag 78 GHL listener + tag 93 Ads "Lead" (form_submitted) + tag 97 phone-click tag fire on All Pages, so the new page is covered. ⚠ Listener only pushes form_submitted when the GHL payload has an **email** (same trap as Napps); this form fired in Oct so email is likely required, the test lead confirms. Also live: CallRail swap.js 974585705 on All Pages + tag 52 Google forwarding number (AW-461860660) on All Pages.
+**Campaign state read (paused 11-11):** heating AG 197798871985 = 8 PHRASE kws; 30d paid terms mostly competitors (steve sirc, lenny's, smiths, advanced) + price research; old RSA 817245367827 → /furnace-repairs (2 redirects), says "12,000+" and "NJ & NYC" (NYC is a negative); campaign on account-level goals (incl. a PAGE_VIEW goal); geo PRESENCE, no partners/display; 18 campaign negs + 4 shared lists.
+
+**Staged `ics_nb_relaunch_1112.py` (validate-only PASS, all 7 steps):**
+1. Goal → custom 6459689709 'TSD | Calls + Forms (no taps)' (Calls from ads, Landing Page Call, Submit lead form - web, Lead form - Submit), same as PMax.
+2. Budget $22 → $25/d; Max Clicks cap $15 → $20.
+3. +20 campaign PHRASE negs: cost, price(s), how much, reviews, reddit, diy, parts, westchester, new york, lenny's/lennys, smiths heating, a j perri/aj perri, reiner, gadaleta, petro, jobs, salary.
+4. Pause the 8 old PHRASE kws; add 12 EXACT (furnace repair, heating repair, heater repair, furnace/heating repair near me, boiler repair (+near me), emergency heating repair, no heat repair, heat pump repair, oil burner repair, furnace not working) + 4 PHRASE (furnace/heating/boiler repair nj, emergency furnace repair). "no heat in house" rejected by Google as Dating policy (!), dropped.
+5. New RSA → the new page, path Heating-Repair/Northern-NJ, 15 headlines/4 descriptions (15,000+, NATE, 24/7, gas/oil/boiler/heat pump, licensed NJ, 5 counties; no NYC, no offer yet), old RSA paused.
+6. Campaign ENABLED.
+Spend: +$25/d vs today (Branded $15 + LSA). Still below the pre-11-11 PPC total ($77/d), so inside what was running.
+After apply: Edu test lead on the page (GTM Preview, GPC + ad blocker off) → Ads 'Lead' fires → GHL; first read ~11-19. Holiday offer copy only if approved by 11-13 (fu-131).
+
+---
+
+## 2026-11-11 (later 3) — Heating landing page brief for Sha DRAFTED in Agency Titan (fu-151)
+
+Internal Request **82ecaff6-4816-49c7-8ee6-ba46371f078d** "Build 1 landing page: Furnace & Heating Repair (Northern NJ)", client ICS, priority high, due Thu 11-13 EOD. Intake = Edu, Execution = Sha (60c4ead4), Review & Close = Edu. Left in Intake for Edu to submit (and pick WebDev as the Execution department in the form). https://app.agencytitan.com/tasks/instance/82ecaff6-4816-49c7-8ee6-ba46371f078d
+Brief = Cool Hand bd47275a format, one page, model = go.coolhandelectric.com/hvac-repair/:
+- URL icshvac.com/furnace-heating-repair-northern-nj/ (main site, WordPress + Elementor, noindex; no go. subdomain exists for ICS). H1 "Furnace & Heating Repair in Northern NJ"; subhead mirrors the live heating RSA (since 1990, gas/oil/boiler/heat pump, NATE, 24/7). No promo bar (fu-131 offer, if any, later).
+- Phone = Google Ads CallRail number **(866) 658-2987 / +18666582987** (the call-extension tracker; same pattern as Cool Hand's 469-351-1738 on every page). Never the main line 866-749-6331 (the site's default, header + footer).
+- Form = the GHL form already on /contact-us/ (9yoyys68IRpTtwyjDdjr) + the gclid/utm iframe script. GTM-N4QW8BF stays; GTM internals + all testing = Edu.
+- Proof verified on icshvac.com 11-11: since 1990, 15,000+ installations (the RSA says 12,000+, stale), 3 NJ offices, 24/7 emergency, NATE-certified, Mitsubishi Electric Diamond Contractor, NJ #19HC00444000 + HIC #13VH00607800, financing on replacements. Reviews/rating from the Belleville GBP only.
+- Brand line proposed "Family-owned. Northern NJ since 1990." (Edu/JB to confirm); owner story from /about-us/ (Chris Wisniewski); video = ZhZmpBYn2fs.
+Edu's open choices before submitting: main site vs a go.icshvac.com subdomain, the brand line, the H1 wording, the deadline.
+Next, when Sha posts the URL: relaunch NB with one heating ad group (phrase/exact), Max Clicks ~$20 cap, $22-30/day, ad URLs → the new page; GTM lp_form_submit / GHL trigger check; test lead.
+
+---
+
+## 2026-11-11 (later 2) — APPLIED A + B + C (Edu: "Execute A and B ... Execute C"), ~09:50 BRT / 07:50 ET
+
+All validate-only first, then `--apply`, read-back confirmed on each:
+1. **NonBranded 24047025253 → PAUSED** (`ics_nb_pause_1111.py`). Budget $22 / $15 cap left as they are.
+2. **PMax 22890783804 → PAUSED** (`ics_pmax_pause_1111.py`). Budget $40 left. The 11-18 checkpoint is moot.
+3. **LSA Belleville 2895702982 / 15786867110: $1.43/day ($10/week) → $50.00/day** (`ics_lsa_budgets_1111.py` block B). Insurance PASSED in the API. Manual CPA bid $24 untouched.
+4. **LSA Englewood Cliffs 8323145223 / 21467507022: $1,428.57/day → $50.00/day** (block C). Never served; cap only.
+Net: PPC −$62/day, LSA +$48.57/day on a profile that should spend, −$1,378.57/day on a profile that never did. Live paid now = Branded $15 + LSA Belleville $50 + Carlstadt $51 + Englewood $50 (not serving) + Mitsubishi YouTube ~$20.
+**Rollback:** NB/PMax status → ENABLED; Belleville budget → $1.43; Englewood → $1,428.57.
+
+**AM note DRAFTED** in Agency Titan: Internal Request **be762554-82f7-4c17-967b-6068ba223791** "Google Ads update: Search paused, Local Services budget restored, one question" (client ICS 1e439ca7, Angela = AM on the record). Asks whether ICS wanted Belleville cut in June and wants it back; FYI on the pauses + Englewood cap; Mitsubishi YouTube owner; phone menu reminder. Left in Intake for Edu. https://app.agencytitan.com/tasks/instance/be762554-82f7-4c17-967b-6068ba223791
+⚑ Watch: Belleville LSA impressions/leads per day from 11-12 (fu-150); if Angela says the client wanted it off, revert.
+
+---
+
+## 2026-11-11 (later) — Whole-account picture + turnaround plan (read-only; Edu asked "what else can we do, ASAP")
+
+`ics_full_picture_1111.py` + LSA probes (/tmp scripts, output summarized here) + CallRail 11-04..11-10 + site checks.
+
+**Where ICS's leads actually come from (CallRail, 11-04..11-10, 24 calls):** GBP Belleville + Englewood Cliffs 14 calls (9 at 60s+, 5 first-time), homepage organic/direct 9 (7 at 60s+, 3 first-time), **Google Ads 1 (21s)**. Demand exists; paid captures almost none of it.
+
+**1. LSA is the account's lost engine.** Three LSA accounts, **1 lead in 30 days**:
+| Account | Budget | 30d spend | Leads | Notes |
+|---|---|---|---|---|
+| Belleville 2895702982 | **$1/day** | $0 | 0 | ELIGIBLE/SERVING, latest insurance + license PASSED, manual CPA bid $24. History: Apr-26 12 leads/$672, **May-26 30 leads/$1,435 (~$48/lead)**, then June→ 1-3/mo since the budget went to $1. Good months in 2023-24: 40-106 leads. Budget last changed before 08-15 (API can't see who). Geo: Bergen/Essex/Hudson/Morris/Passaic counties + Basking Ridge/Bedminster/Bernardsville/Far Hills/Summit/Andover, excl. Newark/Paterson/Elizabeth/Irvington. |
+| Carlstadt 2175964343 | $51/day, tCPA $60 | $106 | 1 | 27 Bergen/Essex/Hudson towns, 280-390 impr/mo, reach-limited |
+| Englewood Cliffs 8323145223 | **$1,429/day** | $0 | 0 ever | targets only Englewood Cliffs city, 0 impressions ever; older license FAILED/insurance EXPIRED, latest PASSED. Never served: needs a UI look (reviews/profile). Budget is a loaded gun if it ever starts. |
+- Also in the Belleville account: **"Mitsubishi YouTube" 23599485735, $610/mo flat since April ($7.3k/yr)**, 56-210k impr/mo, no TSD log, 0 attributable leads. Last touched 11-07 (someone). Owner unknown (client / Mitsubishi co-op / inherited).
+
+**2. Nonbranded lands on a weak page through two redirects.** Ad URL `www.icshvac.com/furnace-repairs` → 301 → 301 → `/services/heating/repair/`. Page: H1 "Furnace & Heating Repair", one generic 866 number, **0 forms**, 2 YouTube embeds. Landing page experience BELOW AVERAGE on every keyword, QS 3, rank-lost 57%, $15 cap. The Hawkins/Cool Hand go. template (1 service/page, H1 = keyword + town, CallRail number big, form at top) is the fix.
+
+**3. PMax is not a lead campaign.** Homepage URL, geo = 11 towns only (not the 8 counties NB/Branded use), Search Partners + Display ON, Mon-Fri 7-17 schedule (no nights/weekends in heating season), legacy negative list of 21 Latin American countries. Search categories last 13d = competitor names (reiner group, total comfort, gadaleta, njr, aj perri, petro...). Since taps left the goal: 69% YouTube. 1 booked lead in October (10-21 Jersey City). 
+
+**4. The IVR eats 3 of 4 ad callers** (Oct: 24 of 31; this week 1 of 1). AT 5e5dcc2a with Angela since 11-02, no answer yet. Nothing in Google fixes this.
+
+**5. Tracking debt:** CallRail→Ads uploads 0 since 10-09 (fu-031); ghl_* GA4 imports still primary (double-count forms); GA4 page_view as a conversion action (secondary); 866 number on the LP = "Homepage Calls" pool, so paid website calls would show a gclid, and none did.
+
+**6. Geo mismatch:** NB/Branded = 8 NJ counties; PMax = 11 towns; LSA Belleville = 5 counties; Carlstadt = 27 towns; Englewood = 1 town. Site has a /new-york-city/ service page; NYC is not targeted anywhere, yet NYC callers book (10-27 Queens). Ask ICS if NYC is in scope.
+
+**Plan (fastest first):**
+| # | Action | Owner | Approval | Effect |
+|---|---|---|---|---|
+| A | Pause NB (staged) + pause PMax now (not 11-18): $62/d of 0-lead spend stops | Edu | none (spend down) | funds B |
+| B | LSA Belleville $1 → ~$50/day (May level). First ask Angela who cut it in June and why. | Edu + Angela | net total paid goes DOWN vs today ($62 out, $50 in); still confirm with the client since someone cut it | at May's rate ~30 leads/mo at ~$48 |
+| C | Cap LSA Englewood Cliffs $1,429 → $50/day; UI check why it never served | Edu | none (budget down) | safety + maybe a 3rd LSA area |
+| D | Chase the IVR fix (AT 5e5dcc2a): ad + LSA tracking numbers straight to service | Angela → ICS | client | roughly triples usable ad calls at the same spend |
+| E | Heating landing page (go. template) → relaunch NB on it, 1 heating ad group, $20 cap, $22-30/d, + ICS's holiday offer if approved by 11-13 | Edu → Sha; Edu rebuild | none | QS 3 → 6+, same $ buys ~2x clicks that convert |
+| F | Mitsubishi YouTube: who owns it? If nobody, pause and move $20/d to LSA | Angela | client | +$610/mo |
+| G | Tracking: CallRail uploads (fu-031), ghl_* → secondary, during the LP build | Edu | none | clean bidding data for E |
+| H | Branded: leave ($7 cap, IS 62-89%) | | | |
+
+Followups: fu-150 (LSA Belleville restore + Englewood cap), fu-151 (heating LP request). fu-123 note updated.
+
+---
+
+## 2026-11-11 — fu-123 read: 0 real leads from paid in 6 days (read-only, nothing changed yet)
+
+`ics_read_1111.py` (this folder) + CallRail 11-04..11-10 (24 calls). POST 11-05..11-10 (6d, first full days after the 11-04 tap fix) vs PRE 10-29..11-03 (6d).
+Only change since 11-04: the 2 NB negatives (11-04 07:42). Tap action 7835539864 confirmed Secondary (taps only in All conversions now).
+
+| | POST spend (budget) | Real leads POST | PRE spend | Real leads PRE |
+|---|---|---:|---|---:|
+| PMax | $244 ($41/d of $40) | **0** | $166 | 2 (152s, 65s ad calls, not transcribed) |
+| NonBranded heating | $158 ($26/d of $22) | **0** | $123 | 0 |
+| Branded | $39 ($6/d of $15) | **0** | $59 | 0 (1 tap) |
+
+- **PMax went to YouTube once the taps left the goal:** YouTube $167.52 of $244 (69%, 672 clicks at $0.25) vs 31% before. Search $73 (6 clicks). Conversions column 0.0; all_conversions = 331 GA4 page_views + 8 taps. Search IS 11%, rank-lost 82%. Same drift as Neon Monkey PMax after its geo fix.
+- **Ad calls:** call_view = 1 call in 7 days (11-04 08:45 ET, 21s, Caldwell). Transcribed: it ends during the greeting ("Thank you for calling ICS…"). CallRail: that call is the only Google Ads one; **0 website calls with a gclid** (the rest are GMB, organic, direct).
+- **NonBranded heating:** 25 clicks, 0 leads. Competitor 'lenny's plumbing & heating clark reviews' $12.74 / 2 clicks; research terms (home heater not working, how much does furnace repair cost); 'best hvac companies in westchester ny' (NY, outside geo?). Since heating-only (10-29..11-10): **$281, 0 real leads** → fails the ≤ $200 per real lead rule a second time (10-28: $287 / 1).
+- **Branded:** IS 68%, budget-lost 21% while spending $6/d of $15 (Target IS day-to-day swings). 0 calls.
+- Account-wide paid (11-05..11-10): **$441, 0 real leads.** 13 days since 10-29: ~$790 for 2 untranscribed PMax calls.
+
+**Proposed (Edu's go):**
+1. **Pause NonBranded** now. `ics_nb_pause_1111.py` staged + validated. Spend goes down $22/d, no approval needed.
+2. **PMax:** one more week to 11-18, hard stop. Keep only if ≥ 2 transcribed real calls at ≤ ~$150 each. YouTube share is the tell: if it stays ~70%, pause it.
+3. **Branded** stays as is ($15, Target IS).
+4. The IVR (AT 5e5dcc2a, with Angela since 11-02) is still the first fix: the one ad call this week hung up in the greeting.
+
+---
+
+## 2026-11-04 (later) — APPLIED: tap action → Secondary + 2 NB competitor negatives (Edu: "Apply 1 and 2")
+
+`ics_apply_1104.py` (this folder), validate-only first, then `--apply`, read-back confirmed:
+1. `[TSD] Click to call` 7835539864 → **Secondary** account-wide (primary_for_goal False, include_in_conversions_metric False). Taps still report
+   under All conversions. Only PMax bids on conversions here, so only its bidding changes. Custom goal 6459689709 left as is.
+2. NonBranded 24047025253: PHRASE negatives **steve sirc**, **advanced heating** (30d replay: 4 terms, $22.38, 0 conv, no keyword conflicts).
+Budgets unchanged ($40 / $22 / $15). ⚑ Next read 2026-11-11 (fu-123): PMax Conversions = real only (no taps), PMax cost per real call (transcribe),
+NB heating leads vs the ≤ $200 rule, Branded leads.
+- AT Internal Request **2895ef4a-c0b0-4d2c-b8a9-b8048a69ed5c** "ICS: Google Ads update after the 10-28 changes" created as a DRAFT (Intake, Edu submits): FYI for Angela (Execution), Edu Intake + Review & Close.
+
+---
+
+## 2026-11-04 — fu-109 recheck of the 10-28 changes (read-only, nothing changed)
+
+Script `ics_recheck_1104.py` (this folder) + CallRail (COM742d…, 22 calls 10-29 → 11-03). POST 10-29 → 11-03 (6d) vs PRE 10-09 → 10-26 (18d).
+No account changes since the 10-28 apply. Real = Calls from ads (60s) + Landing Page Call + Submit lead form - web + Lead form - Submit; taps and GA4 page_view out.
+
+| | Spend/day (budget) | Real leads | Per real lead | Notes |
+|---|---|---:|---:|---|
+| PMax | $28 ($40), PRE $52 | 2 (PRE 1 in 18d) | **$83** (PRE $936) | Search partners $160 → $9; YouTube now 31% ($52) |
+| NonBranded heating | $20 ($22), PRE $16 | 0 (PRE 1) | n/a | 18 clicks, CPC $6.83, IS 12%, budget-lost 31%, rank-lost 56% |
+| Branded | $10 ($15) | 0 (PRE 2 in 18d) | n/a | IS 82%, budget-lost 15% → 0% |
+
+- **PMax real calls:** 10-30 152s (Orange) and 11-02 65s (Jersey City), both first-time in CallRail (Call Extension), not transcribed yet.
+  The other 4 ad calls: 37s, 17s, 17s, 1 missed. The IVR drop pattern continues (ticket 5e5dcc2a with Angela).
+- **⚠ The custom goal leaks taps here too** (same as Watt's Right 11-03): PMax Conversions column = 2 Calls from ads + 2 `[TSD] Click to call` taps.
+  Small volume, but PMax still bids on them. Fix = tap action 7835539864 → Secondary. Branded is Target IS and NB is Max Clicks, so only PMax's bidding changes.
+- **NB:** heating-only works (all spend on Heating & Furnace Repair, 749 impr). 0 leads on $123 is too early under the ≤ $200/real lead rule.
+  Clicks on competitors: steve sirc clark nj $13.10 (2), advanced heating and cooling asbury nj $9.28; research: gas valve for furnace replacement cost,
+  when heater is not working. Boiler terms showing (oil boiler technician near me clicked): boiler service still unconfirmed with ICS (10-08 question).
+- PMax underspends ($28 of $40) while it relearns on the new goal.
+
+---
+
+## 2026-10-28 (later) — APPLIED fu-109 items 1-3 (Edu's go), total still $77/d
+
+Script `ics_apply_1028.py` (this folder), validate-only first, then live. Read-back confirmed every change.
+1. **PMax** 22890783804: $50 → **$40/d**. Bidding goal: campaign-level PHONE_CALL_LEAD (Calls from ads + [TSD] Click to call
+   ad-button taps + Landing Page Call + GA4 phone_link_click) → custom goal **"TSD | Calls + Forms (no taps)"**
+   (customConversionGoals/6459689709) = Calls from ads (60s) + Landing Page Call (30s) + Submit lead form - web (GTM) +
+   Lead form - Submit. ghl_* GA4 imports left out (they double-count the GTM form). Same fix as Watt's Right 10-27.
+2. **NonBranded** 24047025253: AC Installation & Replacement **PAUSED** (Heating & Furnace Repair is now the only live ad group;
+   AC Repair was already paused). Max Conversions → **Max Clicks, $15 cap** (no Google bid estimates, the heating keywords barely
+   serve; Keyword Planner furnace repair top-of-page $5–48, actual heating CPC ~$7). **$15 → $22/d.**
+3. **Branded** 23675636592: **$12 → $15/d** (Target IS unchanged, $7 cap).
+**Expect:** PMax converts less on paper (taps no longer counted) and should drift toward real calls and forms. NB spend shifts fully
+to heating, with more clicks at ≤$15. ⚑ Recheck 2026-11-04 (fu-109): PMax real calls/forms per $, NB heating clicks + search terms + leads, Branded IS.
+
+---
+
+## 2026-10-28 — Checkpoint on the 10-08 changes (fu-012, read-only, NO changes)
+
+Main account 4571881760. Script `ics_checkpoint_1028.py` (this folder). PRE 09-20→10-07 vs POST 10-09→10-26 (18 days each).
+change_event since 10-08: only the 10-08 apply, a 10-10 auto-apply keyword REMOVE in Branded (before the 10-16 auto-apply cleanup)
+and the 10-16 AI Max cleanup on 2 paused rebate campaigns.
+
+| | PRE | POST |
+|---|---|---|
+| PMax | $733, 6 counted (all Calls from ads) = $122/call | $936, 8 counted = 1 Calls from ads + 7 [TSD] Click to call taps |
+| Branded | $129, 3 real (5 reported, 2 ghl dups) | $180, 7 counted = 5 taps + 1 Landing Page Call + 1 form |
+| NonBranded | $448, 3 | $287, 1 (Landing Page Call) |
+
+- **PMax fails the rule (≤ ~$150 per call).** Real ad calls ≥60s: 6 → 1, so ~$936 per real call. Ad calls placed went UP
+  (16 → 24), but the length mix collapsed: under 20s 2 → 14, 60s+ 7 → 4 (all campaigns). CallRail "Google Ads" calls: 16 → 20,
+  ≥60s 8 → 5. The 10-01→10-15 call-wins log already showed most ad calls ending inside ICS's extension menu with no live person.
+  So people are calling and dropping before they reach anyone, or are accidental taps (Search Partners up $107 → $160). Can't
+  separate the two without listening to the 10-16→10-27 calls.
+- "[TSD] Click to call" (CLICK_TO_CALL = taps on the AD's call button, origin CALL_FROM_ADS; corrected later 10-28, first written as site taps) is primary and now makes 7 of PMax's 8 and 5 of Branded's 7 conversions.
+  PMax bids toward taps that rarely turn into a 60s call. Same problem fixed on Watt's Right 10-27 with a no-taps custom goal.
+- PMax Search IS 15% → 16%, budget-lost 14% → 21%; YouTube spend fell $49 → $15 (the "air conditioning" neg removal moved spend to Search).
+- **NonBranded fails the rule (≤ ~$200 per real lead):** $287 / 1. The heating focus didn't take: Heating & Furnace got $43 / 6 clicks
+  (IS < 10%, 62% rank-lost), and AC Installation & Replacement took $244 / 32 clicks on research and DIY terms (cost, how to install,
+  mobile home units, mini split sizes, brand installers, competitor smiths heating newton).
+- Branded: fine. ~$45–60 per real lead, IS 81%, now 15% lost to budget at $12/d (avg CPC $4.86 under the $7 cap).
+- Rules conflict: pausing NB "and moving $15 to PMax" would fund the campaign that also failed. Decision for Edu (fu-109).
+
+---
+
 ## 2026-10-08 — APPLIED steps 4, 5 (rebate), 6, 7, 8 (verified by read-back)
 
 Ran `ics_changes_2026-10-07.py --live` (24 ops, one atomic request) with auto mode off, on Edu's "go". All 24 applied, and a read-back confirms each one:

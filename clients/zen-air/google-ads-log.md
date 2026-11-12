@@ -748,6 +748,79 @@ Changes: Edu set AI Max/asset automation off on legacy campaigns 10-16 (API); ed
 **Changed:** nothing. Still owed: Nonbranded phrase/exact rebuild (heating first) + AM ticket for the 10-08 pause.
 AT tasks `54ce2840` (Google, KPI `7e79b7c1`), `7f983d3f` (LSA, KPI `1cd8910d`), completed.
 
+## 2026-10-18 — LSA $12 tCPL recheck (read-only, Edu asked)
+
+API pull (`zenair_lsa_bids.py` + `zenair_lsa_cap_check_1018.py`): **state identical to 10-14**. `category_bids` HVAC still has `target_cpa_bid_micros` = $12 (manual $350 dormant), strategy MAXIMIZE_CONVERSIONS, `bidding_strategy_system_status` ENABLED, campaign-level `maximize_conversions.target_cpa_micros` still empty. `change_event` 09-19..10-18: zero bidding changes by anyone — the only event is Edu's 10-14 12:00 CAMPAIGN_CRITERION CREATE (localServiceId, web UI). So nobody ticked, cleared or edited the target since the 10-14 review, and the API still can't show the box state; "active or not" remains a Google LSA support question (fu-051 still open). Flow since 10-14: 3 phone leads (10-15 x2, 10-16), 1 BOOKED, none charged; only Oct charge so far = $62.40 on 10-10. Command Center lsa.lastChecked + fu-051 note updated.
+
+## 2026-10-23 — Non-branded rebuilt onto the 2 new landing pages and turned back ON (Edu's go in chat)
+
+**Pages (live 200, noindex, GTM-KCZ2GTP, GHL form via link.leadnurturemachine.com, phone 678-853-7440):**
+- Heating: https://callzenair.com/heating-repair-replacement-duluth-ga/ (form "Heating Oct 2026")
+- AC: https://callzenair.com/ac-repair-replacement-duluth-ga/
+Live GTM container has the GHL listener (`form_submitted` → Ads lead + GA4 `generate_lead`), so form fills on these pages count.
+The stray 661/760 numbers in the page source are a site-wide leftover script that only fires on "ridgecrest"/"antelope-valley" URLs. Harmless here.
+
+**Applied** with `clients/zen-air/zen_lp_rebuild_1023.py` (one atomic mutate, 270 ops, validate_only first, read back):
+
+| Change | Before | After |
+|---|---|---|
+| `TSD_08.03_Search_NonBranded_Evergreen` (24100030790) status | PAUSED (since 10-08) | **ENABLED** |
+| Budget | $150/day | **$100/day** (Edu's pick) |
+| Bidding | Max Clicks, $18 ceiling | unchanged |
+| Old ad group `Zen Air HVAC Nonbranded` (205687909824, 30 kws incl. `hvac contractors near me` BROAD) | ENABLED | **PAUSED** |
+| New ad group `Heating Repair & Replacement` (201482056277) | – | 13 phrase + 7 exact, 1 RSA → heating page |
+| New ad group `AC Repair & Replacement` (201482056557) | – | 9 phrase + 4 exact, 1 RSA → AC page |
+| Campaign negatives | 11 | **241**: the old ad group's 202 copied to campaign level + 28 new phrase (water heater/hot water/space heater/pool, car/auto/truck/vehicle/rv, window unit/portable, DIY/how to/parts/manual/youtube/reddit, jobs/salary/careers/hiring/school/training/certification/course) |
+
+Heating phrase: furnace repair, heating repair, heat pump repair, furnace replacement, heat pump replacement, furnace installation,
+new furnace, furnace tune up, furnace service, heating service, heater repair, emergency furnace repair, furnace not working.
+Heating exact: furnace repair near me, heating repair near me, heat pump repair near me, furnace repair, heating repair, furnace repair duluth ga, heating repair duluth ga.
+AC phrase: ac repair, air conditioning repair, air conditioner repair, ac replacement, ac installation, new ac unit, ac tune up, ac service, emergency ac repair.
+AC exact: ac repair near me, ac repair, air conditioning repair near me, ac repair duluth ga.
+Conflict replay: no negative blocks a new keyword.
+
+RSAs (15 H / 4 D each, no pins) use only claims on the pages (same-day + 24/7 emergency, free estimates, financing, NATE-certified, since 2016, family-owned, BBB A+) and approved brand lines (Stress Free HVAC, Your Neighborhood HVAC, Inhale Zen Exhale Comfort). No $49 offer (not confirmed, not on the pages). Ads 829433767919 (heating) / 829310581395 (AC) were in review at apply time.
+
+Dropped for now (no matching page): commercial HVAC, IAQ, smart thermostat, generic "hvac contractors" terms.
+Branded (23675783172, $50/day) untouched. PPC daily total $50 → **$150** (was $200 before the 10-08 pause).
+
+### Open
+
+- [ ] Confirm both RSAs APPROVED (should clear within a day).
+- [ ] Search terms + spend recheck ~10-27 (phrase "heater repair"/"ac service" are the leak risks), first conversion read ~10-30.
+- [ ] GHL gate: don't tell Eddie/Andrea the pages are "live" for leads until Mo marks Verified Live (joint test of the form).
+- [ ] AM ticket (Andrea): bundle the 10-08 pause + this relaunch at $100/day (PPC total $150 vs $200 approved).
+- [ ] Optional: sitelinks pointing at the 2 new pages; account sitelinks still go to the old service pages.
+
+## 2026-10-23 — Lead outcomes since the 10-18 check (read-only, Edu asked)
+
+Pull: `zenair_leads_1023.py` (LSA leads since 09-20 with status/notes/call length + PPC call_view since 10-14). Times America/New_York.
+
+**New LSA leads since 10-18 (4 calls):**
+| Created | Call | Status | Client note |
+|---|---|---|---|
+| 10-19 09:23 | 130s | ACTIVE (unmarked) | none |
+| 10-20 11:22 | 106s | DECLINED | sales pitch (auto shop offering fleet services), not a customer |
+| 10-21 13:00 | 28 min | **BOOKED** | two addresses, both scheduled for Nov, "both paid for" |
+| 10-22 13:32 | 284s | ACTIVE (unmarked) | none |
+
+**Updates on leads already reported:** 10-15 16:16 → BOOKED (returning customer, leaking HVAC). 10-15 09:10 note "hiring??" (job seeker, still ACTIVE). 10-16 08:17 (52s) still unmarked. 09-24 x2 (prepaid maintenance scheduling; "wrong Zen Air, different state") and 10-09 (records lookup) still ACTIVE.
+
+LSA charged spend 10-14..10-23 = $0 (last charge $62.40 on 10-10). Since 09-10: 20 calls, 8 BOOKED (2 of them existing/returning customers), 5 DECLINED, 7 unmarked.
+
+**PPC:** 2 real calls on Branded, 10-16 (68s, 118s), the first `call_view` calls since 09-28. Outcome unknown (Zen Air not in CallRail). NB was paused the whole window (relaunched today).
+
+**Meta:** not pulled. Lead outcomes need Edu's lead export (city only); geo recheck stays ~10-27 vs the 10-19 baseline.
+
+Ask via Andrea: mark the 7 unmarked LSA leads, and confirm what the 10-21 two-address booking was (job type / value).
+
+### Same day — transcribed the 2 unmarked new calls (local faster-whisper small.en, audio + full transcripts kept in session scratchpad only)
+
+- **10-19 09:23 (lead 346892854, 2 min):** furnace stopped working the night before, 40 degrees out. Rep (Haley) had no tech that day (several emergency calls, one tech out), scheduled for the next day 12:00–2:30, offered to call back if a slot opened. Caller accepted. **Booked by transcript** (LSA still shows unmarked).
+- **10-22 13:32 (lead 347706996, 5 min):** upstairs heating unit stopped working suddenly a few days ago. Rep (Steve, alone in the office) scheduled tech Landon for the next morning ~9:00, text confirmation sent. **Booked by transcript** (LSA still shows unmarked).
+
+Both are new heating repair service calls. Running tally since 09-10 counting transcripts: 20 calls, **10 booked** (2 existing/returning), 5 declined, 5 unmarked. Whisper can misspell names, so treat names as unverified.
+
 ## 2026-10-26 — AT optimization tasks (Gui, via Claude): 30-day + 90-day Google Search, 30-day LSA. Read-only, changes staged
 
 **PPC 30d (09-26..10-25, LSA excluded):** $2,377.66, 177 clicks, 10 conv ($237.77), $13.43 CPC (prev 30: $4,366.21 / 19 conv). Branded $274.72 / 5 conv (2 real ad calls 10-16, 3 taps). Nonbranded old broad ad group $1,784.59 (09-26..10-07); relaunch since 10-23: $318.35, 27 clicks, $11.79 CPC, 1 tap, IS 23% (41% budget-lost). 3 days only, not judged.
@@ -769,6 +842,41 @@ AT tasks `54ce2840` (Google, KPI `7e79b7c1`), `7f983d3f` (LSA, KPI `1cd8910d`), 
 
 AT tasks completed: 30-day Google https://app.agencytitan.com/tasks/instance/f3678bdc-12fd-4e41-97e1-7b3d7b1b5183, 90-day Google https://app.agencytitan.com/tasks/instance/fffa5fc8-ab9a-4971-aca0-78f2867481d8, 30-day LSA https://app.agencytitan.com/tasks/instance/cae894d1-2bfe-404b-bd35-0ae96d40574c. KPI - LSA `1cd8910d` (10-23 row) updated with 30-day keys.
 
+## 2026-10-26 — Branded + Non-Branded now report on a calls + forms goal only (Edu's go in chat)
+
+**Why:** Edu asked to make sure the campaigns optimize for tap-to-calls and forms. Before: Non-Branded used the account-default goals (incl. `ghl_service_area` + `book_now_link_click` as PURCHASE, `ghl_contact_us` page-view events in SUBMIT_LEAD_FORM, BOOK_APPOINTMENT, CONTACT, app DOWNLOAD). Branded used custom goal "CMSA" (6452365353), which did NOT include `[TSD] Click to call` but did include the dead GA4 `phone_link_click`, Local actions - Directions and 5 `ghl_*` events.
+
+**Checked end to end first (read-only):** GTM-KCZ2GTP live v32 tag `02 | Google Ads - Phone click` [110] → AW-11095585764 / `o-0hCNSG2PgcEOTn5Kop` = Ads action `[TSD] Click to call` (7769293652, type CLICK_TO_CALL, origin CALL_FROM_ADS, 1 per click), trigger [76] = any click on a `tel:` link. Headless test (Ads/GA4 hits aborted, nothing recorded) on both new LPs, desktop + Android: every tel: tap fired the Ads conversion + GA4 `phone_click`. Emulated iPhone got the site's bot check ("Checking your browser...", 403), likely a headless artifact, real iPhone tap test still worth doing. Peach AI DNI (`dni.js`, company 63) swaps the number for gclid visitors (pool like 678-470-xxxx); the tag still fires since it matches any tel:. Correction to my 10-26 chat read: `[TSD] Click to call` is the site tap tag, not an ad call-button tap, so 10-23 = 1 tap (same event as GA4), not 2.
+
+**Applied** with `clients/zen-air/zen_goal_calls_forms_1026.py` (validate_only first, then read back):
+- New custom goal **`TSD | Calls + Forms`** (6459645015): `[TSD] Click to call`, `Calls from ads` (60s+), `Submit lead form - web` (GTM, gated on real GHL submit), `Lead form - Submit` (Google lead form asset 342506189374).
+- Left out on purpose: `ghl_*` GA4 imports, GA4 `phone_link_click` (never fires, site sends `phone_click`), Peach AI uploads (Edu: would double-count a tap + booking from one click).
+- Branded (23675783172): CMSA → new goal. Non-Branded (24100030790): account default → new goal. CMSA itself untouched (old paused campaigns still use it).
+
+**Bidding unchanged (Edu's pick):** NB Max Clicks $18 cap, Branded Target IS. Neither bids on conversions yet, so this changes the Conversions column only. Expect counted conversions to drop vs before on NB (the `ghl_*` events no longer count); use all_conversions when comparing across 10-26.
+Switch NB to Max Conversions once it has ~15-20 real taps/calls/forms on the new LPs (fu in Command Center).
+
+### Open
+- [ ] Real-iPhone tap test on one LP (bot check blocked headless iPhone).
+- [ ] NB → Max Conversions on the new goal at ~15-20 conversions.
+- [ ] Optional cleanup: remove/secondary the dead GA4 `phone_link_click` action.
+
+## 2026-10-26 — Lead form da Nick's REMOVIDO do Branded (achado do Gui)
+Gui achou no Branded `TSD_05.13_Search_Branded_Evergreen` (23675783172) um lead form asset 342506189374 com business name "Nick's Heating & Cooling", privacy policy e final URL nicksac.com. Servia desde 2026-03-31 (campanha começou 03-23). Lifetime: 4.878 impr, 101 cliques, **9 envios** (05-20, 05-26, 06-08, 06-10, 06-11, 07-13, 07-17, 07-25, 08-02). Destino dos leads (email/webhook) não aparece na API; ver na UI. Downloads do Google só guardam 30 dias.
+**18:58 BRT: link campaign_asset REMOVIDO** (validate + live), readback status REMOVED. O asset continua na conta, só não está ligado a nada. Nenhum outro lead form na conta (conta, campanha, ad group).
+A auditoria de assets anterior (Achado 2) listou "lead form" mas não conferiu o nome. Conferir business name em lead forms nas auditorias.
+Impacto: a ação "Lead form - Submit" (7553021219) da meta "TSD | Calls + Forms" não tem mais fonte nesta conta.
+
+## 2026-10-29 — Recheck after the 10-23 NB relaunch + 10-26 goal (read-only, Edu asked)
+
+**NB 24100030790 PAUSED ~15:00 ET 10-29 by Edu** (Eddie's request via Angela, AT 'Stop PPC - Google' 6ae9c79c; task Execution completed 10-30 with completion notes). Spent every day 10-23..10-29 (last impressions hour 15 ET).
+
+NB 10-23..10-29 (both new ad groups, RSAs APPROVED, 100% SEARCH network): **$673 / 55 clicks / 1,490 impr / CPC $12.24 / 1 conv** (the 10-23 site tap, already known). 0 calls from ads (call_view empty since 10-23, Branded included). Heating $363 / 30 clicks / 1 conv, AC $310 / 25 clicks / 0. Search IS 16–29%, rank-lost 43% → 76% (budget-lost mostly low after 10-24), so the $18 cap + low QS is the limiter, not budget. QS where reported: `ac service` 1 ($65), `furnace installation` 1 ($48), `air conditioning repair` 5, most others 3. Top spenders: `heating service` $146, `new ac unit` $78, `air conditioning repair` $69.
+Search terms: Google shows only ~$96 of the $673. Visible paid terms are mostly research/off-service: gas fireplace repair, "hvac furnace cost", 4-zone mini split install cost, in-room wall AC, "what makes furnace blow cold air", TXV valve cost, "best hvac units". Impression-only terms full of model numbers, error codes, competitor names, prices, mini splits, window/wall units.
+Branded 10-23..10-29: $19 / 3 clicks / 0 counted conv (1 Peach AI booked call 10-23, all_conv only).
+
+Meta lead ad set 120247339585910711 after the 10-20 home-only change: 10-13..10-19 $1,000 / 81 leads / $12.34 (11.6/day) vs 10-21..10-28 $1,150 / 87 / $13.22 (10.9/day), CPM ~$11.5 → ~$12.6. Volume barely dropped, so the change did not visibly filter much; city mix still needs Edu's lead export. No Meta edits since 10-24 (activity log = billing only).
+
 ## 2026-10-31 — AT optimization tasks (Gui, via Claude)
 
 7-day Google Search + 7-day LSA. Read-only, nothing changed in the accounts.
@@ -784,3 +892,4 @@ AT tasks completed: 30-day Google https://app.agencytitan.com/tasks/instance/f36
 - **LSA 3740502923:** $62.40, 1 phone lead (10-28, charged, ACTIVE), 0 messages, $62.40 CPL (prior $0 / 4 uncharged leads: 1 booked, 3 declined). 74 impr, 100% top / 96.6% abs top. Underspending (the API budget of $642.86/d isn't the limiter, reach is). Oct 1-30: $124.80, 13 leads, 2 charged.
 
 AT tasks completed: Google https://app.agencytitan.com/tasks/instance/ad08262c-5da0-426a-ac74-2f52472b706c (KPI `f16cc8c4`), LSA https://app.agencytitan.com/tasks/instance/913c1bce-b039-4bd8-9183-9ceefab6a9b5 (KPI `f22b6c10`).
+

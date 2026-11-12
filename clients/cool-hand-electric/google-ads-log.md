@@ -785,3 +785,258 @@ Last 3/7/14/30 days (full days through yesterday), This week, Last week, Custom.
 **Refresh (10-10):** Command Center v5 has "Refresh now" + auto-refresh on open (data >6h old) via the local MCP tool tsd_funnel
 (Claude desktop app only, owner only; needs one app restart). Scheduled twice-daily push NOT installed: the safety check blocked an
 unattended headless-Claude job; needs Edu's explicit OK. Script ready: .claude/skills/google-ads-ratos/scripts/funnel_refresh_daily.sh.
+
+---
+
+## 2026-10-14: snapshot since the go. pages (read-only, nothing changed)
+
+Window Oct 10–14 (today partial, ~3 PM CT) vs Sep 9–Oct 6 (28 days, before the 10-07 pause). Search only, LSA excluded.
+- Search: $706.68 / 55 clicks / 11 conv / $64.24 CPL / 20.0% CVR / $12.85 CPC. Before: $55.27 CPL / 9.2% CVR / $5.08 CPC, 25.4 clicks/day (now ~12/day), 2.34 leads/day (now 2.0 on full days).
+- Electrical $355.68 / 30 / 6 / $59.28 (was $59.53). Branded $116.21 / 14 / 3 / $38.74 (was $40.57). HVAC $234.79 / 11 / 2 / $117.39 (was $60.41).
+- Mix: 5 Click to call taps, 4 [TSD] Contact Form (GHL on go.), 2 Calls from ads. Book Now 0 (no booking widget on go.).
+- CallRail: 6 website calls from ad visitors (5 answered, 4 at 60s+), all 6 uploaded as "Phone Call" (non-biddable). 6 ad-button calls (5 answered, 2 at 60s+); the 3 on 10-13 (Electrical, 9–42s) all came 17:02–17:26 CT, after posted hours.
+- Clicks halved because eligible impressions fell ~75% (Electrical ~2,525/day → 714, HVAC ~2,855 → 667) = presence-only geo + negatives (10-08) + 4 paused groups (10-09) + season. Not the pages: rank-lost IS down (Electrical 57.5% → 52.2%), Electrical IS 14.6% → 28.9%. Page effect can't be isolated.
+- HVAC 10-14: $95.08 on 2 clicks of "chill brothers" (competitor, $47.54 CPC) on a $36 budget. Other competitor terms with clicks: mister sparky near me, milestone electric phone number, maverick air conditioning, excel electric dallas. Negatives NOT added (staged for Edu).
+- YouTube unchanged ($25/day, ~1,000 clicks to go./): 7 taps, 0 CallRail calls, 0 forms.
+- FYI out of scope: lyanca@relentless-digital.com added 2 campaign criteria to the LSA campaign 10-12; LSA spent again from 10-10 ($66.48) after $0 since ~09-30.
+- Open: confirm in GHL that none of the 4 forms are test leads.
+
+## 2026-10-20 — "Ad calls stopped after Oct 15" checked (Command Center fu-066). Read-only, nothing broken
+
+**Verdict: the call path works; the gap is volume, not tracking.** A real ad-button call came in today, 10-20 09:01 CT
+(10s, answered) and shows in BOTH Google `call_view` (TSD_Search_Electrical) and CallRail ('Google Ads' tracker
+469-351-1738). Script: scratchpad `diag.py` (GAQL + CallRail GET, nothing saved to the repo).
+
+- **Call asset:** 429092777632 (469-351-1738) APPROVED/REVIEWED, linked ENABLED/ELIGIBLE on HVAC, Electrical, Branded.
+  Old 415288389635 links REMOVED (as planned 10-10). No account-level call asset.
+- **Phone impressions kept running:** Electrical 208 / 146 / 50 / 258 per day Oct 16–19 (vs 121–169 Oct 13–15). So
+  the number was showing; nobody pressed it.
+- **Search traffic flat:** clicks/day Oct 16–19 HVAC 2/1/3/1, Electrical 5/5/5/8, Branded 2/3/3/0, same as Oct 12–15.
+- **CallRail:** both trackers active, company active, DNI on. Calls since 10-14: 5 Google Ads + 1 Website pool (10-15),
+  then nothing until 10-20. Unique callers Oct 12–15 were ~5 (3 of the 8 legs were one Arlington caller), so 0 over
+  Fri + weekend + Mon is unlucky but possible at this rate.
+- **Branded 10-19 = 0 impressions because no one searched the brand that day:** search IS 100% every other day
+  Oct 12–20 (13, 20, 10, 13, 8, 6, 10, 4 impressions). Not a block.
+- **Leads Oct 16–20, Search:** 2 Contact Forms (10-17, 10-19) + the 10s call. All 'Click to call' taps since 10-16
+  (1, 1, 7) are **TSD_YouTube**, and none became a CallRail call, so they are not leads.
+- **Changes Oct 13–20:** only 1 asset created 10-14 by analytics@relentless-digital.com (the outside email seen before).
+
+**Real issue to weigh (Edu):** Search costs ~$80/day for ~10 clicks/day since presence geo + negatives (10-14 snapshot:
+CPC $5 → $13), so a few quiet days = $400 with 2 forms. Not changed. Still worth a test call to 469-351-1738 and one
+pool number (I can't place calls). LSA lead 10-19 (commercial phase converter, referred out) is charged: dispute in
+the LSA UI.
+
+## 2026-10-20 (later) — LSA drop + new ServiceTitan numbers: call asset swap STAGED, not applied
+
+**Edu:** "we lost LSA tracking because the client provided a new number, a ServiceTitan generated number; the call extension
+number needs to be the new one as well."
+**Numbers on record** (Angela, Slack group DM 10-12 14:01, "Phone numbers to be used for Cool Hands - I am also adding to AT"):
+PPC 469-270-1146 · LSA 469-300-0557 · website 469-306-2607 · Social 972-357-1696 · GBP "469-3000-9084" and Yelp
+"469-2514-5963" (both have a digit too many as written; confirm). Angela 10-12: "each LP per platform needs to have the
+corresponding tracking number."
+
+**LSA by week (API):** leads/impressions: Jul ~12 leads and ~1,000 impr/wk → Aug 17: 9 / 1,093 → Aug 24: 4 / 542 → Sep: 3–5 /
+~300–450 → **Sep 28 and Oct 5: 0 leads** (223 / 230 impr, 14–17 clicks) → Oct 12: 2 / 313 → Oct 19: 1 so far. So reach fell
+~70% from late August, before the number change; zero leads on weeks with clicks fits a number problem on top of that.
+LSA changes in 30d: 10-07 luke@coolhandelectric.com added 8 negatives; **10-12 lyanca@relentless-digital.com changed the LSA
+ad schedule** (same outside domain that keeps creating assets: 09-02, 09-16, 09-30, 10-14). Who Relentless Digital is = open.
+The LSA profile phone can't be read or changed through the API (LSA UI only).
+
+**Call asset swap staged:** `call_asset_servicetitan_2026-10-20.py` (469-351-1738 → 469-270-1146, link new first, unlink
+429092777632, keep it for rollback). Validate-only passed. Trade-offs before running:
+- Ad-button calls stop reaching CallRail (no recordings, no call-wins log, funnel 'button path' goes blank). Google's own
+  "Calls from ads" keeps working (Google forwarding number).
+- Google may want the number on the landing page to verify it. go. pages show the CallRail pool / 469-351-1738, not 469-270-1146.
+
+## 2026-10-20 (night) — APPLIED: call asset → ServiceTitan PPC number 469-270-1146 (Edu: "switch the call extension to the new number they provided, yes")
+
+`call_asset_servicetitan_2026-10-20.py --apply`: new call asset **431817437468** (469-270-1146, US, account-level call
+conversion action) linked to HVAC, Electrical, Branded; old 429092777632 (469-351-1738) unlinked and kept for rollback.
+Read-back: 3 links ENABLED, approval UNSPECIFIED (in review). Edu: test calls done. **Edu: TSD does not manage Cool Hand's
+LSA, so LSA disputes are not ours** (drop them from follow-ups).
+From now on ad-button calls don't reach CallRail; Google "Calls from ads" still counts them. ⚑ Check approval 10-21.
+
+---
+
+## 2026-10-21 — ServiceTitan call asset APPROVED (fu-066), read-only
+
+Asset 431817437468 (469-270-1146): APPROVED / REVIEWED, link ENABLED and ELIGIBLE on HVAC, Electrical and Branded, no policy topics. Old 429092777632 has no enabled links (kept for rollback). No impressions on the new asset in the data yet (switch was 10-20 night; 10-21 data still partial). Last ad call on the old number: 10-20 09:01, 9s, Electrical. ⚑ 10-22: confirm the new asset shows impressions and `Calls from ads` keeps recording.
+
+---
+
+## 2026-10-21 (later) — CallRail pool check (fu-038), read-only
+
+**The pool worked while it was on the page.** 10-10 → 10-12: 6 'Website pool' calls (469-643-4559 / 523-5395 / 789-1607), all with gclid, keyword ("electrician", "electrical contractor", [cool hand electric]) and the go. landing page. Google got them as `Phone Call` uploads (1 on 10-10, 5 on 10-12, under All conversions, non-biddable as set). CallRail's Google Ads integration is active. The 'Google Ads' tracker (469-351-1738) only had ad-button calls (9 from 10-13 → 10-20, no gclid, as expected). `Calls from ads` counted the 3 that were 60s+.
+**Since ~10-14 the pool is dark.** The go. pages now hardcode the ServiceTitan PPC number 469-270-1146 (Angela/client change, matches Edu's 10-19 note to Angela that LP calls go to the PPC number). CallRail only swaps its own target numbers, so it no longer replaces anything. Last pool call 10-15 (no gclid, probably a cached page). The old 469-351-1738 only remains in the /electrician/ schema description ("Call 469-351-1738"), not visible.
+**So today:** website calls go straight to ServiceTitan and don't show up in CallRail or as uploads. The only website-call signal in Google is `Click to call` taps (primary, still recording). Ad-button calls count via `Calls from ads` on the new asset.
+**Decision moved:** "which call signal bids" no longer applies. The real question is whether to point the CallRail pool at 469-270-1146 (swap that number, forward to it), so ServiceTitan still receives the calls and we get gclid/keyword back. That's Edu's/the AM's call, since the client chose ServiceTitan numbers on purpose. Minor: the /electrician/ schema text still says 469-351-1738 (web, Sha).
+
+
+---
+
+## 2026-10-22 — ServiceTitan call asset serving (fu-066 closed), read-only
+
+Asset 431817437468 (469-270-1146): APPROVED, link ENABLED/ELIGIBLE on HVAC, Electrical, Branded, and serving. 10-21: 249 impressions / 11 clicks across the 3 campaigns (Electrical 194, Branded 22, HVAC 33); 10-22 partial. Old 429092777632 links REMOVED.
+No ad-button calls in `call_view` since 10-20 09:01 (9s, old number), so `Calls from ads` has nothing new to record yet; not a tracking problem. Other signals still recording: `Click to call` 1–5/day, `[TSD] Contact Form` 2 on 10-21.
+
+## 2026-10-23 — go. pages, 13 days in (read-only, nothing changed)
+
+Edu asked how much better the go. pages perform. Search only, LSA + YouTube excluded. Oct 10–22 vs Sep 9–Oct 6 (same baseline as 10-14).
+- Search: $1,675.07 / 142 clicks (10.9/d, was 25.4) / 17 conv (1.31/d, was 2.34) / CPL $98.53 (was $55.27) / CVR 12.0% (was 9.2%) / CPC $11.80 (was $5.08).
+- Split: Oct 10–14 = 12 conv, 20.3% CVR, $62.61 CPL. Oct 15–22 = 5 conv (all Contact Forms), 6.0% CVR, $184.74 CPL. 0 calls of any kind counted Oct 15–22 (no taps from Search, no Calls from ads; 10-20 button call was 10s).
+- Page-driven actions only (forms + page taps; the ad call button happens before the page): before 40/712 = 5.6% of clicks, after 14/142 = 9.9% (~1.75x). Forms alone 3.7% → 6.3%. Too few to be sure (9 forms).
+- Cost per page action still up ($90 → $120) because CPC went 2.3x (presence geo + negatives + paused groups, same week). Page effect can't be separated from those.
+- GA4 549427279: Search service pages (/electrician/, /ac-repair/, /hvac-repair/) had 4 phone_clicks Oct 10–14, 0 Oct 15–22 (38 sessions). Not a broken tag: all 4 pages use tel:+14692701146 (curl 10-23) and go./ still logs phone_click (YouTube traffic). Real calls go to the ServiceTitan PPC number, so we can't see them.
+- GA4 gotchas: sessionCampaignName = (not set) for Ads traffic (split by landing page instead); main site delays JS until interaction, so main-site GA4 sessions undercount and GA4 rates aren't comparable to go.
+- To answer properly: ServiceTitan call log for 469-270-1146 Oct 10–22, + GHL form list.
+
+## 2026-10-26 — go. pages, 16 days in (read-only, nothing changed)
+Edu: "how are we doing after the new landing page?" Search only (LSA + YouTube excluded), same baseline as 10-14 / 10-23.
+| Window | Spend/day | Clicks/day | Leads/day | CPL | CVR | CPC |
+|---|---:|---:|---:|---:|---:|---:|
+| Sep 9–Oct 6 (before) | $129 | 25.4 | 2.34 | $55.27 | 9.2% | $5.08 |
+| Oct 10–14 | $150 | 11.8 | 2.40 | $62.61 | 20.3% | $12.74 |
+| Oct 15–19 | $94 | 9.6 | 0.40 | $234.50 | 4.2% | $9.77 |
+| Oct 20–25 | $123 | 10.0 | 1.33 | $92.59 | 13.3% | $12.35 |
+| Oct 10–25 total | $123 | 10.4 | 1.38 | $89.14 | 13.2% | $11.74 |
+- Oct 20–25 mix: 4 Contact Forms, 3 Calls from ads (ServiceTitan call asset, live since 10-20 night; call_view 10-22 47s, 10-23 76s + 286s Branded, 10-25 60s HVAC), 1 tap.
+- Page-driven actions (forms + taps): before 40/712 = 5.6% of clicks, Oct 10–25 16/167 = 9.6% (~1.7x). Forms alone 3.7% → 6.0%. Cost per page action $90 → $123 because CPC is 2.3x (presence geo + negatives + paused groups the same week, not the pages).
+- Oct 15–19 hole = go. pages switched to the ServiceTitan PPC number 10-14 ~14:25 (website calls invisible from then) while the ad button still went to CallRail with 0 calls. Recovered partly once the call asset moved to ServiceTitan.
+- Still unprovable without the ServiceTitan call log for 469-270-1146 (Oct 10–25) + the GHL form list. fu-077 (point the CallRail pool at the ServiceTitan number) would bring website calls back into Google.
+
+## 2026-10-30 — QS / expected CTR recheck after rounds 1+2 (fu-024), read-only
+
+Rebuilt the 10-07 baseline from `metrics.historical_*` (per keyword, segments.date) and compared to 10-29.
+- **Quality Score unchanged on every keyword.** Expected CTR still BELOW on every nonbranded keyword. Landing page still BELOW on `hvac repair` (QS 2), `ac repair` (3), `ac repair near me` (1), `electrical contractors near me` (1); ad relevance BELOW on the "near me" variants + `electrical contractor`. Branded 8–10. The go. pages (live 10-09/10) haven't moved the LP score yet (it updates slowly).
+- **CPC more than doubled/tripled after 10-08, same spend:** HVAC weekly CPC $3.61/$3.99 (wk 9-21/9-28) → $15.06 / $19.78 / $12.79 (wks 10-12/10-19/10-26); Electrical $4.97/$5.27 → $12.46 / $9.85 / $16.71. Clicks/day HVAC 9.0 → 2.2, Electrical 14.1 → 5.7. Conversions/wk HVAC 4–5 → 1–2, Electrical 7–9 → 4–5.5. All 3 Search campaigns are uncapped Maximize Conversions; presence-only geo + negatives + paused groups shrank the pool and the bidder pays more per click. IS went up (HVAC 10→13%, Elec 14→24%) because the eligible pool shrank, not because we win more.
+- **Competitor spend went UP:** 8% → 28% of visible nonbranded spend. Post-change: chill brothers $95.08 (1 conv) + chill brothers fort worth $49.44, hamill and harrison ennis texas $46.78, mister sparky near me $32.22, royal air texas $13.81, tom's mechanical arlington $8.66, iec contractors list $8.76. Own-brand leak fixed (cool hand in NB $20 → $0).
+- CTR: HVAC 2.8% → 2.3%, Electrical 3.8% → 3.1%, Branded ~21%.
+
+**Proposed (not applied, Edu's call):** (1) cap the bidder on HVAC + Electrical (Max Clicks with a CPC cap ~$8–9, or Max Conv + tCPA), pre-change CPCs of $4–6 converted at ~$55 CPL; (2) PHRASE negatives for the new competitor names (chill brothers had 1 conv, decide); (3) expected CTR: copy test with offers/price in headlines (round 2 RSAs didn't move it); (4) LP score recheck ~11-13.
+
+### 2026-10-30 — APPLIED (Edu: "Apply 1 to 4")
+Script `clients/cool-hand-electric/apply_2026-10-30.py` (validate-only first, one atomic request, read back):
+1. **Bidding:** TSD_Search_HVAC Max Conversions → **Max Clicks $8 cap**; TSD_Search_Electrical → **Max Clicks $9 cap**. Budgets unchanged ($36 / $67). Branded untouched.
+2. **7 campaign PHRASE negatives:** HVAC: chill brothers, hamill and harrison, royal air, toms mechanical, tom's mechanical. Electrical: mister sparky, iec contractors.
+3. **4 proof-led test RSAs** next to the current ads (same go. URLs + paths, no pinning): Electrician-Broad 829988920200, Electrician-General 829988920203, HVAC-Repair 829988920206, AC-Repair 829988920209. Lead with claims verified on the go. pages 10-30: "4.9 on Google (420 reviews)", BBB A+, Voted Best in Ellis County, Good Contractors List $25,000 guarantee, $37 electrical safety inspection (Electrical only), TECL #31768, easy payment plans, "Our HVAC work is done by licensed techs", Mon–Sat hours. No emergency/24-7 claims. All REVIEW_IN_PROGRESS at read-back.
+4. Follow-ups: fu-112 (first week on caps + ads, 11-06), fu-113 (LP / expected CTR QS recheck, 11-13).
+
+⚠ Found while checking claims: the go. pages show hours Mon–Fri 8–5, Sat 8–12 and NO 24/7, but the current (old) RSAs still say "Emergency Electrical Repairs" / "Emergency Service Available", and Electrical ads say "100% Satisfaction Guarantee" while the page says "quality work guaranteed". Not changed; flagged to Edu.
+
+- 10-30: AT Internal Request `98c2395c` "Cool Hand: quick Google Ads update + 2 questions" created for Angela (update on caps/negatives/test ads + ask Kristen/Luke: emergency after-hours calls? 100% satisfaction guarantee?). Intake left open for Edu to submit. Answers decide whether the old RSAs keep the emergency / 100% lines.
+
+## 2026-11-06 — fu-112: first week on CPC caps + negatives + proof-led RSAs (read-only, nothing changed)
+
+PRE 10-23..10-29 (7d, Max Conversions) vs POST 10-31..11-05 (6d, Max Clicks caps). Search only, YouTube/LSA out. Website calls to the ServiceTitan number are
+invisible in both windows, so Google conversions = ad-button calls + forms + taps, same basis both sides.
+| | HVAC (cap $8, $36/d) | Electrical (cap $9, $67/d) |
+|---|---|---|
+| Spend/day | $30.49 → $33.45 | $59.57 → $64.30 |
+| Clicks/day | 2.3 → 4.5 | 4.6 → 12.2 |
+| CPC | $13.34 → **$7.43** | $13.03 → **$5.28** |
+| CTR | 1.9% → 2.0% | 3.0% → 4.1% |
+| Conversions | 2 → **0** | 7 → **2** (both ad calls) |
+| CPL | $107 → none | $60 → **$193** |
+| IS / rank-lost | 14% / 47% → 18% / 65% | 23% / 26% → 22% / 54% |
+- **Traffic goal met, leads not.** CVR Electrical 22% → 3%, HVAC 13% → 0%. Max Clicks buys the cheap end: competitor names and cost/research terms.
+- **Tracking checked, not broken:** account-wide 'Click to call' still fires (9 since 10-31, mostly YouTube go. visitors); '[TSD] Contact Form' last fired 10-30, 0 in 6 days
+  (~3 expected at the prior rate, P≈5%, watch it). Calls from ads 2 on 11-02, 3 on 11-04 (Branded + Electrical).
+- **New RSAs: all 4 APPROVED + ELIGIBLE, CTR beats the old ad in every group:** Electrician-Broad 5.0% vs 3.5%, Electrician-General 4.0% vs 2.8%, AC-Repair 2.0% vs 1.5%,
+  HVAC-Repair 1.2% vs 0.8%. Conversions new 0 vs old 2 (both Electrical), too small to call. Keep both running.
+- Branded (Max Conv, $20): $11.72/d, 3 ad calls, $23 CPL, IS 90% → 75%.
+- Search term leaks POST: competitors bean electric fort worth $23.24 (4 clicks), david brown electrician $12.86, cummins/cummings electrical, rogers electric irving,
+  mak electric midlothian, pro tech electrical services, walker engineering / www walkertx com, paschal near me, reece hvac (supply house); RV part 'dometic b59516';
+  HVAC cost terms (ac unit cost, cost of central air and heat, 4 ton ac installed) and duct cleaning x3 at ~$7.50 each, 0 conv.
+
+**Proposed (Edu's call):** Electrical back to Maximize Conversions (it was $60 CPL the week before the cap; the cap halved CPC but cut leads 7 → 2). HVAC: keep Max Clicks $8
+one more week (it was weak either way, $107 CPL PRE). Both: PHRASE negatives bean electric, david brown, cummins electrical, cummings electrical, rogers electric, mak electric,
+pro tech electrical, walker engineering, walkertx, paschal, reece, dometic. Duct cleaning: negate only if Cool Hand doesn't offer it (go. pages don't list it). Recheck with fu-113 on 11-13.
+
+
+### 2026-11-06 — APPLIED (Edu: "apply 1, 2 and 3. Negate duct cleaning as well")
+`apply_2026-11-06.py`, replay + validate-only, then `--apply` (one request), read-back OK:
+1. **TSD_Search_Electrical: Max Clicks $9 cap → Maximize Conversions** (no target), budget $67 unchanged.
+2. TSD_Search_HVAC: stays Max Clicks $8 cap, $36.
+3. **13 PHRASE negatives on BOTH campaigns:** bean electric, david brown, cummins electrical, cummings electrical, rogers electric, mak electric, pro tech electrical,
+   walker engineering, walkertx, paschal, reece, dometic, duct cleaning. 30d replay: ~$115 of blocked terms, 0 conv, no live-keyword conflicts.
+Recheck with fu-113 on 11-13 (Electrical leads back toward ~7/wk at ~$60? HVAC on the cap: still 0 leads → revisit).
+- AT Internal Request **7e808dc1-0ea4-4c13-8933-939b42268c39** "Google Ads update: results from last week's changes" created as a DRAFT for Angela (Intake, Edu submits).
+  Follows Edu's plain client-shareable style from 98c2395c (10-30, completed 11-03, "shared with client"; Edu dropped the emergency / 100% guarantee questions).
+
+## 2026-11-06 (later) — Client report Oct 19 to Nov 5 + call review (read-only, nothing changed)
+
+Why: AT had NO open report task for Cool Hand. Luke asked on ticket #932 (10-06) for a weekly report per channel (LSA, PPC, Meta: spend, clicks, calls, booked jobs, jobs run, revenue); last real report = Oct 12–18 (sent 10-19), since then only change updates (11-03, 11-05). Ticket auto-resolved, AT "Weekly Performance Report" d6b2a590 marked complete.
+
+Numbers (Google Ads API via tsd.sh, Meta MCP, LSA cross-checked in AgencyAnalytics 1833410, all match):
+| | Oct 19–25 | Oct 26–Nov 1 | Nov 2–5 |
+|---|---|---|---|
+| Search spend / clicks / leads / CPL | $885.79 / 69 / 10 / $88.58 | $828.26 / 88 / 7 / $118.32 | $464.17 / 75 / 5 / $92.83 |
+| LSA spend / leads | $127.41 / 2 | $179.89 / 3 | $0 / 0 (1 uncharged 17s call) |
+| YouTube | $170.48 | $162.07 | $104.97 |
+| Meta spend / reach | $138.98 / 16,329 | $142.22 / 15,087 | $81.13 / 11,312 |
+| All channels | $1,322.66 | $1,312.44 | $650.27 |
+Period totals: Elec $1,177.24 / 144 clk / 12.5 leads; HVAC $688.26 / 58 / 3; Branded $312.72 / 30 / 6.5; Search $2,178.22 / 22 leads / $99.01; Meta Oct 19–Nov 5 $362.33, reach 27,972, 75,764 impr, 47 link clicks (Kayla $303.45).
+Lead mix: Oct 19–25 = 3 ad calls + 2 taps + 5 forms; Oct 26–Nov 1 = 3 ad calls + 2 taps + 2 forms; Nov 2–5 = 5 ad calls. Branded Nov 2 calls 07:31 + 07:39 = same 951 caller.
+Google call_view Oct 19–Nov 5: 15 Search ad calls, 14 answered, 11 over 60s (no recordings since the 10-20 ServiceTitan call asset). Oct 10–15 CallRail window (from call-wins-log): 6 real callers, 3 booked; Search spend those days $848.25 (~$283/booked job, kept OUT of client report).
+
+Deliverables:
+- claude.ai doc (short version for the ticket): https://claude.ai/artifact/YHwyFnNZgsEuMtiLc3ZAPC
+- PDF `Cool Hand Electric - Report (Oct 19 - Nov 5).pdf` (+ source `Cool-Hand-Electric-Report_2026-10-19_to_11-05.html`), plain 2-page style, rendered with Playwright (no Chrome on Edu's Mac). Not sent; goes via Angela.
+LSA reported with a line that it's run separately (Relentless Digital, not TSD). Kept out of client copy: $69 dispatch fee lost a lead to Mister Sparky's free estimate, price-over-the-phone asks (3x), LSA commercial lead dispute.
+AT: 2 Weekly Agency Analytics Check tasks (48e12d98 due 10-28, 7001deee due 11-04) unassigned + overdue; checked 11-06 = Google Ads, Meta, LSA all syncing in AA through 11-05. Tasks NOT closed. "Update on last week's changes" 7e808dc1 sits in Review & Close for Edu (Angela: sent 11/5).
+
+## 2026-11-09 — fu-077: CallRail pool vs ServiceTitan PPC number, state check (read-only, nothing changed)
+
+Edu moved on to fu-077 after C&S (AT down, draft 9d3573c2 waits). Tabled 10-26; checked again today before the decision.
+
+**CallRail (GET, Cool Hand account ACC019e095a…, company COM019e095b…):** both trackers active, recording on, both forward to +1 469-874-0198
+(unknown number, not on Angela's 10-12 ServiceTitan list; answered every time 10-13..10-20, so it rings the office). 'Website pool' = 4 numbers,
+type session, source all. **9 calls Oct 13 → Nov 9, the last one 10-20 09:01 (ad button, old number). 0 pool calls since 10-15 14:55.** The pool is dark
+because the go. pages hardcode 469-270-1146 (curl 11-09 with iPhone UA + gclid: visible number and tel: on /, /electrician/, /ac-repair/, /hvac-repair/ =
+469-270-1146 only; 469-351-1738 remains only in the schema text). GTM tag 26 still loads swap.js 865715539; it has nothing to swap.
+
+**What we are blind to (GA4 549427279, go. Search pages /electrician/ + /ac-repair/ + /hvac-repair/, google/cpc):**
+| Window | Sessions | Phone taps | Tap rate | Connected website calls |
+|---|---:|---:|---:|---|
+| Oct 10–14 (pool live) | ~30 | 4 | ~13% | 6 pool calls Oct 10–12 (CallRail, all with gclid) |
+| Oct 15–30 (ServiceTitan number) | ~76 | 2 | ~3% | unknown (only in ServiceTitan) |
+| Oct 31–Nov 8 | ~90 | 2 | ~2% | unknown |
+- Trigger checked: GTM trigger 7 'Phone Click' = link click with URL containing `tel:` (number-agnostic), tags 22 (GA4 phone_click) + 17 (Ads Click to call)
+  live on it; go./ logged 55 phone_clicks in the same window (YouTube visitors), so the tap tracking works with the new number. The drop on the
+  Search pages (13% → 2%) is real behaviour or small-sample noise (4 of 30 vs 4 of 166), not a broken tag. Ads 'Click to call' on Search agrees (2+2+0 taps Oct 19–Nov 5).
+- Before the swap, connected calls (6 in 3 days) outnumbered taps (4 in 5 days): desktop and manual dialers don't tap. So website calls since 10-15 are
+  probably ~1–3/week, invisible to Google and to us. Exact count = ServiceTitan call log for 469-270-1146 since Oct 15 minus Google call_view ad-button
+  calls (15 Oct 19–Nov 5, all ring that same number since 10-20).
+- Side effect for the client: go./ gets ~1,600 YouTube clicks/week and 55 taps, all to 469-270-1146, so ServiceTitan's "PPC" bucket mixes YouTube and
+  Meta (Meta also lands on go./) with Search. CallRail would split them by source.
+
+**Recommendation (Edu's call, client OK via Angela first):** point the Website pool at the ServiceTitan PPC number: swap target = 469-270-1146 and
+destination = 469-270-1146 (two fields in the CallRail UI, no new numbers, reversible). Calls still arrive on the client's PPC line, so ServiceTitan keeps
+crediting PPC (attribution is by dialed number; check the tracker's caller-ID setting stays "caller's number" so ServiceTitan matches the customer).
+We get gclid, keyword, recordings and the 'Phone Call' upload back. Step 2 once calls flow: make 'Phone Call' (7830770637) primary and 'Click to call' secondary
+so Electrical's Maximize Conversions learns from real calls instead of taps. Optional: re-point the 'Google Ads' tracker (469-351-1738) destination to
+469-270-1146 too (only the schema text still carries it). Caveats: CallRail plays its recording notice before connecting (turn it off if ServiceTitan plays
+its own); 469-874-0198 = whatever it is, calls Oct 10–20 landed there, likely why the client wanted its own numbers (inference, not confirmed).
+AT is down today: Angela note drafted below for Edu to paste (Slack or AT Internal Request when it is back). fu-077 note updated, due moved to 11-12.
+
+Draft for Angela (plain, to relay to Luke):
+> Two things on Cool Hand's phone tracking.
+> 1. Since Oct 15 the landing pages show the ServiceTitan PPC number 469-270-1146. Calls from those pages go straight to ServiceTitan, so Google Ads no longer
+> sees them and we can't tell which keyword or ad brought them. We'd like to route those calls through our CallRail numbers and forward them to 469-270-1146.
+> The call still lands on the same PPC line in ServiceTitan, nothing changes on Luke's side, and we get the keyword, the recording and the conversion back in
+> Google. Is Luke OK with that?
+> 2. Could Luke export the ServiceTitan call log for 469-270-1146 from Oct 15 to today (date, time, duration, booked or not)? It tells us how many website calls
+> we missed and makes the weekly report complete.
+
+## 2026-11-09 (later) — APPLIED: 9 price-research negatives on TSD_Search_HVAC (Edu: "Work on the cleanup please")
+
+Context: HVAC (Max Clicks $8 cap, $36/d) has 0 leads since 10-30, $323 / 43 clicks 10-31..11-09; visible terms dominated by price research
+("average cost to replace 4 ton ac unit", "how much is a new ac unit for 2500 sq ft"). Electrical is 3 days back on Max Conv (4 leads, $27 CPC), left alone till fu-113 (11-13).
+`apply_2026-11-09_hvac_negs.py`, validate-only then `--apply`, read-back 55 → 64 negatives:
+- PHRASE: cost, costs, price, prices, pricing, average, how much, 4 ton, temperaturepro (competitor, 3 hits).
+- Replay since 08-10: 17 terms / $88.60 blocked, none converted, no live-keyword conflict.
+- Left out on purpose: afford / financing / quote / estimate (each converted once), mini split (ask the client if they install them), "hvac near me" ($80 / 10 clk / 0 conv, core intent).
+HVAC decision (trim to repair-only vs move budget to Electrical) stays on fu-113, 11-13.
+
+## 2026-11-12 — fu-077 DECIDED: go (Edu)
+No extra cost (pool numbers already paid; only a few call minutes). Ask already with Angela since 11-11: AT Internal Request f0e33625 "ServiceTitan access:" (ServiceTitan read login + Luke OK to route the website number through CallRail to 469-270-1146). No reply yet; Edu nudging on Slack. When Luke OKs: Website pool swap target + destination -> 469-270-1146, test call, then Phone Call 7830770637 primary / Click to call secondary. Recheck 11-17.

@@ -1,5 +1,8 @@
 # Proud Pops — Budget cut 2026-10-13: change record + baseline for the review
 
+> **Superseded 2026-10-14 22:48 CT:** client cut to $25k/month. Search Elec/HVAC/Plumbing + both PMax were PAUSED (Branded only
+> until Nov 1), so the Oct 14–27 review below has no live after-window for the cut campaigns. See google-ads-log.md 2026-10-14 (2).
+
 Account 1051843378 (America/Chicago). Internal. Follow-ups in the Command Center: fu-046 (YouTube SA pause),
 fu-047 (pacing recheck 10-20), fu-048 (calls check once CallRail access is in, due 10-16).
 

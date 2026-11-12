@@ -14,6 +14,39 @@ KPI - Meta row 2026-10-26 = 79ccefe2 (weekly + 30-day keys). Tasks completed: ht
 
 ---
 
+## 2026-10-22 — Client report, Oct 9 to Oct 21 (MOF + BOF retargeting + Google section)
+
+**Scope:** read-only live pulls (Meta MCP + Google API). No account changes.
+
+**Deliverable:** `Watts Right - Facebook and Google Ads Report (Oct 9 - Oct 21).pdf` (source
+`Watts-Right-Facebook-Google-Report_2026-10-22.html`), 2 pages. Page 1 = same retargeting structure as 10-12; page 2 = Google
+results + the 10-20 changes (Edu asked to cover them). Window starts the day after the 10-12 report's window ended.
+
+**Client PDF numbers (Oct 9 to Oct 21):** MOF $904.24 / 19,221 impr / reach 13,126 / 15 leads / $60.28 (freq 1.46). BOF $274.43 /
+4,071 / 2,244 / 2 / $137.22 (freq 1.81). Total $1,178.67 / 17 / $69.33. By ad: Done Before Dinner $543.46 / 12 / $45.29; Mess-Free
+$360.78 / 3 / $120.26; Who Would You Trust $207.09 / 2 / $103.55; Family's Safety $67.34 / 0. Pools 10-22: TOF 3sec 70.2–82.6k, MOF 10sec 15.6–18.3k.
+Setup text now says Facebook can widen steps 2 and 3 to similar nearby people (MOF Advantage+ audience still ON since Meta's 10-10
+switch, both MOF ad sets carry a hidden TOF-3sec 1% LAL; BOF carries the MOF-10sec 1% LAL, Advantage+ off).
+
+### Internal (kept out of the PDF)
+- No changes to MOF/BOF in the window (activity log 10-11 → 10-22). Budgets unchanged: MOF $40 + $27, BOF $15 + $5.
+- New actor: **Stevie Fernandez** boosted a page post 10-19 ("Helping Hands: Restoring More Than Power", $10/d, profile visits,
+  Tulsa County 35-65+, Advantage+ ON) via Boosted Page. Not retargeting, not in the report.
+- MOF CPL $49.99 → $60.28 and BOF $62.63 → $137.22 vs Oct 2–8; Mess-Free flipped from best ($29) to $120.
+
+- **Week over week (Edu asked):** CPL $52.52 → $69.33 (+32%); spend/day $75.03 → $90.67 (+21%), leads/day 1.43 → 1.31 (−8%).
+  Driver = spend up, leads flat: ad sets now spend near the full $87/d (were ~$75/d). MOF Advantage+ ON since 10-10 fits the timing,
+  not proven. Trend across reports: $49.91 → $52.52 → $69.33.
+- **Report updated same day** with a CallRail table on the Google page (49 ad calls, details in google-ads-log 10-22). Opened for Edu.
+
+### Open (carried)
+- [ ] Edu: Advantage+ audience on MOF still ON. Turn off to keep step 2 pure retargeting?
+- [ ] Who is Clay Manus / Manus Dash; now also Stevie Fernandez boosting posts.
+
+*Reversibility: no account changes made.*
+
+---
+
 ## 2026-10-12 — Client retargeting report, Oct 2 to Oct 8 (MOF + BOF)
 
 **Scope:** read-only live pull via Meta MCP + activity log. No account changes.
@@ -157,3 +190,49 @@ retargeting here is built on video viewers.
 - [ ] TOF and FourMode campaigns still use non-TSD names. Left alone, since only the retargeting ones were in scope.
 - [ ] Who built this funnel is unconfirmed (no TSD_ prefix; "LS |" prefix on the 09-15/09-22 campaigns).
 - [ ] Growth Engine pull: Watt's Right row should not read "awareness only".
+
+## 2026-10-28 — Spend growth + who built what (read-only, for Angela's "$15.5k on a $7k budget" question)
+
+Approved $7k (AT ticket #793) is Google PPC only. No approved Meta figure on record anywhere.
+TSD manages 3 campaigns: awareness (Manuel, 08-11) + MOF + BOF retargeting (Edu, corrected 10-28; MOF created 06-22 by Austin Ensz,
+BOF 07-09 by Clay Manus token, both pre-date Edu taking them over). Not TSD: TOF (05-08 Sikander Shehzad), TOF-Static CBO
+(09-15 Clay, $40/d), FourMode LP + Static (09-22 Clay), 9 boosted posts since 09-21 (Stevie Fernandez, Boosted Page; ~$512 total to 10-27).
+
+| Month | TSD (awareness + MOF + BOF) | Not TSD (TOF, FourMode, boosts) | Total |
+|---|---:|---:|---:|
+| Jun | $820 | $803 | $1,623 |
+| Jul | $1,761 | $1,214 | $2,975 |
+| Aug | $1,724 | $3,375 | $5,098 |
+| Sep | $2,004 | $3,803 | $5,807 |
+| Oct 1–27 | $2,584 | $4,953 | $7,537 |
+
+Last 30d (09-28..10-27): TSD $2,872 (MOF $1,980, BOF $591, awareness $301) vs not TSD $5,478 (TOF $3,488, FourMode $1,725, boosts $265).
+Budget raises on TSD's MOF/BOF also came from Clay (07-28 MOF ad sets $5 -> $20-40/d; 09-22 + 10-05 BOF -8 $5 -> $10 -> $15, MOF Broad-9 -> $27).
+07-28 Clay raises (TOF + MOF) ~+$158/d net = the Jul->Aug jump. Billing: Allen Black removed a card 05-11, Stevie Fernandez 10-05
+(suggests client-side admins, NOT confirmed). Identities of Sikander / Austin / Clay / Stevie still unconfirmed.
+
+### 2026-10-28 (cont'd) — Who raised Meta budgets and when (ad set activity log, 07-28 → 10-19)
+Last 30d (09-28..10-27) by campaign, re-pulled at campaign level: TOF $3,488.37, FourMode $1,724.83, MOF $1,980.43, BOF $590.59,
+awareness $301.06, boosts $288.42. MOF + BOF = $2,571.02.
+
+No budget raise or ad set activation by any TSD actor since 07-28. TSD actions in the log: Manuel Lizarralde PAUSED MOF Broad-4 + 3 BOF
+ad sets (08-01) and MOF Broad-9, MOF Broad-10, TOF Broad-9 (08-12); Manuel reactivated awareness 09-03; renames 10-01 (Jonathan Bannister
+token, ads MCP). Every raise is "Clay Manus token" (Manus Dash):
+- 07-28: TOF Broad-10 $5→$60, Broad-2 $5→$45, Broad-9 $5→$8; MOF Broad-5 $5→$40, Broad-4 $5→$25, Broad-9 $5→$20; MOF Broad-2/3/6/7/8 $5→$3. ~+$158/d net.
+- 09-15: new TOF-Static CBO $40/d (Austin Ensz toggled it 09-21; no spend in range).
+- 09-22: FourMode launched (4 live ad sets at $8); TOF Broad-10 $60→$70, Broad-2 $45→$35, Broad-9 $8→$15 + reactivated; BOF -8 $5→$10;
+  REACTIVATED MOF Broad-9 ($20) + BOF -9 ($5) + TOF Broad-9 that Manuel had paused in Aug.
+- 10-05: TOF Broad-10 $70→$75, Broad-2 $35→$45; MOF Broad-9 $20→$27; BOF -8 $10→$15; TOF LAL test $5→$20 (0 spend); paused TOF Broad-9.
+- 10-06: FourMode 01/02 $8→$10, 3 new FourMode ad sets $10 each; TOF LAL test B10 $3→$20 + RT-FourMode $3→$5 (both 0 spend).
+Stevie Fernandez (Boosted Page): 9 boosted posts 09-21 → 10-19, $10–20/d each. Austin Ensz before 07-28: only cuts ($5→$3 on 07-17, 07-21, 07-28).
+
+### 2026-10-28 (cont'd) — Total daily budget over time (rebuilt from current budgets + ad set log back to 06-19)
+Lead campaigns only (TOF, MOF, BOF, FourMode); awareness ~$10/d and boosts excluded. Reconciles with monthly spend (Aug, Sep, Oct within ~5%).
+| Point | Who | TOF | MOF | BOF | FourMode | Total/day |
+|---|---|---:|---:|---:|---:|---:|
+| 07-28 before | (Austin cuts that morning) | $30 | $10 | $30 | – | **$70** |
+| 07-28 after | Clay | $113 | $90 | $20 | – | **$223** |
+| 08-01/08-12 | Manuel (TSD) pauses | $105 | $40 | $5 | – | **$150** |
+| 09-22 | Clay | $120 | $60 | $15 | $32 | **$227** |
+| 10-05/06 | Clay | $165 | $67 | $20 | $66 | **$318** ($273 that spends; 3 TOF tests $45/d at $0) |
+MOF+BOF (TSD-managed): $40 → $110 (Clay) → $45 (Manuel) → $75 (Clay) → $87 (Clay).

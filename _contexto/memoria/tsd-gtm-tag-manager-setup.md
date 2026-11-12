@@ -43,3 +43,5 @@ but Meta MCP `ads_get_dataset_stats` showed the pixel live, so verify Meta via d
 
 
 - **`gtm.py list` defaults to workspace 1** (2026-10-22, Concrete Adventures): containers whose live workspace has another id (e.g. GTM-53FXJRN4 = workspace 3) show up EMPTY. Run `gtm.py workspaces` first and pass `--workspace <id>` before calling a container empty.
+
+**Live browser tests in Edu's browser (2026-11-02, Concrete staging via Cowork):** his browser had an ad blocker (Tag Assistant couldn't find the container) and sent **GPC**, so sites on the US opt-out model (Alex's Next.js platform: Concrete, Spencer) deny all consent and Meta tags look "broken". Turn off the ad blocker + GPC (and Do Not Track, the site treats it the same) before any GTM Preview test, then confirm `navigator.globalPrivacyControl` false and ad_storage Granted on load.

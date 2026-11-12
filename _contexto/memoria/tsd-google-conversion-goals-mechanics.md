@@ -41,3 +41,5 @@ on before turning off what's feeding the algorithm today.
 
 Related: [[tsd-gc-home-service]], [[tsd-proud-pops-tracking]], [[tsd-servicetitan-marketing-pro]]
 (the offline-import play that's the real fix once tracking is honest).
+
+**Custom goals don't split a bucket either (Watt's Right, 2026-11-03).** A custom conversion goal listing `Calls from ads` (AD_CALL) but not the CLICK_TO_CALL tap action still bid on the taps: both are PHONE_CALL_LEAD / CALL_FROM_ADS, and PMax's Conversions column kept counting every tap for a week. To get taps out of bidding, turn that category/origin non-biddable on the campaign (loses ad calls too) or remove the tap action. Always read conversions vs all_conversions by action a day or two after any goal change.

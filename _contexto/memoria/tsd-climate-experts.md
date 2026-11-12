@@ -13,6 +13,13 @@ metadata:
 - Ticket #644 (OTT creatives, waiting_on_team since 09-15): Amanda asked to flip "No Money Down" / "0% Interest for 12 Months" on the financing OTT ads (it reads as "No Money Down for 12 Months"). On 09-15 she said the version we sent still wasn't fixed. Nobody has replied since.
 - The ads the client is running appear to be OTT/display through Propellant Media (ticket #663 "Propellant Media Monthly Review", OTT creative tickets #363/#644). That's inferred from ticket titles. No Google/Meta campaigns were seen.
 
+**Social media (checked 2026-11-09, Angela asked "Do we post on IG, LinkedIn and TikTok for Climate Experts?"):** nothing shows TSD posting for them.
+- Sara McCarthy (Social Media Team Lead) on 10-15 in #client-offboarding: the social team only does Facebook and Instagram, not YouTube or TikTok. Nothing found on LinkedIn either way.
+- Sara on 09-23 listed Climate Experts among clients still to connect, and on 10-16 (group DM with Edu + Angela) said they are not connected to TopServ's Meta business, which is what Vista Social posting needs. Angela replied the client never answered her emails or calls.
+- AgencyAnalytics client 1588730 has only GBP, GA4, Majestic, SEMrush and Lighthouse connected, no social profiles. The shared-drive Climate Experts folder holds only OTT ad creatives. The SEO side called them "SEO client, GBP only" (09-04).
+- Not confirmed with Sara after 10-16, and Vista Social itself was not opened (its emails do not reach Edu's mailbox).
+- GA4: Edu told Angela on 10-26 that GA4 is the one access we do have, which conflicts with the 10-16 check above. Recheck before quoting either.
+
 **Why:** the client is asking what ads run and what they cost, and we can't see any of it. The audit sheet overstates our access (GA).
 
 **How to apply:** before any Climate Experts paid work, re-run the MCC + Meta checks to see whether Leadsie access came through. The spend/creative breakdown probably has to come from the Propellant report, not from Google/Meta. Related: [[tsd-client-accounts-audit-sheet]], [[tsd-client-roster-status]].

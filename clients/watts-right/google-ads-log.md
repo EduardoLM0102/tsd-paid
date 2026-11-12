@@ -1084,6 +1084,70 @@ LSA same window: $4,058, 71 leads, $57.
 **14-day (10-05..10-18):** $3,283.34 / 44 conv. Uncapped Max Conv bids up (Emergency $23.81 CPC) → propose tCPA ~$90 or CPC cap on NB; low-QS EV/panel kws (QS 1–3); audiences none.
 AT tasks f7e8b9e2 / 06bbc593 / bf34d3ec / 68eaa154 left open for Gui's review.
 
+## 2026-10-20 — fu-034 recheck: RSA A/B + Nonbranded CPL (read-only, nothing changed)
+
+**Window:** 10-09 → 10-19 (11 days), RSA A/B over the full run 10-01 → 10-19. Script `wr_recheck_1020.py` (read-only).
+The 10-09 proposals were never applied (no TSD changes since; only 4 assets created 10-13 by askwattson@callwattsright.com).
+
+| Campaign | Spend | $/d vs budget | Clicks | Counted conv | CPL | CPC | IS / budget-lost / rank-lost |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Branded (Target IS, Mon–Fri) | $140.33 | $20 on weekdays | 23 | 5 | $28.07 | $6.10 | 36.7 / 61.9 / 1.4 |
+| Nonbranded (Max Conv, no tCPA) | $1,288.73 | $117 vs $120 | 75 | 12 | $107.39 | $17.18 | 30.4 / 27.1 / 42.5 |
+| PMax | $1,076.17 | $98 vs $95 | 316 | 21 | $51.25 | $3.41 | 29.0 / 31.6 / 39.4 |
+
+- **Nonbranded vs 10-09:** CPC $19.38 → $17.18, CPL $106 → $107. Without the 3 Click-to-call taps: 9 real leads
+  (3 calls from ads, 1 website call, 5 forms) = $143. Still bidding high, IS unchanged.
+- **Branded:** IS 55% → 37%, budget-lost 39% → 62%. Weekday budget is capped and nights/weekends still have no brand ad.
+- **PMax real CPL:** counted 21 includes 11 Click-to-call taps. Calls from ads 5 + website calls 3 + forms 2 = 10 real
+  → **$108** (10-09: $82). 26 YouTube follow-on views are all-conv only.
+- **Panel ad group no longer starved:** impressions/day 26 → 39, 3 conv in 11 days ($76 each).
+
+**RSA A/B (10-01 → 10-19):**
+
+| Ad group | Old ad | New ad | Call |
+|---|---|---|---|
+| Emergency | 808052449185: 1,063 impr, CTR 2.82%, 5 conv, CVR 16.7%, $718 | 826560998576: 421 impr, CTR 3.56%, 5 conv, CVR 33.3%, $408 | **New wins: pause old** |
+| EV charger | 808088037553 (EXCELLENT): CTR 6.14%, 7 conv / 43 clk | 826560998582: CTR 7.03%, 2 conv / 13 clk | Old leads on conv, new too thin. Hold |
+| Panel | 808170034922: CTR 4.55%, 2 conv / 20 clk | 826560998579: CTR 4.41%, 1 conv / 9 clk | Tie, hold |
+
+QS on spending keywords: emergency electrician 6 (CTR below avg), electrical panel box for home 6, tesla charger
+installation 5 (CTR below avg). Expected CTR is the weak part everywhere.
+
+**Staged (needs Edu's go; all at constant total, no client approval needed):**
+1. Pause old Emergency ad 808052449185.
+2. Still open from 10-09: Branded $20 → $35/d + schedule to all days/hours, Nonbranded $120 → $105/d; tCPA ~$80 on
+   Nonbranded; the 11 competitor PHRASE negatives (quality electric, fox electric, let there be light, forehand ...).
+3. Re-compare EV + Panel ads ~11-03.
+
+## 2026-10-20 (later) — APPLIED the staged changes (Edu: "For Watt's Right - you have my ok to execute")
+
+Script `wr_apply_1020.py` (validate-only first, then `--apply`, read-back confirmed). Total stays **$235/d**, so no client ticket.
+1. **Budgets:** Branded $20 → **$35/d**, Nonbranded $120 → **$105/d**, PMax $95 unchanged.
+2. **Branded schedule removed** (was Mon–Fri 06:00–22:00, 5 rows) → brand ads now show nights and weekends.
+3. **Nonbranded target CPA $80** on Maximize Conversions (counted CPL was $107, so it may underspend at first).
+4. **11 PHRASE negatives** on Nonbranded: quality electric, fox electric, let there be light, forehand electric, b&b electric,
+   miller electric, reeves electric, bennett electric, pride electric, shanks electric, a plus electric. 30d replay: $131 of
+   spend, 1 conversion (quality electric, before 10-05); no conflict with live keywords.
+5. **Paused old Emergency RSA 808052449185**; new 826560998576 serving.
+
+**Watch (fu-072, 10-27):** Nonbranded spend under the $80 tCPA (if it drops well under $105/d, move the gap to Branded, or
+raise the target to ~$95); Branded IS and weekend brand clicks; Emergency volume on one ad.
+
+## 2026-10-22 — Client report section, Oct 9 → Oct 21 (read-only)
+
+Google section of `Watts Right - Facebook and Google Ads Report (Oct 9 - Oct 21).pdf` (see meta-ads-log 10-22). Same lead rule as the
+Sep report: calls from ads + website calls + forms, Click-to-call taps and YouTube views out, LSA out.
+Branded $205.93 / 33 clk / 6 leads / $34.32; Nonbranded $1,489.56 / 88 / 11 / $135.41; PMax $1,263.23 / 574 / 12 / $105.27;
+**total $2,958.72 / 29 / $102.02** (19 calls, 10 forms). LSA same window (not in PDF): $5,258 / 91 leads / $58.
+Change history 10-09 → 10-22: only the 10-20 batch + 4 assets created 10-13 by askwattson@callwattsright.com.
+**Flags for fu-072 (10-27):** PMax counted conv jumped 10-20/10-21 (30 conv, 28 of them Click-to-call taps, 261 clicks in 2 days vs ~30/d
+before); check network split, taps are biddable so PMax may chase them. Branded IS 78% on 10-21 (vs 37% avg 10-09..19). Nonbranded
+$79.53 on 10-21 under the $80 tCPA (budget $105).
+- **10-22 (later):** CallRail calls added to the report (acct ACC9962d…, company COMb0cd…). Google Ads calls = "Call Extension PPC"
+  tracker (all 35) + "Website pool" calls with a gclid (14) = 49 calls, 45 answered, 31 first-time, 27 lasted 60s+ (18 first-time AND 60s+).
+  Google counts 60s+, one per click (Calls from ads, Phone Call upload, Click to call all 60s / ONE_PER_CLICK), so 19 in Google vs 49 in
+  CallRail. LSA tracker "Tulsa LSA" = 120 calls same window, left out. CallRail `source` looks first-touch (3 call-extension calls labeled LSA).
+
 ## 2026-10-26 — AT optimization tasks (Gui, via Claude): 7-day + 30-day + 90-day Google, 7-day + 30-day LSA. Read-only, all staged
 
 **7-day 10-19..10-25 = the fu-072 recheck of Edu's 10-20 changes.** PPC $1,435.20, 75 counted conv, but 53 are `[TSD] Click to call` taps (PMax 48, NB 5). Real (calls from ads + CallRail Phone Call + forms) = 22 / $65.24 (prior 17 / $90.00). call_view 9 ad calls, 6 of 60s+. KPI row uses the real count (taps excluded, Gui's v2.1 basis); the 10-19 row's 28 included 11 taps.
@@ -1105,3 +1169,340 @@ https://app.agencytitan.com/tasks/instance/7e7edc8e-24b7-4537-aa5b-b3775edd9df3 
 https://app.agencytitan.com/tasks/instance/733b27cf-a929-49b9-82f1-c185a6b94c5a (90-day),
 https://app.agencytitan.com/tasks/instance/ff05747d-de7a-4f08-9df3-b2ba18eec066 (LSA 7-day),
 https://app.agencytitan.com/tasks/instance/950b22a0-4b66-4db1-8ba3-5f7421fb3bde (LSA 30-day).
+
+## 2026-10-27 — fu-072 recheck of the 10-20 changes (read-only, nothing changed)
+
+**Window:** POST 10-20 → 10-26 (7 days) vs PRE 10-09 → 10-19 (11 days). Script `wr_recheck_1027.py` (read-only). Change history since
+10-20: only Edu's 10-20 batch, nothing on PMax. Real leads = Calls from ads + Phone Call (CallRail upload) + Submit lead form - web;
+Click-to-call taps and YouTube views out. Counts can still move a little as late conversions land.
+
+| Campaign | Spend/day POST (PRE) | Clicks/day | Real leads POST (PRE) | Real CPL POST (PRE) | IS / abs-top / budget-lost / rank-lost POST (PRE) |
+|---|---:|---:|---:|---:|---|
+| Branded ($35, all hours) | $32 ($13) | 5 (2) | 6 (5) | $37.57 ($28.07) | 80 / 68 / 11 / 9 (37 / 27 / 62 / 1) |
+| Nonbranded ($105, tCPA $80) | $75 ($117) | 7 (7) | 11 (10) | $48.00 (~$129) | 26 / 10 / 3 / 71 (30 / 10 / 27 / 43) |
+| PMax ($95) | $91 ($98) | 242 (28) | 4 (10) | $160.04 ($107.55) | n/a |
+| **Total** | **$199 ($228)** | | **21 (25)** | **$66.36 (~$100)** | |
+
+- **Branded: worked.** IS 37% → 80%, abs-top 27% → 68%, budget-lost 62% → 11%, spends $32 of $35. Old-schedule hours (Mon–Fri 06–22):
+  27 clicks / 5 conv / $178. New nights + weekends: 9 clicks / 1 conv / $47.
+- **Nonbranded: real CPL ~$129 → $48, but underspends ~$30/day** ($528 of $735). The tCPA bids lower, so rank-lost rose 43% → 71%.
+  CPC $17.18 → $11.48. Still a few expensive single clicks: competitor "genesis 1 3 electric" $72.56, "aa electric" $38.69, a $65.55
+  Emergency click on 10-20. Panel did the work (10 conv, $273); EV 4 conv / 28 clicks on mostly product research (tesla tulsa, xeal,
+  chargepoint, j1772 adapter, nissan leaf charger, cost to charge an EV).
+- **Emergency halved:** impr/day 85 → 43, clicks 26 → 7, 0 conv ($102). Likely the tCPA staying out of pricey emergency auctions, plus one ad.
+- **PMax moved to YouTube and chases taps.** Spend by network POST (PRE): YouTube $409 ($30), Display $129 ($95), Search $102 ($916).
+  The shift starts on 10-21 (YouTube $2/day → $40–100/day) with no change from anyone; the 3 PMax videos are old (the 4 assets the client
+  created 10-13 aren't in PMax). Counted conv 60 = 56 Click-to-call taps (Display 35, YouTube 20, Search 1) + only 4 real (1 ad call,
+  2 CallRail calls, 1 form). `[TSD] Click to call` is primary + biddable, so PMax finds cheap taps on YouTube/Display that don't turn into calls.
+
+**Staged (needs Edu's go; constant $235/d total, no client approval):**
+1. PMax: take `[TSD] Click to call` out of PMax bidding (campaign-level goal = calls from ads + Phone Call + forms), same fix pattern as
+   C&S / Proud Pops. Alternative: cut PMax $95 → ~$60 and give it to Nonbranded.
+2. Nonbranded tCPA $80 → $95 so it spends the $105 (real CPL $48 has room) and gets back into Emergency auctions.
+   Branded can't take the gap (already 80% IS, spends $32 of $35).
+3. Nonbranded negatives: PHRASE "genesis 1 3", "aa electric"; EV research: "tesla tulsa", "xeal", "j1772", "nissan leaf",
+   "cost to charge". Leave "chargepoint level 2 charger" (install intent).
+4. Re-compare EV + Panel RSAs ~11-03 (from 10-20).
+
+## 2026-10-27 (later) — APPLIED fixes 2 + 3; CallRail check on PMax taps (fix 1 still open)
+
+**Applied (Edu: "Number 2 and 3 are good to go")**, `wr_apply_1027.py`, validate-only first, then `--apply`, read-back confirmed:
+- Nonbranded target CPA **$80 → $95** (budget $105 unchanged, total still $235/d). Campaign status reads LIMITED (learning on the new target).
+- 7 PHRASE negatives on Nonbranded: genesis 1 3, aa electric, tesla tulsa, xeal, j1772, nissan leaf, cost to charge. 30d replay:
+  $213 spend, ~3.5 conv (1 each on genesis 1 3, aa electric, tesla tulsa), no conflicts with live keywords.
+
+**CallRail check: do PMax taps turn into calls?** 638 calls 10-09 → 10-27 (account ACC9962…, company COMb0cd…). PMax attributed by
+landing URL (`utm_campaign=23833205176`; `gad_campaignid` 23833223188 + gad_source=1 = PMax Search, 23833219135 + gad_source=2 +
+youtube.com/wbraid = PMax YouTube/Display, both confirmed via click_view gclid) + Google call_view for the ad call button.
+
+| PMax, 10-20 → 10-26 | Spend | Counted taps | CallRail calls | 60s+ first-time | Cost per real call |
+|---|---:|---:|---:|---:|---:|
+| YouTube + Display | $538 | 55 | 4 (94s McAlester, 499s Tulsa, 14s, 13s) | 2 | ~$269 |
+| Search | $102 | 1 | 2 new (531s website, 87s ad button) + repeats | 2 | ~$51 |
+
+- **55 YouTube/Display taps → 4 calls, 2 real (~4%).** The tap signal overstates YouTube/Display by ~25x, which is why PMax moved there.
+- PMax is NOT junk: it still brings real calls, and CallRail shows more than Google does (Google counted 4 real; the YouTube calls carry
+  wbraid, no gclid, so CallRail can't upload them).
+- PRE (10-09 → 10-19), almost all on Search: 7 real calls (5 ad button + 2 website) + 2 forms on $1,075 = ~$119/lead; YouTube/Display
+  $125, 7 taps, 0 calls. POST: 4 real calls + 1 form on $640 = ~$128/lead, but the YouTube half costs ~5x the Search half.
+- One 10-21 546s call has a Nonbranded landing URL but a PMax Display gclid; left out as ambiguous.
+- Recordings not listened to yet (60s+ first-time used as the proxy).
+
+**Fix 1 (for Edu):** the data supports taking `[TSD] Click to call` out of PMax bidding (keep it as secondary for reporting). PMax would then
+bid on calls from ads + CallRail uploads + forms, which point at Search. Side effect: its real YouTube calls (wbraid) aren't uploaded, so
+Google will undervalue YouTube; that's acceptable at ~$269/call.
+
+## 2026-10-27 (later 2) — APPLIED fix 1: taps out of PMax bidding (Edu: "Ok, apply #1")
+
+**Correction to the entries above:** `[TSD] Click to call` (7835456094) is type **CLICK_TO_CALL** = taps on the **ad's own call button**
+(PHONE_CALL_LEAD / CALL_FROM_ADS), not a website tel: tag like Zen Air's action of the same name. Right pairing = taps vs Google call_view:
+PMax YouTube/Display 55 call-button taps 10-20 → 10-26 → **0 ad calls** (both PMax call_view calls that week were Search clicks). The 2 real
+YouTube calls in CallRail came from site visits (wbraid), not from the taps.
+
+Because taps share a bucket with Calls from ads, campaign goals can't split them. Script `wr_pmax_goal_1027.py` (validate-only, then `--apply`):
+- New custom goal **`TSD | Calls + Forms (no taps)`** (6459658990) = Calls from ads (60s), Phone Call (CallRail upload, 60s),
+  Submit lead form - web, Form Submission [Landing Page] = everything PMax bid on before, minus the taps.
+- **PMax 23833205176** → that goal (was account-default). Nonbranded + Branded untouched; old CSMS / CSMS Pmax goals untouched.
+- Taps still report under All conversions. **From 10-28, PMax's Conversions column drops to real leads only (~1/day or less); that's the
+  goal change, not a collapse.** Use all_conversions across the change. Expect a few days of learning and possibly lower spend.
+
+**Recheck 11-03 (fu-098):** network split back toward Search? Real calls (call_view + CallRail by landing URL) + forms vs PRE ~$119 and
+POST ~$128 per lead; spend vs $95/d; YouTube calls by `gad_campaignid=23833219135`.
+
+## 2026-10-28 — Source of the 09-22 PPC raise found (record only, no account changes)
+
+The written client approval for the 09-22 raise is in Agency Titan, not Slack:
+- **Ticket #793 "Demographics & Ad Spend Increase"** (closed 10-05). Client (Luke): "As for the PPC Budget, lets double it from
+  $3,496 to $7,000." The $3,496 is the PPC-only figure from our 09-09 PDF (`Watts Right Report & Budget Update Recomm.pdf`,
+  AT task 145ebcda-b68b-4745-9f96-2c56c7864a45), so the $7k covers Google Search + PMax only, not LSA and not Meta.
+- **AT task 0f5120ba-7d7b-4864-b424-72c3d12b1cee** (created 09-21): "Budget increase to $7,000/month." Completion note matches the
+  09-22 entry above ($235/d).
+- Closes the old "get the Titan ticket number" to-do from 09-22. Meta has no approved monthly figure on record anywhere.
+
+## 2026-11-06 (later) — APPLIED: 26 PHRASE negatives on Nonbranded + CPL by campaign (Edu: "apply those negatives you proposed")
+
+`wr_negs_1106.py`, replay + validate-only, then `--apply`, read-back OK (none missing). Job/trade: electrical technician. Public EV charging: charging station near me,
+charging stations near me, chargepoint charging station, charge point app, charge point charging station, tesla com, power electronics. Competitors: wright way electric,
+buxton electric, edison electric, lighthouse electric, marrs electric, oil capital electric, setter electric, vintage electric, hypower, coleman electric, coleman electrician,
+owen electric, emc tulsa. EV research (pending since fu-117): tesla in tulsa, ev connect, ford charging station, if i buy a tesla, how long does it take.
+30d replay: ~$135 of blocked terms, 0 conversions. Changed from the proposal: bare 'charge point' blocked live kws 'electric charge point at home' + 'ev charge point cost'
+(script aborted), bare 'chargepoint' would block home-charger terms (chargepoint home flex), bare 'charging station(s)' narrowed to '... near me'.
+
+**Real-lead CPL** (Calls from ads + Phone Call + forms + LSA PPL leads; taps, ghl_*, YouTube out; Google counts, not transcribed):
+| Campaign | 10-30..11-05 | 10-07..11-05 |
+|---|---|---|
+| Branded | $275 / 9 = $31 | $855 / 27 = $32 |
+| Nonbranded | $1,304 / 11 = $119 | $3,673 / 42 = $87 |
+| PMax | $675 / 0 | $2,805 / 18 = $156 (all before 10-28) |
+| LSA old 17732780541 | $2,934 / 51 = $58 | $13,574 / 238 = $57 |
+| LSA PPL PMax 24425981973 (from 11-04) | $316 / 5 = $63 | same |
+| PPC excl. LSA | $2,254 / 20 = $113 | $7,334 / 87 = $84 |
+| Total | $5,504 / 76 = $72 | $21,224 / 330 = $64 |
+- AT Internal Request **045e2f59-c87a-4dc0-92e7-b2a97babca82** "Google Ads update: first days on the Push budget + cost per lead by campaign" created as a DRAFT for Angela (Intake, Edu submits).
+NB trend: $44 (tCPA $80) → $72 ($95) → $119 this week; 11-04..05 on $110 = $751 / 3 (~$250, CallRail lag). Script: scratchpad wr_cpl.py logic (FROM campaign + conversion_action_name, all_conversions on real actions).
+
+---
+
+## 2026-11-06 — fu-129 Option 3 day 2 + fu-118 taps check (read-only, nothing changed)
+
+**fu-118 CLOSED, taps are out of bidding.** PMax Conversions = 0 since 11-03 while all_conversions still logged the taps (31 on 11-03, 38 on 11-04).
+Nonbranded 11-03: 0.67 conv vs 1.67 all (part-day after the change), clean since. No fallback needed. Side effect: PMax lost its only
+"conversion" signal and spend fell to $51.85 on 11-05 (393 clicks, 0 real conversions since 11-03). Feeds fu-119 (read 11-10).
+**fu-129: all 3 new RSAs APPROVED + ELIGIBLE** (830598421847, 830598456374, 830598421889).
+
+| Search | 11-04 | 11-05 |
+|---|---:|---:|
+| Branded ($50) | $53.63 | $60.17 (IS 50%, budget-lost 50%) |
+| Nonbranded ($320, tCPA $110) | $272.81 | **$477.88** (1.49x, IS 48%) |
+
+- **No ramp problem:** NB went over $320 on day 2 (under the 2x daily limit). Search $538 on 11-05 vs ~$370 target; Google holds the month to 30.4x budget.
+- NB 11-05 by ad group: Generator $207.82 / 15 clicks / 1 conv, Electrician (General) $102.40 / 3, Emergency $64.71 / 2 / 2 conv, EV $61.70 / 9, Panel $41.26 / 4, Surge $0 (7 impr).
+- **Real leads in Google so far:** NB 3 (2 Emergency ad calls + 1 form, 11-05), Branded 4 ad calls (435s, 61s, 95s, 580s). call_view shows 4 NB calls ≥60s on 11-05
+  (306s, 614s, 156s, 132s) but only 2 counted yet; CallRail uploads lag. Too early for CPL.
+- **Expensive single clicks under tCPA $110:** 'electrician near me' $97.96 (Emergency), 'electrical technician' $68.03 (Electrician General, job/trade term),
+  'electricians near me' $24.04. Emergency avg CPC $44 on 11-04.
+- Only $273 of ~$751 NB spend shows in search terms (Google hides low-volume ones). Visible junk: 'electrical technician', public EV charging
+  (tesla com charge, power electronics ev chargers, charge point charging station, ev charging station(s) near me), competitor 'wright way electric'.
+  Competitor names showing on Electrician (General), 0 clicks yet: buxton, edison, lighthouse, marrs, oil capital, setter, vintage (7 impr), hypower, coleman, owen, emc tulsa.
+  'challenger electric panel' kept (Challenger panels = replacement lead).
+- New PPL LSA (24425981973): 11-05 $316.47 / 5 phone leads; old LSA 11-04 $546.08 / 9.
+
+**Proposed (Edu's go):** NB campaign PHRASE negatives: electrical technician, charging station, charging stations, charge point, tesla com, wright way electric,
++ the 11 competitor names above, + the 5 EV negs still pending from fu-117 (tesla in tulsa, ev connect, ford charging station, if i buy a tesla, how long does it take).
+Replay against 30d terms + live keywords before applying. Keep 'watt electric'. Full read of the new groups with fu-117 on 11-10.
+
+---
+
+## 2026-11-03 — fu-097 recheck: Nonbranded on tCPA $95 + the 10-27 negatives (read-only, nothing changed)
+
+**Window:** POST 10-28 → 11-02 (6 full days on $95) vs PRE 10-20 → 10-26 (7 days on $80). Script `wr_recheck_1103.py` (read-only).
+No account changes since Edu's 10-27 batch. Real leads = Calls from ads + Phone Call (CallRail upload) + Submit lead form - web +
+Form Submission [Landing Page]; taps and ghl_* out. PRE numbers moved a little since the 10-27 entry as late conversions landed (11 → 12).
+
+| Nonbranded | POST (PRE) |
+|---|---|
+| Spend/day vs $105 | **$96** ($75) |
+| Clicks/day, CPC | 9.3 ($10.28) / 6.6 ($11.48) |
+| Real leads | 8 = 2 ad calls + 3 CallRail + 3 forms (12) |
+| Real CPL | **$71.93** ($44.00) |
+| IS / rank-lost / budget-lost | 34 / 66 / 0 (26 / 71 / 3) |
+
+- **Spend: fixed.** $96/day of $105 (10-30 overdelivered $195, 10-31 $19). Rank-lost 71% → 66%, IS 26% → 34%.
+- **CPL: worse so far, $44 → $72, and fewer leads (8 vs 12).** Still under the ~$80 hold line. The extra ~$21/day bought more clicks, not more leads. 6 days and
+  CallRail uploads lag a day or two, so 11-01/11-02 can still add. Hold $95, read again ~11-10; if real CPL goes over ~$80, step back to ~$85-90.
+- **Emergency is back:** impr/day 43 → 55, clicks 7 → 12, 2 real leads (1 ad call, 1 CallRail) vs 0. Panel 4 real, EV 2 forms.
+- Ad call button (call_view): 2 calls, 930s + 565s, both 918.
+- **The 7 negatives hold** (no search terms match them). New leaks, ~$95 of $575 (16%): competitors evans electric tulsa $19.44,
+  ap electric tulsa $15.81, half moon electric $13.50, ecs electric reviews $9.50, blue sky electric $3.35; EV research tesla in tulsa ok
+  $17.69 (the 'tesla tulsa' phrase negative doesn't block it), ev connect $10.23, ford charging station, 'if i buy a tesla...', 'how long
+  does it take to fully charge a tesla', ev charging near me. Keep 'watt electric' (converted).
+- **RSA A/B (10-20 → 11-02, conv includes taps):** Panel old 808170034922 CTR 4.5% / 14 conv vs new 826560998579 3.7% / 0 conv on 163 impr;
+  EV old 808088037553 6.3% / 8 vs new 826560998582 4.2% / 2. Google already serves the old ads ~80%. Old ads lead, no action yet.
+- Branded side note: IS 80% → 69%, budget-lost 11% → 25% (spends $32 of $35), 6 real leads at $32.43.
+
+**⚠ For fu-098 (PMax):** the custom goal `TSD | Calls + Forms (no taps)` (6459658990) is attached to PMax at campaign level and does NOT
+list `[TSD] Click to call` 7835456094, but PMax's Conversions column still counts taps: 18/day on 10-28 → 40/day on 11-01 (176 POST vs 66 PRE),
+0 real leads in Google POST (4 PRE). Spend moved further off Search: Display $129 → $429, YouTube $409 → $187, Search $102 → $0.76.
+The goal change isn't working as intended; read fully in fu-098.
+
+**Staged (needs Edu's go):** PHRASE negatives on Nonbranded: evans electric, ap electric, half moon electric, ecs electric, blue sky electric,
+tesla in tulsa, ev connect, ford charging station, if i buy a tesla, how long does it take. Keep tCPA $95.
+
+## 2026-11-03 (later) — APPLIED 5 competitor PHRASE negatives on Nonbranded (Edu: "Apply the competitors phrase negatives, yes")
+
+`wr_apply_1103.py`, validate-only first, then `--apply`, read-back confirmed (none missing): evans electric, ap electric, half moon electric,
+ecs electric, blue sky electric. 30d replay: 9 terms, $61.60, 0 conv, no live-keyword conflicts. tCPA $95 and budget unchanged.
+The 5 EV research negatives (tesla in tulsa, ev connect, ford charging station, if i buy a tesla, how long does it take) are NOT applied, still open in fu-117.
+
+## 2026-11-03 — fu-098: first week of PMax on the 'no taps' custom goal (read-only, nothing changed)
+
+**Window:** POST 10-28 → 11-02 (6d) vs PRE 10-20 → 10-26 (7d). Scripts `wr_pmax_recheck_1103.py` (Google, read-only) + CallRail pull
+(account ACC9962…, company COMb0cd…, 521 calls 10-20 → 11-02). PMax calls in CallRail = landing URL with utm_campaign=23833205176 or
+gad_campaignid 23833223188 / 23833219135.
+
+**The 10-27 goal change did not take taps out of bidding.** PMax is attached to `TSD | Calls + Forms (no taps)` (6459658990) and the goal
+doesn't list `[TSD] Click to call` 7835456094, but every tap still lands in PMax's Conversions column (conv = all, 176/176 POST).
+Both actions are PHONE_CALL_LEAD / CALL_FROM_ADS, so including `Calls from ads` in the custom goal seems to pull in the whole bucket
+(same rule as tsd-google-conversion-goals-mechanics: goals can't split one category/origin bucket, and custom goals don't either).
+
+| PMax | POST (PRE) |
+|---|---|
+| Spend | $617 ($640), 11-01 $165 on a $95 budget |
+| Search / Display / YouTube | $0.76 / $429 / $187 ($102 / $129 / $409) |
+| Taps counted as conversions | 176, rising 18/day → 40/day (66) |
+| Real conversions in Google | 0 (3) |
+| Ad calls (call_view) | 0 (2: 36s, 87s) |
+| CallRail calls, 60s+ first-time | 0 of 11, longest 30s (3: 94s McAlester, 499s Tulsa, 531s Tulsa) |
+
+- Since 10-28 PMax buys essentially no Search. It runs on Display taps, which have never turned into calls here.
+- Out-of-area CallRail callers from PMax pages: Fort Worth, Grand Prairie, Ogden, Gooding, Vinita (PRE: Reno).
+- Net: ~$617/week for 0 real leads, worse than PRE (~$160-213/lead) and far worse than Nonbranded ($72) or LSA (~$56).
+
+**Proposed (needs Edu's go, constant or lower total, no client approval needed):**
+1. **Pause PMax now.** Stops ~$95/day with no real leads.
+2. Branded $35 → $45 (budget-lost 25%, spends $32 of $35). Nonbranded can't take more yet (tCPA-limited, CPL under review in fu-117).
+   Total drops ~$235 → ~$150/day; tell the AM it's a deliberate underspend vs the $7k PPC approval.
+3. Before any PMax relaunch: take taps out for real (PMax campaign_conversion_goal PHONE_CALL_LEAD/CALL_FROM_ADS biddable=false, which also drops
+   the 60s ad calls, or remove/rename the tap action account-wide; check the Command Center funnel tap row first), final URL = service pages,
+   presence-only geo, brand exclusions.
+
+## 2026-11-03 (later) — APPLIED: `[TSD] Click to call` → Secondary account-wide; PMax gets 1-2 weeks to prove itself (Edu)
+
+Edu: "Taps to secondary and we have Pmax a week or two to show its value or show that it needs to be killed." PMax NOT paused, budgets unchanged.
+- `wr_taps_secondary_1103.py`, validate-only first, then `--apply`. Read-back: primary_for_goal False, include_in_conversions_metric False.
+- Taps still report under All conversions (Command Center funnel reads all_conversions, unaffected). No campaign can bid on them now.
+- Nonbranded loses ~2 taps/week from its Conversions column (real leads unchanged). Branded is Target IS, unaffected.
+- PMax custom goal 6459658990 left as is (it already lists only real actions).
+- **Verify 11-05 (fu-118):** PMax conversions < all_conversions from 11-04 (taps only under all). If taps still count, fallback = PMax
+  campaign_conversion_goal PHONE_CALL_LEAD/CALL_FROM_ADS biddable=false.
+- **PMax kill-or-keep (fu-119):** first read 11-10, decision 11-17. Keep if real CPL (60s ad calls + CallRail 60s+ first-time + forms)
+  ≲ $100 and Search share comes back; kill if still Display-heavy with 0-1 real leads at 11-10, or real CPL > ~$150 at 11-17.
+
+---
+
+## 2026-11-04 — APPLIED: Option 3 "Push" (+$7,000/mo, all Google Search) from the Google-only budget proposal
+
+**Approval:** client picked Option 3 at Angela's 11-04 meeting. Angela, Slack DM 11-04 14:54 -03: "Watt's Right is going to the Push budget -
+increase $7000/month". Edu's go same day ("execute the increase according to the proposal"). Proposal: `Watts-Right-Budget-Proposal_Q4-2026-Q1-2027_Google-only.pdf`
+(Search $4,260 → $11,260/mo; LSA ~$12.7k and PMax $2,890 unchanged; total ~$26.9k/mo, ~370 leads, ~$73). Script: `wr_apply_1104_push.py` (validate-only first, then --apply).
+
+**Changes (read-back confirmed):**
+- Budgets: Branded 23690645223 $35 → $50/d (budget-lost IS 30% last 7d); Nonbranded 23832838033 $105 → $320/d. Search total $140 → $370/d ≈ $11,250/mo.
+- Nonbranded tCPA $95 → $110 (at $95 NB was rank-limited ~60%, a bigger budget wouldn't spend; client accepted a higher CPL).
+- 3 new NB ad groups, each with 1 RSA (3 pinned Tulsa H1s, claims only from the site: licensed & insured, same-day, upfront pricing,
+  no extra fee nights/weekends/holidays, top-rated on Google; NO years claim, site says both "15+ years" and "founded in 2020"):
+  - `Electrician (General)` 203278419513 → /locations/tulsa-ok/ (ad 830598421847). EXACT electrician / electrician near me / electricians near me /
+    local electrician; PHRASE electrician tulsa / tulsa electrician / electrician in tulsa / residential electrician / electrical contractor / electrical repair.
+    Ad-group negs: auto, automotive, marine, boat, aircraft, industrial. (Old `electrician near me` exact in Emergency stays paused.)
+  - `Whole-Home Generator` 203278419553 → /upgrades/whole-home-generators/ (ad 830598456374). 7 PHRASE kws; 15 negs (portable, rental, retail stores, parts...).
+  - `Whole-Home Surge Protector` 203278419593 → /upgrades/whole-home-surge-protectors/ (ad 830598421889). 6 PHRASE kws; 9 negs (retail, power strip, reviews, diy).
+- 17 NB campaign PHRASE negatives for job seekers (electrician jobs/electrical jobs/electrician job/jobs hiring/hiring/careers/career/salary/apprentice(ship)/
+  school/training/classes/course/union/how to become/certification). Bare "jobs" was dropped: replay showed it blocks "electrician near me for small jobs".
+- All 3 RSAs REVIEW_IN_PROGRESS at apply time.
+
+**Expect:** NB won't jump to $320/d on day 1; the $110 tCPA + new generic groups ramp it. Generic terms sit under LSA (same searcher), so watch LSA volume for overlap.
+**Next:** ads approved + pacing 11-06 (fu new); first read of the new groups with fu-117 on 11-10; PMax kill-or-keep 11-17 (fu-119) still stands —
+if PMax is killed its ~$95/d can go to Search at constant total, but Search is near its ceiling at this level.
+
+---
+
+## 2026-11-06 — LSA moved to Pay-per-lead PMax by Google (read-only, nothing changed)
+
+Old LSA `17732780541` paused 11-04; new `24425981973` created 11-04 (renamed `[LSA] Watt's Right Electric` on 11-04 by access@topservdigital.com).
+Status SERVING / LEARNING, asset group ELIGIBLE → homepage, tCPA none, budget $1,714.29/d. Conversion action on the new campaign:
+`Phone calls (Pay-per-lead goals)`. API shows content network ON, but delivery so far is SEARCH + MAPS only.
+
+| Day | Campaign | Impr | Clicks | Cost | Conv | LSA leads |
+|---|---|---|---|---|---|---|
+| 11-02 | old | 642 | 76 | $929.07 | 15 | 16 |
+| 11-03 | old | 551 | 59 | $461.35 | 9 | 10 |
+| 11-04 | old / new | 331 / 210 | 37 / 11 | $546.08 / $0 | 9 / 0 | 9 |
+| 11-05 | new | 465 | 42 | $316.47 | 5 | 7 |
+
+Too early to judge (learning). ⚠ PMax rechecks (fu-118/fu-119) must keep the pay-per-lead campaign out of TSD PMax `23833205176` numbers.
+
+**Context:**
+Google (not TSD) is moving LSA into a new campaign type, "Pay-per-lead PMax". It creates a PERFORMANCE_MAX campaign
+(`Pay-per-lead-PMax-<business>`, Max Conversions, same daily budget as the old LSA, one asset group `xcat:service_area_business_<trade>`)
+and pauses the old `LocalServicesCampaign:SystemGenerated`. Still billed per valid lead, still Search + Maps only, badge carries over.
+What changes: no manual bidding, one campaign-level target instead of one per trade, weekly budget becomes a daily average, old LSA
+dashboard reports don't migrate (lead history does). Sweep of all 57 enabled MCC accounts on 11-06: 7 switched on 11-03/11-04
+(Watt's Right, Amazing Morrow, Golden, Gray Duct, King's Window, Nick's, Spencer). Full write-up: `_contexto/memoria/tsd-lsa-ppl-pmax-migration.md`.
+
+Data notes: `local_services_lead` still returns leads after the switch (lsa_report.py lead data OK). Spend/metrics now sit on the
+PMax campaign, so anything filtering on channel LOCAL_SERVICES (google_channels.py) misses them. **$0 spend ≠ dark**: only charged
+leads cost money, clicks are free. Judge delivery by impressions + leads per day.
+
+---
+
+## 2026-11-10 — fu-117 (Nonbranded on Push) + fu-119 (PMax first read), read-only, nothing changed
+
+**Window:** POST 11-04 → 11-09 (6 full days on Push: NB $320/d + tCPA $110, taps Secondary) vs PRE 10-28 → 11-03 (7d, NB $105 + tCPA $95).
+Script `wr_recheck_1110.py` (read-only). CallRail = Watt's own account 537241053 (agency account was 429). Ad calls matched to CallRail
+"Call Extension PPC" recordings by timestamp and transcribed locally (call-wins, small.en; audio + transcripts in `_pessoal/call-wins/watts-right-{nb,pmax}-1110/`).
+No account changes since Edu's 11-06 negatives (only an asset created 11-06 by askwattson@callwattsright.com). The 26 negatives hold: none of those terms after 11-07.
+
+| POST (PRE) | Spend/day | Google "real" leads | CPL | Notes |
+|---|---|---|---|---|
+| Branded ($50) | $48 ($38) | 13 (9) | $22 ($30) | IS 41% (63%), **budget-lost 57%** (30%) |
+| Nonbranded ($320, tCPA $110) | $372 ($110) | 19 (12) | $117 ($64) | IS 41%, rank-lost 44%, CPC $16.66 ($11.35) |
+| PMax ($95) | $97 ($99) | 4 (0) | $146 | taps out of bidding, conv column now real only |
+| LSA PPL PMax 24425981973 | $339 | 34 (26 calls + 8 messages) | $60 | learning |
+| **Total** | $856 | 70 | **$73** | = the Push proposal's ~$73; ~11.7 leads/day ≈ 355/mo vs ~370 planned |
+
+**Transcribed: Google's call counts overstate.**
+- **PMax, 4 ad calls → 0 new customers.** Checotah 88s = coffee shop wanting commercial work (WR doesn't do commercial, referred out);
+  Broken Arrow 315s = EXISTING customer (609 number), new outlet issue, BOOKED $49 standard; Tulsa 197s = utility disconnect / payment help, not a lead;
+  Tulsa 149s = existing customer, permit address mix-up. CallRail site calls from PMax landings (utm/gad ids): 28 calls, all < 60s except
+  Bridgeport CT 195s; out-of-area callers Miami, Denver, Chattanooga, Lafayette LA, Bridgeport CT, Jamestown MI, Bald Knob AR, Somerville TN.
+  Network: YouTube $423 (72%), Search $91 (16%, was $1.47), Display $69 (12%, was $463).
+- **Nonbranded, 11 ad calls 60s+ = 9 callers:** 3 NEW BOOKED (Kenneth, New Home 11-05, 3 calls; Tina 11-09 whole-home generator estimate;
+  Beau 11-09 home generator estimate), 1 new LOST (Glenda 11-07, wanted Saturday, refused emergency fee, booked out to Wed), 2 EXISTING booked
+  (Broadnax 11-06 maintenance plan, same 609 number as the PMax call; Oleg 11-08, earlier generator quote), 3 NOT leads (Paul 11-05 portable Generac
+  fuel pump, referred out; 2 apprentice job seekers 11-09). Google counted 9 "Calls from ads". 8 forms + 2 CallRail uploads not verified.
+  With forms at face value NB ≈ 16 real → **~$140 CPL**; new customers by phone = 4 (3 booked).
+- 2 of 3 new booked NB calls are **whole-home generator** (high ticket). Generator group shows $175 CPL in Google but carries the best jobs.
+
+**NB ad groups POST (Google real):** Electrician (General) $899 / 11 = $82; Generator $524 / 3 = $175; Emergency $524 / 4 = $131; EV $136 / 1;
+Panel $149 / 0; Surge $0 (37 impr). Expensive single clicks under tCPA $110: 'tulsa electrician' $96.81 CPC, 'electrician open now' $97.96,
+'electrician near me' $36-79, 'electrician' exact $68. Keywords with spend and 0 conv: 'electrical repair' PHRASE $186 / 7 clk,
+'electrical panel box for home' BROAD $149 / 16 clk. Only $1,085 of $2,232 spend shows in search terms.
+**New leaks after 11-07** (replayed vs 30d terms + live kws, clean, 0 conv, $135): rocky electric(ian) $78.54, catale electric $20.77,
+arnold electric $12.74, oklahoma generator $12.03, magnum electric $7.00, generator supercenter $4.28. Keep 'coburn electric' (converted).
+RSAs: new Electrician (General) 830598421847 AVERAGE, 14 all-conv; Generator 830598456374 GOOD, CTR 5.8%; Panel/EV old ads still lead the new ones.
+
+**Proposed (Edu's go):**
+1. **fu-119: kill PMax now.** Early-kill rule met (0-1 real leads at 11-10; transcribed = 0 new customers, $584/6d).
+2. **Branded $50 → $95** with PMax's $95 (constant PPC total, inside the approved Push; Branded is the cheapest lead at $22 and loses 57% of brand searches to budget). AM note: PMax off, money moved to brand.
+3. **fu-117: keep NB at tCPA $110 / $320.** Stepping back to $80-95 would leave most of the Push unspent (NB spent $110/d at $95). Blended CPL is on plan.
+   Add the 6 PHRASE negatives above. Optional: 'electrical panel box for home' BROAD → PHRASE (research/retail clicks).
+4. Next NB read 11-17 with transcription; judge generator on booked jobs, not Google CPL.
+
+## 2026-11-10 (later) — APPLIED: PMax PAUSED, Branded $50 → $145, 6 competitor/dealer PHRASE negatives on Nonbranded (Edu: "Kill pmax / Move the $95 from pmax to branded / Add the phrase negatives")
+
+`wr_apply_1110.py`, validate-only first, then `--apply` at 09:13 -03. Read-back: PMax `TSD_07.05_PMAX_Evergreen` 23833205176 PAUSED;
+Branded 23690645223 ENABLED $95/d; Nonbranded unchanged ($320, tCPA $110); negatives missing: none (rocky electric, catale electric,
+arnold electric, oklahoma generator, magnum electric, generator supercenter). **Correction 09:14 -03 (`wr_apply_1110b.py`): Branded $95 → $145** = $50 + PMax's full $95 (Edu said move the $95; the 09:13 run set $95 from Claude's mis-added proposal, which would have cut $50/d). Read-back 145.0. Branded = Target IS 95% top of page, $8 CPC ceiling, so the budget is a cap; expect ~$100-115/d actual (budget-lost 57% at $48/d). PPC total unchanged at $465/d (Branded $145 + NB $320 + PMax $0).
+fu-119 CLOSED (killed early). fu-117 CLOSED (NB kept at $110). Next read 11-17 (fu-145): Branded spend/IS on $145, NB with transcription.
+Owed: AM note to Angela that PMax is off and its $95/d moved to brand searches (same monthly total).
+

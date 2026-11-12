@@ -211,3 +211,10 @@ changes by anyone, only Meta automation (auto custom audiences, billing, spendin
   conversion creative).
 - [ ] After the changes, watch frequency climb toward ~3x/week with reach holding, CPM likely up from $2.50.
 - [ ] Close the AT task (`630fe022`) once done.
+
+## 2026-10-20 — All Meta confirmed off (Edu: "pause all seasons campaign then")
+
+Live read (Meta MCP): every campaign in 2405306059725517 was already PAUSED (awareness `TSD_10.09_Awareness_Brand_TOFU_ARL`
+paused 10-15 under the $2,500/mo cap; $37.59 in the last 7 days from before the pause) except `TSD_03.12_Leads_Forms_Hiring`
+(120240785878630607), still ACTIVE but inert: both ad sets ended 04-13, $0 in 90 days. **Paused it 10-20** (live pause,
+is_draft=false). Account now has nothing active. Closes fu-033 / fu-030. Still owed: correction to Angela on ticket #935.

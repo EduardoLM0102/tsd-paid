@@ -180,3 +180,22 @@ started Apr 30, entirely inside the blind window.
 - [ ] Fix `include_in_conversions_metric` on the primary actions.
 - [ ] Demote `Local actions - *` from Primary to Secondary.
 - [ ] Confirm the "Gardner's Plumbing" vs "Golden Plumbing" brand naming on the web tags.
+
+---
+
+## 2026-11-06 — LSA moved to Pay-per-lead PMax by Google (read-only, nothing changed)
+
+Old LSA `21051260085` paused; new `24426143517` created 11-04 14:28. SERVING / LEARNING, asset group ELIGIBLE → goldenplumbingky.com,
+budget $214.29/d, ad schedule carried over. First spend 11-05: 122 impr, 9 clicks, $319.63, 4 conv; LSA leads 11-04: 2, 11-05: 5, 11-06: 1 (so far).
+
+**Context:**
+Google (not TSD) is moving LSA into a new campaign type, "Pay-per-lead PMax". It creates a PERFORMANCE_MAX campaign
+(`Pay-per-lead-PMax-<business>`, Max Conversions, same daily budget as the old LSA, one asset group `xcat:service_area_business_<trade>`)
+and pauses the old `LocalServicesCampaign:SystemGenerated`. Still billed per valid lead, still Search + Maps only, badge carries over.
+What changes: no manual bidding, one campaign-level target instead of one per trade, weekly budget becomes a daily average, old LSA
+dashboard reports don't migrate (lead history does). Sweep of all 57 enabled MCC accounts on 11-06: 7 switched on 11-03/11-04
+(Watt's Right, Amazing Morrow, Golden, Gray Duct, King's Window, Nick's, Spencer). Full write-up: `_contexto/memoria/tsd-lsa-ppl-pmax-migration.md`.
+
+Data notes: `local_services_lead` still returns leads after the switch (lsa_report.py lead data OK). Spend/metrics now sit on the
+PMax campaign, so anything filtering on channel LOCAL_SERVICES (google_channels.py) misses them. **$0 spend ≠ dark**: only charged
+leads cost money, clicks are free. Judge delivery by impressions + leads per day.

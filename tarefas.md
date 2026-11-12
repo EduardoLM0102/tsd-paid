@@ -1,5 +1,33 @@
 # Tarefas — TopServ (Paid Ads)
 
+## Ofertas de fim de ano — doc pra Angela (Edu, 2026-11-05, Command Center fu-130 / fu-131)
+- [ ] Revisar o doc "Holiday Offers: Client Talking Points" (https://claude.ai/artifact/BhgrN7NA698kd8412qQCGQ) e mandar pra Angela (Morrow vai pela Marlo).
+- [ ] Até 11-13: juntar as aprovações por escrito (oferta, preço, data final) via ticket AT; montar os anúncios pra lançar na semana de 11-16.
+- Contexto completo: `_contexto/memoria/tsd-eoy-2026-seasonal-offers.md`.
+
+## Nick's — pedir landing page de aquecimento (Edu, HOJE 2026-11-04, Command Center fu-125)
+- [ ] Pedir a landing page de aquecimento da Nick's (Hammond, LA): 1 serviço por página (ex.: Furnace & Heating Repair in Hammond, LA), H1 = keyword do anúncio + cidade, número CallRail do grupo de anúncio em destaque, marca real (padrão do rollout de LPs, `_contexto/memoria/tsd-landing-page-rollout.md`). Hoje o NB da Nick's é só AC e está quase parado; o grupo de aquecimento (+ negativas for sale, in store, deals, evaporator core, why isn't, why won't) só entra quando a página existir. Depois: decidir PMax $50 → $35 e +$15 no NB heating (fu-124, 11-11).
+
+## ICS — ligação de anúncio cai no menu da central (Edu → AM, até 10-30, Command Center fu-110) — AT 5e5dcc2a SUBMETIDO, em Execution com a Angela (visto 11-04)
+- [ ] Abrir ticket pro AM: todas as ligações de anúncio (call extension do Google Ads, LSA, números do site) caem no menu da ICS (8 opções + diretório, 45–60s) e não direto num atendente. De 10-01 a 10-28: 31 ligações de anúncio, 3 jobs novos, 24 desligaram no menu sem falar com ninguém. Quem escolhe "service" é atendido em ~10s (Jason/Jerry), então o problema é o menu, não a equipe.
+- [ ] Pedido pra ICS: apontar os números de rastreamento dos anúncios direto pra linha de service/sales (sem menu, dá pra mudar o destino na CallRail) ou pôr "press 1 for service or a new system" como primeira opção. Nossa CallRail é só leitura, a ICS decide.
+- [ ] Junto: vários ligantes de NYC (Queens, Bronx, Brooklyn), fora da área de NJ. Checar o tipo de localização na PMax/Search e a área do LSA.
+- Prova: `clients/integrate-comfort/call-wins-log.md` (update 2026-10-28).
+
+## C&S Air — achar destino pros ~$100/dia que sobraram (Edu, até 10-30, Command Center fu-091)
+- [ ] Depois de pausar PMax + Cooling (10-23), a C&S gasta ~$65-75/dia vs ~$170 antes. Branded e LSA não absorvem. Opções: subir o heating depois da 1ª semana, revisar settings do LSA, campanha de Search comercial, Meta, ou avisar o AM e devolver. Detalhe no fu-091.
+
+## ✅ 2026-10-23 FEITO: análise CallRail da C&S Air + All Seasons (fu-085). C&S: PMax 0 ligações → decisão do Edu (fu-088). All Seasons: 2 de 5 empresa errada, 2 agendados (fu-089 em 10-29)
+- [x] C&S: ligações no 817-442-6949 de 10-09 a 10-22 (atendidas, 60s+, primeira vez). Os 39 taps da PMax viraram ligação? Depois rodar o plano de ação (`clients/cs-air/google-ads-log.md`, 2026-10-22 later).
+- [ ] All Seasons: ligações do Google Ads 10-16 a 10-22, % de empresa errada vs 10 de 20 em Oct 1-15 (transcrição local). Ler contra as mudanças de 10-22 (520 negativas, 898 keywords pausadas).
+- Script: `paid/weekly-7day/callrail_calls_pull.py`. API deu 429 a noite toda em 10-22.
+
+## ✅ 2026-10-21 — Napps form tracking: JÁ EXISTIA no GTM (GTM-KH7RS4V), Edu testou e funciona. fu-076 fechado.
+Ver `clients/napps/google-ads-log.md`, entrada 2026-10-20 (tracking check). Command Center fu-076.
+- [x] nappsac.com NÃO tem container GTM hoje (só gtag com G-Q9KC7NXEWY + AW-16542555435) e não há conta/container da Napps no GTM da TSD: criar container e instalar no WordPress.
+- [x] Listener do form GoHighLevel (iframe link.leadnurturemachine.com, form "Schedule Service - Activate" Y0T8AuvseKBX6itJAZju; Contact Us também) → tag de conversão Google Ads "TSD - Lead form" (AW-16542555435 / Qxp-CK2BqtscEKu6jdA9). Excluir o form de careers.
+- [x] Testar (preview/headless) numa página de aquecimento (/heating/furnaces/) e conferir a conversão no Ads no dia seguinte.
+
 ## Onboarding (primeiras semanas)
 - [ ] Ler Day 1 docs: ADS Playbook v3.1, MasterOps v6, BED Calculator, Brandformance/BED doctrine, Program tiers
 - [ ] Ler Week 1 docs: SEO Playbook v4.1, Video Playbook v4, OM Playbook v2, AM Playbook v2.1
@@ -39,10 +67,10 @@
 
 ## Nick's Heating — TRABALHAR 2026-10-09 (ver `clients/nicks-heating/google-ads-log.md`, entradas 2026-10-08)
 Conta 1854100356 nunca tinha sido checada (sem pasta, sem task 7-day no AT, 0 mudanças em 30 dias). Leads conferidos 10-08: são reais.
-- [ ] **Nonbranded AC (23821497590):** pausar a PHRASE "air conditioner repair Louisiana" ($856 de $1.257, 1 conv), adicionar negativas (concorrentes, supply houses tipo Ferguson/Trane dealers, "auto" ac, Metairie, pesquisa de preço) e trocar pra Max Clicks com teto de CPC (padrão Zen Air).
-- [ ] **Branded (23675600637):** pausar a BROAD "hvac contractors near me" (puxa ~100 nomes de concorrente; 4 das 7 conv "branded" vieram dela).
-- [ ] **Realocação no total constante:** parte dos $40/d do NB → PMax (perde 31% de IS por budget a $89 de CPL). Sem aprovação do cliente (total não muda).
-- [ ] **PMax (23586346547):** geo PRESENCE_OR_INTEREST → PRESENCE.
+- [x] (10-21 aplicado) **Nonbranded AC (23821497590):** pausar a PHRASE "air conditioner repair Louisiana" ($856 de $1.257, 1 conv), adicionar negativas (concorrentes, supply houses tipo Ferguson/Trane dealers, "auto" ac, Metairie, pesquisa de preço) e trocar pra Max Clicks com teto de CPC (padrão Zen Air).
+- [x] (10-21 aplicado) **Branded (23675600637):** pausar a BROAD "hvac contractors near me" (puxa ~100 nomes de concorrente; 4 das 7 conv "branded" vieram dela).
+- [x] (10-21 aplicado) **Realocação no total constante:** parte dos $40/d do NB → PMax (perde 31% de IS por budget a $89 de CPL). Sem aprovação do cliente (total não muda).
+- [x] (10-21 aplicado) **PMax (23586346547):** geo PRESENCE_OR_INTEREST → PRESENCE.
 - [ ] **Ticket pro AM:** COI renovado pro LSA (planilha diz vencido 08-05; API ainda mostra PASSED), Nick's atende à noite/fim de semana? (LSA só seg–sex 7–16), acesso ao GA, 3 ligações de anúncio perdidas em horário comercial (09-10, 09-11 ×2), mensagem LSA de 09-14 sem marcar, 7 leads LSA pra marcar, revisar 3 leads DECLINED cobrados pra disputa.
 - [ ] Tracking: ligação vinda do site não é rastreada (sem call tracking). Ver GTM do form + GA.
 - [ ] Cobertura de aquecimento no NB (nov–fev).
@@ -58,19 +86,19 @@ Conta 1854100356 nunca tinha sido checada (sem pasta, sem task 7-day no AT, 0 mu
 - [ ] Mandar a resposta de cadência (rascunho no README da auditoria) pra quem pediu.
 
 ## Tasks semanais 7-Day (Agency Titan) — follow-ups da rodada de 2026-10-05 (ver o log de cada cliente, entrada 10-05)
-- [ ] **10-06 C&S Air:** decidir as recomendações (`clients/cs-air/google-ads-log.md`, "2026-10-05 (cont.) — Recommendations"): rota do tracking de ligação (CallRail ou import do GA4), trocar a Smart Campaign (100% Display) pela PMax de fev com end date vencida, pausar keywords da Nonbranded + ad groups de aquecimento.
+- [x] ~~**10-06 C&S Air:** decidir as recomendações (`clients/cs-air/google-ads-log.md`, "2026-10-05 (cont.) — Recommendations"): rota do tracking de ligação (CallRail ou import do GA4), trocar a Smart Campaign (100% Display) pela PMax de fev com end date vencida, pausar keywords da Nonbranded + ad groups de aquecimento.~~ → feito: Smart/PMax/Cooling pausados 10-23, heating Search no ar 10-26 (fechado 11-02).
 - [ ] **10-06 All Seasons Meta** (task AT `630fe022`, vence 10-06): Reach → Ad Recall Lift, tirar/subir o frequency cap (2 por 7 dias), geo pra Nassau + Suffolk só "living in", pedir 1–2 criativos de brand recall. Ver `clients/all-seasons-ac/meta-ads-log.md`.
 - [ ] **All Seasons Google:** apelar os 6 anúncios de aquecimento do LeadGen (STALE_DISAPPROVAL, só pela UI); decidir os outros 21 auto-apply ligados.
 - [ ] **KPI - Meta não tem campo de notas:** decidir se adiciona "Lead Quality Notes" no objeto (mudança no Titan inteiro).
 - [ ] **10-09 Watt's Right:** recheck completo das mudanças de 09-29 (checklist no log). Incluir: bloquear ou não "quality electric".
-- [ ] **~10-12 Hawkins:** PMax gastando os $18/d e segurando ~$29 CPL? Se sim, mais um passo; se o CPL subir, voltar pra $13.
+- [x] ~~**~10-12 Hawkins:** PMax gastando os $18/d e segurando ~$29 CPL? Se sim, mais um passo; se o CPL subir, voltar pra $13.~~ → Hawkins CANCELADO em 11-02 (30 dias).
 - [ ] **~10-12 All Seasons Google** (task AT `6329236a`, ciclo novo): rodar com uma semana cheia depois do fix de Display.
 - [ ] **Zen Air:** mais 1 semana de Max Clicks; se a conversão não voltar, quebrar a non-branded em ad groups phrase/exact por serviço.
 - [ ] **Napps:** Branded pra Target IS com teto ~$8–10 (prometido no relatório de 6 meses); reconstruir AC Summer pra aquecimento mantendo $50/d.
 - [ ] **Gillespie's:** registrar o motivo da pausa de 10-02 no log (Search desligado, Non-Branded removida).
 - [ ] **On The Way:** cliente revogou o acesso ao Google Ads (MCC link INACTIVE). As tasks semanais vão continuar vindo (próxima ~10-10): logar $0 / 0 leads + "lost visibility" até o acesso voltar.
-- [ ] Decisões de concorrente (bloquear ou manter, convertem nessas contas): All Seasons, Hawkins, King's Window, Napps.
-- [ ] Recomendações de realocação (total constante): Lilypad $2–3/d Nonbranded → Branded; Hawkins próximo passo pra PMax.
+- [ ] Decisões de concorrente (bloquear ou manter, convertem nessas contas): All Seasons, King's Window, Napps. (Hawkins saiu: cancelado 11-02.)
+- [ ] Recomendações de realocação (total constante): Lilypad $2–3/d Nonbranded → Branded. (Hawkins saiu: cancelado 11-02.)
 - [ ] **Spencer Meta** (10-06, mesmo padrão da All Seasons): Reach → Ad Recall Lift em CBO, tirar o frequency cap 2/7d, geo só "living in" na área de serviço (hoje 16 cidades × 25 mi + "recent"). Ver `clients/spencer-air/meta-ads-log.md`.
 - [ ] **C&S Meta:** não tem conta de anúncio compartilhada com a TSD. Decidir: montar o Meta (conta, pixel real no GTM, awareness) ou desligar a task semanal recorrente. Ver `clients/cs-air/meta-ads-log.md`.
 - [x] **Tasks Google de 10-06 (C&S `e7b4a5bc`, Spencer `d4839f0a`):** rodadas e fechadas em 10-06 (sem mudanças, KPI + notas).
@@ -79,7 +107,7 @@ Conta 1854100356 nunca tinha sido checada (sem pasta, sem task 7-day no AT, 0 mu
 - [x] **(10-14 aplicado; falta só desligar 7 tipos de auto-apply pela UI, fu-049) All Seasons:** aprovar `clients/all-seasons-ac/asac_autoapply_cleanup_1013.py` (pausa as 156 keywords broad que o auto-apply criou em 10-11 + 14 tipos de auto-apply); os 7 tipos UNKNOWN só pela UI. Command Center fu-043.
 - [x] **(10-14 feito e fechado) All Seasons LSA** (task AT `363a93f3`): a conta é a 8655979348, sob o MCC TSD (Edu, 10-14). KPI 7e1e2f9c. Ver log do cliente.
 - [x] **(10-14 aplicado; recheck ~10-21, fu-050) Hawkins:** aprovar PMax $18→$23 / NB $75→$70 + correção da marca (negativa 'hawkins' na NB + Branded em Manual CPC ~$5). fu-044.
-- [ ] **Resto (fu-045):** Lilypad $3/d NB→Branded; Napps (Branded com teto, AC Summer → aquecimento, negativas); C&S negativas 'airlines'/'car'; Spencer Meta rebuild ARL/CBO.
+- [ ] **Resto (fu-045):** Lilypad $3/d NB→Branded; Napps (Branded com teto, AC Summer → aquecimento, negativas); C&S negativas 'airlines'/'car' (feito 10-20); Spencer Meta rebuild ARL/CBO.
 
 ## Tasks AT — rodada de 2026-10-26 (Gui; 48 de 48 completas: 7/14/30/90-Day Google, 7/30-Day Meta, 7/30-Day LSA, 7-Day YouTube; detalhe e recs staged no log de cada cliente, entrada 10-26)
 Command Center NÃO atualizado: a conta do Gui não acessa o banco do artefato do Edu ("no such artifact or no access"). Follow-ups ficam aqui até o Edu lançar lá ou dar acesso.
@@ -186,7 +214,8 @@ Command Center NÃO atualizado: a conta do Gui não acessa o banco do artefato d
 - [ ] Confirmar que os $1.500 off do AT expiraram e atualizar `current_specials`.
 - [ ] Definir o telefone das páginas (call asset ainda indefinido desde 09-08; sem CallRail achado; AT diz ServiceTitan).
 - [ ] Puxar nota + número de reviews do GBP certo (Duluth ou Alpharetta).
-- [ ] Mandar o pedido das 2 páginas (Heating e AC Repair, Replacement & Tune-Ups) pro WebDev depois dos itens acima.
+- [x] (10-23) Páginas no ar e non-branded religada em cima delas ($100/dia, ver google-ads-log 10-23).
+- [ ] Zen Air NB: checar aprovação dos 2 RSAs + search terms ~10-27, conversão ~10-30; Verified Live do Mo no form GHL antes de falar com o cliente; ticket do AM (Andrea).
 - [ ] AT: preencher o catálogo de serviços (só Commercial AC marcado) e resolver Lennox vs Carrier.
 
 ## Zen Air Meta — geo corrigido em 10-12 (ver `clients/zen-air/meta-ads-log.md`, entrada 2026-10-12)

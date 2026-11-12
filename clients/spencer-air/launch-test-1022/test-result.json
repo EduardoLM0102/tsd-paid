@@ -1,0 +1,116 @@
+{
+ "submitted_at": "2026-10-22T21:08:01.828668-03:00",
+ "status_text": [
+  "Request Received!\n\nWe usually reply within 2 hours during business hours. For anything urgent, call us anytime."
+ ],
+ "field_errors": [],
+ "dataLayer_events": [
+  {
+   "event": "form_submitted",
+   "event_id": "fb310f99-d8b8-40b4-80cc-12296b14ab93",
+   "first_name": "TEST",
+   "last_name": "Eduardo",
+   "email": "eduardo.tsd.test@example.com",
+   "phone": "214-555-0150",
+   "gtm.uniqueEventId": 23
+  }
+ ],
+ "cookies": {
+  "_ga": "GA1.1.956405491.1792714070",
+  "_fbp": "fb.2.1792714072678.698351024630838047",
+  "_gcl_au": "1.1.1978583848.1792714072.1142555667.179"
+ },
+ "requests_after_submit": [
+  {
+   "t": 1792714082.251509,
+   "method": "POST",
+   "url": "https://www.google.com/pagead/form-data/761311353?gtm=45be6al1v9217437424za20gzb831091984zd831091984xecxf1&gcs=G111&gcd=13r3r3r3r5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&rcb=8&npa=0&frm=0&pscdl=noapi&ae=a&auid=1978583848.1792714072&uaa=arm&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&ec_mode=a&gap.fsrc=2&em=tv.1~em.LUXDzQXk90pHsJ4yik3OLSjJA0USF0eLri7f6u6i9ss&emd=tvd.1~i1.fem.ma.r28.n28.lINPUT.s!b64!I2xlYWQtZW1haWw&fmt=8",
+   "post": ""
+  },
+  {
+   "t": 1792714082.251651,
+   "method": "POST",
+   "url": "https://www.google.com/ccm/form-data/761311353?gtm=45be6al1v9217437424za20gzb831091984zd831091984xecxf1&gcs=G111&gcd=13r3r3r3r5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&rcb=8&npa=0&frm=0&ae=a&pscdl=noapi&auid=1978583848.1792714072&uaa=arm&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&ec_mode=a&ecsid2=163396512.1792714081&gap.fsrc=2&em=tv.1~em.LUXDzQXk90pHsJ4yik3OLSjJA0USF0eLri7f6u6i9ss&ecsid=1142555667.1792714081&emd=tvd.1~i1.fem.ma.r28.n28.lINPUT.s!b64!I2xlYWQtZW1haWw&fmt=8",
+   "post": ""
+  },
+  {
+   "t": 1792714082.251948,
+   "method": "GET",
+   "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/761311353/?random=1792714082234&cv=11&fst=1792714082234&bg=ffffff&guid=ON&async=1&en=form_submit&gtm=45be6al1v9217437424za20gzb831091984zd831091984xecxf1&gcd=13r3r3r3r5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=900&url=https%3A%2F%2Fspencers-tsd.vercel.app%2Fcontact&rcb=8&frm=0&tiba=Contact%20Spencer%20Air%20%7C%202928%20W%20Story%20Rd%2C%20Irving%20TX%20%7C%20972-316-9405&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1978583848.1792714072&uaa=arm&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dform_submit&gap.fsrc=2&ept=9&rfmt=3&fmt=4",
+   "post": ""
+  },
+  {
+   "t": 1792714082.2520661,
+   "method": "POST",
+   "url": "https://www.google.com/rmkt/collect/761311353/?random=1792714082234&cv=11&fst=1792714082234&fmt=8&bg=ffffff&guid=ON&async=1&en=form_submit&gtm=45be6al1v9217437424za20gzb831091984zd831091984xecxf1&gcd=13r3r3r3r5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=900&url=https%3A%2F%2Fspencers-tsd.vercel.app%2Fcontact&rcb=8&frm=0&tiba=Contact%20Spencer%20Air%20%7C%202928%20W%20Story%20Rd%2C%20Irving%20TX%20%7C%20972-316-9405&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1978583848.1792714072&uaa=arm&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dform_submit&gap.fsrc=2&ept=68&gcp=5",
+   "post": ""
+  },
+  {
+   "t": 1792714082.3354518,
+   "method": "POST",
+   "url": "https://www.facebook.com/tr/",
+   "post": "id=1258997717469696&ev=SubscribedButtonClick&dl=https%3A%2F%2Fspencers-tsd.vercel.app%2Fcontact&rl=&if=false&ts=1792714082173&iw=false&cd%5BbuttonFeatures%5D=%7B%22classList%22%3A%22inline-flex+shrink-0+items-center+justify-center+text-sm+whitespace-nowrap+transition-all+outline-none+focus-visible%3Aborder-ring+focus-visible%3Aring-%5B3px%5D+focus-visible%3Aring-ring%2F50+disabled%3Apointer-events-none+disabled%3Aopacity-50+aria-invalid%3Aborder-destructive+aria-invalid%3Aring-destructive%2F20+dark%3Aaria-invalid%3Aring-destructive%2F40+%5B%26_svg%5D%3Apointer-events-none+%5B%26_svg%5D%3Ashrink-0+%5B%26_svg%3Anot%28%5Bclass*%3D%27size-%27%5D%29%5D%3Asize-4+hover%3Abrightness-95+h-9+px-4+py-2+has-%5B%3Esvg%5D%3Apx-3+w-full+min-h-11+bg-accent+text-accent-foreground+hover%3Abg-accent%2F90+rounded-lg+font-bold+gap-2%22%2C%22destination%22%3A%22https%3A%2F%2Fspencers-tsd.vercel.app%2Fcontact%22%2C%22id%22%3A%22%22%2C%22imageUrl%22%3A%22%22%2C%22innerText%22%3A%22Send+Message%22%2C%22numChildButtons%22%3A0%2C%22tag%22%3A%22button%22%2C%22type%22%3A%22submit%22%2C%22name%22%3A%22%22%2C%22value%22%3A%22%22%7D&cd%5BbuttonText%5D=Send+Message&cd%5BformFeatures%5D=%5B%7B%22id%22%3A%22%22%2C%22name%22%3A%22%24ACTION_REF_1%22%2C%22tag%22%3A%22input%22%2C%22inputType%22%3A%22hidden%22%2C%22valueMeaning%22%3A%22empty%22%7D%2C%7B%22id%22%3A%22%22%2C%22name%22%3A%22%24ACTION_1%3A0%22%2C%22tag%22%3A%22input%22%2C%22inputType%22%3A%22hidden%22%7D%2C%7B%22id%22%3A%22%22%2C%22name%22%3A%22%24ACTION_1%3A1%22%2C%22tag%22%3A%22input%22%2C%22inputType%22%3A%22hidden%22%7D%2C%7B%22id%22%3A%22%22%2C%22name%22%3A%22%24ACTION_KEY%22%2C%22tag%22%3A%22input%22%2C%22inputType%22%3A%22hidden%22%7D%2C%7B%22id%22%3A%22%22%2C%22name%22%3A%22ghl_form%22%2C%22tag%22%3A%22input%22%2C%22inputType%22%3A%22hidden%22%7D%2C%7B%22id%22%3A%22lead-website%22%2C%22name%22%3A%22website%22%2C%22tag%22%3A%22input%22%2C%22inputType%22%3Anull%2C%22valueMeaning%22%3A%22empty%22%7D%2C%7B%22id%22%3A%22lead-name%22%2C%22name%22%3A%22name%22%2C%22tag%22%3A%22input%22%2C%22placeholder%22%3A%22Your+full+name%22%2C%22inputType%22%3Anull%7D%2C%7B%22id%22%3A%22lead-phone%22%2C%22name%22%3A%22phone%22%2C%22tag%22%3A%22input%22%2C%22placeholder%22%3A%22%28972%29+555-0000%22%2C%22inputType%22%3A%22tel%22%7D%2C%7B%22id%22%3A%22lead-email%22%2C%22name%22%3A%22email%22%2C%22tag%22%3A%22input%22%2C%22placeholder%22%3A%22you%40email.com%22%2C%22inputType%22%3A%22email%22%7D%2C%7B%22id%22%3A%22lead-city%22%2C%22name%22%3A%22city%22%2C%22tag%22%3A%22input%22%2C%22placeholder%22%3A%22e.g.+Irving%22%2C%22inputType%22%3Anull%7D%2C%7B%22id%22%3A%22lead-trade%22%2C%22name%22%3A%22trade%22%2C%22tag%22%3A%22select%22%7D%2C%7B%22id%22%3A%22lead-message%22%2C%22name%22%3A%22message%22%2C%22tag%22%3A%22textarea%22%2C%22placeholder%22%3A%22Tell+us+what%27s+going+on+with+your+system...%22%7D%2C%7B%22id%22%3A%22%22%2C%22name%22%3A%22emergency%22%2C%22tag%22%3A%22input%22%2C%22inputType%22%3A%22checkbox%22%7D%2C%7B%22id%22%3A%22lea"
+  },
+  {
+   "t": 1792714082.3535519,
+   "method": "GET",
+   "url": "https://www.google.com/pagead/1p-user-list/761311353/?random=1792714082234&cv=11&fst=1792713600000&bg=ffffff&guid=ON&async=1&en=form_submit&gtm=45be6al1v9217437424za20gzb831091984zd831091984xecxf1&gcd=13r3r3r3r5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=900&url=https%3A%2F%2Fspencers-tsd.vercel.app%2Fcontact&rcb=8&frm=0&tiba=Contact%20Spencer%20Air%20%7C%202928%20W%20Story%20Rd%2C%20Irving%20TX%20%7C%20972-316-9405&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1978583848.1792714072&uaa=arm&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dform_submit&gap.fsrc=2&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS-QEAQM4h3JlKN6hpHu4qsN_nycLyruDKCvPdVLk9Lqxu0O6cdPM6mB7TMKSa6niHmH57tFr08LVQ61xNtK1MQgdTiJDOpJZPNaDBAcsyZgx9yTdbbLaLTCSk6TtTGL67fSDtjYkDA6coTWt2vwp41bFKx_2pUuIsspS3h7yENVDvJ1iXo_Gm__vzZ-bEdodK8A1X5W8AgcQz4g9e9hX0W1O3py2sD8SGjw4Qk2ECbldo1Hlsk9fyaBRr3I5MXoTzozfWMTD58fw9LmN-K56aeVAuoY3Mtk7ZmQ5z0t44QffkxtUbcjIaxaZBt_340x-BptttQ6ps9uKdjnQ&random=2584990179&rmt_tld=0&ipr=y",
+   "post": ""
+  },
+  {
+   "t": 1792714082.353703,
+   "method": "GET",
+   "url": "https://www.google.com.br/pagead/1p-user-list/761311353/?random=1792714082234&cv=11&fst=1792713600000&bg=ffffff&guid=ON&async=1&en=form_submit&gtm=45be6al1v9217437424za20gzb831091984zd831091984xecxf1&gcd=13r3r3r3r5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=900&url=https%3A%2F%2Fspencers-tsd.vercel.app%2Fcontact&rcb=8&frm=0&tiba=Contact%20Spencer%20Air%20%7C%202928%20W%20Story%20Rd%2C%20Irving%20TX%20%7C%20972-316-9405&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1978583848.1792714072&uaa=arm&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&data=event%3Dform_submit&gap.fsrc=2&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS-QEAQM4h3JlKN6hpHu4qsN_nycLyruDKCvPdVLk9Lqxu0O6cdPM6mB7TMKSa6niHmH57tFr08LVQ61xNtK1MQgdTiJDOpJZPNaDBAcsyZgx9yTdbbLaLTCSk6TtTGL67fSDtjYkDA6coTWt2vwp41bFKx_2pUuIsspS3h7yENVDvJ1iXo_Gm__vzZ-bEdodK8A1X5W8AgcQz4g9e9hX0W1O3py2sD8SGjw4Qk2ECbldo1Hlsk9fyaBRr3I5MXoTzozfWMTD58fw9LmN-K56aeVAuoY3Mtk7ZmQ5z0t44QffkxtUbcjIaxaZBt_340x-BptttQ6ps9uKdjnQ&random=2584990179&rmt_tld=1&ipr=y",
+   "post": ""
+  },
+  {
+   "t": 1792714083.600325,
+   "method": "POST",
+   "url": "https://www.google.com/pagead/form-data/761311353?gtm=45be6al1v9217437424z8831091984za20gzb831091984zd831091984xeaxf1&gcs=G111&gcd=13r3r3r3r5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&rcb=8&npa=0&frm=0&pscdl=noapi&auid=1978583848.1792714072&uaa=arm&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&ec_mode=m&gap.fsrc=4&em=tv.1~em.2d45c3cd05e4f74a47b09e328a4dce2d28c903451217478bae2edfeaeea2f6cb~pn.fefabfce2f00f29db99a0c085872d28b6ea45a7c6a40db2223d313e043e122b5&emd=tvd.1~i1.fem.mm.p1~i2.fpn.mm.p1&fmt=8",
+   "post": ""
+  },
+  {
+   "t": 1792714083.600589,
+   "method": "POST",
+   "url": "https://www.google.com/ccm/form-data/761311353?gtm=45be6al1v9217437424z8831091984za20gzb831091984zd831091984xeaxf1&gcs=G111&gcd=13r3r3r3r5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&rcb=8&npa=0&frm=0&pscdl=noapi&auid=1978583848.1792714072&uaa=arm&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&ec_mode=m&ecsid2=163396512.1792714081&gap.fsrc=4&em=tv.1~em.2d45c3cd05e4f74a47b09e328a4dce2d28c903451217478bae2edfeaeea2f6cb~pn.fefabfce2f00f29db99a0c085872d28b6ea45a7c6a40db2223d313e043e122b5&ecsid=1142555667.1792714081&emd=tvd.1~i1.fem.mm.p1~i2.fpn.mm.p1&fmt=8",
+   "post": ""
+  },
+  {
+   "t": 1792714083.6012712,
+   "method": "GET",
+   "url": "https://www.googleadservices.com/pagead/conversion/761311353/?random=1792714083572&cv=11&fst=1792714083572&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6al1v9217437424z8831091984za20gzb831091984zd831091984xeaxf1&gcs=G111&gcd=13r3r3r3r5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=900&url=https%3A%2F%2Fspencers-tsd.vercel.app%2Fcontact&rcb=8&label=ZwC_CPnY8okcEPnggusC&capi=1&frm=0&tiba=Contact%20Spencer%20Air%20%7C%202928%20W%20Story%20Rd%2C%20Irving%20TX%20%7C%20972-316-9405&bttype=purchase&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1978583848.1792714072&uaa=arm&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&ec_mode=a&oid=GG_89738951.1792714084&oidsrc=3&ecsid=1142555667.1792714081&ecsid2=163396512.1792714081&_tu=CBA&gcl_ctr=1~0~0~0&category=acrcp_v1_512&em=tv.1~em.pSdmqdQ8Dbf3GNz_EdgssXLGJAvok5GzPywbSv4Mc3o&emd=tvd.1~i1.fem.ma.r34.n34.lA.s!b64!I21haW4tY29udGVudD4ucHktMTYuYmctYmFja2dyb3VuZDpudGgtY2hpbGQoMyk-LmM.t32&ept=5",
+   "post": ""
+  },
+  {
+   "t": 1792714083.601842,
+   "method": "GET",
+   "url": "https://www.googleadservices.com/ccm/conversion/761311353/?random=1792714083572&cv=11&fst=1792714083572&fmt=3&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6al1v9217437424z8831091984za20gzb831091984zd831091984xeaxf1&gcs=G111&gcd=13r3r3r3r5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=900&url=https%3A%2F%2Fspencers-tsd.vercel.app%2Fcontact&rcb=8&label=ZwC_CPnY8okcEPnggusC&capi=1&frm=0&tiba=Contact%20Spencer%20Air%20%7C%202928%20W%20Story%20Rd%2C%20Irving%20TX%20%7C%20972-316-9405&bttype=purchase&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1978583848.1792714072&uaa=arm&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&ec_mode=a&oid=GG_89738951.1792714084&oidsrc=3&ecsid=1142555667.1792714081&ecsid2=163396512.1792714081&_tu=CBA&gcl_ctr=1~0~0~0&category=acrcp_v1_512&em=tv.1~em.pSdmqdQ8Dbf3GNz_EdgssXLGJAvok5GzPywbSv4Mc3o&emd=tvd.1~i1.fem.ma.r34.n34.lA.s!b64!I21haW4tY29udGVudD4ucHktMTYuYmctYmFja2dyb3VuZDpudGgtY2hpbGQoMyk-LmM.t32",
+   "post": ""
+  },
+  {
+   "t": 1792714083.603214,
+   "method": "POST",
+   "url": "https://www.facebook.com/tr/",
+   "post": "id=1258997717469696&ev=Lead&dl=https%3A%2F%2Fspencers-tsd.vercel.app%2Fcontact&rl=&if=false&ts=1792714083551&iw=false&sw=1280&sh=900&cudff%5Bfn%5D=%5E%5E%5E%5E&cudff%5Bln%5D=%5E******&cudff%5Bph%5D=%23%23%23-%23%23%23-%23%23%23%23&cudff%5Bem%5D=*******.***.****%40*******.***&cudff%5Bct%5D=%5E*****&ncudff%5Bfn%5D=****&udff%5Bfn%5D=9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08&ncudff%5Bln%5D=*******&udff%5Bln%5D=71eaea56f7f31be16276ab904b8b04144daf720badab79d5cf291edbbfa950fd&ncudff%5Bph%5D=%23%23%23%23%23%23%23%23%23%23&udff%5Bph%5D=360d8783de71e79c261c7f1a914595e407df710ad4ef89b9757dc2fbf13a6e67&ncudff%5Bem%5D=*******.***.****%40*******.***&udff%5Bem%5D=2d45c3cd05e4f74a47b09e328a4dce2d28c903451217478bae2edfeaeea2f6cb&ncudff%5Bct%5D=******&udff%5Bct%5D=fa2115f8d576a6ab722956697fc759c31d1cd6b93c8336bfebf73ed5cba2ff49&audff%5Bfn%5D%5B0%5D%5Bv%5D=9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08&audff%5Bfn%5D%5B0%5D%5Bs%5D=5&audff%5Bln%5D%5B0%5D%5Bv%5D=69ed68bb4a5e73d9f76c7ce347efcbf7eb7b06340140716606026933c457538c&audff%5Bln%5D%5B0%5D%5Bs%5D=1&audff%5Bln%5D%5B1%5D%5Bv%5D=71eaea56f7f31be16276ab904b8b04144daf720badab79d5cf291edbbfa950fd&audff%5Bln%5D%5B1%5D%5Bs%5D=5&audff%5Bph%5D%5B0%5D%5Bv%5D=3ee280f15754b70e0b803b57229936b79141d7af100e441fd01177b637aa9673&audff%5Bph%5D%5B0%5D%5Bs%5D=1&audff%5Bem%5D%5B0%5D%5Bv%5D=2d45c3cd05e4f74a47b09e328a4dce2d28c903451217478bae2edfeaeea2f6cb&audff%5Bem%5D%5B0%5D%5Bs%5D=1&audff%5Bct%5D%5B0%5D%5Bv%5D=fa2115f8d576a6ab722956697fc759c31d1cd6b93c8336bfebf73ed5cba2ff49&audff%5Bct%5D%5B0%5D%5Bs%5D=1&v=2.9.427&r=stable&a=tmSimo-GTM-WebTemplate&ec=2&o=6174&aems=0%3B0&fbp=fb.2.1792714072678.698351024630838047&ler=empty&cdl=API_unavailable&pmd%5Blocale%5D=en_US&pmd%5Bdescription%5D=Reach+Spencer+Air+Conditioning+%26+Heating+in+Irving%2C+TX.+Visit+us+at+2928+W+Story+Rd%2C+Irving%2C+TX+75038+or+call+972-446-2665+for+24%2F7+emergency+HVAC+service+across+the+DFW+Metroplex.&plt=1496.800000011921&iss=1&imft=1&tz=-180&it=1792714077268&coo=false&eid=fb310f99-d8b8-40b4-80cc-12296b14ab93&tm=1&expv2%5B0%5D=pl1&expv2%5B1%5D=el2&expv2%5B2%5D=bc1&expv2%5B3%5D=ra2&expv2%5B4%5D=rp2&expv2%5B5%5D=ct2&expv2%5B6%5D=hf1&expv2%5B7%5D=sd1&expv2%5B8%5D=sp1&expv2%5B9%5D=ek1&expv2%5B10%5D=pc1&expv2%5B11%5D=gs1&expv2%5B12%5D=zs1&expv2%5B13%5D=cp1&expv2%5B14%5D=es1&expv2%5B15%5D=ac1&expv2%5B16%5D=so1&expv2%5B17%5D=wc1&expv2%5B18%5D=la1&expv2%5B19%5D=sf1&expv2%5B20%5D=da1&expv2%5B21%5D=io1&expv2%5B22%5D=ae1&expv2%5B23%5D=sx1&expv2%5B24%5D=if1&expv2%5B25%5D=fd1&expv2%5B26%5D=bg1&expv2%5B27%5D=mg1&expv2%5B28%5D=kl1&expv2%5B29%5D=sg1&expv2%5B30%5D=mk1&expv2%5B31%5D=sn1&expv2%5B32%5D=ec1&expv2%5B33%5D=mp1&expv2%5B34%5D=ps1&expv2%5B35%5D=fx1&expv2%5B36%5D=vt1&expv2%5B37%5D=dp3&expv2%5B38%5D=fw3&expv2%5B39%5D=cn3&expv2%5B40%5D=tz3&expv2%5B41%5D=pe3&expv2%5B42%5D=ee3&expv2%5B43%5D=bu1&expv2%5B44%5D=ta3&expv2%5B45%5D=ot1&expv2%5B46%5D=hv1&expv2%5B47%5D=ep3&expv2%5B48%5D=rh0&expv2%5B49%5D=ah0&expv2%5B50%5D=nv0&rqm=formPOST"
+  },
+  {
+   "t": 1792714083.750169,
+   "method": "POST",
+   "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/761311353/?random=1746072599&cv=11&fst=1792714083572&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6al1v9217437424z8831091984za20gzb831091984zd831091984xeaxf1&gcs=G111&gcd=13r3r3r3r5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=900&url=https%3A%2F%2Fspencers-tsd.vercel.app%2Fcontact&rcb=8&label=ZwC_CPnY8okcEPnggusC&capi=1&frm=0&tiba=Contact%20Spencer%20Air%20%7C%202928%20W%20Story%20Rd%2C%20Irving%20TX%20%7C%20972-316-9405&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1978583848.1792714072&uaa=arm&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&ec_mode=a&oidsrc=3&ecsid=1142555667.1792714081&ecsid2=163396512.1792714081&_tu=CBA&gcl_ctr=1~0~0~0&category=acrcp_v1_512&em=tv.1~em.pSdmqdQ8Dbf3GNz_EdgssXLGJAvok5GzPywbSv4Mc3o&emd=tvd.1~i1.fem.ma.r34.n34.lA.s!b64!I21haW4tY29udGVudD4ucHktMTYuYmctYmFja2dyb3VuZDpudGgtY2hpbGQoMyk-LmM.t32&ept=5&ct_cookie_present=false&eoid=CkYKEQjw6ObWBhCPuJT6xty3580BEjEA-rD8KISUBzCWdEOJ6KN3npawumthW-y5YBx0Dzgo06-a25ohML_NhJ7oXFFsk3qy8P8HAQ&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCIfbsQII08WxAgjrzLECCO3OsQII1c-xAgiK8rECCPTasQII4uqxAgjo7rECCLfysQIIkuuxAgjJ47ECCJfUsQIIyduxAgim3bECCLDesQIIgNuxAgjN4bECCMvhsQJKJnRyaWdnZXI9ZXZlbnQtc291cmNlO25hdmlnYXRpb24tc291cmNlWgMKAQFiAwoBAw&cerd=CgyDsL4t1dW-Lcjsvi0&eitems=ChAI8Ojm1gYQ-IDyn7HSu7lDEh0ARsOVgN5JzRK9FNnnfbUimZWtLfuIG9o43-BKqw&fsk=ChEI8Ojm1gYQo5aynpTN-qz5ARIsAAFdw4N_SW7pLXia9DKtYGA0oUMzxeFgctslIf-1KBYs1YoOqNJxazRtQ-waAvvs&pscrd=IhMI0e2SsezOlwMVozLgAx3fBD38OiBodHRwczovL3NwZW5jZXJzLXRzZC52ZXJjZWwuYXBwL0JYQ2hFSThPam0xZ1lRM29IcXh2VHRudXFsQVJJdEFOM2VGMWk0VXVub1BTSC1rY2NCQ3BIc0xUb0E1WFZTem92YVFaZDYxcTVJTVNGWGxvQlhwUnBuS3psLXoMCAliCAgAEAAYACAA",
+   "post": ""
+  },
+  {
+   "t": 1792714089.214431,
+   "method": "GET",
+   "url": "https://www.google.com/pagead/1p-conversion/761311353/?random=1746072599&cv=11&fst=1792714083572&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6al1v9217437424z8831091984za20gzb831091984zd831091984xeaxf1&gcs=G111&gcd=13r3r3r3r5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=900&url=https%3A%2F%2Fspencers-tsd.vercel.app%2Fcontact&rcb=8&label=ZwC_CPnY8okcEPnggusC&capi=1&frm=0&tiba=Contact%20Spencer%20Air%20%7C%202928%20W%20Story%20Rd%2C%20Irving%20TX%20%7C%20972-316-9405&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1978583848.1792714072&uaa=arm&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&ec_mode=a&oidsrc=3&ecsid=1142555667.1792714081&ecsid2=163396512.1792714081&_tu=CBA&gcl_ctr=1~0~0~0&category=acrcp_v1_512&em=tv.1~em.pSdmqdQ8Dbf3GNz_EdgssXLGJAvok5GzPywbSv4Mc3o&emd=tvd.1~i1.fem.ma.r34.n34.lA.s!b64!I21haW4tY29udGVudD4ucHktMTYuYmctYmFja2dyb3VuZDpudGgtY2hpbGQoMyk-LmM.t32&ept=5&ct_cookie_present=false&eoid=CkYKEQjw6ObWBhCPuJT6xty3580BEjEA-rD8KISUBzCWdEOJ6KN3npawumthW-y5YBx0Dzgo06-a25ohML_NhJ7oXFFsk3qy8P8HAQ&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCIfbsQII08WxAgjrzLECCO3OsQII1c-xAgiK8rECCPTasQII4uqxAgjo7rECCLfysQIIkuuxAgjJ47ECCJfUsQIIyduxAgim3bECCLDesQIIgNuxAgjN4bECCMvhsQJKJnRyaWdnZXI9ZXZlbnQtc291cmNlO25hdmlnYXRpb24tc291cmNlWgMKAQFiAwoBAw&cerd=CgyDsL4t1dW-Lcjsvi0&fsk=ChEI8Ojm1gYQo5aynpTN-qz5ARIsAAFdw4N_SW7pLXia9DKtYGA0oUMzxeFgctslIf-1KBYs1YoOqNJxazRtQ-waAvvs&pscrd=IhMI0e2SsezOlwMVozLgAx3fBD38OiBodHRwczovL3NwZW5jZXJzLXRzZC52ZXJjZWwuYXBwL0JYQ2hFSThPam0xZ1lRM29IcXh2VHRudXFsQVJJdEFOM2VGMWk0VXVub1BTSC1rY2NCQ3BIc0xUb0E1WFZTem92YVFaZDYxcTVJTVNGWGxvQlhwUnBuS3psLXoMCAliCAgAEAAYACAA&is_vtc=1&cid=CAQS-QEAQM4h3AUKxeOK8_ZXnbwNoDfIAitD56xBhDJR1Bw9eNLFpUOSKGgpL3ESwZQRz32Wy0T__NnbM9Qt82DObcrNJZgx2R0FA9uNV9mitFyFA_fu433GA2wC2Mhb3L7nak6II_2UP35OrrXHqUyT6eBssuIz_xjXjk082iduYkZZvSEfQzcqMwNoqDY9OO4-LuUQmDfdPdhNrJpvuIedvAIokFbu1d-2X_KXmHVpePMubF2LkmXGWgybNWVmNcJEaDnbWuLW1aHqFjjoOpTpgFhadEfktZlbjiPIes-D0eu-_cg71AUrqtRs3mLPZt2Ily_RPEpiNea-0yw&eitems=ChAI8Ojm1gYQ-IDyn7HSu7lDEh0ARsOVgBbIR--ylRJOck_LOLwZoykp4ZQaDhxxIw&random=3313435985",
+   "post": ""
+  },
+  {
+   "t": 1792714089.2151911,
+   "method": "GET",
+   "url": "https://www.google.com.br/pagead/1p-conversion/761311353/?random=1746072599&cv=11&fst=1792714083572&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6al1v9217437424z8831091984za20gzb831091984zd831091984xeaxf1&gcs=G111&gcd=13r3r3r3r5l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=900&url=https%3A%2F%2Fspencers-tsd.vercel.app%2Fcontact&rcb=8&label=ZwC_CPnY8okcEPnggusC&capi=1&frm=0&tiba=Contact%20Spencer%20Air%20%7C%202928%20W%20Story%20Rd%2C%20Irving%20TX%20%7C%20972-316-9405&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1978583848.1792714072&uaa=arm&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=macOS&uapv=26.6.2&uaw=0&ec_mode=a&oidsrc=3&ecsid=1142555667.1792714081&ecsid2=163396512.1792714081&_tu=CBA&gcl_ctr=1~0~0~0&category=acrcp_v1_512&em=tv.1~em.pSdmqdQ8Dbf3GNz_EdgssXLGJAvok5GzPywbSv4Mc3o&emd=tvd.1~i1.fem.ma.r34.n34.lA.s!b64!I21haW4tY29udGVudD4ucHktMTYuYmctYmFja2dyb3VuZDpudGgtY2hpbGQoMyk-LmM.t32&ept=5&ct_cookie_present=false&eoid=CkYKEQjw6ObWBhCPuJT6xty3580BEjEA-rD8KISUBzCWdEOJ6KN3npawumthW-y5YBx0Dzgo06-a25ohML_NhJ7oXFFsk3qy8P8HAQ&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCIfbsQII08WxAgjrzLECCO3OsQII1c-xAgiK8rECCPTasQII4uqxAgjo7rECCLfysQIIkuuxAgjJ47ECCJfUsQIIyduxAgim3bECCLDesQIIgNuxAgjN4bECCMvhsQJKJnRyaWdnZXI9ZXZlbnQtc291cmNlO25hdmlnYXRpb24tc291cmNlWgMKAQFiAwoBAw&cerd=CgyDsL4t1dW-Lcjsvi0&fsk=ChEI8Ojm1gYQo5aynpTN-qz5ARIsAAFdw4N_SW7pLXia9DKtYGA0oUMzxeFgctslIf-1KBYs1YoOqNJxazRtQ-waAvvs&pscrd=IhMI0e2SsezOlwMVozLgAx3fBD38OiBodHRwczovL3NwZW5jZXJzLXRzZC52ZXJjZWwuYXBwL0JYQ2hFSThPam0xZ1lRM29IcXh2VHRudXFsQVJJdEFOM2VGMWk0VXVub1BTSC1rY2NCQ3BIc0xUb0E1WFZTem92YVFaZDYxcTVJTVNGWGxvQlhwUnBuS3psLXoMCAliCAgAEAAYACAA&is_vtc=1&cid=CAQS-QEAQM4h3AUKxeOK8_ZXnbwNoDfIAitD56xBhDJR1Bw9eNLFpUOSKGgpL3ESwZQRz32Wy0T__NnbM9Qt82DObcrNJZgx2R0FA9uNV9mitFyFA_fu433GA2wC2Mhb3L7nak6II_2UP35OrrXHqUyT6eBssuIz_xjXjk082iduYkZZvSEfQzcqMwNoqDY9OO4-LuUQmDfdPdhNrJpvuIedvAIokFbu1d-2X_KXmHVpePMubF2LkmXGWgybNWVmNcJEaDnbWuLW1aHqFjjoOpTpgFhadEfktZlbjiPIes-D0eu-_cg71AUrqtRs3mLPZt2Ily_RPEpiNea-0yw&eitems=ChAI8Ojm1gYQ-IDyn7HSu7lDEh0ARsOVgBbIR--ylRJOck_LOLwZoykp4ZQaDhxxIw&random=3313435985&ipr=y",
+   "post": ""
+  }
+ ],
+ "requests_before_submit": 29
+}

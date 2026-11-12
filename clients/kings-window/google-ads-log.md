@@ -152,6 +152,8 @@ Pull: `paid/weekly-7day/weekly_pull.py` (window 10-06..10-12 vs 09-29..10-05), s
 **14-day (10-05..10-18):** $807.76 / 41 conv. Rank is the limit (53% rank-lost); 'glass company near me' QS 3 carries 29/41 conv → improve ad/LP relevance; low-QS glass/shower keywords; remove Branded kw 'king's window repair houston'; outside-target clicks only 7% (Fort Worth, Grapevine). No audiences.
 AT tasks 1a6a8163 / 5f8a5a77 / 567d82cd / cb7050b0 left open for Gui's review.
 
+---
+
 ## 2026-10-26 — AT optimization tasks (Gui, via Claude)
 
 Read-only, nothing changed in Google Ads / LSA. All staged.
@@ -164,3 +166,40 @@ Read-only, nothing changed in Google Ads / LSA. All staged.
 **Staged, not applied:** NB budget raise needs client written OK via AM; taps → secondary (Edu decision); '$99' phrase neg on NB, hold 'kings windows and doors' until client confirms; own ad group for 'glass company near me'; NB ad schedule off 12am-6am; structured snippet + image on Branded, swap weak headlines, rewrite shower descriptions + improve shower LP; tracking task (Gui) for stalled primaries + Branded double count; observation audiences; LSA: dispute 10-07 16:26 + 10-08 14:30 out-of-area charged calls, office to mark lead status, Saturday hours if staffed.
 
 Tasks (all completed): [7-Day Google](https://app.agencytitan.com/tasks/instance/b70c9a91-9ddc-4af8-afbe-a160b0d3e6e9) (KPI d7cbc6aa), [30-Day Google](https://app.agencytitan.com/tasks/instance/b9146e5f-b176-4eb4-ac4d-110d1eaa0648), [90-Day Google](https://app.agencytitan.com/tasks/instance/2d635aa8-0565-43ac-a3be-f44ab51dead2), [7-Day LSA](https://app.agencytitan.com/tasks/instance/72a99537-bbaa-4bac-bae0-0217b747a803) + [30-Day LSA](https://app.agencytitan.com/tasks/instance/c71b6d60-cabd-4bb9-b7a3-6e38991040fa) (KPI LSA 49dbdedf). Meta: see meta-ads-log.md.
+
+## 2026-11-06 — LSA moved to Pay-per-lead PMax by Google (read-only, nothing changed)
+
+Old LSA `23025462677` paused; new `24431038949` created 11-04 11:55. SERVING / LEARNING, asset group ELIGIBLE → homepage, budget
+$428.57/d, ad schedule carried over (5 criteria), 10 locations. Billing approved, insurance + background check passed.
+Impressions held: old 59 / 59 (11-02/03) → new 65 on 11-05 (9 clicks, $78.90, 1 lead). Leads by day 11-02..11-05: 4, 2, 2, 1. Not dark.
+
+**Context:**
+Google (not TSD) is moving LSA into a new campaign type, "Pay-per-lead PMax". It creates a PERFORMANCE_MAX campaign
+(`Pay-per-lead-PMax-<business>`, Max Conversions, same daily budget as the old LSA, one asset group `xcat:service_area_business_<trade>`)
+and pauses the old `LocalServicesCampaign:SystemGenerated`. Still billed per valid lead, still Search + Maps only, badge carries over.
+What changes: no manual bidding, one campaign-level target instead of one per trade, weekly budget becomes a daily average, old LSA
+dashboard reports don't migrate (lead history does). Sweep of all 57 enabled MCC accounts on 11-06: 7 switched on 11-03/11-04
+(Watt's Right, Amazing Morrow, Golden, Gray Duct, King's Window, Nick's, Spencer). Full write-up: `_contexto/memoria/tsd-lsa-ppl-pmax-migration.md`.
+
+Data notes: `local_services_lead` still returns leads after the switch (lsa_report.py lead data OK). Spend/metrics now sit on the
+PMax campaign, so anything filtering on channel LOCAL_SERVICES (google_channels.py) misses them. **$0 spend ≠ dark**: only charged
+leads cost money, clicks are free. Judge delivery by impressions + leads per day.
+
+---
+
+## 2026-11-10 — META: lead campaign dark since 10-17, old ad set RE-ENABLED (Edu's go)
+
+**Found (Meta 483679897962388):** `TSD_04.29_BOF_Leads_Evergreen` spent $40–50/day through 10-16, $3.89 on 10-17, $0 since.
+10-17 ~02:00 Gui built `Richlandtx_Broad_18.65_M.F_Dynamic` ($30/d, 120254214478390721) with one ad
+`GlassReplace_Ads1,2,3_Dynamic_callform_FO` (120254214546330721), then paused both working ad sets
+(`Richlandtx_Broad_18.65_M.F` $30/d and `... 2` $15/d). The new ad went "Update Required" (issue code 2465018,
+"Unknown Error When Creating Ad ... try creating your ad again") the same night; retried 10-26, same error. Never spent.
+Account ran on the $10/d awareness campaign only: Oct $1,023 (vs $1,650–1,700 Aug/Sep), Nov 1–9 $91.
+Gui's 7-Day Meta AT task f4c80451 (closed 11-09) already noted the campaign dark since 10-17, fixes staged not applied.
+Also: dynamic ad set geo includes a pin at Willis TX (lat 30.42 / lng -95.44, ~250 mi from NRH), likely a mis-geocoded
+"Fort Worth Dr" address. Remove before that ad set ever runs.
+
+**Changed 11-10:** ad set `Richlandtx_Broad_18.65_M.F` (120246749328610721) PAUSED → ACTIVE. Ad `GlassReplace_Image_callform_FO`
+(120247045640540721) delivery = active (read back). Other 3 ads in that ad set stay paused. Broken dynamic ad set untouched (not delivering).
+**Open:** rebuild the dynamic ad from scratch (not a duplicate), drop Willis pin, then decide which ad set carries the $30.
+

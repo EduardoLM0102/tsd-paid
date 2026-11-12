@@ -29,6 +29,243 @@
 
 ---
 
+## 2026-11-06 (later) — APPLIED: paused 'house exterior siding' (Edu: "Apply the recommendations")
+
+`hawkins_pause_kw_1106.py`, validate-only then `--apply`, read-back OK. NB now 8 live PHRASE service keywords: exterior siding contractors, home siding contractors,
+siding contractors near me, home exterior contractors near me, siding repair, siding repair contractors, siding repair near me, siding replacement.
+Budget $67 / Max Clicks $12 unchanged; expect ~$15-20/day. PMax + LSA untouched. Client offboards ~12-02; no further optimization planned.
+
+---
+
+## 2026-11-06 — fu-103 watch after the 11-02 negatives (read-only, nothing changed)
+
+Window 11-03 → 11-05 (3 full days) + 11-06 partial.
+- **NB spends MORE, not less:** $57.75 / $97.53 / $102.65 per day 11-03..11-05 (avg ~$86 vs $67 budget). **0 conversions since 10-31** (1 tap on 11-04, secondary). No ad calls (call_view empty).
+- **'house exterior siding' still carries it:** $198.39 of $266 keyword spend 11-03..06 (74%), 34 clicks, 0 conv. The 47 negatives blocked their own terms (none came back) but new research variants took their place:
+  james hardie locations $23.02, vinyl siding $12.94, cement siding $12.25, how much is vinyl siding for a 2000 sq ft house, provia vinyl siding, hardie board r value, smart panel siding installation,
+  4 inch lap siding, vertical siding on house, ssb stucco, siding company san antonio (out of area).
+- Service keywords still small: siding repair $35.97 / 6 clicks, exterior siding contractors $13.12 / 2, siding repair near me $12.92 / 2, siding contractors near me $5.99 / 1 (~$17/day total).
+- **PMax holding:** ~$24/day, 4 Google lead forms 11-02..11-04 (~$23 per form). **LSA:** 11-02..11-05 $1,022 / 7 leads (4 calls 11-02).
+
+**Proposed (Edu's go):** pause 'house exterior siding'. Negatives are whack-a-mole on product names; 3 days = $258 for 0 leads, ~$65/day of the client's money until ~12-02.
+NB then runs on service keywords only (~$15-20/day). Alternative: pause NB entirely and leave PMax + LSA for the offboarding month.
+
+---
+
+## 2026-11-02 (later) — Client TERMINATED + APPLIED 47 NB negatives (Edu: "apply the negatives and let's watch - they'll offboard anyway")
+
+- **Hawkins terminated 11-02** per JB (Angela DM 13:35 BRT), 30-day countdown to ~12-02. Explains the CallRail 403 (AT task 5b6a46c8).
+- Edu: keep 'house exterior siding' live, add negatives instead. Script `hawkins_apply_1102.py` (guards passed, validated, applied, read back: 0 missing, campaign negatives 122 → 169).
+- **26 PHRASE:** types, vs, pros and cons, installing, installation process, 4x8, 4 x 8, 12 x 16, seattle, log cabin, smartside, smart siding, smart board, lp, truwood, everlog, trek, allura, accoya, masonite, ogee, hardboard, de madera, de plastico, de cemento, para casa.
+- **21 EXACT** (bare product lookups only, so "hardie siding installers near me" stays open): hardie board siding, hardie board, hardie siding, james hardie siding, siding, sidding, house siding, siding for houses, siding for house, siding house, siding on a house, exterior siding, fiber cement siding, board and batten siding, metal siding, wood siding, vinyl siding for houses, modern vinyl siding, siding options, house siding options, home siding options.
+- Replay last 30 days: blocks $192.59 of visible terms, 0 conversions. 10-29..11-02: $92 of $120 visible (77%). Over half of NB spend is on hidden terms, so expect NB to spend less, not necessarily convert more.
+- Left alone on purpose: cost searches (how much is siding...), metal/steel/faux/slate styles (unknown if Hawkins installs).
+- Also found 11-02: the one Google lead form asset 140331666414 has NO webhook (delivery_methods empty); email/CRM delivery only visible in UI, not verified. 55 lead form submissions since 09-01 (PMax 37, NB 18).
+- Watch ~11-06: NB daily spend, remaining terms.
+
+---
+
+## 2026-11-02 — fu-103 recheck after the 10-28 pauses + 10-30 Vinyl pause (read-only)
+
+Window 10-29 → 11-01 (4 full days) + 11-02 partial. Pull: `weekly_pull.py` (out in scratchpad). Nothing changed.
+
+| | 10-23..10-28 | 10-29..11-02 (11-02 partial) |
+|---|---|---|
+| NB spend / clicks / CPC | $365.81 / 89 / $4.11 | $258.14 / 57 / $4.53 |
+| NB conversions | 0 | 1 Google lead form (10-31) |
+| NB IS / lost budget / lost rank | 22% / 50% / 28% | 24% / 11% / 65% |
+| PMax | $136.27, 5 forms | $100.81, 4 forms ($25.20 CPL) |
+| LSA | $965.13, 6 leads | $91.46, 1 lead |
+
+- **NB can spend, no cap raise needed:** $43.59 / $51.54 / $79.70 / $78.27 per day 10-29..11-01 (weekend above the $67 budget).
+- **Same leak, new keyword:** PHRASE 'house exterior siding' (Siding Replacement) took $190.67 of $258 (74%) and 42 of 57 clicks. Its terms are material/research again: hardie board siding, house siding types and cost, lp smartside, fiber cement, board and batten, smart siding 4x8, faux wood / slate / steel siding, installing siding, vinyl siding seattle. It also got the only NB conversion (10-31, Google lead form, not yet checked as real).
+- **Service keywords barely serve:** siding repair $42.12 / 9 clicks, exterior siding contractors $13.37 / 3, siding replacement 13 impr / 0 clicks, siding contractors near me 2 impr, siding repair near me 1 impr. Real service demand at the $12 cap looks like ~$10-20/day.
+- **No ad calls counted:** call_view empty, no 'Calls from ads' conversions. **CallRail 403:** the API key no longer sees the Hawkins account (ACC0a02cfdf70244a4286d1ecede59382d4); `/v3/a.json` lists 8 accounts, Hawkins and Live Wire gone. Ad calls unverifiable until access is back.
+- **LSA dropped again** ($965 → $91 for a comparable window). Not caused by us.
+
+**Proposed (not applied, Edu's go):** pause 'house exterior siding' (3rd loose PHRASE doing the same thing; negatives would be whack-a-mole across product names). NB then runs only on service keywords and will likely spend ~$10-20/day. Where the rest goes is the 11-04 decision, but PMax can't take it (commitment to Jared: no PMax increases until its forms are checked against estimates) and LSA isn't budget-limited, so it likely means lower spend, folded into the Nov/Dec budget proposal (fu-106, due 11-03). Also: confirm the 10-31 NB lead form is real; ask the AM why TSD lost CallRail access.
+
+---
+
+## 2026-10-28 (later) — APPLIED: paused the 2 research keywords + 13 DIY/material negatives (Edu: "Execute 1 and 2")
+
+Script `hawkins_apply_1028.py`, guards passed (NB Max Clicks $12 / $67), validated first, applied, read back.
+1. **Paused** PHRASE 'home improvement siding' (Siding Replacement) and 'home siding' (Siding - General): 75% of NB spend 10-23..10-27, all research/product terms, 0 leads.
+2. **13 PHRASE negatives** on NB: calculator, soffit, cdx, log siding, shed, sheds, precios, precio, types of, picture, pictures, material, panels ('materials' already there; singular/plural added because negatives don't match close variants). 30d replay: blocks $91.62 of terms, 0 conv (types of siding for homes, wpc panels exterior, cdx siding, georgia pacific soffit, lp siding calculator...). No conflict with live keywords. 109 NB negatives total.
+
+**Live NB now (10 PHRASE):** exterior siding contractors, home siding contractors, siding contractors near me, home exterior contractors near me, vinyl siding, siding repair, siding repair contractors, siding repair near me, siding replacement, house exterior siding. Budget $67, Max Clicks $12 unchanged.
+
+**Expect:** NB may underspend (the paused 2 carried 75% of spend; service keywords had low volume, QS 3). ⚑ Recheck 2026-11-02 (fu-080 moved): daily spend vs $67, search terms, forms, ad calls by transcript. If it can't spend, raise cap $12 → $14 on service terms; if still 0 real leads by ~11-04, cut NB toward PMax/LSA.
+
+---
+
+## 2026-10-28 — Did the 10-22 changes help? (fu-080 read, a day early, read-only)
+
+Window 10-23 → 10-27 (5 full days on the new setup) vs 10-16 → 10-21 and 10-06 → 10-15. Pull: `weekly_pull.py` + CallRail acct 232929821.
+
+| Nonbranded | 10-06..10-15 (10d) | 10-16..10-21 (6d) | 10-23..10-27 (5d) |
+|---|---|---|---|
+| Spend | $776 ($78/d) | $500 ($83/d) | $301 ($60/d) |
+| Clicks / CPC | 65 / $11.94 | 32 / $15.62 | **72 / $4.18** |
+| Forms | 8 | ~1 | **0** |
+| Ad calls (CallRail) | many, mostly wrong-company | 4, all junk | **0** |
+
+- **Cheaper, not better.** The $12 cap worked (CPC $15.62 → $4.18, 2x the clicks) and the wrong-company / supplier calls stopped. But 0 forms and 0 calls in 5 days: $301 for no leads. 10-28 so far $29 / 7 clicks / 0.
+- **Why:** Max Clicks buys the cheapest clicks, and those are research/product searches. 'home improvement siding' $134.67 (45%), 'home siding' $89.93 (30%), 'vinyl siding' $61.18 (20%). Terms: hardie board, james hardie siding, types of siding for homes, cost of vinyl siding, cdx siding, log siding, lp siding calculator, siding for sheds, siding precios, georgia pacific soffit, seattle cedar siding installation (out of area). ~95% of visible spend is not a homeowner asking for a contractor. Real service keywords barely serve: 'siding replacement' 7 impr, 'exterior siding contractors' 29 impr / 0 clicks, 'siding repair' $19. IS 22%, 54% lost to budget.
+- **PMax holding:** $114.34, 4 lead forms, $28.59 CPL, 88% YouTube (quality still unverified).
+- **Branded** (paused today): 10-23..10-27 $21.54 / 6 clicks / 1 call (10-26, 148s, repeat caller from Irving via GBP site).
+- **LSA came back:** $965.13 / 6 phone leads in 5 days (≈$193/d, was ≈$40/d 10-16..10-22). CallRail shows 8 LSA calls 10-23..10-26, most 100s+. Not caused by us.
+
+**Proposed (not applied, needs Edu's go):** pause 'home improvement siding' + 'home siding' (75% of NB spend, all research); NB phrase negatives for DIY/material terms (calculator, soffit, cdx, log siding, sheds, precios, types of, pictures, material, panels); keep $12 cap but let the service keywords spend. If NB still can't find service searches by ~11-04, cut NB and move the money to PMax/LSA.
+
+---
+
+## 2026-10-23 — First day after the 10-22 changes (read-only)
+
+- **Settings held, no other edits since:** NB Max Clicks $12 cap / $67, 12 PHRASE keywords, 0 BROAD; NB + PMax bid on Google lead forms only; Branded Manual CPC $10/d.
+- **10-22 doesn't count:** NB spent its full $67 by noon Chicago, before the 11:35 switch. vivax pros dallas ($16.93) + quint pro ($4.26) clicks were that morning, before the negatives. 10-23 is the first real day.
+- **NB 10-23:** $65.76, 12 clicks, **$5.48 CPC** (10-19..10-21: $16.85 / $25.23 / $11.96), spread across the day, no click over $10. IS 24%, now 61% lost to budget (was mostly rank). 0 forms, 0 ad calls (last NB call = 10-21 cat exteriors).
+- **Traffic still not service intent:** clicked terms = hardie board x2, james hardie siding x2, metal house siding, log siding, siding, georgia pacific soffit vinyl, lp siding calculator square feet. PHRASE is loose (NEAR_PHRASE): 'home improvement siding' (top spender, $26) pulls the Hardie product terms, 'home siding' pulls generic/material terms. No competitor names on 10-23.
+- **Branded:** IS 60–67% (was 27%), CPC $3–6. Fixed.
+- **PMax:** 2 lead forms 10-23. **LSA:** 1 message 10-22, 2 calls 10-23.
+
+Nothing changed. Watch for 10-29 (fu-080): if 'home improvement siding' keeps buying product/DIY terms, pause it or add negatives (calculator, soffit, 4x8, panels, sheets); careful with 'james hardie' (homeowners may want it installed).
+
+---
+
+## 2026-10-22 (end of day) — Final answer to Jared's September report questions (AT Client Question 137e1948)
+
+**Ask:** Edu asked for a good client-facing answer to Jared's 4 questions (booked jobs source, LSA lead quality/CPL, Search conversions 25 vs 17, budget allocation). Rule for this one: if something bad is mentioned, say what we're doing about it.
+
+**Delivered (in chat, for Edu/Angela to post):** full text saved under "2026-10-22 FINAL client answer" in `2026-10-20-jared-sept-report-questions.md`. Covers: booked = LSA inbox status (no JobNimbus link); LSA $115 per billed lead / $194 per booked job (49 of 69 billed, 29 booked); Search 25 = 16 calls at the old 10s rule + 9 forms, 8 calls 60s+ → 17; the 4 names are ad groups in one campaign; call recordings showed most Oct 1–15 Search calls were wrong-company / supplier callers (1 of 16 booked vs LSA 7 of 10) + the Oct 14–22 changes (≈40 negatives, phrase-only, $12 click cap, calls off bidding, Branded showing again); budget: LSA not budget-limited (Sept ≈$188/d of $357), Search $80→$67 moved to PMax (~$26/form lead), ask Hawkins to confirm PMax form-lead quality, recommendation after the 10-29 review.
+
+**Cut on Edu's call:** JobNimbus access ask and the LSA declined-lead disputes (already in progress, someone dropped it; TSD moving to Crystal Insights for this), plus the "12 declined / 2 credited" line (bad news with no fix once disputes were cut). **The October LSA spend drop stays out** (Sept ≈$188/d, Oct 1–15 ≈$81/d, Oct 16–22 ≈$40/d, many $0 days, cause not diagnosed, still open internally).
+
+**Commitment made to the client:** first-week results of the new Search setup after 10-29 (fu-080).
+
+---
+
+## 2026-10-22 (later) — APPLIED: NB Max Clicks $12 + phrase-only, call goal off bidding, 3 negatives (Edu: "Yes, execute 1, 2, 3 and 4")
+
+**Why:** see the read below. Max Conversions on NB was learning from wrong-number / materials-buyer calls with ~1 real lead a week, and every block moved the spend to another BROAD keyword.
+
+Script `hawkins_apply_1022.py`, validated first, applied, read back:
+1. **NB `23805382277` → Maximize Clicks, $12 max CPC** (standard strategy; the 10-21 portfolio `12283201754` is detached, left in the library unused). Budget $67 unchanged.
+2. **`Calls from ads` goal (PHONE_CALL_LEAD / CALL_FROM_ADS, incl. `[TSD] Click to call`) not biddable on NB and PMax.** Both now bid only on Google lead forms (SUBMIT_LEAD_FORM / GOOGLE_HOSTED). Branded left as is: Manual CPC, and the call goal is its only goal (API refuses an empty goal set, EMPTY_CONVERSION_GOALS). **Calls now report under All conversions, not Conversions:** compare on `all_conversions` across 10-22.
+3. **NB phrase-only:** PHRASE twins for home siding contractors, siding contractors near me (Siding - General), siding repair contractors (Siding Repair), home improvement siding (Siding Replacement). 'siding contractors near me' was added to the planned 3 because it also spent in 30d ($11). **All 23 enabled BROAD keywords paused.** 12 live keywords, all PHRASE.
+4. **PHRASE negatives on NB:** vivax, quint pro, cat exteriors (30d replay: 'cat exteriors dallas' $28.10 / 1 conv = the 10-21 wrong-company call, 'vivax pros' $18.91). 96 NB negatives total.
+
+**Expect:** fewer, cheaper NB clicks (≤$12), mostly real service searches. Volume dips first. ⚑ **Recheck 2026-10-29 (fu-080; fu-059 + fu-064 closed as superseded):** NB CPC + clicks/day, search terms, form leads, ad calls checked by transcript (not the Conversions column). If clicks dry up, raise the cap to $14 before reopening any BROAD.
+
+---
+
+## 2026-10-22 — Did the 10-16 / 10-19 / 10-21 changes help? (read-only)
+
+Before 10-06 → 10-15 (10 days) vs after 10-16 → 10-22 (7 days, today partial). Pull + CallRail acct 232929821 + local transcript of the one new ad call.
+
+| Campaign | Before | After |
+|---|---|---|
+| Nonbranded | $776 (≈$78/d), 65 clicks, 14 conv, $55 CPL, CPC $11.94, **8 forms** | $537 (≈$77/d), 36 clicks, 4 conv, $134 CPL, CPC $14.91, **1 form** |
+| PMax | $195, 6 conv, $32 CPL | $157, 6 conv, $26 CPL (5 forms + 1 existing-customer call) |
+| Branded | $0, ~0 impressions | $33.70, 7 clicks, $4.81 CPC, IS 27% (32% rank-lost, 41% budget-lost) |
+| LSA | $812, 9 leads, $90 | $280, 4 leads, $70 (not touched by us) |
+
+- **Nonbranded not better, worse on real leads.** All 3 counted NB calls after the fix were junk: 10-16 + 10-17 materials buyers, 10-21 (72s, from 'cat exteriors dallas') wanted another company ("looking for Kent Bowers"). The 60s rule still counts them. Forms fell 8 → 1. NB real cost per lead ≈ $537 this week.
+- **Spend moved again to the remaining BROAD keywords:** home siding contractors $62, home improvement siding $51, siding repair contractors $44 (10-19 → 10-22). They now bring new competitor terms: vivax pros / vivax pros dallas $35.84, cat exteriors dallas $28.10, quint pro $4.26. 23 of 31 enabled NB keywords are still BROAD.
+- **$15 CPC ceiling (live 10-21 07:04):** 10-22 so far 4 clicks at $9.19 avg, but 3 clicks after the switch still cost more than $15 ($22.51, $28.10, $16.93). Too early to judge (1.5 days).
+- **Branded fixed:** serving every day since 10-19, all on 'hawkins siding and exteriors'. $6 bid / $10 budget from 10-21 should cut the rank/budget loss.
+- **PMax better:** CPL $32 → $26 at the full $23/d. YouTube lead-form quality still unverified.
+
+**Proposed (not applied):** PHRASE negatives vivax, quint pro, cat exteriors; remaining BROAD keywords that spend → phrase; make `Calls from ads` secondary (it keeps teaching Max Conversions that wrong-number calls are wins). ⚑ Full recheck stays 10-26 (fu-064).
+
+---
+
+## 2026-10-21 (later) — APPLIED: Branded bid + budget, Nonbranded CPC ceiling (Edu: "yes, apply 1 and 2")
+
+Script `hawkins_apply_1021.py` (this folder): guards passed (budgets unshared at $70/$7, Branded ad group at $5 with no keyword-level bids, NB on standard Max Conversions with no tCPA), validated, applied, read back.
+
+| Change | Before | After |
+|---|---|---|
+| Branded 23233882685 ad group 'Hawkins' max CPC | $5.00 | **$6.00** |
+| Branded budget | $7/d | **$10/d** |
+| Nonbranded 23805382277 budget | $70/d | **$67/d** |
+| Nonbranded bidding | standard Max Conversions, no cap | **portfolio `TSD_Hawkins_NB_MaxConv_CPC15` (12283201754): Max Conversions, $15 max CPC ceiling, no tCPA** |
+
+Total unchanged at $100/d (PMax $23 + NB $67 + Branded $10). The 10-14 entry said $93 + Branded $7; same total.
+
+**Why:** Branded lost 37% of brand impression share to rank and 36% to budget. NB paid ~$20 a click with 0 conversions after the 10-19 phrase switch (single clicks of $30–40; 10-06..10-12 average was $11.76).
+
+**Expect:** NB may spend less than $67 on some days because of the ceiling, and clicks should cost under $15. Branded should show on more brand searches. ⚑ Recheck with fu-064 on 2026-10-26: NB CPC and spend vs budget, NB search terms, Branded IS. If Branded still loses on rank, go to $7.
+
+---
+
+## 2026-10-21 — Recheck of the 10-14 changes (fu-050), read-only
+
+Window 10-15 → 10-20 (6 days) vs 10-06 → 10-12. Pull: `weekly_pull.py` + ad-hoc NB/Branded queries.
+
+| Campaign | Spend | Conv | CPL | vs before |
+|---|---|---|---|---|
+| PMax ($23/d) | $155.71 ($25.95/d) | 6 (5 forms, 1 call) | $25.95 | $22.50 at $18/d |
+| Nonbranded ($70/d) | $466.18 | 6 (3 calls, 3 forms) | $77.70 | $61.41 |
+| Branded (Manual CPC $5, $7/d) | $22.20 | 0 | – | 1 impression the week before |
+| LSA | $145.41 | 2 | $72.70 | $657.41 / 8 |
+
+- **Branded works now.** 30 impressions, 5 clicks, $4.44 CPC, all on 'hawkins siding and exteriors' (QS 8) and 'hawkins siding' (QS 7). No 'hawkins' term in Nonbranded anymore, so brand clicks went to Branded, not away. It still misses most brand searches: IS 27%, 37% lost to rank (43% on 'hawkins siding and exteriors') and 36% lost to budget. It only spent on 10-19 and 10-20.
+- **PMax is roughly holding.** It spends the full $23 and CPL went from $22.50 to $25.95. YouTube is still 83% of spend ($129.74) and brought 5 of the 6 conversions (Google lead forms; lead quality not verified). Clicks fell 402 → 92 with CPC $0.34 → $1.69, so fewer cheap junk taps.
+- **Nonbranded is worse.** $77.70 vs $61.41, and the counted calls aren't real: the 10-16 (92s) and 10-17 (105s) calls were materials buyers (10-19 entry), 10-19 was a 23s hang-up, and 10-15 (256s) is unchecked. Real NB leads ≈ 3 forms + maybe 1 call, so about $115 per real lead. **10-19 → 10-20 after the phrase switch: $244, 12 clicks, 0 conv, ~$20 CPC, spending up to $126/day on a $70 budget.** 'vinyl siding' PHRASE took $100.64 for 3 clicks ('vinyl vertical siding' $41.74 for 1 click). Max Conversions has no CPC cap and is bidding up on thin data.
+
+**Proposed (not applied, needs Edu's go):**
+1. Branded max CPC $5 → $6 (the "+$1 at a time" rule from 10-14) and budget $7 → $10/d, funded by Nonbranded $70 → $67 (total unchanged).
+2. Nonbranded: put a ceiling on bids (tCPA or Max Clicks with a CPC cap, Zen Air pattern) so single clicks stop costing $30–40. Decide with fu-064 (10-26) or now.
+3. PMax: hold at $23 until the YouTube lead-form leads are checked for quality.
+
+---
+
+## 2026-10-19 — Early post-fix read on the 10-16 changes (read-only, 4 days incl. weekend)
+
+**Calls (CallRail, transcribed locally):** all 4 Google Ads calls 10-16 → 10-19 were non-leads: 10-16 materials buyer (92s), 10-17 "vinyl siding suppliers" materials buyer (106s), 10-18 existing customer Pierre Ingram chasing a down payment with no callback (111s, plus a 55s unrecorded first try), 10-19 greeting-only hang-up (23s). The 60s rule caught the hang-up only. `Calls from ads` logged 3 conversions in the window, likely exactly those 3 junk calls ≥60s. LSA: no calls in CallRail since 10-16; 1 LSA message lead 10-17 (Plano loose siding), booked by message for an estimate 10-19 1–2pm.
+
+**NB, 10-16 → 10-19:** $242.67, 14 clicks, 3 conv. Visible search terms $154: ~75% still off-target: "vinyl siding suppliers fort worth" $49.57 (1 conv = the 10-17 materials call), "angie list" $33.60, "dabella siding" $21.00, stone veneer panels $6.07, "hardie smart" $3.30, "venta de siding cerca de mi" $2.07; "stucco exterior" $38.53 (1 conv) is the only real service term with spend. **The 3 new PHRASE keywords got $0; spend shifted to the other BROAD keywords:** `siding repair near me` $101.97 (→ angie list), `exterior siding contractors` $75.42 (→ dabella, stone veneer, stucco), `vinyl siding` $51.64 (→ suppliers, venta), `siding replacement` $3.30, `house exterior siding` $6.11.
+
+**Other campaigns 10-16 → 10-19:** PMax $93.05 / 4 conv (lead forms). Branded $17.62 / 4 clicks (serving again after 10-14 Manual CPC). LSA $74.45, 1 lead (vs $448 / 5 leads 10-09 → 10-15).
+
+**APPLIED same day (Edu: "You have my approval, apply these changes"), script `hawkins_apply_1019.py`, validated first, read-back confirmed:**
+1. **8 PHRASE negatives** on Nonbranded `23805382277`: supplier, suppliers, angie, angies, dabella, venta, stone veneer, hardie smart. 30d replay: blocks only off-target terms ($134 of 30d spend incl. "angies list" $39.62, "vinyl siding suppliers" $49.57); no conflict with live keywords.
+2. **Broad → phrase:** siding repair near me (Siding Repair), exterior siding contractors (Siding - General), vinyl siding (Vinyl Siding), siding replacement + house exterior siding (Siding Replacement) got PHRASE twins; the BROAD versions are PAUSED. 23 BROAD keywords with no recent spend remain enabled in live ad groups.
+
+**Expect:** lower NB volume on phrase-only; Max Conversions may struggle on thin data. ⚑ Recheck 2026-10-26 (Command Center fu-064). Not done: the call-conversion question below.
+
+**Still open:** `Calls from ads` at 60s still rewards wrong-intent calls (3 of 3 post-fix) — consider a call-quality signal (CallRail qualified calls) or forms-only as primary.
+
+---
+
+## 2026-10-16 — September report for Angela (read-only)
+
+**Ask:** Angela on Slack: "can I get a report for September spend & performance for Hawkins." Built `Hawkins Siding - September 2026 Report.pdf` (+ source HTML `Hawkins-Siding-September-Report_2026-10-16.html`), plain client format.
+
+**September, all channels:** $8,441.46 total, all Google (Meta $0, paused all month, confirmed via Meta API). LSA $5,635.98: 69 leads (53 calls / 16 messages), 49 charged ($115.02 each), 29 marked BOOKED ($194.34 each). Search Nonbranded $2,409.78: 5,736 impr, 193 clicks, CPC $12.49, IS 17%, **17 leads on a 60s-call basis** (8 calls ≥60s from `call_view` + 9 Google lead forms) = $141.75/lead. Google's own count was 25 (16 `Calls from ads` at the old 10s threshold + 9 forms) = $96/lead; the report uses 60s to match the 10-16 setting. PMax $395.70: 12 Google lead forms, all from YouTube (78% of its spend), $32.98/lead, quality of YouTube lead-form leads not verified. Branded: 0 impressions in September (brand traffic was being bought by Nonbranded; rerouted 10-14). CallRail September: 135 calls (LSA 61, Google Ads 27, GBP 20, other 27; 112 first-time, 67 ≥60s).
+
+**Revised same day (Edu: make it as pleasing as possible for the client):** added a Highlights section (29 booked jobs, 98 leads, 112 first-time callers, 20 LSA leads at no charge) and led the intro with LSA; removed the weekly trend table, the CallRail "60 seconds or longer" column, the "Google counts calls the same way starting in October" line, the "mark more leads in your dashboard" nudge and the 17% impression-share line. Numbers unchanged.
+
+**Internal only (not in the client PDF):** PPC CPL is high because most NB spend goes to other companies' names (10-16 diagnosis) and wrong-number calls were counting; LSA is the strongest channel by far (~$194/booked job). LSA was included because it's 67% of spend; confirm with Edu that TSD reports on it for this client.
+
+---
+
+## 2026-10-16 — APPLIED: call-conversion threshold + competitor/brand negatives + broad→phrase (Edu: "Go ahead and apply all fixes")
+
+**Why:** call-transcript review of Oct 1–15 PPC calls showed 1 booked job out of 16 (LSA, same office: 7 of 10), and 11 of 16 calls were wrong numbers, other companies, job seekers or vendors. Search-term pull (Oct 1–15) matched them: **64% of visible Nonbranded search-term spend ($451 of $700) went to other companies / product brands / stores** (Style Crest $96, Sherwin Williams $60, Bee Builders Plano $56, "james hardie phone number" $41, Homeland Vinyl, LeafFilter, Patriot Gutters, Angi, Bluestone Homes…), and those terms got 6 of the 11 conversions, because `Calls from ads` counted any call ≥10s. The "BE Builder Supply" caller and the Lowe's rep looking for James Hardie are these exact terms. Geo was fine (91% of spend on presence in DFW; "out of area" callers just have out-of-state numbers).
+
+**Changed (script `hawkins_apply_1016.py`, validated first, read-back confirmed):**
+1. `Calls from ads` (AD_CALL `6798761275`) minimum call duration **10s → 60s**.
+2. **26 PHRASE negatives** on Nonbranded `23805382277`: style crest, sherwin williams, bee builders, homeland vinyl, leaf filter, leaffilter, patriot gutters, h&a home, home genius, bluestone homes, ply gem, certainteed, nichiha, master wall, dolphin panel, james hardie phone, james hardie contact, james hardie products, jameshardie, jobs, hiring, careers, salary, for sale, painting, free charity. 30d replay: blocks only off-target terms; no conflict with active keywords.
+3. **Broad → phrase:** `siding repair`, `home siding`, `home exterior contractors near me` got PHRASE twins in the same ad groups; the BROAD versions are PAUSED.
+
+**Expect:** fewer counted conversions from this week (the 10–59s calls stop counting), so Max Conversions re-learns on thinner data. Compare with `all_conversions` across the change, not the Conversions column.
+
+**Open:** ⚑ recheck ~2026-10-23: search terms on NB (new junk patterns), CallRail PPC calls (wrong-company share should drop), NB spend/CPL. Job-seeker calls didn't trace to any search term (likely brand searches). PMax search terms not covered (not visible in search_term_view). `[TSD] Click to call` taps still share the PHONE_CALL_LEAD/CALL_FROM_ADS goal (untouched).
+
+---
+
 ## 2026-10-14 — APPLIED: PMax step + brand fix + negatives (Edu: "For Hawkins, go as well - execute whatever we need to execute")
 
 Script `hawkins_apply_1014.py` (this folder): guards passed (budgets unshared, at $75/$18; Branded standard strategy, 1 enabled ad group 'Hawkins', ad APPROVED), validated, then applied and read back.
@@ -351,6 +588,65 @@ Read-only, everything staged. All 4 AT tasks completed.
 - **LSA (21211420266):** $791.09, 7 charged leads (5 calls, 2 messages), $113.01 CPL (prev $229.11 / 2 / $114.56), +2 uncharged calls, top impr 98.7%, 32% of the $357.14/d budget = Underspending. KPI - LSA record 39e4d5c8. Task https://app.agencytitan.com/tasks/instance/6202c1c3-1bfd-4671-886f-85c73a61e5ab
 - **Meta:** see meta-ads-log.md.
 
+## 2026-10-28 — Branded PAUSED at client's request
+
+**Authority:** Edu, in-session, after Jared's written request on AT Client Request 3a267fb1 ("Feedback on ads", 10-26):
+"I'd like this paused until we can establish its value."
+- `TSD_03.16_Search_Branded_Evergreen` (23233882685) ENABLED → **PAUSED** via `update.py campaign --status PAUSED`. Read back: PAUSED.
+- Last week before pausing (10-19..10-25): $57.24, 12 clicks, 0 conv, IS 45% (Manual CPC $6 bid, $10/day since 10-21).
+- Left as is: the 'hawkins' phrase negative on Nonbranded (added 10-14). So brand searches now get no paid Search ad; they're covered by organic, GBP and LSA. PMax can still show on brand terms.
+- Live PPC now: Nonbranded 23805382277 + PMax 21291552209 (+ LSA).
+- **Branded results before pausing (10-14 bid fix → 10-28 pause), pulled 10-28:** $66.79, 103 impr, 15 clicks, $4.45 avg CPC, 1 conv
+  (Calls from ads, 10-26 14:13, 147s) = $66.79 CPL. IS 37% (rank-lost 37%, budget-lost 26%). Search terms only brand:
+  'hawkins siding and exteriors' 12 clk / $49.51 / 1 conv, 'hawkins siding' 0 clk. Second ad call 10-26 08:06, 32s (under 60s, not counted).
+  Before 10-14 NB was buying the same brand searches ($148.50/30d, up to $57/click). 2026 history: Jan $418 / 6 conv, Feb $162 / 0,
+  Mar–Sep ~$63 total / 0 (starved bid).
+
+## 2026-10-28 — APPLIED: UTMs on Nonbranded + PMax (Edu: "Would you apply the UTMs for me?")
+
+**Why:** Jared's 10-19 ask (AT #983) + point 7 of "Feedback on ads" (AT 3a267fb1). The main live Search campaign had no UTMs at all; PMax had a tracking template with a stale 'Windows' label.
+Script `hawkins_apply_1028_utm.py` (this folder): guards passed, validated, applied, read back.
+
+| Campaign | Before | After |
+|---|---|---|
+| TSD_04.29_Leads_Nonbranded_Evergreen (23805382277) | no template, no suffix | final URL suffix `utm_source=google&utm_medium=cpc&utm_campaign=search_nonbranded&utm_content={adgroupid}&utm_term={keyword}` |
+| TSD_Pmax_Siding (21291552209) | template `{lpurl}?utm_source=google&utm_medium=cpc&utm_campaign=Pmax+Windows+Siding` | template cleared, final URL suffix `utm_source=google&utm_medium=cpc&utm_campaign=pmax_siding` |
+
+Auto-tagging (gclid) stays on. Branded (paused) left as is. No budget/bidding change, no ad edits.
+API note: clearing a tracking template = put it in the update mask and leave it unset (setting "" errors "Too short").
+Open, not checked: whether the site's GHL forms store UTMs/gclid on the contact (that's what makes "each form lead shows its campaign" true end to end).
+
+## 2026-10-28 — "Feedback on ads" answered (AT 3a267fb1), sent to Angela
+
+Edu posted the full answer + `Hawkins-Siding-Month-over-Month_2026-10-28.pdf` in the task's completion notes; task now at "Communicate Request Completion" (Angela). Full text + all data behind it: `2026-10-28-jared-feedback-on-ads.md`.
+**What we committed to Jared:** Branded stays off unless he decides otherwise; 10-29 ad-group side-by-side review, cut what doesn't bring leads (fu-104); agree a Nov/Dec budget by channel (fu-106); no more PMax budget increases until we check how its form leads turn into estimates.
+**Follow-ups:** fu-104 ad-group review (10-29), fu-105 GHL keeps UTMs test, fu-106 Nov/Dec budget proposal, fu-107 Branded Auction Insights (UI).
+
+## 2026-10-30 — Ad group side-by-side promised to Jared for 10-29 (fu-104), read-only
+
+Nonbranded 23805382277 (Max Clicks, $67/d shared budget). Leads = form fills (Google lead form + site form) + calls 60s+; October calls checked against recordings (call-wins-log / 10-28 doc), September calls not listened to.
+
+| Ad group | Spend Sep 1–Oct 29 | Forms | Real calls | Leads | Per lead | October alone |
+|---|---|---|---|---|---|---|
+| Siding General | $2,019 | 8 | 8 (Sep 7 60s+, Oct 1 confirmed) | 16 | ~$126 | $707, 6–7 forms + 1 call |
+| Siding Replacement | $872 | 4 | 2 (Sep 1, Oct 1 confirmed) | 6 | ~$145 | $611, 2–3 forms + 1 call |
+| Siding Repair | $1,001 | 3 | 0 (Oct 357s = wrong company) | 3 | ~$334 | $540, 1 form + 0 |
+| Vinyl Siding | $648 | 3 (all Sep) | 0 (Sep calls all <60s, Oct 105s = materials) | 3 | ~$216 | $273, **0** |
+
+- Vinyl October search terms = materials/supplier/research ("vinyl siding suppliers fort worth" got its only conversion, "vinyl vertical siding", "ply gem", "georgia pacific soffit", "cost of vinyl siding", "vinyl siding seattle").
+- Repair October terms include "style crest" ($96, its 1 conversion, a supplier brand), "angie list"/"angies list", "vivax pros dallas", "free charities that help with home repairs", "handyman midlothian", plus real "siding repair fort worth".
+- Since 10-22 (phrase-only + $12 cap): $482, 108 clicks, **0 conversions in all 4 ad groups**. Replacement takes the most clicks (51, mostly phrase "house exterior siding").
+- Live keywords now: General 4 phrase, Vinyl 1 (vinyl siding), Repair 3, Replacement 2.
+
+**Proposed (not applied, Edu's go):** pause Vinyl Siding; keep Repair (core service) + negatives style crest, angie(s) list, vivax, charities/free, handyman, suppliers; watch General + Replacement since 10-22 zero-lead week. Note to Angela drafted in chat, send after the changes are live.
+
+### 2026-10-30 — APPLIED (Edu: "Cut Vinyl Siding and clean up siding repair")
+Script `clients/hawkins-siding/hawkins_apply_1030.py` (validate first, then live, read back):
+- Ad group **Vinyl Siding** 199267778626 → PAUSED.
+- Siding Repair cleanup: the October junk terms (style crest, angie/angies, vivax, charities, handyman, suppliers) were ALREADY blocked by the 10-05/10-16/10-22 negatives; all ran before those went in (last: vivax pros dallas 10-22 morning). Added 13 campaign PHRASE negatives: charity + 12 other-company names Repair showed for 10-22..10-29 (arcus construction, certapro, conservation construction, dallas cedar, handy jack, house doctors, level and square, thumbtack, true blue, victory construction, x team, xteam). Campaign negatives 109 → 122.
+- Unchanged: budget $67/d, Max Clicks $12, other 3 ad groups. Live keywords now 9 (General 4, Repair 3, Replacement 2).
+- Watch: 0 conversions in all ad groups since 10-22 ($482). Recheck ~11-06.
+
 ## 2026-10-31 — AT optimization tasks (Gui, via Claude)
 
 Read-only, nothing changed in the account. No KPI row (the 90-day process has none).
@@ -364,3 +660,4 @@ Read-only, nothing changed in the account. No KPI row (the 90-day process has no
 - **Location:** NB = whole DFW DMA, Presence, 100% of spend in-area; outer-DMA towns 60–100+ mi = $893.80 / 13 conv ($68.75, not worse than average) → confirm service radius with AM before any change.
 - **Staged, not applied:** NB research-term negative pass (board and batten, metal, faux, composite, ship lap, cost of, price of, how much, per square foot, what does, seattle, trim, outdoor wall panels; keep Hardie installer terms) + pause 'house exterior siding' for 7 more days, then if still 0 leads pause NB and move $67/d to PMax at constant total; confirm Branded pause; window/door copy cleanup (still open from 10-26); Repair/Replacement ad groups to matching LPs; reject Partners / Display / Max Conv / budget / broad KEYWORD recs.
 - Toggles (UI): Stalled Conversions Found = Yes, Schedule Adjusted = No, Demographics Excluded = No, Audiences Excluded = No, Locations Excluded = No. Item 5 (create task) left unticked.
+

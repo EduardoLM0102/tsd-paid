@@ -103,6 +103,16 @@ Day-by-day log of every CallRail-recorded call that's ad-generated (Google Ads C
 - **13:41 · 13s · Google Local Services Ads · Arlington (Rita Moehlman)** — IVR only; she called back a minute later on the website line (13:42 PPC entry). Google status: Declined (not charged). 🔁 Same caller as 13:42.
 - **13:42 · 137s · Website pool (Google Ads) · Arlington (Rita Moehlman, existing customer)** — Three trees to remove: two by the garage that must come down before Oncor moves a pole, one by the back door. Passed to Kip to call and book. ⏳ Open — confirm Kip's callback.
 
+## 2026-10-20 → 2026-10-29 (partial: only the first-time Google Ads call-extension calls of 60s+, all PMax per Google's call_view; added 2026-11-02)
+
+- **10-20 14:39 · 73s · Google Ads Call Extension (gclid) · Grand Prairie** — Asked if they're open, then for a "Micro Life multi-purpose" fertilizer. Thought it was a plant nursery ("the tree place or something"). ❌ Not a lead — wrong business.
+- **10-21 13:39 · 63s · Google Ads Call Extension (gclid) · Houston (area code)** — Was trying to reach Davey Tree "because they work with utilities". ❌ Not a lead — wrong company.
+- **10-22 13:29 · 72s · Google Ads Call Extension (gclid) · Fort Worth** — Wanted "Aspen…", the crew trimming for Oncor (utility contractor, likely Asplundh). Said Neon Monkey's number "comes up on Google… an ad". ❌ Not a lead — wrong company.
+- **10-26 09:44 · 142s · Google Ads Call Extension (gclid) · West Fort Worth 76116 (Ray Martinez)** — Neighbor's tree fell into his backyard, wants an estimate to remove it. Brock took name, email, phone and address; sales arborist to call within the hour to book. ⏳ Open — real lead, confirm Kip's callback.
+- **10-29 13:50 · 161s · Google Ads Call Extension (gclid) · Crowley / South Fort Worth (Valerie Fox)** — Asked if they changed their name, then asked for an estimate at her home in Crowley. Brock took her details; Kip to call within the hour. ⏳ Open — real lead, confirm Kip's callback.
+
+**PMax read (all 6 first-time 60s+ ad calls Oct 19-Nov 1, incl. 10-19 DeSoto above):** 2 real leads (10-26, 10-29), 3 wrong-company calls (Davey Tree, Asplundh/Oncor, a plant nursery), 1 out of range (DeSoto). The 3 "real calls" counted for PMax in the 10-26 recheck (10-20, 10-21, 10-22) were all wrong-company calls.
+
 ---
 
 ## Running tally (2026-10-01 → 2026-10-15, 34 calls)
@@ -117,3 +127,66 @@ Day-by-day log of every CallRail-recorded call that's ad-generated (Google Ads C
 **Flag for Edu:** The honest read here is mixed-to-concerning, not a clean win. Zero calls in this set show a confirmed booking — every real lead gets handed off to Kip for a callback "within the hour," and the recordings simply don't show whether that callback or booking ever happens; that's a visibility gap worth closing (pull Kip's calendar or the job system against these 10 open leads to see what actually converted). 11 of 34 calls (about a third) never get past the IVR menu, after-hours greeting, or the self-service directory at all — that's real ad spend buying a dial tone, not a conversation, and it's worth checking whether the IVR flow itself is too slow or confusing. Within the "not a lead" bucket, 2 are outright cancellations of jobs that had already been scheduled, which is a different and more costly problem than a wrong number — those were real booked revenue that fell through. On the positive side: the reps (Brock, Ricardo, Rob) handled every real call professionally, including a rambling 22-minute call from Cheryl Wilson that could easily have been cut short, and the crew got an unprompted compliment from a neighbor for cleaning up a job site unasked — a good review opportunity if it's followed up on. Bottom line: lead flow and call handling both look fine, but the complete lack of visible bookings plus the IVR drop-off rate are the two things worth pushing on.
 
 *Oct 16–20 calls added 2026-10-17 and 2026-10-20 (day sections above); the tally table covers Oct 1–15.*
+*2026-11-02: 5 PMax call-extension calls (10-20..10-29) added in the partial section above; tally table still covers Oct 1–15.*
+
+---
+
+## 2026-10-20 → 2026-11-03 (fu-057 read, all 18 Google Ads calls: call extension + Website pool with gclid; added 2026-11-04)
+
+Transcribed locally with faster-whisper (small.en). The 5 calls already logged above (10-20, 10-21, 10-22, 10-26, 10-29 13:50) are counted in the tally, not repeated.
+
+- **10-24 09:13 · 33s · Call Extension · Denton** — Only the menu ("Press 1 representative, press 2 voicemail"), looping twice. ⚠️ IVR-only.
+- **10-24 10:05 · 10s · Call Extension · Odessa** — Menu only. ⚠️ IVR-only (also out of area).
+- **10-24 12:04 · 11s · Call Extension · Las Cruces** — Menu only. ⚠️ IVR-only (also out of area).
+- **10-25 17:17 · 15s · Website pool (gclid) · Arlington** — After-hours greeting (Saturday). ⚠️ IVR-only.
+- **10-27 17:41 · 8s · Call Extension · San Antonio** — Menu only. ⚠️ IVR-only.
+- **10-29 08:22 · 194s · Website pool (gclid) · Arlington / Fort Worth 76133** — Bamboo removal. The rep finds **Kip was at the property on 08-20 but never created an estimate** ("either the appointment was canceled or… strange he didn't create the estimate"); details taken again. ⏳ Open, real lead, and a sign that follow-up falls through.
+- **10-29 10:55 · 270s · Website pool (gclid) · (Fort Myers area code)** — Brock. Large dead holly bush (~9x6 ft) + other drought-killed shrubs, wants a removal price / visit. ⏳ Open, real lead.
+- **10-30 14:16 · 23s · Call Extension · Weatherford** — Pressed 1, hung up during "connecting call". ⚠️ IVR-only.
+- **11-02 09:18 · 51s · Call Extension · Arlington** — No recording. (unknown)
+- **11-02 16:52 · 42s · Website pool (gclid) · (Encinitas area code)** — Wanted Gecko Green (lawn company). ❌ Wrong company.
+- **11-03 08:06 · 14s · Website pool (gclid) · (Chicago area code)** — Menu, caller says "hello", hangs up. ⚠️ IVR-only.
+- **11-03 13:47 · 113s · Website pool (gclid) · (Denver area code)** — Brock. Wants a tree moved (transplant) from beside the house to the front yard; sending photos to 682 number. ⏳ Open, real lead.
+- **11-03 19:45 · 1s · Call Extension · Amarillo** — No recording. ⚠️ No contact.
+
+### Tally 10-20 → 11-03 (18 Google Ads calls)
+| Outcome | Count | Detail |
+|---|---|---|
+| ⏳ Real lead (open) | 5 | 10-26 fallen tree 76116; 10-29 Crowley estimate; 10-29 bamboo (Kip visited 08-20, no estimate ever sent); 10-29 dead holly removal; 11-03 tree transplant |
+| ❌ Wrong company | 4 | plant nursery, Davey Tree, Asplundh/Oncor, Gecko Green |
+| ⚠️ IVR / after-hours only | 7 | 5 menu-only (one loops twice), 1 after-hours, 1 hung up while "connecting" |
+| ⚠️ No contact / no recording | 2 | 11-02 51s and 11-03 1s, no recording |
+
+**Flag for Edu:** The phone menu still costs ~44% of recorded ad calls (7 of 16): "press 1 / press 2" with no default to a person, unchanged since the
+10-26 finding (AT card 3442f6b5). None of the 5 real leads called back in by 11-03 (no complaint, but no proof of follow-up either; Kip's callbacks
+and bookings are only visible in their job system). The bamboo caller is direct evidence of a dropped follow-up (visit 08-20, no estimate).
+Real leads 5 on $2,384 PPC over these 15 days (PMax $1,497, NB $878, Branded $9) ≈ **$477 per real lead** before any booking.
+
+---
+
+## 2026-11-04 → 2026-11-10 (fu-122 read, 9 ad calls: call extension, LSA, Website pool with gclid; added 2026-11-11)
+
+Transcribed locally with faster-whisper (small.en); names may be off. None of the CallRail gclids matches an NB Trimming click (click_view 11-04..11-10), so **every ad call this week is PMax, LSA, or an older click**.
+
+- **11-04 09:24 · 111s · Website pool (gclid, older click) · Arlington (Adriana M.)** — The bamboo caller from 10-29, calling again: "I've been calling trying to get a quote… someone came out a month or two ago but I never received a quote." Brock: bamboo can only come out if the trees along the fence line go too (excavate that side). She says "that's fine then, thank you" and ends the call. ❌ Probably lost (scope/price), and the second time she says the estimate was never sent.
+- **11-04 15:40 · 12s · LSA · Arlington** — Menu only. ⚠️ IVR-only.
+- **11-05 08:05 · 24s · Call Extension (PMax) · Grand Prairie** — Menu loops twice, no one picks. ⚠️ IVR-only.
+- **11-05 09:24 · 68s · Call Extension (PMax) · Glendale** — Asks if they wrap palm trees for winter. Brock refers her to a landscaping company. ❌ Not a fit.
+- **11-05 13:52 · 29s · Call Extension · Mart TX** — Menu loops. ⚠️ IVR-only (also out of area).
+- **11-06 13:34 · 20s · Call Extension (PMax) · Fort Worth** — Menu loops. ⚠️ IVR-only.
+- **11-06 15:39 · 16s · LSA · Arlington** — Menu only. ⚠️ IVR-only.
+- **11-07 20:02 · 7s · Call Extension · Concord** — After-hours message (Saturday). ⚠️ IVR-only.
+- **11-10 10:33 · 137s · LSA (repeat caller) · (city staff, 'Shandor Gardens')** — Has an oak wilt treatment estimate from Neon Monkey, asks whether root-flare excavation is extra. Brock: no excavation needed. ⏳ Open, real (municipal) job, but an existing estimate, not a new lead.
+
+### Tally 11-04 → 11-10 (9 ad calls)
+| Outcome | Count | Detail |
+|---|---|---|
+| ⏳ Open (existing estimate) | 1 | 11-10 city oak wilt treatment (LSA) |
+| ❌ Not a lead / lost | 2 | palm wrapping (PMax, referred out); bamboo caller declines after hearing scope |
+| ⚠️ IVR / after-hours only | 6 | 5 menu-only, 1 after-hours; 3 of them PMax, 2 LSA |
+| New real leads | **0** | |
+
+**Flag for Edu:** 0 new real leads from ~$1,085 Google Ads spend this week (PMax $770, NB $306, Branded $9). NB had no call and no form at all.
+The phone menu took 6 of 9 ad calls (67%, up from 44%): "press 1 / press 2" still has no default to a person (AT card 3442f6b5).
+The bamboo caller confirms the dropped follow-up from 10-29 (visit 08-20, no estimate in 2+ months, she had to call twice).
+PMax checkpoint fu-115 (11-16) needs ≥3 real calls in Nov 2-15: so far 0 in Nov 4-10.

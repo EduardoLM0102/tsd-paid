@@ -14,6 +14,11 @@ Account `381256660973192` ("Zen Air - Third Ad account ( Active Account)").
 **Staged, not applied:** read the post-10-20 lead geo from the export, then decide on Fulton → North Fulton; a new heating-season DCT angle (confirm the $49 tune-up offer first); ARL awareness rebuild with no cap; turn off the dormant boosted post.
 KPI - Meta `7a14a3b8`.
 
+## 2026-10-30 — "Stop Freezing Nights" on an AC video (AT Client Request 088a2dcf, Eddie via Angela)
+
+Ad = `Video Feed & Reel` 120227295614770711 (awareness `Open Audience`, only active video ad; template creative 886860260398735, texts/videos not readable via MCP). Cause, found by Edu in Ads Manager: **Advantage+ creative text generation** ("Tailor variations to personas") was ON and writing AI copy ("Tired of freezing nights?", "Say Goodbye to Freezing Nights!") that Meta paired with the AC repair video. Edu turned it off 10-30. The AI copy was rotating alongside our own copy, not replacing it. Completion notes written on the task; screenshot (`~/Documents/Screenshot 2026-10-30 at 08.54.11.png`) NOT attached yet (AT managed-uploads not allowed for the MCP session), stage left in Execution.
+**Check in every Meta audit:** Advantage+ creative enhancements, including AI text generation, can switch on by themselves.
+
 ## 2026-10-26 — 30-day Meta pass (AT task 3e1110ee, Gui, via Claude): read-only, changes staged
 
 **30d 09-26..10-25:** $6,467.56 total. Lead ad set `09/22/26 - Service Area ZIPs`: $4,506.43, 271 leads, $16.63 CPL, CTR 1.22%, CPM $12.46, freq 3.47 (prev 30 from 09-17: $1,315.41 / 57 / $23.08; last 7d $1,041.86 / 81 / $12.86). Awareness `Open Audience`: $1,961.13, reach 183,266, freq 3.23 (30d), 2.27/wk, hook 15.73% (prev 11.31%), retention 11.44% (prev 12.33%).
@@ -136,3 +141,108 @@ $3,434.66 / 173 leads = $19.85 CPL (Meta, ad 120247339585920711). The form only 
   roughly $40-45 each, spend split by day so approximate). Last full week before the fix was the worst: 6/50 (12%).
   But leads from outside the area excluding Marietta/Monroe rose from 29% to 48% of leads, and 3 of the 9 post-fix
   workable leads are South Fulton. 27 leads / 2 days in learning, so directional only.
+
+## 2026-10-19 — Week-after recheck of the 10-12 geo fix (read-only)
+
+Source: Edu's lead export for ad `09/22/26 | Ad 02 - Images 07, 11, 13`, 79 leads, 10-12 00:30 to 10-18 19:41 (file times UTC-5; the file name says 10-11 to 10-17). 77 are after the fix (10-12 ~08:49 CT). City is self-reported (Facebook prefill), no ZIP. No spend access this session (Meta connector needs authorization), so no CPL.
+
+| Bucket (city field) | Leads | Share |
+|---|---:|---:|
+| Core site cities (Duluth, Lawrenceville x2, Buford x2, Dacula, Snellville, Sugar Hill x2, Johns Creek, Loganville) | 11 | 14% |
+| Workable extras (Gainesville x3, Union City x3, Fairburn, College Park) | 8 | 10% |
+| Atlanta (kept separate) | 18 | 23% |
+| Marietta (10-17, after the exclusion; self-reported city) | 1 | 1% |
+| Outside: other Georgia and out of state | 41 | 52% |
+
+- Workable = core + extras = 19 of 79 (24%); with Atlanta 37 of 79 (47%). Before the fix: 17% workable (25/146); the 10-14 read after the fix was 33% (9/27), so it did not hold.
+- Volume is up: ~11 leads/day (12, 14, 12, 8, 10, 12, 11 a day) vs ~4.4/day in the 10-14 read, and 48/wk before.
+- Outside = 41: about 17 out of state (Opelika AL x2, New Orleans, Tallahassee, Chicago, Las Vegas, N. Charleston, Jacksonville, Belle Glade, NJ, MD, KY, CA, SC, Moscow...) and the rest Georgia far from the area (Augusta x2, Athens, Albany, Warner Robins, Griffin, Covington, Locust Grove, Riverdale x2, Jonesboro, Lithonia, Fayetteville, Acworth, Carrollton, Ellijay, Madison...).
+- South Fulton/Clayton cities in the set: Union City 3, Fairburn 1, College Park 1, Riverdale 2, Jonesboro 1, Lithonia 1, Fayetteville 1. North Fulton: Johns Creek 1.
+- Inference: most of the leakage is not Fulton. Out-of-state and far-Georgia leads look like travelers/commuters caught by location type "home + recent". Cutting Fulton to North Fulton would remove only the ~5 South Fulton leads Edu counts as workable, plus whatever part of the 18 Atlanta leads is south of the line.
+
+### Options (not applied)
+1. Change location type to "people living in" (drop "recently in"), keep the 131 ZIPs. Targets the travelers (the bulk of the 41). Lead ad set re-enters learning again.
+2. Cut Fulton to North Fulton as planned in fu-042. Smaller effect per the numbers above.
+3. Do both. Or hold another week since the ad set is still in learning.
+
+## 2026-10-20 — Location type → "people living in" only + airport ZIP excluded (APPLIED)
+
+Trigger: Angela (Slack DM 10-20 16:14 BRT): "the FB targeting thing is NOT working. Still get crazy leads from various places." Edu: fix it, negative locations OK.
+
+Read first (10-13..10-20): Meta region breakdown = **100% Georgia** on both ad sets (lead $1,069 / awareness $479). Audience Network = $0 delivery. So the out-of-state / far-Georgia leads were people physically inside our ZIPs, caught by location type "home + recent" (travelers and commuters). Our list included **30320 = Hartsfield-Jackson airport** plus downtown hotel/convention ZIPs. Excluding other states or cities would do nothing, since nobody outside the ZIPs was being served.
+
+Applied to BOTH ad sets (lead 120247339585910711, awareness 120227295614750711), published 15:33 ET, read back live:
+- `geo_locations.location_types`: home+recent → **home** ("people living in").
+- ZIP 30320 removed from the list (now 130 ZIPs) and **added to excluded_geo_locations** next to Marietta + Monroe. Meta normalized the exclusion location_types to `home` (sent home+recent).
+- Everything else unchanged (placements, A+ audience, age, budget). Both went IN_PROCESS (review); lead ad set will re-enter learning.
+
+Not done / next:
+- Form still collects only the prefilled profile city, so stale profiles can still show odd cities. If junk persists after this, add a ZIP question to the instant form (new form = new ad, resets social proof).
+- Recheck ~10-27: lead city mix vs 10-19 baseline (24% workable, 52% outside). Expect fewer leads per day and a higher CPL.
+
+## 2026-11-06 — fu-069 still open: lead city mix needs a new export (read-only)
+
+Lead ad set 120247339585910711, 10-29..11-05: **$1,213.17 / 88 leads / $13.79 CPL**, freq 2.51 (10-13..19 $12.34, 10-21..28 $13.22). Volume steady ~11/day, CPL drifting up.
+"People living in" (10-20) filtered little. The city mix can't come from the Meta connector (no lead-level data); newest export in ~/Downloads is the 10-19 baseline.
+Needed: Edu's lead export (Ads Manager → ad → Leads, or Leads Center) for 10-21 → 11-05, then the same buckets as 10-19 (core / workable / Atlanta / outside).
+If outside is still ~50%: add a ZIP question to the instant form (new form = new ad).
+
+## 2026-11-10 — fu-069 recheck: still blocked on the lead export (read-only)
+
+Lead ad set 120247339585910711 ("09/22/26 - Service Area ZIPs (New Creatives)"), ACTIVE, by week since the 10-20 "people living in" switch:
+
+| Week | Spend | Leads | CPL | Freq | Reach |
+|---|---|---|---|---|---|
+| 10-21..10-27 | $1,002.78 | 75 | $13.37 | 2.68 | 29,883 |
+| 10-28..11-03 | $1,077.66 | 80 | $13.47 | 2.37 | 36,315 |
+| 11-04..11-09 (6d) | $903.59 | 63 | $14.34 | 2.18 | 35,037 |
+
+Volume never dropped (~11/day before and after) and CPL only drifted up ~$1, so the switch filtered few people out. That fits the 10-20 read
+(delivery was already 100% Georgia), but it doesn't say whether the cities on the leads got better. No new export in ~/Downloads (newest = 10-19 baseline).
+Still needed: Edu's lead export 10-21 → 11-09 (Ads Manager → this ad set's ad → Leads, or Leads Center), then bucket core / workable / Atlanta / outside vs 10-19 (24% / 52% outside).
+Decision rule unchanged: outside still ~50% → add a ZIP question to the instant form (new form = new ad).
+
+## 2026-11-10 (later) — fu-069 CLOSED: lead city mix after "people living in" (read-only)
+
+Source: Edu's lead export via Cowork (`~/Documents/leads.zip` → `49__Furnace_Tune_Up.csv`), 218 leads, all ad `09/22/26 | Ad 02 - Images 07, 11, 13`,
+form "49$ Furnace Tune-Up", 216 inside 10-21..11-09. City is self-reported (Facebook prefill), no ZIP. Same buckets as 10-19
+(core = 14 site cities + Grayson/Loganville/Snellville; workable extras = Gainesville/Fairburn/Union City/College Park; Atlanta separate).
+
+| Bucket | 10-21..11-09 (216) | 10-19 baseline (79) |
+|---|---:|---:|
+| Core site cities | 44 (20%) | 11 (14%) |
+| Workable extras (Gainesville 17, College Park 3, Fairburn 2, Union City 1) | 23 (11%) | 8 (10%) |
+| **Workable total** | **67 (31%)** | 19 (24%) |
+| Atlanta | 80 (37%) | 18 (23%) |
+| Marietta | 3 (1%) | 1 (1%) |
+| Outside (other Georgia + out of state) | 64 (30%) | 41 (52%) |
+| Blank ("Georgia") | 2 (1%) | 0 |
+
+By week, workable / all: 10-21..27 22/74 (30%), 10-28..11-03 22/79 (28%), 11-04..09 23/63 (37%, Atlanta down to 16).
+- **The switch worked on the city mix, not on volume.** Outside fell 52% → 30%; out of state fell from ~17 of 79 to ~14 of 216 (~6%).
+  The leads it removed came back as Atlanta (23% → 37%), since the ZIP list still covers all of Fulton.
+- Cost per workable lead: $2,984 / 67 = **~$45** (10-19 baseline ≈ $51; last week $904 / 23 = $39). Core only: ~$68.
+- Outside is now mostly south metro (Decatur 6, Ellenwood 3, East Point 3, Jonesboro 2, Stone Mountain 2, Hapeville, Conley, Morrow, Palmetto, Lithonia)
+  plus far Georgia. Hall County near Flowery Branch (Oakwood 2, Murrayville) and Bethlehem near Hoschton were left in "outside" to match 10-19; arguably workable.
+- Decision rule (ZIP question if outside still ~50%) NOT triggered. No change proposed to the form.
+- Next lever, if any: Atlanta at 37%. Ask Angela/Eddie whether Atlanta leads book. If they don't, trim the south Fulton/Atlanta ZIPs (the old fu-042 North Fulton idea).
+Contact data (names/phones) not copied here.
+
+## 2026-11-11 — Hector's "Winter Ready" Meta batch reviewed (AT 953d953b, due 11-13, Angela + Edu)
+
+Drive folder 1VcnHcavJd0F6WBXuYMslWRdrihZCJkuC: 12 statics, 1:1 only, 6 concepts x 2 variations. File dates = planned waves: ad13-ad20 → 11-17, ad21-ad24 → 11-23.
+
+| # | Concept | Variations | Offer / claim |
+|---|---|---|---|
+| C1 | "Get your heat holiday-ready." + "Heating Tune-Up before the family arrives." | ad13 (Zen Ben), ad14 (Zen Ben + Cricket, cream text box) | $49 |
+| C2 | "That first freezing night is coming." + "Get your Heating Tune-Up done first." | ad15 (night), ad16 (day) | $49 |
+| C3 | "$49 Heating Tune-Up. The winter special, from your neighborhood HVAC." / "Friends call me Zen Ben." | ad17, ad18 (big $49, "Stress Free HVAC") | $49 |
+| C4 | "A Zen home in winter." (real tech photo, furnace) + "Inhale Zen, Exhale Comfort." | ad19, ad20 | $49 |
+| C5 | "Thank you, local heroes." Club Zen free for veterans, seniors, teachers, first responders | ad21 (photo: tech + customer), ad22 (illustrated, 4 pills) | Free Club Zen |
+| C6 | "A holiday gift from Zen Ben and Cricket." Free Club Zen for local heroes | ad23 (day, with the Zen quote), ad24 (night, string lights) | Free Club Zen |
+
+**Verified 11-11:** $49 = the offer the live lead form "49$ Furnace Tune-Up" runs on (216 leads 10-21..11-09) and the site's /about-us/specials/ banner ("$49 Furnace Tune-up and Safety Check"); EOY sweep (11-06) flagged only the spring AC version as stale. Club Zen free groups match callzenair.com/club-zen-maintenance-membership/ (active military & veterans, seniors 65+, first responders, teachers Pre-K-12). Zen Ben + Cricket = official mascots (AT brand_voice_style). Brand lines used (Stress Free HVAC, Your Neighborhood HVAC, Inhale Zen Exhale Comfort, CallZenAir.com) are on the approved list.
+
+**Fixes to ask Hector:** (1) ad23 quote says "best in our neighborhood"; site line is "best in the neighborhood". (2) 1:1 only: need 4:5 for feed and 9:16 for Stories/Reels (or accept Meta's auto-crop, which cuts the top headline on 9:16). (3) Small text on ad23 (quote), ad16/ad24 ("Your Neighborhood HVAC"), ad14 ("Stress Free HVAC") is under mobile legibility; drop or enlarge. (4) Confirm ad19/ad20/ad21 stills come from Zen Air's own video footage (customer face on ad21).
+
+**Where they go:** C1-C4 = the live lead CBO 120247267872090711 on the $49 form (one angle per DCT ad set per doctrine: holiday-ready / first freezing night / winter special / Zen home). C5-C6 = a different offer (membership sign-up), needs its own ad set + form or the Club Zen page as destination; also fits the awareness campaign as proof/brand. Meta approved budget is still $2k/mo awareness-only on paper (AT 3f291790); the lead CBO's $150/d approval was never found, so adding spend for the heroes wave needs Angela's written OK.

@@ -2,6 +2,332 @@
 
 ---
 
+## 2026-11-11 (later 2) — Oct Review call transcripts: 22 Search-ad calls + 17 LSA calls reviewed, KPI row re-based to verified leads
+
+Edu asked for the review with transcripts. CallRail access: Edu created an API key in the Proud Pops CallRail account (533-681-324) → `.env.callrail.proudpops`. That account has Conversation Intelligence ON, so `fields=transcription` returns speaker-labeled text (no whisper needed; the `recording` field is a pointer JSON, fetch its `url` without auth). LSA calls pulled with `pull_lsa.py` per account and transcribed locally. Recording is OFF on the "210 - CALL POP" tracker (the ad call button), so the 5 call-button calls can't be reviewed.
+- **Search-ad calls (22 recorded of 27):** 9 booked new jobs, 3 existing-customer service calls, 4 open, 6 not leads (2 job seekers, other company's HR call, internal forwarding test, document request, Saturday voicemail). Electrical 7 calls = 4 booked + 3 open, 0 junk. Plumbing's 11-10 "first lead" = job seeker. Branded 13 = 4 new + 3 existing + 1 open + 5 non-leads. Capacity lost 3 real callers (6-day wait, full day, Saturday 5 pm voicemail). Log: `call-wins-log.md`.
+- **LSA (21 non-declined):** 3 booked (11-04 tub faucet, 11-06 P-trap + WH, 11-06 duct cleaning), 10 open real requests, 8 not customer requests. Google BOOKED wrong on 1 of 3; 2 charged leads are dispute candidates (10-29 outside area, 10-18 39s greeting only). Weekend fees ($120 Sat / $500 Sun) ended both weekend electrician leads. Electrician profile 0 booked on 4 charged. Log: `lsa-call-wins-log.md`.
+- **Verified: 38 leads, $211.53** (was 55 / $146.15). Search $259.94 (25), LSA $114.30 (13). 12 jobs confirmed booked on the recorded calls. Stretch split flips: Branded-only 10-16..11-03 = 12 verified of 26 ($224); restored 11-04..11-10 = 26 of 29 ($206, 7 booked). KPI row 73060891 updated (qualified_leads 38, cpl 211.53), task notes rewritten, PDF rebuilt with a call-review section. AM asks in Command Center fu-157.
+- Lesson: on Proud Pops, duration + first-time filters keep 60% real opportunities on Search calls (best in the book) but only ~60% on LSA; always run the transcript pass before quoting a CPL to the client.
+
+---
+
+## 2026-11-11 (later) — AT Client Strategy Review "Oct Review" (cycle 10-16..11-14): KPI row + task notes WRITTEN (Edu's go)
+
+AT task `fc4041bd-72c3-4bad-84c0-84db5839bb06` (created by Angela 11-11; the 10-02..10-31 task 4ae4f4a8 is gone from AT). Pull: `strategy_review_pull_2026-11-11.py` (3 Google accounts) + GA4 438523825 + the CallRail export in ~/Downloads (10-14..11-03). Data through 11-10, 11-11 partial. Detail + method: `strategy-review-octnov-2026.md`.
+- **Client Performance KPIs record `73060891-c33c-44c8-8f35-53178eeb58b1`** on the client field (relationship f619cda1): 2026-10-16..2026-11-14, ad_spend **$8,038.27** (Google Ads $6,552.43 + LSA $1,485.84), agency_fees $5,000 (carried from the 10-02 row, which the AM filled after 11-05), total_spend $13,038.27, qualified_leads **55** (7 forms, 27 calls, 21 LSA), cpl **$146.15**, recommend_budget $25,000.
+- Task field `additional_paid_ads_notes` filled with the full breakdown, the changes this cycle, pacing (~$20.6k vs $25k) and the open items for the call (commercial jobs, night hours, CallRail pool, unmarked LSA leads).
+- Split: 10-16..11-03 Branded only $2,685.01 / 26 leads ($103); 11-04..11-10 restored $5,353.26 / 29 ($185). Google Ads $193/lead, LSA $71/lead. My Favorite Service ($457) not included.
+- Stage: by the time of the write the task was already in **Host Review Call** (Angela, call item 1 checked), so Performance Reporting was not completed by Paid. Slack overview drafted for Angela in the 11-05 format.
+- **Client PDF report built 11-11:** `Proud Pops - Performance Report (Oct 16 - Nov 10).pdf` (4 pages, plain Times format like the Oct 7 report; source `Proud-Pops-Google-Ads-Performance-Report_2026-10-16_11-10.html`, rendered with Playwright Chromium because Chrome is not installed, Brave headless hangs). Sections: at a glance, two stretches, Search by campaign, phone calls, LSA by profile, what we worked on, budget and pacing, what's next. Client framing per topserv-client-report-format. NOT attached to the AT task yet: the Drive upload needed for `cloud_files_import` was blocked by the permission classifier, and the Client Strategy Review process has no file field anyway (list_fields 11-11), so it would go in as a task attachment.
+⚑ Refresh the row after 11-14 with the full cycle (Command Center follow-up fu-156).
+
+---
+
+## 2026-11-11 — fu-054 pacing check + first days after the 11-09 fixes (read-only, nothing changed)
+
+`pacing_check_2026-11-11.py`. 11-11 had no spend posted yet, so data runs through 11-10. 11-10 is the only full day after the 11-09 fixes, so treat everything below as an early read. The full one-week read is still fu-137 on 11-16.
+
+**Pacing: November lands ≈ $20.6k vs $25k (about $4.4k short, ≈ $220/day).**
+- MTD 11-01..11-10, 3 accounts: **$5,715.68** (PPC $5,343.90 incl. its LSA, SA [1] $139.88, SA [2] $231.90). My Favorite Service ($118.09, Smart campaign paused 11-09, $0.79 after) not counted.
+- Run rate since the restore: weekdays ~$805/day (910, 733, 833, 810, 738), weekends ~$479/day, separate LSA accounts ~$37/day. 20 days left (14 weekdays, 6 weekend days). Thanksgiving 11-26/27 will probably come in lower, so it lands around $20–20.6k.
+- Why the 11-09 projection of $22.5k didn't hold: Electrical did not take the extra $80 (11-10 $345 of $455, 0 budget-lost that day, 41% rank-lost), and the HVAC $30 ceiling cut HVAC from ~$150/day to ~$61/day.
+
+**By campaign, 11-10 vs the 11-04..11-08 baseline:**
+
+| Campaign | Budget | 11-10 spend | CPC | Real leads 11-09..10 | IS 11-10 | Lost to rank | Baseline 11-04..08 |
+|---|---|---|---|---|---|---|---|
+| Electrical (Max Conv) | $455 | $345.42 (11-09 $484) | $21.59 | 3 (2 first-time calls, 1 form) on $829 = $276 | 59% | 41% | $343/d, $214/lead |
+| Plumbing (Max Clicks $45) | $145 | $156.49 | $14.23 | **2 (1 first-time call, 1 form) = first leads since restore**, $122 each | 35% | 65% | $154/d, 0 leads |
+| Branded (Target IS, $18 ceiling) | $50 | **$49.75 = at the cap** | $6.22 | 3 ads calls (154–179s) | 60% (abs-top 60%) | 40% | $7/d |
+| HVAC (portfolio, $30 ceiling, tCPA $265) | $230 | $48.90 | $24.45 | 0 | 21% | 79% | $150/d, $751/lead |
+
+- **Nothing broke.** All 5 enabled campaigns are serving, and the portfolio 12308461252 reads ENABLED, $30 ceiling, tCPA $265. Taps sit in all_conversions only. HVAC primary status says BUDGET_CONSTRAINED, but it spends ~$60 of $230, so the status is lagging.
+- **HVAC is effectively throttled by the ceiling:** 5 clicks in 2 days, all in AG3_HVAC_Maintenance. AG1_HVAC_ACRepair gets 23–25 impressions per day and 0 clicks. Terms: 'goodman hvac service near me' $52 / 2 clicks, 'hvac places near me', 'hvac companies', 'zimmermann ac' (probably a competitor). Working as intended (no $53 clicks), but it is no longer a place to put money.
+- **Plumbing fix worked:** AG4_Plumbing_General now gets the generic plumber traffic (164 impr / 7 clicks 11-10..11), and Leak Detection dropped to 2 impressions. Water Heaters produced the lead.
+- **Branded CPC is climbing as Target IS learns:** $0.27 → $0.48 → $2.79 → $5.11 → $6.22 (11-06..11-10), and abs-top went 15% → 60%. It still shows LEARNING_NEW. 11-10 hit the $50 budget exactly. The 3 ads calls since 11-09 came from area codes 818, 206 and 361, all outside San Antonio (they could be cell phones). Transcribe them before counting them as new customers.
+- **LSA:** none of the 3 accounts has migrated to Pay-per-lead PMax yet. The PPC-account LSA spent ~$135/day on 11-09/10 (4 charged message leads, 3 plumber, all status NEW). SA [2] HVAC got 1 charged call on 11-09 (ACTIVE). SA [1] has no leads since 11-08.
+
+**Where the gap could go (Edu's call; the client's $25k cap stays the ceiling, so all of these are within approval):**
+1. **Branded $50 → $75**, taken from HVAC ($230 → $205; HVAC spends ~$60 under the ceiling, so this costs it nothing). Total caps stay at $880. Keeps the best source from capping out while Target IS climbs to abs-top.
+2. Electrical is mostly rank-limited now, so a bigger budget adds little. Plumbing is rank-limited (0 budget-lost). HVAC is held back by the ceiling on purpose. **Search can't absorb about $220/day more at a sane cost per lead.**
+3. To spend the rest: YouTube awareness (SA/New Braunfels Video campaigns, paused since fu-046) for ~$150/day for the remaining weeks (~$3k), which fits brand-first. Otherwise accept ≈ $20.5–21k and tell the AM why (Search is capped by rank, not budget, and we would rather not buy bad clicks).
+- The AM update promised in AT d2b5e325 (Nov 9 Branded check + Nov 11 pacing) is owed now.
+
+---
+
+## 2026-11-09 (later 4) — APPLIED: keyword pauses, negatives, HVAC $30 CPC ceiling, My Favorite Service Smart campaign paused (Edu: "Apply all of the fixes, including the My Favorite Service")
+
+`fixes_2026-11-09.py`, validate-only then `--apply` (~08:50 CT), read-back OK on every item.
+
+1. **Electrical 23866999121:** `electrical services` [PHRASE] (criterion 95420911, AG2_Electrical_Services) **PAUSED**; the EXACT twin and the geo versions stay. Campaign negatives PHRASE **'electric company', 'aep', 'hourly rate'** (63 total now).
+2. **Plumbing 23853484024:** generic plumber keywords **PAUSED in AG1_Plumbing_LeakDetection**: `plumber san antonio tx` [PHRASE] 354371636767, `plumber near me` [EXACT] 21810437552, `plumber san antonio` [EXACT] 1178376016 (third one not in the original proposal: same duplicate, $0 in the window). AG4_Plumbing_General keeps all three ENABLED. Leak Detection keeps 4 keywords (emergency plumber san antonio, leak detection san antonio, burst pipe repair san antonio, water leak repair san antonio). Campaign negatives PHRASE **'cheap', 'saws'** (16 total).
+3. **HVAC 23848895678:** campaign negative PHRASE **'cheapest'** (27 total). Bidding moved from standard Max Conversions to portfolio **'TSD_ProudPops_HVAC_MaxConv_CPC30'** (12308461252): Max Conversions, **max CPC ceiling $30**, tCPA $265 carried over unchanged. ⚠ HVAC was NOT uncapped Max Conversions as the earlier entries say: it already had a **$265 tCPA**, which is why it bid $53 a click. Status after: LIMITED (BUDGET_CONSTRAINED).
+4. **Account-level list 12263521315** (+16 PHRASE, 82 total): mesa electrical, enterprise electrical, 1 tom plumber, venture plumbing, amg plumbing, leaky's plumbing, leakys plumbing, benchmark plumbing, bearded plumber, cowboys heating, ems hvac, westerly air, my father's ac, my fathers ac, gillette ac, apollo air.
+5. **My Favorite Service 9815330464:** Smart campaign 'HVAC Contractor Services' 23065942452 **PAUSED**.
+
+**Replay against 09-01..11-09 search terms (what the new negatives would have blocked):** 'electric company' 25 clicks / $585.47 / 11 conversions, **all 11 = 'TSD - Website Call' taps before 11-04**, no verified lead (terms are mostly '<name> electric company' and utility lookups like 'bexar electric company'); 'cheapest' (HVAC) 3 clicks / **$294.23** / 1 tap; 'bearded plumber' 4 clicks / $74.91; 'cowboys heating' $93.85; 'mesa electrical' $71.01; '1 tom plumber' $49.24; rest under $35 each, 0 conversions.
+
+**HELD (not applied): 'commercial' negative on Electrical + HVAC.** proudpops.com says "Residential & Commercial" on the homepage and on the HVAC ad landing page ("From cozy bungalows to busy storefronts"). It would block a service the client advertises. Evidence against it is 2 clicks ('commercial ac repair san antonio' $126.00, 'electrical companies commercial' $68.97), and the $30 ceiling now limits that kind of click on HVAC. Edu/AM to decide whether the client wants commercial leads.
+
+**My Favorite Service, fuller picture:** last 30 days the Smart campaign spent $574.11 for 1,178 clicks and recorded **5 phone conversions** (4 'Business profile - Tracked call', 1 'Calls from Smart Campaign Ads'; last one 10-26), plus 36 untracked 'Business profile - Call'. Nothing in the 14 days before the pause ($225). Re-enable = status back to ENABLED. Still **ENABLED but not serving** in that account: Search_AC_Replacement, Search_Duct_Cleaning, Search_Air_Quality_Service, Search_AC_Repairs (primary NOT_ELIGIBLE, $50–150/day budgets), Pmax_AC Repair & Replacement (primary PENDING, $160/day), and one ended experiment campaign (can't be changed via API). Not touched.
+
+**Not touched, noticed:** `emergency plumber san antonio` [PHRASE] also sits in Leak Detection (the Emergency ad group has the EXACT). Plumbing is Max Clicks with a **$45** CPC ceiling.
+
+⚑ One-week read fu-137 on 11-16 (Electrical cost/lead vs $214, Plumbing first lead?, HVAC CPC under $30 and volume). Pacing fu-054 on 11-11.
+
+---
+
+## 2026-11-09 (later 3) — Keyword-level read, 11-04..11-09: three leaks + proposed fixes (read-only, NOT applied, Edu's go)
+
+**1. Electrical: `electrical services` [PHRASE, no city], AG2_Electrical_Services = $460.64 / 14 clicks / 0 leads.** Biggest waster in the best campaign, and the reason that ad group runs $410/lead. Its terms lean utility/commercial: 'electric company san antonio' $96.08 / 3 clicks, 'electrical companies commercial' $68.97, 'aep pleasanton tx' $30.67, 'best electric company in san antonio' $23.05; plus 'mesa electrical contractors' $71.01 (Repair). Keywords that did produce leads: electrician san antonio, electrician near me, electrical services san antonio, home electrical services, electrical repair, affordable electrician near me, electrician san antonio tx (1 each).
+   Proposed: pause the bare `electrical services` phrase (the geo twin stays); negatives PHRASE 'electric company', 'commercial', 'aep', 'mesa electrical', 'enterprise electrical', 'hourly rate'. Matters more now that Electrical has +$80/day.
+
+**2. Plumbing: generic plumber keywords live in the Leak Detection ad group.** `plumber san antonio tx` [PHRASE] $390.01 / 18 clicks + `plumber near me` [EXACT] $64.16 / 3 clicks, both in AG1_Plumbing_LeakDetection = **$454 of the campaign's $806**, 0 leads. AG4_Plumbing_General has the same two keywords ($105.54). So a generic plumber search gets a leak detection ad. QS 3–5 across the campaign.
+   Proposed: pause those two keywords in the Leak Detection ad group (General keeps them); negatives PHRASE 'cheap', '1 tom plumber', 'venture plumbing', 'amg plumbing', 'leaky's plumbing', 'benchmark plumbing', 'bearded plumber', 'saws' (water utility).
+
+**3. HVAC: `ac repair san antonio tx` [PHRASE] = $428.13 / 8 clicks at $53.52 / 0 leads** (QS 5, 47% lost to rank). Visible terms: 'commercial ac repair san antonio' $126.00 for 1 click, 'cowboys heating and air san antonio' $93.85 / 2, 'cheapest ac repair san antonio' $46.51. Competitor names with impressions and no negative yet: ems hvac, westerly air, my father's ac & heating, gillette ac, apollo air. Only 5 of 22 HVAC clicks show a search term. No heating/furnace ad group exists (AC Repair, Installation, Maintenance only).
+   Proposed: negatives PHRASE 'commercial', 'cheapest', 'cowboys heating', 'ems hvac', 'westerly air', 'my father's', 'gillette', 'apollo air' (competitor names → the account-level list from 10-16); CPC ceiling ~$30 on HVAC via a portfolio Max Conversions strategy (same route as Hawkins). 1 conversion in 5 days, so little learning to lose.
+
+**Also seen:**
+- No ad schedule on any Search campaign. Nonbranded 19:00–06:59 = $451 / 24 clicks / 0 leads; 07:00–18:59 = $2,784 / 99 clicks / 9 leads. 5 days only: ask the AM whether phones are answered at night before cutting.
+- LSA last 30 days (10-10..11-09): PPC-account LSA 10 leads / 7 charged / $535 (statuses used: 3 BOOKED, 2 DECLINED, 1 CONSUMER_DECLINED); **SA [1] 5 leads and SA [2] 6 leads all still ACTIVE = never marked**. All three budgets $714/day, spend $9–18/day: reach-limited, not budget-limited.
+- My Favorite Service Smart campaign: $100.58 in 11-02..11-08, 0 conversions.
+- AT request d2b5e325 ("Google Ads upadte", typo in the title) was submitted 11-06 and is in Execution with the AM. It promises a Nov 9 Branded check and a Nov 11 pacing check: one combined AM update after 11-11.
+
+---
+
+## 2026-11-09 (later 2) — Overview of all accounts since the 11-04 restore (read-only)
+
+`overview_since_restore_2026-11-09.py`. Window 11-04..11-08 (5 full days). "Real leads" = the Conversions column since 11-04 (First Time Phone Call via CallRail, Calls from ads 60s, Website lead) minus the 1 Branded tap that still counted on the morning of 11-04, plus charged LSA leads.
+
+**Total, 3 accounts: $3,685.99, 15 real leads, ~$246 each.** Search $3,268.03 / 10 leads (~$327). LSA $417.96 / 5 charged leads (~$84).
+
+| Campaign / surface | Spend | Clicks | CPC | Real leads | Cost/lead | Lost to budget | Lost to rank |
+|---|---|---|---|---|---|---|---|
+| Search Nonbranded Electrical | $1,714.36 | 63 | $27.21 | 8 (4 first-time calls, 2 ad calls 60s+, 2 forms) | $214 | 38% | 28% |
+| Search Nonbranded Plumbing | $768.27 | 38 | $20.22 | 0 (0 in all_conversions too) | – | 28% | 46% |
+| Search Nonbranded HVAC | $751.41 | 22 | $34.15 | 1 (first-time call) | $751 | 23% | 50% |
+| Search Branded | $33.99 | 13 | $2.61 | 1 (first-time call) | $34 | 0 | 45% |
+| LSA in the PPC account (20067257249) | $166.34 | – | – | 2 plumber (1 call, 1 message) | $83 | – | – |
+| LSA SA [1] electrician (7261668241) | $139.88 | – | – | 2 calls | $70 | – | – |
+| LSA SA [2] HVAC (6621969129) | $111.74 | – | – | 1 call | $112 | – | – |
+
+- **Weekday vs weekend (PPC account):** Wed–Fri $825.55/day, 9 Search leads; Sat–Sun $478.85/day, 2 leads. Electrical lost 53% of impressions to budget on weekdays, none on the weekend.
+- **Electrical ad groups (11-04..11-09):** Electrician_NearMe $603.79 / 4 leads ($151); Electrical_Repair $323.21 / 2 ($162); Electrical_Services $820.63 / 2 ($410). Junk clicks: 'mesa electrical contractors' $71.01, 'electrical companies commercial' $68.97, 'aep pleasanton tx' $30.67; bare 'electrician' $134 / 3 clicks / 0 leads.
+- **HVAC:** AG1_HVAC_ACRepair $428.13 / 8 clicks at **$53.52** / 0 leads; AG3_HVAC_Maintenance $323.27 / 14 clicks / 1 lead. One click on 'commercial ac repair san antonio' cost $126.00; 'cowboys heating and air san antonio' (competitor) $93.85 / 2 clicks. Max Conversions with no cap.
+- **Plumbing:** $806.19 / 40 clicks through 11-09, **no lead, no ad call, not even a call-button tap**. AG1_Plumbing_LeakDetection took $502.68 (24 clicks). Max Clicks buys 'best plumbers near me', 'cheap plumbers in san antonio', and competitor names ('1 tom plumber san antonio' x2, 'venture plumbing san antonio tx'). Call asset shows on Plumbing (77 impr). **Pages are not broken:** rendered headless 11-09, /services/plumbing, /leak-detection and /water-heaters all load with the right H1 and a tel: link (same template as Electrical, which converts). The plain HTTP check is useless on this site (JS shell, 200 for everything). The plumbing and electrical service pages show no form in the rendered DOM; only /proud-pops-hvac-services has the GHL survey.
+- **Calls from ads (call asset 225-5767):** 3 calls, all Electrical: 11-04 48s, 11-04 372s, 11-07 141s.
+- **LSA:** 5 leads, all charged, all still status ACTIVE (not marked).
+- **My Favorite Service (9815330464):** Smart campaign 'HVAC Contractor Services' ($21/d) still running unmanaged: $64.69 since 11-04, 3,475 impr, 145 clicks, 0 conversions; $117.90 MTD. Its 2 LSA accounts: $0. fu-019 still open.
+- **Pacing:** MTD through 11-08 = **$4,048.41** across the 3 accounts (PPC $3,796.79 + LSA $251.62; MFSC $117.90 not included). At the 5-day rates (16 weekdays, 6 weekend days left, separate LSA ~$50/day) November lands **≈ $21.2k**; with today's Electrical +$80 on weekdays **≈ $22.5k**, vs $25k. Thanksgiving week probably runs lower.
+- Caveats: 5 days; HVAC (22 clicks) and Plumbing (38) are small samples; CallRail uploads for the last clicks can still land; the Conversions column is not comparable with October (taps were ~93% of it).
+
+---
+
+## 2026-11-09 (later) — APPLIED: Branded $130 → $50, Nonbranded Electrical $375 → $455 (Edu: "good to move that budget")
+
+`branded_to_electrical_2026-11-09.py`, validate-only then `--apply`, read-back OK: Branded 23853361615 **$50/day**, Search Electrical 23866999121 **$455/day**, both ENABLED.
+Search caps still **$880/day** (Branded $50, Electrical $455, HVAC $230, Plumbing $145), so no client approval needed. Rollback = Branded $130, Electrical $375.
+Why: see the fu-132 entry below. ⚑ Read at fu-054 (11-11): Electrical spend vs $455 and its cost per real lead at the higher budget (was $214), Branded spend vs $50.
+
+---
+
+## 2026-11-09 — fu-132 recheck: Branded is serving again at the $18 ceiling (read-only, nothing changed)
+
+`branded_recheck_2026-11-09.py` (read-only; `--extra` = QS/changes/ads, `--headroom` = other Search campaigns). Pulled ~07:30 CT, so 11-09 is partial.
+
+**Branded 23853361615 is back.** Target IS abs-top 95%, ceiling $18, budget $130, status still LEARNING (BIDDING_STRATEGY_LEARNING).
+
+| Date | Impr | Clicks | Cost | CPC | Search IS | Top | Abs-top | Lost to rank |
+|---|---|---|---|---|---|---|---|---|
+| 11-02 (Max Conv) | 26 | 12 | $141.30 | $11.77 | 51.2% | 48.7% | 38.5% | 0 (48.8% lost to budget) |
+| 11-03 (Max Conv) | 12 | 6 | $105.32 | $17.55 | 45.8% | 45.8% | 25.0% | 0 (54.2% lost to budget) |
+| 11-05 ($10 cap) | 0 | 0 | $0 | – | <10% | – | – | 90% |
+| 11-06 (cap → $18 at 06:27 CT) | 5 | 2 | $0.54 | $0.27 | 30.8% | 30.8% | 15.4% | 69.2% |
+| 11-07 | 9 | 2 | $0.97 | $0.48 | 50.0% | 50.0% | 16.7% | 50.0% |
+| 11-08 | 22 | 7 | $19.52 | $2.79 | 88.9% | 83.3% | 38.9% | 11.1% |
+| 11-09 (to 06h) | 4 | 0 | $0 | – | – | – | – | – |
+
+- First impression after the cap change: 11-06 10h CT, about 3.5 hours later. 11-06..11-08 total: 36 impr, 11 clicks, $21.03, avg CPC $1.91.
+- **Not pinned at the cap:** avg CPC $2.79 on the best day, single terms $0.28–$3.94, vs the $18 ceiling.
+- **Abs-top 38.9% on 11-08 vs the 95% target**, 61.1% of abs-top lost to rank. Still learning; main keywords are QS 10 (proud pops, proud pops hvac, proud pops plumbing, proud pops san antonio), so there is room for the strategy to bid up. Bid estimates are not exposed under Target IS (API returns $0).
+- Real leads on Branded since the change: **1 First Time Phone Call (CallRail upload, 11-08)**, 0 Calls from ads. 1 tap on 11-08 sits in all_conversions only, as intended.
+- Search terms 11-06..11-09: brand only (proud pops, proud pops hvac, proud pops plumbing air & electric [san antonio], proud pops san antonio).
+- Ads: 8 enabled RSAs all APPROVED / ELIGIBLE; the 2 POOR ones stay paused. Change history since 11-04: only eduardo@ via API, last = the 11-06 ceiling.
+
+**Correction to the 11-06 diagnosis.** The $10 cap was probably not a price problem: brand clicks now cost $0.27–$3.94. The $11.77–17.55 CPC before the switch was Max Conversions overbidding (it was still chasing taps then), not the market price. What the data can't separate: the strategy needing ~2 days to ramp after the 11-04 switch vs the 11-06 cap edit restarting it. Either way Target IS now gets ~89% IS at about a fifth of the old CPC.
+
+**Spend vs $130/d: Branded uses $1–20/day.** Brand volume here is small (~16–50 eligible impressions/day), so even at full IS it will not come near $130. About $100/day of the $880 plan has no use on Branded.
+
+**Other Search, 11-04..11-08 (5 days):**
+
+| Campaign | Budget/d | Spend/d | Clicks | CPC | Real leads | Cost/lead | IS | Lost to budget | Lost to rank |
+|---|---|---|---|---|---|---|---|---|---|
+| Nonbranded Electrical (Max Conv) | $375 | $342.87 | 63 | $27.21 | 8 | $214 | 33.6% | 38.1% | 28.3% |
+| Nonbranded Plumbing (Max Clicks) | $145 | $153.65 | 38 | $20.22 | 0 | – | 26.3% | 28.0% | 45.7% |
+| Nonbranded HVAC (Max Conv) | $230 | $150.28 | 22 | $34.15 | 1 | $751 | 26.8% | 23.0% | 50.2% |
+| Branded (Target IS) | $130 | $6.80 | 13 | $2.61 | 1 real (+1 tap counted 11-04) | – | 54.7% | 0 | 45.3% |
+
+In-account daily: 11-04 $910, 11-05 $733, 11-06 $833, 11-07 (Sat) $564, 11-08 (Sun) $394. **MTD 11-01..11-09 early = $3,867.98** (this account only; LSA accounts 7261668241 + 6621969129 not pulled). Rough projection at ~$825 weekdays / ~$480 weekends: **≈ $19.8k in this account vs $25k**.
+
+**Proposed (Edu's go, total stays $880/d so no client approval needed):** Branded $130 → $50, Nonbranded Electrical $375 → $455. Electrical is the only nonbranded campaign producing real leads and loses 38% of its impressions to budget. $50 keeps 2.5x room over Branded's best day while the strategy pushes for abs-top. This alone adds at most ~$1.7k by month end, so the rest of the gap is for the 11-11 pacing check (fu-054).
+
+⚑ Carry to fu-054 (11-11): Branded abs-top share vs 95% once learning ends, CPC drift toward the ceiling, and the pacing gap.
+
+---
+
+## 2026-11-06 — LSA → Pay-per-lead PMax migration: exposure check (read-only, NOT migrated yet)
+
+None of the 3 Proud Pops LSA campaigns has switched yet (PPC-account LSA `20067257249`, SA [1] electrician 7261668241, SA [2] HVAC 6621969129).
+The PPC-account LSA is multi-trade (leads 08-08..11-06: HVAC 12 / plumber 11 / bath 1) with ONE per-trade target set: HVAC $62
+(plumber/bath none). On migration Google uses one campaign-level target; how the $62 carries over is unknown. Check that campaign's target
+and lead mix right after it switches.
+
+**Context:**
+Google (not TSD) is moving LSA into a new campaign type, "Pay-per-lead PMax". It creates a PERFORMANCE_MAX campaign
+(`Pay-per-lead-PMax-<business>`, Max Conversions, same daily budget as the old LSA, one asset group `xcat:service_area_business_<trade>`)
+and pauses the old `LocalServicesCampaign:SystemGenerated`. Still billed per valid lead, still Search + Maps only, badge carries over.
+What changes: no manual bidding, one campaign-level target instead of one per trade, weekly budget becomes a daily average, old LSA
+dashboard reports don't migrate (lead history does). Sweep of all 57 enabled MCC accounts on 11-06: 7 switched on 11-03/11-04
+(Watt's Right, Amazing Morrow, Golden, Gray Duct, King's Window, Nick's, Spencer). Full write-up: `_contexto/memoria/tsd-lsa-ppl-pmax-migration.md`.
+
+Data notes: `local_services_lead` still returns leads after the switch (lsa_report.py lead data OK). Spend/metrics now sit on the
+PMax campaign, so anything filtering on channel LOCAL_SERVICES (google_channels.py) misses them. **$0 spend ≠ dark**: only charged
+leads cost money, clicks are free. Judge delivery by impressions + leads per day.
+
+---
+
+## 2026-11-06 (later) — APPLIED: Branded CPC ceiling $10 → $18, Target IS kept (Edu: "Let's move the max click and maintain tImp Share")
+
+`branded_cap_18_2026-11-06.py`, validate-only then `--apply`, read-back OK: Branded 23853361615 Target IS absolute top 95%, **ceiling $18**, budget $130/d
+unchanged, status LEARNING. Rollback = ceiling back to $10. ⚑ Recheck 11-09 (fu-132): impressions back, IS, avg CPC vs $18, spend vs $130.
+- AT Internal Request **d2b5e325-d9b4-46c1-a98c-840b6af933a7** "Google Ads update: first real leads since the tracking fix" created as a DRAFT for Angela (Intake, Edu submits): first results + Branded cap $10 → $18 (corrects the $10 in 815ca8bc).
+
+---
+
+## 2026-11-06 — fu-127 check: first days on real-lead bidding + new call asset (read-only, nothing changed)
+
+**Bidding change worked.** Taps ('TSD - Website Call') are out of the Conversions column: 11-05 = 0 conv / 5 all_conv. CallRail uploads land in this
+account now: **First Time Phone Call 4** on 11-05 (Elec 3, HVAC 1), Repeat Phone Call 3 (all_conv only, as intended). Calls from ads 1 (Elec, 372s call 11-04).
+Real leads by click date 11-04..06: **Electrical 6** (1 ad call + 3 first-time CallRail + 2 Website lead) on $784.92 ≈ **$131/lead**; HVAC 1 on $432.48;
+Plumbing 0 on $302.69; Branded 0. Nonbranded total $1,520 / 7 ≈ $217 (2 days, too early to judge).
+**Call asset (210) 225-5767 (428601259336): APPROVED, serving** account + campaign level: 95 impr 11-04, 173 impr 11-05; 2 calls 11-04 (48s, 372s), 0 on 11-05.
+**Spend (in-account):** 11-04 Search $816.54 + LSA $93.70; 11-05 Search **$716.51** (Elec $374.54, HVAC $166.89, Plumbing $175.08, Branded $0). No day over 2x
+(Elec 11-04 $410 = 1.09x, Plumbing 11-05 1.21x). MTD 11-01..11-06 ≈ $2,005. At the 11-05 rate November lands ≈ **$20.7k vs $25k**.
+⚠ **BRANDED IS DARK since the Target IS switch (11-04 08:08).** 2 impressions after the switch on 11-04, **0 on 11-05 and 11-06 so far**. Status LEARNING,
+rank-lost 40% on 11-04. Not cannibalization: all 3 Nonbranded have 'proud pops'/'problem solvers' negatives and 0 brand terms in their search terms.
+The $10 cap sits under what brand clicks cost before the switch ($11.78 CPC 11-02, $17.55 11-03). Branded = ~$155 per new-customer call (CallRail 10-15..11-03),
+the best lead source here, and its $130/d is most of the underspend.
+**Proposed (Edu's go):** raise the Branded CPC ceiling $10 → $18 (keep Target IS abs-top 95%), recheck 11-09. Alternative: back to Max Conversions, which now
+bids only on real calls + forms (the old CPC inflation was it chasing taps).
+
+---
+
+## 2026-11-04 (later 5) — APPLIED: Branded → Target IS + 2 POOR RSAs paused (Edu: "Apply 2 and 3, yes"; staged in Gui's 10-31 pass)
+
+`branded_target_is_2026-11-04.py`, validate-only then `--apply`, read-back OK: Branded 23853361615 Maximize Conversions → **Target Impression Share,
+absolute top 95%, $10 CPC ceiling**, budget $130/d unchanged (status LIMITED while it learns). **Paused POOR RSAs** Brand_OldName 808846497511 and
+Brand_HVAC 808844736361 (each ad group keeps 1 enabled ad). Item 1 (Website lead biddable on Branded) dropped: Target IS doesn't bid on conversions.
+⚠ Pacing: Branded spent ~$100-175/d on Max Conversions at $11-15 CPC; under a $10 cap it will likely spend less, so November may land under $25k.
+Rebalance (e.g. unspent Branded → Search Electrical) at the fu-054 check 11-11.
+- AT Internal Request **815ca8bc-e79d-4afd-a8e4-0b39df627b5c** "Google Ads update: Search back on and call tracking fixed" created as a DRAFT for Angela (Intake, Edu submits; task department = Customer Success).
+
+---
+
+## 2026-11-04 (later 4) — Phone numbers on the live ad landing pages (read-only)
+
+Rendered all 11 proudpops.com final URLs of enabled ads + sitelinks (headless Chromium, ?gclid=TSDtest1104, after scroll): CallRail's script loads on
+every page and **the only number shown is a CallRail website-pool number** (210-759-4194 in this session, swapped from the 225-5767 swap target),
+3-9 tel: links per page. No main line (210-997-7190), no 864-6867, no old 794-7570 on these pages. Raw HTML has no numbers (client-rendered site).
+- With Search back at $880/d, the **4-number pool** (CallRail recommends 14) will recycle numbers between visitors → some calls attributed to the wrong
+  visit. AM item: grow the pool (client cost).
+- ⚠ **2 sitelinks on Search Electrical 404:** 'Our Story' 120042497724 → txproblemsolvers.com/about/our-story/ and 'Contact Us' 185822702561 →
+  txproblemsolvers.com/contact/contact-us/. Replacements that render: https://proudpops.com/about ("Pop's Promise") and https://proudpops.com/contact.
+  **FIXED later 11-04 (Edu's go):** `sitelinks_404_fix_2026-11-04.py`, read-back OK: 'Our Story' → https://proudpops.com/about, 'Contact Us' → https://proudpops.com/contact.
+  (/our-story and /contact-us render "We couldn't find that page" despite HTTP 200.) Fix needs Edu's go.
+
+---
+
+## 2026-11-04 (later 3) — APPLIED: bidding on real leads only + call asset swap (Edu: "Make the campaigns bid only on real calls" / "change the asset to the right number and get rid of the old disapproved one")
+
+1. `conv_real_calls_2026-11-04.py` (validate-only, then `--apply`, read-back OK): **'TSD - Website Call' 7667749854 (ad call-button taps), 'Repeat Phone Call'
+   7889536740, leftover 'Phone Call' 7238068273 → Secondary**; **'First Time Phone Call' 7889536968 stays primary, counting → ONE_PER_CLICK**.
+   Counted for bidding now: First Time Phone Call (CallRail, 60s), Calls from ads (60s), Website lead (customer forms; careers excluded since v43).
+   ⚠ The Conversions column drops sharply from 11-04 (taps were ~93% of it): that's the change, not a collapse. Compare on all_conversions across it.
+2. `call_asset_swap_2026-11-04.py` (14 ops, one request, read-back OK): approved asset **428601259336 (210) 225-5767 linked at account level + 6 lead
+   campaigns** (Search HVAC/Electrical/Plumbing, Branded, PMax HVAC/Electrical); **old disapproved (210) 794-7570 removed everywhere** (campaign asset
+   360709032917 x6 + account asset 185848871539). Ad calls go through CallRail's '210 - CALL POP' tracker; Google counts them via its forwarding number (Calls from ads, 60s).
+⚑ Check 11-06 (fu-127): asset serving (impressions on the call asset), first Calls from ads / First Time Phone Call conversions, Search spend vs $880/d.
+
+---
+
+## 2026-11-04 (later 2) — CallRail integration repointed to PPC (Edu via Cowork) + conversion-action read (read-only on Google Ads)
+
+Cowork (CallRail UI): Google Ads integration moved from 849-758-3415 to **105-184-3378 (1051843378)**, Active, separate first-time/repeat ON,
+minimum duration **15s → 60s**, all numbers; enhanced conversions came back checked on reconnect and was unchecked again (off after reload).
+Integration was down only for the minutes between unlink and reconnect.
+**API read of 1051843378, 11-04:** CallRail created **First Time Phone Call 7889536968** and **Repeat Phone Call 7889536740** (UPLOAD_CLICKS, DEFAULT/WEBSITE,
+both PRIMARY, counting MANY_PER_CLICK). Also still enabled + primary: leftover **'Phone Call' 7238068273** (UPLOAD_CLICKS) and
+**'TSD - Website Call' 7667749854 = CLICK_TO_CALL (taps on the ad's call button, despite the name), 483 of the account's ~517 conversions in 30d**.
+DEFAULT/WEBSITE and PHONE_CALL_LEAD/CALL_FROM_ADS are biddable on Branded + all 3 Search campaigns (Max Conversions / Plumbing Max Clicks),
+so the restarted Search campaigns would bid on taps + repeat customers. Careers fix (GTM v43, 10-08) is holding, so the old "careers before taps→Secondary" gate is met.
+**Proposed (Edu's go):** Repeat Phone Call, 'Phone Call' 7238068273, 'TSD - Website Call' → Secondary; First Time Phone Call stays primary with
+counting → ONE_PER_CLICK. Bidding then = customer forms (Website lead) + First Time CallRail calls (60s) + Calls from ads (60s, once fu-052 links the asset).
+
+---
+
+## 2026-11-04 (later) — APPLIED: November restore to $25k/month (Edu: "Let's bring them back to 25k/mo")
+
+`nov_restore_25k_2026-11-04.py` (copy of the 11-01 script, caps scaled ~10% for the late start), validate-only, then `--apply`, read-back OK:
+Branded $100 → **$130** (enabled), Search Electrical **ENABLED $375**, Search HVAC **ENABLED $230**, Search Plumbing **ENABLED $145** = **$880/day**.
+PMax HVAC/Electrical + both YouTube stay PAUSED.
+Math: Nov 1-3 spent $362 (Branded + LSA-in-PPC). $25,000 - $362 = $24,638 over Nov 4-30 (27 days) ≈ $912/d; LSA (3 surfaces) ≈ $31/d → Search caps ≈ $880/d.
+Max Conversions can overspend single days (up to 2x); the script's "x30.4" line is a full-month figure, not this month's.
+⚑ Pacing check fu-054 on 11-11: November should land $24-25k. If the average runs > ~$950/d, trim Search HVAC/Electrical first.
+Still open: call asset 225-5767 (fu-052, Edu's go), CallRail → Google Ads integration repoint to 105-184-3378 (fu-126, Cowork), AM items (pool 4 → 14, GA4 old domain).
+
+---
+
+## 2026-11-04 — CallRail access via Cowork (Edu's other login): P-5 answered, fu-048 read (read-only, nothing changed)
+
+Cowork pulled Proud Pops' CallRail (account #533-681-324, company "The Problem Solvers" 686172931; TSD is an admin user). Export saved locally:
+~/Downloads/proud-pops-callrail-calls-2026-09-13_2026-11-03.csv (304 calls; **data only starts 10-14**). Settings untouched (Cowork added 7 Call-log columns to the view).
+
+**P-5 answered:**
+- **(210) 225-5767 = CallRail tracker "210 - CALL POP"**, and it is the website swap target. Main line = 210-997-7190 ("Proud Pops Main").
+  210-794-7570 (the disapproved call extension) is not an active tracker. 210-864-6867 = tracker "1st Repair is on Pops Letters".
+- 73 active numbers (69 source trackers + 4-number website pool). Unused PPC trackers exist: "PPC Electrical" 210-940-2589, "PPC HVAC" 210-920-8336,
+  "PPC Plumbing" 210-361-7827 (source label Google Ads - Paid Search, 0 calls in the window).
+- **Swap works:** the 4 pool numbers took 47 calls; CallRail warns the pool is too small (recommends 14). Swap target = 225-5767.
+- ⚠ **CallRail's Google Ads integration points to the OLD account 849-758-3415** ("[Old Account] The Problem Solvers - LSA HVAC San Antonio 2"),
+  not PPC 105-184-3378: First/Repeat call uploads go nowhere useful. Min 15s filter. GA4 integration still on txproblemsolvers.com (G-C7QTE9ZZXQ). GBP not connected.
+
+**fu-048 (do PMax or Search drive real calls?) — can't be answered from CallRail:** the export starts 10-14 and nonbranded Search + PMax were paused
+10-15 → today, so only 10-14 overlaps (2 Branded calls 195s/136s + 1 Search Electrical 614s, 0 PMax). Excluding one caller (…8301, 47 calls on 10-20/10-30,
+looks like a test sweep), Google Ads calls 10-14 → 11-03 = 38:
+| Campaign (landing URL) | Calls | 60s+ answered | 60s+ first-time |
+|---|---:|---:|---:|
+| Branded 23853361615 | 25 | 20 | **13** |
+| GLSA Plumbing tracker (LSA) | 4 | 3 | 3 |
+| old Search_Brand 21948583115 (paused; stale session URLs, repeat callers) | 4 | 2 | 0 |
+| Search Electrical 23866999121 (10-14 only) | 2 | 2 | 2 |
+| Website pool, no campaign | 2 | 2 | 0 |
+| Murray GLSA | 1 | 1 | 1 |
+- **Branded drives real calls Google can't see:** $2,010.72 10-15 → 11-03 → 13 first-time 60s+ calls ≈ **$155 per new-customer call** (plus forms).
+  Google Ads counts ~0 of these (call extension disapproved since May, CallRail uploads go to the old account).
+- Decision input for fu-053: no evidence for PMax either way; the staged restore keeps both PMax paused anyway → nothing to change in the split.
+- `nov_restore_25k_2026-11-01.py` validate-only re-run 11-04: OK (7 ops, caps $800/d), awaiting Edu's go.
+
+**Proposed (Edu's go):**
+1. Run the Nov restore now (Search on at $800/d total; PMax stays off). Started 11-04, so November lands ~$22-23k unless caps rise ~10%.
+2. fu-052: link the already-approved call asset 225-5767 (428601259336) at account level + 6 lead campaigns and remove the 794-7570 links (b4 path).
+   Option later: per-campaign PPC trackers (PPC HVAC/Electrical/Plumbing) as call assets for CallRail attribution by campaign.
+3. Repoint CallRail's Google Ads integration from 849-758-3415 to 105-184-3378 (CallRail UI; TSD is admin there). Then First/Repeat uploads reach PPC.
+4. AM items: pool 4 → 14 numbers (client cost), GA4 integration on the old domain.
+
+---
+
 ## 2026-10-31 — AT optimization tasks (Gui, via Claude)
 
 Read-only, nothing applied. Extra pull: scratchpad `pp_x1031.py` (call assets, Branded daily, changes, geo, LSA leads, Oct MTD).
@@ -79,6 +405,74 @@ RSAs (Brand_OldName 808846497511, Brand_HVAC 808844736361); observation audience
 fix Nonbranded landing/offer (HVAC $3,182 / 1 form, Plumbing $791 / 0) and the call asset before the Nov 1 restore (fu-053).
 AT: Google `5fcb9612` (KPI `247995a9`), LSA `6ee7bffa` (KPI `16e5089d`), Meta `43e88713` (KPI `d4ef0536`), 14-day `ec9d122a`, all completed.
 14-day toggles must be set in the UI.
+
+## 2026-10-20 — fu-047: Branded-only October is holding (read-only)
+
+Oct 1–20 spend, all 3 accounts: **$29,234.11** (PPC 1051843378 $28,761.67, LSA 7261668241 $210.45, LSA 6621969129
+$261.99). Only Branded + the 3 LSA campaigns are ENABLED. Both YouTube campaigns are PAUSED (last spend 10-16, $54).
+Branded Oct 15–20: $56 / $149 / $57 / $112 / $154 / $64 = $99/day avg on the $100 budget (daily swings are Google's
+2x overdelivery, monthly cap holds). LSA ~$45/day lately.
+**Projection:** $29.2k + 11 days × ~$145 ≈ **$30.8k** for October, in line with the ~$30k expected on 10-14.
+Nothing turned back on, no action needed. Next: Nov 1 restore (fu-053).
+
+---
+
+## 2026-10-16 — Campaign check (Oct 1–15) + account-level competitor negatives. APPLIED
+
+**Check (read-only, same recipe as Hawkins / All Seasons 10-16):** Search traffic is mostly clean: ~80% of $10.1k visible search-term spend = real service searches, brand 9%, competitors 6% (Elmer AC, Above All Air, Gillette, Sigma Air, Service Experts, Wattsmith, "goodman phone number" $176), off-service 2%. The real problems:
+- 617 of 666 counted conversions (93%) = `TSD - Website Call` phone taps, 0 tracked calls (call asset disapproved, fu-052) → PMax HVAC 99% Display, PMax Electrical ~86% Display + YouTube.
+- Search CPCs: HVAC $45.68 avg ("ac repair near me" $393 for 2 clicks), Electrical $28.95, Plumbing $26.07; impression share 26–33%. Non-branded QS ~4.5, driven by below-average expected CTR on nearly every keyword; landing-page experience mostly average (4 HVAC keywords below average).
+- Customer forms Oct 1–15: Search HVAC 3 on $5,985, PMax HVAC 2 on $4,152, Plumbing 3 on $2,242, Search Electrical 17 on $8,483, PMax Electrical 23 on $2,901, Branded 4 on $1,271.
+- AI Max–matched terms ran on Search Electrical through 10-08 ($3,622 Sep 15–Oct 8, incl. plumbing and junk); none since. Old paused `Search_Electrical_Services` still has AI Max on (handled by the 10-16 MCC guardrail script).
+- PMax final URL expansion is ON in all 3 PMax campaigns (all paused) → must be off before any relaunch.
+- No Proud Pops company in any CallRail account TSD's key sees → no call transcripts. Client is getting CallRail (Edu, 10-16).
+
+**Changed (script `proud_pops_account_negatives_1016.py`, validated, read-back confirmed):** 40 PHRASE negatives added to the existing ACCOUNT-LEVEL list `TSD - Account negatives (job seekers)` (12263521315, attached at customer level → covers Search + PMax), list now 66 terms: elmer, above all air, gillette air, sigma air, service experts, wattsmith, goodman phone, appliance repair, roof leak, roofing, nest error, error code, how to, diy + the 26 San Antonio plumbing competitors from `CSMS_Competitors` (previously attached only to one paused campaign). Deliberately NOT added: `phone number` (would block "proud pops phone number" on Branded), `plumer` (misspelling = real intent), appliance words stove/oven/washer/dryer/refrigerator (replay showed they block electrician jobs like "4 prong dryer outlet").
+
+**Recommended before the Nov 1 restore (now in Command Center fu-053, Edu 10-16), not done:** keep PMax HVAC off; relaunch only after CallRail call imports (≥60s) + taps secondary + careers excluded + 2–3 weeks clean data, with goal = forms + CallRail calls only, final URL expansion OFF, HVAC LP, brand exclusions, ~$50/d start. New HVAC landing page + RSA rewrite together (QS is CTR-driven). Electrical Search must not buy plumbing terms again.
+
+---
+
+## 2026-10-14 (2) — Client cut to $25k/month: Branded only for the rest of October. APPLIED
+
+**Ask (Edu, 10-14 ~22:45 CT):** Proud Pops is cutting to $25k/month; adjust so October hits $25k, and set a November check.
+
+**October can't land at $25k.** Spend across the 3 accounts (PPC 1051843378 + LSA 7261668241 + 6621969129) was already
+**$28,105 through Oct 14** (Oct 1–13 ran ~$2k/d before the 10-13 cut; Oct 14 = $1,643 PPC + $66 LSA by 22:44 CT). Options put
+to Edu: pause everything (~$28.3k), Branded only (~$30k), core Search ~$400/d (~$35k), $25k pace now (~$42k).
+**Edu chose Branded only.**
+
+**Applied 22:48 CT** (`branded_only_25k_2026-10-14.py`, validate-only passed, applied, read-back PAUSED on all 5). Status only,
+budgets left as they were so the Nov 1 restore starts from known values:
+
+| Campaign | ID | Oct 1–14 spend | Now |
+|---|---|---:|---|
+| Search Electrical | 23866999121 | $8,483 | PAUSED ($500 budget kept) |
+| Search HVAC | 23848895678 | $5,985 | PAUSED ($300) |
+| PMax HVAC | 23853595615 | $4,162 | PAUSED ($50) |
+| PMax Electrical | 23866982084 | $2,906 | PAUSED ($75) |
+| Search Plumbing | 23853484024 | $2,242 | PAUSED ($160) |
+| YouTube New Braunfels | 24120482524 | $1,417 | **still ENABLED, pause in UI (fu-046)** |
+| YouTube San Antonio | 24120440530 | $1,410 | **still ENABLED, pause in UI (fu-046)** |
+| Branded | 23853361615 | $1,215 | ENABLED $100/d |
+| LSA (3 surfaces) | | $285 | on, demand-limited |
+
+**YouTube:** the API rejected the VIDEO status change (`--youtube` validate failed, same block as 10-13). Both need the UI.
+Each day they run adds ~$200 to October.
+
+**October landing:** $28.1k + Branded ~$100/d + LSA ~$20/d for 17 days ≈ **$30k** (plus ~$200/d of YouTube until paused).
+
+**Nov 1 restore staged, validated, NOT applied:** `nov_restore_25k_2026-11-01.py` → Search Electrical $340, Search HVAC $210,
+Search Plumbing $130 (all re-enabled), Branded $100 → $120. **$800/d caps** × 30.4 = $24,320 max + LSA ~$600 ≈ $24.9k.
+PMax HVAC / Electrical and both YouTube stay paused (worst cost per customer form; no confirmed calls). Split to be rechecked
+against CallRail (fu-048) before it runs. Must run ON Nov 1 CT, not before.
+
+**Command Center:** fu-053 (Nov 1, run the restore), fu-054 (Nov 4, November pacing vs $25k). Updated fu-046 (both YouTube
+now), fu-047 (now: confirm Branded-only October holds), fu-048 (CallRail now feeds the Nov 1 split). Client card note updated.
+**Superseded:** the 10-13 $50k pacing plan and its Oct 14–27 review window (`budget-cut-2026-10-13.md`, D-10 → D-11).
+
+**Approval:** cut requested by the client via Edu; still needs to go on record (P-3, AM ticket) with the $25k figure and the
+~$30k October landing.
 
 ---
 
@@ -1484,3 +1878,6 @@ validating the tag on Jul 23. Real site-wide leads ≈ 27.
 - **No tCPA before ~Aug 6–13** (2–3 weeks of clean data from Jul 23).
 - CPAs here are cost per *tracked lead*, **not validated against ServiceTitan booked jobs.** Still
   the weakest link in the case for spending $50k.
+
+## 2026-11-12 — fu-054 DECIDED: budget stays as is (Edu)
+No Branded $50→$75 / HVAC swap, no YouTube fill. November lands ~$20.5-21k vs the $25k cap (11-11 check: MTD $5,715.68 through 11-10, ~$805/d weekdays, ~$479 weekends + ~$37/d LSA). Caps stay Branded $50 / Electrical $455 / HVAC $230 / Plumbing $145 = $880/d. Next read fu-137 11-16. AM update on AT d2b5e325: November lands ~ $21k, under the cap.

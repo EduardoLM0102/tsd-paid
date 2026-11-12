@@ -580,12 +580,79 @@ Pull: `paid/weekly-7day/weekly_pull.py` (window 10-06..10-12 vs 09-29..10-05), s
 **LSA:** $0, 39 impr, 4 clk, top impr 100%; lead report 2 phone leads (1 booked, 1 active), both uncharged. Budget $23.26/d, Underspending (reach-limited).
 AT tasks completed 10-20: Google ce4a9827 (KPI 726c2e79), 14-day ecc58c10 (toggles must be set in UI), LSA bab8023c (KPI bb0987bb), Meta 79c812a8 (KPI a1ee2c75, still no ad account).
 
+## 2026-10-20 — APPLIED the 10-13 staged negatives (Edu: "the staged changes, they are ALL approved")
+
+`paid/weekly-7day/staged_1013_apply_2026-10-20.py`, read-back confirmed. Branded 23653583753 PHRASE negatives **airlines, airline, southern** (30d: blocks china/great
+southern airlines etc., $39, 0 conv). Nonbranded 23828098448 PHRASE **car** (car AC repair questions, $14.22, 0 conv). No
+conflict with live keywords.
+
+## 2026-10-22 — Pre-read for the two-week check (fu-032), read-only, 10-09..10-21 vs 09-26..10-08
+
+Pulled one day early (Edu asked). `weekly_pull.py` with 13-day windows. CallRail API returned 429 on the agency account, so the CallRail side of the check is still owed.
+
+**PPC total:** $2,179.63, 46 conv, $47.38 CPL (prior 13d: $1,946.63, 27 conv, $72.10).
+- **New PMax 24336822932:** $1,468.19 (~$113/d, full $110 budget, status BUDGET_CONSTRAINED), 39 conv, $37.65 CPL, under the $50 tCPA. **But $1,464.54 of it (99.8%) is Display**, $0 on Search, $1.51 YouTube. All 39 conversions are [TSD] Click to call taps from Display. Same pattern as the Smart campaign it replaced. Brand exclusion is attached (10-09, web UI).
+- **Branded 23653583753:** $346.37, 39 clk, 5 conv (3 taps + 2 calls from ads, both 60s+), IS 78.4% (was 77%), rank-lost 21.6%. CPC $8.88 vs $6.82 before, so the $15 ceiling raised cost ~30% for +1.4 pts of IS. The airline terms ($29.14 'great southern airlines') were 10-11, before the 10-20 negatives.
+- **Nonbranded 23828098448:** $303.11, 35 clk, **0 conv** (prior 13d $715.73 / 1). QS 1–3 where reported. Terms are mostly price/DIY research ('ac tune up cost', 'evaporator coil cost', 'why is ac not cooling'). Spent $47.22 on 10-21 vs $25 budget.
+- **Smart 9313861131:** paused 10-09, $61.96 tail.
+- **LSA:** $43.16, 2 leads (1 tap, 1 message), all on 10-21.
+- Real calls from ads (call_view): 2, both Branded, both 60s+. No forms.
+- PMax description still says "Keep cool this summer!" (asset group text, not changed).
+
+**Read:** the account's cost per lead looks better only because Display taps are cheap. PMax has bought no Search traffic in 13 days. Taps stay counted (Edu's rule), but whether these taps become real calls is the open question, and it needs CallRail (calls by source 10-09..10-21, answered 60s+).
+**Options for Edu (not applied):** (1) PMax can't be kept off Display by a setting, so the lever is budget: move part of the $110 to Branded/LSA or a phrase/exact Search build, once CallRail shows whether the taps were real calls; (2) Nonbranded: pause the price/DIY keywords ('ac tune up cost', 'ac repair cost estimate') or pause the campaign, 0 conv in 26 days at ~$1,000; (3) swap the summer description for a heating one.
+
+## 2026-10-22 (later) — Action plan after the two-week read (Edu asked), nothing applied yet
+
+**What Google already shows about PMax (no CallRail needed):** `[TSD] Click to call` is type CLICK_TO_CALL = taps on the call button in the ad. 38 of 39 PMax taps were on mobile, from Display. Google logged **0 counted "Calls from ads" from PMax** (the only 2 are Branded), and **0 First Time / Repeat Phone Call uploads** in 10-09..10-22 (so no website calls with a gclid either). PMax optimizes to the taps because taps are its primary conversion, and Display is where taps are cheapest. CallRail tracker 817-442-6949 (the call asset on all 3 campaigns) will show how many taps became actual calls; API was 429 on 10-22.
+
+**Plan:**
+1. **10-23, CallRail:** calls on 817-442-6949 from 10-09 to 10-22: count, answered, 60s+, first-time. Decision rule: if PMax's 39 taps produced only a handful of real 60s+ calls, PMax is not buying leads.
+2. **PMax ($110/d):** if (1) confirms, cut to ~$30/d or pause. Root cause for Edu to decide: as long as taps are primary (Edu's 10-09 rule), PMax keeps buying cheap Display taps. Options: (a) keep the rule and starve PMax, or (b) make taps secondary on PMax only, with "Calls from ads" + CallRail calls as the goal.
+3. **Nonbranded (Cooling, $25/d):** $1,018 and 0 conversions in 26 days, all AC keywords in late October. Pause it and build a small heating Search campaign (furnace/heater/heat pump repair, phrase + exact, Mansfield service area, Max Clicks with a CPC cap, pointing at the site's heating page). Money comes from the PMax cut, total stays inside $238/d.
+4. **Branded:** keep. Optionally go back from $15 to a $12 ceiling: the $15 bought +1.4 pts IS for ~30% higher CPC.
+5. **Copy:** replace "Keep cool this summer!" in the PMax asset group with a heating line.
+6. If total spend ends up lower than today because PMax is cut and heating takes time to ramp, tell the AM (spend drop, not a budget increase).
+7. **Recheck** ~10-30.
+
+## 2026-10-23 — CallRail check (fu-085): PMax produced 0 calls
+
+CallRail API back (the 10-22 400s after the 429 were the helper URL-encoding commas in `fields`; fixed in `paid/weekly-7day/callrail_calls_pull.py`).
+- **Ad call number 817-442-6949, 10-09..10-22: 4 calls total** (10-16 38s first-time; 10-19 84s first-time; 10-19 105s repeat; 10-20 95s first-time). Before that, 1 call since 09-26.
+- **Google call_view / phone_calls 10-09..10-22:** PMax 24336822932 = **25,214 phone impressions, 0 phone calls**. Branded = 2 calls (10-19 84s, 10-20 95s). Nonbranded 0. Old Smart 0.
+- **Website calls from Google Ads clicks: 0** (no gclid, no google/cpc in 23 pool calls; they are organic, GBP, Facebook Ads (someone else's), referral, direct).
+- Whole account: 110 CallRail calls 09-26..10-22, 83 of them (75%) on the GBP number.
+
+**Conclusion:** PMax's 39 "conversions" (10-09..10-21) were taps on the ad's call button that never became phone calls. $1,468 bought 0 calls and 0 forms. The action plan from 10-22 (later) stands. Waiting on Edu: cut or pause PMax, pause Cooling NB + heating Search build, and whether taps stay the goal.
+
+## 2026-10-23 (later) — APPLIED: PMax + Cooling Nonbranded PAUSED (Edu: "Let's kill the C&S Pmax and Cooling campaigns")
+
+`update.py campaign --status PAUSED` with explicit --customer-id, read-back via GAQL: TSD_10.09_PMax_Leads_Mansfield 24336822932 PAUSED ($110/d), TSD_07.05_Leads_Search_Nonbranded_Cooling 23828098448 PAUSED ($25/d). Live now: Branded 23653583753 ($80/d budget) + LSA ($23.26/d). Nothing else changed.
+
+**Budget freed: $135/d of budget (~$136/d of actual spend 10-09..10-21, ~$4,100/month).** Branded and LSA can't absorb it:
+- Branded spends ~$27/d of its $80 (13d: $346). Impression share 78%, 0% lost to budget, 22% lost to rank. More budget does nothing; raising the $15 CPC ceiling could buy part of the missing 22% for maybe +$5–10/d.
+- LSA spends ~$9/d of its $23 (30d: $283, 198 impressions, 10 leads, 4 booked). It's limited by impressions, not budget. More reach needs settings (service area, job types, hours, reviews), not money.
+- So account spend drops from ~$170/d to ~$36–45/d unless something new is built. Options for Edu: (a) heating Search campaign (phrase + exact, Max Clicks with a cap) at ~$25–40/d, (b) LSA settings review, (c) tell the AM spend drops ~$4k/month.
+
+## 2026-10-23 (later 2) — BUILT PAUSED: TSD_10.23_Search_Nonbranded_Heating 24383234148 (Edu: "Build it for me")
+
+`build_search_heating_1023.py`, validated (146 ops) then applied as one atomic mutate. Read-back: PAUSED, Maximize Clicks with a **$12 CPC cap**, **$30/day**, Google Search only (no partners, no Display), presence-only geo = the same 10 locations as Branded, English, AI Max text + URL expansion opted out.
+- **Heating Repair** (ad group 196718543930, 17 keywords: phrase furnace/heater/heating/heat pump repair, furnace/heater/heat not working, no heat, furnace/heating/heater service + 6 exact 'near me'/Mansfield) → /services/residential/heating/heating-repair/. RSA 829360703689.
+- **Heating Replacement** (ad group 198402775381, 15 keywords: furnace replacement/installation, new furnace, heat pump replacement/installation, new heating system...) → /services/residential/heating/heating-replacement/. RSA 829312302192.
+- Assets: call asset 343525874146 (CallRail 817-442-6949), 7 sitelinks (3 new: Heating Repair, Heating Replacement, Heating Maintenance + Schedule Service, Reviews, Financing, About), 7 callouts (3 new: Upfront Pricing, All Makes & Models, Background-Checked Techs + Family Owned, Licensed & Insured, 20+ Years, Same Day Service), business name + logo.
+- Negatives: 73 phrase (water heater/tankless/pool/space heaters, car/rv/auto, how to/diy/manual/parts, jobs, retail, cost/price/cheap, ~30 competitors from the Cooling terms) + 'Competitos May' list. The Cooling campaign's 708 negatives were NOT copied (they block furnace, heat, replacement, burner, not working).
+- Copy: only claims from the heating pages (checked 10-23). No '24/7', no 'Since 1958'.
+- Both RSAs REVIEW_IN_PROGRESS. Launch = enable the campaign on Edu's go once approved.
+
 ## 2026-10-26 — AT optimization tasks (Gui, via Claude)
 
 **90-Day Google (https://app.agencytitan.com/tasks/instance/3fe702b7-83fe-4112-8d0f-64eec2906df3), read-only, completed.** 07-28..10-25 PPC: $12,883.94 / 12,411 clk / 141 conv / $91.38 (prev 90 $8,656.69 / 76). 85% of it is now paused: Smart $5,858.90 (10-09), NB Cooling $3,520.65 / 4 conv = $880 CPL (10-23), new PMax $1,594.93 / 40 taps / 0 calls (10-23). Live: Branded $1,909.45 / 33.7 conv / $56.73, IS 81.2% (rank-lost 18.8%); **Heating Search 24383234148 ENABLED by Edu 10-26 08:08** ($30/d, Max Clicks $12 cap, both ads approved, 32 kws eligible, no data yet).
 Conv = 102 taps (72%), 18 Calls from ads (Branded), 18 Smart calls, 3 forms. **Stalled:** CallRail First/Repeat 0 in 90d (no gclid calls to upload), forms 0 in 30d (last 09-25), Smart / Local actions / Sign Up dead primaries. Staged: tracking task (Gui to create): form test incl. heating pages, demote dead primaries, check heating call asset + call_view after week 1.
 Hours: Branded real calls all 08:27-17:43, 21-06h $150.80 / 0 conv, Sunday $190.50 / 0; Cooling NB 6pm-6am $1,885.20 / 1 conv. Demographics too thin. No audiences (lists: all visitors 2,700, converters 72). Geo 100% in the 10 service-area locations (PRESENCE).
 **Staged, not applied:** heating ad schedule 6:00-20:00 Mon-Sat; optional Branded schedule 6:00-21:00; observation audiences on Branded + heating; pause/rewrite Branded RSA 800192030388 (3.9% vs 15.1% conv rate); 'CandS Air'/'CS Air' headline; dismiss partners / Display expansion / Max Conv / budget / keyword recs. First heating read ~11-02. Toggles (UI): Stalled Conversions Found = Yes, Schedule Adjusted = No, Demographics Excluded = No, Audiences Excluded = No, Locations Excluded = No.
+
+## 2026-10-26 — LAUNCHED: TSD_10.23_Search_Nonbranded_Heating 24383234148 (Edu: "turn the campaign on")
+Both RSAs (829360703689, 829312302192) REVIEWED / APPROVED before launch. `update.py campaign --status ENABLED` with explicit --customer-id; read-back: ENABLED, primary_status ELIGIBLE, Max Clicks $12 cap, $30/d; all 17 campaign assets (7 sitelinks, 7 callouts, call 817-442-6949, name, logo) ELIGIBLE. Live now: Branded ($80/d budget, ~$27/d actual) + LSA ($23/d) + Heating ($30/d). First check ~11-02 (fu-095): spend vs $30/d, CPC vs cap, search terms (water heater/car/price/competitors), calls on 817-442-6949 + forms.
 
 ## 2026-10-27 — AT optimization tasks (Gui, via Claude)
 
@@ -595,3 +662,107 @@ Read-only, nothing applied, no budget changes. Toggles to set in the UI are list
 **30-Day Google (https://app.agencytitan.com/tasks/instance/20dbd773-c3f7-4df0-be4d-1dbe6b4e59b3), completed.** 09-27..10-26: $4,216.39 / 74 conv / $56.98 (prev $4,751.57 / 42 / $113.13). 72 of 74 = taps, 2 real calls (Branded 10-19, 10-20), 0 forms. Google rates no RSA assets yet (all 157 labels NOT_APPLICABLE). All 10 ads approved. The API returns no speed score. No structured snippets anywhere. The 3 callouts created 10-23 have no Heating impressions yet. Stalled primaries: CallRail uploads (First/Repeat/Phone Call/Form Capture), both form actions, Sign Up, Smart x4, Clicks to call, Local actions x4. Geo: 100% of PPC spend is in targeted locations. LSA spend came from Joshua / Fort Worth / Mansfield, so no exclusions are needed. Staged: structured snippet on Branded + Heating, form test incl. heating pages, demote dead primaries, Branded RSA rewrite. Toggles (UI): Extensions & Assets Updated = No, Geo Exclusions Added = No, Landing Page Issues Found = Yes (0 forms tracked in 30d), Session Recordings Audited = No, Blockers to Escalate = Yes (freed budget / AM, fu-088).
 - **LSA 7-Day (https://app.agencytitan.com/tasks/instance/1fbd7310-764d-4086-a562-196f6fade7af), completed.** $108.16, 4 leads (3 calls, 1 msg), 2 charged → $27.04/lead, $54.08/charged. Prior week $0 / 2 uncharged. 78 impressions, top impression rate 100%. Pacing 66% of 7 x $23.26 = On Pace. The 10-21 message lead (install_ac) is still NEW, so the AM needs to get it answered.
 - **LSA 30-Day (https://app.agencytitan.com/tasks/instance/2e28ddf5-fb83-4dd1-b90d-fe090b1a485d), completed.** $283.39, 10 leads (9 calls, 1 msg), 4 charged → $70.85 per charged lead = true CPL (0 disputes, 0 credits). 4/10 BOOKED (40%). Impressions 197 vs 509 prior 30 (-61%). Budget use 41%, so reach is the limit, not budget. Staged: dispute review on the charged DECLINED 09-29 call (lead 342890473) before its window closes, and an LSA profile check in the UI (job types, area, reviews). KPI - LSA 457b534c (weekly + 30-day keys). Toggle (UI): Blockers to Escalate = No.
+
+## 2026-11-02 — Heating Search first week (fu-095), read-only
+
+Window 10-26..11-02 (live 10-26, first spend 10-27; 11-02 partial). Pull: `weekly_pull.py` + CallRail (cs-air, 26 calls).
+- **TSD_10.23_Search_Nonbranded_Heating 24383234148:** $226.20, 24 clicks, CPC $9.43 (cap $12), 727 impr, **0 conversions, 0 ad calls** (call_view empty; CallRail: 0 calls on 817-442-6949, 0 website calls with a gclid). Spends its $30/d (~$32/d). IS 20%, lost 66% to rank, 14% to budget.
+- **Where the money goes:** 'new heating system' PHRASE $102 (45%), 'heater service' $52, 'new furnace' $22, 'new heat pump' $20. Repair keywords barely serve (heating repair 13 impr, no heat 3, furnace not working 1 click). Only $56 of $226 of terms visible; those are product research: empire furnaces, heat pump, gas furnace, infinity 20 heat pump, what is a good heat pump, a c furnace. Impression-only terms: competitors (prime time heating and air, bock services, service champs, silver spur, burke mechanical, christmas ac, encore hvac, hat plumbing), model numbers (gc9s800603an, 59tp6c), brands/research (best hvac brands, goodman heat pump reviews, carrier furnace error codes, ao smith vortex), window/mobile-home/floor heating.
+- **Rest of the account:** Branded $82.62, 10 clicks, IS 98%, 1 tap; LSA $65, 1 lead. CallRail 26 calls, 20 on the GBP number, rest website pool (organic/direct), none from Google Ads.
+- **Read:** 24 clicks is too few to judge (1-2 leads would be normal), but the Replacement side buys research. Account total ~$55/d vs $238/d approved.
+
+**Proposed (not applied, Edu's go):** phrase negatives on Heating for research/brand/competitor terms (what is, best, reviews, brands, error codes, window, mobile home, floor heating, empire, infinity, ao smith, prime time, bock, service champs, silver spur, burke, christmas, encore, hat plumbing); exact negatives for bare product lookups (heat pump, gas furnace, furnace, a c furnace, electric furnace, central heater, gas heating unit); keep the $12 cap and $30/d one more week. Spare budget (fu-091): heating can't take more until it books a lead; options left = LSA settings review or tell the AM spend runs ~$55-75/d.
+
+## 2026-11-02 (later) — APPLIED: 26 heating negatives (Edu: "Apply the negatives and keep the cap where it is")
+Script `cs_apply_1102_heating_negs.py` (guards passed, validated, applied, read back: 0 missing). Campaign negatives 73 → 99. Cap $12 + $30/d unchanged.
+- 19 PHRASE: what is, best, reviews, brands, error codes, window, mobile home, floor heating, empire, infinity, ao smith, prime time, bock, service champs, silver spur, burke, christmas, encore, hat plumbing.
+- 7 EXACT: heat pump, gas furnace, furnace, a c furnace, electric furnace, central heater, gas heating unit.
+- 14-day replay: blocks $56 of $56 visible clicked spend (all 0 conv) + the impression-only research/competitor terms. Note 'mobile home' also blocks 'mobile home furnace replacement near me' (1 impr) — remove it if C&S services mobile homes.
+Recheck with fu-091 on 11-09.
+
+## 2026-11-02 (later 2) — LSA insurance PASSED + LSA budget $23.26 → $55/day (APPLIED, Edu: "It passed, can you do the budget increase?")
+- Edu uploaded the valid COI (Drive 'Insurance' folder, GL 6D57934, 7/31/2026–7/31/2027) in the LSA dashboard. API: new INSURANCE artifact 2026-11-02 11:43 PASSED, customer insurance status PASSED. Review: `2026-11-02-lsa-review.md`.
+- `cs_lsa_budget_1102.py` (guards: insurance PASSED, budget $23.26 unshared), validated, applied, read back $55.00/day (~$385/week, ~6 charged leads/week at $65).
+- Budget approval: reallocation inside the $238/day approved total (PMax $110 + Cooling $25 paused 10-23). Account now ≈ Branded ~$27 + Heating $30 + LSA up to $55 ≈ $112/day max.
+- Watch (fu-116 ~11-05, then fu-091 11-09): impressions back to 60–90/day, leads, booked rate. If reach recovers but $55 is fully used with good booked rate, step up again.
+
+## 2026-11-02 (later 3) — Branded RSA 800192030388 descriptions rewritten (APPLIED, Edu: "Yes, go for it")
+- Found: 'Keep cool this summer!' is NOT in Branded; it's text asset 332814404255 in the two PMax asset groups (new PMax paused, Feb PMax ended, $0), so nothing live shows it. Swap it only if PMax relaunches.
+- Branded RSA 800192030388 had weak descriptions instead. `cs_branded_rsa_desc_1102.py` (validated, applied, read back; headlines untouched, 8):
+  - "1 Trusted Heating and AC Experts Mansfield, TX | C&S Air" → "Heating and AC repair, maintenance and installs in Mansfield and DFW. Call C&S Air."
+  - "Reliable HVAC services in Mansfield, TX. Expert AC repair and maintenance. Call us today!" → "Furnace acting up? Our techs fix all makes and models. Upfront pricing, no surprises."
+  - "Trust the experts at C&S Air Inc. for all your heating and cooling needs. 20+ years of exp" → "Family-owned and serving Mansfield for over 20 years. Licensed and insured HVAC team."
+  - Kept: "Call our HVAC experts to set an appointment".
+- Status after: ENABLED, REVIEW_IN_PROGRESS. RSA 816861066466 keeps serving meanwhile. Check approval tomorrow.
+
+## 2026-11-06 — fu-116: LSA after insurance PASSED + $55/day (read-only, nothing changed)
+
+- Insurance + license both **PASSED** (customer.local_services_settings, HVAC, geo 21176).
+- **Impressions/day roughly tripled but are not back:** 10-23..11-01 avg ~5/day (1-12) → 11-02..11-05 **28 / 19 / 25 / 26** (pre-collapse 60-90). Ranking recovers slowly after verification.
+- **$55/day unused:** spend $0 since 11-02. The 3 leads since then were all uncharged (11-02 BOOKED, 11-04 ACTIVE hvac_maintenance, 11-05 ACTIVE). Last charged lead 10-30 ($65, BOOKED).
+- Since 10-20: 11 LSA leads, 4 DECLINED by C&S (free), 3 BOOKED (2 charged), 4 ACTIVE.
+- No change needed. Read again with fu-091 on 11-09 (impressions trend, first charged leads at $55). If impressions stall under ~30/day, check LSA service area / job types / hours in the dashboard.
+
+## 2026-11-09 — fu-091: second heating week, LSA after insurance, and where the spare budget can go (read-only, nothing changed)
+
+`cs_recheck_1109.py` + CallRail (company 580688522, 10-27..11-09, 36 calls).
+
+- **Account spend 11-03..11-08: $341.63 = ~$57/day vs $238/day approved**, so ~$180/day is unspent (~$5.4k/month). More than the "~$100" in the follow-up title, because LSA is at $0.
+- **Heating 24383234148, week 2 (11-03..11-08, after the 26 negatives): $193.14 / 22 clicks / CPC $8.78 / 0 conversions / 0 ad calls.** Since launch (10-27..11-09): **$458.43 / 51 clicks / 0 leads** (Replacement $284.04 / 32 clicks, Repair $174.39 / 19 clicks). IS 15%, 62% lost to rank, 23% to budget; keywords QS 0–5. Clicked terms are still research: 'heat pump ratings by brand' $24.44 / 3 clicks, 'heating unit for house' $14.16 / 2, 'gas furnace attic' $8.09. Impression-only: troubleshooting questions, model numbers, error codes, boilers / geothermal / radiant.
+- **CallRail:** 1 Google Ads call in 14 days (11-06 08:54, 297s, answered, repeat caller, from the Branded call asset). 0 website calls with a gclid. The other 35: Business Profile 27, website pool 8.
+- **Branded:** 11-03..11-08 $148.49 / 14 clicks / CPC $10.61 / IS 94% / abs-top 81%; 1 tap + the 296s ad call. Target IS = top of page 95%, ceiling $15; 'c&s air' itself pays $12.77 a click. Search terms brand only. RSA 800192030388 (rewritten 11-02) APPROVED, strength AVERAGE.
+- **LSA:** insurance + license PASSED. Impressions/day 11-02..11-08: 28, 19, 25, 26, 17, 13, 6 = **19/day**, vs 7/day during the collapse (09-11..11-01) and 22/day before it (08-01..09-10, same campaign metric; the 60–90/day quoted in the 11-02 review does not match this metric). Reach is roughly back. **Spend $0 since 11-02:** 3 leads (11-02 BOOKED, 11-04 ACTIVE, 11-05 ACTIVE), none charged. Before the collapse LSA spent ~$26/day. Since 10-20: 11 leads, 4 DECLINED by C&S, 3 BOOKED, 4 ACTIVE.
+
+**Read:** nothing live in Google can take the spare money. Branded is at 94–98% IS. LSA has its reach back but uses $0–26/day of its $55. Heating has no lead after 51 clicks, and nonbranded Search has now failed four times on this account (March, July, Cooling, Heating).
+
+**Proposed (Edu's go, nothing applied):**
+1. **AM note, owed since 10-23:** spend runs ~$57/day vs $238 approved, why (PMax 0 calls, Cooling 0 leads, both paused), what works (LSA booked jobs, brand), and what we propose for the rest.
+2. **Heating:** pause the Replacement ad group (62% of the spend, research traffic). Keep Repair one more week at $15/day with extra negatives (ratings, by brand, why, how much, code, thermostat, boiler, geothermal, radiant, gas log, pilot light). Pause it too if still 0 leads on 11-16.
+3. **Spare budget → brand awareness on Meta** (TSD doctrine; ~86% of C&S calls come through the Business Profile, i.e. people who already know the name). Local benchmark: Cool Hand's ARL campaign in Mansfield–Arlington–S Fort Worth, Sep 9–Oct 8, CPM $5.04, 35,423 reached. At that CPM about **$75/day** holds ~35k adults at 3x/week (rough, another client's CPM). Needs an ad account, Page access, a real pixel (GTM still has the 123456789 placeholder), creative, and the client's OK through the AM (fu-018).
+4. **LSA:** keep $55/day. Ask the AM why C&S declines ~4 in 10 leads, and to mark the ACTIVE ones.
+5. **Optional:** Branded ceiling $15 → $10 as a test (saves ~$5-10/day, does not absorb anything).
+
+## 2026-11-09 (later) — "What else can bump results?" (Edu asked): lever hunt, read-only, nothing changed
+
+Scratch pulls (not kept): LSA leads + conversations since 08-01, GA4 310229049 landing pages 10-27..11-09, Keyword Planner (Mansfield + Arlington + Fort Worth + Burleson), CallRail 10-27..11-09.
+
+- **LSA lead handling is the biggest lever.** Since 08-01: 49 leads = **25 DECLINED (51%)**, 18 BOOKED, 6 ACTIVE. **11 of the declined were charged** (~$715 at $65) and none shows a credit (credit_state UNSPECIFIED). Many declined calls are long: 195s, 316s, 323s, 616s, 522s, 238s, 287s, 880s. By month: Aug 9 declined / 6 booked, Sep 12 / 6, Oct 4 / 5. Why they decline is unknown: recordings 09-15..11-09 pulled + transcribed locally (call-wins), read next.
+- **Someone else's Facebook campaign is sending junk traffic.** GA4: `facebook / cpc`, campaign "promo", **790 sessions in 14 days** (761 users, all to the homepage), ~1 second average engagement. CallRail website pool in the same window: 8 calls, **0 from Facebook**, 0 from Google Ads (5 direct, 2 organic, 1 referral; plus 1 GBP-tagged). Not TSD's. Ask the AM who runs it and what it costs.
+- **Paid clicks do reach the site.** Heating campaign: 48 GA4 sessions for 51 clicks. Visitors stay 31s on /heating-replacement (27 sessions) and 12s on /heating-repair (17). On those landings: 6 scroll events, 0 phone clicks, 0 forms. (candsair.com serves a "Confirm you are human" 403 page to my headless browser from Brazil, so I could not inspect the mobile page; GA4 shows US visitors get through. PageSpeed API quota was exhausted, speed not measured.)
+- **Search can't be fixed with bids.** Keyword Planner top-of-page range in the 4 cities: 'ac repair near me' $31.78–100.63, 'hvac repair near me' $37.34–76.85, 'hvac company near me' $26.40–72.76, vs our $12 cap. Heating terms are small: furnace repair 480/month, furnace repair near me 320, heating repair 170, heater repair near me 170 (no bid data). Top of page would mean $30+ clicks and several hundred dollars a lead vs $65 on LSA.
+- **Phones are answered:** CallRail 34 of 36 answered; 24 first-time callers in 14 days, 20 through the Business Profile, 4 through the website.
+- **No current offer:** the site still shows the Lennox $1,600 rebate that ended 01/31/2026 (EOY offers sweep). Holiday-offer approvals are due 11-13 (fu-131).
+
+## 2026-11-09 (later 2) — LSA declined leads: what the calls actually are (call-wins, 09-15..11-09, read-only)
+
+`pull_lsa.py` + local transcription, 23 leads / 21 recordings. Detail in `lsa-call-wins-log.md` (section "Added 2026-11-09"). **This corrects the entry above:** the declined leads are not lost jobs.
+
+- **"Declined" = the office marking calls that aren't a new job.** Of the 9 declined since 09-15: 2 job seekers, 1 C&S employee, 1 existing customer solved by phone, 1 reschedule, 2 calls from a contractor about warranty work on a past commercial job, 1 commercial prospect chasing a quote, 1 no-connection. No real residential job was turned away.
+- **LSA brings almost no new customers.** In 8 weeks the new-customer leads are 10-05 (Joshua, price-shopping), 10-21 (message, install), 10-22 (Fort Worth, came by referral) and the 09-17 commercial prospect. About 12 of 23 leads are existing customers using the ad as the phone number (mostly free). Google's "Booked" count overstates ad-driven jobs: the charged "Booked" lead of 10-30 is a filter-size question.
+- **Charged leads to dispute:** 09-29 (C&S employee, 287s) and 10-30 (filter-size question). The 9 declined + charged leads of 08-01..09-09 were not pulled.
+- **Callbacks owed to commercial clients (for the AM, not an ads issue):** 09-17 proposal never sent; Midland warranty job, called 10-23 and again 10-29; hotel owner 11-05 with a room offline ~2 months.
+- **Things C&S sells that an offer could use** (heard on the calls): $89 service-call trip charge, free replacement estimates, a $165/year membership with two visits.
+
+**Read:** paid Search and LSA mostly catch people who already know C&S. New-customer volume from paid is close to zero, so the lever is new demand (an offer + awareness), not more bidding.
+
+## 2026-11-09 (later 3) — APPLIED: Heating Replacement paused, Repair alone at $15/day + 26 negatives; AM note drafted in Agency Titan
+
+Edu: "for Heating Search, do what you think is better" and "Write the task for Angela on AT but keep on draft".
+
+**Pre-flight (10-27..11-09, read-only):**
+- Replacement $284.04 / 32 clicks / 0 leads; 'new heating system' alone $172.43 / 20 clicks, QS 0.
+- Repair $174.39 / 19 clicks / 0 leads: 'heater service' $108.50 / 12 clicks and 'heating service' $37.51 / 4 clicks (QS 5). The pure repair keywords (furnace repair, heating repair, heater repair, the near-me exacts) got 0–28 impressions and 0 clicks. Google shows only $20.77 / 2 of Repair's 19 clicks by search term.
+- Repair by hour: 27% of spend 20:00–05:59 (5 clicks, mostly 20–23h), so no ad schedule added. Budget not shared.
+
+**APPLIED ~11:25 CT (`cs_heating_trim_1109.py`, one atomic mutate, validate-only first, read-back OK):**
+- Ad group Heating Replacement 198402775381 → PAUSED.
+- Budget $30 → $15/day. $12 CPC cap unchanged. Heating Repair 196718543930 keeps running alone.
+- 26 campaign PHRASE negatives (99 → 125): code, codes, pilot light, blinking · boiler, boilers, geothermal, radiant, gas log, gas logs, navien, dometic, heat and glo · ratings, rating, brand, how much, largest, biggest · service champions, varsity zone, bacon hvac, matco, reliant, southern air, willard.
+- Left out on purpose: 'why' and 'thermostat' (both in the morning's proposal). They block "why is my heater not working" and "thermostat on but no heat", which are people with a broken heater, the one thing Repair is there to catch.
+
+**Why one more week for Repair:** 19 clicks is too few to call (at a 10% call rate, 0 of 19 happens about 13% of the time). About 30 clicks by 11-16 makes it a fair read. **Decision 11-16 (fu-141): still 0 leads → pause the campaign.**
+
+**Budget wording corrected:** the "$238/day approved" used in this log since 10-09 is the sum of the daily caps before the 10-23 pauses, not a figure the client approved. Agency Titan's client record shows an ads budget of **$5,500/month** (~$181/day). Spend now is ~$57/day ≈ $1,700/month. The AM note uses the $5,500/month figure.
+
+**Agency Titan:** Internal Request DRAFT `9d3573c2` "Google Ads update: low spend, heating ads and what we need from the client" (https://app.agencytitan.com/tasks/instance/9d3573c2-1d16-4e70-a993-f73af2fd7112). Client C&S Air, department Account Management/Customer Success, Intake = Edu, Execution = Angela, Review & Close = Edu. Left in Intake: Edu reviews and clicks Submit Request (fu-139). Contents: spend vs budget, today's heating change, what the LSA calls show, then the asks: (1) a heating offer by 11-13, (2) who runs the Facebook 'promo' campaign, (3) OK for ~$75/day Meta awareness + Page / ad account access, (4) 2 LSA leads to dispute (09-29 08:42, 10-30 13:16) + mark Active leads, (5) 3 commercial callbacks, plus a Business Profile review push.
+

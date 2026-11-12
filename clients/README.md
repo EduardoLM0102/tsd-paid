@@ -23,6 +23,7 @@ clients/
 - `zen-air/` — Zen Air Heating and Cooling (Google Customer ID `4360840956`; LSA `3740502923`)
 - `kings-window/` — King's Window Services, glass/window repair (Google Customer ID `6769493219`, PPC+LSA combined in one account). **Not yet in `contas.yaml`** — found via `customer_client` under the MCC.
 - `nicks-heating/` — Nick's Heating and Air Conditioning, Hammond LA (Google Customer ID `1854100356`, PPC+LSA in one account). Registered 2026-10-08 after a book audit found it active but never checked. Only a `google-ads-log.md` so far.
+- `amazing-morrow/` — Amazing Morrow (Morrow Mechanical), Spring TX, HVAC + plumbing (Meta ad account `1308410608018843`, Page `163803990312902`; Google Ads/LSA not yet in `contas.yaml`). Registered 2026-11-09 with the brand awareness campaign draft. Only a `meta-ads-log.md` so far.
 
 **Prospects / not in the book:**
 - `lilypad-septic/` — Lilypad Septic Company (Salina & Hutchinson, KS; owner Cole Leister). **No account IDs yet** — not in `contas.yaml`, no Google/LSA/Meta accounts, tracking is a blank slate. Folder holds the Q4 2026 quarterly media plan (client PDF + md source + build script) and `internal-notes.md`. See its `README.md`. **The client PDF deliberately excludes the operational guidelines — read `internal-notes.md` for the pre-launch gates.** When they become real: add to `contas.yaml`, move up to the Clients list, start the two logs.
