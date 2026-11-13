@@ -893,3 +893,14 @@ Meta lead ad set 120247339585910711 after the 10-20 home-only change: 10-13..10-
 
 AT tasks completed: Google https://app.agencytitan.com/tasks/instance/ad08262c-5da0-426a-ac74-2f52472b706c (KPI `f16cc8c4`), LSA https://app.agencytitan.com/tasks/instance/913c1bce-b039-4bd8-9183-9ceefab6a9b5 (KPI `f22b6c10`).
 
+
+## 2026-11-12 — Client Strategy Review Oct/Nov (AT c29ad0c8) Paid row written (read-only on the accounts)
+
+Cycle 10-10..11-08. KPI row **53ecca81-aee0-4316-b6de-36f2d2196219** created on the client (Client Performance KPIs) + `additional_paid_ads_notes` on the task. Stage Performance Reporting NOT completed. Full detail: `clients/zen-air/strategy-review-octnov-2026.md`.
+
+- Ad spend $7,481.80 = Meta $6,501.59 (lead CBO $4,517.71, awareness $1,957.64, Now Hiring $26.24) + Google Search $855.41 (Branded $181.96, NB $673.45 for its 10-23..10-29 test) + LSA $124.80 (2 charged leads).
+- Qualified 207 = Meta 195 (of 328 unique HighLevel contacts, city inside the targeted area incl. Atlanta 107) + LSA 6 (2 new booked, 4 existing per the 11-12 rule) + Branded 6 (2 Calls from ads 10-16 + 4 Peach AI Booked Call). CPL $36.14. Rec budget $7,000/mo hold; +$50/d Meta if bookings confirm.
+- PPC in cycle: Branded $181.96 / 30 clk / 181 impr / IS 93% / conv 7 (2 calls 60s+, 5 site taps) / all_conv 11 (+4 Peach AI). NB $673.45 / 55 clk / 1 tap / 0 calls, IS 20%, rank-lost 56%. Terms: Branded all brand; NB research/off-service (fireplace, furnace cost, mini split...).
+- LSA in cycle: campaign $124.80, 238 impr, 36 clk. 10 phone leads, all transcribed locally (`_pessoal/call-wins/zen-air/`): see `lsa-call-wins-log.md`. The 10-28 wrong-number call (New York caller) was CHARGED $62.40 → rate bad ourselves (Command Center fu). 10-19 and 10-22 real bookings sit as DECLINED in LSA (office marks), nothing to do.
+- HighLevel (via AT integration, location xYzDJzBnMX6dvv4gf8Xr): 340 contacts in cycle (328 Facebook, 2 City Pages Form, 1 Contact Us, 1 Club Zen, 8 no source). All 332 opportunities `open` in the first pipeline stage → GHL pipeline is not worked, outcomes live in ServiceTitan. Website forms are not attributable to paid (Ads form tracking dead since 09-15).
+- `call_view` can't take `segments.date` (PROHIBITED_SEGMENT); pull all rows and filter `start_call_date_time` in Python. Script: `clients/zen-air/strategy_review_pull_1112.py`.

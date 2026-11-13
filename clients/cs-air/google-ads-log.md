@@ -766,3 +766,10 @@ Edu: "for Heating Search, do what you think is better" and "Write the task for A
 
 **Agency Titan:** Internal Request DRAFT `9d3573c2` "Google Ads update: low spend, heating ads and what we need from the client" (https://app.agencytitan.com/tasks/instance/9d3573c2-1d16-4e70-a993-f73af2fd7112). Client C&S Air, department Account Management/Customer Success, Intake = Edu, Execution = Angela, Review & Close = Edu. Left in Intake: Edu reviews and clicks Submit Request (fu-139). Contents: spend vs budget, today's heating change, what the LSA calls show, then the asks: (1) a heating offer by 11-13, (2) who runs the Facebook 'promo' campaign, (3) OK for ~$75/day Meta awareness + Page / ad account access, (4) 2 LSA leads to dispute (09-29 08:42, 10-30 13:16) + mark Active leads, (5) 3 commercial callbacks, plus a Business Profile review push.
 
+
+## 2026-11-13 — Client Strategy Review "Oct Review" (AT 03fff3a7, Gui's copy): Paid row WRITTEN with data thru 11-12
+
+Cycle 10-17..11-15, call Mon 11-17 09:45 ET. Detail: `strategy-review-oct-2026.md`.
+- KPI row **4387c0fc-8e6f-4079-92e8-fc8bf110511d** linked to the client: ad spend 2062.53 (Branded $570.40, Heating $520.01, PMax $684.55, Cooling $114.41, LSA $173.16), **16 qualified = Google 6 (5 Branded ad calls on 817-442-6949, all transcribed: 1 new + 4 existing, + 1 form 11-03) + LSA 10 of 12 (2 new + 8 existing)**, CPL 128.91 (Branded $95, LSA $17, PMax/Cooling/Heating $1,319 for 0), rec 5500 (keep approved). Two weak existing ones (10-20 solved by phone, 10-30 filter question) kept per the 11-12 rule; without them 14 / $147.32.
+- Notes written to `additional_paid_ads_notes`. Stage NOT submitted. Twin fd5eb77f untouched. Top-up for 11-13..11-15 = fu-166 (11-16).
+- 11-12 AM note 9d3573c2 was submitted by Edu with only 2 asks (heating offer, commercial callbacks); Meta and Facebook 'promo' asks dropped, so the review doesn't push them.

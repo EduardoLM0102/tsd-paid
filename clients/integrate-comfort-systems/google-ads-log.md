@@ -372,3 +372,11 @@ Impact: CallRail call conversions (`First Time Phone Call` / `Repeat Phone Call`
 until it is re-enabled. **Fix: reconnect in CallRail with access@topservdigital.com via MCC 4155514468, same settings.**
 
 ICS was receiving a few: 30d First Time 2 + Repeat 2, last 09-29. Matters for the 10-28 checkpoint (PMax cost per call).
+
+## 2026-11-13 — Heating LP (AT 82ecaff6) reviewed for Edu's Review & Close
+
+Sha completed Execution; task sits in Review & Close on Edu (AT API down today, close it in the UI). Re-checked live 11-13 ~15:00 BRT:
+- Page vs brief: H1 exact, brand line "Family-owned. Northern NJ since 1990.", (866) 658-2987 x23 (tel +18666582987), main line 866-749-6331 only in the site-wide schema, GHL form 9yoyys68IRpTtwyjDdjr in the hero card + 2 lower CTAs, noindex, viewport meta OK, GTM-N4QW8BF. Desktop render (1366px) clean: hero, 4.9/363 reviews strip, trust bar, reviews, "Signs you need heating repair". www 301s to non-www.
+- Hardcoded gtag `AW-1064128677` on the page = base config only (no send_to / conversion event), so no double count from it; the Ads "Lead" conversion fires from GTM tag 93 (tested 11-12). Question closed.
+- Mobile: headless phone render blocked by the site's "Confirm you are human" check (not bypassed). Edu checks on his phone.
+- Campaign 24047025253: ENABLED, LIMITED (BIDDING_STRATEGY_LEARNING, normal after the 11-12 rebuild). New RSA 831383124121 APPROVED → the new page. 11-12: $29.02 / 106 impr / 6 clicks / 1 conv (= Edu's 09:40 BRT test lead; exclude at the 11-19 read, delete the GHL test contact). 11-13 so far: 22 impr / $0. Search terms clean (no-heat/furnace-not-working intent) + competitor names at 0 clicks (iceman, ixim, o neill, smith heating, your ultimate comfort): add as negs at the 11-19 read if they take clicks.

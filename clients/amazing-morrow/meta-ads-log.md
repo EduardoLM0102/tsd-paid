@@ -10,6 +10,92 @@ ad account's promoted pages nor under the business's pages, so `ads_get_ad_accou
 
 ---
 
+## 2026-11-12 — 10 ads STAGED in the draft. Only blocker left: no payment method on the ad account
+
+**Context:** Marlo (#onboarding-amazing-morrow 11:49 BRT): Justin approved the creatives but wants the new logo with plumbing on
+ALL of them; at 13:49 she asked everyone to close onboarding by Thursday (4-week mark). Edu replied: campaign launched before EOD.
+Alex's portal runs its first weekly check Mon 11-16 looking for `AM | BRAND` campaigns.
+
+**Creative audit (Drive `FOR APPROVAL` `1901ha0BvUXBKZPOss4iUpelkm_CXnxIr`, Héctor):** 12 statics = 6 angles × 2 layouts
+(`Var 2` = ads 1–6, bold-serif layout; `Var 1` = ads 7–12, rounded-card layout), each in 1x1 / 4x5 / 9x16. Johnny re-exported
+ads 1–5 and 7–11 on 11-10 21:57 UTC (after Marlo posted the plumbing logo 19:28 UTC); every one of those 10 verified by eye
+to carry "COOLING, HEATING & PLUMBING". **ad6 and ad12 ("Say there, fella! Houston comfort is one call away", van photo)
+only exist in 11-09 versions, have NO logo block, and the van wrap reads "Cooling & Heating"** → held back, Héctor to add the
+plumbing logo. Stale 11-09 files for ads 1, 2, 5, 7, 8 are still in the folders (cannot trash, shared drive read-only for the
+Drive token): never use a `_2026-11-09_` file.
+
+**Build (Concrete template, 4x5 only, no PAC so copy keeps 2+2 variants):** 10 ads under ad set `120251240405070167`, each
+`creative_id` with `primary_texts` ×2 + `headlines` ×2, link `https://www.amazingmorrow.com/`, CTA Learn More, every
+Advantage+ creative feature OPT_OUT, Page `163803990312902`, Instagram `17841468361617084` (Meta attached it by default,
+so the Page does have an IG linked; asset 407921932404735). Images via `ads_create_upload_url` → curl → `ads_finalize_upload`
+(the Drive `uc?export=download` URL is refused by Meta's fetcher; curl -L from the Mac works).
+
+| Ad | ID | Creative | Image hash |
+|---|---|---|---|
+| `AM \| ad1 we fix first \| 4x5 \| V1` | `120251319807400167` | `1129298579645052` | 43dfd1ad… |
+| `AM \| ad7 we fix first alt \| 4x5 \| V1` | `120251319807430167` | `1442578380758109` | da9fc47a… |
+| `AM \| ad2 still locally owned \| 4x5 \| V1` | `120251319807530167` | `2919239175119733` | 4082f70a… |
+| `AM \| ad8 still locally owned alt \| 4x5 \| V1` | `120251319807680167` | `1146695227759017` | f89a065e… |
+| `AM \| ad3 now ammmazing morrow \| 4x5 \| V1` | `120251319807770167` | `1476304934409024` | 9ce72951… |
+| `AM \| ad9 now ammmazing morrow alt \| 4x5 \| V1` | `120251319807980167` | `1133188329424268` | 819721a2… |
+| `AM \| ad4 now plumbing \| 4x5 \| V1` | `120251319808230167` | `1611007866915609` | 08ce4f8c… |
+| `AM \| ad10 now plumbing alt \| 4x5 \| V1` | `120251319808370167` | `1486930819979279` | 54bef942… |
+| `AM \| ad5 top 5 lennox \| 4x5 \| V1` | `120251319808440167` | `1028824943570880` | ef94e3fa… |
+| `AM \| ad11 top 5 lennox alt \| 4x5 \| V1` | `120251319808470167` | `1758102438600487` | 7897946c… |
+
+(Creatives `2401942893966504` / `4838545756390953` = first versions of ad1/ad7 without the IG id, unused.)
+
+**Copy V1 (ogilvy-copy skill; facts from amazingmorrow.com, the approved statics and the Wizard of Ads style guide
+"Say there fella!", "technicians first, sales second", "no replacements without proper diagnosis"; no phone, no offer, no duct cleaning):**
+- We fix first (ad1/ad7): "Most companies push a new system. Mr. M fixes what can be fixed. / Ammmazing Morrow has sent
+  technicians first and salespeople second since 2000. No replacement without a proper diagnosis, and after-hours service at
+  no extra charge." + "Say there, fella! Before anyone sells you a new system, let us look at the old one. / 🔧 We fix first.
+  Replacement only when it's really needed / 🧾 Upfront price, fixed right the first time / 🌙 After-hours service at no
+  extra charge / Ammmazing Morrow. Honest cooling, heating and plumbing in Spring and north Houston since 2000."
+  Headlines: "We fix first. Since 2000." / "Technicians first. Sales second."
+- Still locally owned (ad2/ad8): "No investment group calling the shots. Just your neighbors keeping Houston comfortable
+  since 2000. / Ammmazing Morrow is still locally and veteran owned. Same family, same crew in blue that has been on your
+  street for over two decades." + "Houston born. Houston run. / 🏠 Locally and veteran owned since 2000 / 👕 The same
+  family and the same crew in blue / ⭐ BBB A+ rated, Winner of Distinction for 10+ years / Ammmazing Morrow. Cooling,
+  heating and plumbing in Spring and north Houston." Headlines: "Still locally owned. Since 2000." / "Your neighbors, not a corporation."
+- Now Ammmazing Morrow (ad3/ad9): "Morrow Mechanical is now Ammmazing Morrow. Same family. Same promise. / New name on the
+  vans, same crew that has kept Spring and north Houston comfortable since 2000. Honest work, upfront prices, fixed right
+  the first time." + "Say there, fella! You've seen the orange vans for years. Now they say Ammmazing Morrow. / 🚐 Same
+  family, same technicians / 🤝 Same promise: honest work, fixed right the first time / 🚿 Plumbing now too, alongside
+  cooling and heating / Ammmazing Morrow, formerly Morrow Mechanical. Spring and north Houston since 2000."
+  Headlines: "Morrow Mechanical is now Ammmazing Morrow" / "New name. Same family. Same promise."
+- Now plumbing (ad4/ad10): "Cooling. Heating. Now plumbing. / The team Houston has trusted for comfort since 2000 now takes
+  care of your pipes, drains and water heaters too. Same technicians-first approach, same upfront pricing." + "Say there,
+  fella! Mr. M does plumbing now. / ❄️ Cooling / 🔥 Heating / 🚿 Now pipes, drains and water heaters / One crew in blue for
+  the whole house. Ammmazing Morrow, Spring and north Houston since 2000." Headlines: "Now plumbing, too." / "Cooling. Heating. Now plumbing."
+- Top 5% Lennox (ad5/ad11): "Top 5% of Lennox dealers in North America. That's the Lennox Centurion Award, and Ammmazing
+  Morrow earned it. / Add a BBB A+ rating, Winner of Distinction for 10+ years and NATE-certified technicians, and you know
+  who to call for cooling, heating and plumbing in Spring." + "Say there, fella! Awards don't fix air conditioners.
+  Technicians do. Ours just happen to be recognized for it. / 🏆 Lennox Centurion Award, top 5% of dealers in North America /
+  🛡️ BBB Winner of Distinction, 10+ years / 🎓 NATE-certified technicians / Ammmazing Morrow. Cooling, heating and plumbing
+  in Spring and north Houston since 2000." Headlines: "Top 5% of Lennox dealers in North America" / "Lennox Centurion Award winner"
+
+**Draft state after the build:** campaign + ad set + 10 ads, every object `VALIDATED`; the ONLY `active_error` on every ad is
+`1359188 No Payment Method` (account-level). Nothing else blocks `ads_activate_entity` on campaign `120251240402700167`
+(publish_as_active). Not published.
+
+**Open**
+1. **Payment method** on `1308410608018843`: client adds it (through Marlo). Nobody had asked for it in Slack as of 11-12 18:45;
+   Edu's ask to Marlo went out 11-12 evening with the billing link
+   `https://adsmanager.facebook.com/adsmanager/billing_hub/accounts/details/?business_id=1664180080536776&asset_id=1308410608018843&payment_account_id=1308410608018843`
+   (session_id stripped; it was Edu's own session). **Justin or someone on his side has to add the card: Edu cannot add it
+   himself even with the card number, because his IP's country doesn't match the account's currency and Meta blocks the
+   payment method.** Marlo was also told ad6/ad12 are held for the plumbing logo and that we launch with the other 10.
+2. ad6/ad12 plumbing logo (Héctor) → then upload 4x5 + create 2 more ads (`AM | ad6 say there fella | 4x5 | V1`, `AM | ad12 … alt`).
+3. Alex's measured radius still not delivered (3.33 mi placeholder stays). Concrete lesson: check Ads Manager audience size vs ~59,400 at publish.
+4. Frequency cap 4/7d kept (same as Concrete / Ryan's brief); locks at start.
+5. Self-AI disclosure left unset on all creatives (none of the statics are AI-generated; Edu's call).
+6. Sara (social) still needs: FB+IG connected confirmation and a social CallRail tracking number (Johnny owns CallRail; Concrete got (662) 960-6539).
+7. AT onboarding `3f6ca7c5…` stage 5 "Paid Ads Setup" 5a–5d and 7b "Paid Ads Strategy Audit Deliverable" are not started; Alex's portal checklist also has Edu items to tick.
+8. First portal weekly read Mon 11-16 (campaign must be live with the `AM | BRAND` prefix, which it has).
+
+---
+
 ## 2026-11-09 — Brand campaign built as a DRAFT (not published). Ads pending Héctor's statics
 
 **Source of truth:** Ryan's "Amazing Morrow Campaign Build Brief" v2, revised Oct 29 (Slack DM `D0BB5KT3NLU`

@@ -180,3 +180,46 @@ Transcribed locally with faster-whisper (small.en); names and towns may carry tr
 | ⚠️ No contact | 3 | 6s, 10s, 1s |
 
 **Flag for Edu:** $296 of PPC for one new conversation, and that one was handled poorly (the "start a file" script annoyed the caller). Google's 5 counted conversions were 1 real lead + 1 wrong-company call + 3 existing customers, so the Conversions column overstates ~5x here. Three existing customers reached the office through paid brand clicks ($3–18 each): a cheap Branded campaign would carry those for a fraction. Wrong-company calls are down to 2 of 10 recorded (was 7 of 15).
+
+---
+
+## 2026-10-16 → 2026-11-12 reconciliation (fu-082, the four weeks promised in the budget proposal; added 2026-11-13)
+
+Scope: every call that came in through the Google ads in the window = Google's own call-asset list (`call_view`, 25 calls) plus CallRail calls
+with a gclid or on the ad call-extension number (`source` Google Ads / medium cpc) that Google did not log (redials of the number, website
+pool). 38 touches in all. Transcribed locally with faster-whisper (small.en). Counted under the 2026-11-12 rule: existing customers who reached
+the office through an ad COUNT as leads, labelled as existing; only wrong company / wrong number / job seekers / product shoppers / hang-ups
+are out. Two redials by the same caller within minutes (10-28 13:50, 11-10 08:07) fold into one contact.
+
+**⚠ CallRail attribution drifted:** the 10-19 08:22 (240s), 10-27 14:41, 10-28 13:50 and 13:51 calls now carry `source = Google My Business`
+in CallRail even though Google's `call_view` lists them as ad-asset calls (they were logged above as "All Season Call Extension (Google Ads)" on
+10-23 and 11-04). Always match CallRail against `call_view` by timestamp before counting ad calls here; CallRail's source alone undercounts.
+
+Calls not in the passes above (found 11-13):
+- **10-20 · 17:06 · 133s · Google Ads (ext number, not in call_view) · Hicksville** — Wife of a customer "touching base with Patrick"; the
+  husband and Patrick have been playing phone tag for weeks over an open matter, she wants it cleared up. ✅ Existing customer, open thread.
+- **10-30 · 10:33 · 5s + 10:34 · 45s · Google Ads · Garden City** — First dial no contact; second: customer confirming today's 4-5 pm visit
+  about air conditioning (Dennis Costello Jr.). ✅ Existing customer confirming a scheduled visit.
+- **10-30 · 16:07 · 10s · Google Ads · Livingston Manor** — Silent. ⚠️ No contact.
+- **11-03 · 16:00 · 85s · Google Ads · Huntington (Shelly R.)** — Confirming tomorrow's appointment window (11-1), door will be unlocked. ✅
+  Existing customer (same person as the 11-10 furnace call, counted once).
+- **11-12 · 08:45 · 26s · Google Ads · New York** — Asked for "Islando", wrong number. ❌ Not a lead.
+- **11-12 · 13:46 · 0s · Google Ads · Hackensack** — No recording. ⚠️ No contact.
+
+### Tally 10-16 → 11-12 (38 touches, 27 connected contacts)
+| Outcome | Count | Detail |
+|---|---|---|
+| ⏳/✅ Real request, NEW | 3 | Woodbury commercial RTU replacement (10-22, site visit same day); Floral Park install re-quote (10-28, past prospect); mini split inquiry, Valerie (11-05, callback owed) |
+| ✅ Real request, EXISTING customer | 10 | no heat 10-19; Patrick follow-up 10-20; filter ETA 10-26; appointment ETA 10-27; Mineola extension HVAC job 10-29; visit confirmation 10-30; maintenance reschedule 11-02; Shelly appointment + furnace won't shut off 11-03/11-10; reschedule 11-10; tune-up ETA 11-10 |
+| ❌ Not a lead | 14 | wrong company 10 (LI Green Team, Cool Solutions, Flynn Air, landlord's contractor, plumbing shop, heating oil, WCESP, "Rudy", National Grid, Mitsubishi app support), wrong number 3 (Porac, Jocelyn, Islando), product shopper 1 (Mitsubishi unit buyer) |
+| ⚠️ No contact | 9 | 0-10s dials on 10-19, 10-30 x3, 11-04 x2, 11-05, 11-06, 11-12 |
+| redial, folded | 2 | 10-28 13:50 (Floral Park), 11-10 08:07 (Shelly) |
+
+PPC spend in the window $1,208.10 → **$93 per real request (13)**; Oct 1-15 on the same rule: $2,674.61 / 4 = $669 (20 calls, 19 connected, 4
+real: Tschetter, Kempen, Souffrant, Lee). Real-request share of connected calls 21% → 48%. Google's own count for the window: 21 conversions
+(11 call-asset calls 60s+, 7 taps, 3 CallRail 'Phone Call' uploads); not used in the client report.
+
+**Flag for Edu:** 3 brand-new customers in four weeks is the honest number; the other 10 are existing customers the ad caught. Of the 14
+non-leads, 10 were looking for another company, most of them after searching that company's name (Google counts several of them as conversions because they talk for 60s+). The 11-05 Valerie
+mini split callback is still unverified. Nothing here is a tracking gap: the drop in CallRail-vs-Google matching is a CallRail source label, not
+a lost call.

@@ -78,3 +78,5 @@ A full client log now exists for this account for the first time: `clients/kings
 **2026-11-12:** fu-058 (Oct 1-15 capacity/pickup note) REMOVED by Edu as stale; new fu-160 (due 11-12, later today): transcribe Oct 16..today ad calls and check if the ~36% never-reached-a-person gap remains.
 
 **2026-11-12:** Oct/Nov strategy review written (AT row d233f769, rec $5,100 = +$500 NB Search). Pickup (fu-160): 26% of ad calls Oct 16-Nov 11 never reached a person vs 57% Oct 1-15; after hours still ~all voicemail.
+
+**2026-11-13:** Lee (AT cf56717b) asked for shutter negatives → APPLIED PHRASE `shutter`/`shutters` on NB + Branded (safe: $0.09 / 0 conv / no keyword conflicts). Lee also asked (AT 25df0be2) for Q3 actuals + Q4/Q1 projections → 1-page PDF `clients/kings-window/Kings-Window-Ad-Spend-Breakdown_2026-11-13.pdf` at $5,100/mo (Q3 $17,708; Q4 ~$14,800; Q1 ~$15,300), Growth Engine excluded; no approved budget on file. AT API down 11-13 afternoon, Edu pasted both answers by hand and sent them on to Angela the same day.

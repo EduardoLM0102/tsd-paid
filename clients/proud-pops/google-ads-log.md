@@ -1881,3 +1881,17 @@ validating the tag on Jul 23. Real site-wide leads ≈ 27.
 
 ## 2026-11-12 — fu-054 DECIDED: budget stays as is (Edu)
 No Branded $50→$75 / HVAC swap, no YouTube fill. November lands ~$20.5-21k vs the $25k cap (11-11 check: MTD $5,715.68 through 11-10, ~$805/d weekdays, ~$479 weekends + ~$37/d LSA). Caps stay Branded $50 / Electrical $455 / HVAC $230 / Plumbing $145 = $880/d. Next read fu-137 11-16. AM update on AT d2b5e325: November lands ~ $21k, under the cap.
+
+## 2026-11-13 — fu-157 AM asks rechecked (read-only) and trimmed for Angela
+
+- **CallRail '210 - CALL POP' (210-225-5767) recording still OFF:** 161 calls on it 10-16..11-13 (20 on 11-11/12), none recorded. It is now the main ad call number, so most ad calls can't be reviewed. Client decision.
+- **LSA message leads, main profile 1051843378:** 6 charged real requests 11-09..11-12 with NO business reply in the LSA inbox (ids 350858712 bathtub drain same-day, 351032898 PTAC, 351218835 PRV, 350855363 home estimate, 351634392 adding ducts, 351334991 garage water leak). 11-06 P-trap (350146313) was handled by phone and booked, so phone follow-up may exist outside the inbox. 351579426 = review-seller spam (not charged). Only 11-12 leads got inbox replies (20 min).
+- **Weekend coverage facts:** LSA electrician 7261668241 schedule = 7 days 9-18 (incl. Sunday, where the $500 fee ends calls); main + HVAC 6621969129 = Mon-Fri 7-19, Sat 8-15, no Sunday. Search campaigns have no ad schedule. Search 10-16..11-12: Sat+Sun $1,409.05 / 5 counted conv vs Mon-Fri $7,806.94 / 64.
+- **Test calls:** 47 calls from a caller ending 8301 (4 on 10-20, 43 on 10-30), CallRail source Google Ads, untagged. Ours to tag in the CallRail UI.
+- **LSA ratings moved to fu-161 (ours):** rate bad 346547072 (electrician 10-18 greeting-only, charged) + 351579426 (spam); un-book 348716900 (10-29 price shopper); mark booked 350091694, 350146313, 350583822. 348872571 (10-29 outside area) already DECLINED + charged, no credit → closed. No disputes.
+- None of the three LSA profiles has migrated to pay-per-lead PMax yet (11-13).
+- AM note = AT Internal Request draft (Cowork), Edu submits; aim before the 11-16 review call.
+
+## 2026-11-13 — The Original 97 Deal (AT bd8c7bb4): ads plan drafted
+
+Edu: run both the $9,797 price and "as low as $135/mo" (+ $165 Comfort Plan first). Client-facing plan written into the Completion Notes field (request_completion_notes) on AT bd8c7bb4 via API, read back OK; Execution stage left open for Edu. Internal notes + Slack reply to Johnny in `original-97-deal-ads-plan.md`. Command Center fu-164.

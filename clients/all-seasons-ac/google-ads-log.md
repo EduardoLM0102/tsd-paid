@@ -904,3 +904,24 @@ Ran the conversion-action trust check (`segments.conversion_action_name` from `c
 | [TSD] Lead Form | Form submission | 3.00 | 7.3% |
 
 No `page_view` or other soft-signal junk in this window (contrast with the PMax `book_now_link_click` gut-check from earlier in the log — that pollution isn't showing up in the account-level number right now, but wasn't re-checked at the GA4 level this session).
+
+## 2026-11-13 — fu-082 DONE (pending Edu's review): "Google's first four weeks on the new setup" report for the client
+
+The 10-16 budget proposal promised the client Google's results for the first four weeks after the tightening, on November 13. Built today, not sent.
+
+- **Files:** `All-Seasons-AC-Google-Results_2026-10-16_11-12.html` + `.pdf` (2 pages, plain Times, same credit line as the proposal: Gui prepared / Eduardo approved). Rendered with Playwright Chromium.
+- **Window 10-16..11-12 (28 days), read-only pull `scratchpad/asac/asac_fu082_pull.py`:** PPC $1,208.10 ($43/d vs $46 cap; MiniSplit $625.58, LeadGen $518.29, Nonbranded $64.23 before its 10-23 pause), 3,364 impr, 118 clicks, CPC $10.24. Google counted 21 conv (call asset 60s+ 11, taps 7, CallRail 'Phone Call' uploads 3; all_conversions 25). `call_view` 25 ad-asset calls, 12 of 60s+. Search IS ~10% on both live campaigns; budget-lost 71% (LeadGen) / 46% (MiniSplit), rank-lost 23% / 44%.
+- **Leads, client-report definition (11-12 rule, existing customers count):** 38 call touches through the ads (call_view ∪ CallRail gclid/cpc), 27 connected contacts, **13 real requests = 3 new (Woodbury RTU, Floral Park re-quote, Valerie mini split) + 10 existing**, 14 not a lead, 9 no contact. **$93 per real request.** Same rule on Oct 1-15: 20 calls / 4 real / $669. Share of connected calls that were real: 21% → 48%. Detail in `call-wins-log.md` (11-13 reconciliation section).
+- **LSA 8655979348:** $939.87 in the window (dark 10-20..10-31 after the Oct cap, $758 spent 11-01..11-12 of the ~$1,086 November amount → quiet again ~11-18). 15 leads (12 calls, 3 messages), 12 charged, 3 DECLINED (10-19 job seeker charged = rated, no credit, closed; 11-03 x2 not charged = credited). Report shows **12 leads / $78** (leads minus the 3 declined). Statuses: 3 BOOKED, rest ACTIVE. Baseline 10-01..10-15 matches the proposal exactly: $922.48 / 14 leads (12 calls, 2 msgs; 10 charged).
+- **Tier:** none chosen. AT Client Request 902208a0 (10-22, Dawn): "client wants to cap budget at $2500 across all platforms"; Angela's reply 10-23 = "right below the $2,500 cap". The report restates the three options and says Google is capped at ~1 in 10 eligible searches and LSA runs out ~11-18.
+- **Editorial choice for Edu:** section 2 of the PDF shows a before/after on the SAME rule (Oct 1-15: 20 calls / 4 real / $669 vs 13 real / $93). The proposal told the client "21 leads at $127" for Oct 1-15 (CallRail calls + 1 form, no review). The new table does not repeat $127, but a careful reader will notice the earlier 21 included calls that were not real requests. If that's unwanted, drop section 2 and keep section 1 (window only). Also: 10 of the 13 are existing customers; the PDF says so in the table and explains why they count.
+- **Also found:** CallRail now labels 4 ad-asset calls (10-19 08:22, 10-27 14:41, 10-28 13:50/13:51) as `Google My Business`; CallRail source alone undercounts ad calls here, always match `call_view`. The 11-11 CallRail pull also surfaced 6 ad calls the 10-23/11-04/11-11 passes had missed (logged in call-wins-log).
+- **Next:** Edu reviews → Gui sends through Angela (AT Client Request / reply to 902208a0 or new ticket). Then close fu-082 on the Command Center. The 11-18 read (fu-153) stays as planned.
+- **11-13 later: SENT.** Edu submitted the AT Internal Request to Angela with the PDF attached (built via Cowork in the UI). fu-082 closed on the Command Center.
+
+## 2026-11-13 — Client Strategy Review "Oct/Nov Review" (AT 7be61e95): Paid row WRITTEN, stage left open
+
+Cycle 10-10..11-08 (call was 11-10). Stage Performance Reporting assigned to Gui; Edu did it. Detail + LSA lead table: `strategy-review-octnov-2026.md`.
+- KPI row **1b309436-d3bf-4dea-942b-43ed578ff3cc** linked to the client (field c72c4f7e): ad spend 3051.80 (PPC $1,938.59 + LSA $994.53 verified via API; Meta $118.68), **20 qualified = 11 new + 9 existing** (Google 11 = 3 new + 8 existing from the 11-13 reconciliation; LSA 9 of 16 after transcribing all 12 calls + reading 4 messages), CPL 152.59, rec 3200. Fee + total blank.
+- `additional_paid_ads_notes` rewritten (old text = 9 leads / $339 without existing customers, "still to review" items, wrong "12 charged after credit" line and a "please mark/rate LSA leads" ask). LSA: 13 charged ($76.50), 3 not charged.
+- Stage NOT submitted (Edu: leave on draft, he sends it back). 3 charged oil-only LSA leads added to fu-161 for us to rate.
