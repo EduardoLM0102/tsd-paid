@@ -17,3 +17,25 @@ Read-only, nothing changed in Meta.
 **Staged, not applied:** recreate the DCT ad (or reactivate the GlassReplace ad set as stopgap); lead campaign to CBO; awareness rebuild as ARL no cap (from 10-19); refresh awareness videos (running since 02-26); 2nd angle test (same-day broken glass) as its own DCT ad set.
 
 Tasks (completed): [7-Day Meta](https://app.agencytitan.com/tasks/instance/492ee1ff-e02b-42db-bb1a-28e106b96829), [30-Day Meta](https://app.agencytitan.com/tasks/instance/7f437bd5-fa5f-4cce-84fb-de0e383594af). KPI - Meta 594bfb89.
+
+## 2026-11-03 — AT optimization tasks (Gui, via Claude)
+
+Read-only, nothing changed in Meta.
+
+**7d 10-27..11-02:** $71.83, 0 leads, awareness only (TSD_02.26_TOF_AWARENESS_CBO_Creatives: 21,893 impr, reach 11,195, freq 1.96, CPM $3.28, CTR 0.16%, hook 14.4%, retention 6.2%). Prior week $70.12 / 0.
+**⚠ Lead campaign STILL DARK (17 days, since 10-17):** ad GlassReplace_Ads1,2,3_Dynamic_callform_FO (120254214546330721) still WITH_ISSUES, 'Unknown Error When Creating Ad' (code 2465018). Activity log: no change since the 10-26 5:51 PM fallback. DCT ad set ACTIVE ($30/d) but $0; old ABO ad sets PAUSED.
+
+**Staged, not applied:** create a NEW ad in the DCT ad set and delete the broken one, or re-enable the old GlassReplace ad set as stopgap (urgent); lead campaign to CBO; awareness as ARL no cap; refresh awareness creative.
+
+Task (completed): [7-Day Meta](https://app.agencytitan.com/tasks/instance/40dbd800-414f-49b4-9d1e-ea9fb3570d8e). KPI - Meta cde68bf8.
+
+## 2026-11-09 — AT optimization tasks (Gui, via Claude)
+
+Read-only, nothing changed in Meta.
+
+**7d 11-02..11-08:** $66.97, 0 leads, awareness only (TSD_02.26_TOF_AWARENESS_CBO_Creatives: 23,754 impr, reach 12,358, freq 1.92, CPM $2.82, CTR 0.14%, $5.42 per 1,000 reached, hook 14.1%, retention 6.9%). Prior week $72.16 / 0.
+**⚠ Lead campaign STILL DARK (23 days, since 10-17):** ad 120254214546330721 still WITH_ISSUES (code 2465018, last update 10-26 17:51). Activity log since 11-01: only a billing event, nobody touched it. Old ABO ad sets paused.
+
+**Staged, not applied:** NEW ad in the DCT ad set (delete the broken one) or re-enable the GlassReplace ad set as stopgap (urgent, 3rd week); lead campaign to CBO; awareness as ARL no cap; refresh awareness creative.
+
+Task (completed): [7-Day Meta](https://app.agencytitan.com/tasks/instance/f4c80451-60b9-4cdb-8e9e-46302cab1b64). KPI - Meta 553e77bd.

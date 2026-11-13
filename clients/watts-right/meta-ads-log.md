@@ -5,6 +5,23 @@ Google Ads, LSA and GTM history lives in `google-ads-log.md` in this folder.
 
 ---
 
+## 2026-11-09 — AT optimization tasks (Gui, via Claude): 7-day Meta. Read-only, all staged
+
+**7d 11-02..11-08 (vs 10-26..11-01):** $1,930.68 / 27 leads / $71.51 (prior $1,986.08 / 29 / $68.49). CPM $31.35, CTR 5.04%, reach 36,909, freq 1.67. TOF $849.49 / 19 / $44.71: control Broad-10 $531.62 / 10 / $53.16 (recovered from $74.02 on 11-03), Broad-2 '#1 cause of electrical fires' $317.87 / 9 / $35.32 best. MOF $474.00 / 3 / $158.00. BOF $141.01 / 3 / $47.00. FourMode $397.68 / 2 / $198.84 (02-COMING both $138.61 / 0, 05-RT-TOF3s $70.04 / 0). ARL $68.50, reach 8,478, freq 1.78/wk, 180 recallers.
+**Activity log:** 11-03 Austin Ensz (Power Editor, unknown to us) paused FourMode 04-MADE, 05-RT-TOF3s, 01-WRONG LAL1pct + 6 ads; minutes later Clay Manus token re-enabled 04-MADE + 05-RT-TOF3s. 11-09 Clay Manus token swapped creative on TOF ad 'Do your lights flicker'.
+**Staged:** MOF budget → TOF Broad-2/Broad-10 at same total; pause FourMode 02-COMING + 05-RT-TOF3s after ownership is confirmed; ARL under 3x/week (Edu). Recheck 2026-11-16.
+KPI - Meta row 2026-11-09 = 1aa68ac1 (weekly keys only). Task completed: https://app.agencytitan.com/tasks/instance/c1b148c7-41eb-4750-9507-2f89c9c7feea
+
+---
+
+## 2026-11-03 — AT optimization tasks (Gui, via Claude): 7-day Meta. Read-only, all staged
+
+**7d 10-27..11-02 (vs 10-20..10-26):** $1,948.77 / 26 leads / $74.95 (prior $2,040.78 / 37 / $55.16). CPM $31.39, CTR 5.40%, reach 38,041, freq 1.63. TOF $810.06 / 11 / $73.64: **control 'Is your electrical panel' (Broad-10) $518.13 / 7 / $74.02 vs $39.95 30d CPL on 10-26** at freq 1.62 = creative fatigue, not saturation. MOF $449.41 / 6 / $74.90 (Broad-9 'mess-free panel' $181.90 / 1). BOF $139.16 / 3 / $46.39. FourMode $478.90 / 6 / $79.82 (05-RT-TOF3s $69.93 / 0, 02-COMING non-LAL $75.94 / 0; FPE $24.49 best). ARL $71.24, reach 7,788, freq 1.79/wk, 240 recallers. No object edits in activity log 10-20..11-03.
+**Staged:** new cut of the control video (new first 3s) in Broad-10; pause MOF Broad-9 → Broad-5 at same total; pause FourMode 05-RT-TOF3s + 02-COMING (confirm ownership, Clay Manus); ARL under 3x/week (Edu).
+KPI - Meta row 2026-11-03 = 032ef8b9 (weekly keys only). Task completed: https://app.agencytitan.com/tasks/instance/31cf9e47-f959-4f3b-8640-577c613ad5f1
+
+---
+
 ## 2026-10-26 — AT optimization tasks (Gui, via Claude): 7-day + 30-day Meta. Read-only, all staged
 
 **7d 10-19..10-25:** $2,022.63 / 39 leads / $51.86 (prior $1,952.09 / 31 / $62.97). CPM $32.90, CTR 5.85%, freq 1.58. TOF $844.50 / 18 / $46.92 (Broad-10 $40.31 best); MOF $468.28 / 15 / $31.22; BOF $141.17 / 4 / $35.29 (retargeting cheaper than TOF this week, was 2.6-3.3x on 10-19); **FourMode $459.34 / 2 / $229.67, 6 of 7 ad sets 0 leads**; ARL $69.54, reach 6,985, freq 1.84/wk; client boosted post $39.80.

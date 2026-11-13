@@ -145,6 +145,60 @@ Command Center NÃO atualizado: a conta do Gui não acessa o banco do artefato d
   - Proud Pops 7-Day Google: Policy Issues Found + Blockers to Escalate = Yes. Proud Pops 7-Day Meta: Blockers to Escalate = Yes.
   - Hawkins 90-Day: Stalled Conversions Found = Yes (Schedule/Demographics/Audiences/Locations ficam No).
 
+## Tasks AT — rodada de 2026-11-03 (Gui; 38 de 38 completas: Spencer 4, C&S 4, All Seasons 3, Zen 14-Day 1, Watt's 4, Mission Accomplished 4, Napps 4, King's 4, Lilypad 4, Hawkins 6; detalhe e recs staged no log de cada cliente, entrada 11-03)
+- [ ] **King's (URGENTE):** anúncio de lead da Meta ainda WITH_ISSUES (code 2465018), lead gen $0 há 17 dias. Criar anúncio NOVO no ad set DCT (e apagar o quebrado) ou religar o GlassReplace antigo.
+- [ ] **Mission Accomplished:** Meta awareness (52605605054542) PAUSADA 10-30 por Jonathan Bannister via MCP, sem registro do motivo; cliente só com LSA. Confirmar com Edu/Jonathan. LSA: 8 leads DECLINED cobrados sem disputa (os mais velhos de 09-28, checar janela).
+- [ ] **Watt's:** PMax $720/7d e 0 lead real (187 conv = taps, Display/YouTube). Decisão do Edu: tirar tap da meta do PMax ou pausar e passar os $95/d pro Search. Meta: anúncio controle TOF cansando (CPL $40 → $74).
+- [ ] **Hawkins:** conta Meta 10086442468052740 sumiu do acesso da TSD (funcionava em 10-26) → checar Business Manager. LSA: 3 DECLINED cobrados sem disputa (o de 10-11 vence esta semana). Negativas do Edu de 11-02 ("lp", "smartside", "smart siding") bloqueiam LP SmartSide, que a Hawkins vende. Calls não contam desde 10-26 (task de tracking). NB check 11-09.
+- [ ] **Napps:** Edu relançou os 2 NB em 10-27 (Max Clicks $15, HVAC $65 / Plumbing $35 = 65/35 ok). 3 ligações Branded 60s+ (10-29, 10-30, 11-02) com 0 conversão → checar ação "Calls from ads" na UI. Todo o gasto NB fora de Longview (Tyler, Daingerfield, Frankston, Gun Barrel City): AM confirmar área.
+- [ ] **C&S:** heating 1ª semana $241 / 0 calls / 0 taps; formulários não rastreados (task de tracking). Total vivo ~$57/d vs $238 do plano (fu-088, AM não sabe). CallRail: ligação de 10-22 veio de "Facebook Ads" → alguém fora da TSD roda Meta pra C&S (AM perguntar). Heating semana 2 em 11-09.
+- [ ] **All Seasons:** LSA voltou 11-01 e gastou $144 só em 11-02 (4x o diário) → teto de novembro deve acabar cedo, avisar AM (11-05). Busca de marca rodando dentro do NB a até $24,92/clique (sem Branded desde 10-15). Negativas staged no MiniSplit.
+- [ ] **Spencer:** Edu subiu o teto do Branded $8 → $10 em 10-28, IS 95% (resolvido). Correção: CallRail NÃO está parado; Repeat Phone Call chega; First Time só está sem teste (nenhuma ligação nova com gclid desde 10-19). 2 mensagens LSA sem resposta (10-19, 10-25).
+- [ ] **Zen Air 14-Day:** NB segue pausado desde 10-29 (login access@ compartilhado, quem?). Itens de tracking marcados como "Gui investigando".
+- [ ] **Lilypad:** 0 forms RYNO na semana (último 10-26); RSA Septic Pumping caiu pra POOR; 63% do gasto fora das cidades-alvo (geo em Presence or interest). Sem LSA e sem Meta (N/A).
+- [ ] **Toggles pra marcar na UI:**
+  - Spencer 7-Day Google: Tracking Firing = No, Blockers = Yes. Spencer 14-Day: High-CPC Keywords Reviewed + Keyword Warnings Reviewed = Yes.
+  - C&S 7-Day Google: Blockers = Yes (Tracking Firing = No). C&S 14-Day: High-CPC + Keyword Warnings = Yes, Blockers = Yes.
+  - All Seasons 7-Day Google: Tracking Firing = Yes.
+  - Zen 14-Day: High-CPC + Keyword Warnings = Yes, Blockers = Yes.
+  - Watt's 7-Day Google: Tracking Firing = Yes. Watt's 14-Day: High-CPC + Keyword Warnings = Yes.
+  - Napps 14-Day: High-CPC + Keyword Warnings = Yes.
+  - King's 7-Day Google: Tracking Firing. King's e Lilypad 14-Day: High-CPC + Keyword Warnings = Yes.
+  - Hawkins 7-Day Google: Blockers = Yes. Hawkins 30-Day Google: Landing Page Issues Found + Blockers = Yes. Hawkins 30-Day LSA, 7/30-Day Meta: Blockers = Yes.
+  - Mission Accomplished 7-Day Google: limpar "On Pace" / "On Target" (default do form, conta parada).
+
+## Tasks AT — rodada de 2026-11-09 (Gui; 31 de 31 completas: Proud Pops 5, Zen Air 3, Hawkins 4, King's 3, Lilypad 3, Mission Accomplished 3, Watt's 3, Napps 3, All Seasons 4 (segundo lote, atribuído às 22:55); detalhe e recs staged no log de cada cliente, entrada 11-09)
+- [ ] **All Seasons:** LSA gastou $523 na semana (209% do semanal), ~48% do teto de novembro já foi em 11-08 → apaga em meados de novembro como em outubro, avisar o AM (teto do cliente $2,500/mês). Concorrentes subiram pra 32% do gasto Google → **11-10 aplicadas 22 negativas** (log 11-10). Os 3 leads contados = 0 cliente real (transcritos); form 0 desde 10-08. **11-10 task AT `3addac2e` pra Angela** (mensagens LSA de 10-12/10-14 sem resposta + pedir LSA $60/d): falta você marcar o departamento e enviar o Intake na UI. Decidir com o Edu: keywords ativas da LeadGen com nome de concorrente. Reler ~11-16.
+- [ ] **Zen Air (URGENTE):** campanha Now Hiring NÃO é rascunho: o Jonathan Bannister ativou em 11-04, gastou $26 na semana e marcou 71 "leads" a $0,37 (provável evento de lead disparando na página de vagas). Confirmar com a Angela se tem aprovação do cliente. Winter Ready foi recriado em 11-09 (IDs novos no log). NB segue pausado desde 10-29.
+- [ ] **King's (URGENTE):** lead da Meta sem rodar há 23 dias (anúncio ainda WITH_ISSUES) → criar anúncio NOVO. LSA migrou pra campanha "Pay-per-lead-PMax" (Google, 11-04): conta como LSA.
+- [ ] **Watt's:** LSA migrou pra "[LSA] Watt's Right Electric" (tipo PMax, 11-04). Edu subiu NB pra $320/d + tCPA $110 e Branded pra $50 em 11-04: confirmar aprovação escrita do cliente no AT 7b72529c. PMax $700 / 1 lead real. Branded IS caiu 73% → 43%. Meta: Austin Ensz pausou 3 ad sets FourMode em 11-03 (quem é?).
+- [ ] **Hawkins:** NB $889 em 14d com 1 lead → decisão do Edu (NB → PMax) depois que o AM confirmar se os 14 forms do PMax são reais. Tracking morto (CallRail desde 10-11, form desde 10-28): criar task de tracking. Disputar LSA DECLINED de 10-21 e 10-22 até ~11-20. Janela/porta ainda nos sitelinks. Meta sem acesso.
+- [ ] **Napps:** teto NB $25 desde 11-03 → $529/7d sem lead verificado, 79% fora de Longview. Revisar em 11-17 (manter ou baixar teto + fechar geo). Ligações Branded 60s+ ainda sem conversão (checar na UI / suporte Google). 4 LSA DECLINED pra disputar.
+- [ ] **Proud Pops:** Edu resolveu o call asset e os taps em 11-04 (fu-052 feito). Plumbing $768 / 0 lead e HVAC $751 / 1 lead na semana → decisão de Plumbing em 11-16. Branded IS com orçamento de $50 (checar 11-12). Meta: conta ainda não compartilhada com a TSD (AM).
+- [ ] **Mission Accomplished:** Meta segue pausada desde 10-30 (Jonathan Bannister, sem motivo). LSA só 1 lead cobrado na semana, sem impressões no fim de semana. 5 DECLINED cobrados sem disputa.
+- [ ] **Lilypad:** Edu aplicou a lista de 11-03 em 11-06; reler em 11-16. Geo: 63% do gasto fora das cidades-alvo (AM confirmar área antes de mudar pra Presence).
+- [ ] **Toggles pra marcar na UI:**
+  - Zen 7-Day Google: Negatives Added / Ads Paused / Policy Issues = No, Tracking Firing = No, Blockers = Yes. Zen 7-Day Meta: Core Results Declined = Yes, Blockers = Yes (o resto No).
+  - Hawkins 7-Day Google: Tracking Firing = No, Blockers = Yes. Hawkins 14-Day: High-CPC + Keyword Warnings Reviewed = Yes.
+  - Proud Pops 7-Day Google: Tracking Firing = Yes. Proud Pops 14-Day: High-CPC + Keyword Warnings Reviewed = Yes. Proud Pops 7-Day Meta: Blockers = Yes.
+  - King's 7-Day Google: Tracking Firing = Yes.
+  - Mission Accomplished 7-Day Google: limpar "On Pace" / "On Target" / "None" (default do form, conta parada).
+  - Napps 7-Day Google: Tracking Firing é decisão sua (taps disparam, ligações de anúncio não contam).
+  - All Seasons 14-Day: High-CPC Keywords Reviewed + Keyword Warnings Reviewed = Yes; Keywords Paused or Fixed / Geo Targeting Adjusted / Audience added / Blockers to Escalate = No.
+
+## Tasks AT — rodada de 2026-11-10 (Gui; 6 de 6 completas: Spencer 3, C&S 3; detalhe e recs staged no log de cada cliente, entrada 11-10)
+- [ ] **Spencer:** LSA migrou pra campanha PMax-type (24436741588, desde 11-07), sem gasto 11-04..11-06. Conversões do Branded contadas em dobro (Calls from ads + upload CallRail) + Directions primária → task de tracking. First Time Phone Call funcionando. 2 mensagens LSA ainda sem resposta (10-19, 10-25).
+- [ ] **C&S:** Edu 11-09 deixou o heating só com Repair, $15/d, +26 negativas. Heating 2 semanas = $458 / 0 lead → reavaliar ~11-16. Primeiro form rastreado no Branded (checar se é lead real). LSA $0 com $55/d. Meta segue N/A (quem roda o Facebook da C&S?).
+- [ ] **Toggles pra marcar na UI:** Spencer 7-Day Google: Tracking Firing = Yes, Blockers = No. C&S 7-Day Google: Tracking Firing = No, Blockers = Yes. C&S 7-Day Meta: Blockers = Yes.
+
+## Strategy Reviews / Post Review — rodada de 2026-11-12 (Gui; rascunhos no AT, NADA completado, Gui revisa antes)
+- [ ] **Revisar e dar complete (Performance Reporting):** Mission Accomplished (dbc1b73e), Lilypad (59a4be8c), All Seasons (7be61e95). Calls do AM já passaram (11-09/11-10).
+- [ ] **Zen:** "Oct/Nov Review" (c29ad0c8) já tinha relatório pronto, só falta complete; "Oct/Nov Strategy Review" (e83dc467) parece duplicata. Duplicatas também em C&S (03fff3a7 / fd5eb77f) e Watt's (f911c525 / e2239252): confirmar com o AM.
+- [ ] **King's Post Review (9f657ee7):** checklist com 3 itens marcados (geo, tracking, escalar). AM precisa dizer TMS + budget combinados na call de 11-10 (nada registrado). Ad set DCT quebrado da Meta segue ACTIVE a $30/d (pausar = escrita, precisa de ok).
+- [ ] **Urgente:** MA 5 leads LSA Declined cobrados (~$345) sem disputa, prazo ~11-19. All Seasons: LSA deve acabar ~11-17; msgs LSA 10-12/10-14 sem resposta. Lilypad: 5 de 6 ligações de anúncio caíram no voicemail (out).
+- [ ] **Concrete LSA (c702263a):** conta 2898153501 criada, campanha ativa; falta do cliente background check + seguro + billing. Parte de IG = Social. Decidir complete.
+- [ ] **Próximas reviews (ciclo ainda aberto):** C&S fecha 11-15, Watt's 11-14/11-16, Spencer 11-16, Napps 11-17, Hawkins 11-22: montar relatório logo após o fechamento.
+
 ## Milestones
 - [ ] **Auditoria de tracking/atribuição** em todo o book (semanas 1–2) → `paid/auditoria-tracking/`
 - [ ] **KPI framework** da divisão + metas + timeline pra aprovação do Ryan (semanas 2–4, primeiro milestone) → `paid/kpi-framework/`

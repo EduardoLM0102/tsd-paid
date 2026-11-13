@@ -88,6 +88,23 @@ Day-by-day log of every CallRail-recorded, ads-attributed call for All Seasons A
 
 ---
 
+## Spot check 2026-11-03 → 11-04: the 3 calls Google counted as conversions (call extension, 60s+)
+
+Added 2026-11-10 at Gui's request: only the 3 Google Ads call-extension calls of 60s or more that Google counted as primary conversions in the week of 11-02..11-08. Matched to CallRail by start time and duration (Google call_view: 11-03 12:22 95s MiniSplit, 11-04 10:32 63s LeadGen, 11-04 10:39 69s MiniSplit). Transcribed locally with faster-whisper (small.en).
+
+### 2026-11-03
+
+- **12:22 · 96s · All Season Call Extension (Google Ads) · Queens NYC** — Caller wants to buy a Mitsubishi split unit for a 12x16 room. Told All Seasons doesn't sell units, only installs after an estimate; caller asks who sells them and is pointed to Mitsubishi's site to find a vendor. No estimate requested. ❌ Not a lead (equipment buyer).
+
+### 2026-11-04
+
+- **10:32 · 64s · All Season Call Extension (Google Ads) · Westbury** — Caller wants to change the name on a gas service account. Told they have the wrong company and should contact National Grid. ❌ Not a lead (wrong company / utility).
+- **10:39 · 70s · All Season Call Extension (Google Ads) · Brentwood** — Owner of a Mitsubishi heat pump trying to set up the Mitsubishi Comfort app; thought this was Mitsubishi's support line. Told to contact Mitsubishi. Came from the search 'mitsubishi comfort app support' on MiniSplit. ❌ Not a lead (manufacturer support).
+
+**Result: 0 of 3 were real customers** (new or existing). All 3 conversions Google counted that week were not leads, so Google's 3 leads / $106.84 CPL for 11-02..11-08 is really 0 real call leads from the call extension. The only real call that week was the 11-05 CallRail website call (176s, marked good lead), which Google only counts in "all conversions". Negatives added 11-10 for 'app support' (both campaigns); the equipment-buyer and utility callers have no clean keyword to block.
+
+---
+
 ## Post-fix tally (2026-10-16 → 2026-10-22, 5 calls, after the 10-16 negatives / 60s rule / presence-only geo)
 
 | Outcome | Count | Detail |

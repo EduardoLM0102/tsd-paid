@@ -1506,3 +1506,36 @@ arnold electric, oklahoma generator, magnum electric, generator supercenter). **
 fu-119 CLOSED (killed early). fu-117 CLOSED (NB kept at $110). Next read 11-17 (fu-145): Branded spend/IS on $145, NB with transcription.
 Owed: AM note to Angela that PMax is off and its $95/d moved to brand searches (same monthly total).
 
+## 2026-11-03 — AT optimization tasks (Gui, via Claude): 7-day + 14-day Google, 7-day LSA. Read-only, all staged
+
+**7-day 10-27..11-02 (vs 10-20..10-26), taps excluded (10-26 convention):** PPC $1,648.78, 212.3 counted conv but 194.3 are `[TSD] Click to call` taps → 18 real / $91.60 (prior 22 / $63.33). call_view 4 ad calls (3 of 60s+).
+- Branded $258.91 / 9 real ($28.77), IS 73%, budget-lost 20%.
+- NB $669.81 / 9 real ($74.42, prior $44.00). **Edu 10-27 08:37 (API): tCPA $80 → $95 + 7 NB PHRASE negs (genesis 1 3, aa electric, tesla tulsa, xeal, j1772, nissan leaf, cost to charge).** Spend back to ~$96/d (91% of $105). IS 33%, rank-lost 67%.
+- **⚠ PMax $720.06 / 0 real leads.** 187/187 conv = taps; Display $438.80, YouTube $280.46, Search $0.76. Taps 11/day (10-27) → 40.5 (11-01); 11-01 spend $165.46 vs $95. Drift from 10-26 is complete.
+- Waste terms ~$95: evans electric, tesla in tulsa ok (not caught by 'tesla tulsa'), ap electric, half moon electric, ev connect, ecs electric, francis energy, blue sky electric, ford charging station.
+- Staged: tap action off PMax bidding OR pause PMax and move $95/d to Search at the same total (Edu); Branded $35 → $45 from PMax; 11 NB PHRASE negs (above + chargepoint / charge point); hold tCPA $95, recheck 2026-11-10.
+
+**14-day 10-20..11-02:** $3,041.93, 40 real / $76.05 (Branded 15 / $32.29, NB 21 / $57.04, PMax 4 / $339.93; 253 of 257 PMax conv = taps). NB CPC $18.00 → $10.60 since tCPA. High CPC: 'electrical panel box for home' $16.70 (14 conv, keep), 'emergency electrician' $14.84 QS 6 LP below avg, 'tesla charger installation' BROAD $133.35 / 1. New Panel RSA 826560998579 $25.75 / 0 (6 clicks, wait to ~30). QS 1 'new breaker box', QS 3 'tesla charger installation near me' → pause staged. /careers/ still gets PMax clicks ($16.84). Auto recs: reject broad match / display / partners / lead forms. No audiences attached. Geo all in-target; watch Muskogee NB $52.63 / 0, Independence KS PMax $32.28 (taps).
+
+**LSA 7-day:** $3,796.41 / 64 charged (54 calls, 10 msg) / $59.32 (prior $3,375.80 / 61 / $55.34), top 98.04%, 32% of the $12k/wk API cap (not budget-limited). 30d $13,929.48 / 242 / $57.56 (prior 30 $57.18, volume +19%). 1 dispute pending.
+
+KPI rows 2026-11-03: Google fcd25cf4, LSA 2d8241bc. Tasks completed:
+https://app.agencytitan.com/tasks/instance/9689a3b5-534b-4c34-a914-c00efb63e8dc (7-day),
+https://app.agencytitan.com/tasks/instance/6075d9f3-4b8a-4b6f-b3c2-3177eff90c7b (14-day),
+https://app.agencytitan.com/tasks/instance/d1b101b3-ebb6-48c6-8d6a-059aedf46e36 (LSA 7-day).
+
+## 2026-11-09 — AT optimization tasks (Gui, via Claude): 7-day Google + 7-day LSA. Read-only, all staged
+
+**7-day 11-02..11-08 (vs 10-26..11-01), taps excluded (10-26 / 11-03 convention), LSA excluded:** PPC $2,926.20 / 28 real / $104.51, CPC $0.70 (prior $1,657.74 / 21 / $78.94). call_view 31 ad calls (19 of 60s+) vs 4 the week before.
+- **Changes since 11-03 pass:** Edu 11-03 5 NB negs; **Edu 11-04 (API): NB budget $105 → $320/d, NB tCPA $95 → $110, Branded $35 → $50/d, 3 new NB ad groups (Electrician (General) → /locations/tulsa-ok/, Whole-Home Generator, Whole-Home Surge Protector), 53 kws, 3 RSAs (approved), 17 negs;** Edu 11-06 26 more NB negs (125 total). `[TSD] Click to call` is now secondary (primary_for_goal false, out of Conversions) since 11-03 (who: not visible in change history). Matches the Q4/Q1 proposal execution notes; written client approval not in our logs (check AT 7b72529c). Client added 5 assets 11-05/06.
+- Branded $310.95 / 13 / $23.92; IS 73% → 43%, budget-lost 54% (11-06: IS 10%, budget-lost 90%). Still capped at $50 on weekdays.
+- NB $1,915.40 / 14 real / $136.81 (prior $57.00). CPC $10.52 → $14.62, daily up to $24.80; single clicks 'tulsa electrician' $96.81, 'electrician near me' $97.96, 'electrical technician' $68.03 (now negated). Ad groups: General $541.42 / 4, Emergency $520.63 / 7, Generator $436.21 / 3, Panel $212.90 / 1, EV $204.24 / 1, Surge $0. IS 37.5%, rank-lost 48%.
+- **PMax $699.85 / 1 real lead**; YouTube $456.18, Display $200.05, Search $43.56. 0 biddable conv 11-03..11-07 once taps went secondary (~121 taps still in All conv).
+- Waste not negated: catale electric $20.77, coburn electric tulsa $19.66 (existing neg is misspelled 'colburn electric'), cutler hammer breakers $20.74, tesla charge station $18.17 / tesla charger $6.83 ('tesla' only EXACT), magnum electric $7.00, generac guardian $7.70, generator supercenter $4.28.
+- Staged: pause PMax (or real goal) and move $95/d to Branded ($50 → ~$70); NB max CPC ceiling ~$25 or tCPA back toward $95 (budget $320 = Edu's call); 8 NB PHRASE negs above. Recheck 2026-11-16.
+
+**LSA 7-day: ⚠ LSA moved to a new campaign 11-04.** Old `LocalServicesCampaign:SystemGenerated` (17732780541) $1,936.50 11-02..11-04 then $0 (status PAUSED); new `[LSA] Watt's Right Electric` (24425981973, API type PERFORMANCE_MAX, created 11-04 12:45, renamed by access@) $1,311.22 11-05..11-08. Combined $3,247.72 / 53 charged (44 calls, 9 msg) / $61.28 (prior $3,560.00 / 62 / $57.42), top 99.52%, 27% of the $12k/wk API cap (not budget-limited). The "LSA spend drop" was the campaign switch. weekly_kpi.py counts the new campaign as PPC unbranded and the LSA pull misses it: adjust both. Staged: UI check that service area / job types / hours carried over; 11-08 only $65.68.
+
+KPI rows 2026-11-09: Google a8307b51, LSA 05839344. Tasks completed:
+https://app.agencytitan.com/tasks/instance/3f9e8579-8413-4fdf-bed7-fe3ce05b8172 (7-day),
+https://app.agencytitan.com/tasks/instance/04ae0b6e-d1bb-4921-8529-3190ecd924ff (LSA 7-day).

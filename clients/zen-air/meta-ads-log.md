@@ -2,6 +2,39 @@
 
 Account `381256660973192` ("Zen Air - Third Ad account ( Active Account)").
 
+## 2026-11-09 — AT optimization tasks (Gui, via Claude)
+
+7-day Meta, AT task https://app.agencytitan.com/tasks/instance/8e31ec75-ac4a-4cf8-be39-c5c5fdda3484 (completed). Read-only, nothing changed.
+
+**11-02..11-08 vs 10-26..11-01:** account $1,520.37, CPM $6.67, CTR 0.64%, reach 89,780. KPI leads 107 / $14.21 (65 form + 42 awareness-attributed; the 71 Now Hiring pixel "leads" excluded). Prior $1,525.75 / 124 / $12.30.
+- Lead ad set `09/22/26 - Service Area ZIPs (New Creatives)`: $1,042.83 / 65 / **$16.04 CPL (prior $12.44, +29%)**, CTR 1.28% (1.33%), CPM $12.18, freq 2.33/wk. Ad 02 alone for 7 weeks = fatigue starting.
+- Awareness `Open Audience`: $451.30, reach 48,808 (-18%), freq 2.86/wk, CPM $3.24, hook 17.01%, ThruPlay/3s 11.12%. Still REACH + cap 4/7d.
+- ⚠ **Now Hiring 120247939383320711 is LIVE since 11-04**: Jonathan Bannister swapped the ad creative (10:02-10:03) and set the campaign Active (10:46); delivery started 11:12. $26.24, CTR 10.06%, 410 ThruPlays. Ad set optimizes for website conversions (pixel Lead) and shows 71 "leads" at $0.37, likely a Lead event on the careers page (Gui investigating). Confirm Angela's approval is on file.
+- 11-09 DCT ad sets: both published with ads PAUSED ($0). Rated & Guaranteed 120248030690530711 (ad 120248030697220711); **Winter Ready is now 120248030875310711 (ad 120248030875320711)**, the first one 120248030679700711 was deleted 11-09 12:13.
+- Lead Quality = **Mixed** (post-10-20 geo unverified). Spend pace ~$1.5k/wk vs $2k/mo approved: Gui investigating.
+**Staged, not applied:** unpause the 2 DCT ads once approved (refresh for Ad 02); ARL awareness rebuild, no cap; Now Hiring optimization/Lead event fix + approval check; lead export geo read then Fulton → North Fulton; dormant boosted post off.
+KPI - Meta `abdcc10f`.
+
+## 2026-11-09 — "Publish Approved Ads": 2 new DCT ad sets in the lead CBO, staged as DRAFT (AT Internal Request 2ad75400, Edu's ask, Gui, via Claude)
+
+Gui's call: 2 new ad sets in `09/17/26 - CBO | Leads` (120247267872090711), 1 dynamic creative ad each, 3 images + 2 primary texts + 2 headlines, no description, destination = the instant form the live Ad 02 uses. No offer in copy (the $49 tune-up isn't confirmed current, so Ad 12 with "$49" printed on it is out). Images from Drive APPROVED, uploaded to the account by Gui. CBO budget unchanged.
+- Ad set `11/09/26 - Service Area ZIPs | Winter Ready` **120248030679700711** → ad `11/09/26 | Winter Ready - Ad 1, 5, 4` **120248030692920711** (Ad 1 tune-up, Ad 5 comic, Ad 4 free install estimates).
+- Ad set `11/09/26 - Service Area ZIPs | Rated & Guaranteed` **120248030690530711** → ad `11/09/26 | Rated & Guaranteed - Ad 2, 3, 6` **120248030697220711** (Ad 2 rated 5/5 + BBB, Ad 3 100% guarantee, Ad 6 neighborhood HVAC).
+- Both ad sets: same 130 ZIPs + Marietta/Monroe/30320 exclusions as the live ad set, 18-65, Leads goal, instant form (ON_AD), DCT, Advantage+ audience + placements. **No `location_types`** (API option removed, error #1870194), so Meta's default applies instead of the live ad set's "home only" (Edu 10-20). CTA Book Now (BOOK_TRAVEL). Page 103339128021546, IG zenairheatingandcooling 17841407113696875.
+- Copy and headlines in `clients/zen-air/2026-11-05-approved-ads-copy.md`.
+- **NOT published, 2 blockers:** (1) every draft object shows error 1815089 "Lead Generation Terms of Service not accepted" for the Page via the API, even though Ad 02 is live on the same Page; (2) the MCP can't read or set the instant form ID. Gui finishes in Ads Manager: accept the lead ToS if prompted, pick the same instant form as Ad 02 on both ads, publish. Then back to Edu for review on the AT task.
+- Same day, UI pass: CTA Book Now (BOOK_TRAVEL) blocked publish (#1885177), changed to Learn More; form = **1739951287230254**. The UI edit on Winter Ready wiped the ad's dynamic creative (error 1885702) and reset the ad set geo to all of US. Both restored via API (130 ZIPs + exclusions; DCT creative with form 1739951287230254 + LEARN_MORE). Rated & Guaranteed validated in the UI with no errors.
+
+## 2026-11-03 — "Now Hiring" campaign built as DRAFT (AT Client Request 6f1b29fb, Gui, via Claude)
+
+AT task https://app.agencytitan.com/tasks/instance/6f1b29fb-d1b9-4f87-809f-983ab391e1a6 (Eddie's request, 10-29: "Now Hiring - Techs/Installer/CSR & Sales - $5/day", link to the careers page, use the video the client approved; Angela meets the client for approval when the ad is ready). Stage Execution, due 11-02 (past due).
+- Campaign `11/03/26 - CBO | Now Hiring (Employment)` **120247939383320711**: OUTCOME_TRAFFIC, special ad category **EMPLOYMENT** (US), CBO **$5/day**, lowest cost no cap.
+- Ad set `Duluth Office +15mi | Techs, Installers, CSR & Sales` **120247939386400711**: Landing Page Views, website destination, Duluth city (key 2431778) +15 mi, people living in, 18-65, Advantage+ audience on, Advantage+ placements.
+- **Geo is NOT a copy of the live ad sets.** The ask was "same location as the active campaign" (130 ZIPs, Marietta/Monroe/30320 excluded), but the Employment category blocks ZIPs (only city/address/pin ≥15 mi, or state). Gui picked Duluth +15 mi: covers the core service cities, keeps Marietta/Monroe/downtown Atlanta out, loses the edges of Hall/Forsyth and south Fulton.
+- No ad yet: Gui uploads the creative (approved video) + copy himself. Destination URL for the ad: https://callzenair.com/about-us/join-our-team/ (page loads, no roles listed, phone 678-853-7440).
+- Same day: Ads Manager blocked the ad set with error #1870194 (location type option removed). Removed `location_types` ("people living in") from the ad set targeting; draft re-validated, 0 errors. Gui then built the ad in the UI (Primary Text 2, headline 'Now Hiring HVAC Techs & Installers', 2 videos, CTA See Details). Copy scoped to the 2 roles actually open on the site (HVAC Installer, Experienced/Skilled HVAC Service Technician); CSR and Sales are NOT posted, confirm with Angela/Eddie.
+- Both objects staged in Ads Manager drafts, validated, 0 errors. NOT published. Publishing is client spend (+$150/mo on Meta), so only after Angela's client approval.
+
 ## 2026-10-31 — AT optimization tasks (Gui, via Claude)
 
 7-day Meta, AT task https://app.agencytitan.com/tasks/instance/1254d96f-d583-478b-a1a4-867f84ea34c3 (completed). Read-only, nothing changed.

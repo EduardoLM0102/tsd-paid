@@ -825,3 +825,46 @@ Checked both pages by curl 11-11 ~13:00 BRT:
 - Sha's execution note: "The phone number has been updated, and GTM has been excluded from JS delay." Review notes written; AT close pending Edu (classifier blocked the write).
 - Next: confirm in CallRail that 903-289-7073 is reporting calls from these pages (fu-144 read 11-17), and that CallRail's Google Ads integration can now attribute them.
 
+## 2026-11-03 — AT optimization tasks (Gui, via Claude)
+
+Read-only on all accounts; everything below is staged. 4 AT tasks completed (7d Google, 14d Google, 7d LSA, 7d Meta), notes in task fields + KPI rows (Google ce40864e, LSA d80f4e3f, Meta 189d2e21).
+
+**Edu relaunched NB 10-27 09:38 (API, not logged here before):** both NB campaigns enabled, Max Clicks $15 CPC ceiling, budgets HVAC $65/d + Plumbing $35/d (= the client's 65/35 split from 11-01; Branded $60 separate), 15 campaign negatives (holt plumbing, wood air conditioning, a c pros etc.), ad URLs swapped, 4 campaign assets removed. Live NB ad groups: Furnace Repair -> /furnace-heating-repair-in-longview/, Emergency Plumber -> /emergency-plumber-in-longview/; all others paused.
+
+**7-day Google (10-27..11-02):** $103.39 / 9 clicks / 0 counted conv, CPC $11.49, IS 32.42% (prior $289.19 / 2 conv). Branded $26.54 / 3 clicks, IS 91%. **3 Branded ad calls 60s+ (513s 10-29, 65s 10-30, 289s 11-02) recorded 0 conversions** (all_conversions 0 too; last counted Calls from ads 10-23; account call reporting -> Calls from ads 60s). NB HVAC $62.46 / 5 clicks, NB Plumbing $14.39 / 1 click, both 0 conv, rank-lost ~70%, budget-lost 0; actual spend split 81/19. **100% of NB spend outside Longview** (Tyler $27.14, Daingerfield $20.51, Frankston $14.81, Gun Barrel City $14.39). KPI health Mixed.
+**14-day (10-20..11-02):** $392.58 / 21 clicks / 2 conv (Branded), prior 14 $1,837.35 / 2.99. QS: plumber near me EXACT 1, furnace repair near me 2, furnace repair 3. Furnace Repair RSA AVERAGE, Emergency Plumber EXCELLENT. No audiences. Open recs: 51 KEYWORD, sitelinks x2, search partners x3, Max Conv, PMax, lead form.
+**LSA 9239407401 (7d):** $130.12, 3 charged (1 call, 2 msg), CPL $43.37 (prior $386.65 / 6 / $64.44), 12% of 7 x $154.29 = Underspending, top 92.91%. 10-28 faucet message charged + DECLINED (no dispute), 11-02 water heater message NEW, 10-20 declined call dispute PENDING.
+
+**Staged, not applied:**
+- Check the 3 uncounted Branded 60s+ calls in the UI (Calls from ads) before judging NB.
+- Ask the AM whether Tyler / Daingerfield / Frankston / Gun Barrel City are served; if not, narrow NB to Longview core.
+- Test-submit both new LPs with a gclid (forms 0 since 08-25).
+- Heating/plumbing sitelinks on the NB campaigns; heating headlines for the Furnace Repair RSA; observation audiences; reject KEYWORD / partners / Max Conv / PMax / lead form recs.
+- After 2 weeks of relaunch data: if still rank-limited with 0 budget-lost, consider a higher CPC ceiling on HVAC only. Budgets stay 65/35.
+- LSA: dispute the 10-28 faucet message if not a real job; confirm a human reply on the 11-02 message.
+- Revisit 2026-11-10 (7-day) and 2026-11-17 (14-day).
+
+Tasks: [7d Google](https://app.agencytitan.com/tasks/instance/6585c753-cd79-4144-9131-41ede48d1978) · [14d Google](https://app.agencytitan.com/tasks/instance/32222056-c32c-4add-8195-2883a53911f4) · [7d LSA](https://app.agencytitan.com/tasks/instance/bed364a8-9742-4769-90d4-d70f3cbe5dc3). Meta in meta-ads-log.md.
+
+## 2026-11-09 — AT optimization tasks (Gui, via Claude)
+
+Read-only on all accounts; everything below is staged. 3 AT tasks completed (7d Google, 7d LSA, 7d Meta), notes in task fields + KPI rows (Google fef0f465, LSA fc5f758f, Meta 09a4cb0a).
+
+**Edu 11-03 10:41 (API, not logged here before):** Max Clicks CPC ceiling $15 -> $25 on both NB campaigns. Budgets unchanged (HVAC $65, Plumbing $35, Branded $60).
+
+**7-day Google (11-02..11-08 vs 10-26..11-01):** $574.24 / 33 clicks / 1 counted conv (prior $88.53 / 9 / 1), CPC $17.40, IS 37.32%. NB $528.86 / 26 clicks, CPC ~$20 (was $12.49); IS barely moved (HVAC 32.7 -> 35.1%, Plumbing 30.9 -> 39.4%), rank-lost 65% / 51%. The 1 conv = 'Click to call' website tap on the Emergency Plumber LP 11-04 (Longview), no matching Google Ads call in CallRail. Branded $45.38 / 7 clicks, CPC $6.48, IS 86.2%; 3 ad calls (11-02 289s, 11-03 58s, 11-05 missed). CallRail: the 2 answered calls on call-asset number 903-289-7073 are both repeat callers. 0 verified new PPC leads. KPI health Poor.
+- Branded 60s+ calls still 0 conv (10-29, 10-30, 11-02). API: asset 903-289-7073 on all 3 campaigns uses the account-level action = 'Calls from ads' (60s, primary); account call reporting on. Cause not visible in API. HVAC Heating's 'calls from ads' goal is not biddable (Branded + Plumbing are).
+- Geo: only 21% of NB spend in Longview ($110.52 of $528.86); Tyler $128.99, Gilmer $73.25, Big Sandy $71.26, Kilgore $43.45, Gun Barrel City $39.39, Athens $33.32, Marshall $28.68 (all targeted).
+- Search terms: HVAC 'heater not working' / 'heater repair' phrase pulls water heater / tankless / Rinnai / Navien terms onto the furnace page ($49.09 spent on 2), plus fireplace / gas log / RV; 11 competitor names with impressions at $0. NB 9pm-5am $112.59, 0 conv. QS: heater repair 3, plumber near me 1, emergency plumber near me 2; post-click BELOW AVERAGE on all scored NB keywords.
+
+**LSA 9239407401 (7d):** $300.24 (prior $69.03), 8 leads (7 calls, 1 msg), 4 charged (3 calls, 1 msg), CPL $75.06, 28% of 7 x $154.29 = Underspending, top 94.96%. 5 of 8 leads under bathroom remodeling. 11-02 water heater message now BOOKED (11-03 item closed). 10-20 dispute CREDITED. 4 charged DECLINED undisputed: 10-14 10:26 msg, 10-14 12:22 msg, 10-23 07:48 call, 10-28 faucet msg.
+
+**Staged, not applied:**
+- HVAC Heating phrase negatives: water heater, tankless, rinnai, navien, fireplace, gas log, hydronic + competitors (loftis air, coy dodd, privette ac, simmons air conditioning, jacks air conditioning, chris cooling, milestone hvac, hamilton hvac, adams ac repair, 2 amigos, cool breeze). Water heater belongs in Plumbing if Edu wants it.
+- Hold the $25 ceiling to 11-17 (2 weeks); if NB still has 0 verified calls, lower it and narrow geo rather than buy reach with CPC. Budgets stay 65/35.
+- AM: confirm Tyler / Gilmer / Big Sandy / Gun Barrel City / Athens are served (open since 10-26).
+- NB ad schedule ~6am-9pm. 'Calls from ads' UI / Google support check; 'calls from ads' biddable on HVAC Heating. LP form test with gclid still open.
+- LSA: dispute the 4 charged DECLINED leads if not real jobs (10-14 ones first, window closing); AM on bathroom remodeling category.
+- Revisit 2026-11-16 (7-day) and 2026-11-17 ($25 ceiling at 2 weeks).
+
+Tasks: [7d Google](https://app.agencytitan.com/tasks/instance/1f1336e5-c3cd-4049-b4a3-589614e0ba5c) · [7d LSA](https://app.agencytitan.com/tasks/instance/76f54cad-8d86-4ec6-8465-1ee7f8b6a351). Meta in meta-ads-log.md.

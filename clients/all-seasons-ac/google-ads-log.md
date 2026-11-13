@@ -102,6 +102,53 @@ Budgets as of 10-28, spending Oct 1–27 split at the 10-15 cap (Oct 1–15 / Oc
   Total $4,570.76, of which $3,892.38 before the cap. Since 10-16 ≈ $57/day, under the ~$82/day the cap allows (LSA dark until 11-01).
 - Google can spend up to 2x its daily budget on a given day (10-19 $81, 10-28 $82 on $46), never more than ~30.4x per month.
 
+## 2026-11-12 — Strategy Review report drafted (Gui, via Claude)
+
+AT Client Strategy Review "Oct/Nov Review" (https://app.agencytitan.com/tasks/instance/7be61e95-d9e6-454d-842c-d6fcf49ea5b2), cycle 10-10..11-08: report written to `additional_paid_ads_notes` only, stage NOT completed (Gui reviews first). Read-only pulls, nothing changed in any account.
+- **PPC 4467722415:** $1,938.59 / 337 clk / 36 conv (17 taps, 18 call ext LEAD, 1 Phone Call import). $940.81 of it 10-10..10-15 (pre-cap), $997.78 10-16..11-08. call_view 30 calls; 16 transcribed (call-wins-log) → 2 real (10-22 new commercial RTU, 10-19 existing no-heat), 14 not; + 11-05 CallRail website call marked good_lead = 3 confirmed. Not reviewed: 10-26 106s, 10-27 60s, 10-28 81s + 98s and 10 short calls. 0 forms.
+- **LSA 8655979348** (still LOCAL_SERVICES, no PMax migration): $994.53 (Oct $471.25, Nov $523.28), 16 leads (12 calls, 4 msg), 13 charged − 1 CREDITED (10-19 job seeker) = 12, ~$83/charged. Oct 6 leads reviewed → 4 real; Nov: 2 BOOKED in dashboard, 6 ACTIVE + 2 DECLINED not reviewed. 10-12 / 10-14 messages still NEW.
+- **Meta 2405306059725517:** $118.68 10-10..10-15, $0 10-16..11-11.
+- Total $3,051.80, 9 confirmed real leads ≈ $339 each (Google ~$646, LSA ~$166 per confirmed).
+- Rec in report: LSA $60/d (~$1,800/mo, ~+$740) → ~$3,200/mo total; tier options from 10-19 still open; client written OK needed.
+- Seen in change_event: **11-11 Edu** enabled Branded Evergreen ($5/d, Target IS), LeadGen budget $22 → $17 (total still $46), plus negatives + LeadGen keyword pauses.
+- CallRail agency account returned 429 (daily cap) on 11-12, so the cycle's full CallRail call list / lead_status could not be pulled.
+
+---
+
+## 2026-11-10 — APPLIED: 22 phrase negatives (Gui's go) + the 3 counted calls transcribed + AM task for LSA
+
+**Negatives, APPLIED live** (`asac_negatives_1110.py` in this folder, all 22 created, PHRASE, campaign level):
+- Both LeadGen 11803942938 + MiniSplit 24050402045: hart home, kool point, dole fuel, app support, residential insulation, flynnaire.
+- MiniSplit only: lennox, universe home services, flynn aire, mac heating, dix hills air conditioning, quality air care, innovation air conditioning, hardy plumbing, pc richards, all service heating.
+- 'lennox' NOT on LeadGen: it would block Lennox repair searches there ('lennox farmingdale' was already a LeadGen negative). 'hart home' instead of 'hart home comfort' to also catch 'hart home fuel' ($25.68 on LeadGen).
+- **The "copy LeadGen's list to MiniSplit" idea was dropped on purpose:** LeadGen's 8,751 campaign negatives are mostly old 2021-22 lists that include 'mitsubishi', 'mini split', 'air conditioning', 'ac', install/cost terms, i.e. exactly MiniSplit's theme. Edu's curated 10-16 + 10-22 lists are already 100% on MiniSplit (checked via change_event), and MiniSplit also shares the COMPETITORS set (1,048). Only competitor names that actually bought clicks on MiniSplit in the last 90d were copied.
+- Not done (not negatives): pausing the 2 plumbing BROAD keywords, BROAD → phrase, RSA fixes.
+- **Found:** LeadGen has ENABLED keywords that are other companies' names ('lennox farmingdale' PHRASE, 'capritta appliance repair', 'applegate plumbing and heating long island', 'happy home heating', 'utica boilers technical support', etc. EXACT). Not touched; Edu's call.
+
+**Calls:** the 3 call-ext 60s+ conversions of 11-02..11-08 transcribed (see `call-wins-log.md`, spot check 11-03/11-04): **0 of 3 real customers** (Mitsubishi unit buyer, National Grid gas customer, Mitsubishi Comfort app support). Google's 3 leads that week = 0 real call leads from the extension.
+
+**AT Internal Request** `3addac2e-1259-40e5-b4a5-5344f821ffff` for Angela (Customer Success, Execution due 11-12): (1) LSA message leads 345210512 (10-12) + 346031643 (10-14) never answered (only consumer messages in local_services_lead_conversation); (2) ask the client for more LSA budget, rec $60/d (~$1,800/mo). LSA monthly: Sep $749.91 (dark after 09-24), Oct $1,104.42 (dark after 10-19), Nov $571.78 by 11-09 → out ~11-17. Intake left open for Gui (department click + submit in UI).
+
+---
+
+## 2026-11-09 — AT optimization tasks (Gui, via Claude)
+
+**7-Day Google (https://app.agencytitan.com/tasks/instance/c3aa525e-ebfa-4db8-896a-4a21b9523867), read-only, completed.** 11-02..11-08 PPC: $320.53 / 22 clk / 3 conv / $106.84 CPL / $14.57 CPC (prev 10-26..11-01 $291.89 / 28 / 7 / $41.72). LeadGen $157.74 / 1 conv, MiniSplit $162.79 / 2. All 3 conv = call ext LEAD 60s+ (11-03 96s, 11-04 64s, 11-04 70s); the 11-04 MiniSplit one came from search 'mitsubishi comfort app support' ($34.71), likely not a job. Secondary: 1 tap + 1 'Phone Call' import 11-05 = CallRail website call 176s marked good_lead (gclid, LeadGen). CallRail: 10 call-ext calls, 2 not_a_lead. On Pace ($320.53 vs $322) but weekdays only (LeadGen Mon-Fri, MiniSplit $0 Sat), up to 1.8x daily. IS 10% (Both). Italy + UK exclusion still in place, geo PRESENCE. KPI - Google Search `b4b34fd0` (Mixed). [TSD] Lead Form 0 since 10-08.
+Other-company terms $102.37 = 32% (prev 26%): lennox farmingdale $34.68, wcesp $25.97 (now excluded), kool point $20.67, hart home comfort $16.95, dole fuel $4.10. Junk $45.35 (app support, residential insulation). Own brand $24.38, 0 conv. Edu 11-04 on MiniSplit: 'mini split heat pump' BROAD paused + 1 keyword + 1 campaign negative created.
+**14-Day Google (https://app.agencytitan.com/tasks/instance/3ceeec8a-189b-4be5-b9a1-fb5e947b672e), completed, all 8 checklist items ticked.** 10-26..11-08: $612.43 / 50 / 10 conv / $61.27 (prev 14 $1,132.32 / 191 / 23 / $49.23, before the 10-15/10-23 pauses). 7 calls 60s+ conv + 2 taps + 1 Phone Call; call_view 16 calls, 7 of 60s+ ($87.49 each). High CPC $16.5-19.15 on BROAD generics; 'plumbing and hvac services' + 'hvac & plumbing' BROAD $57.26 / 0 conv. 2 POOR RSAs still live; LeadGen URLs still the redirecting /heating-repairs/ + /ac-installations/. No auto-applied changes since 10-12.
+**Staged, not applied:** phrase negs lennox / hart home comfort / kool point / dole fuel / app support / residential insulation on both campaigns; copy LeadGen competitor list to MiniSplit (254 vs 8,755); pause the 2 plumbing BROAD keywords; BROAD → phrase on ductless air conditioner / replace central air with mini split / gas and heating services; fix/pause 2 POOR RSAs; direct final URLs; pause dynamic AG; taps vs Phone Call counting + form test (Edu); brand coverage inside $46/d (Edu/AM).
+Toggles to set in UI (14-Day): High-CPC Keywords Reviewed = Yes, Keyword Warnings Reviewed = Yes, Keywords Paused or Fixed = No, Geo Targeting Adjusted = No, Audience added? = No, Blockers to Escalate = No.
+- **LSA 7-Day (https://app.agencytitan.com/tasks/instance/68f5b3ae-bf2d-40d7-8619-811b323599b4), completed:** 8655979348, still LOCAL_SERVICES 23394236866 (no LSA migration). $523.28, 7 charged leads (5 calls, 2 msg), $74.75 CPL; prev week $0 (Oct cap). 1,435 impr, 94.2% top. Overspending: 209% of 7 x $35.71, ~48% of the ~$1,086 Nov limit used by 11-08 → likely dark again ~mid-Nov. 3 uncharged calls (2 DECLINED 11-03 a minute apart, 1 ACTIVE 11-06): no dispute needed. Both new messages handled (11-03 BOOKED, 11-06 ACTIVE). 10-19 dispute now CREDITED. 10-12 + 10-14 messages still NEW. KPI - LSA `5b423aa2` (Overspending, Good).
+
+---
+
+## 2026-11-03 — AT optimization tasks (Gui, via Claude)
+
+**7-Day Google (https://app.agencytitan.com/tasks/instance/bae91456-cf74-4825-9ed5-56fbd0411b8a), read-only, completed.** 10-27..11-02 PPC: $290.86 / 28 clk / 6 conv / $48.50 CPL / $10.39 CPC (prev $290.17 / 33 / 6 / $48.36). LeadGen $140.91 / 3 conv, MiniSplit $149.95 / 3. Conv = 3 call ext LEAD (60s+) + 2 taps + 1 'Phone Call' UPLOAD_CLICKS import (MiniSplit 10-29, first in 30d, same day as a tap: possible double count). call_view 8 calls, 3 of 60s+ ($96.95 per real call). On Pace (90% of $322). IS 10% (Both). KPI - Google Search `b7c79458` (Mixed). No change events 10-26..11-03.
+Brand searches ('all seasons ...') = $94.46 and 5 of the 6 conv, bought at up to $24.92/click inside non-brand campaigns. Other-company terms $75.65 (26%, prev 34.5%): wcesp $25.97, kool point enterprises $20.67, flynnaire $6.97 (LeadGen dynamic AG), mac heating levittown / dix hills air conditioning inc / quality air care east hampton $17.94 on MiniSplit (LeadGen already has them as negs), dole fuel $4.10. [TSD] Lead Form 0 since 10-08.
+**Staged, not applied:** MiniSplit phrase negs (dix hills air, mac heating, quality air care, kool point, dole fuel, flynnaire, universe home services, flynn aire) + copy LeadGen competitor list; LeadGen flynnaire / kool point / dole fuel; 'mini split heat pump' broad → phrase; Branded home inside $46/d (Edu/AM); confirm 'Phone Call' import source + dedupe (Edu); pause dynamic AG; fix/pause 2 POOR RSAs; form test.
+- **LSA 7-Day (https://app.agencytitan.com/tasks/instance/644b246e-0a02-42af-aef2-e0e69136b679), completed:** $144.01, 2 call leads (charged, ACTIVE), 0 msg, $72.01 CPL; prev week $0 (Oct cap). Restarted 11-01: 11-01 $0, 11-02 $144.01 (4x the $35.71 daily) → front-loading again, Nov cap may run out early. 375 impr, 92.8% top. KPI - LSA `c5df9efc` (Underspending on paper, Good). Still open: 10-12 + 10-14 message leads NEW, 10-19 dispute PENDING.
+
 ---
 
 ## 2026-10-27 — AT optimization tasks (Gui, via Claude)

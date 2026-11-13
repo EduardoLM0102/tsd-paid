@@ -326,6 +326,50 @@ looks like a test sweep), Google Ads calls 10-14 → 11-03 = 38:
 3. Repoint CallRail's Google Ads integration from 849-758-3415 to 105-184-3378 (CallRail UI; TSD is admin there). Then First/Repeat uploads reach PPC.
 4. AM items: pool 4 → 14 numbers (client cost), GA4 integration on the old domain.
 
+## 2026-11-09 — AT optimization tasks (Gui, via Claude)
+
+Read-only, nothing applied. Extra pulls: scratchpad `pp_x/pp_x1109.py` (change_event old/new, Branded daily IS, conv goals, call assets,
+conv by action/campaign/date, Nov MTD), `pp_x2.py` (11-09 changes, portfolio strategies, paused kws), `rec.py` (recommendations).
+
+**What changed since 10-31 (all eduardo@, change_event):** **11-04 Nov restore**: Search Elec / HVAC / Plumbing ENABLED, caps Elec $375,
+HVAC $230, Plumbing $145, Branded $130 = $880/d (plan was $800/d). **Call asset fixed 11-04:** (210) 225-5767 (428601259336) linked on all 4
+Search campaigns + account level, 794-7570 removed everywhere (fu-052 done). 2 POOR Branded RSAs paused (808846497511, 808844736361).
+Branded → Target IS 95% abs-top, $10 cap (11-04) → $18 (11-06). Sitelink URLs → /contact, /about. **Block F effectively done ~11-04:**
+`TSD - Website Call` now primary_for_goal false (last counted tap 11-04), CallRail import live (`First Time Phone Call` primary, `Repeat Phone
+Call` secondary, UPLOAD_CLICKS). **11-09 (today, after the window):** Branded $130 → $50, Elec $375 → $455 (total still $880/d); HVAC on
+portfolio `TSD_ProudPops_HVAC_MaxConv_CPC30` (12308461252, tCPA $265, CPC cap $30); paused Plumbing AG1 [plumber san antonio] / [plumber
+near me] / "plumber san antonio tx" (AG4 dupes) + Elec "electrical services" phrase; negatives Elec electric company / aep / hourly rate,
+Plumbing cheap / saws, HVAC cheapest.
+
+**7-Day Google (https://app.agencytitan.com/tasks/instance/7154583f-04d7-472c-88d1-65d7940c0a4c), completed.** Week 11-02..11-08 (2 days
+Branded only + 5 days full Search): $3,514.65 / 154 clk / 13 conv / $270.73 / $22.82 CPC / 8.43% CVR (prior Branded-only $666.37 / 45 / 8
+taps). Elec $1,714.36 / 63 / 8 ($214.30; IS 33.6%, budget-lost 38%); HVAC $751.41 / 22 / 1 (CPC $34.15, rank-lost 50%); Plumbing $768.27 /
+38 / 0 (Max Clicks $45); Branded $280.61 / 31 / 4 (IS 51.7% vs 74.0%). Counted 13 = Branded 3 taps (11-02..11-04) + 1 CallRail call; Elec
+4 CallRail first-time calls + 2 Calls from ads + 2 forms; HVAC 1 CallRail call. +2 Branded forms not counted (no form goal on Branded) →
+12 real leads, ~$293 each. call_view: 3 Elec calls (48s/372s/141s). **Branded Target IS $10 cap starved delivery** 11-05..11-07 (0/5/9
+impr, rank-lost 50-90%); 11-08 back to IS 88.9%. Competitor terms $234.14 (cowboys heating and air $93.85, mesa electrical contractors
+$71.01, 1 tom plumber $49.24, venture plumbing $20.04). Search IS 29.6%. Nov 1-8 PPC $3,570.85 + LSA $477.56; at full $880 caps Nov ≈ $24.8k
+max (inside $25k); actual 11-04..11-08 $394-$817/d. Staged: 4 competitor negs, Branded form goal biddable, Plumbing decision 11-16 (Max Conv
+or move budget to Elec at same total), HVAC ad groups to own pages, CallRail vs Calls-from-ads double-count check in CallRail UI, negate
+exact [electrician] if still 0 conv. KPI Google row `dcaf4621` (Mixed).
+
+**14-Day Google (https://app.agencytitan.com/tasks/instance/8d89a14e-12bb-48a9-a1ed-2c51e9a52109), completed.** 10-26..11-08 $4,181.02 /
+199 clk / 20.98 conv (prior 14 $7,235.83 / 140, mostly taps). All PPC clicks in targeted geo (only LSA has out-of-target, $313.90). Old
+Electrical RSAs out-convert the new G2 ones 7 vs 1 conv (809528123698 4, 809490671193 2, 809490621054 1) → don't run G2b as-is, fix their
+plumbing descriptions instead. Expected CTR below avg on ~all nonbranded kws; Electrician AG1 ad relevance below avg; QS 1 "electrical work
+near me". No audiences on any Search campaign. 96 open recs (82 keyword adds, partners x3, display x3, broad, Plumbing Max Conv, HVAC budget).
+22:00-06:00 $409.13 / 0 conv. All 8 checklist items ticked.
+
+**LSA, 7-Day (https://app.agencytitan.com/tasks/instance/c97d0a5a-b50a-4058-a704-f65609f391dc), completed.** 3 sources: in-account $225.94
++ electrician $139.88 + HVAC $111.74 = $477.56 (prior $244.78) / 7 leads (5 calls, 2 msgs), 6 charged / $79.59 per charged lead (prior
+$81.59). Top impr 92.8% (prior 90.9%), impr 722 vs 637. 11-02 plumbing message CONSUMER_DECLINED + charged, undisputed; 6 still ACTIVE.
+Budget fields $714.29/d x3 = Underspending, not the limit. KPI LSA row `665d1f48`.
+
+**YouTube, 7-Day (https://app.agencytitan.com/tasks/instance/19eedeec-318f-4b4f-849c-a99d87bf7c2e), completed.** Both YouTube campaigns
+(24120440530, 24120482524) still PAUSED: $0 / 0 impr both weeks, no ads/placements/conv rows. All 7 checklist items ticked.
+
+**Meta, 7-Day:** N/A, see meta-ads-log.md (KPI Meta row `9c508a94`).
+
 ---
 
 ## 2026-10-31 — AT optimization tasks (Gui, via Claude)

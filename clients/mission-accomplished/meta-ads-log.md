@@ -60,6 +60,28 @@ Command Center: fu-134 (Page dropped, recheck 11-12), fu-140.
 
 *Reversibility: no account changes made.*
 
+## 2026-11-09 — AT optimization tasks (Gui, via Claude)
+
+**Scope:** read-only (Meta MCP), no account changes. 7-Day Meta task completed.
+
+- **Still fully dark:** $0 / 0 impr 11-02..11-08. Awareness ARL 52605605054542 ($30/d) still PAUSED since 10-30 6:32 AM (Jonathan Bannister via ads MCP server); activity log since 10-29 shows nothing else but the automatic 10-31 billing charge. Reason still unlogged. Every campaign on the account paused.
+- **Prior week 10-26..11-01:** $122.05 (10-26..10-30 only), 22,713 impr, reach 14,684, freq 1.55, CPM $5.37, CTR 0.32%, 0 leads.
+- **Staged, not applied:** Edu / Jonathan confirm the pause was intended and log why; if awareness returns, apply the 10-26 staged fixes (home-only location, Kingman, Advantage+ on, heating creative refresh, pause Video 06 Kelly, ~3x/week); if Meta stays off, AM confirms with the client so the weekly Meta task can be paused. Lead gen still behind the GHL to Hatch joint test. With PPC off and Meta dark, LSA is the only live channel (1 charged lead this week).
+- KPI - Meta row f0f21b97 ($0 / Unclear). Task: https://app.agencytitan.com/tasks/instance/d65986be-b7b3-4c26-9c87-00eaaf777c9f
+
+---
+
+## 2026-11-03 — AT optimization tasks (Gui, via Claude)
+
+**Scope:** read-only (Meta MCP), no account changes. 7-Day Meta task completed.
+
+- **ALERT: awareness campaign 52605605054542 PAUSED 10-30 6:32 AM by Jonathan Bannister via the ads MCP server** (activity log, Active to Inactive). Reason not in any log. Daily: 10-27 $30.03, 10-28 $28.69, 10-29 $30.69, 10-30 $3.45, $0 since. Nothing else live: Meta fully dark (lead gen paused since 09-09), Google PPC off since 07-07, only LSA running.
+- **7d 10-27..11-02:** $92.86 (prior $209.87), 17,147 impr, reach 11,550, freq 1.48, CPM $5.42, CTR 0.32%, 540 est. recallers ($0.17), 3s plays 3,395, ThruPlays 355. 0 leads. Video 01 led ($28.56 / 126 ThruPlays), Video 05 Roger weakest CTR 0.13%.
+- **Staged, not applied:** confirm with Edu / Jonathan whether the pause was intended and log why; if awareness returns, the 10-26 staged fixes still apply (home-only location, Kingman, Advantage+ on, heating creative refresh, pause Video 06 Kelly, budget for ~3x/week). Lead gen relaunch still behind the GHL to Hatch joint test.
+- KPI - Meta row a7d24483. Task: https://app.agencytitan.com/tasks/instance/eeadaf79-be94-467f-aaef-4867e6d04bb2
+
+---
+
 ## 2026-10-26 — AT optimization tasks (Gui, via Claude)
 
 **Scope:** read-only (Meta MCP), no account changes. 7-Day + 30-Day Meta tasks completed.

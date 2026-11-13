@@ -317,3 +317,30 @@ ad-group sitelinks on Restroom are sewer/drain/inspection and 'Septic Tank Inspe
 nights/Sunday bid cut + Presence-only geo + 4 stalled BC conv actions to Secondary (AM confirmation); /specials/ page offers expired 10-31 (tell AM);
 real end-to-end test call + form. Recheck ~11-13.
 
+## 2026-11-03 — AT optimization tasks (Gui, via Claude)
+
+Read-only, everything staged. All 4 AT tasks completed.
+- **7-day (10-27..11-02):** $213.64, 50 clk, 6 conv, $35.61 CPL (prev $219.18 / 9 / $24.36). Branded $35.70 / 1 conv, IS 93.2%; NB $177.94 / 5 conv, IS 62.0%, 38% rank-lost, 0 budget-lost. Conv = 4 [EB] taps + 2 Call Extension Calls, 0 RYNO forms (last 10-26); 2 call_view calls, both 60s+ → ~2 real leads (~$107). NB uses ~$25 of $38/d (Manual CPC bids under first page); Google pace ~$930/mo vs ~$1,400 in the plan. Brand leak into NB: lilly pad septic $5.80, salina septic $6.00. No changes since 10-20. KPI 960fe8f4, Health Mixed. Task https://app.agencytitan.com/tasks/instance/327f2de1-6598-4e5f-886b-90099ea09514
+- **14-day (10-20..11-02):** $432.82 / 99 clk / 15 conv / $28.86 (prev 14 $439.86 / 14 / $31.43). Septic Pumping and Repair RSA now POOR ad strength (AVERAGE on 10-17); expected CTR below avg on most septic kws (septic tank cleaning QS 3 top spender); 63% of geo spend from outside the 3 target cities (Presence or interest; nearby towns convert, KC / Jefferson City / New York / Overland Park / Minneapolis $27.48 / 0); old RYNO LP still $63.85 via sitelinks; no audiences; 70 auto recs; 6pm-6am 19% of spend / 1 conv. Task https://app.agencytitan.com/tasks/instance/fcd05c8a-55ff-4fc7-8cc1-e52e0c5c9da3
+- **Staged, not applied:** bids to first page on septic repair (~$8.70) / septic emergency service (~$7.75) / new septic tank installation (~$7.80); lilly pad septic + salina septic to Branded + NB exact negs; pause 'septic tank installation cost' (QS 2); NB neg 'how to install'; fill RSAs + 2nd RSA per NB ad group; repoint RYNO sitelinks; Presence-only geo + real service area (AM); observation audiences; reject search partners / display / PMax / tCPA recs; nights/Sunday -50% (90-day proposal).
+- **LSA:** N/A, no LSA campaign ($0). Completed as N/A, KPI - LSA $0 row e353145b. Task https://app.agencytitan.com/tasks/instance/f828dbc7-398f-4e2d-9fd9-c2b77b9f194f
+- **Meta:** see meta-ads-log.md.
+
+## 2026-11-09 — AT optimization tasks (Gui, via Claude)
+
+Read-only, everything staged. All 3 AT tasks completed.
+- **7-day (11-02..11-08):** $177.89, 42 clk, 7.5 conv, $23.72 CPL (prev $204.76 / 7 / $29.25). Branded $39.33 / 2 conv (1 [EB] tap + 1 RYNO Lead Form 11-05, first form since 10-26), IS 90.5%; NB $138.56 / 5.5 conv (4 taps + 1.5 Call Extension Calls, 1 call 76s on 11-08), IS 66.4%, 33.6% rank-lost, 0 budget-lost. NB used 52% of its $38/d; account ~$770/mo pace vs ~$1,400 Google plan. RSAs all AVERAGE (Septic Pumping back from POOR). KPI 19a054a0, Health Mixed. Task https://app.agencytitan.com/tasks/instance/210d7a86-8243-434a-ada6-56b0e476251d
+- **Edu changes 11-06 08:13 (API, = most of the 11-03 staged list):** bids septic repair $9 / septic emergency service $8 / new septic tank installation $8; 'septic tank installation cost' paused; Branded kws 'lilly pad septic' (phrase) + 'salina septic' (exact) $2.50; NB negs 'lilly pad' (broad), 'salina septic' (exact), 'how to install' (phrase); restroom ad → /portable-restrooms/; RYNO 'Specials' sitelink removed, 'Contact Us' → /contact/. Post-change 11-06..11-08 NB $48.22 / 2.5 conv, too early.
+- **Geo:** 63% of geo spend ($106.04 / $168.37) and 6.5 of 7.5 conv from outside the 3 target cities: McPherson $30.16 / 1, Lindsborg $12 / 1, Inman $5.99 / 1, Solomon $5.99 / 1, Abilene $2.46 / 1, Lake City MI $8.99 / 1.5; 0 conv from KC MO $10.92, Andale, Moundridge, Marion, Gypsum. Hutchinson + Salina in-target $62.33 / 1.
+- **Staged, not applied:** Presence-only geo + add the real service-area towns (AM to confirm) instead of 3 city limits; tracking task (taps = most counted conv, no end-to-end test ever); carry-over RSA fill + 2nd RSA, audiences, nights/Sunday -50%. Recheck ~11-16 for the bid-raise effect.
+- **LSA:** N/A, no LSA campaign ($0). Completed as N/A, KPI - LSA $0 row 1475a530. Task https://app.agencytitan.com/tasks/instance/e8c51c4e-c7c3-4184-bdc8-1d4379904b97
+- **Meta:** see meta-ads-log.md.
+
+## 2026-11-12 — Strategy Review report drafted (Gui, via Claude)
+
+Performance Reporting notes written to `additional_paid_ads_notes` on AT task https://app.agencytitan.com/tasks/instance/59a4be8c-baa3-4dbf-8447-0f6d159f053d (Oct/Nov Review, cycle 10-10..11-08). Stage NOT completed, Gui to review.
+- **Cycle:** $853.81 / 195 clk / 28.8 Google conv (13 [EB] taps + 9.8 Call Extension Calls + 6 RYNO Lead Forms). call_view: 15 ad calls, 10 >=30s, 7 >=60s. Likely real = 7 calls 60s+ + 6 forms = 13, ~$66 each (Q4 plan Google CPL $80-150). Bookings unverified (ServiceTitan).
+- **Branded** $132.03 / 58 clk, IS 82%, 9.5% budget-lost. **NB** $721.78 / 137 clk, IS 66%, 34% rank-lost, 0 budget-lost, ~$24/d of $38. Pace ~$860/mo vs ~$1,400 Google plan; Meta + LSA $0.
+- **Geo:** Hutchinson + Salina $398 of $817 (49%), 14 conv; ~$55 far away (KC, Topeka, Fort Scott, out of state) 0 conv. **Nights** 18:00-06:00 = $215 (25%) / 2 conv.
+- **Changes in cycle (change_event, from 10-14):** 10-20 budgets Branded $5→$8, NB $41→$38 (Edu); 11-06 Edu's bid/keyword/neg/URL/sitelink batch (see 11-09 entry). 10-16 AI Max off on a legacy campaign only.
+- **Couldn't check:** CallRail. Gui's key gets HTTP 403 on Lilypad's own CallRail account (ACC019e17de4a1d7045a696ce3e47094f44 / 350598565), agency account at its 10k/day cap. Website-call outcomes only known through 10-15 (call-wins-log.md: 5 of 6 to voicemail).

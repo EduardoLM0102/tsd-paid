@@ -904,3 +904,24 @@ Cycle 10-10..11-08. KPI row **53ecca81-aee0-4316-b6de-36f2d2196219** created on 
 - LSA in cycle: campaign $124.80, 238 impr, 36 clk. 10 phone leads, all transcribed locally (`_pessoal/call-wins/zen-air/`): see `lsa-call-wins-log.md`. The 10-28 wrong-number call (New York caller) was CHARGED $62.40 → rate bad ourselves (Command Center fu). 10-19 and 10-22 real bookings sit as DECLINED in LSA (office marks), nothing to do.
 - HighLevel (via AT integration, location xYzDJzBnMX6dvv4gf8Xr): 340 contacts in cycle (328 Facebook, 2 City Pages Form, 1 Contact Us, 1 Club Zen, 8 no source). All 332 opportunities `open` in the first pipeline stage → GHL pipeline is not worked, outcomes live in ServiceTitan. Website forms are not attributable to paid (Ads form tracking dead since 09-15).
 - `call_view` can't take `segments.date` (PROHIBITED_SEGMENT); pull all rows and filter `start_call_date_time` in Python. Script: `clients/zen-air/strategy_review_pull_1112.py`.
+
+## 2026-11-03 — AT optimization tasks (Gui, via Claude)
+
+**14-Day Google (https://app.agencytitan.com/tasks/instance/34004e5e-9c66-4614-a0c7-dda88158a4bc), read-only, completed, all 8 checklist items ticked.** 10-20..11-02: $743.43 / 66 clk / 2 conv (both [TSD] Click to call taps) / $371.72 CPL / $11.26 CPC (prev 14 $504.48 / 53 / 3). 0 ad calls in call_view; 1 Peach AI Booked Call upload 10-23 (Branded, all-conv only). Web forms 0 (dead since 09-15, Gui investigating).
+- NB 10-23..10-29 (paused 10-29 by access@ UI, still unknown who): $673.45 / 55 clk / 1 tap, $12.24 CPC, IS 20% (56% rank-lost). Branded $69.98 / 11 / 1 tap, IS 96%, $0 on 10-31..11-02 (quiet days).
+- 12 kws with QS ≤4 = $223.77 (33% of NB); ac service + furnace installation QS 1. Visible NB terms $96.22, $83.27 of it research/DIY/product. 20:00-05:59 = $150.01 / 0 conv. Age 65+ $303.34 / 0 conv (small sample). No audiences attached. DeKalb $65.61, Hall Co $81.09 (check). 14 auto-apply subs PAUSED, 109 open recs on NB. eddie@callzenair.com uploaded 3 image assets (10-19, 11-02).
+**Staged, not applied:** keep NB paused until the 10-29 pauser is known + tracking verified (Gui); before relaunch: QS-1 kws pause/exact, heating service + new ac unit → exact, negatives (10-31 list), NB sitelinks to new LPs, 6:00-20:00 schedule, DeKalb exclusion, observation audiences; dismiss recs; clean ENDED trial campaigns. Call-number mismatch flagged only (overlaps Gui's investigation).
+Toggles to set in UI (14-Day): High-CPC Keywords Reviewed = Yes, Keyword Warnings Reviewed = Yes, Keywords Paused or Fixed = No, Geo Targeting Adjusted = No, Audience added? = No, Blockers to Escalate = Yes (NB paused by unknown user).
+
+## 2026-11-09 — AT optimization tasks (Gui, via Claude)
+
+7-day Google Search + 7-day LSA. Read-only, nothing changed in the accounts.
+
+**PPC (11-02..11-08 vs 10-26..11-01, LSA excluded):** $33.68, 6 clicks, 3 conv, $11.23 CPL, $5.61 CPC, 50% CVR (prior $393.83 / 34 / 0, of which Nonbranded $355.10 before the 10-29 pause). KPI Health = Mixed.
+- Branded only: IS 96.3% (3.7% rank-lost, 0 budget-lost), 42 impr, Limited (Target IS $8 ceiling). All 6 terms brand, no waste. Underspending vs $50/d = brand demand is the cap.
+- The 3 conv are [TSD] Click to call taps (11-03 x1, 11-04 x2); 0 call_view calls. **Peach AI Booked Call logged 2 (all-conv only) on the same days (11-03, 11-04)**, so the brand taps likely became 2 booked calls.
+- Nonbranded still PAUSED since 10-29 (shared access@ UI login, who/why unknown). Web forms 0 since 09-15 (Gui investigating). 11-02: eddie@callzenair.com created 2 assets.
+**Staged, not applied:** confirm the 10-29 pauser with Edu, relaunch only after Gui's tracking check + the 11-03 14-day list; report Peach AI booked calls next to taps; AM ticket for the pause; call-number mismatch = Gui investigating.
+- **LSA 3740502923:** $0, 2 phone leads (11-04, 11-05, uncharged, unmarked), 0 messages, 57 impr, 100% top / 79.5% abs top (prior $62.40 / 1 lead 10-28, still unmarked). Underspending: API budget $642.86/d isn't the limiter, reach is. 30d $124.80, 10 leads (2 BOOKED, 5 DECLINED, 3 open). Staged: Zen to mark open leads; service area/hours still waiting on Eddie.
+
+AT tasks completed: Google https://app.agencytitan.com/tasks/instance/560989da-e642-46ad-94ed-69c04ade143b (KPI `f393ba8b`), LSA https://app.agencytitan.com/tasks/instance/e9a71b7d-f6f2-49b6-824f-d142a66d3701 (KPI `718b55bd`).

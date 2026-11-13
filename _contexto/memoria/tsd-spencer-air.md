@@ -87,3 +87,7 @@ Spencer Air Conditioning — TSD client, HVAC in the **Dallas–Fort Worth metro
 **2026-11-12:** fu-101 (homepage Schedule buttons → carrier.com, ask Alex) REMOVED by Edu, not pursuing.
 
 **2026-11-12:** Oct Review KPI row 6033f86d written (22 leads = 5 new + 12 existing + 4 LSA msgs + 1 form, $107.78 overall / ~$54 Google-only, rec $2,700/mo thru Dec). ERV install lead asked sales twice (11-06, 11-10), no callback. Detail clients/spencer-air/strategy-review-oct-2026.md.
+
+**2026-11-03 (Gui AT run):** Edu raised the Branded Target IS ceiling $8 → $10 on 10-28, IS back to 92-100%. CORRECTION to 10-26/10-27: CallRail integration is active and Repeat Phone Call uploads land; First Time Phone Call is untested (no first-time gclid call since 10-19), not broken. 0 new-customer Branded calls in 7d. LSA 7d $341 / 3 charged; 2 messages unanswered (10-19, 10-25).
+
+**2026-11-10 (Gui AT run):** LSA migrated to PMax-type 'Pay-per-lead-PMax-Spencer Air Conditioning & Heating' 24436741588 (first spend 11-07; old LSA campaign PAUSED, last spend 11-03, gap 11-04..11-06): count it as LSA, not PPC. First Time Phone Call CallRail upload landed (integration confirmed working). Branded $86.91 / ~2 real calls, conv inflated by Calls from ads + uploads + Directions (staged: Directions secondary, one primary per call). Meta ARL $274 / 2,020 recallers $0.14, freq 1.78/wk.

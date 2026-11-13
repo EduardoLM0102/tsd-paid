@@ -7,6 +7,14 @@ in C&S's GTM container (`GTM-P2MR2T2`) is the placeholder `123456789` (09-07 tra
 
 ---
 
+## 2026-11-10 — AT optimization tasks (Gui, via Claude): 7-Day Meta, still nothing to review
+
+All 3 pages of accessible Meta ad accounts checked: no C&S account. 7-Day (https://app.agencytitan.com/tasks/instance/c0944692-1cfc-4e3d-a8af-5aa0adce8fca) completed as N/A. KPI - Meta 11-10 `c0c8673c` = $0 / 0 leads / Unclear. Blocker Details = build-or-switch-off + ask who runs the 'Facebook Ads' traffic CallRail saw on 10-22.
+
+## 2026-11-03 — AT optimization tasks (Gui, via Claude): 7-Day Meta, still nothing to review
+
+Re-checked the full Meta ad account list (both pages): no C&S account. 7-Day (https://app.agencytitan.com/tasks/instance/48759e91-cc82-4839-880c-ee76699732ea) completed as N/A. KPI - Meta 11-03 `223aeb9a` = $0 / 0 leads / Unclear. Blocker Details = build-or-switch-off wording. New: CallRail logged a 10-22 website call from 'Facebook Ads' (utm_campaign=promo, utm_content=Fall), so someone other than TSD runs paid Facebook for C&S; ask the AM/client who.
+
 ## 2026-10-27 — AT optimization tasks (Gui, via Claude): 7-Day + 30-Day Meta, still nothing to review
 
 Checked the full Meta ad account list again (both pages): no C&S account. 7-Day (https://app.agencytitan.com/tasks/instance/dc09fb06-bf3e-41aa-a49b-af270c4a821f) and 30-Day (https://app.agencytitan.com/tasks/instance/688e6027-9a76-4e33-8136-c28cca17c859) both completed as N/A. KPI - Meta 10-27 `8da1c058` = $0 / 0 leads / Unclear, 30-day keys left empty. Blocker Details uses the same build-or-switch-off wording.

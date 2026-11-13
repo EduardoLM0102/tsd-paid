@@ -8,6 +8,18 @@ ACTIVE, USD). Readable through the Meta Ads MCP.
 
 ---
 
+## 2026-11-09 — AT optimization tasks (Gui, via Claude)
+
+**7-Day Meta (https://app.agencytitan.com/tasks/instance/11b3e655-5a76-48fb-bdaf-1c83f9d1dab5), completed as N/A.** 11-02..11-08: all 15 campaigns PAUSED, $0 / 0 impressions (read-only query). Client asked Meta OFF 04-15, no Meta budget approved. KPI - Meta `052a6a21` ($0 / 0 / Unclear). Checklist ticked (reviewed, nothing applicable). Staged: keep off; relaunch ARL 120250742056430607 only with a written Meta budget approval.
+
+---
+
+## 2026-11-03 — AT optimization tasks (Gui, via Claude)
+
+**7-Day Meta (https://app.agencytitan.com/tasks/instance/96b8b911-762d-4b84-ba07-3a93ce74622b), completed as N/A.** 10-27..11-02: all 15 campaigns PAUSED, $0 (read-only query). KPI - Meta `b2906c40` ($0 / 0 / Unclear). Checklist ticked (reviewed, nothing applicable). Staged: keep off; relaunch ARL 120250742056430607 only with a written Meta budget approval.
+
+---
+
 ## 2026-10-27 — AT optimization tasks (Gui, via Claude)
 
 **7-Day Meta (https://app.agencytitan.com/tasks/instance/31968d54-e3e5-402e-88c4-479a1376b6a2), completed as N/A.** 10-20..10-26: all 15 campaigns PAUSED, $0 (read-only query). Client asked Meta OFF 04-15 + $2,500 cap has Meta at $0; ARL 120250742056430607 paused since 10-15. KPI - Meta `e5d62a47` ($0 / 0 / Unclear). Checklist ticked (reviewed, nothing applicable). Staged: keep off; relaunch ARL as built only with an approved Meta budget.
