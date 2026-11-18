@@ -8,6 +8,9 @@ metadata:
   modified: 2026-09-08T01:44:18.707Z
 ---
 
+⚑ 11-16 Heating Search 24383234148 PAUSED (fu-141: $582 / 67 clicks / 0 leads over its life; repair-only last week 16 clicks / 0). Live = Branded + LSA only. Nonbranded failed 5x: don't rebuild without a client offer. Review row 4387c0fc final = $2,343.85 / 18 / $130.21.
+
+
 C&S Air, Mansfield TX HVAC. Google Ads acct `5563867754` — named "(LSA) C&S Air, inc. / Derek O'Keefe" but has full PPC (Smart Campaign + Search x3 + PMax) alongside LOCAL_SERVICES, same pattern as Golden Plumbing/Watt's Right. A separate account literally called "C&S Air Inc." (`3144198344`) exists under the same MCC but is CLOSED/inaccessible via API — don't use it. Wasn't in `contas.yaml` before 2026-08-12; added during this audit. Full detail in `topserv-workspace/clients/cs-air/google-ads-log.md`.
 
 **Why:** First-time audit requested 2026-08-12. True blended cost-per-lead (verified calls + web forms only) = **$78** on $17,230 YTD spend / 221 real leads (216 calls, 5 forms) — well above the $37–55 the UI headline numbers imply, because the flagship "TSD_03.13_Pmax_Evergreen" campaign is actually a **Smart Campaign** (not real PMax) that pulls Directions-clicks and phone-icon-taps into its primary Conversions column (162 of its reported 310.5), a behavior confirmed at the segment level and unique to that campaign type. Nonbranded Search failed twice (Mar $763/0conv, Jul $1,365/1conv) from QS 1-2 on core terms + zero competitor negatives — 69% of July spend went to competitor brand names via broad match drift.

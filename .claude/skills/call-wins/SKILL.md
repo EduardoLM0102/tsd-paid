@@ -11,7 +11,7 @@ Setup (uma vez por máquina): seção 8 do `ONBOARDING.md`. Se `.env.callrail` n
 
 ## Regras que não mudam
 
-- **Transcrição só local.** As gravações têm PII real de clientes (nomes, endereços, às vezes número de cartão falado). Nunca mandar áudio ou transcrição pra serviço de nuvem. A transcrição da própria CallRail exige um add-on pago que a conta não tem.
+- **Transcrição só local.** As gravações têm PII real de clientes (nomes, endereços, às vezes número de cartão falado). Nunca mandar áudio ou transcrição pra serviço de nuvem. **Exceção: a própria CallRail já entrega a ligação transcrita** (`fields=transcription` no calls.json; agência, Watt's Right, King's e Proud Pops têm, Neon Monkey não). Puxar de lá primeiro e só transcrever local o que vier sem (LSA do Google, tracker com gravação OFF). Ver `_contexto/memoria/tsd-callrail-transcripts-first.md`.
 - **Áudio, `calls.json`, `lsa.json` e `transcripts.json` ficam em `_pessoal/call-wins/<slug>/`** (gitignored). Nunca copiar pra `clients/` nem commitar.
 - **No log, nunca repetir números de cartão, CVV ou dados de pagamento**, mesmo que apareçam na transcrição. Escrever só "gave card details over the phone".
 - **CallRail e Google Ads: só leitura.** Os scripts só fazem GET/search.

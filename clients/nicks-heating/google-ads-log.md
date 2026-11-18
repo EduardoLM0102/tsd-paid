@@ -10,6 +10,45 @@ Campaigns are TSD-named (built Feb–May 2026, before Edu joined).
 
 ---
 
+## 2026-11-18 (later) — APPLIED proposals 1-3 from the 11-18 read (Edu: "proceed"), 13:16 BRT / 10:16 CT
+
+`nicks_apply_1118.py` (this folder), validate-only first, then `--apply`, read-back confirmed. Command Center fu-181.
+1. **Heating Repair 205669629001: +12 ad-group PHRASE negatives** (fireplace, camper, rv, bathroom, error code, code, goodman, american standard, draft inducer, blown fuse, hauck, accurate electric). Now 26 negatives. None blocks a live heating keyword (checked).
+2. **NB: AC Installation 194012881577 + AC Emergency 195469149119 PAUSED** (0 leads in November). AC Repair + Heating Repair stay. NB budget $40 unchanged.
+3. **Branded 23675600637: Max Conversions (tCPA $25) → Target Impression Share top-of-page 90%, CPC ceiling $8.** Budget $85 unchanged. Correction to the morning entry: Branded was Max Conv with a $25 tCPA, not uncapped.
+**Rollback:** remove the 12 negatives; ENABLE the 2 ad groups; Branded back to maximize_conversions with target_cpa_micros 25,000,000.
+⚑ Next read 11-25 (fu-180): heating week 2 (spend share now that AC Installation/Emergency are off), Branded IS stays ≥85% at CPC ≤$8 (if IS drops like Proud Pops did at $10, raise the cap), PMax ≤$120, LSA pace.
+
+---
+
+## 2026-11-18 — fu-152 read: week 1 of the Heating Repair ad group + Branded cleanup (read-only, nothing changed)
+
+`nicks_read_1118.py` (this folder) + LSA recordings 11-04..11-17 (`lsa-call-wins-log.md`). POST 11-11..11-17 (7d) vs PRE 11-04..11-10 (7d), conversions by conversion date. No account changes by anyone since the 11-11 apply (change_event empty).
+
+| | POST spend (budget) | Leads | Per lead | PRE | Note |
+|---|---|---:|---:|---|---|
+| TSD PMax 23586346547 | $429 ($50, ran $61/d) | 4 (3 ad calls + 1 form) | **$107** | $300 / 3 = $100 | passes ≤$120, keep $50. YouTube 4% ($18). Search categories clean (benfatti 18 impr / 1 clk, keefe's 14 / 0). |
+| Branded 23675600637 | $146 ($85) | 6 ad calls ≥60s (7 calls) | $24 | $32 / 2 | **IS 39% → 85%** (rank-lost 61% → 15%): the cleanup worked. But CPC $4.59 → $13.24: 'nicks ac hammond' PHRASE $111 / 4 clicks = **$27.78 CPC** on Max Conversions, no CPC cap. |
+| NB 23821497590 | $298 ($40, $43/d) | 1 ad call (228s, AC Repair, 11-16) | $298 | $115 / 0 | Heating $191, AC groups still $107 (AC Repair $77, AC Installation $30 on 11-11) |
+| PPL PMax 24425921001 (LSA) | $887 ($71, ran $127/d) | 8 charged | $111/charged | $126 / 1 | 11-16 alone $473 (5 leads). MTD 11-01..17 LSA total $1,231 = on pace for the ~$2,171 monthly cap, not over. |
+
+**Heating Repair 205669629001:** RSA 831254442139 APPROVED, strength GOOD. $191 / 529 impr / 14 clicks / CPC $13.65 (cap $15) / IS 42%, rank-lost 50% / **0 tracked leads** (no form, no ad call). Almost dark 11-11..13 (48 impr), then spends ~$55-65/d from 11-14 (cold weather). Spend sits on 3 PHRASE keywords: heating system repair $101 / 7 clk, furnace not working $60 / 5, heater not working $30 / 2. The exact keywords barely serve (furnace repair QS 3, 0 impr; heating repair hammond la QS 6, 1 impr). Only 1 of 14 clicks shows in search terms (central heat wont come on, $14.73, good intent); the rest are below Google's privacy threshold. Impression-only terms show the symptom phrases pulling DIY / off-service queries: gas fireplace repair (near me) 18 impr, camper heater, heater in bathroom, goodman / american standard error codes, draft inducer motor, blown fuse furnace, competitors hauck heating and air + accurate electric heating and air.
+- **The $150 / 0-lead trigger from 11-11 is hit, but read it carefully:** 14 clicks is too few to judge, and the page's phone is the GHL pool (985) 999-4785, which does NOT report to Google Ads (no CLICK_TO_CALL action, no call import). A heating click that calls from the page is invisible to us. Only forms and ad-call-extension calls count.
+
+**LSA (PPL PMax) 11-11..11-17, 8 charged leads transcribed (6 calls + 2 messages):** 1 booked (Domino's walk-in cooler, existing commercial account, Prairieville), 4 real new-customer opportunities still open or lost (Mandeville tune-up email quote; Folsom mobile home heat burning smell, offered Wed $99, "I'll call you back"; Covington AC out, **lost: "booked till Thursday", caller went elsewhere**; Covington condo AC service $189, will call back), 1 not a lead (customer-supplied natural gas heater install, Nick's: "call a plumber, we don't install anything we don't purchase" → dispute candidate), 2 message leads still NEW (never opened in the app). Every lead since 11-04 is ACTIVE/NEW, nobody marks them. Plus 11-06 charged = duct cleaning (Nick's doesn't do it) → dispute candidate.
+
+**Ad calls (call_view, no recordings for Google forwarding numbers):** Branded 7 (36s, 173s, 74s, 274s, 91s, 283s, 200s, all 985), NB AC Repair 1 (228s). PMax ad calls do not show in call_view.
+
+**PROPOSED (nothing applied, Edu's go):**
+1. Heating ad-group PHRASE negatives: fireplace, camper, rv, bathroom, error code, code, goodman, american standard, draft inducer, blown fuse, hauck, accurate electric. Keep running heating 1 more week (it only spent 4 days); don't cut on 14 clicks.
+2. NB AC: pause AC Installation + AC Emergency (0 leads in Nov), keep AC Repair (got the 11-16 228s call). Frees ~$5-30/d for heating inside the same $40.
+3. Branded: add a CPC ceiling (Target IS top-of-page 90%, $8 cap, like All Seasons) or a max CPC on Max Conv, so brand clicks stop costing $28.
+4. Website-call tracking for heating: import GHL pool calls or add a phone-click conversion, otherwise heating can't be judged. Needs Edu / Daniel Cutrim (GHL).
+5. LSA: rate the 8 charged leads (TSD's job, fu-161; ProvideLeadFeedback works), dispute 11-16 gas heater install + 11-06 duct cleaning (job type not serviced). AM items (Edu decided 11-12 not to send the AM ticket, so only if he wants): 2 unanswered message leads, capacity (new AC customer lost to a 3-day wait), 3 callbacks to chase.
+⚑ Next read 11-25 (fu-180).
+
+---
+
 ## 2026-11-11 (later) — APPLIED 1 + 2 + 3 (Edu: "Execute 1 to 3"), ~10:21 BRT / 07:21 CT
 
 All validate-only first, then `--apply`, read-back confirmed:

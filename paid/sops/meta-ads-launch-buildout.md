@@ -294,7 +294,7 @@ This is a TSD hard rule: **the lead flow is verified end to end before any lead-
 
 **QA checklist (a second set of eyes, not the person who built it):**
 - [ ] Ad preview renders correctly on mobile, feed, reels and stories.
-- [ ] Every link works and carries UTMs.
+- [ ] Every link works and carries UTMs. URL parameters on every ad (division standard since 2026-11-16): `utm_source=facebook&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_id={{campaign.id}}&utm_content={{ad.id}}`
 - [ ] Geo, budget, schedule and conversion event match the intake form.
 - [ ] **No interest or detailed targeting anywhere.** Geo only, Advantage+ on. Age present only as a suggestion, if at all.
 - [ ] Budget sits at the **campaign** level (CBO). No ad-set budgets.

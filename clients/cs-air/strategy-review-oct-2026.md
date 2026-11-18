@@ -44,3 +44,6 @@ If Edu wants the 2 weak ones out (solved by phone, filter question): 14 / $147.3
 
 ## Written to AT — additional_paid_ads_notes
 (see the AT task; same text as sent)
+
+## 2026-11-16 top-up (fu-166): FINAL full cycle
+Row 4387c0fc → ad_spend 2343.85 / qualified 18 (5 new + 12 existing + 1 form) / cpl 130.21; budget_rationale + notes rewritten (Heating paused 11-16, fu-141). Delta: LSA $219.28 + Heating $62.04; 2 new LSA leads 11-15 (duct/dryer vent msg, Mansfield urgent duct call). Twin fd5eb77f still open on Gui (fu-169).

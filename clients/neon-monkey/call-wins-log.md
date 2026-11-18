@@ -190,3 +190,23 @@ Transcribed locally with faster-whisper (small.en); names may be off. None of th
 The phone menu took 6 of 9 ad calls (67%, up from 44%): "press 1 / press 2" still has no default to a person (AT card 3442f6b5).
 The bamboo caller confirms the dropped follow-up from 10-29 (visit 08-20, no estimate in 2+ months, she had to call twice).
 PMax checkpoint fu-115 (11-16) needs ≥3 real calls in Nov 2-15: so far 0 in Nov 4-10.
+
+## 2026-11-11 → 2026-11-15 (fu-115 read, 5 ad calls: call extension, LSA, Website pool with gclid; added 2026-11-16)
+
+Transcribed locally with faster-whisper (small.en); names may be off. Every gclid call in Nov 2-15 maps to a PMax Search click (click_view); NB was paused 11-11.
+
+- **11-11 11:41 · 43s · Website pool (gclid, PMax) · Grand Prairie** — "Is this for Bartlett?" Wrong number. ❌ Wrong number.
+- **11-11 13:58 · 10s · Call Extension (PMax) · Fort Worth** — Menu only. ⚠️ IVR-only.
+- **11-12 13:10 · 18s · LSA · (La Sara number)** — Menu, a "hello", nothing else. ⚠️ IVR-only.
+- **11-12 16:18 · 157s · Website pool (gclid, PMax) · Arlington (Tonya J.)** — New customer, came through the ad and a neighbor's referral: trimming for two young trees in front and an adult tree in the back. Brock took name, email and address; Kip to call back and book the free estimate. ⏳ Open, real lead (callback owed).
+- **11-14 08:58 (Sat) · 71s · Call Extension (PMax) · Arlington** — Menu, then the representative line went to voicemail. Caller left a message: wants a bid on tree trimming, left name and number. ⏳ Open, real lead on voicemail (callback owed).
+
+### Tally 11-11 → 11-15 (5 ad calls)
+| Outcome | Count | Detail |
+|---|---|---|
+| ⏳ Real lead (open) | 2 | 11-12 Tonya trimming (Kip callback), 11-14 Saturday voicemail trimming bid |
+| ❌ Wrong number | 1 | 11-11 |
+| ⚠️ IVR-only | 2 | 11-11 call extension, 11-12 LSA |
+
+**PMax Nov 2-15 (fu-115):** 3 real calls (11-03 transplant, 11-12 trimming, 11-14 voicemail bid) on $1,743 = **$581 each**. The count met the rule, the cost is 3x the $200 limit. Paused 11-16.
+**Flag for Edu:** both November real leads need a callback (Kip for Tonya; the Saturday voicemail). Given the bamboo history, Angela should confirm they were called. The Saturday call shows the menu's "representative" option goes to voicemail outside hours.

@@ -8,6 +8,9 @@ metadata:
   modified: 2026-09-03T15:07:15.545Z
 ---
 
+⚑ 11-16 fu-137 read + APPLIED (Edu): Electrical $455→$375 (the 11-09 +$80/d bought looser matches, 0 extra leads, ~$317/lead; 3 of 4 callers wanted same-day and didn't get it), Plumbing $145→$75 ($1,661 / 2 leads since 11-04, General kept = the group that produces), 8 negatives (mechanic/circuit board/gate opener/independent/cheap on Elec; pops/corporation on HVAC; pops on Plumb). Lesson: pausing a bare keyword on a no-target Max Conv campaign just moves the leak (Services→Repair on 11-09); the lever is budget/tCPA. Search caps $730/d. Next read fu-172 11-23.
+
+
 Built 2026-09-03 — no Sept/Oct plan existed before this (the Aug doc, [[tsd-proud-pops-aug-budget]],
 only covered through Aug 31). Full doc: `topserv-workspace/clients/proud-pops/september-october-plan-2026-09-03.md`.
 

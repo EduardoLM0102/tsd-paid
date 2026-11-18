@@ -895,3 +895,60 @@ Read-only on all accounts; everything below is staged. 4 AT tasks completed (7d 
 - Revisit 2026-11-17 (fu-144: count the 11-16 NB call, CallRail page calls) and 2026-11-23 (7-day).
 
 Tasks: [7d Google](https://app.agencytitan.com/tasks/instance/6e4b5453-6fe9-4e03-8b46-357fa6836848) · [14d Google](https://app.agencytitan.com/tasks/instance/e7c1489c-3acf-4666-aafc-65122ae4859e) · [7d LSA](https://app.agencytitan.com/tasks/instance/ee96cc48-85e8-4b2f-84d0-19e684e70e6d). Meta in meta-ads-log.md.
+
+## 2026-11-17 — fu-144: week 3 of the relaunched Nonbranded (read-only, nothing changed)
+
+**Window:** 11-10 → 11-16 (7d) vs week 2 11-03 → 11-09. Script `napps_recheck_1117.py` + CallRail COM4cd8 pulled WITH CallRail transcripts (`_pessoal/call-wins/napps-1117/`, 45 calls 11-03..11-16, 44 transcribed).
+Only changes since 11-10: Edu's own 11-10 edits (negs + Henderson county → city). LP number swap live since 11-11 (both pages = 903-289-7073).
+
+| | Budget | Week 3 (per day) | Clicks | CPC | IS | Rank-lost | Week 2 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| NB Heating | $65 | $566.88 ($81, over budget) | 25 | $22.68 | 45 | 46 (+8 budget-lost) | $411 / 20 clk / IS 37 / rank-lost 63 |
+| NB Plumbing | $35 | $197.38 ($28) | 9 | $21.93 | 54 | 46 | $222 / 10 clk / IS 40 / rank-lost 51 |
+| Branded | $60 | $24.60 ($4) | 3 | $8.20 | 100 | 0 | $39 / 7 clk |
+
+- **Split 74/26** (target 65/35): Heating overdelivered on the cold weekend (11-14 $144, 11-15 $129, 11-16 $123; impressions 185-254/day vs ~80 before), Plumbing held back by rank.
+- **First real Nonbranded lead since the 10-27 relaunch:** 11-16 16:07, 418s, NB Heating ad call (call_view 416s, CallRail 903-289-7073, first-time caller, area code 936). Trailer home, 2-year-old heat/AC unit trips the main breaker
+  when the heat runs, mentions Rusk County Electric (Henderson area). **BOOKED** for 11-17 8am-noon, $89 diagnostic quoted. Search term = "alford and pace air conditioning" via 'heating repair' PHRASE
+  (he was looking for an old friend whose dad owned that company). Real, but partly luck.
+- **Branded 11-16 11:09, 225s** = Huntington Hills (existing commercial customer, boiler + water heater just installed, asking about CO detector / TDLR registration). Existing, not new.
+- **Page calls since the 11-11 number swap: 0.** All 3 calls on 903-289-7073 since 11-03 match Google call_view (call-button) calls 1:1 (11-03 Fort Collins repeat caller, the 2 above). So the pages now ARE measured and nobody called from them this week.
+- **Form: 1 'TSD - Lead form' on NB Plumbing, 11-14, desktop** (+ 1 'Click to call' tap the same day, desktop, secondary). First form conversion on a new page since the relaunch, so the fu-121 listener fix fires live. Not verified as a real lead (no GHL access): ask Mo/Angela.
+- **Geo (clicks, presence): Tyler = 15 of 25 Heating clicks ($328.57) + 5 of 9 Plumbing ($99.57) = $428 / 20 clicks / 0 leads = 56% of NB spend.** Longview 3 clicks ($72), Henderson 4 ($98, the lead's area),
+  Marshall 3, Gilmer 2, Kilgore 1, Daingerfield 1. Tyler IS on the service-area page (checked 10-12 and today), but 90d before the relaunch Tyler + Henderson County = $3,223 / 1 conv, and it's 40 mi from the Longview shop with its own local competitors.
+- **Quality:** Plumbing 'emergency plumber' LP experience now **AVERAGE** (was BELOW AVERAGE all 3 prior weeks), QS 5. Heating kws still LP BELOW AVERAGE, QS 2-3. Rank-lost dropped 63 → 46 on Heating.
+- **Search terms (visible ~$350 of $764):** Heating 'heating repair' PHRASE is the loose one: "hvac longview tx" $47.52/2 (good intent), competitor/review terms "evans heating and air reviews" $24.74, "jacks air conditioning longview tx" $24.30,
+  "gas fireplace service" $23.29, plus "alford and pace" (the lead). Plumbing: "i need a plumber" $48.68/2, "plumber" $24.94, "best plumbers near me", "plumbers near me" (the form).
+- **Cumulative since 10-27:** $1,473.93 / 70 clicks / **1 booked new customer** (+1 unverified form).
+
+**Proposed (Edu's go):**
+1. **Hold budgets and the $25 cap for week 4.** Not the "still 0 with page calls tracked" case: 1 booked lead, page calls now measured, heating demand just jumped with the cold, Plumbing LP rating improved.
+2. **Tyler: -50% location bid adjustment on both NB** (keep it targeted, it's in the service area). Week 3 = 56% of NB spend for 0 leads; 90d before relaunch $3.2k / 1 conv.
+   Max Clicks honors location bid adjustments. Alternative: ask Angela whether Napps actually wants Tyler jobs before touching it.
+3. **AM ask (fold into the 11-19 strategy review, fu-170):** was the 11-14 desktop form from the plumbing page a real lead (GHL)? And confirm the 11-16 caller (trailer, breaker tripping) was seen 11-17.
+4. Leave 'heating repair' PHRASE alone this week (it found the lead); revisit competitor/review terms at the next read if they keep costing ~$25 a click.
+
+## 2026-11-17 (later) — SECOND LOOK at the week-3 read (Edu asked) + APPLIED Tyler -50% on Heating only
+
+**What the first pass missed (read-only checks, `_tmp_napps_2.py`, not kept):**
+- **Message mismatch for Tyler on Heating:** RSA headline 1 "Furnace Repair in Longview TX", "Serving Longview & East TX"; LP H1 "Furnace & Heating Repair in Longview, TX". Tyler is 40 mi away.
+  Since 10-27: Tyler Heating 711 impr / 23 clk (3.2% CTR) / $462 / 0 calls. The Plumbing ad has no city ("Emergency Plumber Near You"); Tyler Plumbing 107 / 6 / $122 / **1 form (the 11-14 one) + 1 tap**.
+  So the only Plumbing conversion came from Tyler: the first-pass "-50% on both" would have cut it. Plumbing also has 0% budget-lost, so a Tyler cut there reallocates nothing.
+- **Longview barely clicks the Heating ad:** 388 impr / 4 clk / 1.0% CTR (Tyler 3.2%). GBP took 42 calls in 14 days vs 3 on ads. In Longview, Napps' own listing likely absorbs the demand; the paid reach is the outer towns.
+- **Heating is budget-limited on cold days** (budget-lost 27% on 11-14, 22% on 11-16), so money cut from Tyler on Heating does flow to the towns the page is written for.
+- **"First real lead" framing:** real booked job, but via a legacy company name ("alford and pace air conditioning"), click in Longview. Generic heating/plumbing intent = 0 verified new customers from ~69 clicks / ~$1,450 in 3 weeks.
+  The 11-10 trigger ("discuss cutting back or changing the offer") is met in spirit. Signal for an offer: term "$99 plumber special near me today"; the rep quoted the 11-16 caller an $89 diagnostic; neither page shows a price.
+- **Nov MTD split 70/30** (Heating $990 / Plumbing $434) vs the client's 65/35: budgets are 65/35, Heating overdelivers in the cold, Plumbing can't buy its $35 at the $25 cap. Say it in the 11-19 review.
+- No location bid modifiers existed on either NB campaign. (Unresolved geo 9053151 in the target list, not touched.)
+
+**APPLIED 09:44 -03 (`napps_apply_1117.py`, validate-only then `--apply`):** Tyler 1026855 bid modifier **0.5 (-50%) on NB Heating 24049055193 only**; read-back 0.5, Plumbing Tyler modifier unset (confirmed with the dict query). Budgets $65/$35 and the $25 cap unchanged.
+Max Clicks honors location bid adjustments; at ≤$12.50 Tyler Heating clicks will mostly stop (week 1 at a $15 cap delivered 13%).
+
+**For the 11-19 strategy review (fu-170):** (1) does Napps want Tyler jobs; if yes, ask the web dev for Tyler-titled pages (rollout pattern); if no, exclude Tyler. (2) Was the 11-14 Tyler desktop plumbing form a real person (GHL)? Was the 11-16 caller seen 11-17? (3) Diagnostic price / offer on the two pages. (4) Delivery 70/30 vs requested 65/35.
+Next read fu-176 11-24: Tyler share on Heating after the modifier, Heating spend on cold days, Plumbing form verification.
+
+**AM note DRAFTED in Agency Titan (Edu asked "shouldn't we send a task to Angela?"; Edu sends):** Internal Request `49583709-e201-4295-9cbc-c724c1728911`,
+"Google Ads update: first lead from the new pages, Tyler, and 3 questions before the 11-19 review", client Napps (AM = Angela), requester Edu, Intake/Review = Edu, Execution = Angela,
+dept Account Management/Customer Success (confirmed on read-back). Covers: 11-10 negs + geo fix, 11-11 tracking number on the pages, 11-17 Tyler -50% on heating, 3-week results
+($1,474 / 70 clk / 1 booked + 1 unverified form, 0 page calls, generic intent 0 confirmed), Nov delivery 70/30 vs 65/35, and the 3 review questions (Tyler pages or exclude, verify the form + the 11-16 caller, price/offer on the pages). Next check 11-24.
+https://app.agencytitan.com/tasks/instance/49583709-e201-4295-9cbc-c724c1728911

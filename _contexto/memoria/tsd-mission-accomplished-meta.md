@@ -1,6 +1,6 @@
 ---
 name: tsd-mission-accomplished-meta
-description: "Mission Accomplished Meta (acct 79203382) — lead gen paused 09-09 over Hatch/GHL phone-number handoff, awareness-only since; client FB report delivered 09-29"
+description: "Mission Accomplished Meta: relaunch LIVE 11-11 in Brian's acct 2671066020034494 (old 79203382 all paused); 11-17: dark again since 11-16 10:36 AM on card declines, $74.79/6d (25% pacing), FIRST LEAD 11-16 (tune-up, $25.95) likely stuck in Leads Center (Mo's GHL task untouched)"
 metadata:
   node_type: memory
   type: project
@@ -56,3 +56,8 @@ Client FB report (09-29): `clients/mission-accomplished/Mission Accomplished - F
 **2026-11-03 (Gui AT run):** the only Meta campaign (awareness ARL 52605605054542, $30/d) set Inactive 10-30 06:32 by Jonathan Bannister via the ads MCP server, no logged reason; client is LSA only now (PPC off since 07-07). LSA 7d $265 / 4 charged; 8 charged DECLINED leads undisputed (09-28..10-30).
 
 **2026-11-09 (Gui AT run):** Meta awareness still paused (only activity since 10-30 = billing), every campaign off; client = LSA only. LSA 7d $80.79 / 1 charged (was $269.80), visibility held (top 97%), no impressions Sat/Sun since ≥09-01 (weekday-only schedule, AM confirm). 5 charged DECLINED in 30d undisputed.
+**2026-11-16 check:** account flips Active → "In grace period" → "Payment Needed" on Meta's $2 starting-threshold charges (the card declines some of the rapid $2 charges; 13 in 4 h on 11-14), every ad stops and Meta retries 36 h later: 11-13 and 11-15 were $0 days. Launch to date $70.45 vs $50/day plan (~26%), 0 leads reported, 12 link clicks, CPM $55-62. Ask Brian (via Angela) for a backup payment method and/or bank clearance of Meta charges; nothing to change in Ads Manager. Recipe: `ads_account_get_activity_logs` (no event_category) returns "Account billed" (cents) + "Account status updated" = the billing timeline; `ads_get_ad_accounts` only shows the current status. Details meta-ads-log.md 11-16.
+
+**2026-11-16 (later):** delivery back on 11-16 ($10.41 by midday, first lead on TuneUp-35). Day pattern since launch: 11-11 $11, 11-12 $10, 11-13 $0, 11-14 $39, 11-15 $0, 11-16 running = billing still flaky; backup payment ask stands. AT "Relaunch ads" ea5df64f Execution still on Edu (overdue since 11-03), Communicate stage already complete.
+
+**2026-11-17 day-6 (fu-158):** $74.79 in 6 days (25% of plan), **first lead 11-16 on TuneUp-35 ($25.95, under the $30 benchmark)**, but account Payment Needed again since 11-16 10:36 AM MST (36 h retry ~11-17 10:36 PM), all 3 campaigns off, $0 on 11-17. Mo's GHL task 5f31e168 untouched since 11-12 → the lead is probably only in the Page's Leads Center. The 11-16 backup-card rec was never sent to Angela (only the 11-10 'add a card' task, closed 11-11). AM note DRAFTED in AT 67f4bf1e for Edu to send (lead hand-off today, backup payment method / bank, manual pay band-aid, pacing ~$725 of $1,500, Hector + ServiceTitan still open). Next read fu-177 11-24.

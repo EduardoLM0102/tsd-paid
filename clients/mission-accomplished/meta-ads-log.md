@@ -271,3 +271,39 @@ Title: Meta ads stopped: card payment failed (+ creative and ServiceTitan asks)
 **2026-11-12 (later):** Edu forced the payment in Billing and notified Angela himself (so the AM note above isn't needed for billing; Hector + ServiceTitan asks still open). Read-back: all 3 ads delivery = **active**, no substatus. Test leads still open.
 
 **2026-11-12 (later 2):** GHL mapping + test of both forms handed to **Mo** via AT Internal Request (Cowork-created, Edu submitted, Execution = Mo, dept GHL): map Replacement 1817755865935190 + $35 Tune-Up 1350826090387835 to MA GHL, Testing Tool lead each, phone in GHL + Hatch, backfill any real leads since 11-11 from Meta Leads Center, then Verified Live. Brian not told live until then.
+
+## 2026-11-16 — Day-5 check: ads live and approved, but delivery keeps stopping on card declines (Meta's $2 threshold charges)
+
+Read-only check (Meta MCP). Account 2671066020034494 reads ACTIVE at check time (activity log: "Payment Needed" → "Active" at 9:21 AM MST today). Old account 79203382: every campaign PAUSED, $0 in 14 days, nothing to do there.
+
+**Spend by day (account timezone America/Phoenix):** 11-11 $11.07 · 11-12 $10.40 · 11-13 $0 · 11-14 $38.57 · 11-15 $0 · 11-16 $10.41 (partial). Launch to date **$70.45** vs the $50/day plan (~$275 expected by now, ~26% pacing). Delivery only reached plan on 11-14, the one day billing stayed up most of the day.
+
+**Why the $0 days:** the account is on Meta's starting billing threshold ($2.00). Meta charges the card $2 every time $2 is spent (13 charges of $2 between 9:39 AM and 2:12 PM on 11-14). Some of those charges fail, the account goes "In grace period" → "Payment Needed", every ad stops, and Meta retries 36 h later (11-12 11:04 AM → 11-13 11:04 PM; 11-14 2:22 PM → 11-16 2:22 AM). Each decline = ~36 h dark. The 11-12 outage was cut short by Edu paying manually. Status flips since launch: Payment Needed 11-11 6:26 PM, 11-12 11:04 AM, 11-14 2:22 PM, 11-16 9:20 AM (recovered 1 min later); grace period 11-12 8:51 AM, 11-14 2:20 AM, 11-16 7:27 AM. The pattern (many rapid $2 charges, intermittent declines, recovery charges of $2.05–$8.47 going through) fits a bank fraud/velocity rule on the card, not an empty card.
+
+**Campaigns (last 7d):** Replacement $36.96 / 667 impr / 8 link clicks / CTR 1.80% / CPM $55.41; TuneUp-35 $21.80 / 353 / 3 / 1.42% / CPM $61.76; Retargeting-Proof $1.28 / 29 / 1. All 3 campaigns + 3 ad sets + 3 ads ACTIVE, delivery `active`, no substatus; Financing ad set 120250401888610094 still PAUSED, 0 ads. **Leads: Meta reports none** (results "Not available" on leadgen, `lead` null at every level). 12 link clicks total. Too early to judge creative; CPM is high for the 40 km Havasu geo but on ~1,000 impressions.
+
+**Fix (Brian's side, via Angela), nothing to change in Ads Manager:**
+1. Add a **second payment method** on the account (Meta charges the backup when the primary declines, so delivery stops stopping).
+2. Have the bank clear Meta's recurring small charges, or move to a credit card.
+3. Meta raises the threshold on its own after consecutive successful charges, so once the declines stop the $2 charges thin out.
+Band-aid meanwhile: pay the balance manually in Billing whenever it flips (as on 11-12). Billing link: https://business.facebook.com/billing_hub/accounts/details?asset_id=2671066020034494&business_id=876938854443027
+
+**Pacing note for Angela:** with billing fixed on 11-17, $50/day to 11-30 = ~$700 more, ~$770 of the $1,500 Nov 9-30 approval. Raising the dailies to catch up needs her written OK (budget rule).
+
+**Still open:** Mo's test lead + GHL mapping (AT Internal Request from 11-12, not verified in AT on this check); Hector's winter $125/mo static + the 7 "summer-ready" statics; ST dataset. 11-17: repeat this read (spend by day + "Account status updated" entries in `ads_account_get_activity_logs`, which is where the billing timeline lives; the account read only shows the current status).
+
+## 2026-11-17 — Day-6 check (fu-158): first lead 11-16, but the account is dark again since 11-16 10:36 AM (card declines), Mo's GHL task untouched
+
+Read-only (Meta MCP + AT). Account 2671066020034494.
+- **Spend by day (MST):** 11-11 $11.07 · 11-12 $10.40 · 11-13 $0 · 11-14 $38.57 · 11-15 $0 · 11-16 $14.75 (final) · 11-17 $0 so far = **$74.79 in 6 days vs $300 plan (25%)**. 1,390 impr, 14 link clicks, CPM $40-69.
+- **First lead: 11-16, TuneUp-35 campaign** ($35 tune-up form 1350826090387835): campaign $25.95 / 1 lead = $25.95 (under the $30 benchmark, n=1). Replacement $46.33 / 841 impr / 9 clicks / 0; Retargeting $2.51 / 0.
+- **Delivery: all 3 campaigns `off` / `account_needs_credit`.** Activity log 11-16 (MST): 2:22 AM Payment Needed → Active (billed $8.47); $2.00 charges 5:30, 6:08, 6:52; 7:27 In grace period; 9:19 billed $2.21 → Active; 9:20 Payment Needed; 9:21 billed $2.17 → Active; **10:36 AM Active → Payment Needed, nothing since.** Meta's 36 h retry lands ~11-17 10:36 PM MST. Dark ~20 h at this check.
+- **Mo's GHL task 5f31e168 (map both forms + test lead, Verified Live):** Execution in_progress since 11-12, 0 comments, no execution notes → the 11-16 lead is most likely only in the Page's Leads Center. Brian hasn't been told "live".
+- **The 11-16 backup-card recommendation was never sent:** the only billing task to Angela (3de43e31, 11-10 "add a payment method") closed 11-11. The 11-12 manual payment was Edu's, by Slack.
+- Pacing if billing holds from 11-18: $50/d × 13 d ≈ $650 → ~$725 of the $1,500 Nov 9-30 approval.
+
+**Actions:** AM note to Angela drafted in AT (below): lead hand-off today + backup payment method / bank + manual pay as band-aid + pacing + the open Hector/ServiceTitan items. Edu may also ping Mo directly on 5f31e168. Nothing to change in Ads Manager. Next read fu-177 11-24.
+
+**AM note DRAFTED in Agency Titan (Edu sends):** Internal Request `67f4bf1e-362d-4a0e-b3a5-2a7074771475`, "Meta ads stopped again on card declines, and the first lead needs a hand-off today",
+requester Edu, Intake/Review = Edu, Execution = Angela, dept Account Management/Customer Success (confirmed). Contents as listed above.
+https://app.agencytitan.com/tasks/instance/67f4bf1e-362d-4a0e-b3a5-2a7074771475

@@ -31,3 +31,47 @@ Legend: ✅ Booked · ⏳ Open/follow-up needed · ❌ Not a lead · ⚠️ IVR-
 | ❌ Not a lead | 2 | fuel delivery driver (not charged); geothermal (charged, dispute candidate) |
 
 **Flag for Edu:** of the 2 charged DECLINED leads, only the geothermal one (10-27) is worth disputing, and even that is partial. The 10-22 one is a real homeowner with a replacement need that the office declined over the insurance angle; that's an AM conversation, not a Google dispute. Phones are answered fast by Brenda/Linda (no IVR problem here). The 10-27 caller's "promised callback never came" is the second follow-up gap on this account (the 09-14 unmarked message was the first).
+
+## 2026-11-04
+
+- **09:19 · PHONE_CALL · Google: ACTIVE, not charged** — Kelly and Paul Foster, existing customer: high humidity (~80% indoors) and allergies after a home-warranty system swap (two-stage → single-stage). Kendra books Mr. Brian for Friday 9-11, $99 diagnostic applied to repairs, dehumidifier option discussed. ✅ Booked (existing customer).
+
+## 2026-11-06
+
+- **12:33 · PHONE_CALL · Google: ACTIVE, charged** — Quote for cleaning the whole duct system, two-story house. Kendra: "we do not clean ductwork." ❌ Service not offered, **dispute candidate**.
+
+## 2026-11-09
+
+- **08:15 · PHONE_CALL x2 · Google: ACTIVE, not charged** — Greeting then "hello", no caller speech, twice. ❌ Not a lead (correctly not charged).
+
+## 2026-11-11
+
+- **10:02 · PHONE_CALL · Google: ACTIVE, charged** — Dustin, RPM Pizza (Domino's), walk-in cooler iced up at the Prairieville location; normally talks to Tyler. Brenda sends a tech today 1-3, work order through Corrigo. ✅ Booked (existing commercial account, outside the Northshore).
+- **15:07 · PHONE_CALL · Google: ACTIVE, charged** — Mandeville homeowner, 2 systems, asks tune-up price. Kendra: $215/yr plan (2 visits, 10% off, priority) or $189 one-time; he wants it by email to show his wife. ⏳ Open, real lead, quote sent by email.
+
+## 2026-11-13
+
+- **10:21 · MESSAGE · Google: NEW, charged** — No recording. Still NEW = never opened in the app. ⏳
+
+## 2026-11-16
+
+- **11:27 · MESSAGE · Google: NEW, charged** — No recording. Still NEW. ⏳
+- **12:27 · PHONE_CALL · Google: ACTIVE, charged** — Sam, wants a natural gas heater she has installed. Brenda: call a plumber, "we don't install anything we don't purchase." ❌ Service not offered (customer-supplied install), **dispute candidate**.
+- **13:15 · PHONE_CALL · Google: ACTIVE, charged** — Folsom, mobile home, electric heat, burning smell when the breaker is on. Kendra offers Wed 1-3, $99 diagnostic, also Thu/Fri. Caller: "I'll call you back." ⏳ Open, real new lead, worth a callback.
+- **13:49 · PHONE_CALL · Google: ACTIVE, charged** — New customer, Covington, AC out. Brenda: booked till Thursday. Caller: "I'll try somebody else." ⏳ **Real lead lost to capacity.**
+
+## 2026-11-17
+
+- **10:42 · PHONE_CALL · Google: ACTIVE, charged** — Jessica, buying a condo in Emerald Forest (Covington), wants the AC serviced before moving in. Kendra: $189 one-time, mentions the plan. "I'll call you back shortly." ⏳ Open, real new lead.
+
+## Running tally (11-04 → 11-17, 11 leads, 9 charged, 10 recordings)
+
+| Outcome | Count | Detail |
+|---|---|---|
+| ✅ Booked | 2 | humidity diagnostic (11-04, existing, not charged); Domino's walk-in cooler (11-11, existing commercial, charged) |
+| ⏳ Real, open | 3 | Mandeville tune-up quote (11-11), Folsom mobile home heat (11-16), Covington condo service (11-17) |
+| ⏳ Real, lost | 1 | Covington AC out, went elsewhere over a 3-day wait (11-16) |
+| ⏳ Message, unanswered | 2 | 11-13, 11-16, both still NEW |
+| ❌ Not a lead | 3 | duct cleaning (11-06, charged), gas heater install (11-16, charged), silent x2 (11-09, not charged) |
+
+**Flag for Edu:** 9 charged leads for $1,012 since 11-04 ($112 each), 0 booked new customers yet, 3 open, 1 lost to capacity. Dispute 11-06 duct cleaning + 11-16 gas heater install (job type not serviced). Nobody marks leads in the app; rate them via the API (fu-161). Two message leads were never opened.

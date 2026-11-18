@@ -380,3 +380,43 @@ Sha completed Execution; task sits in Review & Close on Edu (AT API down today, 
 - Hardcoded gtag `AW-1064128677` on the page = base config only (no send_to / conversion event), so no double count from it; the Ads "Lead" conversion fires from GTM tag 93 (tested 11-12). Question closed.
 - Mobile: headless phone render blocked by the site's "Confirm you are human" check (not bypassed). Edu checks on his phone.
 - Campaign 24047025253: ENABLED, LIMITED (BIDDING_STRATEGY_LEARNING, normal after the 11-12 rebuild). New RSA 831383124121 APPROVED → the new page. 11-12: $29.02 / 106 impr / 6 clicks / 1 conv (= Edu's 09:40 BRT test lead; exclude at the 11-19 read, delete the GHL test contact). 11-13 so far: 22 impr / $0. Search terms clean (no-heat/furnace-not-working intent) + competitor names at 0 clicks (iceman, ixim, o neill, smith heating, your ultimate comfort): add as negs at the 11-19 read if they take clicks.
+
+## 2026-11-16 — quick read-only peek (11-12..11-15), no changes
+
+- NB 24047025253: $105.76 / 631 impr / 20 clicks / 1 conv (11-12 'Landing Page Call', logged as Edu's test lead; confirm at fu-159). Search terms with clicks: 2 of 3 are competitor names (total comfort westwood 2 clicks $12.74, 1 800 heaters edison $6.49) + furnace repair. Add competitor negs at the 11-19 read.
+- Branded: $10.98 / 2 clicks / 0 conv (quiet).
+- LSA Belleville: impressions ramping after the $50/d raise (11-11: 5 → 11-13: 74), $0 cost, 0 leads yet. Carlstadt 4-12 impr/d. Englewood still 0 impressions.
+- Mitsubishi YouTube (Belleville acct) still ~$21/d, owner still unknown.
+
+## 2026-11-16 — DEEP DIVE (read-only, nothing changed). Scripts: ics_deep_1116_ppc.py / _ppc_b.py / _ppc_c.py / ics_deep_1116_lsa.py (this folder) + CallRail API + AT + Slack
+
+**Correction to the 11-13 note:** the 11-12 NB conversion is NOT Edu's test. call_view: 2026-11-12 13:05 ET, **170s, type LANDING_PAGE, area 956, campaign NB** = a real call through the Google forwarding number on the new heating page. It bypassed CallRail (no matching call there; Google's forwarding number goes to the main line, not the 866-658-2987 tracker), so CallRail will never show paid website calls. The test form (fake gclid) did not register as a conversion.
+
+**1. Spend is ~1/4 of last heating season.** Nov-25 $3,093, Dec-25 $5,010, Jan-26 $4,783, Feb $2,065, Mar $1,658 ($2000 Rebates Search $2.4-2.8k/mo + PMax $2-2.2k/mo). Real calls last season (Calls from ads 60s+): Rebates 40 + PMax 46 + 6 LP calls on ~$16.6k = ~$180/call. Nov-26 to date $845; current run rate $40/d (~$1.2k/mo). Apr-Jun 2026 both PPC and LSA Belleville collapsed in June (PPC $569, LSA $24): looks like one cut, PPC came back in July (ICS_Search_NonBranded_Core_2026-07), LSA never did. AT client record `ads_budget_marketing` = null: no approved budget on file.
+
+**2. LSA serves only Mon-Fri 7am-3:59pm, both profiles, always.** Belleville May-26 (the 30-lead month): 0 impressions Sat/Sun, 0 after 15:59; same in Nov-26 (0 on 11-07/08, 11-14/15). Carlstadt Oct-26 identical. The May leads came Mon-Fri 7-17h because that's the only window it runs. NB data says heating demand is 42% Sat+Sun and 31% 8pm-midnight. Fix = LSA profile hours / "show ads during business hours" in the LSA dashboard (not in the API). Belleville after the $50/d restore: impr 5 (11-11) → 27 → 74 → 0 → 0 → 27 (11-16), 17 clicks, 0 leads, $0. All 3 profiles on Maximize leads (API MAXIMIZE_CONVERSIONS; Carlstadt/Englewood tCPA $60). Englewood (1 town) overlaps Carlstadt's 27-town geo and has never served; verification now all PASSED. Not a lever.
+
+**3. NB since relaunch (11-12..11-16): $111, 641 impr, 21 clicks, 1 real call (above).** IS 18-24%, **lost-rank 43-77% on weekdays**, lost-budget 32-63% Sat/Sun; top IS 12-15%, abs-top 10%; CPC $5.4 under the $20 cap (Max Clicks buys bottom-of-page). Mobile 80%. 'heating repair nj' PHRASE = 77% of impressions and matches 'hvac repair paramus nj' (78 impr, 0 clk), 'hvac repair mahwah nj' and ~35 competitor names; competitor clicks $24.64 (22%): total comfort westwood $12.74, 1 800 heaters $6.49, bogush $5.41. Geo: Newark $8.40 + Elizabeth $10.75 (17%) + Paterson 13 impr = cities the client EXCLUDES in its own LSA geo. 'furnace not working' EXACT 58 impr / 0 clk (why/how-to variants). Branded 11-01..11-16: $84 / 15 clk / 0 conv, IS ~100%, fine.
+
+**4. Calls (CallRail 10-17..11-16, 99):** GBP 48 (31 at 60s+), Direct 19, Google Ads 15 (8 at 60s+, 10 gclid), Organic 10, Bing 3; ~25/wk. Last week 26 calls, 0 paid. Ad calls since 11-01: 11-02 66s, 11-04 22s, then none (PMax paused 11-11). IVR task 5e5dcc2a still in Execution with Angela, no answer; be762554 (Belleville cut / YouTube owner) same. CallRail→Ads integration is ACTIVE again (was disabled 10-09) but 0 uploads in 30d (no gclid website calls to upload).
+
+**5. Mitsubishi YouTube is the client's own:** chriswisics@gmail.com (Chris, the owner) added YouTube video assets 11-02 (x3) and 11-15. TARGET_CPV $20/d, Bergen/Essex/Hudson, custom-intent audiences, 30d $605 / 55k impr / 83 clicks, 28% connected TV. Leave it; exclude from TSD numbers.
+
+**6. Conversion actions:** 26 enabled, 25 primary (GA4 form_submit_* x4, ghl_* x4, mailto, phone_link_click, book_now, 'Phone Call', 'Form Capture', 'Form Submission'...). NB bids on custom goal 6459689709 so bidding is clean; the Conversions column is not. UI cleanup still pending.
+
+**Plan proposed to Edu (nothing applied):** A LSA hours → 24/7 (dashboard; Chris or whoever has LSA access, Marlo was chasing it 10-01). B IVR: route 866-658-2987 + the 2 LSA trackers to a direct service line (CallRail destination). C NB: Target IS top-of-page ~65% cap $15-18 (or keep Max Clicks) + budget $25 → $50-60/d; ~35 competitor PHRASE negs + why/how to/can a; exclude Newark/Paterson/Elizabeth/Irvington; add 'hvac repair' kws. D Budget ask via Angela (last Nov-Jan $3-5k/mo). E PMax stays paused until the IVR is fixed; relaunch on the heating LP (7-day schedule, NB geo, no-taps goal) if budget comes. Next read fu-159 11-19.
+
+## 2026-11-16 (later) — APPLIED plan C on NonBranded (Edu: "approved"), total budget unchanged $25/d
+
+`ics_apply_1116.py` (this folder), validate-only PASS then `--apply`, read-back confirmed:
+1. Bidding Max Clicks ($20 cap) → **Target Impression Share, TOP_OF_PAGE, 65%, CPC ceiling $18** (learning restarts).
+2. **+51 campaign PHRASE negatives** (now 89): ~42 competitor names from search terms (total comfort, 1 800 heaters, bogush, smith heating, ixim, iceman, oneill/o neill/o'neill, scotty and son, good tidings, comfort pro, princeton air, revere plumbing, schaible, splash plumbing, pete manley, platinum hvac, nj hvac and plumbing, air group, atlantic heating, colella, merring, climate care, dave's/daves heating, ductmate, gold medal, ideal air, jack dong, keil, perfection contracting, russo brothers, edison heating, sunrise heating, tanous, trinity air, warren heating, your ultimate comfort, harmony hvac, ck control temp), plumbing/plumber/plumbers, why / how to / can a / what's wrong / whats wrong / if the.
+3. **Negative locations** Newark 1022300, Paterson 1022331, Elizabeth 1022108, Irvington 1022190 (the 4 cities the client excludes in LSA Belleville).
+4. Heating ad group 197798871985: +hvac repair [EXACT], hvac repair near me [EXACT], hvac repair nj [PHRASE] (19 enabled keywords).
+**Rollback:** campaign bidding back to target_spend cap $20; remove criteria ids printed in the apply output (saved in the script run, 11-16).
+**Expect at the 11-19 read (fu-159):** top IS 13% → 50%+, CPC up toward $9-15, fewer clicks per $ but top-of-page on mobile "no heat" searches; competitor + Newark/Elizabeth spend gone. Judge on real calls (call_view LANDING_PAGE + Calls from ads) not clicks.
+
+**E:** PMax stays PAUSED until the phone menu is fixed; relaunch (heating LP, 7-day schedule, NB geo, no-taps goal, $40/d) to be staged when B + budget land.
+
+**AT Internal Request DRAFT 8861cf80-f0c1-4f89-84ec-99fa1eb9fc09** "Three questions for Chris: Local Services hours, phone menu, winter budget" (A + B reminder of 5e5dcc2a + D, suggests ~$3k/mo Google for Nov-Feb; closes the Mitsubishi owner question). Intake = Edu to submit, Execution = Angela, Review & Close = Edu. https://app.agencytitan.com/tasks/instance/8861cf80-f0c1-4f89-84ec-99fa1eb9fc09
+

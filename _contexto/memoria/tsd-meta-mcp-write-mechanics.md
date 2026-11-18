@@ -26,3 +26,5 @@ Meta Ads MCP write behavior, learned 2026-10-09 fixing All Seasons awareness ([[
 - **Payment methods on client ad accounts (11-12, Morrow):** Edu cannot add a card to a client's ad account from Brazil, even with the card in hand: Meta rejects a payment method when the IP's country doesn't match the account's currency (USD accounts). The client (or someone in the US on their side) adds it via Ads Manager → Billing and payment center, link pattern `https://adsmanager.facebook.com/adsmanager/billing_hub/accounts/details/?business_id=<BM>&asset_id=<acct>&payment_account_id=<acct>`. Ask through the AM, don't promise to do it ourselves.
 
 **How to apply:** any Meta change for TSD clients. Plan for create → verify draft errors → publish → re-read live. See [[tsd-meta-ads-methodology]], [[tsd-weekly-meta-snapshot]].
+
+**2026-11-16 (Amazing Morrow):** a staged draft object keeps any validation error saved at staging time (e.g. `1359188 No Payment Method`) even after the cause is fixed, and `ads_activate_entity` refuses the publish. Re-save each flagged object with `ads_update_entity` (same `name` is enough) to force re-validation, then publish.

@@ -40,3 +40,10 @@ so it must be Justin or someone on the client's side.
 via Marlo (nobody had asked as of 11-12), ad6/ad12 logo (Héctor), Alex radius still missing, Sara needs a social CallRail number
 (Johnny), AT onboarding stages 5a–5d + 7b and the portal checklist are Edu's to tick. Related: [[tsd-concrete-adventures]],
 [[tsd-meta-mcp-write-mechanics]], [[tsd-meta-ads-methodology]].
+
+**2026-11-16 go/no-go check (read-only):** payment method now on `1308410608018843`; campaign still an unpublished draft (10 ads keep the stale `1359188` error from staging, expected to clear on publish); ad6/ad12 `_2026-11-13_` exports (16:05 UTC set) carry "Cooling, Heating & Plumbing" on the van, so they can be built. Open: cap 4/7d decision, Alex radius. Details in the client log.
+
+**2026-11-16 PUBLISHED (Edu: "push live"):** ad6 `120251380325360167` + ad12 `120251380326210167` built from the 11-13 exports, then campaign `120251240402700167` published as active: campaign, ad set and 12 ads ACTIVE / IN_PROCESS (review). Cap 4/7d (now locked) and 3.33 mi kept. fu-142 closed, fu-143 moved to 11-23, Command Center meta = live.
+**How to apply (MCP gotcha):** a draft ad staged while the account had no card keeps the `1359188 No Payment Method` error after the card is added, and `ads_activate_entity` refuses. Re-save each staged ad with `ads_update_entity` (same `name`) to force re-validation, then publish.
+
+**2026-11-17 24h check (read-only):** all live, no errors; $412 spent, reach 59,214 (≈ the 59.4k fence), freq 1.10, CPM $6.35 vs planned $16.20. Because CPM is ~2.5x cheaper than plan, cap 4/7d will throttle spend to ~$215/day (~half of $411) once the fence saturates, likely ~11-19/20. Decision for Ryan: accept underspend or widen fence. ⚑ recheck pacing ~11-20. Numbers in the client log.

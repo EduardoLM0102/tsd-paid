@@ -10,6 +10,52 @@ ad account's promoted pages nor under the business's pages, so `ads_get_ad_accou
 
 ---
 
+## 2026-11-16 — PUBLISHED. Campaign live with 12 ads (Edu: "do the adjustments you need and push live")
+
+**Built ad6 + ad12** from Héctor's 11-13 4x5 exports (16:05 UTC set), uploaded via `ads_create_upload_url` → curl → `ads_finalize_upload`:
+
+| Ad | ID | Creative | Image hash |
+|---|---|---|---|
+| `AM \| ad6 say there fella \| 4x5 \| V1` | `120251380325360167` | `2207182750179920` | 36b7aba9… |
+| `AM \| ad12 say there fella alt \| 4x5 \| V1` | `120251380326210167` | `1116068334378719` | 6a40a7f2… |
+
+Same structure as the other 10 (Page + IG `17841468361617084`, Learn More → www, A+ creative features OPT_OUT, self-AI disclosure unset).
+Copy V1 (only facts already verified in the 11-12 copy, no phone, no offer):
+- "Houston comfort is one call away. / Cooling, heating or plumbing, one call to Ammmazing Morrow brings the same family crew
+  that has served Spring and north Houston since 2000. Upfront prices, fixed right the first time."
+- "Say there, fella! Too hot, too cold or the pipes acting up? A call to Morrow is all it takes. / 🚐 One crew in blue for
+  cooling, heating and plumbing / 🌙 After-hours service at no extra charge / 🏠 Locally and veteran owned since 2000 /
+  Ammmazing Morrow. Spring and north Houston."
+- Headlines: "Houston comfort is one call away" / "A call to Morrow is all it takes"
+
+**Publish:** first `ads_activate_entity` was REFUSED: the 10 ads staged 11-12 still carried the `1359188 No Payment Method`
+error saved at staging, even though the card is on the account. **Fix = re-save each staged ad** (`ads_update_entity` with
+its same `name`) → Meta re-validates, error gone. Then `ads_activate_entity` campaign `120251240402700167`, publish_as_active.
+
+**Live read-back:** campaign, ad set and all 12 ads `status ACTIVE`, `effective_status IN_PROCESS` (Meta review).
+Ad set confirmed: cap 4 impressions / 7 days, pin 30.079602/-95.552464 r 3.33 mi, home, 18–65+, A+A on, FB feed + reels,
+IG stream + story + reels only.
+
+**Kept as built (Edu said push live, no change asked):** cap 4/7d (now locked), 3.33 mi radius placeholder.
+
+**Open:** confirm review passed + first delivery (~11-17); first weekly frequency read moved to 11-23 (fu-143); Alex's radius;
+Sara's social CallRail number; AT onboarding 5a–5d + 7b and the portal checklist.
+
+---
+
+## 2026-11-16 — Go/no-go check (read-only, nothing changed)
+
+- **Payment method is now on the account** (`has_payment_method: true` on 11-16). Activity log shows no entries since 11-12
+  (billing changes don't appear there), so who added it and when is not visible via the MCP.
+- **Still not published:** 0 live campaigns. Draft campaign + ad set `VALIDATED`; the 10 ads still carry the stored
+  `1359188 No Payment Method` error from staging (stale, expected to clear on publish; if publish refuses, re-check billing in Ads Manager).
+- **ad6/ad12 fixed:** Héctor's `_2026-11-13_` exports (ad6 4x5 `14p0hdAowoOjvyBDiLUbR-kfLm56vgtzN`, ad12 4x5
+  `1MYcRDy86SMphdJFYoKP4Rd3elnrKWTCZ`, both 16:05 UTC) checked by eye: van wrap now reads "Cooling, Heating & Plumbing".
+  An earlier 15:54 UTC set also exists in another folder; use the 16:05 files. Ads not created yet.
+- Still open from 11-09: frequency cap 4/7d (locks at start), radius 3.33 mi placeholder (Alex). Portal weekly check is today and will see nothing live.
+
+---
+
 ## 2026-11-12 — 10 ads STAGED in the draft. Only blocker left: no payment method on the ad account
 
 **Context:** Marlo (#onboarding-amazing-morrow 11:49 BRT): Justin approved the creatives but wants the new logo with plumbing on
@@ -146,3 +192,9 @@ so the Page does have an IG linked; asset 407921932404735). Images via `ads_crea
 **Weekly obligation from launch day (Eduardo, every Monday, in writing):** frequency against the fence ≥ 3.0x as a
 range measured from delivery; fence adults reached ≥ 90%; impressions within 5% of plan; Marketplace + AN share = 0;
 brand CPM reported on brand campaigns only, never account-level. First portal check runs Mon Nov 16.
+
+**2026-11-17 10:29 CT, 24h post-launch check (read-only, no changes):**
+- Campaign/ad set/12 ads all ACTIVE, no errors. Spend $412 total (11-16: $327.05, 11-17 so far: $84.95). 64,929 impr, reach 59,214, freq 1.10, CPM $6.35 (plan assumed $16.20).
+- Placements even: IG Feed $132 / IG Reels $87 / IG Stories $75 / FB Feed $74 / FB Reels $42, all ~$6.3 CPM. Marketplace + AN = 0 ("unknown" 66 impr, $0.36).
+- Creative split: ad3 $121.50, ad5 $89.96, ad8 $53.63, ad9 $37.39, ad12 $33.72; ad1/ad7/ad10 under $6 each.
+- ⚠ Pacing math: at $6.35 CPM, $411/day buys ~453k impr/week = ~7.6x/week on ~59k adults, but cap 4/7d allows only ~238k/week (~$1.5k/week, ~$215/day). Expect spend to fall once people hit the cap (~11-19/20). Options for Ryan: accept underspend, or widen the fence (the same budget holds 3–4x on roughly 2x the adults). Cap can't be removed without a new campaign.

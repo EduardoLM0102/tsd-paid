@@ -1558,3 +1558,106 @@ KPI rows 2026-11-16: Google 3e412780, LSA 41d9752e (lead_quality stored as dropd
 https://app.agencytitan.com/tasks/instance/8e79005c-d49a-4087-a277-27d77dc2ba19 (7-day),
 https://app.agencytitan.com/tasks/instance/56f01419-0f28-446b-b3ce-60a467dee97b (14-day),
 https://app.agencytitan.com/tasks/instance/b5cb7bb6-9781-444c-876b-e2a2606198de (LSA 7-day).
+
+## 2026-11-17 — fu-145: first week with PMax off + Branded $145, Nonbranded read with transcription (read-only, nothing changed)
+
+**Window:** POST 11-10 → 11-16 (7d) vs PRE 11-04 → 11-09 (6d). Script `wr_recheck_1117.py` (read-only). CallRail = Watt's own account,
+pulled WITH CallRail's own transcripts (`fields=transcription`, 280/307 calls transcribed, no whisper needed); data in `_pessoal/call-wins/watts-right-1117/`.
+All 31 Google ad calls (call_view) matched a CallRail "Call Extension PPC" recording within 1 second. Website calls judged by gclid + `utm_campaign` on the landing URL.
+change_event since 11-10: only Edu's own 11-10 edits. The 11-10 negatives hold (no rocky/catale/arnold/magnum/oklahoma generator/generator supercenter terms; no job terms on NB).
+
+| POST (PRE) | Spend/day | Google leads | Google CPL | Notes |
+|---|---|---|---|---|
+| Branded ($145 cap) | **$40** ($48) | 18 (14) | $15.60 ($20.61) | IS **96%** (41%), budget-lost **0** (57%), abs-top 75% (32%), CPC $5.51 |
+| Nonbranded ($320, tCPA $110) | **$383** ($372) | 20 (19) | $134 ($117) | IS 25% (39%), budget-lost 48%, rank-lost 26%, CPC **$19.88** ($16.66) |
+| PMax (paused) | $0.22 | 0 | | $1.54 leftover YouTube on 11-10 |
+| LSA PPL PMax 24425981973 | $436 ($339) | 52 (34) = 38 calls + 14 messages | $58.66 | not transcribed here (fu-161) |
+| **Total** | $859 | 90 | **$66.86** | Google counts; on the Push plan (~$73) |
+
+**Branded can't spend $145.** At 96% IS with 0 budget-lost it is buying every brand search there is: $40/d. The extra ~$105/d is not spent.
+NB overdelivers its $320 by ~$63/d (11-10..11-16 = $2,684 vs $2,240), so actual PPC ≈ **$423/d vs $465 planned (~9% under, ~$1.3k/mo)**.
+
+**Nonbranded, transcribed (12 ad calls 60s+, 5 website calls with NB gclid):**
+- Ad calls: **3 NEW BOOKED** (11-11 Clee Case, cabin shell wiring, Okmulgee, 11-19; 11-12 Nicole Clowdus, hot tub circuit, Broken Arrow, heard radio;
+  11-16 Brian Steers, well house on generator, Owasso, 11-19), **1 open** (11-11 Don Bickle, shop light, hung up to take another call),
+  **2 new LOST** (11-13 Robin, whole-home generator price only, refused a visit; **11-15 00:51 Sand Springs, house smoking/GFCIs popping, no after-hours tech until Monday 8am, caller hung up**),
+  **6 not leads** (11-10 Checotah coffee shop commercial = same caller as last week's PMax call, referred to Adair; 11-10 ADT rep quoting floodlights for a customer;
+  11-10 parts buyer wanting a 200A breaker, kw 'electrical panel box for home'; 11-11 Bartlesville pocket dial; 11-13 PSO bill payer, kw 'electrical contractor';
+  11-14 gas-log fireplace, referred out, search term 'electric fireplace repairs near me' $104 for 1 click).
+- Website calls (gclid NB): **4 NEW BOOKED** (11-10 Heather O'Leary, dead bedroom circuit, panel page; 11-11 Tana Van Cleave, bath fan/heater; 11-12 Gail Pitts, fan + lights + switches;
+  11-13 Candace Frates, garage door power; her 11-14 call = complaint, Starlink stopped working after the visit), **1 open** (11-14 Nick Roberts, generator quote, "a little outside our standard service area", callback pending).
+- NB real = 6 from ad calls + 5 website + 3 forms (unverified) = 14 → **~$192 CPL** (11-10 same method ~$140). **New customers booked by phone = 7** ($383 each) vs 3 last week (ad calls only then).
+- Expensive single clicks under tCPA $110: 'electrician broken arrow' $139.95, 'electricians in owasso' $114.83/2, 'electric fireplace repairs near me' $104.13, 'electricians near me' $89.34,
+  'electrician' $84.66, 'electrician sapulpa' $77.58 (served from EV group). Only $1,251 of $2,684 shows in search terms.
+- New waste candidates: fireplace, commercial ('commercial electric company' $49, 'parking lot lighting contractors near me' $28), parts/price ('how much is a 40 amp breaker' $19),
+  'electrical panel box for home' BROAD still pulling parts buyers (flagged 11-10).
+- Ad groups POST (Google real): Electrician (General) $1,351 / 13 = $104; EV $369 / 1; Generator $343 / 2; Panel $317 / 2; Emergency $304 / 2; Surge $0.
+
+**Branded, transcribed (14 ad calls 60s+, 3 website calls with Branded gclid):**
+- New: **4 BOOKED** (11-11 Amy Sandlin, garage outlets dead, heard radio; 11-12 Ron Smith, standby generator free estimate, heard radio; 11-16 Sherri Dolinsky via her concierge Stephanie, 3 calls = 1 job;
+  11-13 Laura Posch, whole-home generator consult, website), **1 open** (11-12 Brian Wenrick, hot tub whip, referred by Galaxy, tentative 11-18).
+- Existing: 1 new job booked (11-16 Barbara Ayers, hot tub), 7 service/admin (2 reschedules, post-job questions, missed-outlets warranty, invoice request, 1 cancellation 11-20 job).
+- Not leads: 2 job seekers (11-10 apprentice, 11-11 applicant via website), 1 vendor payment call.
+- ~$56 per new booked customer. Brand is still mostly existing customers, but 2 of 4 new heard WR on the radio and searched the name.
+
+**Generators:** 5 generator calls this week (3 booked/consult, 1 open, 1 lost on price). 3 of them came through Branded or the website, not the Generator ad group.
+
+**Proposed (Edu's go):**
+1. **No budget change.** Leave Branded at $145 (it is a cap and costs nothing unspent) or trim to ~$60 for a cleaner picture. Don't push more into NB while its CPC climbs.
+   Tell Angela actual PPC runs ~$423/d (~$12.9k/mo) vs $465 planned, because brand search is maxed out.
+2. **NB PHRASE negatives:** fireplace, commercial, parking lot, pso, electric bill, amp breaker; switch 'electrical panel box for home' BROAD → PHRASE.
+3. **AM ask (Angela):** does Watt's Right have after-hours on-call? A Saturday 1am "house is smoking" caller was turned away until Monday (and 11-07 Glenda wanted Saturday).
+   If no on-call, schedule the Emergency ad group to business hours. Also tell the client: 2 open leads to follow up (Nick Roberts generator, Don Bickle shop light).
+4. Watch NB CPC: if 'tulsa/broken arrow/owasso electrician' keeps costing $80-140 a click, consider a portfolio tCPA with a CPC ceiling next week.
+Still owed from 11-10: AM note that PMax is off and its $95/d moved to brand.
+
+## 2026-11-17 (later) — RE-ANALYSIS of the proposals above (Edu's challenge on 'amp breaker'), read-only, nothing changed
+
+Edu: a PHRASE negative 'amp breaker' could block real searches. Checked every proposal against 90d NB search terms (3,271 terms, 08-19..11-16), the live keyword list,
+the 131 campaign + 38 ad-group negatives, RSA copy, hour-of-day, and November pacing (`_tmp_wr_negcheck*.py`, read-only, not kept).
+
+**Dropped:**
+- **'amp breaker'**: 20 matches in 90d, 19 of them panel intent ("200 amp breaker box installation", "100amp breaker box", "225 amp breaker box"). The one parts click ($19.40) isn't worth that. (Negative phrase match is strict word-order, no close variants, so it wouldn't block "breaker tripping electrician", but it would block the 200-amp panel searches.)
+- **'electrical panel box for home' BROAD → PHRASE**: that broad kw IS the Panel group: $1,671 / 26 Google conv / $14.53 CPC in 90d, Panel = $63/conv = best group in NB; every other Panel kw is ~$0. It behaves as a generic net (matches "electrician company near me" 4 conv, "tulsa electrician", "jenks electrician", competitor names). Phrase on that literal string would kill the group. Parts buyers under it = ~$40 in 90d ('where to buy cutler hammer breakers' $20.74, '40 amp breaker' $19.40). Keep BROAD.
+- **'pso'**: $4.90 in 90d (one 'pso ev charging' click, which is PSO's EV-charger rebate = installer intent). The 11-13 bill-payer came through 'electrical contractor', no 'pso' in the term. **'electric bill'**: 0 matches in 90d.
+- **CPC cap / portfolio tCPA**: terms with CPC > $50 = 18 clicks / $1,383 / 11 Google conv = $126/conv vs $82 overall in 90d. Worse, not a leak, and most converted. Electrician (General) runs $94/conv over 90d, in line with Emergency $98 and EV $84, and produced most of this week's booked jobs. Watch only.
+- **Branded trim to ~$60 "for a cleaner picture"**: only as part of the reallocation below; on its own it changes nothing (Target IS stops at demand).
+
+**Kept (campaign-level PHRASE negatives, all 0 real leads in 90d):** 'fireplace' ($104 one click, referred out; only other match "who can convert gas fireplace to electric", 0 clicks),
+'commercial' (8 terms, $49/1 click = the coffee shop; WR's own phone script: "we have stepped away from commercial"; not in the negative list, only 'industrial' at group level),
+'parking lot' ($28, commercial). Parts/retail bucket overall = ~$40 in 90d (Generator + Surge groups already carry lowes/home depot/amazon/walmart negatives); not worth more lines.
+
+**Pacing correction (replaces "$423/d, ~$1.3k/mo under" above):** NB has run $372-383/d on a $320 budget since 11-04. Google's monthly cap (30.4 × daily, prorated on the 11-04 change ≈ $105×3 + $320×27 = $8,955)
+vs NB Nov MTD $5,254.82 through 11-16 → ~$3,700 left for 14 days = **NB throttles to ~$265/d for the rest of November if nothing changes**. Don't read the 11-24 drop as demand.
+Nov PPC if held: NB ~$8.95k + Branded ~$1.2k ≈ **$10.2k vs ~$13.3k plan** ($235×3 + $465×27). If NB takes brand's unspent $105: ≈ $12.1k (the rest is brand demand that doesn't exist).
+
+**24/7 claim:** Emergency RSA says "24/7 Emergency Electrician / A Real Person Answers 24/7 / Nights, Weekends & Holidays"; General RSA (11-04) says "24/7 Emergency Response / No Extra Fees on Weekends"
+(taken from the landing page, per 11-04 entry). The site says the same ("Available 24 Hours A Day, 7 Days A Week", "nights, weekends, holidays"). The 11-15 Sunday 00:51 caller (house smoking, GFCIs popping)
+got the answering service, was quoted $52.92 + $150 after-hours and told next tech = Monday 8am; 11-07 Glenda refused an "emergency fee" for Saturday. So the site and ads promise what the operation
+didn't deliver twice in 9 days. Emergency group outside 7-19h = $650 / 7 Google conv in 90d (small); the fix is operational or copy, not schedule.
+
+**Revised proposals (Edu's go):**
+1. **Reallocate inside the approved $465/d:** Branded $145 → $60 (spends $40, headroom for busy brand days), NB $320 → $405, tCPA $110 unchanged. Same rule as the 11-10 move (constant total, no new approval).
+   Why: brand is the only line that can't absorb money; NB loses 48% of impressions to budget at the same bid logic; holding = a 30% NB cut for two weeks via the monthly cap. Stop rule: real CPL > $200 at the 11-24 read → back to $320.
+   Alternative: hold and tell Angela ~$3k of the Push goes unspent in Nov.
+2. **3 PHRASE negatives on NB:** fireplace, commercial, parking lot.
+3. **AM note to Angela:** PMax off + $95 to brand (owed since 11-10); brand maxed, money → Nonbranded; the 11-15 call vs the 24/7 / no-weekend-fee promise on the site and in our ads → ask Luke: is there an on-call tech nights/weekends, and what is the fee policy? If not 24/7, we pull those lines from the ads the same day (site is theirs) and schedule Emergency to on-call hours; 2 open leads (Nick Roberts generator 11-14, Don Bickle shop light 11-11).
+
+## 2026-11-17 (later) — APPLIED: Branded $145 → $60, Nonbranded $320 → $405, 3 PHRASE negatives (Edu: "Apply 1 and 2, draft the note and leave on draft")
+
+`wr_apply_1117.py`, validate-only first, then `--apply` at 09:09 -03. Read-back: Branded 23690645223 ENABLED $60/d (Target IS, $8 ceiling unchanged);
+Nonbranded 23832838033 ENABLED $405/d, tCPA $110 unchanged; campaign PHRASE negatives fireplace, commercial, parking lot present. PPC total $465/d unchanged (constant-total rule, no new approval).
+Stop rule: real CPL > $200 at the 11-24 read (fu-175) → NB back to $320. The monthly-cap throttle no longer applies (budget change re-prorates the Nov limit).
+
+**AM note DRAFTED in Agency Titan (Edu sends):** Internal Request `7c3921d8-dda1-44b0-83dc-aa4eac814436`, "Google Ads update: budget moved to Nonbranded, after-hours question for Luke",
+client Watt's Right, requester Edu, Intake/Review = Edu, Execution = Angela, dept Customer Success. Covers: PMax off 11-10 + $95 to brand (owed since 11-10, never sent),
+today's reallocation + negatives, week 11-10..11-16 with transcribed calls, the 11-15 Sunday 1am call vs the site's 24/7 / no-weekend-fee promise (ask Luke: on-call? fee policy?),
+2 open leads with phone numbers (Nick Roberts generator, Don Bickle shop light), next check 11-24. No prior Google Ads note to Angela existed in AT for this client (checked `list_tasks`, 3 open Internal Requests, none ours).
+
+## 2026-11-17 — LSA / Pay-per-lead ratings (fu-161), APPLIED via API
+
+All 117 unrated leads from 11-04 to 11-17 (96 calls + 21 messages; 3 already rated) were rated with `wr_lsa_rate_1117.py`, sheet in `_pessoal/call-wins/watts-right-lsa-rate-1117/ratings.json` (local, PII).
+Source: CallRail 'Tulsa LSA' transcripts matched to leads by phone (96/96). The 74 calls from the 11-16 review used its summaries; the 26 charged bad leads were re-read in full before submitting (2 flipped to satisfied, 1 reason changed).
+- 35 booked (VERY_SATISFIED), 33 real requests not booked (SATISFIED), 49 bad: 19 job type (commercial ~10, generator service on non-WR units 4, Christmas lights 2, remodelers/contractors 2, temp construction power 1), 25 other (20 uncharged hang-ups/VM/wrong number/job seekers + 5 charged: 2 cancels, 1 existing-customer decline, 2 no-conversation), 2 solicitation, 1 geo (Fort Gibson), 1 duplicate (352413982 = 10-28 lead 348457661), 1 not ready (DIY question).
+- Credit: 5 granted (PENDING: 349981818, 349656356, 349666631, 349845929, 350622551), 16 FAIL_OVER_THRESHOLD (Google credit cap), 5 from 11-16 FAIL_NOT_ELIGIBLE (too recent?).
+- Business notes (AM-safe, no rating talk): owner-permission rule lost 2 real residential jobs (11-05 estate shed disconnect, 11-09 renter whose landlord had OK'd it, caller annoyed). Commercial + generator-service callers keep coming through LSA.

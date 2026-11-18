@@ -1,0 +1,57 @@
+customer_id,account,campaign_id,campaign,ad_group,keyword,match,status,negative
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished,EXACT,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished heating and cooling,PHRASE,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished heating and cooling,EXACT,REMOVED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished hvac,EXACT,REMOVED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished hvac,PHRASE,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished by,BROAD,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished heating,PHRASE,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished cooling,PHRASE,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished hvac company,PHRASE,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished emergency hvac,PHRASE,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished ventilation,BROAD,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished insulation,PHRASE,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished hvac near me,PHRASE,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished heating repair,PHRASE,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished ac,PHRASE,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished ac,EXACT,REMOVED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished hvac repair,PHRASE,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished ac repair,PHRASE,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished furnace repair,PHRASE,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished hvac service,PHRASE,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished heat pump installation,EXACT,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished furnace maintenance,EXACT,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished furnace replacement,EXACT,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished heat pump repair,EXACT,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished heat pump maintenance,EXACT,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished duct installation,EXACT,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished duct cleaning,EXACT,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished ac installation,EXACT,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished ac maintenance,EXACT,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished ac replacement,EXACT,ENABLED,False
+8634274092,Mission Accomplished,23731240233,TSD_04.08_Search_Branded_Evergreen_Mix,Ad group 1,mission accomplished furnace installation,EXACT,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey,BROAD,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey,EXACT,REMOVED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey,PHRASE,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey fort worth,PHRASE,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey tree,BROAD,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey tree service,BROAD,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey tree,EXACT,REMOVED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey tree service,EXACT,REMOVED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey tree services,EXACT,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey tree service,PHRASE,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey tree services,PHRASE,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey tree,PHRASE,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey tree experts,PHRASE,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey tree service fort worth,PHRASE,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey arborist,PHRASE,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey tree company,PHRASE,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey phone number,PHRASE,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey contact,PHRASE,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey reviews,PHRASE,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey near me,PHRASE,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey fort worth,EXACT,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey tree service fort worth,EXACT,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey tree company,EXACT,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey phone number,EXACT,ENABLED,False
+7953905280,Neon Monkey Services,23739724064,TSD_04.09_Search_Branded_Evergreen_Mix,Ad group 1,neon monkey reviews,EXACT,ENABLED,False

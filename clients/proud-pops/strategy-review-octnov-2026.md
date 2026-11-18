@@ -47,7 +47,7 @@ additional_paid_ads_notes (task long text): see the block in the log entry 2026-
 - [x] KPI row created in AT 2026-11-11: record 73060891-c33c-44c8-8f35-53178eeb58b1, linked to the client field c72c4f7e (relationship f619cda1, link_origin runtime_embedded_create); fee + total added in a second write
 - [x] additional_paid_ads_notes written (applied, rewritten once to add the fee)
 - [x] Stage: the task had already moved to Host Review Call (Angela) before Paid wrote; Performance Reporting was not completed by us
-- [ ] Refresh row after 11-14 (Command Center follow-up)
+- [x] Refresh row after 11-14 (fu-156): DONE 2026-11-16, see below
 - [x] Client PDF report: `Proud Pops - Performance Report (Oct 16 - Nov 10).pdf` + HTML source in this folder (11-11). [ ] Attach to the AT task (Drive upload blocked by the permission classifier; Edu attaches in the UI or allows the Drive write).
 
 ## Call review (added 11-11, transcripts)
@@ -60,3 +60,20 @@ additional_paid_ads_notes (task long text): see the block in the log entry 2026-
 - AM asks → Command Center fu-157 (recording on 225-5767, 2 LSA disputes, weekend fees, lead statuses, LSA text sequence, $299 fee consistency, tag test calls).
 - 11-11 later: CLIENT version rebuilt as a designed 3-page navy/gold PDF (`Proud Pops - Performance Report (Oct 16 - Nov 10).pdf`, source `Proud-Pops-Performance-Report_2026-10-16_11-10_client.html`): verified numbers only, 4 KPI tiles, call-outcome bar, staff-sensitive items (lead-status marks, text sequence, $299 fee) kept out and left in Angela's notes / fu-157. The plain 5-page version is now `... - internal.pdf`.
 - 11-11 final: Edu wants the client PDF PLAIN (no colors). Rebuilt black-on-white Times with the designed structure kept (`..._client.html` = plain, `..._client_designed.html` = the navy/gold pass, not used). `Proud Pops - Performance Report (Oct 16 - Nov 10).pdf` = the plain client version.
+
+## 2026-11-16 FINAL refresh (full cycle 10-16..11-14), row 73060891 + task notes UPDATED
+
+Pull: `strategy_review_pull_2026-11-16.py` (delta 11-11..11-14), CallRail calls with `fields=transcription` from the Proud Pops account (`_pessoal/call-wins/proud-pops-1116/calls.json`), LSA via pull_lsa.py (1 electrician call whispered locally, it had no CallRail recording).
+
+| Field | Value |
+|---|---|
+| ad_spend | 11572.19 (Search 9,649.26 + LSA 1,922.93) |
+| agency_fees / total_spend | 5000 / 16572.19 |
+| qualified_leads | 55 verified (72 tracked) = 52 new + 3 existing customers |
+| cpl | 210.40 (tracked $160.72; Search $268.03 on 36, LSA $101.21 on 19) |
+| recommend_budget | 25000 |
+
+- Delta 11-11..11-14: $3,533.93 / 17 tracked (3 forms, 6 calls, 8 LSA) / 14 verified (3 forms, 2 reviewed calls, 3 unrecorded call-button calls, 6 LSA).
+- Existing-customer rule (11-12) applied to the whole cycle: the 3 existing-customer calls set aside on 11-11 are back in (38 → 41 through 11-10).
+- Stretches: 10-16..11-03 $2,685.01 / 14 verified = $191.79 (5 booked); 11-04..11-14 $8,887.18 / 41 = $216.76 (10 booked). Booked total 15 (11 Search + 4 LSA).
+- Nit: the AT notes say "13 Local Services message threads", the real count is 14 (7 + 7).

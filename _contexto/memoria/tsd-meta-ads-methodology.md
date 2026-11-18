@@ -23,3 +23,8 @@ Eduardo's own Meta Ads methodology, as Head of Paid Ads at TopServ Digital. Full
 **Why:** this is his own doctrine, not something written in the TSD playbooks — the ADS Playbook v3.1 only has the 90-95/5-10 budget split. Do not invent Meta structure for him; use this.
 
 **How to apply:** any Meta build, SOP, brief, or creative/copy spec for TSD follows this. Copy specs must be 2 primary texts + 2 headlines *per angle*; creative specs 3 iterations *per angle*, same format. Related: [[topserv-google-ads-location]], [[topserv-client-report-format]].
+
+**2026-11-16 additions (Edu, from Alex's portal questions, see [[tsd-portal-campaign-naming]]):**
+- Every new Meta ad gets URL parameters `utm_source=facebook&utm_medium=paid_social&utm_campaign={{campaign.name}}&utm_id={{campaign.id}}&utm_content={{ad.id}}`. As of 11-16 no TSD-managed creative had any.
+- TSD never runs boosted posts. Boosted posts (Meta names them `Post: "..."`) are always the client's: they stay out of CPL and out of awareness. Only exception = a campaign that starts with our `TSD_` tag.
+

@@ -21,6 +21,12 @@ LSA 8655979348 campaign 23394236866 (LocalServicesCampaign, classic, not migrate
 After Edu's 11-11 changes (11-11..11-15): $176.94 / 0 conv. Support/thermostat terms $0 (were $34.19 on 11-09); brand clicks now on Branded at $0.92-$1.21. But 81% of visible LeadGen/MiniSplit spend went to other companies: nugent and potter southampton $33.13 (via BROAD 'hvac & plumbing'), islandaire ptac $31.13 (11-12 25s wrong-number call asking for 'Islando'), burner man wantagh $24.67, hamptons air $20.58, airsync hvac $13.72. 'seasons air conditioning' $5.43 slipped past the 'all seasons' neg; Branded BROAD 'all seasons hvac' matched 'central air conditioning system' $4.98. Branded IS <10% with 74% rank-lost (broad brand kws in generic auctions vs $5 ceiling). No changes after 11-11.
 **Staged, not applied (for fu-153 11-18):** PHRASE negs 'nugent and potter', 'islandaire', 'burner man', 'airsync', 'seasons air conditioning' on LeadGen + MiniSplit; 'hamptons air' EXACT only; pause BROAD 'hvac & plumbing' (open since 11-09); Branded broad → phrase/exact or generic negs; fix/pause 2 POOR RSAs.
 - **LSA 7-Day (https://app.agencytitan.com/tasks/instance/3827c3b4-0ab4-42ca-98eb-1ba6b89b535f), completed:** 8655979348, still LOCAL_SERVICES. $292.40, 5 charged (2 calls, 3 msg), $58.48 CPL (prev $523.28 / 7 charged / $74.75). 306 impr (prev 1,435), 97.4% top. Overspending (117% of 7 x $35.71). Nov 1-15 $815.68 of ~$1,086 (~$270 left) → dark ~11-21/22. Messages 11-13 (351972066) + 11-14 (352158970) still NEW with no business reply; new one 11-16 08:51 (352353930) → add to AT 3addac2e. Rating not done (fu-161); no non-lead visible in the data. KPI - LSA `d85cd29c` (Overspending, Good).
+## 2026-11-13 — October 2026 ad spend breakdown SENT to Angela (her Slack ask 14:52, read-only)
+
+**Deliverable:** `All-Seasons-AC-Ad-Spend-October-2026.pdf` (+ .html), same plain format as the 10-28 version, full month Oct 1–31, columns Oct 1–15 / Oct 16–31 / October total. Uploaded to Angela's DM 11-13 ~15:10 BRT.
+- Google $3,351.86 (Oct 1–15 $2,674.61 / Oct 16–31 $677.25): LeadGen $1,147.66, MiniSplit $699.14, NB $984.94, Branded $197.82, PMax $194.75, Mitsubishi-Brand $127.55.
+- LSA (8655979348) $1,104.42 ($922.48 / $181.94). Meta $295.29 (TOFU $175.26 + ARL $120.03, all before 10-15).
+- Total $4,751.57; since the cap (Oct 16–31) $859.19. Oct 1–15 matches the 10-28 version to the cent.
 
 ---
 
@@ -987,3 +993,11 @@ Cycle 10-10..11-08 (call was 11-10). Stage Performance Reporting assigned to Gui
 - KPI row **1b309436-d3bf-4dea-942b-43ed578ff3cc** linked to the client (field c72c4f7e): ad spend 3051.80 (PPC $1,938.59 + LSA $994.53 verified via API; Meta $118.68), **20 qualified = 11 new + 9 existing** (Google 11 = 3 new + 8 existing from the 11-13 reconciliation; LSA 9 of 16 after transcribing all 12 calls + reading 4 messages), CPL 152.59, rec 3200. Fee + total blank.
 - `additional_paid_ads_notes` rewritten (old text = 9 leads / $339 without existing customers, "still to review" items, wrong "12 charged after credit" line and a "please mark/rate LSA leads" ask). LSA: 13 charged ($76.50), 3 not charged.
 - Stage NOT submitted (Edu: leave on draft, he sends it back). 3 charged oil-only LSA leads added to fu-161 for us to rate.
+
+## 2026-11-17 — AT 5602eb30 (Angela, from a client ticket): "Raise LSA budget to $350/week, PPC remains the same" — already applied by Gui, verified
+
+- LSA 8655979348 campaign 23394236866 budget 15244872142 = **$50.00/day = $350/wk**. change_event: `gui@topservdigital.com` via the API, **2026-11-16 19:01 UTC (2:01 PM ET), $35.71 → $50.00**, before the AT task existed (created 21:12 UTC by Workflow Automation from a ticket, requester Angela, Intake closed by Angela 21:17, Execution on Edu). Not in Gui's synced log/memory yet.
+- PPC 4467722415 unchanged: LeadGen $17 + MiniSplit $24 + Branded $5 = **$46/d** ($322/wk).
+- ⚠ Monthly math: LSA $50 × 30.4 = $1,520 + PPC $1,398 = **~$2,918/mo vs the $2,500 all-platform cap the client set 10-15** (AT 902208a0 "kept the cap"). Flagged in the execution notes: if this is the client's call, the budget on file (ads_budget_marketing) needs updating.
+- LSA since 11-01: $1,042.27 / 16 leads (13 charged) / 2 BOOKED / 2 DECLINED (not charged) / 8 ACTIVE / **3 MESSAGE leads still NEW** (rate them, fu-161 rule). Weekly spend: 11-02 wk $523, 11-09 wk $292, 11-16 (Mon) $45. Spend by day is bursty ($0 on 11-01, 04, 07, 08, 12, 15).
+- AT: execution notes + task update written 11-17, Review & Close assigned to Angela (requester), Execution set complete via MCP (read-back below).

@@ -49,14 +49,24 @@ Legend: ✅ Booked · ⏳ Open/follow-up needed · ❌ Not a lead · ⚠️ IVR-
 - **13:53 · 138s · Branded · Babcock (Leah Smith)** — Existing customer (full electrical install by Proud Pops); an exterior patio outlet is coming out of the wall. Booked Thursday 1 to 5. ✅ Scheduled, existing customer, warranty callback (not new pipeline).
 
 ## 2026-11-09
-- **11:56 · 208s · Branded · (Alexandria number, Ronny Fryar)** — Heard the radio ad, recognized the owners' name (longtime John Wayne customer looking to switch). Asked about the $69 water heater flush (covers two heaters), Saturday hours and a 5 to 9 window. Will discuss with his wife and call back. ⏳ Open (warm, radio-driven brand search).
+- **11:56 · 208s · Branded · (Alexandria number, Ronny Fryar)** — Heard the radio ad, recognized the owners' name (longtime John Wayne customer looking to switch). Asked about the $69 water heater flush (covers two heaters), Saturday hours and a 5 to 9 window. Will discuss with his wife and call back. ⏳ Open (warm, radio-driven brand search). **Update 11-12: booked** (5 to 9 pm window on 11-12; tech ran late, he called twice upset and asked for a manager, rescheduled to Sat 11-14 9 am). ✅ Booked (new job).
 
 ## 2026-11-10
 - **13:27 · 143s · Plumbing · (Brownsville number, Carlos Rodriguez)** — Apprentice asking if Proud Pops is hiring; sent the careers link. ❌ Not a lead (job seeker). This was the call counted as the Plumbing campaign's first lead since the restore.
 - **14:17 · 308s · Electrical · (Fayetteville number, Louis Bost)** — Owns a generator, wants an inlet plug and transfer switch wired into the sub-panel (78254). Free estimate booked Monday Nov 16, 8 to 12. ✅ Booked (new job).
 - **15:14 · 237s · Electrical · San Antonio (Kelvin Innocent)** — Arc-fault breakers keep tripping, wants a same-day opinion on swapping one; schedule was full, scheduling team to call if a cancellation opens (78163, 2-year-old home). ⏳ Open (waiting on a same-day slot).
 
-## Running tally (22 calls)
+## 2026-11-11 to 11-14 (added 2026-11-16, cycle refresh)
+
+Same rule as above (first-time, 60s+, Google Ads source, Website pool), transcripts from CallRail Conversation Intelligence. Repeat callers shown for context, not counted.
+
+- **11-12 14:17 · 436s · Plumbing · San Antonio (Michael Urrutia)** — Slow leak from the top of the water heater, wants a free estimate, open to replacement. Found Proud Pops through Google (and an old sticker on the panel of the house he bought in July). $0 Pop-In booked 11-13 10 to 2. ✅ Booked (new job). Plumbing's first real call since the restore.
+- **11-12 14:48 · 83s · Branded · New Braunfels (Power Home Remodeling)** — Office calling about a commercial service appointment they thought was today; it's Friday 10 to 2. ❌ Not a lead (existing commercial customer confirming an appointment, admin).
+- **11-13 07:42 · 100s · Electrical · Converse (Katie / Curtis)** — Smoke detectors chirping, wants someone today; electrical fully booked, next slot Tuesday. Caller: "everybody I call is busy." ⏳ Open, lost on availability.
+- Repeat callers (not counted): 11-12 09:30 + 11-13 07:36 + 08:02, Melissa Garcia (the 11-05 panel job) about a toilet still leaking after the plumber's visit and a gas-leak report her HOA demands (existing customer, follow-up). 11-12 15:20 + 15:28, Ronny Fryar (see 11-09 update).
+- Ad call button (210-225-5767, recording OFF): 3 calls 60s+ (11-12 10:33 Electrical 100s, 11-13 11:11 Branded 82s, 11-14 15:22 Electrical 353s). Counted, not reviewable.
+
+## Running tally (22 calls, through 11-10)
 
 | Outcome | Count | Detail |
 |---|---|---|
@@ -69,3 +79,5 @@ Legend: ✅ Booked · ⏳ Open/follow-up needed · ❌ Not a lead · ⚠️ IVR-
 By campaign (CallRail attribution): Branded 13 = 4 new jobs, 3 existing-customer, 1 open, 5 not a lead/voicemail. Electrical 7 = 4 new jobs, 3 open, 0 not a lead. HVAC 1 = 1 new job. Plumbing 1 = job seeker.
 
 **Flag for Edu.** 13 of the 22 "confirmed calls" are real new opportunities (9 booked, 4 open), 3 are existing customers needing service, 6 are not leads. So the honest read on the 27 calls in the review: 13 verified opportunities, 3 existing-customer visits, 6 non-leads, 5 unknown (call-button calls, not recorded). Points for the AM: (1) three real callers could not be scheduled when they wanted, Nov 6 dryer outlet (next slot 6 days out), Nov 10 breaker (full day), Oct 25 Saturday 5 pm to voicemail; capacity and weekend coverage are now the limit on Electrical, not clicks. (2) Plumbing still has no verified lead: its Nov 10 "lead" was a job seeker. (3) Job seekers keep calling the main number (2 of 22) even with careers excluded from forms; nothing to do in Ads beyond the existing negatives. (4) Recording is off on the 210-225-5767 call-button number, so the 5 ad calls there can't be reviewed; ask the client to turn it on. (5) The Oct 20 internal forwarding test and any future test calls should be tagged in CallRail so they don't count as leads. (6) The Nov 9 caller came from the radio ad and a brand search: offline media is showing up in Branded. (7) CallRail "customer city" is the phone number's city (Houston, Oahu, Alexandria, Fayetteville), not where the caller lives; all were local jobs.
+
+**Full cycle (11-16 refresh), 25 reviewed + 8 unrecorded call-button calls = 33:** 10 booked on the call + the Nov 9 caller who booked later = 11 booked, 4 open, 3 existing customers, 7 not leads. Under the 11-12 rule existing customers count, so Search verified = 10 forms + 15 new + 3 existing + 8 unrecorded = 36.

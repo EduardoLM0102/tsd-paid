@@ -320,3 +320,11 @@ Feitos em `paid/sops/` (md = fonte; `build_pdfs.py` regera HTML+PDF; PDFs pronto
 
 ## Infra do workspace
 - [ ] Conectar este repo a um GitHub próprio da TopServ (Edu cria o repo vazio e me passa o link)
+
+## Alex / Portal (2026-11-16)
+- [ ] Send Alex `paid/handoffs/2026-11-16-reply-to-alex-naming.md` + `alex-naming-audit-2026-11-16.zip` (Slack DM, ready)
+- [ ] Give Alex feedback on the portal Ads tab (his ask from 11-11, still open)
+- [ ] Identify call-asset numbers: Nick's (985) 999-4785, Zen Air 678-329-9929 / 678-606-8817 (not in our CallRail)
+- [ ] King's pool number as call asset (fu-167)
+- [ ] When Alex's naming plan lands: rename live campaigns in one pass, update Google + Meta launch SOPs
+

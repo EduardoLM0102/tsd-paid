@@ -1,0 +1,9 @@
+customer_id,account,campaign_id,campaign,campaign_status,negative,shared_set,crit_status
+5563867754,"(LSA) C&S Air, inc. / Derek O'Keefe",24336822932,TSD_10.09_PMax_Leads_Mansfield,PAUSED,True,customers/5563867754/sharedSets/12264921928,ENABLED
+4467722415,All Seasons AC,23351076911,TSD_04.07_Search_MitsubishiHeatPump,PAUSED,False,customers/4467722415/sharedSets/11893416122,ENABLED
+4467722415,All Seasons AC,23699717251,TSD_03.23_Search_NonBranded_Evergreen,PAUSED,False,customers/4467722415/sharedSets/11893416122,ENABLED
+9509605037,"Napps Cooling, Heating & Plumbing",23685615826,TSD_03.22_Search_Branded_Evergreen,ENABLED,False,customers/9509605037/sharedSets/12059772511,ENABLED
+7953905280,Neon Monkey Services,21225221220,TSD_04.25_PMAX_Evergreen,ENABLED,True,customers/7953905280/sharedSets/12300954509,ENABLED
+1854100356,Nicks Heating and Cooling,23586346547,TSD_02.20_PMAX_Q1,ENABLED,True,customers/1854100356/sharedSets/12290621628,ENABLED
+1051843378,"Proud Pops Plumbing, Air & Electric - PPC",23853595615,TSD_05.14_Leads_Pmax_HVAC,PAUSED,True,customers/1051843378/sharedSets/12263604514,ENABLED
+1051843378,"Proud Pops Plumbing, Air & Electric - PPC",23866982084,TSD_05.20_PMax_Electrical,PAUSED,True,customers/1051843378/sharedSets/12263604514,ENABLED

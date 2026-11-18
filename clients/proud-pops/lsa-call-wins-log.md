@@ -37,7 +37,20 @@ Legend: ✅ Booked · ⏳ Open/follow-up needed · ❌ Not a lead · ⚠️ IVR-
 - **Nov 6 15:46 · call 310s · Google: ACTIVE, charged** — Elvie: duct cleaning free estimate in Schertz (78154), military discount. Booked next Friday 9 to 1. ✅ Booked (new job).
 - **Nov 9 11:21 · call 536s · Google: ACTIVE, charged** — Brianna Rodriguez, renter in 78244: air duct cleaning required by the lease before a January move-out, wants a quote now. Front desk took all details and a tentative Monday 4 to 8 slot, pending permission from the property manager (Marshall Reddick). ⏳ Open (job not before January).
 
-## Running tally (21 non-declined leads counted in the review)
+## 2026-11-11 to 11-14 (added 2026-11-16, cycle refresh), 8 leads
+
+- **Nov 11 09:17 · electrician call 54s · Google: ACTIVE, charged (lead 351353602)** — Car wash in Floresville wants regular Christmas lights installed; Proud Pops only does permanent lighting. "My bad." ❌ Wrong service. Rate bad for a credit.
+- **Nov 11 12:57 · main message · Google: NEW, not charged (351579426)** — Review-seller spam. ❌ Not a lead.
+- **Nov 11 16:11 · main message · HVAC · Google: NEW, charged** — Range hood install vented to the outside. ⏳ Open (borderline service fit, real homeowner).
+- **Nov 12 08:47 · main message · plumber · Google: NEW, charged** — Trail of water in the garage and down the driveway at night. ⏳ Open.
+- **Nov 12 09:14 · main message · plumber · Google: BOOKED, charged** — Two toilets to replace (one leaking). Office set the $0 Pop-In for Mon 11-16 10 to 2 by message. ✅ Booked (Google status correct).
+- **Nov 12 13:08 · main message · plumber · Google: ACTIVE, charged** — Replace 2 dripping hose bibbs, "text me an approx cost"; office replied with the onsite review. ⏳ Open.
+- **Nov 13 18:55 · main message · plumber · Google: NEW, charged** — PRV valve change, messaged other businesses too. ⏳ Open.
+- **Nov 14 11:37 · main message · plumber · Google: NEW, charged** — 3 dripping showers, quote, messaged other businesses too. ⏳ Open.
+
+Delta: 1 booked, 5 open, 2 not leads. **Full cycle 29 non-declined: 4 booked, 15 open, 10 not leads → 19 verified.**
+
+## Running tally (21 non-declined leads counted in the review, through 11-10)
 
 | Outcome | Count | Detail |
 |---|---|---|

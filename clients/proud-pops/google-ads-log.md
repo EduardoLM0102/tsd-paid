@@ -2,6 +2,75 @@
 
 ---
 
+## 2026-11-17 — New site launch prep (Alex's platform replaces Lovable): GTM draft, keys, Slack replies
+
+Alex's two asks in C0CJ3B859DM (p1794934763282159, p1794955039931059). Johnny answered the office side (forms → GHL + support@ email, GoDaddy = Daniel, switch today once the test passes) and confirmed (210) 864-6867 = CallRail "1st Repair is on Pops Letters" tracker on /first-repair, G-C7QTE9ZZXQ = Proud Pops stream, pixel 597145242772352.
+- **GTM-WBFDB6L8 DRAFT, Default Workspace 45, NOT published** (live stays v43). Scripts in google-ads-ratos/scripts: `proud_pops_gtm_dump_1117.py`, `proud_pops_gtm_launch_draft_1117.py` + `_finish.py` (finish = 429 quota retry on tag 104). Compiles clean.
+  - New trigger 133 `cEvent - lead_submitted (site forms)` (/careers excluded) → G.Ads - Lead (82), G.Ads - User-provided Data (94), Meta - Lead (111).
+  - Meta - Lead eventId = `{{dlv - event_id}}`; advanced matching via new cJS Lead Email/Phone/First/Last (Concrete v4 pattern).
+  - GA4 - Lead (90) NOT on lead_submitted: Alex's server sends generate_lead via Measurement Protocol. GHL widgets keep ghl_form_submit unchanged.
+  - Meta tags 68/71/102/111/112/114 + CallRail 104 → require ad_storage.
+  - **Publish only at the DNS switch** (Lovable defaults consent to denied, would cut Meta on the old site). fu-178.
+- **Cowork (Edu's login):** GA4 MP secret created on G-C7QTE9ZZXQ ("Alex site launch 2026-11-17"); CAPI token generated (without Dataset Quality API, opt-in is irreversible and pre-selected 5 datasets); Meta Test Events code **TEST92292**; GA4 Internal Traffic filter was already Testing. Internal-traffic IP rule (45.225.171.108) saved UNPUBLISHED in the GA4 Google tag container GTM 6228503454 / 183775598 ws 3 (its only change), publish after Alex's IPs are added. Pixel is named "New Problem Solver Pixel", 1 open Diagnostics item.
+- **Slack sent (Edu's go):** thread reply to Alex p1794958740203489 (test code, GTM summary, publish at switch, asks: his IPs, MP only for site forms?, email/phone dataLayer keys, test time) + follow-up p1794958987070289 (pixel name, no Quality API, diagnostics, GA4 tag rule, token rotation). MP secret + CAPI token sent by **Slack DM to Alex** (Edu chose DM; Johnny had asked for project settings) → rotate token after launch, fu-179.
+- No Google Ads changes.
+
+## 2026-11-16 (later) — APPLIED: Electrical $455 → $375, Plumbing $145 → $75, 8 PHRASE negatives (Edu's go after the re-read, fu-137)
+
+`fixes_2026-11-16.py`, validate-only then `--apply` at 14:05 UTC, one atomic mutate, read-back OK:
+- Electrical 23866999121 budget $455 → **$375/day** (undo the 11-09 raise). Campaign PHRASE negatives: mechanic, circuit board, gate opener, independent, cheap (63 → 68).
+- Plumbing 23853484024 budget $145 → **$75/day**, all ad groups kept (General produced the real lead + the form). Negative: pops (16 → 17).
+- HVAC 23848895678 unchanged at $230 / $30 ceiling. Negatives: pops, corporation (27 → 29).
+- Replay 11-02..11-15: blocked terms had 0 conversions ('electrical mechanic near me' $138, 'pops ac' $32, 'independent electricians' $44, 'cheap electricians near me' $39, 'carrier corporation' $28, circuit board x2 $37).
+- Search caps now $730/day (Branded $50 + Elec $375 + HVAC $230 + Plumb $75), was $880. November still lands under the $25k cap.
+- Next read fu-172 11-23: Electrical CPL and IS at $375, Plumbing on $75, HVAC volume under the ceiling.
+- **AM note = AT Internal Request DRAFT `4cde0fdd-2f03-43f9-a6c3-5ba0e93856a9`** "Google Ads update: Electrical and Plumbing budgets cut, keyword cleanup" (https://app.agencytitan.com/tasks/instance/4cde0fdd-2f03-43f9-a6c3-5ba0e93856a9), created via API 14:07 UTC, left in Intake for Edu to submit. Intake = Edu, Execution = Angela, Review & Close = Edu. Content: the 4 changes above + the two questions that decide the next step (same-day electrical capacity: 3 of 4 reviewed callers wanted same-day and didn't get it; night phones: Nonbranded 19–07 $575 / 1 lead this week), next read 11-23. The fu-157 asks (recording, weekends, text sequence, $299 fee) were never drafted in AT; they sit in the review task's notes, which Angela reads for today's 11:00 CT call.
+
+---
+
+## 2026-11-16 — fu-137: one-week read of the 11-09 fixes (11-10..11-15 vs 11-04..11-08), read-only, nothing changed
+
+`pp_week.py` (scratchpad) + CallRail transcripts (`_pessoal/call-wins/proud-pops-1116/`). Search total after: $3,997.59 / 6 days.
+
+| Campaign | Before 11-04..11-08 (5d) | After 11-10..11-15 (6d) |
+|---|---|---|
+| Electrical ($455) | $1,714 ($343/d), 8 conv, CPC $27.21, IS 34%, budget-lost 38% | $2,537 ($423/d), 8 conv, CPC $26.70, IS 57%, budget-lost 13% |
+| Plumbing ($145) | $768, 0 conv | $893, 2 conv (1 real) |
+| HVAC ($230, $30 ceiling) | $751 ($150/d), CPC $34.15, 1 conv, rank-lost 50% | $295 ($49/d), CPC $19.64, 0 conv, rank-lost 78% |
+| Branded ($50) | $34, CPC $2.61, IS 55% | $273 ($45/d), CPC $7.80, IS 78%, 3 conv |
+
+**Electrical:** 8 Google leads = generator inlet (booked 11-16), breaker swap (open, waiting on a cancellation), smoke detectors (lost, next slot Tuesday), 2 unrecorded call-button calls, 3 forms. Plus a repeat caller 11-15 (refrigerator outlet sparking, same day = $200 fee, lost). **Cost per lead ~$317 vs $214** before: the extra budget bought volume (IS 34→57%) at a worse rate. Electrical_Services ad group $631 / 26 clk / 2 = $315 (was $410, fix worked). **New leak: AG3_Electrical_Repair** $987 / 37 clk / 2; bare `electrical repair` [PHRASE] $765 / 28 clk / 1 conv; visible terms incl. 'electrical mechanic near me' $138 / 2 clk, 'independent electricians' $44, 'circuit board repair near me' $20, 'gate opener circuit board repair' $18, 'cheap electricians near me' $39 (Services). It also caught 'same day electrician' $79 → 1 lead. Geo twin `electrical repair san antonio` $217 / 8 / 1.
+**Capacity:** 2 of 4 reviewed Electrical callers this week lost to availability. More Electrical spend partly buys calls the office can't serve this week.
+
+**Plumbing:** fix worked as designed: Leak Detection $465 → $72; generic searches now serve from General (`plumber san antonio tx` $548 / 36 clk / 1 conv). 2 Google leads = 11-10 job seeker + 11-12 water heater leak (booked, $0 Pop-In 11-13). Since the 11-04 restore: **$1,661 / 1 real lead**. Water Heaters ad group $192 / 1 conv carries it.
+
+**HVAC:** ceiling worked on price (CPC $34 → $19.64) but choked volume ($150/d → $49/d of $230, rank-lost 78%). 0 leads on $295 (before: 1 on $751). Junk seen: 'pops ac' $32 (brand intent on Nonbranded), 'carrier corporation san antonio tx' $28.
+
+**Branded:** spend up to $45/d (CPC $7.80, Brand_HVAC 'proud pops hvac' exact $113 / 10 clk / 0 conv at ~$11). 3 Google leads = 11-12 Power Home (admin, not counted) + 2 unrecorded call-button calls.
+
+**Night (Nonbranded 19:00–06:59):** $575 / 37 clk / 1 conv (15% of spend, 10% of leads). Still waiting on the AM's answer about night phone coverage (fu-157).
+
+**Re-read (Edu asked, same day) — two of the first proposals were wrong:**
+- Pausing bare `electrical repair` would move the leak, not fix it: that is exactly what happened on 11-09 (Services −$190, Repair +$660). Electrical is Max Conversions with NO target and budget-lost fell 38% → 13%, so Google spends the whole $455 on whatever matches; the marginal clicks are the loose ones. The keyword also caught 'same day electrician' → a real lead. Lever = budget (or a tCPA), not the keyword.
+- Plumbing: General produced the only real lead (11-12 water heater, First Time Phone Call on AG4) AND the 11-09 form; the Water Heaters conv on 11-10 was the job seeker. So General stays. Plumbing is Max Clicks (TARGET_SPEND) on generic plumber terms = buys the cheapest clicks; with 2 leads in 12 days there is nothing for Max Conv to learn from, so the budget is the lever.
+- Of the 4 Electrical callers read this week: 1 booked (generator, non-urgent estimate), 3 wanted same-day and didn't get it (Tuesday wait, waiting on a cancellation, $200 same-day fee). Volume is not the limit.
+- Brand negatives: 'proud pops' PHRASE on all 3 Nonbranded, but 'pops ac' only on Electrical, so 'pops ac' $32 served on HVAC.
+
+**Proposed, NOT applied (Edu's go), revised:**
+1. Electrical $455 → $375/day (undo the 11-09 raise: it bought $80/day of looser matches and 0 extra leads while the office loses same-day callers). Alternative if Edu wants to keep the cap: tCPA ~$220 on the campaign. Plus campaign PHRASE negatives 'mechanic', 'circuit board', 'gate opener', 'independent', 'cheap'. Keep `electrical repair`.
+2. Plumbing $145 → $75/day, all ad groups kept (General stays: it is the one that produces). LSA carries plumbing (8 of 14 LSA messages this cycle were plumber category).
+3. HVAC: keep the $30 ceiling; add PHRASE negative 'pops' on HVAC + Plumbing and 'corporation' on HVAC. Structural issue for later: no heating ad group, so HVAC bids on AC terms in November.
+4. AM (fu-157): same-day electrical capacity + night phones (Nonbranded 19–07 = $575 / 37 clk / 1 conv this week).
+
+---
+
+## 2026-11-16 — Oct Review FINAL: KPI row refreshed with the full cycle (10-16..11-14), fu-156
+
+- Row 73060891: ad_spend **$11,572.19**, total $16,572.19, qualified_leads **55 verified** (72 tracked; 52 new + 3 existing customers), cpl **$210.40**, rec $25k, budget_rationale rewritten. Task fc4041bd `additional_paid_ads_notes` rewritten (FINAL). Read back OK. Call 11-16 11:00 CT.
+- Delta 11-11..11-14: $3,533.93 (Electrical $2,018 / CPC $29.68, Plumbing $645, LSA in-account $380, HVAC $240, Branded $194, electrician LSA $58). Google real-lead conv: Electrical 6, Branded 2, Plumbing 1.
+- Calls came straight from CallRail with `fields=transcription` (no whisper). Plumbing's first real call: 11-12 water heater, booked. Nov 9 radio caller booked (tech late, customer asked for a manager). Smoke-detector caller lost on a Tuesday wait.
+- LSA delta 8: 1 booked (2 toilets 11-16), 5 open, 2 not leads (spam; electrician lead 351353602 Christmas lights, CHARGED → rate bad, added to fu-161).
+- Detail: strategy-review-octnov-2026.md (2026-11-16 section), call-wins-log.md, lsa-call-wins-log.md.
 ## 2026-11-16 — AT optimization tasks (Gui, via Claude)
 
 Read-only, nothing applied. Week 11-09..11-15 vs 11-02..11-08. Extra pull: scratchpad `r1116/pp/pp_x1116.py` (current budgets, change_event 11-09..11-16 with old/new, portfolio, Nov MTD 4 accounts, conv by date, daily IS, ad groups, hours).

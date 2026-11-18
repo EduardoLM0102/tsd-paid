@@ -12,6 +12,18 @@ the two.
 
 ---
 
+## 2026-11-16 — fu-141 DECIDED: Heating Search PAUSED (0 leads after the last repair-only week) + fu-166 review top-up
+
+**Read 11-10..11-15 (Heating Repair alone, $15/d, $12 cap):** $123.62 / 519 impr / 16 clicks / 0 conv (all_conversions 0: no calls from ads, no forms, no taps). CallRail 817-442-6949 (Google Ads tracker): only the 11-11 Branded existing-customer call, nothing from Heating; website-pool calls 11-10..11-16 carry no gclid. Search terms still troubleshooting ("troubleshooting my furnace", "why won t my heat turn on", "furnace fan keeps running with thermostat off", "my heat pump fan is not spinning"). Keywords: 'furnace not working' $46.65/7 clk, 'heating service' $27.17/3, 'heating repair' $25.15/3, 'heater not working' $17.22/2.
+Campaign life 10-26..11-15: **$582.05 / 67 clicks / 0 leads** (Repair 35 clicks since 10-27). Nonbranded Search has now failed 5 times on this account: do not rebuild it without a client offer.
+
+**APPLIED ~13:50 UTC (`cs_heating_pause_1116.py`, validate-only then --apply):** campaign `TSD_10.23_Search_Nonbranded_Heating` 24383234148 ENABLED → PAUSED, read-back PAUSED. Live now: Branded + LSA only (~$20-25/d + LSA).
+
+**Review top-up (AT 03fff3a7, row 4387c0fc):** full cycle 10-17..11-15 = **$2,343.85 / 18 / $130.21** (was $2,062.53 / 16 / $128.91). Delta 11-13..11-15 = $281.32 (LSA $219.28 + Heating $62.04), 2 new LSA leads on 11-15 (msg 351893642 duct + dryer vent cleaning, new home/allergies, NEW, charged; call 352296435 urgent duct cleaning Mansfield, suspected dead animal, ACTIVE, charged, whisper transcript). Split: 5 new + 12 existing + 1 form. LSA $392.44 / 12 = $32.70; Branded $95.07; PMax+Cooling+Heating $1,381.01 for 0. Notes rewritten (heating pause, follow up on the 2 new LSA leads). Stage untouched (at Host Review Call, call 11-17 14:45 UTC).
+Note: LSA spent $219 on 11-13..11-15 for 2 charged leads; watch the per-lead price.
+
+---
+
 ## 2026-08-12 — full PPC audit + first-pass fixes
 
 ### Audit findings
