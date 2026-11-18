@@ -2,6 +2,12 @@
 
 ---
 
+## 2026-11-16 — AT optimization tasks (Gui, via Claude)
+
+**7-Day Meta (https://app.agencytitan.com/tasks/instance/3f26e6a7-881a-43b0-b073-2e5a8846649e), completed as N/A.** Still no Proud Pops / Problem Solvers ad account shared with TSD's Meta login (all 3 pages of `ads_get_ad_accounts` checked 11-16, no further cursor). $0 11-09..11-15. lead_quality Unclear, 4 checklist items ticked (reviewed, nothing applicable). KPI Meta row `b28be850` ($0 / Unclear). Blocker (since 10-23): AM to get the account shared or confirm Meta is out of scope.
+
+---
+
 ## 2026-11-09 — AT optimization tasks (Gui, via Claude)
 
 **7-Day Meta (https://app.agencytitan.com/tasks/instance/b2ebb6af-c9fe-4823-b0ab-e0c27a18755a), completed as N/A.** Still no Proud Pops ad

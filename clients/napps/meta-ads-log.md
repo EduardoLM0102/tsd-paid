@@ -30,3 +30,12 @@ Read-only; nothing changed. 7-Day Meta task completed, KPI - Meta row 09a4cb0a (
 - **Staged (still open from 11-03):** heating-season video + pause Video_PL_HVACAwareness_1; freq under 3x/wk (budget/geo decision, client approval needed); Edu to decide on the empty lead campaign.
 
 Task: [7d Meta](https://app.agencytitan.com/tasks/instance/430bfee2-9821-4560-a9c0-ed66ceffb822)
+
+## 2026-11-16 — AT optimization tasks (Gui, via Claude)
+
+Read-only; nothing changed. 7-Day Meta task completed, KPI - Meta row d33230c5 (cost_per_result = CPM, same convention as 11-03/11-09).
+
+- **7d (11-09..11-15):** $35.02, 7,602 impr, reach 3,540, freq 2.15, CPM $4.61, CTR 0.22%, 190 est. ad recallers ($0.18 each), 0 leads (prior $34.36 / freq 2.13 / CPM $4.25 / 230 recallers). Only the ARL awareness campaign spends ($5/d, ZIP 75605). Ads: TrustedPlumbing $13.26 (90 recallers, CTR 0.35%), NewSystem $10.25 (60), ComfortOurPromise $7.31 (60), HVACAwareness $4.20 (30, CTR 0.11%, weakest). Ad freq 1.6-1.8, no fatigue. Plumbing videos = 50% of spend vs 65% HVAC split. Lead campaign TSD_04.24 still ACTIVE at $0, nothing serving. Activity log since 11-08: billing only.
+- **Staged (still open from 10-26/11-03):** heating-season video + pause Video_PL_HVACAwareness_1; freq under 3x/wk (budget/geo decision, client approval needed); Edu to decide on the empty lead campaign.
+
+Task: [7d Meta](https://app.agencytitan.com/tasks/instance/e7c7cca0-03a5-44dc-aaeb-e1030cb91616)

@@ -2,6 +2,22 @@
 
 ---
 
+## 2026-11-16 — AT optimization tasks (Gui, via Claude)
+
+Read-only, nothing applied. Week 11-09..11-15 vs 11-02..11-08. Extra pull: scratchpad `r1116/pp/pp_x1116.py` (current budgets, change_event 11-09..11-16 with old/new, portfolio, Nov MTD 4 accounts, conv by date, daily IS, ad groups, hours).
+
+**Edu's 11-16 08:05 CT changes (change_event, after the window, not yet logged here):** Electrical budget $455 → $375, Plumbing $145 → $75; PHRASE negatives Electrical mechanic / circuit board / gate opener / independent / cheap, HVAC pops / corporation, Plumbing pops. Search caps now $730/d. Nothing else changed 11-09 09:00 → 11-15.
+
+**7-Day Google (https://app.agencytitan.com/tasks/instance/68af7f2e-b794-4c42-b48d-fe2400648fe8), completed.** $4,672.94 / 230 clk / 17 conv / $274.99 CPL / $20.32 CPC / 7.39% (taps + repeat calls in all_conv only; 17 = new-caller calls 60s+ and forms). Electrical $3,020.42 / 9 ($336, was $214; Repair ad group $527/conv), Plumbing $980.63 / 3 (first since restore, but the 11-10 call = job seeker per the 11-11 review), HVAC $368.32 / 0 (rank-lost 79%, ~$53/d of $230, AC Repair 2 clicks), Branded $303.57 / 5 ($60.75; Target IS reached, 100% IS from 11-11, abs-top 76-96%). Branded 5 / $60.75, unbranded 12 / $364.22, IS 34.8%. Nights 19-07 $259/conv vs day $278 (not worse). Competitor terms $66.50 (zimmermann, lentz, casanova, apc, classic electric, elevated electrical). Nov 1-15 $9,549.80 (3 accts; MFS $116.36 not counted) → ~$19.5-20k at the new caps vs $25k. Staged: EXACT [electrician] neg, competitor names to list 12263521315, HVAC heating ad group or pause (Edu), Plumbing hold $75, re-read Electrical_Repair terms, transcript pass on 6 ad calls 60s+, AM pacing number ~$19.5-20k. Transcripts not checked (Proud Pops CallRail key is on Edu's machine). KPI Google row `e1e1c532` (Mixed).
+
+**LSA, 7-Day (https://app.agencytitan.com/tasks/instance/26822e92-516d-425f-be78-ecd421181950), completed.** 3 sources: main $650.70 + electrician $57.59 + HVAC $120.16 = $828.45 (prior $477.56) / 13 leads (2 calls, 11 msgs), 12 charged = $69.04 (prior $79.59). Main-profile messages 2 → 11 (9 plumber). 1 BOOKED, 3 ACTIVE, 9 NEW. Top impr 97.5% (prior 92.8%), impr 706 vs 722. Budget fields $714.29 x3 = Underspending, not the limit. No PMax migration on any of the 3. Rating = fu-161 (not done); spam 351579426 not charged. KPI LSA row `a0283cbd` (lead_quality had to go in as a list ["Good"]; plain string now rejected).
+
+**YouTube, 7-Day (https://app.agencytitan.com/tasks/instance/9a2ac66c-9010-4e9c-963b-d746108b465e), completed as N/A.** Both YouTube campaigns (24120440530, 24120482524) still PAUSED, $0 / 0 impr both weeks; PMax paused too. All 7 items ticked.
+
+**Meta, 7-Day:** N/A, see meta-ads-log.md (KPI Meta row `b28be850`).
+
+---
+
 ## 2026-11-11 (later 2) — Oct Review call transcripts: 22 Search-ad calls + 17 LSA calls reviewed, KPI row re-based to verified leads
 
 Edu asked for the review with transcripts. CallRail access: Edu created an API key in the Proud Pops CallRail account (533-681-324) → `.env.callrail.proudpops`. That account has Conversation Intelligence ON, so `fields=transcription` returns speaker-labeled text (no whisper needed; the `recording` field is a pointer JSON, fetch its `url` without auth). LSA calls pulled with `pull_lsa.py` per account and transcribed locally. Recording is OFF on the "210 - CALL POP" tracker (the ad call button), so the 5 call-button calls can't be reviewed.

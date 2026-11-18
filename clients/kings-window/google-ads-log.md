@@ -251,3 +251,15 @@ Read-only, nothing changed in Google Ads / LSA / Meta. The Strategy Review (call
 **For the AM:** what TMS and monthly budget were agreed on 11-10; written OK for the +$500 NB raise; current offers/promos to feature in copy; whether auto-glass leads came via LSA; after-hours answering / same-day callback (pre-call rec).
 
 Task: [Post Client Strategy Review](https://app.agencytitan.com/tasks/instance/9f657ee7-e1aa-4095-b0a2-fbc5ef39939b).
+
+## 2026-11-16 — AT optimization tasks (Gui, via Claude)
+
+Read-only, nothing changed in Google Ads / LSA. All staged.
+
+**7-day PPC 11-09..11-15 (Branded + NB only; Pay-per-lead PMax 24431038949 = LSA, excluded):** $397.57, 63 clk, 22.0 conv, $18.07 CPL, CVR 34.9% (prior $381.97 / 20.25 / $18.86). NB $380.32 / 21 conv = 10 GA4 phone_call, 6 [TSD] Click to call taps, 4 Calls from ads, 1 form → ~15 real at ~$25; call_view 7 NB calls, 4 of 60s+. Branded $17.25 / 1 ad call (174s), IS 100%. NB IS 23.3%, budget-lost 32.3%, rank-lost 44.4%; spent $380 vs $364 weekly. 'glass company near me' (QS 3) $256.84 / 15 conv. Last 2 Sundays NB $80.25 / 14 clk / 0 conv (11-15 alone $57.60). Shower RSA now AVERAGE; 'custom shower glass company' 14d $50.54 / 0. Only change: Edu's 11-13 shutter / shutters phrase negs (no shutter terms since). KPI Health = Good.
+**14-day 11-02..11-15:** $779.54 / 122 clk / 42.25 conv / $18.45 (prior 14 $681.59 / 29 / $23.50). 100% spend in targeted locations; no audiences; 12am-6am now only $8.74 (old rec dropped); 77 auto recs (63 KEYWORD, partners x2, display expansion, broad, tCPA x2, budget, lead form x3, sitelink), none applied.
+**LSA (pay-per-lead PMax only, old LSA $0):** $359.80, 6 leads (5 calls, 1 msg), 4 charged (3 calls, 1 msg), $89.95 per charged lead (prior $896.01 / 10 / $89.60). Impr 247 (prior 271). Top impression rate not reported for this campaign type. Underspending vs API $428.57/d (12%), schedule-limited. All ACTIVE, no credits. Leads halved vs prior week: watch. Rating = TSD Paid's job (fu-161), not done here.
+
+**Staged, not applied:** NB +$500/mo needs client written OK via AM (row d233f769); NB Sunday off (Edu decision); shower kw pause/phrase + new Shower RSA headlines; 'sliding glass shower doors' QS 2 pause; ask client re table top glass / glass cutting / door repair before any negs; reject partners / display expansion / broad / tCPA / lead form recs; carry-over own ad group for 'glass company near me', taps → Secondary, stalled-primaries tracking task, observation audiences; rate the 4 charged LSA leads (11-09 15:01, 11-12 09:34, 11-13 11:32 call, 11-13 12:06 msg) + the 11-06 12:42 one.
+
+Tasks (all completed): [7-Day Google](https://app.agencytitan.com/tasks/instance/b581ae80-2d09-408f-a1f8-5044d86a9186) (KPI 66aa3267), [14-Day Google](https://app.agencytitan.com/tasks/instance/42d3e7b2-d8b0-45fb-ac82-813c2003633d), [7-Day LSA](https://app.agencytitan.com/tasks/instance/9623d886-80c5-4677-b136-8ce5ca86f736) (KPI LSA 433a8062). Meta: see meta-ads-log.md.

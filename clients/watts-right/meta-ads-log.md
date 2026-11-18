@@ -5,6 +5,16 @@ Google Ads, LSA and GTM history lives in `google-ads-log.md` in this folder.
 
 ---
 
+## 2026-11-16 — AT optimization tasks (Gui, via Claude): 7-day Meta. Read-only, all staged
+
+**Scope:** Edu 11-04 = TSD does NOT manage WR Meta; numbers only, no build proposals.
+**7d 11-09..11-15 (vs 11-02..11-08):** $1,927.11 / 25 leads / $77.08 (prior $1,931.05 / 27 / $71.52). CPM $38.54, CTR 4.65%, reach 28,912, freq 1.73. TOF $850.37 / 15 / $56.69 (Broad-10 control $528.56 / 9 / $58.73; Broad-2 'electrical fires' $321.81 / 6 / $53.64). MOF $476.74 / 5 / $95.35 (Broad-9 $189.01 / 1). BOF $140.39 / 2 / $70.20. FourMode $390.87 / 3 / $130.29. ARL $68.74, reach 7,852, freq 1.80/wk, 100 recallers. No ad set above 2.5 freq.
+**Activity log:** 11-09 Clay Manus token swapped TOF 'Do your lights flicker' creative. **11-16 Clay Manus token rebuilt FourMode:** '01-MAIN | All breaker box problems | 11/16/26' $30 → $56 → $61/d, 8 new 'W1-W8 Winter-LP' ads (W3/W5/W6 inactive after review), '02-TEST' ad set created then inactive; 01-WRONG / 02-COMING / 03-OLD / 04-MADE / 05-RT-TOF3s now PAUSED.
+**Staged:** confirm with Edu which WR Meta campaigns are TSD's after today's FourMode rebuild; if MOF/BOF/ARL are TSD's: MOF Broad-9 → TOF Broad-2 at same total, ARL to 3x/week.
+KPI - Meta row 2026-11-16 = b1ede859. Task completed: https://app.agencytitan.com/tasks/instance/7c399474-23c2-4e57-ad39-452147a9b913
+
+---
+
 ## 2026-11-09 — AT optimization tasks (Gui, via Claude): 7-day Meta. Read-only, all staged
 
 **7d 11-02..11-08 (vs 10-26..11-01):** $1,930.68 / 27 leads / $71.51 (prior $1,986.08 / 29 / $68.49). CPM $31.35, CTR 5.04%, reach 36,909, freq 1.67. TOF $849.49 / 19 / $44.71: control Broad-10 $531.62 / 10 / $53.16 (recovered from $74.02 on 11-03), Broad-2 '#1 cause of electrical fires' $317.87 / 9 / $35.32 best. MOF $474.00 / 3 / $158.00. BOF $141.01 / 3 / $47.00. FourMode $397.68 / 2 / $198.84 (02-COMING both $138.61 / 0, 05-RT-TOF3s $70.04 / 0). ARL $68.50, reach 8,478, freq 1.78/wk, 180 recallers.

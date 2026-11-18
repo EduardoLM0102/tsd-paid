@@ -1539,3 +1539,22 @@ https://app.agencytitan.com/tasks/instance/d1b101b3-ebb6-48c6-8d6a-059aedf46e36 
 KPI rows 2026-11-09: Google a8307b51, LSA 05839344. Tasks completed:
 https://app.agencytitan.com/tasks/instance/3f9e8579-8413-4fdf-bed7-fe3ce05b8172 (7-day),
 https://app.agencytitan.com/tasks/instance/04ae0b6e-d1bb-4921-8529-3190ecd924ff (LSA 7-day).
+
+## 2026-11-16 — AT optimization tasks (Gui, via Claude): 7-day + 14-day Google, 7-day LSA. Read-only, all staged
+
+**7-day 11-09..11-15 (vs 11-02..11-08), LSA PMax-type 24425981973 excluded ($2,686.44 / 47, weekly_kpi.py counts it as PPC):** PPC $3,316.56 / 50 real conv / $66.33, CPC $7.54, CVR 11.36% (prior $2,926.20 / 28 / $104.51). Taps secondary, so 50 = 30 Calls from ads + 11 Phone Call + 9 forms. call_view 35 ad calls (30 of 60s+). Not transcribed (Edu's fu-145 on 11-17).
+- **Branded on $145 (Edu 11-10):** $317.03 / 18 / $17.61, IS 43% → 95%, budget-lost 54% → 0%. Spends only ~$45/d: brand demand is fully covered, ~$100/d of the $145 can't be spent.
+- **NB (tCPA $110, $320):** $2,919.48 / 28 / $104.27, CPC $14.62 → $19.73, IS 26%, budget-lost 15% → 48%, rank-lost 48% → 26%; ran 130% of 7 x $320 (daily $596 → $246). Ad groups: General $1,594.28 / 19, Generator $415.98 / 2, Emergency $366.77 / 4, Panel $333.56 / 2, EV $208.90 / 1, Surge $0.
+- **'electrical repair' PHRASE QS 3** = $612.28 / 16 clk / 5 conv (21% of NB): single clicks 'electrician broken arrow' $139.95, 'electric fireplace repairs near me' $104.13 (counted conv, likely not a WR service), 'electrician owasso' $62.96.
+- TSD PMax paused 11-10 ($81.59 on 11-09/10). Nov 1-15 PPC $6,486.33 (Branded $649.78, NB $4,894.74, PMax $941.81).
+- Edu's 11-10 negatives hold ('rocky electrician' $78.54 was 11-09; note 'rocky electric' PHRASE doesn't block 'rocky electrician'). New waste since 11-10: parking lot lighting $28.11, tesla charger cost $26.77, 40 amp breaker $19.40, chargepoint $12.41, honda prologue $4.61, public 'ev chargers' $1.48. 'commercial electric company' $49.14 counted 1 conv.
+- **Staged (fu-145):** move unspendable Branded headroom to NB at constant $465 (Branded ~$55-60, NB ~$405-410), Edu's call vs NB's ~$140 real CPL; 'electrical repair' pause or CPC ceiling; 6 NB PHRASE negs (parking lot, chargepoint, honda prologue, ev chargers near me, ev chargers nearby, rocky electrician; replayed vs 14d converting terms, no conflicts); 'commercial' for Edu; check the fireplace + commercial conversions in transcription.
+
+**14-day 11-02..11-15:** PPC $6,242.73 / ~79 real / $79.02 (Branded 32 / $19.62, NB 42 real / $115.12, PMax 5 real). NB 14d by group: General $2,135.70 / 23, Emergency $887.40 / 11, Generator $852.19 / 5, Panel $546.45 / 3, EV $413.14 / 2. High CPC: 'electrician' exact $76.35, 'tulsa electrician' $66.88, 'electricians near me' $62.50, 'electrician open now' $97.96. QS 3-4: electrical repair, panel upgrade cost, whole house generator, electrician available now, ev charger installation cost; expected CTR below avg on most NB kws. All 9 ads approved, 4 AVERAGE strength (General, Emergency, Panel B, EV B). Generator LP 2 conv / 85 clicks. Geo 100% in target. No audiences. Auto recs: reject partners / broad kws / lead forms / dynamic images / budget raises. Staged: RSA rewrites on the AVERAGE ads, observation audiences on NB, 'electrical panel box for home' BROAD → PHRASE, NB max CPC ~$40-50 (Edu's call).
+
+**LSA 7-day:** '[LSA]' 24425981973 $2,686.44 / 47 charged (32 calls, 15 msg) / $57.16 (prior $3,247.72 / 53 / $61.28); 65 leads incl. 18 uncharged; impr 3,529, top 100% (API), 22% of the $1,714/d API budget (not budget-limited). 30d $12,941.78 / 224 charged / $57.78, 1 credited. 0 of 65 marked BOOKED this week (33 of 62 prior week). Lead rating = TSD (fu-161), not done in this pass.
+
+KPI rows 2026-11-16: Google 3e412780, LSA 41d9752e (lead_quality stored as dropdown list ["Good"]; plain string rejected). Tasks completed:
+https://app.agencytitan.com/tasks/instance/8e79005c-d49a-4087-a277-27d77dc2ba19 (7-day),
+https://app.agencytitan.com/tasks/instance/56f01419-0f28-446b-b3ce-60a467dee97b (14-day),
+https://app.agencytitan.com/tasks/instance/b5cb7bb6-9781-444c-876b-e2a2606198de (LSA 7-day).

@@ -7,6 +7,10 @@ in C&S's GTM container (`GTM-P2MR2T2`) is the placeholder `123456789` (09-07 tra
 
 ---
 
+## 2026-11-17 — AT optimization tasks (Gui, via Claude): 7-Day Meta, still nothing to review
+
+All 3 pages of accessible Meta ad accounts checked again: no C&S account. 7-Day (https://app.agencytitan.com/tasks/instance/c8923ec8-9c85-4bf2-b446-e364f924f0e7) completed as N/A. KPI - Meta 11-17 `16f6c6ed` = $0 / 0 leads / Unclear. Blocker Details = build-or-switch-off. Edu's 11-12 AM note 9d3573c2 dropped the Meta awareness and Facebook 'promo' asks, so no build is planned. Toggle (UI): Blockers to Escalate = Yes if Edu wants the recurring task switched off.
+
 ## 2026-11-10 — AT optimization tasks (Gui, via Claude): 7-Day Meta, still nothing to review
 
 All 3 pages of accessible Meta ad accounts checked: no C&S account. 7-Day (https://app.agencytitan.com/tasks/instance/c0944692-1cfc-4e3d-a8af-5aa0adce8fca) completed as N/A. KPI - Meta 11-10 `c0c8673c` = $0 / 0 leads / Unclear. Blocker Details = build-or-switch-off + ask who runs the 'Facebook Ads' traffic CallRail saw on 10-22.

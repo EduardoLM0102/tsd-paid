@@ -2,6 +2,19 @@
 
 Account `381256660973192` ("Zen Air - Third Ad account ( Active Account)").
 
+## 2026-11-16 — AT optimization tasks (Gui, via Claude)
+
+7-day Meta, AT task https://app.agencytitan.com/tasks/instance/8c3987fc-0040-49bb-9946-3ee7bc89ed89 (completed). Read-only, nothing changed.
+
+**11-09..11-15 vs 11-02..11-08:** account $1,340.12, CPM $9.29, CTR 0.80%, reach 69,509. KPI leads 84 / $15.95 (62 form + 22 awareness-attributed; 145 Now Hiring pixel "leads" excluded). Prior $1,520.37 / 107 / $14.21.
+- Lead CBO: $1,036.59 / 62 / $16.72. Winter Ready $438.21 / 35 / $12.52; Rated & Guaranteed $404.63 / 14 / $28.90 (CPM $22.99); old 09/22 ad set $193.75 / 13 before the 11-10 pause.
+- **After the 11-13 form swap:** 11-14..11-15 $400.46 / 12 leads / $33.37 vs 11-10..11-12 $399.60 / 34 / $11.75; CBO shifted spend to Rated & Guaranteed ($286.54 of $400). Too early (learning reset + qualifying question), read with fu-163 11-19.
+- ⚠ **Awareness DARK since 11-13 11:16:** Cold Weather AD 120248098173470711 still DISAPPROVED, no review outcome in the activity log through 11-16; $0 on 11-14/11-15. Week: $267.21, reach 30,451, freq 2.55, hook 17.71%, ThruPlay/3s 11.38%.
+- Now Hiring: $36.32, 145 pixel leads at $0.25; campaign now OUTCOME_LEADS / pixel Lead.
+- Lead Quality = **Mixed**.
+**Staged, not applied:** chase the Cold Weather review, else re-upload / cut without the dog frame (no AC van video); confirm Zapier covers the new form; hold the lead CBO 7 days post-swap, then pause Rated & Guaranteed if it stays >~$25 CPL vs Winter Ready <~$15; Now Hiring approval + applicant check; ARL awareness rebuild with no cap; Hector's $49 statics on hold.
+KPI - Meta `1e9fa7bb`.
+
 ## 2026-11-09 — AT optimization tasks (Gui, via Claude)
 
 7-day Meta, AT task https://app.agencytitan.com/tasks/instance/8e31ec75-ac4a-4cf8-be39-c5c5fdda3484 (completed). Read-only, nothing changed.

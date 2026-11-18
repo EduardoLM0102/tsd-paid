@@ -39,3 +39,19 @@ Read-only, nothing changed in Meta.
 **Staged, not applied:** NEW ad in the DCT ad set (delete the broken one) or re-enable the GlassReplace ad set as stopgap (urgent, 3rd week); lead campaign to CBO; awareness as ARL no cap; refresh awareness creative.
 
 Task (completed): [7-Day Meta](https://app.agencytitan.com/tasks/instance/f4c80451-60b9-4cdb-8e9e-46302cab1b64). KPI - Meta 553e77bd.
+
+## 2026-11-16 — AT optimization tasks (Gui, via Claude)
+
+Read-only, nothing changed in Meta.
+
+**7d 11-09..11-15:** $316.48, 8 leads, $39.56 per lead on all spend, CPM $10.53, CTR 0.44% (prior $66.98 / 0). Lead ad set Richlandtx_Broad_18.65_M.F (back ON 11-10, Edu): $246.41 / 8 leads / $30.80 CPL, CTR 1.37%, freq 1.80, only ad GlassReplace_Image_callform_FO (control). Awareness TX_Broad_Homeowners_18.65_M.F (REACH, cap 3/7d): $70.07, reach 11,553, freq 1.95, CPM $3.11, CTR 0.13%, creative since 02-26.
+**⚠ Broken DCT ad set Richlandtx_Broad_18.65_M.F_Dynamic (120254214478390721) still ACTIVE at $30/d**, $0; ad 120254214546330721 still WITH_ISSUES. Activity log since 11-09: only the 11-10 re-enable. Not touched.
+
+**Staged, not applied:** pause the DCT ad set (or delete its ad) so it can't double lead spend if Meta clears the error, rebuild from scratch without the Willis TX pin; lead campaign to CBO; awareness as ARL no cap + creative refresh; same-day broken glass angle test; ask AM how the 8 leads turned out.
+
+Task (completed): [7-Day Meta](https://app.agencytitan.com/tasks/instance/6e65176c-a2a6-4450-a70c-64545f4f49c2). KPI - Meta 045c490c.
+
+
+## 2026-11-16 (later) — APPLIED: broken DCT ad set PAUSED (Gui's go)
+
+Ad set 120254214478390721 'Richlandtx_Broad_18.65_M.F_Dynamic' (campaign TSD_04.29_BOF_Leads_Evergreen, $30/d, ad stuck WITH_ISSUES since 10-17, $0 spend last 7d) set PAUSED via Meta MCP (live pause, is_draft false), read back PAUSED/PAUSED. Live lead delivery stays on the re-enabled ABO ad set Richlandtx_Broad_18.65_M.F. Prevents the $30/d doubling if Meta ever clears the creation error. A rebuild without the Willis TX pin stays a staged rec.

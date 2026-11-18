@@ -868,3 +868,30 @@ Read-only on all accounts; everything below is staged. 3 AT tasks completed (7d 
 - Revisit 2026-11-16 (7-day) and 2026-11-17 ($25 ceiling at 2 weeks).
 
 Tasks: [7d Google](https://app.agencytitan.com/tasks/instance/1f1336e5-c3cd-4049-b4a3-589614e0ba5c) · [7d LSA](https://app.agencytitan.com/tasks/instance/76f54cad-8d86-4ec6-8465-1ee7f8b6a351). Meta in meta-ads-log.md.
+
+## 2026-11-16 — AT optimization tasks (Gui, via Claude)
+
+Read-only on all accounts; everything below is staged. 4 AT tasks completed (7d Google, 14d Google, 7d LSA, 7d Meta), notes in task fields + KPI rows (Google aa5baba3, LSA c8f6e2c7, Meta d33230c5). Extra read-only scripts: `np_extra_1116.py`, `np_extra2_1116.py`, `np_recs_1116.py` (run scratchpad) + CallRail calls 11-09..11-16.
+
+**Changes since last pass (change_event):** only Edu's 11-10 06:31 API changes (negs 'streety' + 'water heater', Henderson County -> Henderson city on both NB; 'Click to call' -> Secondary). Both negs work: no matching terms after 11-10. Geo swap works: 0 spend outside targeted cities after 11-09.
+
+**7-day Google (11-09..11-15 vs 11-02..11-08):** $708.76 / 33 clicks / 0 counted conv (prior $574.24 / 33 / 1 tap), CPC $21.48, IS 44.68% (prior 37.32%). NB Heating $492.15 / 21 clicks, CPC $23.44, IS 42.8%, rank-lost 50.7% (11-14 $144.15 and 11-15 $128.75, ~2x daily); NB Plumbing $197.24 / 9, IS 52.9%, rank-lost 47.1%; Branded $19.37 / 3, IS 100%. NB = 98% of budget, split 71/29 vs 65/35. KPI health Poor.
+- **0 verified PPC leads.** 0 ad calls (call_view), 0 calls on CallRail 903-289-7073 11-09..11-15, so 0 calls from the 2 new LPs since the 11-11 number swap.
+- ⚠ **Form goal gap:** 1 'TSD - Lead form' submit on 11-14 (NB Plumbing, Emergency Plumber page, desktop) + a desktop 'Click to call' tap the same day, both in all_conversions only. 'TSD - Lead form' (SUBMIT_LEAD_FORM) is in NO campaign's conversion goals (Plumbing goals = Calls from ads + Qualified lead; Heating has none), so new-page forms never reach the Conversions column. Real lead vs test unknown: check GHL.
+- **After the window (11-16):** NB Heating ad call 416s from a first-time caller (936 area code, CallRail tag 'Schedule booked') + Branded call 224s from a repeat caller. First possible NB lead since the 10-27 relaunch, for fu-144.
+- Search terms: 'jacks air conditioning longview tx' $24.30, 'evans heating and air reviews' $24.74, 'gas fireplace service' $23.29 via 'heating repair' PHRASE; 'streety' $69.86 was 11-09 (pre-neg). Tyler = $330.14 (48%) of NB spend, Longview $70.56. No overnight NB spend.
+
+**14-day (11-02..11-15 vs 10-19..11-01):** $1,283.00 / 66 clicks / 1 counted (the 11-04 tap) vs $598.58 / 28 / 2. NB $1,218.25 / 56 clicks / 0 verified. Rank-lost Heating 56.8%, Plumbing 49.2%. Furnace Repair RSA AVERAGE, others GOOD, all approved. NB Heating has no sitelinks; NB Plumbing carries 'Commercial AC Repair' + 'Commercial Plumbing' sitelinks. No audiences. Auto recs: 66 KEYWORD, sitelink x2, partners x3, display expansion, RSA, lead form x2, PMax opt-in.
+
+**LSA 9239407401 (7d, still classic LSA, not migrated):** $662.26 (prior $300.24), 10 leads (9 calls, 1 msg), 9 charged (8 calls, 1 msg), $73.58 per charged lead, 61% of 7 x $154.29 = On Pace, top 95.59%. 8 plumber / 1 bath remodel / 1 HVAC. Possible duplicate: 2 charged plumber calls 11-13 14:51 + 14:53. Charged + DECLINED + not credited (to rate, fu-161): 10-23 07:48 call, 10-28 msg, 11-03 14:06 call. 30d $1,493.18 / 22 charged / $67.87.
+
+**Staged, not applied:**
+- Add the Submit lead form goal (TSD - Lead form) to both NB campaigns (reporting only on Max Clicks; use all_conversions across the change).
+- Check GHL for the 11-14 form; if it was a test, still owe the fu-121 first-visitor live test + Mo Verified Live.
+- Heating PHRASE negs: fireplace, reviews, jacks, evans (+ the 11-09 competitor list).
+- Heating sitelinks to the furnace page; plumbing sitelinks instead of 'Commercial AC Repair' on NB Plumbing; 'Heating/Heater Repair' headlines on the Furnace Repair RSA; observation audiences. Reject KEYWORD / partners / display / PMax / lead form recs.
+- Hold the $25 cap + budgets to Edu's fu-144 read (11-17). AM: confirm Tyler is served.
+- LSA: rate the possible 11-13 duplicate and the 3 charged DECLINED leads (fu-161).
+- Revisit 2026-11-17 (fu-144: count the 11-16 NB call, CallRail page calls) and 2026-11-23 (7-day).
+
+Tasks: [7d Google](https://app.agencytitan.com/tasks/instance/6e4b5453-6fe9-4e03-8b46-357fa6836848) · [14d Google](https://app.agencytitan.com/tasks/instance/e7c1489c-3acf-4666-aafc-65122ae4859e) · [7d LSA](https://app.agencytitan.com/tasks/instance/ee96cc48-85e8-4b2f-84d0-19e684e70e6d). Meta in meta-ads-log.md.

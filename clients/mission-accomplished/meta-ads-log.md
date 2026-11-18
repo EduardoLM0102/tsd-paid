@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-11-16 — AT optimization tasks (Gui, via Claude)
+
+**Scope:** read-only (Meta MCP), no account changes. 7-Day Meta task completed.
+
+- **Week 11-09..11-15 (new account 2671066020034494; old 79203382 $0):** $60.04, 1,049 impr, reach 867, freq 1.21, CPM $57.24, CTR 1.91% (12 link clicks), **0 leads**. Replacement $36.96 / CTR 1.80%; TuneUp-35 $21.80 / CTR 1.42%; Retargeting $1.28. Financing ad set still PAUSED, 0 ads. Daily: 11-11 $11.07, 11-12 $10.40, 11-13 $0, 11-14 $38.57, 11-15 $0.
+- **Billing still breaking delivery:** all 3 ads ACTIVE/approved but delivery OFF again (`account_needs_credit`). Activity log: account flips Active / In grace period / Payment Needed on 11-11, 11-12, 11-13, 11-14, 11-16 (many repeated "Account billed" attempts on 11-14 and 11-16); latest 11-16 10:36 AM = **Payment Needed**. ~$60 delivered of ~$250 planned since launch.
+- Too early for creative/CPL calls; freq 1.21 = no fatigue. GHL gate (Mo's form test) still open per 11-12.
+- **Staged, not applied:** Brian needs a working payment method or prepaid funds (via Angela, Edu decides escalation); no creative/audience changes until ~7 days of clean delivery; Financing stays paused until Hector's winter $125/mo static.
+- KPI - Meta row bb4af82f ($60.04 / 0 leads / Unclear). Task: https://app.agencytitan.com/tasks/instance/ee7f6918-3310-4ec7-ac56-a284e750880b
+
+---
+
 ## 2026-11-10 — New account still has no card; AM note submitted
 
 **Scope:** New ad account `2671066020034494` (Brian's business 876938854443027). Read-only check via Meta MCP + AT note. No account changes.

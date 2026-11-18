@@ -9,6 +9,21 @@
 
 ---
 
+## 2026-11-16 (later) — APPLIED: LSA budget $35.71 → $50/day (Gui's go)
+
+LSA 8655979348 campaign 23394236866 (LocalServicesCampaign, classic, not migrated), budget 15244872142: amount_micros 35,710,000 → 50,000,000, read back OK. Approval: AT Internal Request 3addac2e, Angela's execution notes "client agreed to raise budget $100/week - total weekly LSA budget $350.00" (= $50/d). New all-platform run rate ≈ Google $46/d + LSA $50/d ≈ $2,920/mo (was ~$2,484 under the $2,500 cap; client-approved increase). Nov had ~$270 left on the old pace; the higher cap should keep LSA on past ~11-21. Still open in 3addac2e: tick "raise to $350/week" + Review & Close (Gui, UI); 3 unanswered LSA messages (11-13 351972066, 11-14 352158970, 11-16 352353930).
+
+---
+
+## 2026-11-16 — AT optimization tasks (Gui, via Claude)
+
+**7-Day Google (https://app.agencytitan.com/tasks/instance/f1f5d30d-7d77-448b-abb6-288d595afe9c), read-only, completed.** 11-09..11-15 PPC: $287.98 / 32 clk / 3 conv / $95.99 CPL / $9.00 CPC (prev $320.53 / 22 / 3 / $106.84). MiniSplit $155.98 / 3 conv, LeadGen $115.21 / 0, Branded $16.80 / 8 clk / 0 ($2.10 CPC, first impressions 11-13, Learning). All 3 conv on 11-10 (MiniSplit, 'all seasons' brand searches, before the 11-11 change): 1 call ext LEAD + 2 'Phone Call' imports; the 11-10 ad calls in call-wins-log are existing customers, so they count (11-12 rule); 0 brand-new leads. IS 11.93% (Both), On Pace (89% of $322). KPI - Google Search `a38e43c7` (Mixed).
+After Edu's 11-11 changes (11-11..11-15): $176.94 / 0 conv. Support/thermostat terms $0 (were $34.19 on 11-09); brand clicks now on Branded at $0.92-$1.21. But 81% of visible LeadGen/MiniSplit spend went to other companies: nugent and potter southampton $33.13 (via BROAD 'hvac & plumbing'), islandaire ptac $31.13 (11-12 25s wrong-number call asking for 'Islando'), burner man wantagh $24.67, hamptons air $20.58, airsync hvac $13.72. 'seasons air conditioning' $5.43 slipped past the 'all seasons' neg; Branded BROAD 'all seasons hvac' matched 'central air conditioning system' $4.98. Branded IS <10% with 74% rank-lost (broad brand kws in generic auctions vs $5 ceiling). No changes after 11-11.
+**Staged, not applied (for fu-153 11-18):** PHRASE negs 'nugent and potter', 'islandaire', 'burner man', 'airsync', 'seasons air conditioning' on LeadGen + MiniSplit; 'hamptons air' EXACT only; pause BROAD 'hvac & plumbing' (open since 11-09); Branded broad → phrase/exact or generic negs; fix/pause 2 POOR RSAs.
+- **LSA 7-Day (https://app.agencytitan.com/tasks/instance/3827c3b4-0ab4-42ca-98eb-1ba6b89b535f), completed:** 8655979348, still LOCAL_SERVICES. $292.40, 5 charged (2 calls, 3 msg), $58.48 CPL (prev $523.28 / 7 charged / $74.75). 306 impr (prev 1,435), 97.4% top. Overspending (117% of 7 x $35.71). Nov 1-15 $815.68 of ~$1,086 (~$270 left) → dark ~11-21/22. Messages 11-13 (351972066) + 11-14 (352158970) still NEW with no business reply; new one 11-16 08:51 (352353930) → add to AT 3addac2e. Rating not done (fu-161); no non-lead visible in the data. KPI - LSA `d85cd29c` (Overspending, Good).
+
+---
+
 ## 2026-11-11 (later) — APPLIED: support/thermostat negatives + brand home (Edu: "Apply 1, build 2"), 10:35–10:37 BRT
 
 1. `asac_negs_1111.py` **APPLIED**: 25 PHRASE negatives across LeadGen + MiniSplit (support, sensi, copeland, honeywell, ecobee, nest thermostat, braeburn, cooper hunter, vs, electric bill, comfort app, warranty, + phone number where missing). On MiniSplit 'support' alone covers 22 tech-support terms ($55/30d).

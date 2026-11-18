@@ -925,3 +925,15 @@ Toggles to set in UI (14-Day): High-CPC Keywords Reviewed = Yes, Keyword Warning
 - **LSA 3740502923:** $0, 2 phone leads (11-04, 11-05, uncharged, unmarked), 0 messages, 57 impr, 100% top / 79.5% abs top (prior $62.40 / 1 lead 10-28, still unmarked). Underspending: API budget $642.86/d isn't the limiter, reach is. 30d $124.80, 10 leads (2 BOOKED, 5 DECLINED, 3 open). Staged: Zen to mark open leads; service area/hours still waiting on Eddie.
 
 AT tasks completed: Google https://app.agencytitan.com/tasks/instance/560989da-e642-46ad-94ed-69c04ade143b (KPI `f393ba8b`), LSA https://app.agencytitan.com/tasks/instance/e9a71b7d-f6f2-49b6-824f-d142a66d3701 (KPI `718b55bd`).
+
+## 2026-11-16 — AT optimization tasks (Gui, via Claude)
+
+7-day Google Search + 14-day Google Search + 7-day LSA. Read-only, nothing changed in the accounts.
+
+**PPC 7-day (11-09..11-15 vs 11-02..11-08, LSA excluded):** Branded only, $12.06 / 37 impr / 2 clicks / 0 conv (0 all-conv, 0 ad calls), $6.03 CPC, IS 78.6% (21.4% rank-lost on a tiny sample). Prior $33.68 / 3 taps. Terms all brand ('zen air heating and cooling reviews' $7.81, 'zenair hvac' $4.25). Nonbranded still paused since 10-29 (client request). No account changes 11-09..11-15. KPI Health = Mixed.
+**PPC 14-day (11-02..11-15):** $45.74 / 79 impr / 8 clk (CTR 10.1%) / 3 taps (11-03, 11-04) + 2 Peach AI booked calls (all-conv), IS 87.3%. RSA EXCELLENT, QS 6-10, 12 of 20 brand kws RARELY_SERVED (low volume, normal). 'zen air heating and cooling' (QS 7) + 'zen air hvac' (QS 6) below-avg expected CTR. Click cities all inside targeting (Walnut Grove = Walton Co, 1 converting brand click, leave). 7 open recs (4 NB, 3 Branded). All 8 checklist items ticked.
+**Staged, not applied:** Branded Target IS ceiling $8 → $10 only if IS stays <~85% next week (Edu); RSA headline 'Zen Air HVAC' + a verified reviews line; dismiss the 7 recs; NB relaunch only on Edu's/client's call from the 11-03 list; clean the 2 ENDED trial campaigns.
+- **LSA 3740502923 (old LocalServicesCampaign type, not migrated):** $0, 2 phone leads (11-10, 11-13, uncharged, ACTIVE), 0 messages, 85 impr, 100% top / 87% abs top (prior $0 / 2 leads 11-04, 11-05, now DECLINED). Underspending, budget isn't the limiter. 30d: $62.40, 9 leads, 1 charged (10-28 wrong number, not credited yet → rate bad, fu-161), 1 BOOKED, 6 DECLINED. Staged: rate the 10-28 lead bad (fu-161), transcribe 11-10 / 11-13 calls.
+
+AT tasks completed: 7-Day Google https://app.agencytitan.com/tasks/instance/ea2e9a59-f527-4acc-817a-7754c158c6bd (KPI `c54041fb`), 14-Day Google https://app.agencytitan.com/tasks/instance/beefcbea-9955-4ded-a84f-2cc161b31544, LSA https://app.agencytitan.com/tasks/instance/e46f57ac-3ad3-4e9b-afb0-89a297ec7528 (KPI `fd14b264`).
+Toggles to set in UI (14-Day): High-CPC Keywords Reviewed = Yes, Keyword Warnings Reviewed = Yes, Keywords Paused or Fixed = No, Geo Targeting Adjusted = No, Audience added? = No, Blockers to Escalate = No.
