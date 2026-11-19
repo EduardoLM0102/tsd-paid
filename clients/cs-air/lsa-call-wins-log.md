@@ -104,3 +104,11 @@ Pulled with `pull_lsa.py` (account 5563867754, 2026-09-15 → 2026-11-09): 23 le
 - **LSA brings almost no new customers.** In 8 weeks (Sep 15–Nov 9, incl. the Oct 1–15 calls above) the only new-customer leads are 10-05 (Joshua, price-shopping), 10-21 (message, install) and 10-22 (Fort Worth, came by referral), plus the 09-17 commercial prospect. The rest are existing customers using the ad as the phone number. Google's "Booked" count overstates ad-driven jobs.
 - **Two charged leads to dispute:** 09-29 (C&S employee) and 10-30 (filter-size question). The 9 declined + charged leads from Aug 1–Sep 9 were not pulled; same check is worth doing if the dispute window allows.
 - **Callbacks owed to commercial clients:** the 09-17 proposal, the Midland warranty job (called twice, 10-23 and 10-29), and the hotel room (11-05). Not an ads issue, but it is revenue and worth passing to the AM.
+
+## 2026-11-18 — Lennox app glitch burst (24 LSA leads, 25 recordings transcribed locally 11-19, base.en)
+
+**What happened:** between 4:09 and 6:27 PM a Lennox app glitch sent "a technician from C&S Air is requesting access to your system" alerts to Lennox owners across the US and Canada. They googled C&S Air, found the Local Services listing and called to ask why. Callers from Connecticut, Georgia, California, Indiana, Missouri, Illinois, Florida, Kansas, Oklahoma, Michigan, Arizona and more; the C&S team (Alicia, Phil, Fisher, Alia, Tom, Alex) told them it's a Lennox glitch, don't grant access. A Dallas Lennox dealer called too ("talked to 25 people in five minutes, all over the US and Canada"). C&S said they got "a hundred-plus" of these calls.
+- ❌ Not leads (19): the glitch callers. 7 of them CHARGED by Google: 353016979, 352642316, 353019919, 353043471, 353050671, 353026663, 352655735.
+- ❌ Robocalls (3): 4-second "Number of allowed calls has been reached" (353038161, 352637969, 352639331), free.
+- ✅ Real (2): 09:04 Divert (Mansfield, commercial) confirming its quarterly maintenance, existing customer; 17:36 existing customer, two systems bought from C&S not holding temperature (7.5 min call). Both free.
+Rating: paid/lsa-rating/cs_rate_1118_burst.py (rate after 24h for credit eligibility, fu-161).

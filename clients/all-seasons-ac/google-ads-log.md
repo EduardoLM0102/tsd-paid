@@ -9,6 +9,37 @@
 
 ---
 
+## 2026-11-18 — fu-153 read: week 2 after the leak fixes + week 1 of the brand home (read-only; 1 script STAGED for Edu)
+
+`asac_read_1118.py` (this folder) + CallRail 11-11..11-17 (65 calls, 8 Google Ads, 7 recordings transcribed, `call-wins-log.md`) + LSA recordings (`lsa-call-wins-log.md`). POST 11-11..11-17 (7d) vs PRE 11-04..11-10 (7d). No account changes by anyone after the 11-11 10:37 apply (change_event empty; Gui's LSA budget change is on the LSA account).
+
+| | POST | PRE | Note |
+|---|---|---|---|
+| LeadGen ($17) | $116 ($17/d), 8 clk, CPC **$14.54**, 0 conv | $134, 10 clk, CPC $13.41, 1 conv | IS 11%, budget-lost 44%, rank-lost 44% |
+| MiniSplit ($24) | $153 ($22/d), 14 clk, CPC $10.94, 1 conv (Phone Call import) | $162, 14 clk, 4 conv | rank-lost 56% |
+| Branded ($5, Target IS 90% / $5 cap) | $36 ($5/d), 12 clk, CPC **$2.99**, 0 conv | off | IS 10% overall, see below |
+| PPC total | **$305 = $44/d** (cap $46 holds) | $296 | |
+
+**8 Google Ads calls transcribed: 0 new leads.** 4 wrong company/number (11-12 "Islando" = Islandaire searcher, 11-13 Nugent & Potter, 11-16 Hamptons Air burner customer, 11-16 wrong number) = **50%, up from 40%**, and each one maps to a competitor search term we paid for the same day. 2 existing customers (11-13 Robin, musty smell from an air intake, service call put in = counts as a lead under the 11-12 rule; 11-13 Mrs. McMenamy asking the ETA of today's visit = admin, not a lead). 1 no-contact (11-12 0s), 1 confused "I got a call from this number" (11-17, the gclid click on the ductless page, 52s, = Google's 1 counted Phone Call import). **Real new-lead CPL: $305 / 0.** Two weeks since the 11-04 fixes: $601 / 1 real new lead (Valerie 11-05).
+
+**Where the money went (visible click spend $197): $167 = 85% on other companies.** nugent and potter $33, islandaire ptac $31, burner man $25, hamptons air $21, airsync $14, strada hvac $9, central air systems $9, b&r plumbing $9, hampton air $6, seasons air conditioning $5 (past the 'all seasons' neg), brian egan $5, midea $3. Support/thermostat terms: $0 (the 11-11 negatives hold). Brand terms inside LeadGen/MiniSplit: $0 (brand home holds). Impression-only leaks: hydronic supply, systematic control, airz, blue sky hvac, bem corp, suburban gas, petro home.
+
+**Brand home, week 1:** the PHRASE brand keywords do what we wanted (all seasons air conditioning 78% IS at $1.07, all seasons hvac 100% at $1.21). But the BROAD 'all seasons hvac' took 7 of 12 clicks / $30 of $36 on generic searches (mitsubishi electric heating and cooling $9.34, central air conditioning system $4.98, thermostat replacement cost $4.80) at 10% IS / 61% rank-lost, which is why the campaign reads IS 10%. Budget-lost 39% at $5. The existing-customer calls still arrived through LeadGen's call asset, not Branded.
+
+**LSA 8655979348 (11-11..11-17): $177 / 4 charged (1 call, 3 messages), 0 new booked.** 11-11 charged call = oil-system thermostat, "we don't service oil" (rate as bad, job type not serviced); 3 message leads (11-13, 11-14, 11-16) still NEW, never answered (already in AT 3addac2e); 11-17 not charged = existing customer Anthony, 227 Brookville Rd guest house no heat, booked 1-4 pm. Spend by day $75 / 0 / $40 / $17 / 0 / $45 / 0, impressions 70 → 14-56/day. Nov 1-17 $860; at the new $50/d (Gui 11-16) the month lands ~$1,500, under the ~$1,550 cap. ⚠ Nov total ≈ Google $1,380 + LSA ~$1,500 = ~$2,900 vs the $2,500 cap; Angela's ticket records the client's OK for +$100/wk LSA, so the budget on file should be updated to ~$2,920.
+
+**Valerie (11-05 mini split caller, asked for a callback):** no later inbound call from her number through 11-17; CallRail can't see the office's outbound calls, so ask Angela whether she was called back.
+
+**STAGED (`asac_stage_1118.py`, validate-only passed, NOT applied), Edu's go:**
+1. LeadGen + MiniSplit: 34 PHRASE negatives (the 12 companies above + 7 impression-only leaks; 'hamptons air' EXACT only per Gui, 'hampton air' phrase).
+2. LeadGen: pause BROAD 'hvac & plumbing' + 'plumbing and hvac services' (furnace repair ad group; brought Nugent & Potter). LeadGen still has 347 BROAD keywords enabled: that is the leak engine. If week 3 (after the negatives) is still 0 new leads on ~$120, propose moving LeadGen's $17 to MiniSplit (the only campaign with a real new lead since 11-04) or to LSA.
+3. Branded: pause the 8 BROAD keywords, keep the 4 PHRASE. Target IS / $5 cap / $5 budget unchanged.
+4. LSA: rate the 11-11 oil thermostat lead as bad (TSD's job, fu-161). AM (Angela): Valerie callback, 3 unanswered messages, budget on file → ~$2,920/mo.
+5. Owner: Edu and Gui both changed this account in the last 8 days (Gui 11-10 negs + 11-16 LSA budget, Edu 11-04 + 11-11). Decide who owns it so changes stop overlapping.
+⚑ Next read 11-25 (fu-182): LeadGen after the negatives (wrong-company share, any new lead), Branded on phrase only (IS, CPC), MiniSplit CPC, LSA pace at $50/d + message replies.
+
+---
+
 ## 2026-11-16 (later) — APPLIED: LSA budget $35.71 → $50/day (Gui's go)
 
 LSA 8655979348 campaign 23394236866 (LocalServicesCampaign, classic, not migrated), budget 15244872142: amount_micros 35,710,000 → 50,000,000, read back OK. Approval: AT Internal Request 3addac2e, Angela's execution notes "client agreed to raise budget $100/week - total weekly LSA budget $350.00" (= $50/d). New all-platform run rate ≈ Google $46/d + LSA $50/d ≈ $2,920/mo (was ~$2,484 under the $2,500 cap; client-approved increase). Nov had ~$270 left on the old pace; the higher cap should keep LSA on past ~11-21. Still open in 3addac2e: tick "raise to $350/week" + Review & Close (Gui, UI); 3 unanswered LSA messages (11-13 351972066, 11-14 352158970, 11-16 352353930).
@@ -1001,3 +1032,20 @@ Cycle 10-10..11-08 (call was 11-10). Stage Performance Reporting assigned to Gui
 - ⚠ Monthly math: LSA $50 × 30.4 = $1,520 + PPC $1,398 = **~$2,918/mo vs the $2,500 all-platform cap the client set 10-15** (AT 902208a0 "kept the cap"). Flagged in the execution notes: if this is the client's call, the budget on file (ads_budget_marketing) needs updating.
 - LSA since 11-01: $1,042.27 / 16 leads (13 charged) / 2 BOOKED / 2 DECLINED (not charged) / 8 ACTIVE / **3 MESSAGE leads still NEW** (rate them, fu-161 rule). Weekly spend: 11-02 wk $523, 11-09 wk $292, 11-16 (Mon) $45. Spend by day is bursty ($0 on 11-01, 04, 07, 08, 12, 15).
 - AT: execution notes + task update written 11-17, Review & Close assigned to Angela (requester), Execution set complete via MCP (read-back below).
+
+## 2026-11-19 — Post Client Strategy Review alignment (AT b1e7e485, read-only check, checklist written, stage NOT completed). Script asac_alignment_1119.py
+
+Agreed on the 11-10 review (task 7be61e95): top service = LSA; raise LSA to $350/week, PPC unchanged.
+- Budgets: LSA 23394236866 = $50/d (= $350/wk) ✓; PPC LeadGen $17 + MiniSplit $24 + Branded $5 = $46/d ✓. Total ≈ $2,915/mo vs the $2,500 cap → written OK on the new total still worth getting.
+- Nov 10-18 PPC: LeadGen $161.49 / 12 clk / 0 conv (furnace repair $86.51, dynamic ad group $45.54, heating repair $20.94); MiniSplit $217.43 / 20 clk / 5 conv; Branded $45.85 / 14 clk.
+- Geo: Suffolk + Nassau counties + West Babylon, PRESENCE, Italy/UK excluded on all 3 ✓. LSA serves 7 days 8-17.
+- Copy: heating RSAs live; AC-season RSAs still enabled in 'air conditioning repair' (no spend). No offer in ads; holiday offer creative in review (Angela's 11-18 feedback to Hector).
+- Tracking: primary = Phone Call (CallRail upload) + call extension LEAD (60s) + forms; 14d: Phone Call 4, call ext 2, every form action 0 (no form since ~10-08, still unexplained). GA4 page_view + YouTube actions still PRIMARY (pollute 'Conversions' if they ever fire) → cleanup candidate.
+- LSA: weekly spend $523 (11-02) → $292 (11-09) → $73 (11-16 to 11-18); 4 of 5 message leads since 11-13 still NEW (unanswered) → escalated to Angela in the checklist.
+- Open on our side: fu-182 staged cleanup (34 competitor negs + BROAD pauses) waiting on Edu's go; form tracking check.
+
+### 2026-11-19 (later) — APPLIED fu-182 cleanup (Edu: "yes"), asac_stage_1118.py --apply, read-back OK
+- +34 PHRASE negatives (LeadGen 15, MiniSplit 19; 'hamptons air' EXACT on MiniSplit only): nugent and potter, islandaire, burner man, airsync, seasons air conditioning, strada hvac, central air systems, b&r plumbing, hampton air, brian egan, midea, hydronic supply, systematic control, airz, blue sky hvac, bem corp, suburban gas, petro home.
+- LeadGen: paused BROAD 'hvac & plumbing' + 'plumbing and hvac services' (furnace repair ad group). LeadGen still has 345 BROAD keywords.
+- Branded: 8 BROAD paused, 4 PHRASE kept (all seasons air conditioning / hvac / heating & cooling / air conditioning & heating). Target IS $5 cap, $5/d untouched. Budgets unchanged.
+- AT b1e7e485 Paid Ads Alignment substage COMPLETE (item 5 updated to done). Read at fu-182 → 11-25 (LeadGen wrong-company share, Branded IS/CPC on phrase only, MiniSplit CPC, LSA pace + message replies).

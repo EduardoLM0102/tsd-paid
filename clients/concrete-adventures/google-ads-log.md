@@ -129,3 +129,15 @@ Run by Claude in a headed Playwright Chromium (no GPC, no ad blocker), real hits
 ## 2026-11-11 — CallRail inventory (client account, via Cowork)
 
 Account "Concrete Adventures, LLC" #971-364-987, 4 source trackers, no pool: Website NAP - Oxford (662) 729-8852 → (662) 291-7755 (1 call 11-10); Google Ads Assets (662) 498-5409 → 291-7755 (0 calls in 2026); Google Local Services Ads (803) 715-2140 → 291-7755 (0 calls); first number (803) 721-4373 → (803) 408-5505 (2 calls 10-21). **Main line = (662) 291-7755; 729-8852 is a tracker.** Social tracker (662) 960-6539 staged, not activated, destination must be 291-7755. Note: 0 calls on the Google Ads Assets tracker all year matches the 11-04 read (0 ad calls); worth a test call once Search has volume.
+
+## 2026-11-19 — fu-102 post-launch GTM cleanup STAGED (draft only, live still v6). Script google-ads-ratos/scripts/concrete_gtm_cleanup_draft_1119.py
+
+Checks: go.concreteadventures.com has no DNS any more (the old GHL pages are gone); www.concreteadventures.com (Alex's WordPress build, assets on topcrete.com) has no GHL/leadnurturemachine embed. So `ghl_form_submit` can never fire again and nothing is lost by removing it. Google Ads 9215192296: 0 conversions of any kind Nov 1-19 (Search is tiny), so the live `generate_lead` → Ads 'Submit lead form' path is unproven on www; the 11-02 staging test leads passed.
+**Draft in Default Workspace 7 (3 changes, 0 conflicts, NOT published):**
+1. trigger 10 → `cEvent - Lead (generate_lead)`, regex `^generate_lead$` (was `^(generate_lead|ghl_form_submit)$`). Ads Lead 29 + Meta Lead 22 stay on it.
+2. tag 7 `00 | cHTML - GHL Listener` PAUSED.
+3. tag 11 `04 | GA4 - Lead` PAUSED (GA4 generate_lead comes from Alex's server). Trigger 37 kept.
+**Before publishing (Edu's go):** one real test lead on www with GTM Preview (Ads Lead + Meta Lead with event_id fire on generate_lead), then publish as v7 (pattern concrete_gtm_publish_v6_1102.py). Rollback = unpause 7 + 11, regex back.
+
+### 2026-11-19 (later) — PUBLISHED GTM-53FXJRN4 v7 (Edu: "Publish the concrete change"). Script concrete_gtm_publish_v7_1119.py
+v7 created from Default Workspace 7 and published (compiler clean), live = 7, new Default Workspace 8 synced, 0 conflicts. Content verified before publish: trigger 10 `cEvent - Lead (generate_lead)` regex `^generate_lead$`; tags 7 (GHL Listener) + 11 (GA4 Lead) paused. Ads Lead 29 + Meta Lead 22 unchanged on trigger 10. Rollback = republish v6. The live generate_lead → Ads/Meta Lead path on www is still unproven by a real lead (0 Google conversions Nov 1-19); watch the first www lead at fu-174 (11-24).

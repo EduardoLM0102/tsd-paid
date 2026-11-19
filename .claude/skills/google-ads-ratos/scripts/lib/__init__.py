@@ -357,3 +357,13 @@ def parse_json_arg(json_str, arg_name="argumento"):
     except json.JSONDecodeError as e:
         print_error(f"JSON invalido no argumento {arg_name}: {e}")
         sys.exit(1)
+
+
+def ppl_lsa_campaign_ids(customer_id):
+    """Google's 'Pay-per-lead PMax' campaigns (LSA accounts Google migrated from Nov 2026): PERFORMANCE_MAX campaigns
+    with an xcat:* asset group. Count them as LSA, never as PMax (fu-136). Returns a set of campaign id strings; empty on error."""
+    try:
+        rows = run_query(customer_id, "SELECT campaign.id FROM asset_group WHERE campaign.advertising_channel_type = 'PERFORMANCE_MAX' AND asset_group.name LIKE 'xcat:%'")
+        return {str(r["campaign"]["id"]) for r in rows}
+    except Exception:
+        return set()

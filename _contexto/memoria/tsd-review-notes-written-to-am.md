@@ -10,3 +10,5 @@ The `additional_paid_ads_notes` field on a Client Strategy Review task is read d
 **Why:** Edu, 2026-11-13, on the C&S review: "why 'For Angela'? this is going directly to her. It sounds like humans are not even reviewing the text." The bullet also repeated 2 asks from his 11-12 AM note and a lead already marked Booked.
 
 **How to apply:** last bullet = short, addressed to the AM, 1-3 genuinely open items. Related: [[tsd-at-client-strategy-review]], [[tsd-client-facing-voice]], [[tsd-lsa-rating-is-ours]].
+
+**2026-11-19 (Edu, King's Growth Engine notes):** never point the AM to workspace files or paths ("clients/kings-window/...md"): Angela has no access to the repo. Say the plan is on our side and can be sent, or attach it to the task. Also: when Edu has already edited a note in AT, re-read it and change only the one thing asked; don't overwrite his wording.

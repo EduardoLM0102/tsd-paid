@@ -1040,3 +1040,31 @@ HVAC decision (trim to repair-only vs move budget to Electrical) stays on fu-113
 
 ## 2026-11-12 — fu-077 DECIDED: go (Edu)
 No extra cost (pool numbers already paid; only a few call minutes). Ask already with Angela since 11-11: AT Internal Request f0e33625 "ServiceTitan access:" (ServiceTitan read login + Luke OK to route the website number through CallRail to 469-270-1146). No reply yet; Edu nudging on Slack. When Luke OKs: Website pool swap target + destination -> 469-270-1146, test call, then Phone Call 7830770637 primary / Click to call secondary. Recheck 11-17.
+
+## 2026-11-19 — fu-113 QS / landing page recheck + leads since the 11-06 changes (read-only, nothing changed). Scripts ch_read_1119.py, ch_changes_1119.py
+
+**⚠ Outside edit on our campaign:** 2026-11-17 12:12 CT, **tyler.foster@relentless-digital.com** (Google Ads web UI) changed `TSD_Search_HVAC` 24118511502 from Max Clicks with the $8 CPC ceiling (set 11-06) to **Maximize Conversions** (change_event: target_spend.cpc_bid_ceiling 8,000,000 → cleared). Not announced to TSD. Relentless also created asset 438407496526 on 11-11 (analytics@relentless-digital.com). Relentless runs Cool Hand's LSA (see 10-12 LSA schedule edit). Nothing reverted: Edu decides (ownership of the Search campaigns).
+
+**12 days after 11-06 (11-07..11-18 vs 10-26..11-06):**
+- Electrical (Max Conv since 11-06): $808.63 / 41 clicks (was 104) / 9 conv (4 Calls from ads + **4 Click to call taps** + 1 form) → real ~5 = ~$162/real lead (was $124 on 7 conv). CPC ~$19.70 vs ~$8.40 under the cap.
+- HVAC: $464.23 / 56 clicks / 2 contact forms ($232). Was $403.66 / 1.
+- Branded: $105.38 / 16 clicks / 5 conv (4 calls + 1 tap), IS 100%.
+- **'Click to call' (taps) is PRIMARY** and Electrical + HVAC bid on Maximize Conversions, so they partly optimize to taps. Also 'Clicks to call' (CONTACT), 'Phone Call' (DEFAULT), Local actions (directions/website visits) and YouTube follow-on views are primary. YouTube's 9 'conversions' this window = taps.
+**QS vs 10-30:** hvac repair 2 → **4** (LP below → average); electrician 5, electrical contractor 4, hvac repair near me 5, panel upgrade 5 (LP average on the go. pages). Still below: air conditioning repair 3, ac repair 3, ac repair near me 1, ac replacement 2, furnace repair 3, electrical contractors near me 1, panel replacement 4 (LP below). **Expected CTR BELOW on every nonbranded keyword.**
+**Landing-page mismatch drives the LP 'below' ratings:** AC-Installation ads + 'ac replacement' land on /ac-repair/; Furnace-Replacement + Furnace-Repair land on /hvac-repair/; Panel-Upgrade + panel replacement land on /electrician/. Only 3 go. service pages exist.
+**Proposed (Edu's go, nothing applied):** (1) decide on Relentless' HVAC bidding change (revert to Max Clicks $8 or keep Max Conv) and tell Relentless/AM who owns the Search campaigns; (2) taps ('Click to call', 'Clicks to call', 'Phone Call' DEFAULT, Local actions) → Secondary, so Max Conv bids on calls 90s/forms only (same fix as Proud Pops/Napps/Watt's Right); (3) ask Sha for go. pages: AC installation/replacement, furnace, panel upgrade (per feedback-cool-hand-go-only).
+
+### 2026-11-19 (later) — APPLIED: taps → Secondary (Edu: "Move the taps to secondary") + AM draft
+- `ch_taps_secondary_1119.py` (validate-only, then --apply): 'Click to call' 7716560298 (CLICK_TO_CALL, ad call-button taps) primary → **Secondary**, read-back primary=False, include_in_conversions=False. It shared the biddable PHONE_CALL_LEAD/CALL_FROM_ADS goal with 'Calls from ads'; the goal stays biddable. 'Clicks to call' (CONTACT), 'Phone Call' (DEFAULT) and Local actions are in goals the Search campaigns don't bid on → left as is. Expect fewer 'Conversions' in the UI from 11-19; compare weeks on all_conversions.
+- Relentless HVAC change kept as is for now (Edu). AT Internal Request DRAFT **80073d11** "Google Ads update: another agency changed our HVAC campaign" (Relentless change, taps fix, Nov 7-18 numbers, next check Nov 26). Intake/Review = Edu, Execution = Angela, dept AM/CS. Edu submits.
+
+### 2026-11-19 (later 2) — Did Max Clicks help? No (read-only, `ch_maxclicks_eval_1119.py`)
+Real leads = 'Calls from ads' + forms (all_conversions), taps apart. Website calls to the ServiceTitan number are invisible in every period alike.
+| | Period | Spend/day | Clicks/day | CPC | Real leads | $/real lead | Click→lead |
+|---|---|---|---|---|---|---|---|
+| HVAC | Max Conv 10-13..10-30 (18d) | $35.9 | 2.4 | $15.02 | 4 (3 calls, 1 form) | $161 | 9.3% |
+| HVAC | **Max Clicks $8** 10-31..11-16 (17d) | $36.2 | 4.9 | $7.41 | 2 (0 calls, 2 forms) | **$307** | 2.4% |
+| Electrical | Max Conv 10-13..10-30 (18d) | $64.7 | 5.7 | $11.42 | 8.5 | $137 | 8.3% |
+| Electrical | **Max Clicks $9** 10-31..11-06 (7d) | $74.5 | 11.1 | $6.69 | 2 | **$261** | 2.6% |
+| Electrical | Max Conv 11-07..11-18 (12d) | $67.4 | 3.4 | $19.72 | 5 | $162 | 12.2% |
+Both caps doubled clicks at half the CPC, but the extra clicks didn't convert: cost per real lead roughly doubled in both campaigns. Small numbers (HVAC 4 vs 2), same direction in both. → Relentless' 11-17 switch of HVAC to Max Conv matches what our own data says; keep it. Read at 11-26 (fu-195).

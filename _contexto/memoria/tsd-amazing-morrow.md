@@ -5,6 +5,8 @@ metadata:
   type: project
 ---
 
+⚑ 11-19 day-3.5 check: $954.92 / reach 83,331 / freq 1.83 / CPM $6.27; daily spend $327→$348→$260 = cap 4/7d starting to bind (Nov lands ~$4k vs ~$6.2k), Ryan decides underspend vs wider fence; reach already ~140% of the 59.4k planned adults (fence bigger than plan or planning figure low, Alex radius still missing); ad3+ad9 rebrand angle = 56% of spend; first weekly read fu-143 11-23.
+
 New client (Morrow Mechanical, site www.amazingmorrow.com). AM = Marlo Fedeli. 2026-10-28 Johnny handed GA4 to Edu in Slack thread C0CANNR1L82/p1793206379855699 (Marlo asked: is GA4 fully set up or do we still need anything from Justin, before the media plan goes to Justin).
 
 State checked 2026-10-28:

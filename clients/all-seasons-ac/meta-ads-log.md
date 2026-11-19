@@ -8,6 +8,11 @@ ACTIVE, USD). Readable through the Meta Ads MCP.
 
 ---
 
+## 2026-11-19 — Client Video Audit: Meta off + stale footage
+
+Meta off by client choice (budget cap); finished video is 10+ months old. Relaunch only with written Meta budget approval, ideally with fresh footage (fu-191).
+Full audit + readiness plan: `paid/relatorios/client-video-audit-2026-11/README.md`.
+
 ## 2026-11-16 — AT optimization tasks (Gui, via Claude)
 
 **7-Day Meta (https://app.agencytitan.com/tasks/instance/49497164-abfc-429b-a53c-0c482eb66375), completed as N/A.** 11-09..11-15: all 15 campaigns PAUSED, $0 / 0 impressions (read-only query). Client asked Meta OFF 04-15; $2,500 all-platform cap kept (AT 902208a0). KPI - Meta `eb2502ab` ($0 / 0 / Unclear). Checklist ticked (reviewed, nothing applicable). Staged: keep off; relaunch ARL 120250742056430607 only with a written Meta budget approval.

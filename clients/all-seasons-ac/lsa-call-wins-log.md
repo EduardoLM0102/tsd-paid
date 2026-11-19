@@ -71,3 +71,25 @@ Scope: Google Local Services Ads leads only. These calls don't go through CallRa
 | ❌ Not a lead | 5 | Job seekers (2), wrong company (2), oil boiler message (charged, dispute) |
 
 *Google's dashboard shows 1 booked. The 10-15 estimate is still marked Active even though an owner visit was set.*
+
+## 2026-11-11
+
+- **10:59 · PHONE_CALL · Google: ACTIVE, charged** — Wants an old thermostat replaced with a smart one (no C-wire). Oil system: "unfortunately we don't service oil." ❌ Job type not serviced. Rate as bad (fu-161).
+
+## 2026-11-13 / 11-14 / 11-16
+
+- **MESSAGE x3 · Google: NEW, charged** — No recording. All three still NEW, no business reply (in AT 3addac2e). ⏳
+
+## 2026-11-17
+
+- **09:34 · PHONE_CALL · Google: ACTIVE, not charged** — Anthony (502 Center Island Rd), existing customer: guest house at 227 Brookville Rd has no heat, breakers checked. Amanda books a tech 1-4 pm today. ✅ Booked, existing customer (correctly not charged).
+
+## Running tally (11-11 → 11-17, 5 leads, 4 charged, 2 recordings)
+
+| Outcome | Count | Detail |
+|---|---|---|
+| ✅ Booked | 1 | existing customer, no heat (11-17, not charged) |
+| ⏳ Message, unanswered | 3 | 11-13, 11-14, 11-16 (all NEW) |
+| ❌ Not serviced | 1 | oil thermostat (11-11, charged) |
+
+**Flag for Edu:** $177 for 4 charged leads, 0 new booked. Rate the 11-11 oil lead as bad. Three paid message leads sit unanswered for 2-5 days.

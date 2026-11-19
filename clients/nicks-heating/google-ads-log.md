@@ -10,6 +10,11 @@ Campaigns are TSD-named (built Feb–May 2026, before Edu joined).
 
 ---
 
+## 2026-11-19 — Client Video Audit: Meta video uses outdated cuts
+
+Meta awareness runs 100% video ($276/14d) but the live ads were uploaded Sep 3, before the Sep 11 approved revisions (Tyler's testimonial cut Sep 4). Swap = Paid-only, waiting on Edu's go (fu-186). Google: auto video $43 on YouTube via PMax.
+Full audit + readiness plan: `paid/relatorios/client-video-audit-2026-11/README.md`.
+
 ## 2026-11-18 (later) — APPLIED proposals 1-3 from the 11-18 read (Edu: "proceed"), 13:16 BRT / 10:16 CT
 
 `nicks_apply_1118.py` (this folder), validate-only first, then `--apply`, read-back confirmed. Command Center fu-181.

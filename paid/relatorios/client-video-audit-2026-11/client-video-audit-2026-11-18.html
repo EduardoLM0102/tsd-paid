@@ -1,0 +1,151 @@
+<title>Client Video Audit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column; summary first, then the full client board, then the two lists Ryan asked for, then the fix. */
+:root{
+  --bg:#f6f7f9; --surface:#ffffff; --fg:#17202e; --muted:#5b6678; --line:#dfe3ea;
+  --accent:#1f4e8c;
+  --ok:#1d7a4a; --ok-bg:#e3f3ea; --warn:#9a5b00; --warn-bg:#fdf0d9; --bad:#b3261e; --bad-bg:#fbe4e2; --na:#5b6678; --na-bg:#eceff3;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11161e; --surface:#18202b; --fg:#e6eaf0; --muted:#9aa5b5; --line:#2a3442; --accent:#7fb0ef;
+  --ok:#6fd39c; --ok-bg:#16301f; --warn:#f0b65a; --warn-bg:#33270f; --bad:#ff8a80; --bad-bg:#3a1b19; --na:#9aa5b5; --na-bg:#232c38; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11161e; --surface:#18202b; --fg:#e6eaf0; --muted:#9aa5b5; --line:#2a3442; --accent:#7fb0ef;
+  --ok:#6fd39c; --ok-bg:#16301f; --warn:#f0b65a; --warn-bg:#33270f; --bad:#ff8a80; --bad-bg:#3a1b19; --na:#9aa5b5; --na-bg:#232c38; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--sans)}
+.wrap{max-width:1080px;margin:0 auto;padding-block:32px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:36px}
+header{display:grid;gap:6px}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:30px;line-height:1.15;margin:0;text-wrap:balance}
+h2{font-size:20px;margin:0 0 4px;text-wrap:balance}
+p{margin:0;max-width:72ch}
+.sub{color:var(--muted)}
+section{display:grid;gap:14px;min-width:0}
+.bottom{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px 22px;display:grid;gap:12px}
+.bottom ul{margin:0;padding-left:20px;display:grid;gap:8px;max-width:80ch}
+.stats{display:flex;flex-wrap:wrap;gap:12px}
+.stat{flex:1 1 160px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:2px}
+.stat b{font:600 26px/1.1 var(--sans);font-variant-numeric:tabular-nums}
+.stat span{color:var(--muted);font-size:13px}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:900px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:11px 12px;border-bottom:1px solid var(--line)}
+th{font:500 11px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--surface);position:sticky;top:0}
+tr:last-child td{border-bottom:0}
+td.c{font-weight:600;white-space:nowrap}
+td small{display:block;color:var(--muted);font-size:12.5px}
+.num{font-variant-numeric:tabular-nums}
+.pill{display:inline-block;font:500 11.5px/1 var(--mono);padding:4px 7px;border-radius:999px;white-space:nowrap;margin-bottom:4px}
+.ok{color:var(--ok);background:var(--ok-bg)} .warn{color:var(--warn);background:var(--warn-bg)} .bad{color:var(--bad);background:var(--bad-bg)} .na{color:var(--na);background:var(--na-bg)}
+tr.group td{background:var(--bg);font:600 12px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:10px 12px}
+.lists{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;display:grid;gap:10px;align-content:start;min-width:0}
+.card h3{margin:0;font-size:16px}
+.card ul{margin:0;padding-left:18px;display:grid;gap:7px}
+.card li b{font-weight:600}
+.flag{border-left:3px solid var(--bad);padding-left:12px}
+ol.steps{margin:0;padding-left:20px;display:grid;gap:8px;max-width:80ch}
+.foot{color:var(--muted);font-size:13px;display:grid;gap:6px;border-top:1px solid var(--line);padding-top:16px}
+a{color:var(--accent)}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Paid Ads · Nov 18, 2026 · prepared by Eduardo</div>
+  <h1>Who is running video, who isn't, and why</h1>
+  <p class="sub">Every client with paid ads running today, checked live in Meta and Google Ads (last 14 days), plus the video files in Agency Titan and Drive. Compared against the Sep 8 Video_Master_JB board.</p>
+</header>
+
+<section class="bottom">
+  <h2>Bottom line</h2>
+  <ul>
+    <li>On Meta, 53% of the last 14 days of spend went to video. Almost all of it is awareness. Lead ads are mostly static images. Watt's Right is the only client with video inside lead ads.</li>
+    <li><b>The biggest gap isn't footage, it's the handoff.</b> Zen Air and King's Window both have finished video sitting in Drive that never reached Paid. Same thing that happened with LilyPad. In Agency Titan every video task ends with the AM sending files to the client. No step sends them to Paid.</li>
+    <li>2 active clients running ads have no usable video at all: <b>Neon Monkey</b> (raw footage only) and <b>Amazing Morrow</b> (shoot was Nov 17–18, edits pending).</li>  </ul>
+</section>
+
+<div class="stats">
+  <div class="stat"><b class="num">11</b><span>clients running video</span></div>
+  <div class="stat"><b class="num">4</b><span>clients running ads with no video</span></div>
+  <div class="stat"><b class="num">2</b><span>with finished video never handed to Paid (Zen Air, King's)</span></div>
+  <div class="stat"><b class="num">53%</b><span>of Meta spend on video, $5.1k of $9.7k in 14 days</span></div>
+</div>
+
+<section>
+  <h2>Every client running ads</h2>
+  <p class="sub">Meta = last 14 days to Nov 18. Google = Nov 4–17. "Auto video" means YouTube spend on videos Google made by itself, not the client's footage.</p>
+  <div class="tbl">
+  <table>
+    <thead><tr><th>Client</th><th>Meta</th><th>Google / YouTube</th><th>Video files we have</th><th>Why not video / what's going on</th></tr></thead>
+    <tbody>
+    <tr class="group"><td colspan="5">Running video</td></tr>
+    <tr><td class="c">Watt's Right</td><td><span class="pill ok">Video 80%</span><small>$3.9k. Video in lead ads and awareness</small></td><td><span class="pill na">None now</span><small>PMax with our video paused Nov 10</small></td><td>Finished</td><td>Best setup we have. The FourMode and Winter ads are still static.</td></tr>
+    <tr><td class="c">Spencer Air</td><td><span class="pill ok">Video 100%</span><small>$545, awareness only</small></td><td><span class="pill na">None</span><small>Search + pay-per-lead</small></td><td>Finished</td><td>No Meta lead ads running, so video only works for awareness.</td></tr>
+    <tr><td class="c">Nick's</td><td><span class="pill ok">Video 100%</span><small>$276, awareness only</small></td><td><span class="pill warn">Auto video</span><small>$43 on YouTube via PMax</small></td><td>Finished, approved Sep 11</td><td>Live ads were uploaded Sep 3, before the approved revisions (Tyler's testimonial removed Sep 4). Need to swap to the approved cuts.</td></tr>
+    <tr><td class="c">Cool Hand</td><td><span class="pill ok">Video 100%</span><small>$275, awareness only</small></td><td><span class="pill ok">YouTube</span><small>Demand Gen, live daily</small></td><td>Finished + raw backlog</td><td>Fine. Raw backlog still not edited.</td></tr>
+    <tr><td class="c">Napps</td><td><span class="pill ok">Video 100%</span><small>$69, $5/day awareness</small></td><td><span class="pill na">None</span><small>Search + LSA</small></td><td>Finished</td><td>Fixed since Sep 8 (was static only). Budget is tiny.</td></tr>
+    <tr><td class="c">Integrate Comfort (ICS)</td><td><span class="pill na">Can't check</span><small>Account blocked from our API</small></td><td><span class="pill ok">YouTube</span><small>Mitsubishi campaign live. PMax with video paused Nov 11</small></td><td>Finished, old</td><td>Need a manual look in Ads Manager for Meta.</td></tr>
+    <tr><td class="c">King's Window</td><td><span class="pill warn">Video 31%</span><small>$445. 3 old video ads, lead ad is static</small></td><td><span class="pill na">None</span><small>Search + pay-per-lead</small></td><td><b>9 new finished ads from Oct 13</b></td><td><b>Never reached Paid.</b> Sara copied them to a "KINGS ADS" folder Oct 27. No task to Paid, no approval task. Running the old AD I–IV.</td></tr>
+    <tr><td class="c">Concrete Adventures</td><td><span class="pill warn">Video 2%</span><small>1 video live since Nov 17, 3 static</small></td><td><span class="pill na">None</span><small>Search only</small></td><td>Shot Oct 28–29, 1 of 5 cuts done</td><td>New client. Launched on statics while editing ran. Plan promised 5 cuts by Nov 12; 1 delivered.</td></tr>
+    <tr><td class="c">Zen Air</td><td><span class="pill ok">Video</span><small>Awareness video runs all year. Off Nov 13–18 on a Meta policy false positive, republished Nov 18. Lead ads are static</small></td><td><span class="pill na">None</span><small>Search + LSA</small></td><td><b>Full new library finished in Aug</b><small>AD 1–4, brand story, 4 testimonials, What To Expect</small></td><td><b>The new videos never reached Paid.</b> We keep running a 2024 winter video because nothing newer was handed over. The 3 video tasks have sat in Review &amp; Close with nobody assigned since August, and client approval is not on record.</td></tr>
+    <tr><td class="c">Mission Accomplished</td><td><span class="pill warn">Video, low</span><small>$183. 1 small video retargeting ad next to static lead ads. Dark since Nov 16 (card declines)</small></td><td><span class="pill na">None</span><small>LSA only</small></td><td>Finished (Sep 3, incl. Kelly + Roger testimonials)</td><td>Running, but low and only on lead gen. The client (Brian) asked us to pause the video awareness campaign himself on Oct 30. We'll check with the AM whether we can turn it back on.</td></tr>
+    <tr><td class="c">Proud Pops</td><td><span class="pill bad">Off</span><small>$0 in 90 days</small></td><td><span class="pill ok">YouTube</span><small>Restarted Nov 18, $100/day San Antonio + $100/day New Braunfels. 8 approved video ads</small></td><td>4 finished YouTube cuts + raw backlog (535 raw)</td><td>Paused Oct 16 in the client's budget cut to $25k. Back on today with room under the cap (Nov lands ~$23k). Video production was removed from their program Jun 19, so no new footage is coming.</td></tr>
+    <tr class="group"><td colspan="5">Running ads, no video</td></tr>
+    <tr><td class="c">Amazing Morrow</td><td><span class="pill bad">Static</span><small>$675, 12 static ads</small></td><td><span class="pill na">None</span><small>Pay-per-lead only</small></td><td>Raw only. Shoot Nov 17–18</td><td>New client, launched Nov 16 before the shoot. No video was ever uploaded to the account.</td></tr>
+    <tr><td class="c">Neon Monkey</td><td><span class="pill bad">Off</span><small>Client asked Nov 13: no Facebook until real video exists</small></td><td><span class="pill warn">Auto video</span><small>PMax paused Nov 16. Branded only now</small></td><td>Raw only, 100+ phone clips</td><td>Nobody has been assigned to edit the raw footage. Client is waiting on it.</td></tr>
+    <tr><td class="c">All Seasons</td><td><span class="pill bad">Off</span><small>Since Oct 16, client budget cap</small></td><td><span class="pill na">None</span><small>Search + LSA</small></td><td>Finished, 10+ months old</td><td>Meta is off by client choice. Footage is stale.</td></tr>
+    <tr><td class="c">C&amp;S Air</td><td><span class="pill bad">No access</span><small>Meta account never shared with us</small></td><td><span class="pill na">None</span><small>Search + LSA</small></td><td>Finished, ~2 years old</td><td>We can't run Meta without access. Footage is stale.</td></tr>
+    <tr class="group"><td colspan="5">Leaving</td></tr>
+    <tr><td class="c">Hawkins</td><td><span class="pill na">Off</span><small>Paused Aug 20 at client request</small></td><td><span class="pill warn">Auto video</span><small>94% of PMax went to YouTube</small></td><td>Finished, client never approved</td><td>Terminated Nov 2, ends ~Dec 2.</td></tr>
+    <tr><td class="c">LilyPad</td><td><span class="pill na">Off</span></td><td><span class="pill na">Search</span></td><td>Finished, approved Jul 29</td><td>Churned today. Video never reached Paid.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section>
+  <h2>The two lists</h2>
+  <div class="lists">
+    <div class="card">
+      <h3>No usable video (set up video or shut ads off)</h3>
+      <ul>
+        <li><b>Running ads now:</b> Neon Monkey (raw only), Amazing Morrow (edits pending from this week's shoot)</li>
+        <li><b>No new footage coming:</b> Proud Pops (production removed from the program; running the 4 existing YouTube cuts)</li>
+        <li><b>Only old video:</b> All Seasons (10+ months), C&amp;S Air (~2 years), ICS</li>
+        <li><b>Not running ads, never shot:</b> Ryan Heating &amp; Air, Cartwright, Supreme, North Bay, AC Cornerstone, JR Michalski</li>
+        <li><b>Not a paid client:</b> Carey &amp; Walsh. The client told Angela on Nov 9 they are not doing paid ads and won't share account access.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="flag">Video exists but isn't running</h3>
+      <ul>
+        <li><b>Zen Air:</b> winter video re-cut and republished. The whole August library still needs AM approval, then live this week.</li>
+        <li><b>King's Window:</b> 9 finished ads from Oct 13. Same.</li>
+        <li><b>Mission Accomplished:</b> Sep 3 testimonials can go into the lead ads once the card is fixed.</li>
+        <li><b>Nick's:</b> approved Sep 11 cuts not in use, older versions are.</li>
+        <li><b>Concrete:</b> 4 of 5 cuts still owed by editing.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Why it keeps happening, and the fix</h2>
+  <p>Every Agency Titan video process ends with the AM sending files to the client. There is no step that gives the finished files to Paid. On Nick's, Jessica asked in the task on Sep 11 "does the SEO and Ad department know?" and nobody answered. That is the LilyPad, Zen Air and King's story.</p>
+  <ol class="steps">
+    <li><b>Add a last step to every video process:</b> "Deliver to Paid", assigned to Paid, with the Drive link and approval status. It closes only when the video is live in the ad account.</li>
+    <li><b>Paid this week:</b> Zen Air and King's Window live as soon as approval is confirmed. Nick's swapped to approved cuts. Morrow and Concrete swapped as edits land. Mission Accomplished testimonials into lead ads when the card works.</li>
+    <li><b>Move video into lead ads, not only awareness.</b> Watt's Right shows it works.</li>
+    <li><b>Decisions needed from you:</b> an editor for Neon Monkey's raw footage (the client is holding Facebook off until it exists), whether Proud Pops gets new video back in the program, and a refresh for All Seasons / C&amp;S.</li>
+  </ol>
+</section>
+
+<div class="foot">
+  <div>Sources: Meta Ads and Google Ads, read-only, pulled Nov 18. Agency Titan video tasks and the TSD Company Drive client folders. Nothing was changed in any account.</div>
+  <div>Gaps: Meta accounts for ICS, Rhino, Your New Door and Gray Duct are blocked from our API and need a manual check. Climate Experts and Doggone Good have no ad account we can reach. Drive search covered the company client folders only, so files shared by link elsewhere (for example Frame.io) aren't counted.</div>
+</div>
+</div>

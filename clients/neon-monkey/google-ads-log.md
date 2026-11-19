@@ -1,5 +1,18 @@
 # Neon Monkey — Google Ads change log (PPC 7953905280)
 
+## 2026-11-19 — fu-173 resolved: Brock said no to both Meta asks → LSA reach check (read-only). Script nm_lsa_reach_1119.py
+
+**Brock's answer (Client Request 4039c639, 11-13, closed by Angela 11-16):** keep Facebook leads OFF until video content exists (only 1 in 10 form leads booked), and NO holiday lighting (they don't offer it anymore). So the freed ~$150/day has no home: Meta waits on video (fu-189), Google NB + PMax both failed. Google PPC = Branded only; November lands ~$2.6k vs the $6,930 cap. Our AM note d2878945 (11-16, In Progress) still asks Angela to chase Brock on those questions: already answered.
+
+**LSA 1219885876 (10-20..11-18):** budget $214.29/day, NOT budget-limited. Serves **Mon-Sat 7am-5pm only** (0 impressions Sundays, 0 outside 7-17h; same pattern as ICS). Impressions ~70/day in late Oct → ~45/day in Nov. Leads: 10-20..10-30 11 BOOKED (charged); 10-30..11-18 only 1 charged (11-09 message) + 7 uncharged calls.
+**The 7 LSA calls since 10-30 (CallRail recordings, transcribed locally base.en):** 10-30 job seeker · 11-02 wrong number · 11-04 hung up in the phone menu · 11-06 hung up right after "Hello, this is Neon Monkey Tree" (16s) · 11-10 existing (City estimate question, 137s) · 11-12 hung up in the menu at "connecting" · 11-16 57s, no recording. → **0 new customers from LSA in 20 days**, 2-3 of 7 lost in/at the menu.
+**Levers left (no budget lever):** (1) phone menu f5d99155 (11-11, In Execution with Angela, no update): point the LSA + ad numbers to a direct line; (2) LSA hours: add Sundays + evenings (fallen-tree/storm calls), dashboard setting, needs Brock's OK; (3) rating/responsiveness. Nothing changed.
+
+## 2026-11-19 — Client Video Audit: no usable video, client waiting
+
+Client said 11-13 no Facebook until real video exists. 100+ raw phone clips, nobody assigned to edit. Only no-video client actively waiting on us. Next: AM/video team assigns an editor (fu-189); Meta plan + budget in fu-173.
+Full audit + readiness plan: `paid/relatorios/client-video-audit-2026-11/README.md`.
+
 ## 2026-11-16 — fu-115 PMax checkpoint: FAILED, PMax PAUSED (rule set 11-02, Edu's go)
 
 **Rule (11-02):** keep PMax only if Nov 2-15 brings >= 3 real transcribed calls at <= ~$200/lead. Pull: scratchpad `nm_pmax.py` + `nm_clicks.py` (gclid -> click_view), CallRail via call-wins `pull_calls.py` (no CallRail transcription on this account, local whisper).

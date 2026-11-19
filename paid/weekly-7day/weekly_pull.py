@@ -8,7 +8,7 @@ Nothing is mutated.
 """
 import json, os, sys
 sys.path.insert(0, ".")
-from lib import run_query
+from lib import run_query, ppl_lsa_campaign_ids
 
 out_dir, start, end, pstart, pend = sys.argv[1:6]
 cids = sys.argv[6:]
@@ -43,6 +43,15 @@ for cid in cids:
 SELECT campaign.id, campaign.name, campaign.status, campaign.primary_status, campaign.primary_status_reasons,
        campaign.advertising_channel_type, campaign.bidding_strategy_type, campaign_budget.amount_micros
 FROM campaign WHERE campaign.status = 'ENABLED'""")
+    # Google's Pay-per-lead PMax (migrated LSA) counts as LSA: retag it so weekly_kpi skips it and weekly_summary files it under LSA (fu-136)
+    ppl = ppl_lsa_campaign_ids(cid)
+    d["ppl_lsa_campaigns"] = sorted(ppl)
+    for key in ("campaigns", "campaigns_prev", "campaigns_enabled"):
+        if isinstance(d[key], list):
+            for r in d[key]:
+                if str(r["campaign"].get("id")) in ppl:
+                    r["campaign"]["ppl_lsa"] = True
+                    r["campaign"]["advertising_channel_type"] = "LOCAL_SERVICES"
     d["conv_by_action"] = q(cid, f"""
 SELECT campaign.id, campaign.name, segments.conversion_action_name, segments.conversion_action_category,
        metrics.conversions, metrics.all_conversions

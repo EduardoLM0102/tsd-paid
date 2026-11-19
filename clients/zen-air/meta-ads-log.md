@@ -2,6 +2,24 @@
 
 Account `381256660973192` ("Zen Air - Third Ad account ( Active Account)").
 
+## 2026-11-19 — Client Video Audit: August video library never reached Paid
+
+Full library finished in Aug (AD 1-4, brand story, 4 testimonials, What To Expect); 3 AT video tasks in Review & Close, unassigned since Aug, no client approval on record. We keep running the 2024 winter video (re-cut 11-18, fu-183). Next: Angela confirms approval, then plan it into lead DCT + awareness (fu-188).
+Full audit + readiness plan: `paid/relatorios/client-video-audit-2026-11/README.md`.
+
+## 2026-11-19 — fu-183 check: Cold Weather AD v2 APPROVED and delivering (read-only)
+
+- `11/18/26 | Cold Weather AD v2 (video)` 120248171261340711: ACTIVE (passed review), $48.54 / 11,468 impressions since publish 11-18 18:04 ET (~18h, on the $65/d Open Audience budget). Awareness back on after being dark 11-13 → 11-18.
+- Old disapproved `11/13/26 | Cold Weather AD (video)` 120248098173470711: PAUSED (WITH_ISSUES). Nothing changed. fu-183 closed; the August library item continues in fu-188.
+
+## 2026-11-18 — Cold Weather AD still DISAPPROVED → re-cut built, upload blocked (Edu: "republish from scratch if needed")
+
+- Ad `11/13/26 | Cold Weather AD (video)` 120248098173470711 (Open Audience 120227295614750711) still DISAPPROVED / ad_not_approved 5 days after the review request. Awareness dark since 11-13 (old Video Feed & Reel paused).
+- Original file found in Drive: "Zen Air Cold Weather AD.mp4" 1DXmDtPzEAzh5IZ1rBKsHUEEsvJbJl926 (2024-01, 27.8s, 16:9). Contact sheet read: owner → frozen trees → owner → dog ("1. Keep Pets inside", 7.7–9.5s) → **woman in black satin pajamas at the thermostat, close-up ("2. Raise Thermostat Temp", 9.51–14.22s)** → faucet → owner CTA. The pajama shot is the likely "Adult Nudity and Sexual Activity" false-positive trigger, not the dog.
+- **Re-cut v2:** 9.51–14.22s replaced by a tight crop on the hand + thermostat (no person), redrawn "2. Raise Thermostat Temp" banner (#4500AC, white Arial), audio untouched. 1:1 and 9:16 versions (blurred fill). Uploaded to the Zen Drive video folder: 1x1 **1qnHV7Xu4vThdR8z9x2jn7Na_MLsEm9c1**, 9x16 **1ZyVY9zwwW9mBhcBS4wW_iRJ2gkxtJqH1** (~5.8 MB each). Local copies in Edu's session scratchpad.
+- Upload: `ads_create_upload_url` not rolled out on this account, but no share was needed: files in the Zen shared drive INHERIT `anyoneWithLink` reader. `ads_creative_upload_media` URL = `drive.usercontent.google.com/download?id=<id>&export=download&confirm=t` → videos 1x1 **29189353314053854**, 9x16 **1989009012061973** (ready in <1 min).
+- **PUBLISHED:** PAC creative **1089767234034640** (9:16 on FB story/reels + IG story/reels, 1:1 fallback; same copy as 1718297876545819: body "Cold house again?…", headline "Struggling with a broken heater?", CONTACT_US → callzenair.com, page 103339128021546, IG 17841407113696875; all Advantage+ creative features OFF) → ad **`11/18/26 | Cold Weather AD v2 (video)` 120248171261340711** in Open Audience ($65/d, REACH), published ACTIVE, IN_PROCESS (review) at read-back. Old disapproved ad 120248098173470711 PAUSED. Check review outcome + first delivery = fu-183.
+
 ## 2026-11-16 — AT optimization tasks (Gui, via Claude)
 
 7-day Meta, AT task https://app.agencytitan.com/tasks/instance/8c3987fc-0040-49bb-9946-3ee7bc89ed89 (completed). Read-only, nothing changed.

@@ -15,7 +15,7 @@ Out:   paid/funnels/<slug>/funnel_<today>.json   -> ArtifactData set funnels/<sl
 import argparse, sys, os, re, json, time, glob, datetime as dt, urllib.request, urllib.parse, urllib.error
 from zoneinfo import ZoneInfo
 sys.path.insert(0, os.path.expanduser("~/") + "Documents/GitHub/topserv-workspace/.claude/skills/google-ads-ratos/scripts")
-from lib import init_client
+from lib import init_client, ppl_lsa_campaign_ids
 import callrail
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -43,6 +43,8 @@ def cr_get(acc, path, **p):
 def build(slug):
     c = CFG[slug]; cid = c["cid"]; acc, co = c["callrailAccount"], c["callrailCompany"]
     q = lambda s: list(ga.search(customer_id=cid, query=s))
+    ppl = ppl_lsa_campaign_ids(cid)   # Google's Pay-per-lead PMax = migrated LSA, keep it out of the PMax view (fu-136)
+    not_ppl = f" AND campaign.id NOT IN ({','.join(sorted(ppl))})" if ppl else ""
     tz = q("SELECT customer.time_zone FROM customer")[0].customer.time_zone
     now = dt.datetime.now(ZoneInfo(tz)); today = now.date().isoformat()
     start = c.get("dataFrom") or (now.date() - dt.timedelta(days=DEFAULT_DAYS)).isoformat()
@@ -79,13 +81,13 @@ def build(slug):
         return day(d)["campaigns"].setdefault(name, dict({"name": name, "type": t}, **{k: 0 for k in KEYS}))
 
     for r in q(f"""SELECT segments.date, campaign.name, campaign.advertising_channel_type, metrics.cost_micros, metrics.clicks, metrics.phone_calls
-        FROM campaign WHERE segments.date BETWEEN '{start}' AND '{today}' AND campaign.advertising_channel_type != 'LOCAL_SERVICES'"""):
+        FROM campaign WHERE segments.date BETWEEN '{start}' AND '{today}' AND campaign.advertising_channel_type != 'LOCAL_SERVICES'{not_ppl}"""):
         m = r.metrics
         if not (m.cost_micros or m.clicks or m.phone_calls): continue
         t = CH_TYPE.get(ename(r.campaign.advertising_channel_type), "other"); types[r.campaign.name] = t
         x = row(r.segments.date, r.campaign.name, t); x["spend"] += m.cost_micros / 1e6; x["clicks"] += m.clicks; x["btnPlaced"] += m.phone_calls
     for r in q(f"""SELECT segments.date, campaign.name, campaign.advertising_channel_type, segments.conversion_action_name, metrics.all_conversions
-        FROM campaign WHERE segments.date BETWEEN '{start}' AND '{today}' AND metrics.all_conversions > 0 AND campaign.advertising_channel_type != 'LOCAL_SERVICES'"""):
+        FROM campaign WHERE segments.date BETWEEN '{start}' AND '{today}' AND metrics.all_conversions > 0 AND campaign.advertising_channel_type != 'LOCAL_SERVICES'{not_ppl}"""):
         k = key_of.get(r.segments.conversion_action_name)
         if not k: continue
         t = CH_TYPE.get(ename(r.campaign.advertising_channel_type), "other"); types[r.campaign.name] = t

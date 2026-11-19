@@ -240,3 +240,34 @@ real: Tschetter, Kempen, Souffrant, Lee). Real-request share of connected calls 
 non-leads, 10 were looking for another company, most of them after searching that company's name (Google counts several of them as conversions because they talk for 60s+). The 11-05 Valerie
 mini split callback is still unverified. Nothing here is a tracking gap: the drop in CallRail-vs-Google matching is a CallRail source label, not
 a lost call.
+
+## 2026-11-12
+
+- **08:45 · 26s · Google Ads · New York** — Asks "Islando?" (Islandaire, the PTAC maker); Beth: wrong number. ❌ Wrong company (search term 'islandaire ptac' $31 the same morning).
+- **13:46 · 0s · Google Ads · Hackensack** — Website tap from the LeadGen landing page, never connected. ❌ No contact.
+
+## 2026-11-13
+
+- **08:52 · 29s · Google Ads · New York** — "Is Jason available? This is Newton and Potter." ❌ Wrong company (Nugent & Potter, search term $33 that day).
+- **09:31 · 151s · Google Ads · Lynchburg (Robin)** — Existing customer: musty smell from a decorative air intake on the first floor; Janine puts in a service call, dispatcher to call back. ⏳ Existing customer, ad still caught them: counts as a service request.
+- **09:39 · 90s · Google Ads · New York (Mrs. McMenamy)** — Existing customer asking the ETA for today's scheduled visit (3-6 pm window). ❌ Admin call, not a lead.
+
+## 2026-11-16
+
+- **11:32 · 36s · Google Ads · Babylon** — "I'm a Hampton customer, curious about their burner service." ❌ Wrong company (Hamptons Air; 'hamptons air' $21 / 'hampton air' $6 that week).
+- **13:28 · 19s · Google Ads · Wilmington** — "Sorry, I have the wrong number." ❌ Wrong number.
+
+## 2026-11-17
+
+- **13:11 · 52s · Google Ads (gclid, ductless Mitsubishi page) · Brooklyn** — "I got a phone call from this number", wants nothing, hangs up. ❌ Not a lead (this is the one call Google counted this week, via the CallRail first-time-call import).
+
+## Running tally (11-11 → 11-17, 8 Google Ads calls, 7 recordings)
+
+| Outcome | Count | Detail |
+|---|---|---|
+| ✅ New lead booked | 0 | |
+| ⏳ Existing customer, service request | 1 | Robin 11-13 (air intake smell) |
+| ❌ Wrong company / wrong number | 4 | Islandaire, Nugent & Potter, Hamptons Air, wrong number |
+| ❌ Admin / no contact / confused | 3 | ETA call, 0s tap, "you called me" |
+
+**Flag for Edu:** 0 new customers on $305 of PPC this week; wrong-company share 50% (was 40%), and every one of those callers searched a competitor name we paid for. The staged negatives (`asac_stage_1118.py`) are the fix. Valerie (11-05) never called back; ask Angela if the office called her.

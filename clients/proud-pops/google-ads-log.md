@@ -2,6 +2,17 @@
 
 ---
 
+## 2026-11-18 — YouTube RESTARTED (Edu's go: "we gotta restart YouTube Ads for them")
+
+Context: client video audit for Ryan (Proud Pops = biggest spender with zero video live since the 10-16 cut).
+- Pacing before the change: Nov MTD ≈ $11,990 (PPC acct $11,475.85 incl. in-acct LSA $1,343; LSA 7261668241 $281.75; 6621969129 $231.90). Search + LSA pace ≈ $680/d → ~$20.5k projected, so ~$4.5k room under the $25k cap (same gap flagged 11-11, option 3).
+- **Both VIDEO campaigns ENABLED via the Google Ads UI** (API still returns MUTATE_NOT_ALLOWED on VIDEO status, validated first): `08/2026 - YT - VideoViews (San Antonio)` 24120440530 and `08/2026 - YT - Awareness - New Braunfels` 24120482524, budgets unchanged $100/d each, Target CPV. API read-back: ENABLED / ELIGIBLE. 8 video responsive ads (Repair vs Replace, Panel Replacement, Breaker Tripping, Surge Protection x2 geos) all APPROVED.
+- Adds ≈ $2.5k for Nov 19–30 → month lands ≈ $23k, under $25k.
+- Last active month (09-16..10-16): SA $3,014 / 349k impr / 231k views / 20 clicks; NB $3,033 / 200k impr / 151k views / 137 clicks. SA kids-content exclusions from 10-08 (H5a) stay on.
+- **Open:** check day-1 delivery + placements 11-19/20 (SA kids inventory), and pacing vs $25k on ~11-24.
+
+---
+
 ## 2026-11-17 — New site launch prep (Alex's platform replaces Lovable): GTM draft, keys, Slack replies
 
 Alex's two asks in C0CJ3B859DM (p1794934763282159, p1794955039931059). Johnny answered the office side (forms → GHL + support@ email, GoDaddy = Daniel, switch today once the test passes) and confirmed (210) 864-6867 = CallRail "1st Repair is on Pops Letters" tracker on /first-repair, G-C7QTE9ZZXQ = Proud Pops stream, pixel 597145242772352.
@@ -2024,3 +2035,6 @@ No Branded $50→$75 / HVAC swap, no YouTube fill. November lands ~$20.5-21k vs 
 ## 2026-11-13 — The Original 97 Deal (AT bd8c7bb4): ads plan drafted
 
 Edu: run both the $9,797 price and "as low as $135/mo" (+ $165 Comfort Plan first). Client-facing plan written into the Completion Notes field (request_completion_notes) on AT bd8c7bb4 via API, read back OK; Execution stage left open for Edu. Internal notes + Slack reply to Johnny in `original-97-deal-ads-plan.md`. Command Center fu-164.
+
+## 2026-11-19 — New-site launch check (read-only, fu-178/179)
+Switch NOT done: proudpops.com still serves the Lovable build (twitter:site @Lovable, gpt-engineer assets, /__l5e/ events, consent default denied, IP 185.158.133.1). GTM-WBFDB6L8 live = v43 (2026-10-08); launch draft = Default Workspace 45, 15 changes, unpublished, 0 conflicts. Johnny 11-18 15:41 BRT: staging lock comes off at the switch. fu-178 (publish at switch) moved to 11-20, fu-179 (CAPI token rotation) waits on it. fu-157 + fu-164 closed per Edu (asks went via the Oct Review / 11-16 notes; Original 97 now on AT a85b34ca + f7a74115).

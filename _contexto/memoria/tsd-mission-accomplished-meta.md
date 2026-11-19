@@ -8,6 +8,8 @@ metadata:
   modified: 2026-09-29T15:52:46.763Z
 ---
 
+⚑ 11-19 check: delivery back since 11-17 ($350 added to balance 8:21 AM); Brian DOUBLED budgets himself 11-17 4:58 PM ($30/$12.50/$7.50 → $60/$25/$15 = $100/d ≈ $3k/mo; TuneUp briefly typo'd $2,525/d, fixed in 1 min); $315 / 3 leads (~$105 CPL) lifetime; retargeting $15/d on ~200 people = ~15 impr/person/week, suggest lowering; if prepaid, balance runs out ~11-20; leads may sit only in Leads Center (GHL hand-off open); fu-177 11-24.
+
 Mission Accomplished Meta ad account `79203382` (Topservdigital BM, USD). Google PPC fully paused since 2026-07-07 (see [[tsd-servicetitan-marketing-pro]]); LSA still live.
 
 **Lead gen paused 2026-09-09** by Edu (Jonathan Bannister executed) after the client said Facebook leads weren't arriving. Angela (AM) found on 09-14 that leads DO land in GoHighLevel with the phone number; the **Hatch** notification email the client reads is what lacks the phone. The fix lives in the GHL→Hatch connection, not in Meta. As of 09-29 nobody had confirmed it was fixed.
@@ -61,3 +63,5 @@ Client FB report (09-29): `clients/mission-accomplished/Mission Accomplished - F
 **2026-11-16 (later):** delivery back on 11-16 ($10.41 by midday, first lead on TuneUp-35). Day pattern since launch: 11-11 $11, 11-12 $10, 11-13 $0, 11-14 $39, 11-15 $0, 11-16 running = billing still flaky; backup payment ask stands. AT "Relaunch ads" ea5df64f Execution still on Edu (overdue since 11-03), Communicate stage already complete.
 
 **2026-11-17 day-6 (fu-158):** $74.79 in 6 days (25% of plan), **first lead 11-16 on TuneUp-35 ($25.95, under the $30 benchmark)**, but account Payment Needed again since 11-16 10:36 AM MST (36 h retry ~11-17 10:36 PM), all 3 campaigns off, $0 on 11-17. Mo's GHL task 5f31e168 untouched since 11-12 → the lead is probably only in the Page's Leads Center. The 11-16 backup-card rec was never sent to Angela (only the 11-10 'add a card' task, closed 11-11). AM note DRAFTED in AT 67f4bf1e for Edu to send (lead hand-off today, backup payment method / bank, manual pay band-aid, pacing ~$725 of $1,500, Hector + ServiceTitan still open). Next read fu-177 11-24.
+
+**2026-11-19 GHL mapping VERIFIED (AT 5f31e168, Mo completed Execution 11-17):** Facebook leads land in GHL with the form answers and tags fb-ma-replacement / fb-ma-tuneup: 11-16 Lisa (tune-up, weekday afternoon), 11-18 Charles (replacement, 86403 Havasu), 11-19 Bill (replacement, 10-15 yr system, 1-3 months, ZIP 86442 Bullhead City). Opportunities created in pipeline sQkPhhVHwhWMvTAVIPty. Supersedes the 11-17 "lead likely only in Leads Center" note. Review & Close on Edu = closable.

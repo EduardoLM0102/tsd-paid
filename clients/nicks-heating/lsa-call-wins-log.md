@@ -75,3 +75,15 @@ Legend: ✅ Booked · ⏳ Open/follow-up needed · ❌ Not a lead · ⚠️ IVR-
 | ❌ Not a lead | 3 | duct cleaning (11-06, charged), gas heater install (11-16, charged), silent x2 (11-09, not charged) |
 
 **Flag for Edu:** 9 charged leads for $1,012 since 11-04 ($112 each), 0 booked new customers yet, 3 open, 1 lost to capacity. Dispute 11-06 duct cleaning + 11-16 gas heater install (job type not serviced). Nobody marks leads in the app; rate them via the API (fu-161). Two message leads were never opened.
+
+## 2026-11-19 additions (fu-161 rating pass; base.en transcripts)
+
+- **10-16 07:34 · call · not charged** — existing customer rescheduling a maintenance visit to 10-27. ✅ Existing.
+- **10-19 14:54 · call · not charged** — existing customer booking his fall cleaning (10-30). ✅ Booked (existing).
+- **10-23 11:02 · message · charged, NEW** — "hood needs some repair to lights and cleaning" (kitchen hood, not HVAC). ❌ Not a lead → rate bad.
+- **11-02 07:55 · call · not charged, BOOKED** — existing customer, AC off after the overflow switch tripped; already had a maintenance visit booked. ✅ Booked (existing).
+- **11-03 11:56 · call · charged** — existing customer (Miss Taylor) going over tune-up vs $99 diagnostic pricing, callback. ⏳ Existing, real.
+- **11-13 10:21 · message · charged, NEW** — new residential build quote, Springfield LA, 4,100 sq ft heat and cool. ⏳ Real new lead, never opened in the app.
+- **11-16 11:27 · message · charged, NEW** — new construction HVAC estimate, 2,225 sq ft, can send blueprints. ⏳ Real new lead, never opened.
+- **11-18 15:49 · call · charged** — wants the venting run for a wood-burning stove he bought. ❌ Service not offered → rate bad on/after 11-20 (credit-eligible after ~1 day).
+- **11-18 15:59 · call · charged** — heater not working, husband pulled the heating element, now AC won't start; fully booked until Monday, "I'll call somebody else." ⏳ **Real lead lost to capacity** (2nd in 3 days).

@@ -8,6 +8,37 @@
 
 ---
 
+## 2026-11-19 — Delivery back since 11-17; Brian DOUBLED the budgets himself (read-only check, Edu asked, nothing changed)
+
+**Scope:** new account `2671066020034494`, Meta MCP read + activity log 11-16 → 11-19. No account changes.
+
+**Billing:** 11-17 8:21 AM **$350.00 "Money added to balance"** → account Payment Needed → Active. Delivered every day since (no more $0 days). Card charges still show after that ($49 11-17, $53.40 + $76 11-18), so funding mode (prepaid balance vs card) is not clear from the MCP. ⚠ If it is drawing down the $350, ~$240 is already spent since then → **runs out ~11-20** at the new budget. Check in Billing & payments.
+
+**Budget change by Brian (Power Editor, 11-17 4:58–4:59 PM):**
+| Campaign | Before | After |
+|---|---|---|
+| Replacement `120250401885960094` | $30.00/d | **$60.00/d** |
+| TuneUp-35 `120250401886560094` | $12.50/d | **$2,525.00/d (typo) → $25.00/d one minute later** |
+| Retargeting-Proof `120250401887000094` | $7.50/d | **$15.00/d** |
+Total $50 → **$100/day (~$3,000/mo vs the $1,500 plan)**, same 60/25/15 split. The $2,525 typo was live ~1 min, no spend impact (TuneUp spent $25.70 on 11-17). Nobody told TSD as far as the log shows.
+
+**Results since launch (11-11 → 11-19 morning): $315.36 · 3 leads · ~$105 CPL.**
+- Daily: 11-11 $11.07 · 11-12 $10.40 · 11-13 $0 · 11-14 $38.57 · 11-15 $0 · 11-16 $14.76 · **11-17 $108.56 · 11-18 $116.87** · 11-19 $15.13 (early).
+- Leads: 11-16 TuneUp ($4.15 that day), 11-17 Replacement, 11-19 Replacement.
+- Ads (lifetime): Ad 02 Repair or Replace $195.09 / 2 leads ($97.55) / CTR 2.77% / CPM $80.65 · Ad 01 $35 Winter Tune-Up $80.58 / 1 lead / CTR 1.37% / CPM $42.37 · Ad 03 Retargeting $39.69 / 0 leads / CTR 3.21% / **reach 212, freq 2.94**.
+- CPMs are high ($37–92; Replacement ~$90 on 11-17/18), small tri-state audience. Too early for CPL calls (3 leads, ~2.5 clean days).
+- ⚠ **Retargeting at $15/d on ~120–210 people** = ~2.3 impressions per person per day on 11-17/18 (~15+/week). It will burn out fast; suggest back to $7.50 or lower (Brian's change, so ask first).
+- Financing ad set still PAUSED, 0 ads.
+
+**Open:** (1) confirm the funding/balance so it doesn't go dark ~11-20; (2) ask Brian (via Angela) if $100/day / ~$3k/mo is the new budget on purpose, and propose lowering retargeting; (3) the 3 leads must reach the client: GHL hand-off (Mo's task) was untouched on 11-17, so they may sit only in Leads Center; (4) fu-177 11-24.
+
+---
+
+## 2026-11-19 — Client Video Audit: video is low, lead gen only
+
+Video, low: $183/14d, 1 small video retargeting ad next to static lead ads; dark since 11-16 (card declines). Brian asked to pause video awareness himself 10-30 (AT e3825422). Sep 3 testimonials (Kelly + Roger) unused. Next: Angela on reactivating awareness (fu-185), card (fu-177).
+Full audit + readiness plan: `paid/relatorios/client-video-audit-2026-11/README.md`.
+
 ## 2026-11-16 — AT optimization tasks (Gui, via Claude)
 
 **Scope:** read-only (Meta MCP), no account changes. 7-Day Meta task completed.
@@ -307,3 +338,6 @@ Read-only (Meta MCP + AT). Account 2671066020034494.
 **AM note DRAFTED in Agency Titan (Edu sends):** Internal Request `67f4bf1e-362d-4a0e-b3a5-2a7074771475`, "Meta ads stopped again on card declines, and the first lead needs a hand-off today",
 requester Edu, Intake/Review = Edu, Execution = Angela, dept Account Management/Customer Success (confirmed). Contents as listed above.
 https://app.agencytitan.com/tasks/instance/67f4bf1e-362d-4a0e-b3a5-2a7074771475
+
+## 2026-11-19 — GHL mapping of the 2 Higher Intent forms VERIFIED (AT 5f31e168 closed)
+Mo completed the mapping 11-17. GHL (location LKdfe0eLSyzvXvMTI3aZ, via the AT HighLevel integration) shows the real Facebook leads with form answers, tags and pipeline opportunities: 11-16 tune-up (tag fb-ma-tuneup, "weekday afternoon"), 11-18 replacement (fb-ma-replacement, ZIP 86403), 11-19 replacement (10-15 yr system, 1-3 months, ZIP 86442). Attribution carries campaign/ad set/ad names. AT 5f31e168 + the "Relaunch ads" Client Request ea5df64f closed 11-19.

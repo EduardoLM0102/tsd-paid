@@ -9,6 +9,24 @@
 
 ---
 
+## 2026-11-19 — Mid-week-2 check (read-only, Edu asked, nothing changed)
+
+Campaign `52556556297446`, last 7 full days 11-12 → 11-18: **$441.66 / 68,876 impr / reach 23,382 / frequency 2.95 / CPM $6.41**. Since launch (11-10 → 11-19 morning): $541.92.
+- **Spend still full:** 11-16 $60.14 · 11-17 $73.73 · 11-18 $67.04 vs $61.18 budget (CBO going over on some days). The 4/7d cap is NOT cutting delivery, so the week-1 worry (cap bind + underspend) hasn't happened.
+- **CPM peaked and eased:** $6.98 (11-15) → $7.72 (11-16) → $7.25 → **$6.60 (11-18)**. Reach per day back up to ~9.2–9.4k (from 7.5k on 11-16). The new video ad on 11-17 likely helped freshen delivery.
+- **Pool grew a bit:** 7-day reach 23,382 vs 20,317 at the 11-16 read. Frequency 2.95 is right at the 3x line (packet: shrink only if < 3). Borderline, no change; recheck at fu-174.
+- **Creative 11-17 → 11-19:** ad4 team logo court $85.54 (58%), ad3 wood-look patio $33.34 (23%), ad5 before-after $16.49 (11%), **video1 pool deck $11.24 (8%)**. Video: 1,391 plays, 44 to 50%, 31 ThruPlays ($0.36 each), CTR 0.70% (highest of the four, not a KPI). Meta still prefers the team-logo static; the video gets a small share, as the video audit said.
+- Old-agency campaigns (Oxford Garage Leads, SOUTH CAROLINA LEADS) still PAUSED, $0. IG account still not linked.
+
+**Open:** fu-174 11-24 full week-2 read (frequency vs 3x, video share); 4 of 5 video cuts still owed by editing.
+
+---
+
+## 2026-11-19 — Client Video Audit: 4 of 5 video cuts still owed
+
+Video 2% of spend: 1 video live since 11-17 next to 3 statics. Shot Oct 28-29; plan promised 5 cuts by 11-12, 1 delivered. Chase editing ETA at the 11-24 read (fu-174 note).
+Full audit + readiness plan: `paid/relatorios/client-video-audit-2026-11/README.md`.
+
 ## 2026-11-17 — First video ad PUBLISHED: SCRIPT 4 POOL DECK (AT 01452b1d, Jessica; Edu: "publish this video")
 
 **Source:** Drive folder 11Z47WwDF2axhJXXqrcMqWp2nqeC-LgUD (editor, 11-11): only SCRIPT 4 POOL DECK in 16:9 / 1:1 / 9:16 (h264 1080p 60fps, ~56 MB each, 23-24 s), nothing newer.

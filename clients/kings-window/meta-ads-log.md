@@ -2,6 +2,11 @@
 
 Account 483679897962388.
 
+## 2026-11-19 — Client Video Audit: 9 finished video ads never reached Paid
+
+9 finished ads from Oct 13 sit in Sara's 'KINGS ADS' folder (copied 10-27); no task to Paid, no approval task. Meta still runs old AD I-IV (video 31% of $445/14d); lead ad static. Next: AM confirms client approval, then launch same day (fu-187).
+Full audit + readiness plan: `paid/relatorios/client-video-audit-2026-11/README.md`.
+
 ## 2026-10-26 — AT optimization tasks (Gui, via Claude)
 
 Read-only, nothing changed in Meta.

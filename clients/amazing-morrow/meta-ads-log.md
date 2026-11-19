@@ -10,6 +10,25 @@ ad account's promoted pages nor under the business's pages, so `ads_get_ad_accou
 
 ---
 
+## 2026-11-19 — Day-3.5 check (read-only, Edu: "how we doing with Amazing Morrow on their awareness campaign", nothing changed)
+
+Campaign `120251240402700167`, 11-16 → 11-19 morning: **$954.92 / 152,361 impr / reach 83,331 / frequency 1.83 / CPM $6.27** (plan $16.20). 368 clicks, 262 link clicks (CTR 0.24%, not a KPI).
+- **Daily spend:** 11-16 $327.28 · 11-17 $348.18 · **11-18 $260.13 (−25%)** · 11-19 $19.33 (early). Full-day average $312 vs $411 budget. The 11-18 drop is the first sign of the 4/7d cap binding, as predicted on 11-17 (~$215/day ceiling at this CPM). If it settles there, November lands ~$4k vs ~$6.2k planned at $411/day. **Decision still Ryan's:** accept underspend or widen the fence (cap can't come off without a new campaign).
+- **Reach 83,331 already > the ~59,400 adults planned for the fence (~140%)**, with `location_types: home`. Either the planning figure is low or the 3.33 mi placeholder holds more people than the brief assumed. Matters for the "fence adults reached ≥ 90%" weekly metric (denominator). Alex's measured radius still not delivered.
+- **Frequency on track:** 1.83 in ~3.5 days → ~3.5–4 by day 7, capped at 4. Clears the 3.0 floor.
+- **Creative (lifetime):** ad3 now ammmazing morrow $380.44 + ad9 (alt) $157.00 = 56% of spend; ad5 top 5 lennox $119.98; ad8 still locally owned alt $93.44; ad12 say there fella alt $78.39; rest under $35 each; ad1/ad7 we fix first $14.95 combined. CTR range 0.16% (ad12) to 0.37% (ad11).
+- **Placements (lifetime):** IG Feed $309.97 · IG Reels $193.94 · IG Stories $177.89 · FB Feed $171.30 · FB Reels $100.87 · unknown $0.95. Marketplace + AN = $0.
+- Still no video (shoot raw only, see audit below).
+
+**Open:** Ryan's call on underspend vs wider fence; Alex's radius / audience size behind the 59.4k; first weekly read Mon 11-23 (fu-143).
+
+---
+
+## 2026-11-19 — Client Video Audit: no video yet, waiting on shoot edits
+
+Running 12 statics ($675 so far); no video ever uploaded. Shoot 11-17/18, raw only. Next: first cuts from editing → Drive route upload into the live campaign (fu-190).
+Full audit + readiness plan: `paid/relatorios/client-video-audit-2026-11/README.md`.
+
 ## 2026-11-16 — PUBLISHED. Campaign live with 12 ads (Edu: "do the adjustments you need and push live")
 
 **Built ad6 + ad12** from Héctor's 11-13 4x5 exports (16:05 UTC set), uploaded via `ads_create_upload_url` → curl → `ads_finalize_upload`:

@@ -8,6 +8,9 @@ metadata:
   modified: 2026-10-05T13:26:38.269Z
 ---
 
+**⚑ 2026-11-09 NOT A PAID CLIENT:** Angela on AT Internal Request b0e7c86b ('Request Pending Accesses (Recovery Plan)'): "Spoke to Scott - they are not doing paid ads and will not be sharing access." Task closed. Media plan Nov–Jan is moot; don't count them in paid audits or chase ad access. SEO/social work continues.
+
+
 Carey & Walsh Inc., HVAC, Briarcliff Manor NY, est. 1944 (careyandwalsh.com, 914-762-9600, 24/7 emergency (347) 508-9713). AM task 2026-10-05: start paid ads, target all of Westchester County. Client was supposedly signed a while back but never surfaced to Paid.
 
 **Edu's call:** Meta = awareness only; Google Search + LSA carry lead-gen.

@@ -74,3 +74,5 @@ Agency Titan MCP flow (worked 2026-10-05):
 - Before working a Client Strategy Review, look for its twin (process 15e1a5ee, `data_tasks_list_references` active_only false): 11-16 Gui still holds dup reviews for MA/Lilypad/Zen/C&S/Spencer whose twins Edu completed.
 
 **2026-11-17 run (Gui, 8 new tasks C&S + Spencer, 7 completed via 2 sub-agents, playbook r1117/PLAYBOOK_1117.md):** Meta MCP can fail mid-session with "Tool definitions have changed since your session started" on every call: no workaround from inside the session, Gui has to refresh the Meta connector (claude.ai Settings) or restart; leave the Meta task open rather than guess numbers (Spencer 0c28fee8).
+
+**2026-11-19:** weekly_pull.py now retags Google's Pay-per-lead PMax (migrated LSA) as LOCAL_SERVICES via lib.ppl_lsa_campaign_ids, so weekly_kpi.py's PPC numbers exclude it and weekly_summary.py totals it under LSA. Pass the LSA numbers to the 7-Day LSA task from the LSA total, not from the PMax line.

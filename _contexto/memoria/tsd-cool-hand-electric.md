@@ -63,3 +63,8 @@ Cool Hand Electric, Heating, & AC Repair (Mansfield & Red Oak, TX; owners Kriste
 **How to apply:** Luke wants a WEEKLY report (LSA, PPC, Meta) even without an AT task; reuse `Cool-Hand-Electric-Report_2026-10-19_to_11-05.html` as the template. Always say LSA is run separately (Relentless Digital).
 
 **2026-11-16 Hector Holiday Safety statics (AT 22965cf7):** v1 and v2 folders are byte-identical (md5), so the promised "real photos vs AI scenes" second version does not exist. AD1-4 = $37 Electrical Safety Inspection + FREE whole-home surge protector (ads bundle two specials that were separate on the site 08-05; site now bot-walled, confirm with Luke/Angela). AD5-6 = heating TUNE-UP (off the Holiday Safety brief, no offer); AD6 "Electricians you trust now handle your heating" + snowy forest scene (not North Texas). Trust bar "Local Since 2015 / Best of Ellis County / BBB A+" unverified.
+
+**2026-11-19 fu-113 recheck:** ⚠ Relentless (tyler.foster@relentless-digital.com, web UI) switched OUR TSD_Search_HVAC from Max Clicks $8 to Max Conv on 11-17, unannounced (analytics@relentless also made an asset 11-11). Always check change_event for non-TSD users on Cool Hand. QS: hvac repair 2→4, LP average on core go. pages, expected CTR below everywhere; LP below = ads on the wrong page (no go. pages for AC install, furnace, panel). Taps primary while on Max Conv. Decisions = fu-195.
+- 11-19 later: taps → Secondary APPLIED (7716560298); AM draft 80073d11 (Edu submits); HVAC Max Conv kept for now.
+- 11-19 eval: Max Clicks caps doubled clicks at half CPC but cost per real lead ~doubled (HVAC $161→$307, Elec $137→$261) → keep Max Conv on both.
+- 11-19: Edu submitted the AM note 80073d11 (with the Max Clicks test reason added).
