@@ -2,6 +2,28 @@
 
 Account `381256660973192` ("Zen Air - Third Ad account ( Active Account)").
 
+## 2026-11-20 (later) — 11-19 changes confirmed as Edu's + new-form leads vs GHL (read-only)
+
+- **Edu 11-20: the 11-19 changes were intentional** (awareness → 1-mile weighted pin on Duluth, Rated & Guaranteed ad set paused). Nothing to undo.
+- **GHL check (AT HighLevel integration, location xYzDJzBnMX6dvv4gf8Xr, contacts_search dateAdded 11-10..11-20):** the new form IS arriving (new tag `furnace tune-up & heating`, source Facebook; old form = tag `49$ furnace tune-up`, last on 11-13). But only part of it: GHL Facebook contacts per day 11-14 **0**, 11-15 **0**, 11-16 2, 11-17 2, 11-18 1, 11-19 1, 11-20 3 = **9**, vs Meta Leads CBO 120247267872090711 **24 form leads** 11-14..11-20 ($1,091.74). Before the swap they matched (11-10..11-13 GHL 41 Facebook contacts).
+- So ~15 of 24 new-form leads are not in GHL (or not with the Facebook source/tag). Likely the Zapier/GHL mapping only partly covers the new form (11-14/15 zero = before it was wired?). Edu: confirm with Mo. Leads still exist in Meta Leads Center.
+- Now Hiring 120247939383320711: $35.46 / 149 pixel "leads" in the same window (careers page, excluded).
+
+---
+
+## 2026-11-20 — AT tasks (Gui, via Claude)
+
+7-day Meta, AT task https://app.agencytitan.com/tasks/instance/cd0df60f-a6da-4dbe-921e-210f7cd87656 (completed). Read-only, nothing changed.
+
+**11-13..11-19 vs 11-06..11-12:** account $1,208.28, CPM $17.21, CTR 1.03%, reach 45,176 (prior $1,541.15 / CPM $7.01 / CTR 0.72% / reach 89,815). KPI leads 29 = 24 form + 5 awareness-attributed (163 Now Hiring pixel "leads" excluded), $41.66 (prior row 84 / $15.95).
+- Lead CBO: $1,022.79 / 24 / **$42.62** (prior $1,058.05 / 79 / $13.39). Winter Ready $299.37 / 9 / $33.26 (prior $302.83 / 28 / $10.82); Rated & Guaranteed $723.42 / 15 / $48.23, CPM $28.91. **Volume fell right after the 11-13 form swap:** 11-14..11-19 $1,001.47 / 21 / $47.69, daily leads 8, 4, 4, 2, 1, 2. Freq 1.4-1.6 = not fatigue.
+- Activity log: **11-19 14:26 Rated & Guaranteed ad set PAUSED** (Jonathan Bannister / Power Editor = Edu). **11-19 11:24 awareness ad set 120227295614750711 retargeted via the ads MCP (Edu's actor): 131 ZIPs → 1-mile pin around Duluth (34.02, -84.17), renamed `TSD | FENCE-1MI | WEIGHTED-PIN DULUTH | 18+ | REACH`, placements cut to FB/IG feed + stories + reels.** Not logged here before; 11-19 delivery $81.46 / 15,739 impr. Old `Video Feed & Reel` + `Cold Weather AD` v1 back to Inactive after review 11-19.
+- Awareness week: $146.27 (dark 11-14..11-17), reach 23,449, freq 1.35, CPM $4.61, hook 15.4%, ThruPlay/3s 7.9%. Still REACH.
+- Now Hiring: $39.22, 163 pixel leads.
+- Lead Quality = **Mixed**.
+**Staged, not applied:** check new-form leads reach GHL/client (Zapier) by matching GHL FB contacts 11-14..11-19 to Meta's 21; if Winter Ready alone stays >~$30 CPL by 11-24, test a form without the qualifying question (new ad); confirm the 1-mile fence is intended and watch weekly frequency; ARL rebuild still open; any new ad/copy needs license CN211593.
+KPI - Meta `ae4bfc7e`.
+
 ## 2026-11-19 — Client Video Audit: August video library never reached Paid
 
 Full library finished in Aug (AD 1-4, brand story, 4 testimonials, What To Expect); 3 AT video tasks in Review & Close, unassigned since Aug, no client approval on record. We keep running the 2024 winter video (re-cut 11-18, fu-183). Next: Angela confirms approval, then plan it into lead DCT + awareness (fu-188).

@@ -60,3 +60,13 @@ Task (completed): [7-Day Meta](https://app.agencytitan.com/tasks/instance/6e6517
 ## 2026-11-16 (later) — APPLIED: broken DCT ad set PAUSED (Gui's go)
 
 Ad set 120254214478390721 'Richlandtx_Broad_18.65_M.F_Dynamic' (campaign TSD_04.29_BOF_Leads_Evergreen, $30/d, ad stuck WITH_ISSUES since 10-17, $0 spend last 7d) set PAUSED via Meta MCP (live pause, is_draft false), read back PAUSED/PAUSED. Live lead delivery stays on the re-enabled ABO ad set Richlandtx_Broad_18.65_M.F. Prevents the $30/d doubling if Meta ever clears the creation error. A rebuild without the Willis TX pin stays a staged rec.
+
+## 2026-11-24 — AT tasks (Gui, via Claude)
+
+Read-only, nothing changed in Meta.
+
+**7d 11-17..11-23:** $290.08 / 11 leads / $26.37 per lead on all spend, CPM $10.72, CTR 0.45%, freq 2.01 (prior $342.04 / 9 / $38.00). Lead ad set Richlandtx_Broad_18.65_M.F: $220.32 / 11 / $20.03 CPL (best week since the 11-10 re-enable), CTR 1.58%, freq 1.80, only ad GlassReplace_Image_callform_FO. Awareness TX_Broad_Homeowners_18.65_M.F (REACH, cap 3/7d): $69.76, reach 10,242, freq 2.03, CPM $3.35; IMAGE_..._V3 takes 83%. Activity since 11-16: only Gui's DCT ad set pause + billing 11-18.
+
+**Staged, not applied:** keep lead ad set as is; awareness ARL no cap + creative refresh folds into the Growth Engine brand build (1496977c, fu-196); lead campaign to CBO + 2nd angle DCT rebuilt without Willis pin; ask AM how the Meta form leads since 11-10 turned out.
+
+Task (completed): [7-Day Meta](https://app.agencytitan.com/tasks/instance/943187a2-dbee-4326-b490-ee63ec35bd21). KPI - Meta 8ee752bb.

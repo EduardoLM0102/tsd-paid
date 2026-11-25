@@ -5,6 +5,16 @@ Google Ads, LSA and GTM history lives in `google-ads-log.md` in this folder.
 
 ---
 
+## 2026-11-24 — AT tasks (Gui, via Claude)
+
+**Scope:** TSD does NOT manage WR Meta except ARL; numbers only.
+**7d 11-17..11-23 (vs 11-10..11-16):** $1,945.68 / 31 leads / $62.76 (prior $1,981.85 / 28 / $70.78). CPM $43.84, CTR 5.90%, reach 26,111, freq 1.70. TOF $819.12 / 16 / $51.20 (Broad-10 $515.64 / 9; Broad-2 $303.48 / 7 / $43.35 best). MOF $467.79 / 7 / $66.83 (prior $121.99). BOF $143.36 / 3 / $47.79. FourMode $444.37 / 5 / $88.87. ARL $71.04, reach 7,946, freq 1.68, 90 recallers. Max ad-set freq 1.90.
+**Activity log:** 11-19 Jonathan Bannister (TSD login) moved ARL ad set to a 1-mile pin S Tulsa, 18-65+, renamed 'TSD | FENCE-1MI | WEIGHTED-PIN S TULSA | 18+ | ARL'; 11-20..11-23 $42.96, reach 4,783, freq 1.58 in 4 days (~2.8x/wk pace). 11-24 Clay Manus token: TOF Broad-2 $45 -> $60/d, FourMode 01-MAIN $61 -> $46/d; Austin Ensz set 2 FourMode ads inactive.
+**Staged:** ARL fence freq recheck 11-30 (~3x/wk target, widen pin slightly if short, no cap). Nothing else (not TSD-managed).
+KPI - Meta row 2026-11-24 = 1358eed2 (weekly keys). Task completed: https://app.agencytitan.com/tasks/instance/12a61095-fc0d-4ea3-b8e0-cc81051390d1
+
+---
+
 ## 2026-11-16 — AT optimization tasks (Gui, via Claude): 7-day Meta. Read-only, all staged
 
 **Scope:** Edu 11-04 = TSD does NOT manage WR Meta; numbers only, no build proposals.

@@ -937,3 +937,14 @@ AT tasks completed: Google https://app.agencytitan.com/tasks/instance/560989da-e
 
 AT tasks completed: 7-Day Google https://app.agencytitan.com/tasks/instance/ea2e9a59-f527-4acc-817a-7754c158c6bd (KPI `c54041fb`), 14-Day Google https://app.agencytitan.com/tasks/instance/beefcbea-9955-4ded-a84f-2cc161b31544, LSA https://app.agencytitan.com/tasks/instance/e46f57ac-3ad3-4e9b-afb0-89a297ec7528 (KPI `fd14b264`).
 Toggles to set in UI (14-Day): High-CPC Keywords Reviewed = Yes, Keyword Warnings Reviewed = Yes, Keywords Paused or Fixed = No, Geo Targeting Adjusted = No, Audience added? = No, Blockers to Escalate = No.
+
+## 2026-11-20 — AT tasks (Gui, via Claude)
+
+7-day Google Search + 7-day LSA + Client Strategy Review notes copy. Read-only, nothing changed in the accounts.
+
+**PPC 7-day (11-13..11-19 vs 11-06..11-12, LSA excluded):** Branded only, $45.51 / 44 impr / 7 clk / 2 conv, $22.75 CPL, $6.50 CPC, IS 86.2% (13.8% rank-lost, 0 budget-lost), Target IS $8 ceiling, $50/d budget. Prior $19.64 / 3 clk / 0 conv. Conversions: **'Submit lead form - web' 11-17 = first tracked web form on the account since 09-15** + 1 '[TSD] Click to call' tap 11-19; 0 call_view calls, 0 Peach AI uploads. Terms all brand ('zen heating and cooling' $15.54 close variant). change_event empty 11-06..11-19 (PPC and LSA). Nonbranded 24100030790 still PAUSED. KPI Health = Mixed.
+**Staged, not applied:** keep the $8 ceiling (IS above the ~85% line from 11-16); match the 11-17 form to a GHL contact (tracking back or a test?); any new RSA/headline must carry license CN211593 (11-19 Georgia rule); NB stays paused (client's call).
+- **LSA 3740502923 (classic, not migrated):** $124.80, 6 phone leads (11-13, 11-16 x3, 11-18, 11-19), 2 charged (both 11-16), 0 messages, CPL $20.80 ($62.40 per charged), 91 impr, 14 clk, 100% top / 91.4% abs top. Prior $0 / 1 lead (11-10). All 6 ACTIVE (unmarked). 30d 10-21..11-19: $187.20, 12 calls, 3 charged. Underspending (budget not the limiter). Staged: transcribe the 6 calls + rate the 2 charged 11-16 calls and the 10-28 wrong-number charge (fu-161).
+- **Client Strategy Review e83dc467** (cycle 10-12..11-10, call 11-12): Edu's original review task c29ad0c8 was deleted; KPI row 53ecca81 is still on the client, so NO new row. Edu's 11-12 AM notes copied into `additional_paid_ads_notes` (intro line + 5 bullets from strategy-review-octnov-2026.md; 'For Angela to raise' relabelled 'Open asks from this review', wording otherwise unchanged). Field was empty before writing. Stage Performance Reporting NOT completed.
+
+AT tasks: 7-Day Google https://app.agencytitan.com/tasks/instance/69ed0672-d0cc-4f0c-8a08-b7e70c0655e6 (completed, KPI `ffac5cef`), LSA https://app.agencytitan.com/tasks/instance/f41a8d72-52b4-496a-9341-547c0323d0f4 (completed, KPI `13c77019`), Review https://app.agencytitan.com/tasks/instance/e83dc467-e86c-4e77-87aa-0de9e9458718 (notes only, stage open). Read script: zen_extra_1120.py in the session scratchpad.

@@ -22,3 +22,8 @@ Ad account `10086442468052740` ("Hawkins Siding Ads"). Newest entry at the botto
 
 - 7-day (11-09..11-15): N/A, $0. Ad account 10086442468052740 still "not found or no access" on 11-16 (same since 11-03); last confirmed 10-26 = all 9 campaigns PAUSED since 08-20 at the client's request. Client terminated 11-02 (end ~12-02), no Meta proposal.
 - KPI - Meta record 0ef51649 ($0 / 0 / Unclear). Checklist left unticked (nothing reviewable without access). Task completed as N/A: https://app.agencytitan.com/tasks/instance/54b885e3-3894-4589-b484-868974bf9dd9
+
+## 2026-11-24 — AT tasks (Gui, via Claude)
+
+- 7-day (11-17..11-23): N/A, $0. Ad account 10086442468052740 still "not found or no access" on 11-24 (same since 11-03); last confirmed 10-26 = all 9 campaigns PAUSED since 08-20 at the client's request. Client terminated 11-02 (end ~12-02), no Meta proposal.
+- KPI - Meta record 015c7245 ($0 / 0 / Unclear). Checklist left unticked. Task completed as N/A: https://app.agencytitan.com/tasks/instance/aac3e80f-4688-4b8f-a014-899e0609cf15

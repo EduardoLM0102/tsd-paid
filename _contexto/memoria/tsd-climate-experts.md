@@ -23,3 +23,5 @@ metadata:
 **Why:** the client is asking what ads run and what they cost, and we can't see any of it. The audit sheet overstates our access (GA).
 
 **How to apply:** before any Climate Experts paid work, re-run the MCC + Meta checks to see whether Leadsie access came through. The spend/creative breakdown probably has to come from the Propellant report, not from Google/Meta. Related: [[tsd-client-accounts-audit-sheet]], [[tsd-client-roster-status]].
+
+**2026-11-20 recheck (Gui):** still NO access: not among the 121 MCC accounts, no Meta ad account (101 listed), AT google/lsa/pixel/GA/GTM fields empty; site GTM-NJRDT93N is not ours. Leadsie request 593c1204 still in Execution (Angela). Oct/Nov review 288a15df (call 11-20 17:30 UTC): notes only, no KPI row, not submitted. GA4 conflict (Edu "we have GA4" vs 10-16 check) still unresolved.

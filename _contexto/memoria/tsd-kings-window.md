@@ -89,3 +89,28 @@ A full client log now exists for this account for the first time: `clients/kings
 **2026-11-18 GROWTH ENGINE (AT Internal Request 1496977c, Angela → Edu Execution):** client moving to the Growth Engine. Ryan's build sheet (clients/kings-window/growth-engine-build-sheet-2026-11-18.md): brand fence = Colleyville TX, 19,493 adults, 3.0x/week floor, planning CPM $16.20, budget $4,270/mo (Meta $2,350 reach&frequency / YouTube+OTT $1,280 / Branded Search $640), no audience narrowing, video first (min 4 executions: the 9 Oct 13 videos fu-187 + King Lee storyline), baseline branded search + direct traffic 90d BEFORE launch. Gaps the sheet flags: budget basis ASSUMED brand-only (if total media, brand = ~$2,989 and under floor), trade area assumed Colleyville only, fence must be rebuilt at Census-block level before month 2. Build = fu-196.
 
 **2026-11-19 plan written** (clients/kings-window/growth-engine-plan-2026-11-19.md): baseline brand searches ~50-95/mo, Direct ~175 sessions/mo; delivered Meta CPM $3.22 vs $16.20 planning → 3.0x floor costs ~$815/mo on Meta, surplus decision needed before launch; Branded Search can't absorb $640 (spends $40-75/mo); creative gate = 9 SB videos (Drive KINGS ADS, 16:9, unapproved, fu-187), 9:16 cuts needed; existing awareness ad set overlaps the fence → retire into the new campaign. 5 questions to Angela on AT 1496977c Execution notes. Build waits on answers (fu-196).
+
+## Oct/Nov Strategy Review (call 2026-11-10) + Post-Review alignment: carry into every optimization pass
+Source: AT Client Strategy Review 2b381316 (cycle 10-10..11-08, "Additional Paid Ads Notes", KPI row d233f769) and Post Client Strategy Review 9f657ee7 (Paid Ads Alignment stage, Gui). The AM recorded NO call outcome in AT: no Top Marketing Services, no approved budget, no offers. Until that arrives, align to the notes below. (The per-item notes on the alignment checklist are not readable through the AT API; if Gui typed any there, they live only in the UI.)
+
+**What the review told the client (Paid notes, verbatim facts):**
+- Lead count by transcript, not Google conv: NB showed 68 conv (mostly taps). 107 ad calls 10-10..11-08 = 41 new leads + 15 existing customers (count them), 7 repeats, 11 not leads (4 auto glass, 2 wrong company, cancellations), 22 empty voicemails, 11 no recording. Plus 5 LSA msgs, 10 forms, 8 Meta forms = 79 (64 new + 15 existing).
+- Pickup: 26% of ad calls never reached a person 10-16..11-11 (57% early Oct). After hours ~all voicemail (8 of 9 evening/weekend calls). 16 business-hours voicemails, mostly right after opening or late afternoon.
+- After the call: 16 of 41 new leads booked on the call (2 cancelled); the rest told to text photos / bring the piece in. Follow-up is the gap (one booked customer called 3x to get scheduled, one never got a quote). 2 turned away for distance (Dallas, one 40 min out).
+- LSA moved to "Pay-per-lead" PMax 11-04 (same leads); 29 charged LSA leads in the cycle.
+- Meta lead campaign dark 10-17..11-10 (Meta ad-creation error); old ad set back 11-10. 5 of 8 Meta form leads came 10-14: AM to ask the client if they were real.
+- Budget rec: ~$5,100/mo = +~$500/mo on NB Search (cheapest channel, ~$53 per new lead, loses ~40% IS to budget). Needs client WRITTEN OK.
+- For the client: after-hours/overflow answering (cell forward or answering service), same-day callback on photo-quote leads, approve the monthly budget. TSD promised auto-glass negatives (already on NB + Branded as phrase since before the call; no auto-glass clicks in 30d, so auto-glass calls likely come via LSA/GBP).
+
+**Alignment state (11-12 check, still true 11-17):** ticked geo / tracking / escalate-to-AM; NOT ticked TMS review, campaign-TMS alignment, budget match, copy/offers, pause deprioritized services (all blocked on the AM's call outcome). Live run rate ~$4,150/mo (PPC ~$1,680 + LSA ~$1,260 + Meta ~$1,220) vs the $5,100 rec. The +$500 NB raise is NOT applied (no written OK). Spend breakdown PDF 11-13 used $5,100/mo projections; still no approved budget on file.
+
+**How to apply in the next passes:**
+- Report leads by transcript (new + existing), never Google conv; taps still primary and inflate NB.
+- Don't stage the NB raise again as new: say "pending client written OK (review 11-10, row d233f769)".
+- Ask the AM (once, via a written note) for: TMS + budget agreed 11-10, written OK for +$500 NB, current offers to feature, whether the 10-14 Meta leads were real, whether auto-glass calls came via LSA. When answered, finish the alignment checklist (Post Review 9f657ee7).
+- Keep watching pickup % and after-hours voicemail on each call-wins pass (fu-160 baseline 26%).
+- Meta: broken DCT ad set PAUSED 11-16 (Gui); rebuild without the Willis TX pin + lead campaign to CBO + awareness to ARL no cap stay staged.
+
+**2026-11-20 alignment recheck (9f657ee7, still in_progress):** nothing new recorded from the 11-10 call; Nov pace ~$5,260/mo (LSA PPL up, NB still $52/d, +$500 not applied). ⚠ Edu's 4 Growth Engine questions sit in 1496977c Execution notes; Execution completed 11-19 and the task is in Review & Close on Edu, so Angela may never have seen them → re-route (fu-196).
+
+**2026-11-24:** Angela opened Internal Request e4dc9880 'Media Plan' for Edu (Execution, due 11-28) with the King's growth/media plan attached: likely the missing input for the open alignment 9f657ee7 (attachment not readable via API). 11-24 pass: NB IS lost 52% to budget, Google conv 9 (~6 real by tracking, down from ~22), 3rd Sunday with $0 leads; Meta lead ad set $20.03 CPL (best week since 11-10).

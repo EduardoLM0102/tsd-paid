@@ -8,6 +8,20 @@
 
 ---
 
+## 2026-11-24 — AT tasks (Gui, via Claude)
+
+**Scope:** read-only (Meta MCP + activity log), no account changes. 7-Day Meta task completed.
+
+- **Week 11-17..11-23 (2671066020034494; old 79203382 $0):** $787.74 (prior $74.80), 10,914 impr, reach 4,212, freq 2.59, CPM $72.18, CTR 2.37%, 171 link clicks, **8 form leads (prior 1), CPL $98.47**. Daily $108.56 / $118.13 / $104.40 / $81.21 / $82.56 / $144.83 / $148.05. Leads by day: 11-17 1, 11-19 1, 11-22 3, 11-23 3.
+- **By campaign:** TuneUp-35 $190.77 / 4 leads / **$47.69** (CPM $43.16, CTR 1.38%, freq 2.28); Replacement $474.78 / 4 / **$118.70** (CPM $100.36, CTR 3.06%, 110 clicks, freq 1.99); Retargeting-Proof $122.19 / 0, reach 347, **freq 5.08**.
+- **Billing settled for now:** no Payment Needed / grace period since 11-19; Meta bills in $76 charges now (threshold up). Funding question from 11-19 is moot for this week.
+- **Pacing:** launch to 11-23 $862.53; at $100/d to 11-30 ≈ $1,560 vs the $1,500 Nov 9-30 approval (about on plan, thanks to Brian's 11-17 doubling).
+- **11-24 6:16 AM MST (Jonathan Bannister = Edu, ads MCP):** Retargeting-Proof campaign PAUSED, TuneUp-35 $25 → $40/d. Total still $100/d ($60 + $40).
+- **Staged, not applied:** confirm $100/d (~$3k/mo) is intended for December (written approval for anything above); hold Replacement 1 more week, if CPL still >~$100 on 12-01 shift part to TuneUp at same total; ask office for outcomes on the 8 leads; open: Hector winter $125/mo static (Financing ad set still paused, 0 ads), 7 "summer-ready" statics, ServiceTitan dataset.
+- KPI - Meta row 122207c0 ($787.74 / 8 leads / $98.47 / Mixed). Task: https://app.agencytitan.com/tasks/instance/12c437d5-5e8c-4e1e-9d78-69991804a650
+
+---
+
 ## 2026-11-19 — Delivery back since 11-17; Brian DOUBLED the budgets himself (read-only check, Edu asked, nothing changed)
 
 **Scope:** new account `2671066020034494`, Meta MCP read + activity log 11-16 → 11-19. No account changes.

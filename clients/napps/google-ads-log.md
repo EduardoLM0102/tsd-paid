@@ -952,3 +952,35 @@ Next read fu-176 11-24: Tyler share on Heating after the modifier, Heating spend
 dept Account Management/Customer Success (confirmed on read-back). Covers: 11-10 negs + geo fix, 11-11 tracking number on the pages, 11-17 Tyler -50% on heating, 3-week results
 ($1,474 / 70 clk / 1 booked + 1 unverified form, 0 page calls, generic intent 0 confirmed), Nov delivery 70/30 vs 65/35, and the 3 review questions (Tyler pages or exclude, verify the form + the 11-16 caller, price/offer on the pages). Next check 11-24.
 https://app.agencytitan.com/tasks/instance/49583709-e201-4295-9cbc-c724c1728911
+
+## 2026-11-20 — Post Client Strategy Review alignment (AT 73c502b8, Gui via Claude)
+
+Read-only. Script `napps_alignment_1120.py` (+ Meta campaign read). Checklist written (6 of 8), Paid Ads Alignment substage set to in_progress, NOT completed.
+What was agreed: no call outcome recorded by the AM (review 0de4a6cc, call 11-19 13:42 UTC; `top_marketing_services` empty). Presented = keep every setting, ~$5,300/mo (Google ~$3,200, LSA ~$2,000, Meta ~$150), 65/35 HVAC/plumbing, Tyler -50% on Heating. After the call: a client `ads_budget_marketing` record "2026-11-19" = **$53,000**, 11-19 → 12-22 (almost surely $5,300 typed with an extra zero). AM note 49583709 (Tyler question) went back to Edu 11-20 14:53 UTC ("Sending back to Eduardo", 1 comment, not readable via API).
+- **Budgets ✓ (unchanged):** NB Heating 24049055193 $65 + NB Plumbing 23819717682 $35 (Max Clicks, $25 cap) + Branded 23685615826 $60 (Target IS, $10 ceiling, spends ~$4/d). 7d 11-13..11-19: Heating $620.30 / 29 clk, Plumbing $303.57 / 13, Branded $30.52 = $954.39; split 67/33. Nov 1-19 $1,791.10 (67/33). Since the call (11-19..11-20): $98.50. LSA 9239407401 $154.29/d, week of 11-16 $558.04 (11-16..11-20). Meta ARL 120248317976460021 $5/d ACTIVE, $34.16 / 7d, reach 3,304, freq 2.16.
+- **Ad groups ✓:** only Furnace Repair + Emergency Plumber live; all AC groups, Drain/Sewer, Leak Detection paused. RSAs APPROVED, final URLs = the 2 new LPs.
+- **Geo ✓:** presence, 11 locations on each NB, Tyler 1026855 modifier 0.5 on Heating only (Edu 11-17, only change since). Unresolved 9053151 still in the list.
+- **Copy ✗:** no offer anywhere in ads or assets (no promotion asset; 'Free Estimates' callout only). current_specials = $89 Diagnostic / $89 Fall Tune-Up (agreed 09-24, "previously $79"), but Hector's winter statics (AT 334ede71, still in Execution) say $79 Winter Tune-Up through Nov 30 and $79 + 10% off equipment in Dec. Which price is current is an AM question.
+- **Tracking ✓ with gap:** Calls from ads primary + biddable (14d 2), LP number = CallRail 903-289-7073; 'TSD - Lead form' fires (14d 1 all-conv) but is in no campaign goal (staged 11-16, still not applied); CallRail → Google Ads integration still pending.
+- **LSA since 11-13:** 19 leads (2 messages 11-19 and 11-20 still NEW, charged).
+- **To escalate (not yet in an AM note):** (1) budget record $53,000 vs the $5,300 presented; (2) offer price $89 (current_specials) vs $79 (winter statics), and whether to put the offer in the Google ads/pages; (3) Tyler answer (pages or exclude) still open; (4) the 2 new LSA messages.
+- Blocks completion: Tyler decision (client) + offer/copy not aligned + budget record typo. Next: fu-176 11-24.
+
+## 2026-11-24 — AT tasks (Gui, via Claude)
+
+Read-only on all accounts; everything below is staged. 3 AT tasks completed (7d Google, 7d LSA, 7d Meta), notes in task fields + KPI rows (Google c992e882, LSA 1b2547ef, Meta 09bba895). Extra read-only scripts in the run scratchpad: `np_recheck_1124.py` (copy of napps_recheck_1117.py on 11-17..11-23), `np_geo_1124.py`. CallRail not checked (agency account HTTP 429).
+
+**Changes since last pass (change_event 11-16..11-24):** only Edu's 11-17 Tyler 0.5 modifier on NB Heating.
+
+**7-day Google (11-17..11-23 vs 11-10..11-16):** $526.84 / 25 clicks / 0 counted conv (prior $767.21 / 36 / 2), CPC $21.07, Search IS 43.22%, 47% of the $160/d budget. KPI health Poor.
+- NB Heating $287.32 / 14 clk (~$41/d of $65), IS 42%, rank-lost 58%, budget-lost 0 (prior $566.88 / 25, budget-lost 6%). NB Plumbing $233.60 / 10 (95% of budget, days up to $72.77). Branded $5.92 / 1, IS 95%. NB split 55/45 vs 65/35.
+- **Tyler -50% worked on Tyler but the money didn't reflow:** Tyler Heating 193 impr / 3 clk / $35.31 (12% of Heating) vs 15 clk / $328.57 in wk 3. Heating is now rank-limited at the $25 cap, and heating impressions fell after 11-17 (233 → 38-90/day).
+- 0 ad calls (call_view 11-17..11-24), 0 'TSD - Lead form', 2 secondary taps (Branded 11-18, Plumbing 11-19). Since 10-27 NB $1,973.20 / 93 clk / 1 booked (11-16).
+- Clicks by town: Heating Longview 4 / Kilgore 3 / Tyler 3 / Marshall 2 / Henderson 2; Plumbing Longview 3 / Daingerfield 3 / Kilgore 2 / Marshall 1 / Gladewater 1.
+- Terms: Plumbing = generic near-me ('plumbers near me' $74.60/3, '24 hour plumbers in my area' $48.66/2); 'plumber available now' EXACT $147.05/6 via close variants; 'plumber near me' EXACT QS 1 $86.55/4. Heating waste 'rheem tankless heater code e5' $24.82, 'electric heater won t turn on' $18.31, 'how much to replace hvac blower motor' $12.19.
+
+**LSA 9239407401 (7d, classic LSA):** $690.25 (prior $765.26), 11 charged = 6 calls + 5 msgs, $62.75 per charged lead (prior $69.57), 4 uncharged bathroom-remodel calls, On Pace (64% of 7 x $154.29), top 90.76%. 9 of 11 charged = plumbing. Messages 11-19 + 11-20 still NEW status. No credits.
+
+**Staged, not applied (inputs for Edu's fu-176 today):** hold budgets + $25 cap (Heating underspends after the Tyler cut); Heating PHRASE negs tankless + 'how much to replace' (+ the 11-16 fireplace/reviews/jacks/evans, still unapplied); 'TSD - Lead form' goal on both NB (11-16, still unapplied); watch 'plumber near me' EXACT QS 1 one more week; AM items from the 11-20 alignment still open. Revisit 2026-11-30.
+
+Tasks: [7d Google](https://app.agencytitan.com/tasks/instance/5edaba87-a7cb-4ab6-ae5d-f4b15a015fcd) · [7d LSA](https://app.agencytitan.com/tasks/instance/14c666e2-3ba4-405f-9de8-2e1c68ea4f84). Meta in meta-ads-log.md.

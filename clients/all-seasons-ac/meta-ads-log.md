@@ -8,6 +8,10 @@ ACTIVE, USD). Readable through the Meta Ads MCP.
 
 ---
 
+## 2026-11-24 — AT tasks (Gui, via Claude)
+
+**7-Day Meta (https://app.agencytitan.com/tasks/instance/10df953d-cd85-4153-930b-45105df5b1e2), completed as N/A.** 11-17..11-23: all 15 campaigns PAUSED, $0 / 0 impressions (read-only query). KPI - Meta `10c07f05` ($0 / 0 / Unclear). Checklist ticked (reviewed, nothing applicable). Staged: keep off; relaunch ARL 120250742056430607 only with a written Meta budget approval.
+
 ## 2026-11-19 — Client Video Audit: Meta off + stale footage
 
 Meta off by client choice (budget cap); finished video is 10+ months old. Relaunch only with written Meta budget approval, ideally with fresh footage (fu-191).

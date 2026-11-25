@@ -39,3 +39,15 @@ Read-only; nothing changed. 7-Day Meta task completed, KPI - Meta row d33230c5 (
 - **Staged (still open from 10-26/11-03):** heating-season video + pause Video_PL_HVACAwareness_1; freq under 3x/wk (budget/geo decision, client approval needed); Edu to decide on the empty lead campaign.
 
 Task: [7d Meta](https://app.agencytitan.com/tasks/instance/e7c7cca0-03a5-44dc-aaeb-e1030cb91616)
+
+## 2026-11-24 — AT tasks (Gui, via Claude)
+
+Read-only; nothing changed. 7-Day Meta task completed, KPI - Meta row 09bba895 (cost_per_result = CPM, same convention as earlier rows).
+
+- **7d (11-17..11-23):** $34.90, 7,027 impr, reach 3,295, freq 2.13, CPM $4.97, CTR 0.34%, 170 est. ad recallers ($0.21), 0 leads (prior $35.12 / reach 3,451 / freq 2.18 / CPM $4.67 / 190).
+- **Unlogged change found in the activity log:** 11-20 ~00:24 (account time) Edu (actor "Jonathan Bannister", ads MCP) moved the ARL ad set from ZIP 75605 to a 1-mile 'living in' radius on a weighted Longview pin, 18+, feeds/stories/reels placements only, renamed 'TSD | FENCE-1MI | WEIGHTED-PIN LONGVIEW | 18+ | ARL'; ads re-reviewed and active the same night. 11-20..11-23: $21.29, reach 2,063, freq 2.04 in 4 days (~3.6x/wk pace) = 3x rule now met at $5/d.
+- Ads: TrustedPlumbing $11.49 (70, CTR 0.13%), NewSystem $10.17 (60), ComfortOurPromise $6.66 (40), HVACAwareness $6.58 (40, CTR 0.76% = best now, drop the old pause rec). Ad freq 1.63-1.70. PL videos 52% of spend.
+- TSD_04.24 lead campaign + 3 old 2022 giveaway campaigns ACTIVE at $0.
+- **Staged:** heating-season video (open since 11-03); Edu to decide on turning off the empty lead/giveaway campaigns. Revisit 2026-11-30 (full week on the fence).
+
+Task: [7d Meta](https://app.agencytitan.com/tasks/instance/b81fb345-9e8d-4d47-9ec4-fc2f6616a633)

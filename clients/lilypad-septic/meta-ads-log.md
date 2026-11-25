@@ -22,3 +22,8 @@ Ad account `123589321338300` ("Cole Leister", business "LilyPad Septic & Portabl
 
 - 7-day (11-09..11-15) and prior week: $0. Still only 2020-2021 pre-TSD campaigns, all PAUSED, 0 impressions 11-02..11-15. The ~$600/mo Meta piece was never built.
 - KPI - Meta record 2ad448bd ($0 / 0 / Unclear). Task completed as N/A: https://app.agencytitan.com/tasks/instance/2746ff48-fbe3-433f-a92f-635d2591521f
+
+## 2026-11-24 — AT tasks (Gui, via Claude)
+
+- 7-day (11-17..11-23) and 30-day (10-25..11-23): $0. Still only 2020-2021 pre-TSD campaigns, all PAUSED, 0 impressions. Meta piece never built; client churned 11-18, no build proposed.
+- KPI - Meta record e86579e3 ($0 / 0 / Unclear, 30-day keys empty), one row for both tasks. Both completed as N/A: https://app.agencytitan.com/tasks/instance/b6855a55-732f-4177-b328-d166aac87d67 , https://app.agencytitan.com/tasks/instance/5a14bfa5-40e6-4622-9b61-3236e0c195d3

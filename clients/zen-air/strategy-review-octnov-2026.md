@@ -85,3 +85,5 @@ Recommended budget: hold about $7k/mo, +$50/day on Meta if the tune-up leads are
 - [x] Stage Performance Reporting NOT completed (Edu decides)
 - [ ] Command Center follow-ups: LSA rating 10-28; refresh after Angela answers bookings/Atlanta
 - [ ] Edu reviews; if he wants the 11-04/11-05 existing-customer calls out: 205 leads / $36.50
+
+**2026-11-20 (Gui, via Claude):** task c29ad0c8 was deleted; the surviving review task **e83dc467** (cycle 10-12..11-10, call 11-12 15:27 UTC) got the `additional_paid_ads_notes` above (intro line "copied here because the original review task was removed", "For Angela to raise" relabelled "Open asks from this review"). No new KPI row (53ecca81 still on the client). Stage Performance Reporting NOT completed.

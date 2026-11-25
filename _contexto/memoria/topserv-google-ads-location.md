@@ -90,3 +90,5 @@ ad group keep serving. Also check `campaign.primary_status_reasons` after any ad
   campaign_criterion brand_list.shared_set** (campaign_shared_set is OPERATION_NOT_PERMITTED_FOR_CONTEXT). PMax also accepts
   campaign-level negative keywords. Check the suggested entity's URL: Proud Pops' old name "The Problem Solvers" matched an unrelated UK company.
 
+
+**Gotcha (2026-11-20):** sitelinks with asset.source = AUTOMATICALLY_CREATED (dynamic sitelinks Google made) cannot be linked to a campaign (CANNOT_LINK_TO_AUTOMATICALLY_CREATED_ASSET). Create a new SITELINK asset + campaign_asset in one GoogleAdsService.mutate with temp ids (-1, -2), validate_only first. Recipe: clients/proud-pops/pp_apply_1120.py. RSA text edits keep the ad id: AdService.mutate_ads with update_mask responsive_search_ad.headlines/descriptions, resend every line with its pinned_field (clients/watts-right/wr_rsa_fees_1120.py).

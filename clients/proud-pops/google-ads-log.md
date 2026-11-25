@@ -2,6 +2,34 @@
 
 ---
 
+## 2026-11-20 (later) — APPLIED: pricing sitelink swap + Elec AG2 RSA pause (Edu's go on the AT read)
+
+Edu's answers 11-20: "segura plumbing por agr / pode trocar o sitelink / pode pausar mas coloca isso no log / hj ajustei isso ai e tirei o youtube partners, tudo certo / o budget planejado e 25k, entao ta no range". Script `clients/proud-pops/pp_apply_1120.py` (validated, then applied 2026-11-20 23:27 UTC, Gui via Claude). **Do not re-run --apply** (would create the sitelinks again).
+- **'See Our Pricing' sitelink 360873861063 (/pricing) REMOVED from Electrical 23866999121 + Plumbing 23853484024** (14d: Elec $4,045 / 155 clk / 13 conv, Plumbing $1,466 / 97 / 0). Kept on Branded (9 conv / $511) and HVAC.
+- Replaced by 2 NEW sitelinks (the account's service sitelinks are all automatically created and can't be linked): Electrical → `Electrical Repair` asset **441525652903** (/services/electrical/repair, "Breakers, wiring and outlets" / "Written price before any work"); Plumbing → `Drain Cleaning` asset **441598912395** (/services/plumbing/drain-cleaning, "Clogs, slow drains and backups" / "Written price before any work"). Both URLs in sitemap-services.xml; descriptions reuse claims from the approved RSAs. Read-back: Elec 6 sitelinks, Plumbing 4.
+- **Elec AG2_Electrical_Services RSA 827482059113 PAUSED** (14d $549 / 0 conv); 809490621054 ($785 / 5) stays ENABLED. Read-back OK.
+- **Not done:** EXACT [electrician] negative (not confirmed by Edu), Plumbing schedule/pause (Edu: hold for now). YouTube: Edu adjusted it himself 11-20 and removed video partners. Nov ~$23.5k is inside the planned $25k.
+- At the new-site DNS switch: 200-check the 2 new sitelink URLs too (fu-178).
+- Rollback: remove the 2 campaign_asset links, re-link 360873861063 on both campaigns, set 827482059113 ENABLED.
+
+---
+
+## 2026-11-20 — AT tasks (Gui, via Claude)
+
+Read-only, nothing applied. Week 11-13..11-19 vs 11-06..11-12. Extra pulls: scratchpad `r1120/pp_x1120.py` + `pp_x1120b.py` (Nov MTD 4 accts, budgets, daily IS, conv by date, landing pages by campaign, sitelinks, AI Max, hours, calls, recs, YouTube networks), `pp_g14_digest.py`. Site check 11-20: proudpops.com still the Lovable build (GTM-WBFDB6L8 live v43), new-site draft ws 45 untouched. Changes since 11-16: only Edu's 11-16 08:05 budgets/negatives and 11-18 YouTube enable.
+
+**7-Day Google (https://app.agencytitan.com/tasks/instance/f12fba76-88f0-46d2-89de-7dd0afbd1e27), completed.** Search only (YouTube $413.73 excluded): $4,403.22 / 247 clk / 21 conv / $209.68 CPL / $17.83 CPC / 8.50% (prior $4,601.10 / 17 / $270.65). Electrical $2,703.02 / 13 = $207.92 (prior $355.87; since the 11-16 cut to $375: $1,598.83 / 9 = $178), IS 42.4%, budget-lost back to 27.6%. Plumbing $723.74 / 56 clk / 0 (43% of it 19:00-06:59; since restore 1 real lead on $2,058.58). HVAC $586.27 / 2 (both 11-16 site calls) = $293, rank-lost 74%, Nov $1,535.50 / 3 tracked. Branded $390.19 / 6 = $65.03, IS 97.9%; 1 more uncounted Branded form 11-19. Branded 6 / $65.03, unbranded 15 / $267.54, Search IS 32.73%. 9 call-button calls (Elec 6, HVAC 2 under 60s, Branded 1), not transcribed (key on Edu's machine, CALL POP recording OFF). **New finding: 'See Our Pricing' sitelink (/pricing, all 4 campaigns) = $2,287.98 / 99 clk / 3 conv ($763) in 14 days** (Elec $1,630 / 54 / 3, Plumbing $539 / 35 / 0) vs /services/electrical $266/conv. Nov 1-19 $13,192.47 (PPC acct $12,678.82 incl. LSA $1,408 + YT $413.73; SA[1] $281.75; SA[2] $231.90; MFS $116.36 not counted) → lands ~$23.5k vs $25k. Staged: EXACT [electrician] neg (14d $329 / 6 / 0, 11-09 trigger met), cobalt electrical / ross electric / lentz plumbing to list 12263521315, swap the pricing sitelink on Elec + Plumbing, Plumbing ad schedule 07-19 or pause (Edu), HVAC = Edu at fu-172, Branded form goal, transcript pass. KPI Google row `f3e895fa` (Mixed).
+
+**14-Day Google (https://app.agencytitan.com/tasks/instance/076b5eb3-b018-4282-9128-0e6e7848d460), completed.** 11-06..11-19 Search $9,004.32 / 477 clk / 38 conv ($237): Elec $5,548.69 / 21, Plumbing $1,755.89 / 3, HVAC $1,086.12 / 2, Branded $613.62 / 12. New Elec AG2 RSA 827482059113 $549 / 0 vs old 809490621054 $785 / 5 (staged pause). Expected CTR below on ~all nonbranded kws, ad relevance below on Electrician_NearMe. All Search spend in targeted geo. 0 audiences (staged observation). 78 open recs (reject partners/display/broad/PMax). At the DNS switch: 200-check every final + sitelink URL on the new site. All 8 items ticked.
+
+**LSA, 7-Day (https://app.agencytitan.com/tasks/instance/332a77e6-d30f-4a45-93f0-3bd2f1fc0823), completed.** 3 sources: main $660.62 (9 charged: 7 plumber msgs all NEW, 2 HVAC calls) + electrician $84.28 (1 call) + HVAC $0 (2 calls not charged) = $744.90 / 12 leads / 10 charged = $74.49 (prior $1,023.45 / 14 charged / $73.10). Top impr 96.03%, impr 798 vs 656. Underspending vs $714.29 x3 fields (not the limit). No PPL-PMax migration. Rating = fu-161, not done. KPI LSA row `7b21338e`.
+
+**YouTube, 7-Day (https://app.agencytitan.com/tasks/instance/eeff1bd6-6d2a-4ffb-ba8f-a4d09ed35a74), completed (not N/A: restarted 11-18).** 2 days: SA $208.27 / 12,957 impr / 7,953 views (61% view rate, CPV $0.026, completion 60%), 100% YouTube; ads: Breaker Tripping + Surge best, Repair vs Replace weakest (27% completion). NB $205.46 / 6,798 impr / 6,290 views (CPV $0.033, completion 86%) but **99% of NB spend is reported on the Content network = TV apps** (Samsung TV Plus $75, Vizio WatchFree $25, Tubi, Pluto, Roku) although the API shows video partners off, and 95% on one ad (Breaker Tripping). SA placements include gaming streams (GTA 6 x3) and a Spanish reality live stream, small $. Both ~$100/day on budget, 0 conv (awareness). Staged: check NB's TV-app inventory in the UI and decide if CTV is wanted; SA gaming/live-stream exclusions if it grows. All 7 items ticked (task has no notes field).
+
+**Meta, 7-Day:** N/A, see meta-ads-log.md (KPI Meta row `62a91857`).
+
+---
+
 ## 2026-11-18 — YouTube RESTARTED (Edu's go: "we gotta restart YouTube Ads for them")
 
 Context: client video audit for Ryan (Proud Pops = biggest spender with zero video live since the 10-16 cut).

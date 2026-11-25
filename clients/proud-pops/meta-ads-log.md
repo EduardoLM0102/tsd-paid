@@ -2,6 +2,12 @@
 
 ---
 
+## 2026-11-20 — AT tasks (Gui, via Claude)
+
+**7-Day Meta (https://app.agencytitan.com/tasks/instance/ca238595-dfa9-41f1-ae01-ddf0959ff33b), completed as N/A.** Still no Proud Pops / Problem Solvers ad account shared with TSD's Meta login (all 3 pages of `ads_get_ad_accounts` re-checked 11-20, no further cursor). $0 11-13..11-19. lead_quality Unclear, 4 checklist items ticked (reviewed, nothing applicable). KPI Meta row `62a91857` ($0 / Unclear). Blocker (since 10-23): AM to get the account shared or confirm Meta is out of scope. Pixel 597145242772352 is part of the new-site launch (CAPI), not used by any TSD campaign.
+
+---
+
 ## 2026-11-16 — AT optimization tasks (Gui, via Claude)
 
 **7-Day Meta (https://app.agencytitan.com/tasks/instance/3f26e6a7-881a-43b0-b073-2e5a8846649e), completed as N/A.** Still no Proud Pops / Problem Solvers ad account shared with TSD's Meta login (all 3 pages of `ads_get_ad_accounts` checked 11-16, no further cursor). $0 11-09..11-15. lead_quality Unclear, 4 checklist items ticked (reviewed, nothing applicable). KPI Meta row `b28be850` ($0 / Unclear). Blocker (since 10-23): AM to get the account shared or confirm Meta is out of scope.

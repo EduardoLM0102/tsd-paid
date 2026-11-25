@@ -1661,3 +1661,43 @@ Source: CallRail 'Tulsa LSA' transcripts matched to leads by phone (96/96). The 
 - 35 booked (VERY_SATISFIED), 33 real requests not booked (SATISFIED), 49 bad: 19 job type (commercial ~10, generator service on non-WR units 4, Christmas lights 2, remodelers/contractors 2, temp construction power 1), 25 other (20 uncharged hang-ups/VM/wrong number/job seekers + 5 charged: 2 cancels, 1 existing-customer decline, 2 no-conversation), 2 solicitation, 1 geo (Fort Gibson), 1 duplicate (352413982 = 10-28 lead 348457661), 1 not ready (DIY question).
 - Credit: 5 granted (PENDING: 349981818, 349656356, 349666631, 349845929, 350622551), 16 FAIL_OVER_THRESHOLD (Google credit cap), 5 from 11-16 FAIL_NOT_ELIGIBLE (too recent?).
 - Business notes (AM-safe, no rating talk): owner-permission rule lost 2 real residential jobs (11-05 estate shed disconnect, 11-09 renter whose landlord had OK'd it, caller annoyed). Commercial + generator-service callers keep coming through LSA.
+
+## 2026-11-20 — Post Client Strategy Review alignment (AT df7c0bbf, Gui via Claude)
+
+Read-only. Script `wr_alignment_1120.py`. Checklist written (6 of 8), Paid Ads Alignment substage set to in_progress, NOT completed.
+What was agreed: the AM logged no call outcome (review f911c525 call 11-16 17:52 UTC; `top_marketing_services` empty). Presented = the approved Push plan (~$26.9k/mo: Search ~$14k + LSA ~$13k), PMax paused 11-10, NB generic / generator / surge groups. After the call: Edu 11-17 Branded $145 → $60 / NB $320 → $405 (AM note 7c3921d8, closed 11-19); Edu's web ticket 76e1df4a (11-19, done 11-20): WR DOES charge extra after hours / weekends / holidays, so "no extra fees" was taken off 20 location pages.
+- **Budgets ✓:** Branded 23690645223 $60/d (Target IS, $8 ceiling) + NB 23832838033 $405/d (Max Conv tCPA $110) = $465/d ≈ $14.1k/mo. PMax 23833205176 PAUSED. LSA PPL '[LSA]' 24425981973 ENABLED, API budget $1,714.29/d (not limiting). Since 11-17: Branded $60/d, NB $510/d (over budget, normal after a raise), LSA $675/d. 7d 11-13..11-19: Branded $269.41, NB $2,812.14, LSA $3,972.98. Nov 1-19: Search+PMax $8,606.04, LSA (old + PPL) $9,260.91, total $17,866.95.
+- **Ad groups ✓:** Electrician (General) 7d $1,130.85 / 9 conv, Whole-Home Generator $613.20 / 9, Emergency $451.07 / 4, EV $325.65 / 0, Panel $283.95 / 4, Surge $7.42 / 0 (barely serves). All 10 RSAs APPROVED, final URLs on matching pages.
+- **Geo ✓:** Branded + NB same 15 locations, PRESENCE, 3 country exclusions.
+- **Copy ✗:** NB 'Electrician (General)' RSA 830598421847 still says "No Extra Fees on Weekends" and "Nights, weekends and holidays at no extra fee". Contradicts 76e1df4a (WR charges extra). The 24/7 lines (Emergency RSA 826560998576, Branded description, 8 sitelinks) are consistent with the site, which keeps 24/7. Staged, not applied: replace those 2 lines on 830598421847 (Edu's go). No offers in ads (none on file).
+- **Tracking ✓:** primary + biddable: Calls from ads (7d 26), Phone Call / CallRail (11), Submit lead form - web (9), PPL phone (50) + message (15). Cleanup candidates still PRIMARY: Local actions - Directions (7 all / 0 conv), YouTube follow-on views, YouTube subscriptions.
+- **change_event since 11-16:** only Edu 11-17 (2 budgets + 3 negatives).
+- **To escalate (not in any AM note yet):** client `ads_budget_marketing` = "$17,500 June - All Platforms" (stale). Approval on record = Angela's Slack 11-04 (Push, +$7k/mo); AT 7b72529c is the proposal request (Allen), not an approval. Ask Angela to update it to the Push plan (~$26.9k/mo Google only). Twin review e2239252 still open (fu-169).
+- Blocks completion: the "no extra fee" ad lines (needs Edu's go) + stale budget on file (AM). Next: fu-175 11-24.
+
+## 2026-11-20 (later) — APPLIED: 'no extra fee' lines out of RSA 830598421847 (Edu: "pode trocar sim")
+
+Script `clients/watts-right/wr_rsa_fees_1120.py` (validated, then applied 2026-11-20 23:27 UTC, Gui via Claude). NB 'Electrician (General)' RSA 830598421847, because WR charges extra after hours (AT 76e1df4a):
+- H `No Extra Fees on Weekends` → `Call Now for Fast Service`
+- D `Nights, weekends and holidays at no extra fee. Call now or request service online.` → `Available nights, weekends and holidays. Call now or request service online.`
+- Other 14 headlines / 3 descriptions, the 3 HEADLINE_1 pins and the final URL unchanged. Read-back: ENABLED / APPROVED / REVIEWED.
+- Unblocks the copy item of alignment df7c0bbf; the stale `ads_budget_marketing` ($17,500 June) still needs the AM. Rollback: swap the lines back.
+
+## 2026-11-24 — AT tasks (Gui, via Claude)
+
+Read-only, nothing changed. Week 11-17..11-23 vs 11-10..11-16 (first full week of Edu's 11-17 reallocation). Calls checked with CallRail's own transcripts (WR acct 537241053, Call Extension PPC matched to call_view within 90s, website calls by gclid + utm_campaign); pull kept in the session scratch only (PII).
+
+**7-day Google (PPC only):** $3,535.97 / 235 clk / 46 conv / $76.87, CPC $15.05, CVR 19.57% (prior $2,966.22 / 38 / $78.06). 46 = 28 calls from ads + 11 Phone Call + 7 forms (taps secondary).
+- Branded $60: $287.29 / 20 / $14.36, IS 90%, ~$41/d. Transcribed: 4 new booked (one from a mailed flyer), 11 existing-customer calls (4 with new work), 3 not leads. ~$72 per new booked.
+- NB $405 / tCPA $110: $3,248.68 / 26 / $124.95, CPC $18.05, IS 29%, budget-lost 45%, rank-lost 26%, 115% of budget. Transcribed 22 ad calls + 5 website calls: 17 real (incl. 4 unverified forms) = **~$191 real CPL** (11-17 ~$192), 6 new booked by phone (+1 likely) ≈ $541 each; just under the $200 stop rule. Not leads: solar box, parts buyer, scrap-wire buyer, Generac service on a non-WR unit, 'Generac of Oklahoma' wrong co, 2 job seeker calls. Generators = 6 of 13 real NB calls.
+- Ad groups: General $1,363.71 / 8, Generator $691.92 / 10, Emergency $639.00 / 4, Panel $338.72 / 4, EV $207.90 / 0 (2nd week at 0), Surge $7.42.
+- Competitor terms $233.86 / 0 conv (vision electric, hughes electric claremore, c b electric, kc electric enid, hummingbird, skyline), mostly via 'electrical repair' PHRASE QS 3 ($572.47 / 3). Generac/okgen navigational terms ~$94.
+- One booked call 11-22 came on an old paused-PMax click (utm 23833205176).
+- change_event: Edu 11-17 budgets + 3 negs; Gui 11-20 RSA fee swap. Nov PPC thru 11-23 ~$10.4k, on track for ~$13.3k plan.
+- Staged: hold NB $405/$110; 8 NB PHRASE negs (vision electric, hughes electric, c b electric, kc electric, hummingbird electric, skyline electric, okgen, generac supercenter); 'electrical repair' pause/CPC ceiling (open since 11-16); EV group trim/pause (Edu); AM: 3 open leads (2 generator quotes 11-18/11-19, handyman's elderly client 11-23 needs homeowner OK).
+
+**LSA 7-day ('[LSA]' PPL 24425981973):** $3,902.91 / 64 charged (50 calls, 14 msg) / $60.98 (prior $3,050.24 / 52 / $58.66); 74 leads incl. 10 uncharged; impr 3,716; 33% of the $1,714/d API budget (demand-limited); top impression not reported for this campaign type. None of the 11-17..11-23 leads rated yet (fu-161).
+
+KPI rows 2026-11-24: Google 03e307c5, LSA 5b0e5ae1. Tasks completed:
+https://app.agencytitan.com/tasks/instance/51e1bf1b-90ba-4cfa-93cf-c38180f20791 (7-day Google),
+https://app.agencytitan.com/tasks/instance/72b27160-36cf-4808-ad17-92c3417528f8 (7-day LSA).
